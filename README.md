@@ -17,7 +17,7 @@ Corresponding authors: Tao Tan and Yue Sun.
 
 Public code, configurations, aggregate results, and reproducibility utilities for the ICDE 2027 submission. Prolonged ICU length of stay is the primary outcome; mortality is a complementary outcome.
 
-Current v1.0.2 display updates are available in this repository. The v1.0.2 release archive is awaiting upload. [Latest published release v1.0.1](https://github.com/Mickey5920/CEM-Net/releases/tag/v1.0.1) · [Published code and reproduction ZIP](https://github.com/Mickey5920/CEM-Net/releases/download/v1.0.1/CEM_Net_ICDE2027_code_and_reproduction_v1.0.1.zip)
+[Fixed release v1.0.2](https://github.com/Mickey5920/CEM-Net/releases/tag/v1.0.2) · [Code and reproduction ZIP](https://github.com/Mickey5920/CEM-Net/releases/download/v1.0.2/CEM_Net_ICDE2027_code_and_reproduction_v1.0.2.zip)
 
 ## Reproduce the reported displays
 
