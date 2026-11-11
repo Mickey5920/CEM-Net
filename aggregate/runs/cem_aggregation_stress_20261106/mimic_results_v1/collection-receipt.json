@@ -1,0 +1,13 @@
+{
+  "complete": true,
+  "hashes": {
+    "verified-results.json": "ee12fd070c2fa7815c3bb1161827345c4383e116d1f2a829896f2f4711dffad9",
+    "paired_draws.npz": "e6923917d41d53d0326d9c1e728020207f6bfc8f9680ad7f2071d99ef1e63287",
+    "completion.json": "612d54872d27cec01ce91205cb730d1379ac0a2e5c2cb8fb7ec5e92582667e83",
+    "exit.json": "91701764bf8bf7dadca9b346680e13dcdd915ed8877098fd0154e5d709605a6a",
+    "storage.json": "8b72f914c70bbd2b4beb207b9f7918cbcee0054add8978ba6f5e7e4dad8d6604",
+    "window_cpu_pilot.json": "57f557d2f5da33fd4ed145de340199b54d6c1e7ff2eba60fe5f98946c4e072bd",
+    "parallel_pilot.json": "a84b2a98770e67de15254225e196754323b5a0f698f6cc1511dce31ee25310df",
+    "reused_preparation.json": "5fc4f2079889cbc8a87426b9a4d7b9f3d9c0e2faf4c5c95c296ef65758bbac9a"
+  }
+}

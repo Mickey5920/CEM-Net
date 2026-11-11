@@ -1,0 +1,146 @@
+{
+  "mimic": {
+    "budget_replay": [
+      {
+        "db": "mimiciii",
+        "seed_endpoint": "48:0",
+        "recorded_epochs": 120,
+        "raw_rule_first_stop": 120,
+        "history_sha256": "6c22a62619ee2d4bcdf1e83889d41a07db9d902cff2625208576ce89b3f2b1b0"
+      },
+      {
+        "db": "mimiciii",
+        "seed_endpoint": "48:1",
+        "recorded_epochs": 52,
+        "raw_rule_first_stop": 52,
+        "history_sha256": "e9a264603a7d203325a2621e54b7353f12653967309f15c053b796fe709f351e"
+      },
+      {
+        "db": "mimiciii",
+        "seed_endpoint": "49:0",
+        "recorded_epochs": 120,
+        "raw_rule_first_stop": 120,
+        "history_sha256": "8df9048dbec14874130240264ebc548ef9eac718df9de00b0ab2d4d74c33d022"
+      },
+      {
+        "db": "mimiciii",
+        "seed_endpoint": "49:1",
+        "recorded_epochs": 120,
+        "raw_rule_first_stop": 120,
+        "history_sha256": "36ab017ba3cbb21ebe726393ec87753e4d9d69a5ed224419e28e22ae006e1a02"
+      },
+      {
+        "db": "mimiciii",
+        "seed_endpoint": "50:0",
+        "recorded_epochs": 120,
+        "raw_rule_first_stop": 120,
+        "history_sha256": "0262534f5a28410c074c927332acbaba7b397ba401b8be5099128f31182d6314"
+      },
+      {
+        "db": "mimiciii",
+        "seed_endpoint": "50:1",
+        "recorded_epochs": 52,
+        "raw_rule_first_stop": 52,
+        "history_sha256": "370417c24cb4d962f80d8d3d2cae7365a93271148843d9f3ca00cdd76e0f9fb5"
+      },
+      {
+        "db": "mimic",
+        "seed_endpoint": "48:0",
+        "recorded_epochs": 52,
+        "raw_rule_first_stop": 52,
+        "history_sha256": "f88909cb896e796be48706c763b479c630b518cd2c5541947a3ed19c7885a648"
+      },
+      {
+        "db": "mimic",
+        "seed_endpoint": "48:1",
+        "recorded_epochs": 52,
+        "raw_rule_first_stop": 52,
+        "history_sha256": "04d0d7b04c52be659db86158246879afde6b5cbb7bbba311fe9fbbfaaac10818"
+      },
+      {
+        "db": "mimic",
+        "seed_endpoint": "49:0",
+        "recorded_epochs": 52,
+        "raw_rule_first_stop": 52,
+        "history_sha256": "c4ad38230c7ff65cec017cdf839c67d440282f2717bd01567a6a86d9252d1bb9"
+      },
+      {
+        "db": "mimic",
+        "seed_endpoint": "49:1",
+        "recorded_epochs": 52,
+        "raw_rule_first_stop": 52,
+        "history_sha256": "9c37d6a1a97cf7b4e937780b75e7b866ef63ad3e6699527fec4f0b6dd554f591"
+      },
+      {
+        "db": "mimic",
+        "seed_endpoint": "50:0",
+        "recorded_epochs": 52,
+        "raw_rule_first_stop": 52,
+        "history_sha256": "723d9a2ef19eb41a60b36a15955f601535b3103db6cb7d04354214ee366814b4"
+      },
+      {
+        "db": "mimic",
+        "seed_endpoint": "50:1",
+        "recorded_epochs": 52,
+        "raw_rule_first_stop": 52,
+        "history_sha256": "25eefe6ffe8ffea9c816a5c1f3ccadc6d5dd5b66acf4a68507196511b2697ae5"
+      }
+    ],
+    "project": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624",
+    "disk_free_gib": 411.98917388916016,
+    "available_ram": "51829700 kB",
+    "gpus": "0, NVIDIA RTX 6000 Ada Generation, 49140 MiB, 8670 MiB, 47 %\n1, NVIDIA RTX 6000 Ada Generation, 49140 MiB, 8216 MiB, 82 %\n2, NVIDIA RTX 6000 Ada Generation, 49140 MiB, 3150 MiB, 56 %\n3, NVIDIA RTX 6000 Ada Generation, 49140 MiB, 9034 MiB, 0 %\n4, NVIDIA RTX 6000 Ada Generation, 49140 MiB, 8892 MiB, 78 %\n5, NVIDIA RTX 6000 Ada Generation, 49140 MiB, 3022 MiB, 79 %\n6, NVIDIA RTX 6000 Ada Generation, 49140 MiB, 3406 MiB, 0 %\n7, NVIDIA RTX 6000 Ada Generation, 49140 MiB, 3278 MiB, 17 %\n",
+    "processes": "GPU-b5308f56-15e0-8ad1-4983-219958e5f2fd, 4125763, /home/gem/.local/share/uniow-server/wzl2_YOLO-UniOW/bin/python, 39722 MiB\nGPU-f0b14782-02bd-2e11-54a3-49a6fd0c1222, 2615689, /home/gem/anaconda3/envs/ipow/bin/python, 40284 MiB\nGPU-aaeb5294-530f-2d0c-bdce-195d69bdae7f, 3097655, /home/gem/anaconda3/envs/VMUNet118/bin/python3, 45350 MiB\nGPU-fb94b938-1903-1b69-6077-63e796ed7a08, 65038, python, 39466 MiB\nGPU-2cd3d7d6-9d54-e5c7-733b-37e973189f15, 2615690, /home/gem/anaconda3/envs/ipow/bin/python, 39608 MiB\nGPU-03df652b-a6d5-dc41-b7c0-9ca939fcd3e2, 3097657, /home/gem/anaconda3/envs/VMUNet118/bin/python3, 45478 MiB\nGPU-0f51d706-a722-66e6-27ed-f42fbd25f437, 3097721, /home/gem/anaconda3/envs/VMUNet118/bin/python3, 45094 MiB\nGPU-4bd17b35-0f44-aed0-695e-e90088c4a1c6, 3097591, /home/gem/anaconda3/envs/VMUNet118/bin/python3, 45222 MiB\n"
+  },
+  "eicu": {
+    "budget_replay": [
+      {
+        "db": "eicu",
+        "seed_endpoint": "48:0",
+        "recorded_epochs": 256,
+        "raw_rule_first_stop": 256,
+        "history_sha256": "675d85aec4eaa3fb86709b5ff5f557a724b3801d38b8ad7146e8634eec8eb581"
+      },
+      {
+        "db": "eicu",
+        "seed_endpoint": "48:1",
+        "recorded_epochs": 256,
+        "raw_rule_first_stop": 256,
+        "history_sha256": "99ae4de94f5576ae0f28a05f2012a14ea9d8dd65d597c7d78759a80603b59537"
+      },
+      {
+        "db": "eicu",
+        "seed_endpoint": "49:0",
+        "recorded_epochs": 256,
+        "raw_rule_first_stop": 256,
+        "history_sha256": "ddd6ab427900beb218cfb5ece9832395a72f2bb8c3aaa80e45838d27dba3a718"
+      },
+      {
+        "db": "eicu",
+        "seed_endpoint": "49:1",
+        "recorded_epochs": 256,
+        "raw_rule_first_stop": 256,
+        "history_sha256": "2fb5e87a1d91f4cf39893fe42f3527d2d36b9ac81e5807ff8e772d5e672dffe9"
+      },
+      {
+        "db": "eicu",
+        "seed_endpoint": "50:0",
+        "recorded_epochs": 256,
+        "raw_rule_first_stop": 256,
+        "history_sha256": "851df2461761a62a135feddfc58c77280b82205a3cf4b27660c7e5de5f0fd69a"
+      },
+      {
+        "db": "eicu",
+        "seed_endpoint": "50:1",
+        "recorded_epochs": 256,
+        "raw_rule_first_stop": 256,
+        "history_sha256": "c2cfa043a62fd101eb520dd5802c1bbf498b730c72ffb650d4f6581a73ec7031"
+      }
+    ],
+    "project": "/home/data/lxm/TRACEHR",
+    "disk_free_gib": 13259.830791473389,
+    "available_ram": "468867460 kB",
+    "gpus": "0, NVIDIA RTX 5880 Ada Generation, 49140 MiB, 48507 MiB, 0 %\n1, NVIDIA RTX 5880 Ada Generation, 49140 MiB, 48507 MiB, 0 %\n2, NVIDIA RTX 5880 Ada Generation, 49140 MiB, 48507 MiB, 0 %\n3, NVIDIA RTX 5880 Ada Generation, 49140 MiB, 44704 MiB, 0 %\n4, NVIDIA RTX 5880 Ada Generation, 49140 MiB, 48507 MiB, 0 %\n5, NVIDIA RTX 5880 Ada Generation, 49140 MiB, 22086 MiB, 40 %\n6, NVIDIA RTX 5880 Ada Generation, 49140 MiB, 48507 MiB, 0 %\n7, NVIDIA RTX 5880 Ada Generation, 49140 MiB, 48507 MiB, 0 %\n",
+    "processes": "GPU-e7380230-251c-3ba9-70c5-6800e0235a5f, 7749, /home/gem/anaconda3/envs/sam3_gemma_test/bin/python, 3798 MiB\nGPU-733212f7-07d4-ce3b-5188-d5bb3f0f5901, 4071309, /home/gem/anaconda3/envs/3DFusion/bin/python, 26416 MiB\n"
+  }
+}

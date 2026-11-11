@@ -1,0 +1,7 @@
+{
+  "analysis.py": "455df33c1bc1d71112e069cca65eaa16970a73e60401e25a02ed1132bd7ef80d",
+  "prior_utilities.py": "cd51cf7bc83ff85ac8604d3acc753c4bf4b6db02853d75d11284c0797293b12d",
+  "prior_statistics.py": "dbf2650ba02d43591b84744c8d50dbd58048be175c237be1e394dd889580148e",
+  "prior_significance.py": "c59cdc26825de406baf42d5b8fc0f8d636176efccc48f3b108c8ead05ec5e34c",
+  "training_manifests.json": "7dc713624101a5bbe20094e0ae24321f82322107b9a60da17f2d8a41237a25fd"
+}

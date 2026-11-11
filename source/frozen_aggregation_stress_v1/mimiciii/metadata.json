@@ -1,0 +1,1050 @@
+{
+  "complete": true,
+  "database": "mimiciii",
+  "version": "v3",
+  "receipts": {
+    "duration_t0_s48": {
+      "complete": true,
+      "method": "duration",
+      "endpoint": 0,
+      "seed": 48,
+      "checkpoint_sha256": "4c6e15d690c1d19ba6e70a62e30bfb6585d23bc4251ecc63189db4ff3b9ecd37",
+      "source_sha256": "59e0711d370514a7ebf2f7485a8f058ade71561f191914e8101a977acd360336",
+      "predictions": {
+        "lab_drop25": {
+          "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimiciii/frozen_inference_v2/jobs/CEM-Net_t0_s48/lab_drop25.npz",
+          "sha256": "567ec959f385d4a9220210417c270e517b76f4e161fcba4d8703fa7cf99c734f",
+          "reused": true
+        },
+        "lab_drop50": {
+          "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimiciii/frozen_inference_v2/jobs/CEM-Net_t0_s48/lab_drop50.npz",
+          "sha256": "5b89fe88831323d4cbc6ddf8f76a8ceb7126b132bd80c5f7d983221faf1e6762",
+          "reused": true
+        },
+        "lab_delay2h": {
+          "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimiciii/frozen_inference_v2/jobs/CEM-Net_t0_s48/lab_delay2h.npz",
+          "sha256": "00ed91e7162d87ef26c2f6ad065cc966ad20bc49fd77adc8d59f2c8628558079",
+          "reused": true
+        },
+        "lab_delay6h": {
+          "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimiciii/frozen_inference_v2/jobs/CEM-Net_t0_s48/lab_delay6h.npz",
+          "sha256": "55a859859c8c62f992954f98254f9d6618d92896d39d2a0b0cad0c8ba42578fc",
+          "reused": true
+        }
+      },
+      "reused_cases": 4,
+      "new_cases": 0,
+      "inference_seconds": {},
+      "clean_seconds": 15.528520584106445,
+      "clean_probability_drift": 1.7881393432617188e-07,
+      "clean_AP_drift": 0.0,
+      "optimizer_updates": 0,
+      "weights_unchanged": true,
+      "normalization_refit": false,
+      "device": "CPU",
+      "precision": "FP32",
+      "threads": 4,
+      "batch": 256,
+      "reused_completed_evaluation": {
+        "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_aggregation_stress_20261106/mimiciii/v2/predictions/duration_t0_s48/completion.json",
+        "sha256": "1bdc6a6ff0c0e7f5b4f5e62823e501e7bd7e309bd6c4bbc80fad523af2d52efe"
+      }
+    },
+    "duration_t0_s49": {
+      "complete": true,
+      "method": "duration",
+      "endpoint": 0,
+      "seed": 49,
+      "checkpoint_sha256": "a2278e97e730af9335e96bdd4b910fd802de08b56003e2c80831715050594168",
+      "source_sha256": "59e0711d370514a7ebf2f7485a8f058ade71561f191914e8101a977acd360336",
+      "predictions": {
+        "lab_drop25": {
+          "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimiciii/frozen_inference_v2/jobs/CEM-Net_t0_s49/lab_drop25.npz",
+          "sha256": "4852b752eab33705962e9a9e89d89b74909ffcdc4855c96652281bb3bdd56b8f",
+          "reused": true
+        },
+        "lab_drop50": {
+          "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimiciii/frozen_inference_v2/jobs/CEM-Net_t0_s49/lab_drop50.npz",
+          "sha256": "d550ce0e3cfa8a5965c0834b5b9adddd0a35aa88a66e666b0b64e209be7ceab8",
+          "reused": true
+        },
+        "lab_delay2h": {
+          "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimiciii/frozen_inference_v2/jobs/CEM-Net_t0_s49/lab_delay2h.npz",
+          "sha256": "285f1c2507dd6e63acf6dc02cdad011e01a12a785a9bf6a36ff2aea77c127063",
+          "reused": true
+        },
+        "lab_delay6h": {
+          "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimiciii/frozen_inference_v2/jobs/CEM-Net_t0_s49/lab_delay6h.npz",
+          "sha256": "fe5b1d5fd69142b451e82a81e9ad647827337b7dfb77c32c38b41f998de32097",
+          "reused": true
+        }
+      },
+      "reused_cases": 4,
+      "new_cases": 0,
+      "inference_seconds": {},
+      "clean_seconds": 16.062443733215332,
+      "clean_probability_drift": 2.384185791015625e-07,
+      "clean_AP_drift": 0.0,
+      "optimizer_updates": 0,
+      "weights_unchanged": true,
+      "normalization_refit": false,
+      "device": "CPU",
+      "precision": "FP32",
+      "threads": 4,
+      "batch": 256,
+      "reused_completed_evaluation": {
+        "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_aggregation_stress_20261106/mimiciii/v2/predictions/duration_t0_s49/completion.json",
+        "sha256": "e283d65f51ac8ad3d6fb7bac994654101b7a8dc86f43bca7aaafa4c1fe7f3587"
+      }
+    },
+    "duration_t0_s50": {
+      "complete": true,
+      "method": "duration",
+      "endpoint": 0,
+      "seed": 50,
+      "checkpoint_sha256": "a770d25f076382359647e4692bd49497a0dabfeb79ad90c526a8b3ff75a03a59",
+      "source_sha256": "59e0711d370514a7ebf2f7485a8f058ade71561f191914e8101a977acd360336",
+      "predictions": {
+        "lab_drop25": {
+          "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimiciii/frozen_inference_v2/jobs/CEM-Net_t0_s50/lab_drop25.npz",
+          "sha256": "5451c39a959ec03b90b58d05d91f23d8070048d585ce2b8fcf7f409df57e21df",
+          "reused": true
+        },
+        "lab_drop50": {
+          "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimiciii/frozen_inference_v2/jobs/CEM-Net_t0_s50/lab_drop50.npz",
+          "sha256": "b81385a5b901c8166a5aeda8f82f030b90b36720738ca11bb21f9d972015a7f1",
+          "reused": true
+        },
+        "lab_delay2h": {
+          "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimiciii/frozen_inference_v2/jobs/CEM-Net_t0_s50/lab_delay2h.npz",
+          "sha256": "ccd6f8b91dbf805f6e28f66faafddcb7b1e728a024fe582dc11027025e0d1cc7",
+          "reused": true
+        },
+        "lab_delay6h": {
+          "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimiciii/frozen_inference_v2/jobs/CEM-Net_t0_s50/lab_delay6h.npz",
+          "sha256": "dd8fc5db96ee05d9cf40236323f798b16a3f4b9b274f67e03cbca659765010d4",
+          "reused": true
+        }
+      },
+      "reused_cases": 4,
+      "new_cases": 0,
+      "inference_seconds": {},
+      "clean_seconds": 15.867477655410767,
+      "clean_probability_drift": 1.4901161193847656e-07,
+      "clean_AP_drift": 0.0,
+      "optimizer_updates": 0,
+      "weights_unchanged": true,
+      "normalization_refit": false,
+      "device": "CPU",
+      "precision": "FP32",
+      "threads": 4,
+      "batch": 256,
+      "reused_completed_evaluation": {
+        "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_aggregation_stress_20261106/mimiciii/v2/predictions/duration_t0_s50/completion.json",
+        "sha256": "33cbab3292e76c1dd66360f25bea647c074ca210b9cb53dd7ab2a1dc65cec293"
+      }
+    },
+    "duration_t0_s51": {
+      "complete": true,
+      "method": "duration",
+      "endpoint": 0,
+      "seed": 51,
+      "checkpoint_sha256": "bffd396e0c692b6058099cde38d29268415b99e57edcd7b1c642f987b7dd170d",
+      "source_sha256": "59e0711d370514a7ebf2f7485a8f058ade71561f191914e8101a977acd360336",
+      "predictions": {
+        "lab_drop25": {
+          "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_aggregation_stress_20261106/mimiciii/v2/predictions/duration_t0_s51/lab_drop25.npz",
+          "sha256": "541ac2280b959699676b9fc5941de75eb908aed502563d42416c6a6e76f2a078",
+          "reused": false
+        },
+        "lab_drop50": {
+          "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_aggregation_stress_20261106/mimiciii/v2/predictions/duration_t0_s51/lab_drop50.npz",
+          "sha256": "bdea44c371285b72809b9ee79c2e88d22bb981e87682cad589b8d3a574fcd7dd",
+          "reused": false
+        },
+        "lab_delay2h": {
+          "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_aggregation_stress_20261106/mimiciii/v2/predictions/duration_t0_s51/lab_delay2h.npz",
+          "sha256": "bfc358d76b5a8d5e80009cb75bb9b56e7a8286696a079b8b731d935a255afc84",
+          "reused": false
+        },
+        "lab_delay6h": {
+          "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_aggregation_stress_20261106/mimiciii/v2/predictions/duration_t0_s51/lab_delay6h.npz",
+          "sha256": "a35c75ac03d4b64fefcdc4750120cbeb40ea5d9ab3cbe717674fb95c564bd721",
+          "reused": false
+        }
+      },
+      "reused_cases": 0,
+      "new_cases": 4,
+      "inference_seconds": {
+        "lab_drop25": 17.731788873672485,
+        "lab_drop50": 19.114814043045044,
+        "lab_delay2h": 19.667780876159668,
+        "lab_delay6h": 16.917237997055054
+      },
+      "clean_seconds": 19.312856674194336,
+      "clean_probability_drift": 2.980232238769531e-07,
+      "clean_AP_drift": 0.0,
+      "optimizer_updates": 0,
+      "weights_unchanged": true,
+      "normalization_refit": false,
+      "device": "CPU",
+      "precision": "FP32",
+      "threads": 4,
+      "batch": 256,
+      "reused_completed_evaluation": {
+        "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_aggregation_stress_20261106/mimiciii/v2/predictions/duration_t0_s51/completion.json",
+        "sha256": "50904a8b6d248d25d500bd2aea4995467fa9cebe40657d6480ad0fae1c35a98f"
+      }
+    },
+    "duration_t0_s52": {
+      "complete": true,
+      "method": "duration",
+      "endpoint": 0,
+      "seed": 52,
+      "checkpoint_sha256": "eec500bc829c7aa28eae606d913952510ae658d6a92951c8ae1281751e609b85",
+      "source_sha256": "59e0711d370514a7ebf2f7485a8f058ade71561f191914e8101a977acd360336",
+      "predictions": {
+        "lab_drop25": {
+          "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_aggregation_stress_20261106/mimiciii/v2/predictions/duration_t0_s52/lab_drop25.npz",
+          "sha256": "f01221baa1eda27dfcae9037155a87a456af8eb7f5c39948e02442c1de28a6dd",
+          "reused": false
+        },
+        "lab_drop50": {
+          "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_aggregation_stress_20261106/mimiciii/v2/predictions/duration_t0_s52/lab_drop50.npz",
+          "sha256": "53cdb7011448cc671df5ff363415b955fc9f38c845be341e30d6d24dc99ea0f6",
+          "reused": false
+        },
+        "lab_delay2h": {
+          "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_aggregation_stress_20261106/mimiciii/v2/predictions/duration_t0_s52/lab_delay2h.npz",
+          "sha256": "1ce5a036bd17ef387cd0492eef9405d3056eba69f4ba2da05a0e2599c03f19ab",
+          "reused": false
+        },
+        "lab_delay6h": {
+          "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_aggregation_stress_20261106/mimiciii/v2/predictions/duration_t0_s52/lab_delay6h.npz",
+          "sha256": "0cda25f1cc7893d1e26bc9f89d7b1ec0e3c48a69fb1ce91232e4685fc22dccbf",
+          "reused": false
+        }
+      },
+      "reused_cases": 0,
+      "new_cases": 4,
+      "inference_seconds": {
+        "lab_drop25": 16.596163988113403,
+        "lab_drop50": 19.803479433059692,
+        "lab_delay2h": 16.63434386253357,
+        "lab_delay6h": 17.676127910614014
+      },
+      "clean_seconds": 16.449867010116577,
+      "clean_probability_drift": 1.4901161193847656e-07,
+      "clean_AP_drift": 0.0,
+      "optimizer_updates": 0,
+      "weights_unchanged": true,
+      "normalization_refit": false,
+      "device": "CPU",
+      "precision": "FP32",
+      "threads": 4,
+      "batch": 256,
+      "reused_completed_evaluation": {
+        "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_aggregation_stress_20261106/mimiciii/v2/predictions/duration_t0_s52/completion.json",
+        "sha256": "4032424bfebdf68e3de6f9fc8a1ff46dc43e4d3211a225099aa464bdc95e78b5"
+      }
+    },
+    "duration_t1_s48": {
+      "complete": true,
+      "method": "duration",
+      "endpoint": 1,
+      "seed": 48,
+      "checkpoint_sha256": "b6bac9f6ec7c7f871524bfa7bae4c41dccfbd7b873efc2ab09c984a278d35bbf",
+      "source_sha256": "59e0711d370514a7ebf2f7485a8f058ade71561f191914e8101a977acd360336",
+      "predictions": {
+        "lab_drop25": {
+          "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimiciii/frozen_inference_v2/jobs/CEM-Net_t1_s48/lab_drop25.npz",
+          "sha256": "2d8368222a8e52ef3311c93fcb6a6f10beb7e13b79fd26877503d6152788e4bb",
+          "reused": true
+        },
+        "lab_drop50": {
+          "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimiciii/frozen_inference_v2/jobs/CEM-Net_t1_s48/lab_drop50.npz",
+          "sha256": "c971832b66c4e990e94a589a82fd6ae073b3a24eb6de5fb74b21e63388a0490a",
+          "reused": true
+        },
+        "lab_delay2h": {
+          "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimiciii/frozen_inference_v2/jobs/CEM-Net_t1_s48/lab_delay2h.npz",
+          "sha256": "828b03f29d054c278efd5fd7ccc5063a4fdef177751ed9914daef72c4cf16e04",
+          "reused": true
+        },
+        "lab_delay6h": {
+          "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimiciii/frozen_inference_v2/jobs/CEM-Net_t1_s48/lab_delay6h.npz",
+          "sha256": "906fcd6256d00b2e828a6bcd4d09d27cd49273123577adfac46bfa996c41aa39",
+          "reused": true
+        }
+      },
+      "reused_cases": 4,
+      "new_cases": 0,
+      "inference_seconds": {},
+      "clean_seconds": 20.68222951889038,
+      "clean_probability_drift": 1.7881393432617188e-07,
+      "clean_AP_drift": 0.0,
+      "optimizer_updates": 0,
+      "weights_unchanged": true,
+      "normalization_refit": false,
+      "device": "CPU",
+      "precision": "FP32",
+      "threads": 4,
+      "batch": 256,
+      "reused_completed_evaluation": {
+        "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_aggregation_stress_20261106/mimiciii/v2/predictions/duration_t1_s48/completion.json",
+        "sha256": "cbf9ab05f909bbdc3c291db2bbbe793d045be4fbd6de03219246c18613cd4af6"
+      }
+    },
+    "duration_t1_s49": {
+      "complete": true,
+      "method": "duration",
+      "endpoint": 1,
+      "seed": 49,
+      "checkpoint_sha256": "8aa23dfc2411c902a1d7c0c2fca6296e214df23705ba69591a3346e16652a254",
+      "source_sha256": "59e0711d370514a7ebf2f7485a8f058ade71561f191914e8101a977acd360336",
+      "predictions": {
+        "lab_drop25": {
+          "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimiciii/frozen_inference_v2/jobs/CEM-Net_t1_s49/lab_drop25.npz",
+          "sha256": "ba971d8ce02629ab8cc9183596771c42015d5cd9c5d0f26fe40007d381c07d3f",
+          "reused": true
+        },
+        "lab_drop50": {
+          "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimiciii/frozen_inference_v2/jobs/CEM-Net_t1_s49/lab_drop50.npz",
+          "sha256": "abf34661e2cc8452c9013d372e9b1564ce867a1cdcc63875450996307c7d8741",
+          "reused": true
+        },
+        "lab_delay2h": {
+          "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimiciii/frozen_inference_v2/jobs/CEM-Net_t1_s49/lab_delay2h.npz",
+          "sha256": "16c6589e92b20acb4e86c2f3ddcacaf37dbcc665044a7f74523a97376cace3f3",
+          "reused": true
+        },
+        "lab_delay6h": {
+          "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimiciii/frozen_inference_v2/jobs/CEM-Net_t1_s49/lab_delay6h.npz",
+          "sha256": "0a8eed746a4544ba82a8dbc38237972c67dcc48b49c0d3b24acccef3e1967799",
+          "reused": true
+        }
+      },
+      "reused_cases": 4,
+      "new_cases": 0,
+      "inference_seconds": {},
+      "clean_seconds": 24.883259057998657,
+      "clean_probability_drift": 1.1920928955078125e-07,
+      "clean_AP_drift": 0.0,
+      "optimizer_updates": 0,
+      "weights_unchanged": true,
+      "normalization_refit": false,
+      "device": "CPU",
+      "precision": "FP32",
+      "threads": 4,
+      "batch": 256,
+      "reused_completed_evaluation": {
+        "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_aggregation_stress_20261106/mimiciii/v2/predictions/duration_t1_s49/completion.json",
+        "sha256": "cb873f558c82878a39516aa1badcdb829397221a61518e813d4e7f930f371052"
+      }
+    },
+    "duration_t1_s50": {
+      "complete": true,
+      "method": "duration",
+      "endpoint": 1,
+      "seed": 50,
+      "checkpoint_sha256": "6840794446d359a8602d427c8949df3b127fedfb34fcf35bad3b9123325a89f4",
+      "source_sha256": "59e0711d370514a7ebf2f7485a8f058ade71561f191914e8101a977acd360336",
+      "predictions": {
+        "lab_drop25": {
+          "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimiciii/frozen_inference_v2/jobs/CEM-Net_t1_s50/lab_drop25.npz",
+          "sha256": "a977590f3d0b6247f34935f08e23f57703ff3e820402b80f60be7315feb82947",
+          "reused": true
+        },
+        "lab_drop50": {
+          "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimiciii/frozen_inference_v2/jobs/CEM-Net_t1_s50/lab_drop50.npz",
+          "sha256": "971bb252fb6547cc3a179c55b71a8067b0cb1e0298daaf8229355036dfc7cab1",
+          "reused": true
+        },
+        "lab_delay2h": {
+          "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimiciii/frozen_inference_v2/jobs/CEM-Net_t1_s50/lab_delay2h.npz",
+          "sha256": "f6981ad1a54f218ce9e29f5164cec0db9d5ebb16df86c63c394221a2bedcb123",
+          "reused": true
+        },
+        "lab_delay6h": {
+          "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimiciii/frozen_inference_v2/jobs/CEM-Net_t1_s50/lab_delay6h.npz",
+          "sha256": "06a0bda5b50a78997a01bd1d670cd14aaa0a5b81374021460b0cd400e4c86a2b",
+          "reused": true
+        }
+      },
+      "reused_cases": 4,
+      "new_cases": 0,
+      "inference_seconds": {},
+      "clean_seconds": 20.553059101104736,
+      "clean_probability_drift": 1.1920928955078125e-07,
+      "clean_AP_drift": 0.0,
+      "optimizer_updates": 0,
+      "weights_unchanged": true,
+      "normalization_refit": false,
+      "device": "CPU",
+      "precision": "FP32",
+      "threads": 4,
+      "batch": 256,
+      "reused_completed_evaluation": {
+        "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_aggregation_stress_20261106/mimiciii/v2/predictions/duration_t1_s50/completion.json",
+        "sha256": "139d4ccc62c921a3f842bbc96935d9c87f6e5b15cebf999bb33be6f530c3f993"
+      }
+    },
+    "duration_t1_s51": {
+      "complete": true,
+      "method": "duration",
+      "endpoint": 1,
+      "seed": 51,
+      "checkpoint_sha256": "b0922698009a3ac483bd889e7c986c564ce18f9124ff565f9480a28eaf4b073d",
+      "source_sha256": "59e0711d370514a7ebf2f7485a8f058ade71561f191914e8101a977acd360336",
+      "predictions": {
+        "lab_drop25": {
+          "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_aggregation_stress_20261106/mimiciii/v2/predictions/duration_t1_s51/lab_drop25.npz",
+          "sha256": "83b3539741f330e5c4922546b369e458e463b39f88cc3ab3998ef41f33a26f40",
+          "reused": false
+        },
+        "lab_drop50": {
+          "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_aggregation_stress_20261106/mimiciii/v2/predictions/duration_t1_s51/lab_drop50.npz",
+          "sha256": "2383d6258311d818b5f126c93849b32417d86769a377194463e3e7b2c861d041",
+          "reused": false
+        },
+        "lab_delay2h": {
+          "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_aggregation_stress_20261106/mimiciii/v2/predictions/duration_t1_s51/lab_delay2h.npz",
+          "sha256": "3da1f79e59be6e10fda58f515c7b45e8674e6f460ffeadeb845f5dd8e6b8b9df",
+          "reused": false
+        },
+        "lab_delay6h": {
+          "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_aggregation_stress_20261106/mimiciii/v2/predictions/duration_t1_s51/lab_delay6h.npz",
+          "sha256": "116c7aa5e355cc590ebc1d4f7defb3ad5212168b22f3202effd2a73a6c9b4bea",
+          "reused": false
+        }
+      },
+      "reused_cases": 0,
+      "new_cases": 4,
+      "inference_seconds": {
+        "lab_drop25": 19.47597861289978,
+        "lab_drop50": 22.062639236450195,
+        "lab_delay2h": 17.986482620239258,
+        "lab_delay6h": 19.786039352416992
+      },
+      "clean_seconds": 19.18456721305847,
+      "clean_probability_drift": 1.7881393432617188e-07,
+      "clean_AP_drift": 0.0,
+      "optimizer_updates": 0,
+      "weights_unchanged": true,
+      "normalization_refit": false,
+      "device": "CPU",
+      "precision": "FP32",
+      "threads": 4,
+      "batch": 256,
+      "reused_completed_evaluation": {
+        "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_aggregation_stress_20261106/mimiciii/v2/predictions/duration_t1_s51/completion.json",
+        "sha256": "5ab9a45083a5f6a6439b3e941cc64470a8fe4f91c8886d42697e2ec3086df1a5"
+      }
+    },
+    "duration_t1_s52": {
+      "complete": true,
+      "method": "duration",
+      "endpoint": 1,
+      "seed": 52,
+      "checkpoint_sha256": "220aff41379c468d7078ef3981f5977ff34bea14820e0e90d79e1795162edf11",
+      "source_sha256": "59e0711d370514a7ebf2f7485a8f058ade71561f191914e8101a977acd360336",
+      "predictions": {
+        "lab_drop25": {
+          "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_aggregation_stress_20261106/mimiciii/v2/predictions/duration_t1_s52/lab_drop25.npz",
+          "sha256": "abe3f25d77a47caf2fe8300d6d106b2babad1daefe361bdb68301c1bffe541f3",
+          "reused": false
+        },
+        "lab_drop50": {
+          "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_aggregation_stress_20261106/mimiciii/v2/predictions/duration_t1_s52/lab_drop50.npz",
+          "sha256": "96bcc6aae1f9bc020ba0287f5a34bc96abb710fb74dda458f3fd7b7ae41e715d",
+          "reused": false
+        },
+        "lab_delay2h": {
+          "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_aggregation_stress_20261106/mimiciii/v2/predictions/duration_t1_s52/lab_delay2h.npz",
+          "sha256": "5407b96353d507cd6b25f4df530eb5fa4ddbbf01f9f267b17a7441c1b60b5a82",
+          "reused": false
+        },
+        "lab_delay6h": {
+          "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_aggregation_stress_20261106/mimiciii/v2/predictions/duration_t1_s52/lab_delay6h.npz",
+          "sha256": "6e84df6bce98384bd8987a14060a0db959b0762e239c26f1bdd91c05a99eb619",
+          "reused": false
+        }
+      },
+      "reused_cases": 0,
+      "new_cases": 4,
+      "inference_seconds": {
+        "lab_drop25": 19.165573120117188,
+        "lab_drop50": 20.67362666130066,
+        "lab_delay2h": 19.323392629623413,
+        "lab_delay6h": 16.294922828674316
+      },
+      "clean_seconds": 17.103818893432617,
+      "clean_probability_drift": 1.1920928955078125e-07,
+      "clean_AP_drift": 0.0,
+      "optimizer_updates": 0,
+      "weights_unchanged": true,
+      "normalization_refit": false,
+      "device": "CPU",
+      "precision": "FP32",
+      "threads": 4,
+      "batch": 256,
+      "reused_completed_evaluation": {
+        "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_aggregation_stress_20261106/mimiciii/v2/predictions/duration_t1_s52/completion.json",
+        "sha256": "c3f9d94426afa1847f8a35c5f34835b8c8bee4303264928f2b7990c201ad2c17"
+      }
+    },
+    "window_t0_s48": {
+      "complete": true,
+      "method": "window",
+      "endpoint": 0,
+      "seed": 48,
+      "checkpoint_sha256": "f303fe664bcbf8d524e73c0b7bf4294f34017269ab699fb68409ed3a97c67be0",
+      "source_sha256": "19715474295e12b077cb55013aac96e893ff8c80e97b4c4c98985c1cda71d156",
+      "predictions": {
+        "lab_drop25": {
+          "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_aggregation_stress_20261106/mimiciii/v3/predictions/window_t0_s48/lab_drop25.npz",
+          "sha256": "841f16c8cc2b015becc0a4c606c3fc85c7b5133f7f02066929528eb678e2855c",
+          "reused": false
+        },
+        "lab_drop50": {
+          "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_aggregation_stress_20261106/mimiciii/v3/predictions/window_t0_s48/lab_drop50.npz",
+          "sha256": "e56076ffc4723f88d9fb532627c3e62fa00820e80a42b3c74dfe89fb0d78dfbf",
+          "reused": false
+        },
+        "lab_delay2h": {
+          "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_aggregation_stress_20261106/mimiciii/v3/predictions/window_t0_s48/lab_delay2h.npz",
+          "sha256": "a1b8e2ebea5a98b94c19362b01d6cb3622637de1b98d432f8df834b7c87ccee6",
+          "reused": false
+        },
+        "lab_delay6h": {
+          "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_aggregation_stress_20261106/mimiciii/v3/predictions/window_t0_s48/lab_delay6h.npz",
+          "sha256": "3e2713896b0e2110b8eca3b8b4ccadf774b2bee2f8b3ee01996c542fb57f7ad7",
+          "reused": false
+        }
+      },
+      "reused_cases": 0,
+      "new_cases": 4,
+      "inference_seconds": {
+        "lab_drop25": 10.200514793395996,
+        "lab_drop50": 9.549689531326294,
+        "lab_delay2h": 9.157196044921875,
+        "lab_delay6h": 9.52429461479187
+      },
+      "clean_seconds": 9.268459796905518,
+      "clean_probability_drift": 2.384185791015625e-07,
+      "clean_AP_drift": 0.0,
+      "optimizer_updates": 0,
+      "weights_unchanged": true,
+      "normalization_refit": false,
+      "device": "CPU",
+      "precision": "FP32",
+      "threads": 4,
+      "batch": 256,
+      "batches_in_parallel": 4
+    },
+    "window_t0_s49": {
+      "complete": true,
+      "method": "window",
+      "endpoint": 0,
+      "seed": 49,
+      "checkpoint_sha256": "a4a571a35cc2cf8fba0ab1b5b58ebcd8cfefc9a14924b5ff989796540b552b7e",
+      "source_sha256": "19715474295e12b077cb55013aac96e893ff8c80e97b4c4c98985c1cda71d156",
+      "predictions": {
+        "lab_drop25": {
+          "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_aggregation_stress_20261106/mimiciii/v3/predictions/window_t0_s49/lab_drop25.npz",
+          "sha256": "bdc5a0d5b7a6a1e6ebaa4908541c327721e18e2a0dd775f19a1444b7c35069a3",
+          "reused": false
+        },
+        "lab_drop50": {
+          "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_aggregation_stress_20261106/mimiciii/v3/predictions/window_t0_s49/lab_drop50.npz",
+          "sha256": "e136ea899363b7c7a86ab317d9572164b02b51ac821103072740f10d646eea32",
+          "reused": false
+        },
+        "lab_delay2h": {
+          "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_aggregation_stress_20261106/mimiciii/v3/predictions/window_t0_s49/lab_delay2h.npz",
+          "sha256": "0f62b90a5042b59424dc2c1699411726e4fae0dcb41e3056dbc5b6179a809a7d",
+          "reused": false
+        },
+        "lab_delay6h": {
+          "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_aggregation_stress_20261106/mimiciii/v3/predictions/window_t0_s49/lab_delay6h.npz",
+          "sha256": "056ad977aa437272b318183e90f36a851e76dc76562e4c3fb17f1870e77b99ca",
+          "reused": false
+        }
+      },
+      "reused_cases": 0,
+      "new_cases": 4,
+      "inference_seconds": {
+        "lab_drop25": 8.688335418701172,
+        "lab_drop50": 7.863028287887573,
+        "lab_delay2h": 7.021673679351807,
+        "lab_delay6h": 6.78635573387146
+      },
+      "clean_seconds": 8.76689863204956,
+      "clean_probability_drift": 2.384185791015625e-07,
+      "clean_AP_drift": 0.0,
+      "optimizer_updates": 0,
+      "weights_unchanged": true,
+      "normalization_refit": false,
+      "device": "CPU",
+      "precision": "FP32",
+      "threads": 4,
+      "batch": 256,
+      "batches_in_parallel": 4
+    },
+    "window_t0_s50": {
+      "complete": true,
+      "method": "window",
+      "endpoint": 0,
+      "seed": 50,
+      "checkpoint_sha256": "9e808cd8d79d8dac272502ccf7d02ea8538c9fa73fac9cc831aa15e71245fed1",
+      "source_sha256": "19715474295e12b077cb55013aac96e893ff8c80e97b4c4c98985c1cda71d156",
+      "predictions": {
+        "lab_drop25": {
+          "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_aggregation_stress_20261106/mimiciii/v3/predictions/window_t0_s50/lab_drop25.npz",
+          "sha256": "e1d8ba19a6a17abcab89b0a221c01c97a62a2641cf8df8303f0bb95214631ec9",
+          "reused": false
+        },
+        "lab_drop50": {
+          "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_aggregation_stress_20261106/mimiciii/v3/predictions/window_t0_s50/lab_drop50.npz",
+          "sha256": "b7b03bdf5520a0db6301342302edbeaf35fcd08256c352a26790c624cb25ff71",
+          "reused": false
+        },
+        "lab_delay2h": {
+          "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_aggregation_stress_20261106/mimiciii/v3/predictions/window_t0_s50/lab_delay2h.npz",
+          "sha256": "250fdb05e387b7efc63b69d21b3ac616c16a494dfcc7c2a071c2e43cd98a7399",
+          "reused": false
+        },
+        "lab_delay6h": {
+          "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_aggregation_stress_20261106/mimiciii/v3/predictions/window_t0_s50/lab_delay6h.npz",
+          "sha256": "4ab90b9bd4fabf1fdd40e96939182cb4c5bea05fbd2b4902c88dfd3a43d81b5d",
+          "reused": false
+        }
+      },
+      "reused_cases": 0,
+      "new_cases": 4,
+      "inference_seconds": {
+        "lab_drop25": 6.910221576690674,
+        "lab_drop50": 8.52797245979309,
+        "lab_delay2h": 8.540855407714844,
+        "lab_delay6h": 8.028451204299927
+      },
+      "clean_seconds": 6.934881925582886,
+      "clean_probability_drift": 1.7881393432617188e-07,
+      "clean_AP_drift": 0.0,
+      "optimizer_updates": 0,
+      "weights_unchanged": true,
+      "normalization_refit": false,
+      "device": "CPU",
+      "precision": "FP32",
+      "threads": 4,
+      "batch": 256,
+      "batches_in_parallel": 4
+    },
+    "window_t0_s51": {
+      "complete": true,
+      "method": "window",
+      "endpoint": 0,
+      "seed": 51,
+      "checkpoint_sha256": "dc7f855404fc0b5ac7048eae161d01cd78368b3c7ff4d0de01cb600b34905e41",
+      "source_sha256": "19715474295e12b077cb55013aac96e893ff8c80e97b4c4c98985c1cda71d156",
+      "predictions": {
+        "lab_drop25": {
+          "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_aggregation_stress_20261106/mimiciii/v3/predictions/window_t0_s51/lab_drop25.npz",
+          "sha256": "032356e4b86e5dfad8ddc8c3ab92e5a103d939acb8ff6c679046c0f17e0b17bc",
+          "reused": false
+        },
+        "lab_drop50": {
+          "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_aggregation_stress_20261106/mimiciii/v3/predictions/window_t0_s51/lab_drop50.npz",
+          "sha256": "55d09882823b8eaaa82be5264a0d00ebda7fbc6a93e4b4fc61a8b891948219f3",
+          "reused": false
+        },
+        "lab_delay2h": {
+          "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_aggregation_stress_20261106/mimiciii/v3/predictions/window_t0_s51/lab_delay2h.npz",
+          "sha256": "5314a0d1ba29ce7688dedb9fed0fb101776498bf53de309745f6b9143cc4fee6",
+          "reused": false
+        },
+        "lab_delay6h": {
+          "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_aggregation_stress_20261106/mimiciii/v3/predictions/window_t0_s51/lab_delay6h.npz",
+          "sha256": "0053972841dbc430550b825557395bf8b345317eddbb9cac0849da16bd2d24e7",
+          "reused": false
+        }
+      },
+      "reused_cases": 0,
+      "new_cases": 4,
+      "inference_seconds": {
+        "lab_drop25": 9.227372646331787,
+        "lab_drop50": 8.722209692001343,
+        "lab_delay2h": 8.927367925643921,
+        "lab_delay6h": 8.078765630722046
+      },
+      "clean_seconds": 9.10191822052002,
+      "clean_probability_drift": 2.384185791015625e-07,
+      "clean_AP_drift": 0.0,
+      "optimizer_updates": 0,
+      "weights_unchanged": true,
+      "normalization_refit": false,
+      "device": "CPU",
+      "precision": "FP32",
+      "threads": 4,
+      "batch": 256,
+      "batches_in_parallel": 4
+    },
+    "window_t0_s52": {
+      "complete": true,
+      "method": "window",
+      "endpoint": 0,
+      "seed": 52,
+      "checkpoint_sha256": "91e9d4cfc2553a5df13b27c41183c08fef10cdc3415fac99f39ab17bdfe35720",
+      "source_sha256": "19715474295e12b077cb55013aac96e893ff8c80e97b4c4c98985c1cda71d156",
+      "predictions": {
+        "lab_drop25": {
+          "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_aggregation_stress_20261106/mimiciii/v3/predictions/window_t0_s52/lab_drop25.npz",
+          "sha256": "db9238867b1e69b1b8a7eb1622903b1c20cf162881a3e03c8ea5ef6c0ea1c94d",
+          "reused": false
+        },
+        "lab_drop50": {
+          "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_aggregation_stress_20261106/mimiciii/v3/predictions/window_t0_s52/lab_drop50.npz",
+          "sha256": "8de215b86c3ef07aa0ce95920e25a3abc34221cb6973bb61cb43b63bdb3e7a36",
+          "reused": false
+        },
+        "lab_delay2h": {
+          "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_aggregation_stress_20261106/mimiciii/v3/predictions/window_t0_s52/lab_delay2h.npz",
+          "sha256": "07fcea7d61250828ddc3db1f988e85ff33a2bf7b782623d84c358a955bbfe3a0",
+          "reused": false
+        },
+        "lab_delay6h": {
+          "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_aggregation_stress_20261106/mimiciii/v3/predictions/window_t0_s52/lab_delay6h.npz",
+          "sha256": "97d41d8a706c331ee754efe27aad1692ef0958570b38ce653d5d89eb5bc28e23",
+          "reused": false
+        }
+      },
+      "reused_cases": 0,
+      "new_cases": 4,
+      "inference_seconds": {
+        "lab_drop25": 8.433148622512817,
+        "lab_drop50": 8.604234457015991,
+        "lab_delay2h": 9.377036571502686,
+        "lab_delay6h": 8.377156734466553
+      },
+      "clean_seconds": 7.729560375213623,
+      "clean_probability_drift": 3.5762786865234375e-07,
+      "clean_AP_drift": 0.0,
+      "optimizer_updates": 0,
+      "weights_unchanged": true,
+      "normalization_refit": false,
+      "device": "CPU",
+      "precision": "FP32",
+      "threads": 4,
+      "batch": 256,
+      "batches_in_parallel": 4
+    },
+    "window_t1_s48": {
+      "complete": true,
+      "method": "window",
+      "endpoint": 1,
+      "seed": 48,
+      "checkpoint_sha256": "14541169755a2a9b4ee743fa484cebb672ce43067daec8a341293f705dbf7c06",
+      "source_sha256": "19715474295e12b077cb55013aac96e893ff8c80e97b4c4c98985c1cda71d156",
+      "predictions": {
+        "lab_drop25": {
+          "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_aggregation_stress_20261106/mimiciii/v3/predictions/window_t1_s48/lab_drop25.npz",
+          "sha256": "5788e0b147500674afa6eca67b5f74ce8ba31314ec9c64c14731a27430918b90",
+          "reused": false
+        },
+        "lab_drop50": {
+          "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_aggregation_stress_20261106/mimiciii/v3/predictions/window_t1_s48/lab_drop50.npz",
+          "sha256": "b64b1982b88d04c73ed8f19e3cee94d46a511a32e85f5644e55699aad311629b",
+          "reused": false
+        },
+        "lab_delay2h": {
+          "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_aggregation_stress_20261106/mimiciii/v3/predictions/window_t1_s48/lab_delay2h.npz",
+          "sha256": "77d633e98f3a3949a2cdd66c98bcddf36c06ebdeae011d08a16e6ad1c1269285",
+          "reused": false
+        },
+        "lab_delay6h": {
+          "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_aggregation_stress_20261106/mimiciii/v3/predictions/window_t1_s48/lab_delay6h.npz",
+          "sha256": "1eedaff59e9c9de661dd07c3b7c4c40ab8947c3ce0c2264bb3463e5caeef9a1b",
+          "reused": false
+        }
+      },
+      "reused_cases": 0,
+      "new_cases": 4,
+      "inference_seconds": {
+        "lab_drop25": 9.084015607833862,
+        "lab_drop50": 10.186930418014526,
+        "lab_delay2h": 10.274144172668457,
+        "lab_delay6h": 11.08095121383667
+      },
+      "clean_seconds": 9.935097932815552,
+      "clean_probability_drift": 2.384185791015625e-07,
+      "clean_AP_drift": 0.0,
+      "optimizer_updates": 0,
+      "weights_unchanged": true,
+      "normalization_refit": false,
+      "device": "CPU",
+      "precision": "FP32",
+      "threads": 4,
+      "batch": 256,
+      "batches_in_parallel": 4
+    },
+    "window_t1_s49": {
+      "complete": true,
+      "method": "window",
+      "endpoint": 1,
+      "seed": 49,
+      "checkpoint_sha256": "9979c399f2e59316a262f2906bc722302797332ec1a64c3a2a0fabfd727f3c8c",
+      "source_sha256": "19715474295e12b077cb55013aac96e893ff8c80e97b4c4c98985c1cda71d156",
+      "predictions": {
+        "lab_drop25": {
+          "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_aggregation_stress_20261106/mimiciii/v3/predictions/window_t1_s49/lab_drop25.npz",
+          "sha256": "814d9da799ce258e8f0841421fab1038d3afd295db9a044c96ed2dac59151bc4",
+          "reused": false
+        },
+        "lab_drop50": {
+          "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_aggregation_stress_20261106/mimiciii/v3/predictions/window_t1_s49/lab_drop50.npz",
+          "sha256": "17b5546b08edfa6f90513c8f06145b066e24f81be6a1adbdc955fa05192d4a3a",
+          "reused": false
+        },
+        "lab_delay2h": {
+          "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_aggregation_stress_20261106/mimiciii/v3/predictions/window_t1_s49/lab_delay2h.npz",
+          "sha256": "fa475414623a45ea4f2faa233e6068fd27a0fac6e9c25c571892061bb7500b61",
+          "reused": false
+        },
+        "lab_delay6h": {
+          "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_aggregation_stress_20261106/mimiciii/v3/predictions/window_t1_s49/lab_delay6h.npz",
+          "sha256": "14e9ab55e1c8a6d4bed00754a21b200e5b713da30306a261a352ce79bb29951a",
+          "reused": false
+        }
+      },
+      "reused_cases": 0,
+      "new_cases": 4,
+      "inference_seconds": {
+        "lab_drop25": 9.783466100692749,
+        "lab_drop50": 8.543887853622437,
+        "lab_delay2h": 7.021599292755127,
+        "lab_delay6h": 6.72951078414917
+      },
+      "clean_seconds": 9.216618299484253,
+      "clean_probability_drift": 1.1920928955078125e-07,
+      "clean_AP_drift": 0.0,
+      "optimizer_updates": 0,
+      "weights_unchanged": true,
+      "normalization_refit": false,
+      "device": "CPU",
+      "precision": "FP32",
+      "threads": 4,
+      "batch": 256,
+      "batches_in_parallel": 4
+    },
+    "window_t1_s50": {
+      "complete": true,
+      "method": "window",
+      "endpoint": 1,
+      "seed": 50,
+      "checkpoint_sha256": "f40130107edb7c95f52fb55e47858bd9c75507ef55e9eeeb9595ed4189375ee3",
+      "source_sha256": "19715474295e12b077cb55013aac96e893ff8c80e97b4c4c98985c1cda71d156",
+      "predictions": {
+        "lab_drop25": {
+          "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_aggregation_stress_20261106/mimiciii/v3/predictions/window_t1_s50/lab_drop25.npz",
+          "sha256": "dd2bf41862442a1897f3afa2aaf7c40c308d849f0a77b7ee44845dd7891738a9",
+          "reused": false
+        },
+        "lab_drop50": {
+          "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_aggregation_stress_20261106/mimiciii/v3/predictions/window_t1_s50/lab_drop50.npz",
+          "sha256": "c65f6a271a9ec42b593c783b168358cad54d9623917861066593e533ca5169a5",
+          "reused": false
+        },
+        "lab_delay2h": {
+          "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_aggregation_stress_20261106/mimiciii/v3/predictions/window_t1_s50/lab_delay2h.npz",
+          "sha256": "5e76bbb962a5ac738dd45bb29fd01d5b557bc7f891ee8c82363370e8bcb34f23",
+          "reused": false
+        },
+        "lab_delay6h": {
+          "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_aggregation_stress_20261106/mimiciii/v3/predictions/window_t1_s50/lab_delay6h.npz",
+          "sha256": "3e87a9c5625601f738b6d950e398231579b8b71f244ff2b85bc5a469e2214287",
+          "reused": false
+        }
+      },
+      "reused_cases": 0,
+      "new_cases": 4,
+      "inference_seconds": {
+        "lab_drop25": 9.722807884216309,
+        "lab_drop50": 9.520622730255127,
+        "lab_delay2h": 9.89063572883606,
+        "lab_delay6h": 9.961785554885864
+      },
+      "clean_seconds": 6.94798731803894,
+      "clean_probability_drift": 1.4901161193847656e-07,
+      "clean_AP_drift": 0.0,
+      "optimizer_updates": 0,
+      "weights_unchanged": true,
+      "normalization_refit": false,
+      "device": "CPU",
+      "precision": "FP32",
+      "threads": 4,
+      "batch": 256,
+      "batches_in_parallel": 4
+    },
+    "window_t1_s51": {
+      "complete": true,
+      "method": "window",
+      "endpoint": 1,
+      "seed": 51,
+      "checkpoint_sha256": "f51af4a770cc86e5028d2bfdd73c39a5910c343122f2f3f59230a5458d08e8d1",
+      "source_sha256": "19715474295e12b077cb55013aac96e893ff8c80e97b4c4c98985c1cda71d156",
+      "predictions": {
+        "lab_drop25": {
+          "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_aggregation_stress_20261106/mimiciii/v3/predictions/window_t1_s51/lab_drop25.npz",
+          "sha256": "dea8aedcb365429f7fbf49a564f1b1dd22cba6adce8d29e1fab673aba5799174",
+          "reused": false
+        },
+        "lab_drop50": {
+          "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_aggregation_stress_20261106/mimiciii/v3/predictions/window_t1_s51/lab_drop50.npz",
+          "sha256": "3a9d97fa918c34eb231bae120a20a890f5eef4bf4472a8861afd74d570c3f395",
+          "reused": false
+        },
+        "lab_delay2h": {
+          "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_aggregation_stress_20261106/mimiciii/v3/predictions/window_t1_s51/lab_delay2h.npz",
+          "sha256": "baa84d8b9110fa54880626b2d4ef9d63ee67d91682b916290b44a9b2bc230a75",
+          "reused": false
+        },
+        "lab_delay6h": {
+          "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_aggregation_stress_20261106/mimiciii/v3/predictions/window_t1_s51/lab_delay6h.npz",
+          "sha256": "24ea72f564d64e5cab2822b32e4b95c5b3c40267bc1d4d9fb74f9043dd9767b9",
+          "reused": false
+        }
+      },
+      "reused_cases": 0,
+      "new_cases": 4,
+      "inference_seconds": {
+        "lab_drop25": 9.276795387268066,
+        "lab_drop50": 9.043807744979858,
+        "lab_delay2h": 8.801804780960083,
+        "lab_delay6h": 8.67107105255127
+      },
+      "clean_seconds": 8.622903108596802,
+      "clean_probability_drift": 1.7881393432617188e-07,
+      "clean_AP_drift": -4.4330851134422034e-07,
+      "optimizer_updates": 0,
+      "weights_unchanged": true,
+      "normalization_refit": false,
+      "device": "CPU",
+      "precision": "FP32",
+      "threads": 4,
+      "batch": 256,
+      "batches_in_parallel": 4
+    },
+    "window_t1_s52": {
+      "complete": true,
+      "method": "window",
+      "endpoint": 1,
+      "seed": 52,
+      "checkpoint_sha256": "8850f9bc219aa3818ac463405e13bf05ff4e35e7055e4aee7ad7208771446872",
+      "source_sha256": "19715474295e12b077cb55013aac96e893ff8c80e97b4c4c98985c1cda71d156",
+      "predictions": {
+        "lab_drop25": {
+          "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_aggregation_stress_20261106/mimiciii/v3/predictions/window_t1_s52/lab_drop25.npz",
+          "sha256": "8995af9daf585e4c9fae5ef25fcebc6af38beddecc9184baa85562f27652127e",
+          "reused": false
+        },
+        "lab_drop50": {
+          "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_aggregation_stress_20261106/mimiciii/v3/predictions/window_t1_s52/lab_drop50.npz",
+          "sha256": "bc846c986f3923b2dba30708760f26a43db78183fde313c00a99ef9a37069399",
+          "reused": false
+        },
+        "lab_delay2h": {
+          "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_aggregation_stress_20261106/mimiciii/v3/predictions/window_t1_s52/lab_delay2h.npz",
+          "sha256": "493d6caea78d8ed616e3dfe5576331aebe097bc86e75057e75b620a676de77b5",
+          "reused": false
+        },
+        "lab_delay6h": {
+          "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_aggregation_stress_20261106/mimiciii/v3/predictions/window_t1_s52/lab_delay6h.npz",
+          "sha256": "a09cede0fae7be00df4ab178fd68107205501398ef46379ccc61e11751f6c3e7",
+          "reused": false
+        }
+      },
+      "reused_cases": 0,
+      "new_cases": 4,
+      "inference_seconds": {
+        "lab_drop25": 9.728344202041626,
+        "lab_drop50": 7.9253950119018555,
+        "lab_delay2h": 7.279603004455566,
+        "lab_delay6h": 9.278477430343628
+      },
+      "clean_seconds": 10.035794973373413,
+      "clean_probability_drift": 1.1920928955078125e-07,
+      "clean_AP_drift": 0.0,
+      "optimizer_updates": 0,
+      "weights_unchanged": true,
+      "normalization_refit": false,
+      "device": "CPU",
+      "precision": "FP32",
+      "threads": 4,
+      "batch": 256,
+      "batches_in_parallel": 4
+    }
+  },
+  "window_preparation": {
+    "complete": true,
+    "files": {
+      "lab_drop25.npy": "5bf088ded7f27763e24a108f4853e901cc537c0e63c8149764300344297f6212",
+      "lab_drop50.npy": "4b436f3b632d40cc63676f72b54fe579e80f838ab8a12bb9797b05c851832cdc",
+      "lab_delay2h.npy": "b9ba870f0fd8b2d19c3967e0009c54d0870c3eaaf3a50e4d6522bfea25c40ffd",
+      "lab_delay6h.npy": "17ebfa1f172331f0e80c9fcc40e9a189d6e60a173c3e9feea5efabcc591b224f"
+    },
+    "checks": [
+      {
+        "condition": "clean",
+        "records": 524569,
+        "clean_max_drift": 0.0,
+        "duration_replay_rows": 48
+      },
+      {
+        "condition": "lab_drop25",
+        "records": 393607,
+        "clean_max_drift": null,
+        "duration_replay_rows": 48
+      },
+      {
+        "condition": "lab_drop50",
+        "records": 262554,
+        "clean_max_drift": null,
+        "duration_replay_rows": 48
+      },
+      {
+        "condition": "lab_delay2h",
+        "records": 499274,
+        "clean_max_drift": null,
+        "duration_replay_rows": 48
+      },
+      {
+        "condition": "lab_delay6h",
+        "records": 446726,
+        "clean_max_drift": null,
+        "duration_replay_rows": 48
+      }
+    ],
+    "source_sha256": "59e0711d370514a7ebf2f7485a8f058ade71561f191914e8101a977acd360336",
+    "construction_seconds": 7.292413949966431,
+    "normalization_refit": false,
+    "total_bytes": 69443072
+  },
+  "window_preparation_reference": {
+    "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_aggregation_stress_20261106/mimiciii/v2/windows",
+    "completion_sha256": "f6e1988501c16b0b36775f22263ba152bbd0824d0edb976c9e13b6b16e3baaca",
+    "feature_function_unchanged": true,
+    "reason": "execution-only parallel batch processing; previous completed predictions retained"
+  },
+  "adopted_receipts": {
+    "duration_t0_s48": "ewogICJjb21wbGV0ZSI6IHRydWUsCiAgIm1ldGhvZCI6ICJkdXJhdGlvbiIsCiAgImVuZHBvaW50IjogMCwKICAic2VlZCI6IDQ4LAogICJjaGVja3BvaW50X3NoYTI1NiI6ICI0YzZlMTVkNjkwYzFkMTliYTZlNzBhNjJlMzBiZmI2NTg1ZDIzYmM0MjUxZWNjNjMxODlkYjRmZjNiOWVjZDM3IiwKICAic291cmNlX3NoYTI1NiI6ICI1OWUwNzExZDM3MDUxNGE3ZWJmMmY3NDg1YThmMDU4YWRlNzE1NjFmMTkxOTE0ZTgxMDFhOTc3YWNkMzYwMzM2IiwKICAicHJlZGljdGlvbnMiOiB7CiAgICAibGFiX2Ryb3AyNSI6IHsKICAgICAgInBhdGgiOiAiL2RhdGEvTHVveG0vRGlzZWFzZS1SYW5raW5nLUhhd2tlcy1NYW1iYS0wNjI0L3J1bnMvY2VtX2ljZGVfZXZpZGVuY2VfMjAyNjEwMjgvbWltaWNpaWkvZnJvemVuX2luZmVyZW5jZV92Mi9qb2JzL0NFTS1OZXRfdDBfczQ4L2xhYl9kcm9wMjUubnB6IiwKICAgICAgInNoYTI1NiI6ICI1NjdlYzk1OWYzODVkNGE5MjIwMjEwNDE3YzI3MGU1MTdiNzZmNGUxNjFmY2JhNGQ4NzAzZmE3Y2Y5OWM3MzRmIiwKICAgICAgInJldXNlZCI6IHRydWUKICAgIH0sCiAgICAibGFiX2Ryb3A1MCI6IHsKICAgICAgInBhdGgiOiAiL2RhdGEvTHVveG0vRGlzZWFzZS1SYW5raW5nLUhhd2tlcy1NYW1iYS0wNjI0L3J1bnMvY2VtX2ljZGVfZXZpZGVuY2VfMjAyNjEwMjgvbWltaWNpaWkvZnJvemVuX2luZmVyZW5jZV92Mi9qb2JzL0NFTS1OZXRfdDBfczQ4L2xhYl9kcm9wNTAubnB6IiwKICAgICAgInNoYTI1NiI6ICI1Yjg5ZmU4ODgzMTMyM2Q0Y2JjNmRkZjhmNzZhOGNlYjcxMjZiMTMyYmQ4MGM1ZjdkOTgzMjIxZmFmMWU2NzYyIiwKICAgICAgInJldXNlZCI6IHRydWUKICAgIH0sCiAgICAibGFiX2RlbGF5MmgiOiB7CiAgICAgICJwYXRoIjogIi9kYXRhL0x1b3htL0Rpc2Vhc2UtUmFua2luZy1IYXdrZXMtTWFtYmEtMDYyNC9ydW5zL2NlbV9pY2RlX2V2aWRlbmNlXzIwMjYxMDI4L21pbWljaWlpL2Zyb3plbl9pbmZlcmVuY2VfdjIvam9icy9DRU0tTmV0X3QwX3M0OC9sYWJfZGVsYXkyaC5ucHoiLAogICAgICAic2hhMjU2IjogIjAwZWQ5MWU3MTYyZDg3ZWYyNmMyZjZhZDA2NWNjOTY2YWQyMGJjNDlmZDc3YWRjOGQ1OWYyYzg2Mjg1NTgwNzkiLAogICAgICAicmV1c2VkIjogdHJ1ZQogICAgfSwKICAgICJsYWJfZGVsYXk2aCI6IHsKICAgICAgInBhdGgiOiAiL2RhdGEvTHVveG0vRGlzZWFzZS1SYW5raW5nLUhhd2tlcy1NYW1iYS0wNjI0L3J1bnMvY2VtX2ljZGVfZXZpZGVuY2VfMjAyNjEwMjgvbWltaWNpaWkvZnJvemVuX2luZmVyZW5jZV92Mi9qb2JzL0NFTS1OZXRfdDBfczQ4L2xhYl9kZWxheTZoLm5weiIsCiAgICAgICJzaGEyNTYiOiAiNTVhODU5ODU5YzhjNjJmOTkyOTU0Zjk4MjU0ZjlkNjYxOGQ5Mjg5NmQzOWQyYTBiMGNhZDBjOGJhNDI1NzhmYyIsCiAgICAgICJyZXVzZWQiOiB0cnVlCiAgICB9CiAgfSwKICAicmV1c2VkX2Nhc2VzIjogNCwKICAibmV3X2Nhc2VzIjogMCwKICAiaW5mZXJlbmNlX3NlY29uZHMiOiB7fSwKICAiY2xlYW5fc2Vjb25kcyI6IDE1LjUyODUyMDU4NDEwNjQ0NSwKICAiY2xlYW5fcHJvYmFiaWxpdHlfZHJpZnQiOiAxLjc4ODEzOTM0MzI2MTcxODhlLTA3LAogICJjbGVhbl9BUF9kcmlmdCI6IDAuMCwKICAib3B0aW1pemVyX3VwZGF0ZXMiOiAwLAogICJ3ZWlnaHRzX3VuY2hhbmdlZCI6IHRydWUsCiAgIm5vcm1hbGl6YXRpb25fcmVmaXQiOiBmYWxzZSwKICAiZGV2aWNlIjogIkNQVSIsCiAgInByZWNpc2lvbiI6ICJGUDMyIiwKICAidGhyZWFkcyI6IDQsCiAgImJhdGNoIjogMjU2Cn0=",
+    "duration_t0_s49": "ewogICJjb21wbGV0ZSI6IHRydWUsCiAgIm1ldGhvZCI6ICJkdXJhdGlvbiIsCiAgImVuZHBvaW50IjogMCwKICAic2VlZCI6IDQ5LAogICJjaGVja3BvaW50X3NoYTI1NiI6ICJhMjI3OGU5N2U3MzBhZjkzMzVlOTZiZGQ0YjkxMGZkODAyZGUwOGI1NjAwM2UyYzgwODMxNzE1MDUwNTk0MTY4IiwKICAic291cmNlX3NoYTI1NiI6ICI1OWUwNzExZDM3MDUxNGE3ZWJmMmY3NDg1YThmMDU4YWRlNzE1NjFmMTkxOTE0ZTgxMDFhOTc3YWNkMzYwMzM2IiwKICAicHJlZGljdGlvbnMiOiB7CiAgICAibGFiX2Ryb3AyNSI6IHsKICAgICAgInBhdGgiOiAiL2RhdGEvTHVveG0vRGlzZWFzZS1SYW5raW5nLUhhd2tlcy1NYW1iYS0wNjI0L3J1bnMvY2VtX2ljZGVfZXZpZGVuY2VfMjAyNjEwMjgvbWltaWNpaWkvZnJvemVuX2luZmVyZW5jZV92Mi9qb2JzL0NFTS1OZXRfdDBfczQ5L2xhYl9kcm9wMjUubnB6IiwKICAgICAgInNoYTI1NiI6ICI0ODUyYjc1MmVhYjMzNzA1OTYyZTlhOWU4OWQ4OWI3NDkwOWZmY2RjNDg1NWM5NjY1MjI4MWJiM2JkZDU2YjhmIiwKICAgICAgInJldXNlZCI6IHRydWUKICAgIH0sCiAgICAibGFiX2Ryb3A1MCI6IHsKICAgICAgInBhdGgiOiAiL2RhdGEvTHVveG0vRGlzZWFzZS1SYW5raW5nLUhhd2tlcy1NYW1iYS0wNjI0L3J1bnMvY2VtX2ljZGVfZXZpZGVuY2VfMjAyNjEwMjgvbWltaWNpaWkvZnJvemVuX2luZmVyZW5jZV92Mi9qb2JzL0NFTS1OZXRfdDBfczQ5L2xhYl9kcm9wNTAubnB6IiwKICAgICAgInNoYTI1NiI6ICJkNTUwY2UwZTNjZmE4YTU5NjVjMDgzNGI1YjlhZGRkZDBhMzVhYTg4YTY2ZTY2NmIwYjY0ZTIwOWJlN2NlYWI4IiwKICAgICAgInJldXNlZCI6IHRydWUKICAgIH0sCiAgICAibGFiX2RlbGF5MmgiOiB7CiAgICAgICJwYXRoIjogIi9kYXRhL0x1b3htL0Rpc2Vhc2UtUmFua2luZy1IYXdrZXMtTWFtYmEtMDYyNC9ydW5zL2NlbV9pY2RlX2V2aWRlbmNlXzIwMjYxMDI4L21pbWljaWlpL2Zyb3plbl9pbmZlcmVuY2VfdjIvam9icy9DRU0tTmV0X3QwX3M0OS9sYWJfZGVsYXkyaC5ucHoiLAogICAgICAic2hhMjU2IjogIjI4NWYxYzI1MDdkZDZlNjNhY2Y2ZGMwMmNkYWQwMTFlMDFhMTJhNzg1YTliZjZhMzZmZjJhZWE3N2MxMjcwNjMiLAogICAgICAicmV1c2VkIjogdHJ1ZQogICAgfSwKICAgICJsYWJfZGVsYXk2aCI6IHsKICAgICAgInBhdGgiOiAiL2RhdGEvTHVveG0vRGlzZWFzZS1SYW5raW5nLUhhd2tlcy1NYW1iYS0wNjI0L3J1bnMvY2VtX2ljZGVfZXZpZGVuY2VfMjAyNjEwMjgvbWltaWNpaWkvZnJvemVuX2luZmVyZW5jZV92Mi9qb2JzL0NFTS1OZXRfdDBfczQ5L2xhYl9kZWxheTZoLm5weiIsCiAgICAgICJzaGEyNTYiOiAiZmU1YjFkNWZkNjkxNDJiNDUxZTgyYTgxZTlhZDY0NzgyNzMzN2I3ZGZiNzdjMzJjMzhiNDFmOTk4ZGUzMjA5NyIsCiAgICAgICJyZXVzZWQiOiB0cnVlCiAgICB9CiAgfSwKICAicmV1c2VkX2Nhc2VzIjogNCwKICAibmV3X2Nhc2VzIjogMCwKICAiaW5mZXJlbmNlX3NlY29uZHMiOiB7fSwKICAiY2xlYW5fc2Vjb25kcyI6IDE2LjA2MjQ0MzczMzIxNTMzMiwKICAiY2xlYW5fcHJvYmFiaWxpdHlfZHJpZnQiOiAyLjM4NDE4NTc5MTAxNTYyNWUtMDcsCiAgImNsZWFuX0FQX2RyaWZ0IjogMC4wLAogICJvcHRpbWl6ZXJfdXBkYXRlcyI6IDAsCiAgIndlaWdodHNfdW5jaGFuZ2VkIjogdHJ1ZSwKICAibm9ybWFsaXphdGlvbl9yZWZpdCI6IGZhbHNlLAogICJkZXZpY2UiOiAiQ1BVIiwKICAicHJlY2lzaW9uIjogIkZQMzIiLAogICJ0aHJlYWRzIjogNCwKICAiYmF0Y2giOiAyNTYKfQ==",
+    "duration_t0_s50": "ewogICJjb21wbGV0ZSI6IHRydWUsCiAgIm1ldGhvZCI6ICJkdXJhdGlvbiIsCiAgImVuZHBvaW50IjogMCwKICAic2VlZCI6IDUwLAogICJjaGVja3BvaW50X3NoYTI1NiI6ICJhNzcwZDI1ZjA3NjM4MjM1OTY0N2U0NjkyYmQ0OTQ5N2EwZGFiZmViNzlhZDkwYzUyNmE4YjNmZjc1YTAzYTU5IiwKICAic291cmNlX3NoYTI1NiI6ICI1OWUwNzExZDM3MDUxNGE3ZWJmMmY3NDg1YThmMDU4YWRlNzE1NjFmMTkxOTE0ZTgxMDFhOTc3YWNkMzYwMzM2IiwKICAicHJlZGljdGlvbnMiOiB7CiAgICAibGFiX2Ryb3AyNSI6IHsKICAgICAgInBhdGgiOiAiL2RhdGEvTHVveG0vRGlzZWFzZS1SYW5raW5nLUhhd2tlcy1NYW1iYS0wNjI0L3J1bnMvY2VtX2ljZGVfZXZpZGVuY2VfMjAyNjEwMjgvbWltaWNpaWkvZnJvemVuX2luZmVyZW5jZV92Mi9qb2JzL0NFTS1OZXRfdDBfczUwL2xhYl9kcm9wMjUubnB6IiwKICAgICAgInNoYTI1NiI6ICI1NDUxYzM5YTk1OWVjMDNiOTBiNThkMDVkOTFmMjNkODA3MDA0OGQ1ODVjZTJiOGZjZjdmNDA5ZGY1N2UyMWRmIiwKICAgICAgInJldXNlZCI6IHRydWUKICAgIH0sCiAgICAibGFiX2Ryb3A1MCI6IHsKICAgICAgInBhdGgiOiAiL2RhdGEvTHVveG0vRGlzZWFzZS1SYW5raW5nLUhhd2tlcy1NYW1iYS0wNjI0L3J1bnMvY2VtX2ljZGVfZXZpZGVuY2VfMjAyNjEwMjgvbWltaWNpaWkvZnJvemVuX2luZmVyZW5jZV92Mi9qb2JzL0NFTS1OZXRfdDBfczUwL2xhYl9kcm9wNTAubnB6IiwKICAgICAgInNoYTI1NiI6ICJiODEzODVhNWI5MDFjODE2NmE1YWVkYThmODJmMDMwYjkwYjM2NzIwNzM4Y2ExMWJiMjFmOWQ5NzIwMTVhN2YxIiwKICAgICAgInJldXNlZCI6IHRydWUKICAgIH0sCiAgICAibGFiX2RlbGF5MmgiOiB7CiAgICAgICJwYXRoIjogIi9kYXRhL0x1b3htL0Rpc2Vhc2UtUmFua2luZy1IYXdrZXMtTWFtYmEtMDYyNC9ydW5zL2NlbV9pY2RlX2V2aWRlbmNlXzIwMjYxMDI4L21pbWljaWlpL2Zyb3plbl9pbmZlcmVuY2VfdjIvam9icy9DRU0tTmV0X3QwX3M1MC9sYWJfZGVsYXkyaC5ucHoiLAogICAgICAic2hhMjU2IjogImNjZDZmOGI5MWRiZjgwNWY2ZTI4ZjY2ZmFhZmRkY2I3YjFlNzI4YTAyNGZlNTgyZGMxMTAyNzAyNWUwZDFjYzciLAogICAgICAicmV1c2VkIjogdHJ1ZQogICAgfSwKICAgICJsYWJfZGVsYXk2aCI6IHsKICAgICAgInBhdGgiOiAiL2RhdGEvTHVveG0vRGlzZWFzZS1SYW5raW5nLUhhd2tlcy1NYW1iYS0wNjI0L3J1bnMvY2VtX2ljZGVfZXZpZGVuY2VfMjAyNjEwMjgvbWltaWNpaWkvZnJvemVuX2luZmVyZW5jZV92Mi9qb2JzL0NFTS1OZXRfdDBfczUwL2xhYl9kZWxheTZoLm5weiIsCiAgICAgICJzaGEyNTYiOiAiZGQ4ZmM1ZGI5NmVlMDVkOWNmNDAyMzYzMjNmNzk4YjE2YTNmNGI5YjI3NGY2N2UwM2NiY2E2NTk3NjUwMTBkNCIsCiAgICAgICJyZXVzZWQiOiB0cnVlCiAgICB9CiAgfSwKICAicmV1c2VkX2Nhc2VzIjogNCwKICAibmV3X2Nhc2VzIjogMCwKICAiaW5mZXJlbmNlX3NlY29uZHMiOiB7fSwKICAiY2xlYW5fc2Vjb25kcyI6IDE1Ljg2NzQ3NzY1NTQxMDc2NywKICAiY2xlYW5fcHJvYmFiaWxpdHlfZHJpZnQiOiAxLjQ5MDExNjExOTM4NDc2NTZlLTA3LAogICJjbGVhbl9BUF9kcmlmdCI6IDAuMCwKICAib3B0aW1pemVyX3VwZGF0ZXMiOiAwLAogICJ3ZWlnaHRzX3VuY2hhbmdlZCI6IHRydWUsCiAgIm5vcm1hbGl6YXRpb25fcmVmaXQiOiBmYWxzZSwKICAiZGV2aWNlIjogIkNQVSIsCiAgInByZWNpc2lvbiI6ICJGUDMyIiwKICAidGhyZWFkcyI6IDQsCiAgImJhdGNoIjogMjU2Cn0=",
+    "duration_t0_s51": "ewogICJjb21wbGV0ZSI6IHRydWUsCiAgIm1ldGhvZCI6ICJkdXJhdGlvbiIsCiAgImVuZHBvaW50IjogMCwKICAic2VlZCI6IDUxLAogICJjaGVja3BvaW50X3NoYTI1NiI6ICJiZmZkMzk2ZTBjNjkyYjYwNTgwOTljZGUzOGQyOTI2ODQxNWI5OWU1N2VkY2Q3YjFjNjQyZjk4N2I3ZGQxNzBkIiwKICAic291cmNlX3NoYTI1NiI6ICI1OWUwNzExZDM3MDUxNGE3ZWJmMmY3NDg1YThmMDU4YWRlNzE1NjFmMTkxOTE0ZTgxMDFhOTc3YWNkMzYwMzM2IiwKICAicHJlZGljdGlvbnMiOiB7CiAgICAibGFiX2Ryb3AyNSI6IHsKICAgICAgInBhdGgiOiAiL2RhdGEvTHVveG0vRGlzZWFzZS1SYW5raW5nLUhhd2tlcy1NYW1iYS0wNjI0L3J1bnMvY2VtX2FnZ3JlZ2F0aW9uX3N0cmVzc18yMDI2MTEwNi9taW1pY2lpaS92Mi9wcmVkaWN0aW9ucy9kdXJhdGlvbl90MF9zNTEvbGFiX2Ryb3AyNS5ucHoiLAogICAgICAic2hhMjU2IjogIjU0MWFjMjI4MGI5NTk2OTk2NzZiOWZjNTk0MWRlNzVlYjkwOGFlZDUwMjU2M2Q0MjQxNmM2YTZlNzZmMmEwNzgiLAogICAgICAicmV1c2VkIjogZmFsc2UKICAgIH0sCiAgICAibGFiX2Ryb3A1MCI6IHsKICAgICAgInBhdGgiOiAiL2RhdGEvTHVveG0vRGlzZWFzZS1SYW5raW5nLUhhd2tlcy1NYW1iYS0wNjI0L3J1bnMvY2VtX2FnZ3JlZ2F0aW9uX3N0cmVzc18yMDI2MTEwNi9taW1pY2lpaS92Mi9wcmVkaWN0aW9ucy9kdXJhdGlvbl90MF9zNTEvbGFiX2Ryb3A1MC5ucHoiLAogICAgICAic2hhMjU2IjogImJkZWE0NGMzNzEyODViNzI4MDliOWVlNzljMmU4OGQyMmJiOTgxZTg3NjgyY2FkNTg5YjhkM2E1NzRmY2Q3ZGQiLAogICAgICAicmV1c2VkIjogZmFsc2UKICAgIH0sCiAgICAibGFiX2RlbGF5MmgiOiB7CiAgICAgICJwYXRoIjogIi9kYXRhL0x1b3htL0Rpc2Vhc2UtUmFua2luZy1IYXdrZXMtTWFtYmEtMDYyNC9ydW5zL2NlbV9hZ2dyZWdhdGlvbl9zdHJlc3NfMjAyNjExMDYvbWltaWNpaWkvdjIvcHJlZGljdGlvbnMvZHVyYXRpb25fdDBfczUxL2xhYl9kZWxheTJoLm5weiIsCiAgICAgICJzaGEyNTYiOiAiYmZjMzU4ZDc2YjVhOGQ1ZTgwMDA5Y2I3NWJiOWI1NmU3YTgyODY2OTZhMDc5YjhiNzMxZDkzNWEyNTVhZmM4NCIsCiAgICAgICJyZXVzZWQiOiBmYWxzZQogICAgfSwKICAgICJsYWJfZGVsYXk2aCI6IHsKICAgICAgInBhdGgiOiAiL2RhdGEvTHVveG0vRGlzZWFzZS1SYW5raW5nLUhhd2tlcy1NYW1iYS0wNjI0L3J1bnMvY2VtX2FnZ3JlZ2F0aW9uX3N0cmVzc18yMDI2MTEwNi9taW1pY2lpaS92Mi9wcmVkaWN0aW9ucy9kdXJhdGlvbl90MF9zNTEvbGFiX2RlbGF5NmgubnB6IiwKICAgICAgInNoYTI1NiI6ICJhMzVjNzVhYzAzZDRiNjRmZWZjZGM0NzUwMTIwY2JlYjQwZWE1ZDlhYjNjYmU3MTc2NzRmYjk1YzU2NGJkNzIxIiwKICAgICAgInJldXNlZCI6IGZhbHNlCiAgICB9CiAgfSwKICAicmV1c2VkX2Nhc2VzIjogMCwKICAibmV3X2Nhc2VzIjogNCwKICAiaW5mZXJlbmNlX3NlY29uZHMiOiB7CiAgICAibGFiX2Ryb3AyNSI6IDE3LjczMTc4ODg3MzY3MjQ4NSwKICAgICJsYWJfZHJvcDUwIjogMTkuMTE0ODE0MDQzMDQ1MDQ0LAogICAgImxhYl9kZWxheTJoIjogMTkuNjY3NzgwODc2MTU5NjY4LAogICAgImxhYl9kZWxheTZoIjogMTYuOTE3MjM3OTk3MDU1MDU0CiAgfSwKICAiY2xlYW5fc2Vjb25kcyI6IDE5LjMxMjg1NjY3NDE5NDMzNiwKICAiY2xlYW5fcHJvYmFiaWxpdHlfZHJpZnQiOiAyLjk4MDIzMjIzODc2OTUzMWUtMDcsCiAgImNsZWFuX0FQX2RyaWZ0IjogMC4wLAogICJvcHRpbWl6ZXJfdXBkYXRlcyI6IDAsCiAgIndlaWdodHNfdW5jaGFuZ2VkIjogdHJ1ZSwKICAibm9ybWFsaXphdGlvbl9yZWZpdCI6IGZhbHNlLAogICJkZXZpY2UiOiAiQ1BVIiwKICAicHJlY2lzaW9uIjogIkZQMzIiLAogICJ0aHJlYWRzIjogNCwKICAiYmF0Y2giOiAyNTYKfQ==",
+    "duration_t0_s52": "ewogICJjb21wbGV0ZSI6IHRydWUsCiAgIm1ldGhvZCI6ICJkdXJhdGlvbiIsCiAgImVuZHBvaW50IjogMCwKICAic2VlZCI6IDUyLAogICJjaGVja3BvaW50X3NoYTI1NiI6ICJlZWM1MDBiYzgyOWM3YWEyOGVhZTYwNmQ5MTM5NTI1MTBhZTY1OGQ2YTkyOTUxYzhhZTEyODE3NTFlNjA5Yjg1IiwKICAic291cmNlX3NoYTI1NiI6ICI1OWUwNzExZDM3MDUxNGE3ZWJmMmY3NDg1YThmMDU4YWRlNzE1NjFmMTkxOTE0ZTgxMDFhOTc3YWNkMzYwMzM2IiwKICAicHJlZGljdGlvbnMiOiB7CiAgICAibGFiX2Ryb3AyNSI6IHsKICAgICAgInBhdGgiOiAiL2RhdGEvTHVveG0vRGlzZWFzZS1SYW5raW5nLUhhd2tlcy1NYW1iYS0wNjI0L3J1bnMvY2VtX2FnZ3JlZ2F0aW9uX3N0cmVzc18yMDI2MTEwNi9taW1pY2lpaS92Mi9wcmVkaWN0aW9ucy9kdXJhdGlvbl90MF9zNTIvbGFiX2Ryb3AyNS5ucHoiLAogICAgICAic2hhMjU2IjogImYwMTIyMWJhYTFlZGEyN2RmY2FlOTAzNzE1NWE4N2E0NTZhZjhlYjdmNWMzOTk0OGUwMjQ0MmMxZGUyOGE2ZGQiLAogICAgICAicmV1c2VkIjogZmFsc2UKICAgIH0sCiAgICAibGFiX2Ryb3A1MCI6IHsKICAgICAgInBhdGgiOiAiL2RhdGEvTHVveG0vRGlzZWFzZS1SYW5raW5nLUhhd2tlcy1NYW1iYS0wNjI0L3J1bnMvY2VtX2FnZ3JlZ2F0aW9uX3N0cmVzc18yMDI2MTEwNi9taW1pY2lpaS92Mi9wcmVkaWN0aW9ucy9kdXJhdGlvbl90MF9zNTIvbGFiX2Ryb3A1MC5ucHoiLAogICAgICAic2hhMjU2IjogIjUzY2RiNzAxMTQ0OGNjNjcxZGY1ZmYzNjM0MTViOTU1ZmM5ZjM4Yzg0NWJlMzQxZTMwZDZkMjRkYzk5ZWEwZjYiLAogICAgICAicmV1c2VkIjogZmFsc2UKICAgIH0sCiAgICAibGFiX2RlbGF5MmgiOiB7CiAgICAgICJwYXRoIjogIi9kYXRhL0x1b3htL0Rpc2Vhc2UtUmFua2luZy1IYXdrZXMtTWFtYmEtMDYyNC9ydW5zL2NlbV9hZ2dyZWdhdGlvbl9zdHJlc3NfMjAyNjExMDYvbWltaWNpaWkvdjIvcHJlZGljdGlvbnMvZHVyYXRpb25fdDBfczUyL2xhYl9kZWxheTJoLm5weiIsCiAgICAgICJzaGEyNTYiOiAiMWNlNWEwMzZiZDE3ZWYzODdjZDA0OTJlZWY5NDA1ZDMwNTZlYmE2OWY0YmEyZGEwNWEwZTI1OTljMDNmMTlhYiIsCiAgICAgICJyZXVzZWQiOiBmYWxzZQogICAgfSwKICAgICJsYWJfZGVsYXk2aCI6IHsKICAgICAgInBhdGgiOiAiL2RhdGEvTHVveG0vRGlzZWFzZS1SYW5raW5nLUhhd2tlcy1NYW1iYS0wNjI0L3J1bnMvY2VtX2FnZ3JlZ2F0aW9uX3N0cmVzc18yMDI2MTEwNi9taW1pY2lpaS92Mi9wcmVkaWN0aW9ucy9kdXJhdGlvbl90MF9zNTIvbGFiX2RlbGF5NmgubnB6IiwKICAgICAgInNoYTI1NiI6ICIwY2RhMjVmMWNjNzg5M2QxZTI2YmM5Zjg5ZDdiMWVjMGUzYzQ4YTY5ZmIxY2U5MTIzMmU0Njg1ZmMyMmRjY2JmIiwKICAgICAgInJldXNlZCI6IGZhbHNlCiAgICB9CiAgfSwKICAicmV1c2VkX2Nhc2VzIjogMCwKICAibmV3X2Nhc2VzIjogNCwKICAiaW5mZXJlbmNlX3NlY29uZHMiOiB7CiAgICAibGFiX2Ryb3AyNSI6IDE2LjU5NjE2Mzk4ODExMzQwMywKICAgICJsYWJfZHJvcDUwIjogMTkuODAzNDc5NDMzMDU5NjkyLAogICAgImxhYl9kZWxheTJoIjogMTYuNjM0MzQzODYyNTMzNTcsCiAgICAibGFiX2RlbGF5NmgiOiAxNy42NzYxMjc5MTA2MTQwMTQKICB9LAogICJjbGVhbl9zZWNvbmRzIjogMTYuNDQ5ODY3MDEwMTE2NTc3LAogICJjbGVhbl9wcm9iYWJpbGl0eV9kcmlmdCI6IDEuNDkwMTE2MTE5Mzg0NzY1NmUtMDcsCiAgImNsZWFuX0FQX2RyaWZ0IjogMC4wLAogICJvcHRpbWl6ZXJfdXBkYXRlcyI6IDAsCiAgIndlaWdodHNfdW5jaGFuZ2VkIjogdHJ1ZSwKICAibm9ybWFsaXphdGlvbl9yZWZpdCI6IGZhbHNlLAogICJkZXZpY2UiOiAiQ1BVIiwKICAicHJlY2lzaW9uIjogIkZQMzIiLAogICJ0aHJlYWRzIjogNCwKICAiYmF0Y2giOiAyNTYKfQ==",
+    "duration_t1_s48": "ewogICJjb21wbGV0ZSI6IHRydWUsCiAgIm1ldGhvZCI6ICJkdXJhdGlvbiIsCiAgImVuZHBvaW50IjogMSwKICAic2VlZCI6IDQ4LAogICJjaGVja3BvaW50X3NoYTI1NiI6ICJiNmJhYzlmNmVjN2M3Zjg3MTUyNGJmYTdiYWU0YzQxZGNjZmJkN2I4NzNlZmMyYWIwOWM5ODRhMjc4ZDM1YmJmIiwKICAic291cmNlX3NoYTI1NiI6ICI1OWUwNzExZDM3MDUxNGE3ZWJmMmY3NDg1YThmMDU4YWRlNzE1NjFmMTkxOTE0ZTgxMDFhOTc3YWNkMzYwMzM2IiwKICAicHJlZGljdGlvbnMiOiB7CiAgICAibGFiX2Ryb3AyNSI6IHsKICAgICAgInBhdGgiOiAiL2RhdGEvTHVveG0vRGlzZWFzZS1SYW5raW5nLUhhd2tlcy1NYW1iYS0wNjI0L3J1bnMvY2VtX2ljZGVfZXZpZGVuY2VfMjAyNjEwMjgvbWltaWNpaWkvZnJvemVuX2luZmVyZW5jZV92Mi9qb2JzL0NFTS1OZXRfdDFfczQ4L2xhYl9kcm9wMjUubnB6IiwKICAgICAgInNoYTI1NiI6ICIyZDgzNjgyMjJhOGU1MmVmMzMxMWM5M2ZjYjZhNmYxMGJlYjdlMTNiNzlmZDI2ODc3NTAzZDYxNTI3ODhlNGJiIiwKICAgICAgInJldXNlZCI6IHRydWUKICAgIH0sCiAgICAibGFiX2Ryb3A1MCI6IHsKICAgICAgInBhdGgiOiAiL2RhdGEvTHVveG0vRGlzZWFzZS1SYW5raW5nLUhhd2tlcy1NYW1iYS0wNjI0L3J1bnMvY2VtX2ljZGVfZXZpZGVuY2VfMjAyNjEwMjgvbWltaWNpaWkvZnJvemVuX2luZmVyZW5jZV92Mi9qb2JzL0NFTS1OZXRfdDFfczQ4L2xhYl9kcm9wNTAubnB6IiwKICAgICAgInNoYTI1NiI6ICJjOTcxODMyYjY2YzRlOTkwZTk0YTU4OWE4MmZkNmFlMDczYjNhMjRlYjZkZTVmYjc0YjIxZTYzMzg4YTA0OTBhIiwKICAgICAgInJldXNlZCI6IHRydWUKICAgIH0sCiAgICAibGFiX2RlbGF5MmgiOiB7CiAgICAgICJwYXRoIjogIi9kYXRhL0x1b3htL0Rpc2Vhc2UtUmFua2luZy1IYXdrZXMtTWFtYmEtMDYyNC9ydW5zL2NlbV9pY2RlX2V2aWRlbmNlXzIwMjYxMDI4L21pbWljaWlpL2Zyb3plbl9pbmZlcmVuY2VfdjIvam9icy9DRU0tTmV0X3QxX3M0OC9sYWJfZGVsYXkyaC5ucHoiLAogICAgICAic2hhMjU2IjogIjgyOGIwM2YyOWQwNTRjMjc4ZWZkNWZkN2NjYzUwNjNhNGZkZWYxNzc3NTFlZDk5MTRkYWVmNzJjNGNmMTZlMDQiLAogICAgICAicmV1c2VkIjogdHJ1ZQogICAgfSwKICAgICJsYWJfZGVsYXk2aCI6IHsKICAgICAgInBhdGgiOiAiL2RhdGEvTHVveG0vRGlzZWFzZS1SYW5raW5nLUhhd2tlcy1NYW1iYS0wNjI0L3J1bnMvY2VtX2ljZGVfZXZpZGVuY2VfMjAyNjEwMjgvbWltaWNpaWkvZnJvemVuX2luZmVyZW5jZV92Mi9qb2JzL0NFTS1OZXRfdDFfczQ4L2xhYl9kZWxheTZoLm5weiIsCiAgICAgICJzaGEyNTYiOiAiOTA2ZmNkNjI1NmQwMGIyZTgyOGE2YmNkNGQwOWQyN2NkNDkyNzMxMjM1NzdhZGZhYzQ2YmZhOTk2YzQxYWEzOSIsCiAgICAgICJyZXVzZWQiOiB0cnVlCiAgICB9CiAgfSwKICAicmV1c2VkX2Nhc2VzIjogNCwKICAibmV3X2Nhc2VzIjogMCwKICAiaW5mZXJlbmNlX3NlY29uZHMiOiB7fSwKICAiY2xlYW5fc2Vjb25kcyI6IDIwLjY4MjIyOTUxODg5MDM4LAogICJjbGVhbl9wcm9iYWJpbGl0eV9kcmlmdCI6IDEuNzg4MTM5MzQzMjYxNzE4OGUtMDcsCiAgImNsZWFuX0FQX2RyaWZ0IjogMC4wLAogICJvcHRpbWl6ZXJfdXBkYXRlcyI6IDAsCiAgIndlaWdodHNfdW5jaGFuZ2VkIjogdHJ1ZSwKICAibm9ybWFsaXphdGlvbl9yZWZpdCI6IGZhbHNlLAogICJkZXZpY2UiOiAiQ1BVIiwKICAicHJlY2lzaW9uIjogIkZQMzIiLAogICJ0aHJlYWRzIjogNCwKICAiYmF0Y2giOiAyNTYKfQ==",
+    "duration_t1_s49": "ewogICJjb21wbGV0ZSI6IHRydWUsCiAgIm1ldGhvZCI6ICJkdXJhdGlvbiIsCiAgImVuZHBvaW50IjogMSwKICAic2VlZCI6IDQ5LAogICJjaGVja3BvaW50X3NoYTI1NiI6ICI4YWEyM2RmYzI0MTFjOTAyYTFkN2MwYzJmY2E2Mjk2ZTIxNGRmMjM3MDViYTY5NTkxYTMzNDZlMTY2NTJhMjU0IiwKICAic291cmNlX3NoYTI1NiI6ICI1OWUwNzExZDM3MDUxNGE3ZWJmMmY3NDg1YThmMDU4YWRlNzE1NjFmMTkxOTE0ZTgxMDFhOTc3YWNkMzYwMzM2IiwKICAicHJlZGljdGlvbnMiOiB7CiAgICAibGFiX2Ryb3AyNSI6IHsKICAgICAgInBhdGgiOiAiL2RhdGEvTHVveG0vRGlzZWFzZS1SYW5raW5nLUhhd2tlcy1NYW1iYS0wNjI0L3J1bnMvY2VtX2ljZGVfZXZpZGVuY2VfMjAyNjEwMjgvbWltaWNpaWkvZnJvemVuX2luZmVyZW5jZV92Mi9qb2JzL0NFTS1OZXRfdDFfczQ5L2xhYl9kcm9wMjUubnB6IiwKICAgICAgInNoYTI1NiI6ICJiYTk3MWQ4Y2UwMjYyOWFiOGNjOTE4MzU5Njc3MWM0MjAxNWQ1Y2Q5YzVkMGYyNmZlNDAwMDdkMzgxYzA3ZDNmIiwKICAgICAgInJldXNlZCI6IHRydWUKICAgIH0sCiAgICAibGFiX2Ryb3A1MCI6IHsKICAgICAgInBhdGgiOiAiL2RhdGEvTHVveG0vRGlzZWFzZS1SYW5raW5nLUhhd2tlcy1NYW1iYS0wNjI0L3J1bnMvY2VtX2ljZGVfZXZpZGVuY2VfMjAyNjEwMjgvbWltaWNpaWkvZnJvemVuX2luZmVyZW5jZV92Mi9qb2JzL0NFTS1OZXRfdDFfczQ5L2xhYl9kcm9wNTAubnB6IiwKICAgICAgInNoYTI1NiI6ICJhYmYzNDY2MWUyY2M4NDUyYzkwMTNkMzcyZTliMTU2NGNlODY3YTFjZGNjNjM4NzU0NTA5OTYzMDdjN2Q4NzQxIiwKICAgICAgInJldXNlZCI6IHRydWUKICAgIH0sCiAgICAibGFiX2RlbGF5MmgiOiB7CiAgICAgICJwYXRoIjogIi9kYXRhL0x1b3htL0Rpc2Vhc2UtUmFua2luZy1IYXdrZXMtTWFtYmEtMDYyNC9ydW5zL2NlbV9pY2RlX2V2aWRlbmNlXzIwMjYxMDI4L21pbWljaWlpL2Zyb3plbl9pbmZlcmVuY2VfdjIvam9icy9DRU0tTmV0X3QxX3M0OS9sYWJfZGVsYXkyaC5ucHoiLAogICAgICAic2hhMjU2IjogIjE2YzY1ODllOTJiMjBhY2I0ZTg2YzJmM2RkY2FjYWYzN2RiY2M2NjUwNDRhN2Y3NDUyM2E5NzM3NmNhY2UzZjMiLAogICAgICAicmV1c2VkIjogdHJ1ZQogICAgfSwKICAgICJsYWJfZGVsYXk2aCI6IHsKICAgICAgInBhdGgiOiAiL2RhdGEvTHVveG0vRGlzZWFzZS1SYW5raW5nLUhhd2tlcy1NYW1iYS0wNjI0L3J1bnMvY2VtX2ljZGVfZXZpZGVuY2VfMjAyNjEwMjgvbWltaWNpaWkvZnJvemVuX2luZmVyZW5jZV92Mi9qb2JzL0NFTS1OZXRfdDFfczQ5L2xhYl9kZWxheTZoLm5weiIsCiAgICAgICJzaGEyNTYiOiAiMGE4ZWVkNzQ2YTQ1NDRiYTgyYThkYmMzODIzNzk3MmM2N2RjYzQ4YjQ5YzBkM2IyNGFjY2NlZjNlMTk2Nzc5OSIsCiAgICAgICJyZXVzZWQiOiB0cnVlCiAgICB9CiAgfSwKICAicmV1c2VkX2Nhc2VzIjogNCwKICAibmV3X2Nhc2VzIjogMCwKICAiaW5mZXJlbmNlX3NlY29uZHMiOiB7fSwKICAiY2xlYW5fc2Vjb25kcyI6IDI0Ljg4MzI1OTA1Nzk5ODY1NywKICAiY2xlYW5fcHJvYmFiaWxpdHlfZHJpZnQiOiAxLjE5MjA5Mjg5NTUwNzgxMjVlLTA3LAogICJjbGVhbl9BUF9kcmlmdCI6IDAuMCwKICAib3B0aW1pemVyX3VwZGF0ZXMiOiAwLAogICJ3ZWlnaHRzX3VuY2hhbmdlZCI6IHRydWUsCiAgIm5vcm1hbGl6YXRpb25fcmVmaXQiOiBmYWxzZSwKICAiZGV2aWNlIjogIkNQVSIsCiAgInByZWNpc2lvbiI6ICJGUDMyIiwKICAidGhyZWFkcyI6IDQsCiAgImJhdGNoIjogMjU2Cn0=",
+    "duration_t1_s50": "ewogICJjb21wbGV0ZSI6IHRydWUsCiAgIm1ldGhvZCI6ICJkdXJhdGlvbiIsCiAgImVuZHBvaW50IjogMSwKICAic2VlZCI6IDUwLAogICJjaGVja3BvaW50X3NoYTI1NiI6ICI2ODQwNzk0NDQ2ZDM1OWE4NjAyZDQyN2M4OTQ5ZGYzYjEyN2ZlZGZiMzRmY2YzNWJhZDNiOTEyMzMyNWE4OWY0IiwKICAic291cmNlX3NoYTI1NiI6ICI1OWUwNzExZDM3MDUxNGE3ZWJmMmY3NDg1YThmMDU4YWRlNzE1NjFmMTkxOTE0ZTgxMDFhOTc3YWNkMzYwMzM2IiwKICAicHJlZGljdGlvbnMiOiB7CiAgICAibGFiX2Ryb3AyNSI6IHsKICAgICAgInBhdGgiOiAiL2RhdGEvTHVveG0vRGlzZWFzZS1SYW5raW5nLUhhd2tlcy1NYW1iYS0wNjI0L3J1bnMvY2VtX2ljZGVfZXZpZGVuY2VfMjAyNjEwMjgvbWltaWNpaWkvZnJvemVuX2luZmVyZW5jZV92Mi9qb2JzL0NFTS1OZXRfdDFfczUwL2xhYl9kcm9wMjUubnB6IiwKICAgICAgInNoYTI1NiI6ICJhOTc3NTkwZjNkMGI2MjQ3ZjM0OTM1ZjA4ZTIzZjU3NzAzZmYzZTgyMDQwMmI4MGY2MGJlNzMxNWZlYjgyOTQ3IiwKICAgICAgInJldXNlZCI6IHRydWUKICAgIH0sCiAgICAibGFiX2Ryb3A1MCI6IHsKICAgICAgInBhdGgiOiAiL2RhdGEvTHVveG0vRGlzZWFzZS1SYW5raW5nLUhhd2tlcy1NYW1iYS0wNjI0L3J1bnMvY2VtX2ljZGVfZXZpZGVuY2VfMjAyNjEwMjgvbWltaWNpaWkvZnJvemVuX2luZmVyZW5jZV92Mi9qb2JzL0NFTS1OZXRfdDFfczUwL2xhYl9kcm9wNTAubnB6IiwKICAgICAgInNoYTI1NiI6ICI5NzFiYjI1MmZiNjU0N2NjM2ExNzljNTViNzFhODA2N2IwY2IxZTAyOThkYWFmODIyOTM1NTAzNmRmYzdjYWIxIiwKICAgICAgInJldXNlZCI6IHRydWUKICAgIH0sCiAgICAibGFiX2RlbGF5MmgiOiB7CiAgICAgICJwYXRoIjogIi9kYXRhL0x1b3htL0Rpc2Vhc2UtUmFua2luZy1IYXdrZXMtTWFtYmEtMDYyNC9ydW5zL2NlbV9pY2RlX2V2aWRlbmNlXzIwMjYxMDI4L21pbWljaWlpL2Zyb3plbl9pbmZlcmVuY2VfdjIvam9icy9DRU0tTmV0X3QxX3M1MC9sYWJfZGVsYXkyaC5ucHoiLAogICAgICAic2hhMjU2IjogImY2OTgxYWQxYTU0ZjIxOGNlOWUyOWY1MTY0Y2VjMGRiOWQ1ZWJiMTZkZjg2YzYzYzM5NDIyMWEyYmVkY2IxMjMiLAogICAgICAicmV1c2VkIjogdHJ1ZQogICAgfSwKICAgICJsYWJfZGVsYXk2aCI6IHsKICAgICAgInBhdGgiOiAiL2RhdGEvTHVveG0vRGlzZWFzZS1SYW5raW5nLUhhd2tlcy1NYW1iYS0wNjI0L3J1bnMvY2VtX2ljZGVfZXZpZGVuY2VfMjAyNjEwMjgvbWltaWNpaWkvZnJvemVuX2luZmVyZW5jZV92Mi9qb2JzL0NFTS1OZXRfdDFfczUwL2xhYl9kZWxheTZoLm5weiIsCiAgICAgICJzaGEyNTYiOiAiMDZhMGJkYTViNTBhNzg5OTdhMDFiZDFkNjcwY2QxNGFhYTBhNWI4MTM3NDAyMTQ2MGIwY2Q0MDBlNGM4NmEyYiIsCiAgICAgICJyZXVzZWQiOiB0cnVlCiAgICB9CiAgfSwKICAicmV1c2VkX2Nhc2VzIjogNCwKICAibmV3X2Nhc2VzIjogMCwKICAiaW5mZXJlbmNlX3NlY29uZHMiOiB7fSwKICAiY2xlYW5fc2Vjb25kcyI6IDIwLjU1MzA1OTEwMTEwNDczNiwKICAiY2xlYW5fcHJvYmFiaWxpdHlfZHJpZnQiOiAxLjE5MjA5Mjg5NTUwNzgxMjVlLTA3LAogICJjbGVhbl9BUF9kcmlmdCI6IDAuMCwKICAib3B0aW1pemVyX3VwZGF0ZXMiOiAwLAogICJ3ZWlnaHRzX3VuY2hhbmdlZCI6IHRydWUsCiAgIm5vcm1hbGl6YXRpb25fcmVmaXQiOiBmYWxzZSwKICAiZGV2aWNlIjogIkNQVSIsCiAgInByZWNpc2lvbiI6ICJGUDMyIiwKICAidGhyZWFkcyI6IDQsCiAgImJhdGNoIjogMjU2Cn0=",
+    "duration_t1_s51": "ewogICJjb21wbGV0ZSI6IHRydWUsCiAgIm1ldGhvZCI6ICJkdXJhdGlvbiIsCiAgImVuZHBvaW50IjogMSwKICAic2VlZCI6IDUxLAogICJjaGVja3BvaW50X3NoYTI1NiI6ICJiMDkyMjY5ODAwOWEzYWM0ODNiZDg4OWU3Yzk4NmM1NjRjZTE4ZjkxMjRmZjU2NWY5NDgwYTI4ZWFmNGIwNzNkIiwKICAic291cmNlX3NoYTI1NiI6ICI1OWUwNzExZDM3MDUxNGE3ZWJmMmY3NDg1YThmMDU4YWRlNzE1NjFmMTkxOTE0ZTgxMDFhOTc3YWNkMzYwMzM2IiwKICAicHJlZGljdGlvbnMiOiB7CiAgICAibGFiX2Ryb3AyNSI6IHsKICAgICAgInBhdGgiOiAiL2RhdGEvTHVveG0vRGlzZWFzZS1SYW5raW5nLUhhd2tlcy1NYW1iYS0wNjI0L3J1bnMvY2VtX2FnZ3JlZ2F0aW9uX3N0cmVzc18yMDI2MTEwNi9taW1pY2lpaS92Mi9wcmVkaWN0aW9ucy9kdXJhdGlvbl90MV9zNTEvbGFiX2Ryb3AyNS5ucHoiLAogICAgICAic2hhMjU2IjogIjgzYjM1Mzk3NDFmMzMwZTVjNDkyMjU0NmIzNjllNDU4ZTQ2M2IzOWY4OGNjM2FiMzk5OGVmNDFmMzNhMjZmNDAiLAogICAgICAicmV1c2VkIjogZmFsc2UKICAgIH0sCiAgICAibGFiX2Ryb3A1MCI6IHsKICAgICAgInBhdGgiOiAiL2RhdGEvTHVveG0vRGlzZWFzZS1SYW5raW5nLUhhd2tlcy1NYW1iYS0wNjI0L3J1bnMvY2VtX2FnZ3JlZ2F0aW9uX3N0cmVzc18yMDI2MTEwNi9taW1pY2lpaS92Mi9wcmVkaWN0aW9ucy9kdXJhdGlvbl90MV9zNTEvbGFiX2Ryb3A1MC5ucHoiLAogICAgICAic2hhMjU2IjogIjIzODNkNjI1ODMxMWQ4MThiNWYxMjZjOTM4NDliMzI0MTdkODY3NjlhMzc3MTk0NDYzZTNlN2IyYzg2MWQwNDEiLAogICAgICAicmV1c2VkIjogZmFsc2UKICAgIH0sCiAgICAibGFiX2RlbGF5MmgiOiB7CiAgICAgICJwYXRoIjogIi9kYXRhL0x1b3htL0Rpc2Vhc2UtUmFua2luZy1IYXdrZXMtTWFtYmEtMDYyNC9ydW5zL2NlbV9hZ2dyZWdhdGlvbl9zdHJlc3NfMjAyNjExMDYvbWltaWNpaWkvdjIvcHJlZGljdGlvbnMvZHVyYXRpb25fdDFfczUxL2xhYl9kZWxheTJoLm5weiIsCiAgICAgICJzaGEyNTYiOiAiM2RhMWY3OWU1OWJlNmUxMGZkYTU4ZjUxNWM3YjQ1ZTg2NzRlNmY0NjBmZmVhZGViODQ1ZjVkZDhlNmI4YjlkZiIsCiAgICAgICJyZXVzZWQiOiBmYWxzZQogICAgfSwKICAgICJsYWJfZGVsYXk2aCI6IHsKICAgICAgInBhdGgiOiAiL2RhdGEvTHVveG0vRGlzZWFzZS1SYW5raW5nLUhhd2tlcy1NYW1iYS0wNjI0L3J1bnMvY2VtX2FnZ3JlZ2F0aW9uX3N0cmVzc18yMDI2MTEwNi9taW1pY2lpaS92Mi9wcmVkaWN0aW9ucy9kdXJhdGlvbl90MV9zNTEvbGFiX2RlbGF5NmgubnB6IiwKICAgICAgInNoYTI1NiI6ICIxMTZjN2FhNWUzNTVjYzU5MGViYzFkNGY3ZGVmYjNhZDUyMTIxNjhiMjJmMzIwMmVmZmQyYTczYTZjOWI0YmVhIiwKICAgICAgInJldXNlZCI6IGZhbHNlCiAgICB9CiAgfSwKICAicmV1c2VkX2Nhc2VzIjogMCwKICAibmV3X2Nhc2VzIjogNCwKICAiaW5mZXJlbmNlX3NlY29uZHMiOiB7CiAgICAibGFiX2Ryb3AyNSI6IDE5LjQ3NTk3ODYxMjg5OTc4LAogICAgImxhYl9kcm9wNTAiOiAyMi4wNjI2MzkyMzY0NTAxOTUsCiAgICAibGFiX2RlbGF5MmgiOiAxNy45ODY0ODI2MjAyMzkyNTgsCiAgICAibGFiX2RlbGF5NmgiOiAxOS43ODYwMzkzNTI0MTY5OTIKICB9LAogICJjbGVhbl9zZWNvbmRzIjogMTkuMTg0NTY3MjEzMDU4NDcsCiAgImNsZWFuX3Byb2JhYmlsaXR5X2RyaWZ0IjogMS43ODgxMzkzNDMyNjE3MTg4ZS0wNywKICAiY2xlYW5fQVBfZHJpZnQiOiAwLjAsCiAgIm9wdGltaXplcl91cGRhdGVzIjogMCwKICAid2VpZ2h0c191bmNoYW5nZWQiOiB0cnVlLAogICJub3JtYWxpemF0aW9uX3JlZml0IjogZmFsc2UsCiAgImRldmljZSI6ICJDUFUiLAogICJwcmVjaXNpb24iOiAiRlAzMiIsCiAgInRocmVhZHMiOiA0LAogICJiYXRjaCI6IDI1Ngp9",
+    "duration_t1_s52": "ewogICJjb21wbGV0ZSI6IHRydWUsCiAgIm1ldGhvZCI6ICJkdXJhdGlvbiIsCiAgImVuZHBvaW50IjogMSwKICAic2VlZCI6IDUyLAogICJjaGVja3BvaW50X3NoYTI1NiI6ICIyMjBhZmY0MTM3OWM0NjhkNzA3OGVmMzk4MWY1OTc3ZmYzNGJlYTE0ODIwZTBlOTBkNzllMTc5NTE2MmVkZjExIiwKICAic291cmNlX3NoYTI1NiI6ICI1OWUwNzExZDM3MDUxNGE3ZWJmMmY3NDg1YThmMDU4YWRlNzE1NjFmMTkxOTE0ZTgxMDFhOTc3YWNkMzYwMzM2IiwKICAicHJlZGljdGlvbnMiOiB7CiAgICAibGFiX2Ryb3AyNSI6IHsKICAgICAgInBhdGgiOiAiL2RhdGEvTHVveG0vRGlzZWFzZS1SYW5raW5nLUhhd2tlcy1NYW1iYS0wNjI0L3J1bnMvY2VtX2FnZ3JlZ2F0aW9uX3N0cmVzc18yMDI2MTEwNi9taW1pY2lpaS92Mi9wcmVkaWN0aW9ucy9kdXJhdGlvbl90MV9zNTIvbGFiX2Ryb3AyNS5ucHoiLAogICAgICAic2hhMjU2IjogImFiZTNmMjVkNzdhNDdjYWYyZmU4MzAwZDZkMTA2YjJiYWJhZDFkYWVmZTM2MWJkYjY4MzAxYzFiZmZlNTQxZjMiLAogICAgICAicmV1c2VkIjogZmFsc2UKICAgIH0sCiAgICAibGFiX2Ryb3A1MCI6IHsKICAgICAgInBhdGgiOiAiL2RhdGEvTHVveG0vRGlzZWFzZS1SYW5raW5nLUhhd2tlcy1NYW1iYS0wNjI0L3J1bnMvY2VtX2FnZ3JlZ2F0aW9uX3N0cmVzc18yMDI2MTEwNi9taW1pY2lpaS92Mi9wcmVkaWN0aW9ucy9kdXJhdGlvbl90MV9zNTIvbGFiX2Ryb3A1MC5ucHoiLAogICAgICAic2hhMjU2IjogIjk2YmNjNmFhZTFmOWJjMDIwYmEwMjg3ZjVhMzRiYzk2YWJiNzEwZmI3NGRkYTQ1OGYzZmQ3YjdhZTQxZTcxNWQiLAogICAgICAicmV1c2VkIjogZmFsc2UKICAgIH0sCiAgICAibGFiX2RlbGF5MmgiOiB7CiAgICAgICJwYXRoIjogIi9kYXRhL0x1b3htL0Rpc2Vhc2UtUmFua2luZy1IYXdrZXMtTWFtYmEtMDYyNC9ydW5zL2NlbV9hZ2dyZWdhdGlvbl9zdHJlc3NfMjAyNjExMDYvbWltaWNpaWkvdjIvcHJlZGljdGlvbnMvZHVyYXRpb25fdDFfczUyL2xhYl9kZWxheTJoLm5weiIsCiAgICAgICJzaGEyNTYiOiAiNTQwN2I5NjM1M2Q1MDdjZDZiMjVmNGRmNTMwZWI1ZmE0ZGRiYmYwMWY5ZjI2N2IxN2E3NDQxYzFiNjBiNWE4MiIsCiAgICAgICJyZXVzZWQiOiBmYWxzZQogICAgfSwKICAgICJsYWJfZGVsYXk2aCI6IHsKICAgICAgInBhdGgiOiAiL2RhdGEvTHVveG0vRGlzZWFzZS1SYW5raW5nLUhhd2tlcy1NYW1iYS0wNjI0L3J1bnMvY2VtX2FnZ3JlZ2F0aW9uX3N0cmVzc18yMDI2MTEwNi9taW1pY2lpaS92Mi9wcmVkaWN0aW9ucy9kdXJhdGlvbl90MV9zNTIvbGFiX2RlbGF5NmgubnB6IiwKICAgICAgInNoYTI1NiI6ICI2ZTg0ZGY2YmNlOTgzODRiZDg5ODdhMTQwNjBhMGRiOTU5YjA3NjJlMjM5YzI2ZjFiZGQ5MWMwNWE5OWViNjE5IiwKICAgICAgInJldXNlZCI6IGZhbHNlCiAgICB9CiAgfSwKICAicmV1c2VkX2Nhc2VzIjogMCwKICAibmV3X2Nhc2VzIjogNCwKICAiaW5mZXJlbmNlX3NlY29uZHMiOiB7CiAgICAibGFiX2Ryb3AyNSI6IDE5LjE2NTU3MzEyMDExNzE4OCwKICAgICJsYWJfZHJvcDUwIjogMjAuNjczNjI2NjYxMzAwNjYsCiAgICAibGFiX2RlbGF5MmgiOiAxOS4zMjMzOTI2Mjk2MjM0MTMsCiAgICAibGFiX2RlbGF5NmgiOiAxNi4yOTQ5MjI4Mjg2NzQzMTYKICB9LAogICJjbGVhbl9zZWNvbmRzIjogMTcuMTAzODE4ODkzNDMyNjE3LAogICJjbGVhbl9wcm9iYWJpbGl0eV9kcmlmdCI6IDEuMTkyMDkyODk1NTA3ODEyNWUtMDcsCiAgImNsZWFuX0FQX2RyaWZ0IjogMC4wLAogICJvcHRpbWl6ZXJfdXBkYXRlcyI6IDAsCiAgIndlaWdodHNfdW5jaGFuZ2VkIjogdHJ1ZSwKICAibm9ybWFsaXphdGlvbl9yZWZpdCI6IGZhbHNlLAogICJkZXZpY2UiOiAiQ1BVIiwKICAicHJlY2lzaW9uIjogIkZQMzIiLAogICJ0aHJlYWRzIjogNCwKICAiYmF0Y2giOiAyNTYKfQ=="
+  }
+}

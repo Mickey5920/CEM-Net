@@ -1,0 +1,14 @@
+{
+  "checked": true,
+  "source_manifest_sha256": "ea256dcab16970c1671308c9139c5381508441d26cfc9cad7a4726b36ec009e8",
+  "training_launched": false,
+  "execution": "v2",
+  "prior_failed_execution": {
+    "exit_path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_matched_controls_20261105/mimiciii_inference_v1/exit.json",
+    "exit_sha256": "81f4c1446d845aa5d31efe6e8dd3969143021f6e5c972300a9ae78672baebd4b",
+    "measurement_started": false
+  },
+  "started": true,
+  "wrapper_pid": 2392043,
+  "gpu": 0
+}

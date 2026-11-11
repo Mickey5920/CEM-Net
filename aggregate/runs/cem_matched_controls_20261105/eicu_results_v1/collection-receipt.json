@@ -1,0 +1,23 @@
+{
+  "receipt": {
+    "complete": true,
+    "files": {
+      "verified-results.json": "67e8e26a7441cd142bac1a191091366309846a170dad0d70c9de7de17e2c7378",
+      "paired_draws.npz": "9acd95399295cf08c9e7ce2c16dc6e2b6a7f6aab489f1807e0c6911c57663742"
+    }
+  },
+  "exit": {
+    "job_id": "matched_statistics_eicu",
+    "wrapper_pid": 1543873,
+    "child_pid": 1543874,
+    "child_identity": {
+      "start_ticks": "63602274",
+      "state": "R",
+      "boot": "8123672c-cb85-4243-be25-70318f0e0750"
+    },
+    "source_manifest_sha256": "99ba722796523cd90deb6d1d0dbb819062b8e09e8b7607aba4bbc273ea4779c5",
+    "started_at": 1793894712.1858027,
+    "returncode": 0,
+    "finished_at": 1793895098.2579684
+  }
+}

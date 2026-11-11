@@ -1,0 +1,2768 @@
+{
+  "complete": true,
+  "database": "eicu",
+  "verified_new_fits": 12,
+  "verified_fixed_tests": 12,
+  "replicates": 20000,
+  "existing_AP_caches_recomputed": false,
+  "calibration_fits": 0,
+  "old_families_unchanged": true,
+  "secondary_selected_baselines_unchanged": true,
+  "full_family_holm_pending": true,
+  "source_manifest_sha256": "99b9ce948e1e409b2ca4c0b1938eb4f92bc576b952c051374bc3af65217ddf86",
+  "prior_result_sha256": "9d2a99ad4c57a4e2842b30d3222265fd6e736f84edf68edbae51978bd946ba2d",
+  "inputs": {
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/host_eicu/state.json": "faa62a68e71eaf002332ab614de40302d9a8a4537366bdfe47ca94129640370d",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/host_eicu/start_exit.json": "e77c0f58198e701bd91b557810e45cf650e84aa79580b0a3fc5d59a04c9865ec",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/source_manifest.json": "71ea9072a2a27be3501b28f38470c5360e96347e97594b23a6ad25e3721510eb",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/models/__init__.py": "b30b6970dd379505f23c8f883bdeff4a8971095bd92d54b86963fac7310dbce8",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/models/tracehr_unified.py": "3cc387950c89486fea53e5244c170d1fc02f782f45eb3165621731fa04689284",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/models/tracehr_unified_next.py": "81be7bda725d448bcd644734e86648383a9569990090b3d758d848eb82ebe3dc",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/models/tracehr_native_transfer.py": "88aba53b79a8a1a698b2e1a03ea919450eea3459dda08d22a031c490f7801a1d",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/models/tracehr_backbone_refine.py": "905f106f88ea8d24a18871a597ea143a8a9916bbaba68b9c90617c4381359a24",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/tracehr_unified_common.py": "be5f16364a0890d9db80feabe700547a0a482bc27eb0ff14822903d8189141d4",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/tracehr_unified_next_common.py": "38061b51d746e314923b391301bb87899dc3ef57ebd986bba0d85baf915dab62",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/tracehr_unified_next_runtime.py": "f82f019d4b930284b86614c85df1bbfa5e026005537bebb27fc06b5a6875345b",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/train_tracehr_unified.py": "645eb3c25a7aa432f339376d4421f0c5cb0c012807b726db5fed1082a6c4a695",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/tracehr_native_transfer_common.py": "42d46c4abcf60cc2b884d94961929728412c95f5c2058da17b54f5742fba9eee",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/tracehr_native_transfer_runtime.py": "49f2890dcb8c5aab7c72347deaaa4532c7c039144fcabe255d7fd2d4f2082de1",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/tracehr_backbone_refine_common.py": "252f5880c48cf27420d91c02ec818cbee282589c7173fa71b103db580f1be0a1",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/tracehr_backbone_refine_runtime.py": "aab6d5faf8d6930606a1a447f9b26dc4e4ca9959ba989b80a479c218f3da2306",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/train_tracehr_backbone_refine.py": "0d4e25fee27be59feb1220b0e35dc3f164dd519785ae0a0a84421cac68b701ab",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/tracehr_backbone_refine_queue.py": "1076a95d68658dd8bff28b8e55a186f315944e12f460ac1991bcc89139c9d4ba",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/tests/test_tracehr_backbone_refine.py": "284bf4f174ddf1304eb90204c5a5ec9a425867014bfb2f58188567ef087d8025",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/tracehr_recovery_queue.py": "ce1f8582d1d8c73c12d17748b3bbfb46573a7bdc7a47acae6730c289fb947216",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/tracehr_recovery_attempt.py": "f9a20608043af689318bf7053534f5fb9bc29960ed222b5028ced4a3a0d4dd32",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/tracehr_multiview_common.py": "8d59208925ab61c761ea23d0068d7575866db997a66e1a51086af9952edcf48f",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/tracehr_oof_common.py": "9f1db3274ffdbfe41a9b011624986f5c8e54df14e4e1a9e85224279264508ec2",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/models/tracehr_centered_native.py": "76ee4b05cca2a373d7176aa25729728bd77e4f81f049a6919c4e07658aacfd64",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/tracehr_centered_native_common.py": "b84534739c497d6c49bc3a50055fa1fea105ba60a7f33fe29ce9c86aba54fa50",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/train_tracehr_centered_native.py": "0609847b20eb5a927fbc979aec6944c970797348ee09aa9f96e5b367487413d8",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/tracehr_centered_native_queue.py": "6fa052432ad3ba58159bbd7fba85484cd9386f76bad1008fc704e415182c2d6d",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/tracehr_centered_diagnostics.py": "4152a2f9600862607c591a477f5bb060abf88befc40a9fcb4db98672aac479e6",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/tests/test_tracehr_centered_native.py": "91024bbefe5a158a57104f9fe0e8f9f066f6d9193f24e81be4ab3932fb93c930",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/tracehr_execution_refine_common.py": "ba4f9eb01277deae9379aff6ba390cf3fa8a8ed863660afdea582a5c5a328b5f",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/train_tracehr_execution_refine.py": "45fb4ed7d125b7372ba26596e4893c5a626854ea5c038a48ae01048a6b797c79",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/train_tracehr_native_execution.py": "24bfdfc79aa95bc6790249ad5fc02e021639e23638de7ca94d637420af8c0190",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/tracehr_execution_refine_queue.py": "9ab18d48de7b57e3008e6908006dc642f5cb3a98f94b8b9e9dda784086e2dcf7",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/train_tracehr_native_baseline.py": "02ede1c187e899972c334fec72a09fc88ea66a28ddea50aa8f8626f0388393b6",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/tests/test_tracehr_execution_refine.py": "68567c7b25e027c667f8d0dd2bf55c298a71f5ed629e3f74436a374e316a8d2c",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/tracehr_execution_eicu_common.py": "88a76ef408dd1fd809a3222bbe3b4fd1e6f1bcec47bb82c936fb25550a8449d3",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/train_tracehr_execution_eicu.py": "547f08920ce3ddb13aea28dd8fdd708de8b507200f4b5c6bbb274adbfc00c821",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/train_tracehr_execution_eicu_runtime.py": "af0fa0aeba98271f06eb4ecdab7e40f2067b5debad83290011045548ed0148f5",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/train_tracehr_native_execution_eicu.py": "f103482151047c0499684fc26b116b4d7ca67eb8d5a2b9b8214cff6b82541bb0",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/tracehr_execution_eicu_queue.py": "f63f806944f997bacb14bf041721903d6a8d4490a480cb27d090973902822041",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/tests/test_tracehr_execution_eicu.py": "2f2a59c360aadb8f694e96ceec7aefa5448971ec3d31eb5b0e5a9efb7ff5fccc",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/models/tracehr_structure.py": "eb0e724ee690c4bc43e97ef25d2f8ccb15a1695aed96c4f837b5917229d3700d",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/tracehr_structure_common.py": "30f64b977c91c34c9109a8c70788421175f22b430d6f0c584dee78f9451a5680",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/tracehr_structure_runtime.py": "300cf2fa54b2f7c4af7d1751845256817788c96f43d4e69ce72d55bbab175b2b",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/train_tracehr_structure.py": "7c58757663375b55452c845379d500b4b9066cf8d18db21235df0bf1e7adab1d",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/tracehr_structure_queue.py": "88cd6792a7e1dcd1d56ba809d434269fc73dc7703f260793fe06294f3889720e",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/tests/test_tracehr_structure.py": "a66d2c9e4f8955ddec133a10976e8431c038b03fdab5fb363cc092ed68accdbc",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/models/tracehr_context_cut.py": "a49b9048d1b440a5223ca7fcb5756b393aaf3f84d2ca140166a3c8e5881e8d8c",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/tracehr_context_cut_common.py": "273018b2d6e0b7b4506341981ed9ee5afdc0a1193b12c45512eda90c8f83253d",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/train_tracehr_context_cut.py": "1d5af0a830b2a43b008f57567b50c1a646d214ea749d594e5c6d4076596d5d7c",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/tracehr_context_cut_queue.py": "cade6a539b7ecf25b5e5ef4cad0e23159301dfbd89337cf1f6634ed4ac86d86b",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/tests/test_tracehr_context_cut.py": "12c232567873de6e42d0809e5ed98333e7307c0c6ef9b25c36506564491621db",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/models/tracehr_trajectory_contribution.py": "58e26ae5e0cf0629cf6271ad8688680d635600cb76ffdc101c2399c661352011",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/tracehr_trajectory_contribution_common.py": "f123d648a5d33a7e1ae91483fa8ef5ff58837308430c7a14a0e1dc5704340c6e",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/train_tracehr_trajectory_contribution.py": "5c36058a04878decdb7885ab140d04961ba3b55dfc20279cc4bf013c51998398",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/tracehr_trajectory_contribution_queue.py": "23919bb1a9041c1d4fba2c00a29f62cf1d1695eb0fd6e0eee55de446f8222c10",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/tests/test_tracehr_trajectory_contribution.py": "644f1368ebb4cda68760f37cc7c84f593ca21069900aed7bf87c836cda035c2b",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/models/tracehr_direct_supervision.py": "b5421939b0ff522838a2c02b700b7507d78d32850162629d3650ed000f808607",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/tracehr_direct_supervision_common.py": "e36ef300eee9117aafe6374eab9dd2faa2c86a942c45bdc71a384654a32fc939",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/train_tracehr_direct_supervision.py": "b2455c1ae60050c72655fe0d16d237b543f38a39c40f1ddcfb257ec6f831d524",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/tracehr_direct_supervision_runtime.py": "5b5011b448f6cd01546ab318c6517e58ffa6d189180f4f55f86ea80bf5edf58b",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/tracehr_direct_supervision_queue.py": "20e92f3daca3d5bbef23fff533585f747f55f0e2e9342b74246745be5b955aee",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/tests/test_tracehr_direct_supervision.py": "82f1d0975c9a733edd2fcae4eaded41b21ba20c689a7b0e658e9aac97f216515",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/models/tracehr_auxiliary_isolation.py": "7a2a95e648f4ebed4b66c55f93b8b12a7a563ad62f3cf5611ebffd8c311c53ac",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/tracehr_auxiliary_isolation_common.py": "90dca4977fa657ca7c986b78fec8696804da28e4f7d52b8ac15534e138382ba4",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/train_tracehr_auxiliary_isolation.py": "5d5949492b5f079f4d2fd586b744b8f6acce4f9624599321649a20d88e1cf61b",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/tracehr_auxiliary_isolation_runtime.py": "2c8f68649f5273ee762ec8b8a087a016cc6df418004a86ce2440daeec279b765",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/tracehr_auxiliary_isolation_queue.py": "d74450971f832884ce3321546bb04affac2ae591b2cf4a8134c0787d5c195ec1",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/tracehr_auxiliary_isolation_diagnostics.py": "a8007371a5b0017818ccb733748147e83711383fe60c08d128217654bf5eb30a",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/tests/test_tracehr_auxiliary_isolation.py": "b700ecba26ff0816831c587f0a18e910c923e3ee70fcf300ea8b805e0636e9b9",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/models/tracehr_c5_ablation.py": "7cf5819ab239e833e56936f59ddf2b1c00f8956ca07d880b4e914fdfd7c46c93",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/tracehr_c5_ablation_common.py": "e233a9addb26561a0a505393ce3a03c6f635028fb0f72297af886aa6c2775026",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/train_tracehr_c5_ablation.py": "ce56adb26b377db45050e88ac98e5367b5572fcfca378543bbbf3fe8adfdd49b",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/tracehr_c5_ablation_queue.py": "a8b00bfcd5f1ac38042021d682541a5ba4b8c8b2ab8e37e3994017f6f4e097d8",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/tests/test_tracehr_c5_ablation.py": "6c8fb6626bbc18d4d1f43d116fa3bc19e6cc7788bc85fb7190e6439a420f1b26",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/models/tracehr_not_confirmation.py": "2f4b18ea12f6485d7157c7584dc454d4c41f36f06a3207a214cfe78f527841bc",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/tracehr_not_confirmation_common.py": "72ce45ea2d29bdd02994de94bd3bae018eef8d08758e8f10bbf2a7cd07162de6",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/train_tracehr_not_confirmation.py": "f9f845ce1afa2ecd3203d595c2931107897f3660ea1fe921fb7a90c95d89f049",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/train_tracehr_not_native.py": "2029f77c5cfb59382a395e03108a256be0ee41f4eeda238f724e3ba51a9a69e8",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/tracehr_not_confirmation_queue.py": "f5ccc7a66002bdb167add28cf8f6339063774279455f4c29afb8e4594ab172ed",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/tests/test_tracehr_not_confirmation.py": "771cced1f63c42e01369f6712b3764ad78b0198b08b6ad96a373722e508e486c",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/models/tracehr_not_functional.py": "90c64b5f066afff80265ac9503963c0e987b2519f22a0206994f1c6233bf3ec4",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/tracehr_not_functional_common.py": "c67704c3df212c91d3bd0277e56815c8e720f4c4685693caf732e062d9aa84da",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/tracehr_not_functional_diagnostics.py": "33939135c0e89800651c80beba53c974290fd74d80961984286e258700e587ea",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/tracehr_not_functional_runtime.py": "12d828e2f8eac396f4af6f4187b685287887c809b10bf2cc99473b75df65c4b7",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/train_tracehr_not_functional.py": "72677a9215dce2226d679df7f552d33318bee88f624cafb5f6fe2e43d8c001ad",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/tracehr_not_functional_queue.py": "7a0a2ef328e4556ca7ed6dd6ce2457487014e5b0f251755de9e9f20940378e50",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/tests/test_tracehr_not_functional.py": "9e33f3e265f797074ca33789bf93a36f9be8599678af9a27824bf09c76921680",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/models/tracehr_not_stability_functional.py": "7c73bb0b3db0888df42a931c1b80a9bae85e502c0a623842d66d30fd2b2498d4",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/tracehr_not_stability_common.py": "38614e916e1806f60ad1a51387fadd490c3b92800a9c2e4f964d47fbe2caa460",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/train_tracehr_not_stability.py": "8445b383cf6052bcc61168575927ac1945baf88406646d19ec1ef619201155e4",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/train_tracehr_not_stability_functional.py": "bd956ed5796743850403236ddd735cb78d0cbed294d7721671f93efc458a2da2",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/train_tracehr_not_stability_native.py": "5d7a0cd3c7ff2137fc123d5a4f46ae168f7f8b8788aaee684f98752505e57ccf",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/tracehr_not_stability_queue.py": "7147989b93c6fb327cfee7ee3a0721e888fdcef8e09229d5444adb54007d4003",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/tests/test_tracehr_not_stability.py": "ce1acad6d7a13f7b6385929cae8fc0a6cc46af3c3640c90bed69e488afc67a91",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/audit_tracehr_not_stability_baselines.py": "e8b7e8801d630efe95b9392a5ae3642ae0517be93c442a3b6233693e9c0c1c80",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/work/tracehr_not_stability_20261018/baseline_expected.json": "c9e9da621d218708a241f2235086ab6e21b8f3d5de77a8e960c37e4cc7fe662d",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/tracehr_stage2_common.py": "84a8c4a5feef4a63419efc0399232799c9ecbfd1da4738a1bb24e3f1f46638fb",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/train_tracehr_stage2_noa.py": "2c83f1621165412e7a397e0641ef9cbb4e7450bd92550b3a2ea7ddf8dcadc9e4",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/audit_tracehr_stage2.py": "62a702ddd167809bd6cee5d11d65fea6436155c64a50fa138c798009cf48bfa0",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/tracehr_stage2_queue.py": "49670e96bb64d5986cd428a962681ea7ab37af430c994acc2dbd2200c5de4e00",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/tests/test_tracehr_stage2.py": "92a07ee43c52908302c2e14d3a991f2685be56fc6f509b1c4819e09c39eb588b",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/work/tracehr_not_stability_stage2_20261018/expected.json": "ba1e4d73cc27255176813a304e3be8a6db61a50380fdc5fc45939ad852b09610",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/models/tracehr_noa_ablation.py": "94ef085007d0cda314fbfcd586b2c171717d0b71f4df895f9a9ecc88270e2cb1",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/tracehr_noa_ablation_common.py": "92b16e38f11831bcae01c57d9f653a6aae2e011fad5ed36a0ed9b4c177517bd0",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/tracehr_noa_ablation_runtime.py": "136f239550335dcf42f681984e992731442b652553f1d98eb60eca0b64a94c46",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/train_tracehr_noa_ablation.py": "2b782f0093c48403ccd2cab6960d3ed8679e6e84082a48feab499247244c934f",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/audit_tracehr_noa_ablation.py": "ce0fe726d0806f69c755807bacefa62b2e73435d832db47d57006b138ebb910a",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/tracehr_noa_ablation_queue.py": "a0fbece986791c7bd163139c23259ce957d174a513060893f1567998441b9271",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/tests/test_tracehr_noa_ablation.py": "cd91c923c26183d4e1efaf34ee69d912bb0130e489b50c09cc34f63d79f1381c",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/audit_tracehr_noa_r_equivalence.py": "b2047ee7166058eb938311f07d3e030dcc14bbde76b6eab3b1085b3ddc46935b",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/work/tracehr_noa_ablation_20261019/expected.json": "35dfefc1d953f4c80b7cfc254dd60b5404f3cad8297af29f528f3cf9c68e2048",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/models/tracehr_r_member.py": "144a165a295c470ba244f47459c2e46600cadc4bb4ae3e7d6640009a217754c3",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/tracehr_r_member_common.py": "c5b92bc63204b80e294fd55bdb0ef41cf01a55c6021a287ed31f882e58ab48f4",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/train_tracehr_r_member.py": "36c83b9f2026c28f345678ac92d3abad9611b84fa7de6c613d57498e9d33eda5",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/tracehr_r_member_queue.py": "7037e3ae7e2cab70ddacb375be7d925abdaff15cfdfc62cce9311a3181a72be2",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/audit_tracehr_r_member.py": "37225cb41f1ce3b91e591a886cb14852e38b2f62bc0971a3fb684d6558cd2ceb",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/tests/test_tracehr_r_member.py": "c10ce2042e1801f43374c1a3647270d83a2f3affe1a972b76ac6f0c7a12df442",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/work/tracehr_r_member_20261019/expected.json": "742c0f59c36eaaad59c5b33566416115e80f5a1877f0aa261cf5b35f8c33dd08",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/work/tracehr_r_member_20261019/review_gate.json": "120f9ca279db5ac6f2502e4faf0bdb1b2bb664989125e8471c9ba14d5b7d6c94",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/models/tracehr_r_gain.py": "52b7effb7daad58af431ceb03d8ce981dd47582e629dfdc63fe35168a70ab9bf",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/tracehr_r_gain_common.py": "ae05bb0da0c3bb0290a66be03cda65c2b8cd6ebff31a0429ce470e730d840346",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/train_tracehr_r_gain.py": "75226233e37df6013c7be15c0280dc1ee71b5d7832d27101c059f1604085036e",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/tracehr_r_gain_queue.py": "8b24659f2790c4c3f10f248ca342709beab626fbe9a27b63b7a7469c06b3454a",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/audit_tracehr_r_gain.py": "749d247502e5ee96a2fc15c6d9eff330b3e8130e24816df979cdad9299b244f0",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/tests/test_tracehr_r_gain.py": "822e50a1601abac50d4cff4d51037bb1927094c1be637c25f01282f3aa2a05b9",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/work/tracehr_r_gain_20261019/expected.json": "a1a445ab2a430d092a7cfdc39512f47fe17502b25f3ada90c0c4db8715e17a77",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/work/tracehr_r_gain_20261019/review_gate.json": "b14fd43d778d5e951a34fbf03494e0d813407f922a74d9f17df54332dc488ae1",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/models/tracehr_pm_confirmation.py": "e29001126841a1a9369f841fbb5e35f203614e92bba3f4bb90c9b01a07257759",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/tracehr_pm_confirmation_common.py": "273bb9082ca30173fd8bf0847666d4ac6b42401df0458774584e53e9c6300a65",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/train_tracehr_pm_confirmation.py": "fcac0cdfce455f2bb65d998e0389ae8f4f66674d91439c591033719783f04bdc",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/tracehr_pm_confirmation_queue.py": "273173ef27f032e42f92de49633592959eb8ef7940df1398cd6334ea5d2d500c",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/audit_tracehr_pm_confirmation.py": "a46bcffa15d28764c3b45b15a6c5a5eb83f1cd53af7e9c2a4a9db7521cad9bec",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/tests/test_tracehr_pm_confirmation.py": "1012de540d76bbdf1a8061a0e435b8e18b1499f0927057cf7b2e7eca306ea314",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/work/tracehr_pm_confirmation_20261019/expected.json": "6573e8ceed7f142f2f924d16f0d2059f942a84455e69f7adf2469b42888bbd25",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/models/tracehr_noa_pm_completion.py": "bcc5d1a2814664717338700f8251cd99bf59ec90ef23f792fce703f77cd1bddb",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/tracehr_noa_pm_completion_common.py": "05604b617d5d00ec94b3d8997be62ca7c9e362db96d0a250cb834b161e3ffebe",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/train_tracehr_noa_pm_completion.py": "fba8413c96319c2cdd7a2a5f1b1784a0fafb04c27da0198cfc5797d42818aee7",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/tracehr_noa_pm_completion_queue.py": "f653bfc9336de0491316b369013ebce41b40b3fc543b99003fd0a437d8b70da9",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/audit_tracehr_noa_pm_completion.py": "e287c414675480018650104e88703f9d1c82d1b4b98368aa0a1741035787851a",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/tests/test_tracehr_noa_pm_completion.py": "c81474e1dcda4c55e9d70718e1bc56dd2e931070fbd6863b1783280495908a3a",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/work/tracehr_noa_pm_completion_20261019/expected.json": "6bd8c1f2d7fa25e74dfec842ada38ea5f731f60849c2e797db9e197946123cb5",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/models/tracehr_noa_main_confirmation.py": "641e5bd5fefdf587e2cd96d1d6af9bcafe598d03649293f7e76a8d3579abed3c",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/tracehr_noa_main_confirmation_common.py": "2453fb31df3099da0a2f624292b8362088c5c508da3234875cfcb472ee4e162b",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/train_tracehr_noa_main_confirmation.py": "c6bd2b47a210abde6c4acad1936fe99099cbcc60649e181fdc2088a95c26ff63",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/train_tracehr_noa_main_native.py": "76ba1b38693b64f098358a8aeea671ca3a676325698857d99a25e38c6d581e6a",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/tracehr_noa_main_confirmation_queue.py": "bae1ce32432e1a908829ad3e10f28c5531b7a056f7c53f07a413e2134d877f08",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/audit_tracehr_noa_main_confirmation.py": "12676365e31c3606001138567a505e7aa3cddb589247ef27e9b18d6ec433dcef",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/tests/test_tracehr_noa_main_confirmation.py": "1c0f67bc879f1610934231b3fcc16090e607a66c05d12f5c64a0b2140c6b0f4b",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/work/tracehr_noa_main_confirmation_20261019/expected.json": "0df0531a5941ef2db0f4f65cf5cff0311b0f878c3b4774fee7bf0a4b4181d383",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/models/tracehr_noa_validation.py": "b009652fabea2f39dd93731d1bd962cf1172a754a66e9085ec0ee6ab996db43f",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/tracehr_noa_validation_common.py": "bdaae9bcc99fa8cba3f12141abdac40ae85fa7d8f83c8467cf4b10fdb796e2eb",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/tracehr_noa_validation_runtime.py": "7571a22625caa1bbeac05d72515848c4ba92c46e5c30fe07660dc843e2ec772b",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/train_tracehr_noa_validation.py": "de6d18013b4f42fc792e1249ea4d93a193772ae573c8f5a612ec5864f0ebf513",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/train_tracehr_noa_validation_native.py": "c837b80265333caec6a32b07c5f701de4a76363801949c7fac34a1efd545b6a1",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/tracehr_noa_validation_queue.py": "397f26c83732553f3c5608e71e321468cef537a6e20b705160ab9b5474e659c6",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/audit_tracehr_noa_validation.py": "09522fbfb08f0fb031ae21c5e694cad40e8d80fee81b8713447a4ba00e14fc99",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/tests/test_tracehr_noa_validation.py": "355bea5c07114c8387ab789739b17358eee5a5d1d6315dc8df960e6848a0e131",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/work/tracehr_noa_validation_20261020/expected.json": "9a4d03c165873dcbd1c0db0ff2caeef25388909d5283177d53ff09e5a9d3ff0a",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/work/tracehr_noa_validation_20261020/memory_entry.py": "cd35b569828689b465534aaf8c551e3d32a564f516ecf0bc36639d4668e850e4",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/tracehr_noa_eicu_ablation_common.py": "80074c38e9cebb384cc38aa50df0aa6a3d94326d6383dae2b9e364d8f2aa50a5",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/train_tracehr_noa_eicu_ablation.py": "13a16a3b354fe634abb9c995749703552260616b930e6794ceca8865e8202ed9",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/tracehr_noa_eicu_ablation_queue.py": "e3f9c5a9b71730f735dc17bb42ef655e101700d283386524c7088df7bc4f5903",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/audit_tracehr_noa_eicu_ablation.py": "58abf23f4a21cfbea4e7bce899439180b16ce6e500a6f30363baa169920b63b4",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/tests/test_tracehr_noa_eicu_ablation.py": "6cb945aedb04f1b9f51d6ec0fdc5fa54262ef0cc493cd2186c0aea9b0942520b",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/work/tracehr_noa_eicu_ablation_20261020/expected.json": "51b275c743a0f28eb0630c50c36765f306eece0bc9088350470269867b4f145d",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/work/tracehr_noa_eicu_ablation_20261020/memory_entry.py": "cd35b569828689b465534aaf8c551e3d32a564f516ecf0bc36639d4668e850e4",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/models/tracehr_pm_ablation.py": "5f2d1f5c59bfea6124a05e4677eabac14643ff7a3338eaefae4dc079727bb9eb",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/tracehr_pm_ablation_common.py": "9744ea5907da3fabc9e29fae71129bd2d8758ad5f66b26611607bcf2d8368e47",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/train_tracehr_pm_ablation.py": "2da80def348a28bbe6ed10a577241b9162ad9cda3bbca3511fc3e7c48c74a08a",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/tracehr_pm_ablation_queue.py": "e6dc95a182e3ed5091bd53dde7a2183b2f29b5045d390231f470562b47893f77",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/audit_tracehr_pm_ablation.py": "a79d38676629058442ccb57bd1d8efb824da449fd5bbcb485f75407272b91b62",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/tests/test_tracehr_pm_ablation.py": "cf5169106888f5425d43f51c6b1f57e9056909b4513ec6e356fbd3c0e5eff580",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/work/tracehr_pm_ablation_20261021/expected.json": "7f9277031c9e22848dd981e9dd383e25be77ed622e85cda885219a416d88df72",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/work/tracehr_pm_ablation_20261021/memory_entry.py": "cd35b569828689b465534aaf8c551e3d32a564f516ecf0bc36639d4668e850e4",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/models/tracehr_fte_binding.py": "e5a5cd24441bbfd3d75795a66ed2c4819cc0aa68c0052e5da8fbf6a34a403b18",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/tracehr_fte_binding_common.py": "3b5c85d36ce62363d6ab878a3d729dab2d68f03868103b5356a54b5edd27c721",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/tracehr_fte_binding_runtime.py": "832a0b880ae60a26d41b65b9b928e96a101f105d7ce79c3b1c5b4413fd2566f5",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/train_tracehr_fte_binding.py": "6b4e0422bc67b53a9fec26808d0099ce890d1a42bd3d4174798cbd6f1f4546c7",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/tracehr_fte_binding_queue.py": "9380466ec669dc7bfe36c1c79d3744a62fea5c047477735857634acbe85f660e",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/audit_tracehr_fte_binding.py": "f955085b3ee06a0f750a7bff75e9d0194c5ae43a2786da81d5f5936f8d68dada",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/tests/test_tracehr_fte_binding.py": "3d8f21d09c212bfb290403809f083a5c183c898f276958e4ad5205a5c33acba5",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/work/tracehr_fte_binding_20261022/expected.json": "d8000776beb4dd12ad9ad406b2bd69e6d77dd085219a4ec721a529ac1ab910a5",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/work/tracehr_fte_binding_20261022/memory_entry.py": "cd35b569828689b465534aaf8c551e3d32a564f516ecf0bc36639d4668e850e4",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/models/cem_evidence_structure.py": "b8fd10bdd51d1b771cf207f357d148977eefc1d09d11ea63fce3a1d2dd9eed3e",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/cem_structure_common.py": "c2809252cacfda0f0b1b3fc831a7774314cc9dfa96d56e05cb7b57c02e4695c1",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/cem_structure_runtime.py": "8ac9059a39a6a29aceff27e814a8ffa0d654720b5be5e574300a67a16739ce29",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/prepare_cem_structure.py": "27f19d2392f30aa12107676c7e7928297e8f3a6e88ce4bbdace060d2e57e54f0",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/train_cem_structure.py": "af7881e014942c72630a82d08c3c91870f9ec067ad97160e140c3dcea4fe4362",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/cem_structure_queue.py": "0215a32b81a1ebed96bfd1679b1155dfd972c19a9b57e09bf174f810a1c0be71",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/audit_cem_structure.py": "92bff5e6ee9370387d21a8980df98fd34a8feb3f0a4b5076f040874bd4e3ddd0",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/tests/test_cem_structure.py": "764dbc82ae786f3badfc74ea7a1cf4d700ed7c1172bc821ba24d54188f81a2df",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/work/tracehr_cem_structure_20261023/expected.json": "dc2f542b59dc8391d565e9da78c43e457c806a0def0156b529625a13fde8f101",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/work/tracehr_cem_structure_20261023/memory_entry.py": "cd35b569828689b465534aaf8c551e3d32a564f516ecf0bc36639d4668e850e4",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/transformer/__init__.py": "fcdddb4f163b16601aed6e9bd0f93db7d1000982d6c144ea37a2a3b82d5d7718",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/transformer/mambapy/__init__.py": "8c69fa5fc39e49cb19e6283fea5098863801a66ce6020716fe2e9f702b178f2a",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/transformer/mambapy/mamba.py": "c001dd8710433a5c82e5ddce4b053fe7956d3ccc65205b91f8ea8e4a1720f51f",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/transformer/mambapy/pscan.py": "3db4286ed41bd6f255de77244faf84b0cb9cd737f7bb963c632ba48aca1b3613",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/models/cem_connection_ablation.py": "a0563af5fae370333f525ef1661ff6b4a6e67b8608637f565b4540de240edf73",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/cem_connections_common.py": "600b66156286caed1e1fbd4421894b00da51c2df0272bb07e6024fd9083aae66",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/train_cem_connections.py": "2f8c46e48eae4b1c9ef7f93b34b547be3d1e1cb08b99e9a13240916bf9ed7a43",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/cem_connections_queue.py": "9ed8769e5adff85e94c40776f416fabf8f3044f8dc3a5e185495e60d491d8f44",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/audit_cem_connections.py": "6ffae3785fdd12d434807a5ad73aa5fd0c0f4b7d182106dbfd4c5d6011615460",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/tests/test_cem_connections.py": "0ffe5ab3ab74957388b701efd115b20b585fd5b1bbb6e16e909987276b1b9c2f",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/work/tracehr_cem_connections_20261023/expected.json": "0c394151ff392d34718e4b0347da2346e74d684e1e13cefefe67210296033246",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/work/tracehr_cem_connections_20261023/memory_entry.py": "cd35b569828689b465534aaf8c551e3d32a564f516ecf0bc36639d4668e850e4",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/models/cem_gated_event.py": "bf3166f866ca9fd97ea51e342ab43c625682ca23dec0aafda2b3b9109d2f12cf",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/models/cem_refine.py": "57079bff3476476d3346945da76ce56f53d6508e8ff31fbff61a345bbd6d5c27",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/cem_refine_common.py": "6b3e9d17f0fc2584804f1b49a1d763fcdb633f8d1ca612f805011234b77465f9",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/train_cem_refine.py": "0907a9f156725ec782c0fd2c6450f998d315af9c4850634730b59f2c8e689dff",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/cem_refine_queue.py": "cb89b3d2114d55bc60292f345b492fc618a484379abc3361ea51e00af33af94c",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/audit_cem_refine.py": "7d01e12092e22e2ca8999734f40651c9c7cbaf03e612b700b03ed3f647e6cf3c",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/tests/test_cem_refine.py": "42228d6b6a2f4d1f52b62f5d5c9a479916c52c4d12e104420455c25fc42fcf55",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/work/tracehr_cem_refine_20261023/expected.json": "4f9147fa292a6a16aaf336a42e439f1edc9a8d7bb528c2942f43970973e7f97f",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/work/tracehr_cem_refine_20261023/memory_entry.py": "cd35b569828689b465534aaf8c551e3d32a564f516ecf0bc36639d4668e850e4",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/models/cem_gate_location.py": "721ec02eade6f8808202726788cfcd1f2abe7ddd99b9b463a5342b7aff7b6d16",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/cem_gate_common.py": "9d4ae56072e02812b88256a04c648f49b3f8be45435c6b3eb1eb7afb0e168fda",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/train_cem_gate.py": "34c10e5af1dcbe46bdf2ab82f28ace0267e388ac8c4034d555e7dfcc0b458e02",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/cem_gate_queue.py": "becf717f1b678abdc2cb893f7b1ece53df76fe6274170a41dddf6ff71fdaf2fa",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/audit_cem_gate.py": "ef10499000b91b01d123eabf490bf7cddac86552c555211e06cd55417873c884",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/tests/test_cem_gate.py": "e042d2a389dad23fbc64610812d541bd9d6963704564e1aa4f8da1a721dbe70e",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/work/tracehr_cem_gate_20261023/expected.json": "3e26e592a5edeccad3f4fd47629de2ae19f9dd8282cdf55ddb357a1e67c5e85c",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/work/tracehr_cem_gate_20261023/memory_entry.py": "cd35b569828689b465534aaf8c551e3d32a564f516ecf0bc36639d4668e850e4",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/models/cem_gate_inputs.py": "347c744f749df53db596d735b80f6e8c67d0a1bb738f9ffddab47aaf128bd364",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/cem_gate_inputs_common.py": "451ed7a799b9ae867280c9783856f099e7502c051075371b72cc19cc10c56dfa",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/train_cem_gate_inputs.py": "9e711ddec05559a8335e94cd6bbd5653ecc97f7f43559c2ab31d8840f60709c0",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/cem_gate_inputs_queue.py": "d9f824a980ef5194bd7e9072c643933ad545773bf2e48a422ecbf1b5d3f14906",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/audit_cem_gate_inputs.py": "4bb54fbdee058fa953bde23f6b08c58667427faa652f517049efc33dd5102a96",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/tests/test_cem_gate_inputs.py": "0de67f49d823b08a10db6ef660e7fff53aeadafed84db0c572176fb50b7d570e",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/work/tracehr_cem_gate_inputs_20261023/expected.json": "38ab33d18c5cf14ced59c251d8764177d013dc5b9d180822a1aa672cc2ee2acb",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/work/tracehr_cem_gate_inputs_20261023/memory_entry.py": "cd35b569828689b465534aaf8c551e3d32a564f516ecf0bc36639d4668e850e4",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/models/cem_gate_start.py": "2f0ccb18ad8ce73840e4803f772dda89fe6d75feb1922e115c7905e0b1f229a8",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/cem_gate_start_common.py": "f5bd769ddd3d08be8b623caed11547fdac2d213b732f22927eeeeb8b1dc1a287",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/cem_gate_start_checks.py": "f5f95e5ec74c8320f26e71d381abff0e1de8653dc9efaf530a018082c71d781c",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/train_cem_gate_start.py": "1b5c024d8d52ef8d791a8098fcba9aaee630616cc74d33896bf88231108e6ac7",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/cem_gate_start_queue.py": "f73a23d5f49fbae49dd51f5894b6b8aa7fc9bc4a669b44ed267bd8023095e751",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/audit_cem_gate_start.py": "54925a93212cb747182589ffa54c2c477996a78331cc60d61128c456cadf9bb1",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/tests/test_cem_gate_start.py": "024b5421f7d4f0912d20fa4ab5bd98a3c5cfd26e196f8568cba01465700a7748",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/work/tracehr_cem_gate_start_20261023/expected.json": "afccf1227af5a80706b7bf8312b37b4e0f6ecd6792a97c993e569209b7f7566f",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/work/tracehr_cem_gate_start_20261023/memory_entry.py": "cd35b569828689b465534aaf8c551e3d32a564f516ecf0bc36639d4668e850e4",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/cem_v1_rate_common.py": "3e48a627ace86a34889a020059b53dbdc3e46fc16fdb42cba32c6b119278b7de",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/cem_v1_rate_checks.py": "cafb6992e9ee18935b324763ac2b87f114dcfdaea1c8ecdd43a78d20585f6f10",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/train_cem_v1_rate.py": "d758c277dd8b8eb0cef28c41ad97f8a2852fed44164baa256da943a9278c61d8",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/cem_v1_rate_queue.py": "56b9cc9f13f2d33425c297bd2d6a03f74dd42e2f20f77c9b0a94a698555b1eac",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/audit_cem_v1_rate.py": "619b9980550df6cf603790b4231ed663f1f159e97b69c777f3079e281a049b68",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/tests/test_cem_v1_rate.py": "0870e6e84831a1654ddda5425bdf2b8adae0cea6056f9fc5f7072bedef28da49",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/work/tracehr_cem_v1_rate_20261023/expected.json": "1d3aa91b219f2592241323a44d5ee69ade66cf0390f19f39ad9b807b82798587",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/work/tracehr_cem_v1_rate_20261023/memory_entry.py": "cd35b569828689b465534aaf8c551e3d32a564f516ecf0bc36639d4668e850e4",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/cem_v1_group_rate_common.py": "736b6955a51a923e306d543e9e7615eaefdde463427472ec274cbb856948664a",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/cem_v1_group_rate_checks.py": "46b5e764884ad15d2628b4ca65d8031e4bc5da45428e3d93a7002439ad36bfb0",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/train_cem_v1_group_rate.py": "c366d0c66801354721cf521c3968884cffd44e92d713da784ba9d53ccc1e114f",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/cem_v1_group_rate_queue.py": "08e4135458101659fc26029448b42fc886257383114189c5b159be5ce87ddaad",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/audit_cem_v1_group_rate.py": "44476ecacdcf0388c7a50f84f72df432b180dd8d6bbf3cec3a9f5bbb3ec4c27f",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/tests/test_cem_v1_group_rate.py": "dcb9dfe4d4c82652431efd9ca36e1224c3caf5718b1704cfb25e634d515613a8",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/work/tracehr_cem_v1_group_rate_20261023/expected.json": "eec4646f0cab4e4afa5b72faf2143ac77834888a449450ba12909a508ad971de",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/work/tracehr_cem_v1_group_rate_20261023/memory_entry.py": "cd35b569828689b465534aaf8c551e3d32a564f516ecf0bc36639d4668e850e4",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/cem_v1_group_confirm_common.py": "5aba159018553564b2c751beadb280d7bf7fbcaf8380e4ac85256f4d05f4a121",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/cem_v1_group_confirm_checks.py": "919b85f1f800ca8582d3d404e1f6a9c83ef1bc6481f6c86311135335f669e86e",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/cem_v1_group_confirm_runtime.py": "0f49db5008974fa52767fb447518dbf560861d70768bcea1f0fe2938ae89ee87",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/train_cem_v1_group_confirm.py": "e3b9725deacfc6826c7e822c0d7692e9d73a187cd1afefbdeebd3b6fb53ad99a",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/cem_v1_group_confirm_queue.py": "ca9e8d84cbc34900333be79db9f5bf4455106105707d8ea6172d90b4b69a7a3e",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/audit_cem_v1_group_confirm.py": "c545b9bf8f8b694632bc1078d96da907e19c5dbaf800a829ee6a43f8d0da06b4",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/tests/test_cem_v1_group_confirm.py": "fe10e65d9acebac18633c29c6ef74446c5dd01cc383bbe284aeb15a1352a88df",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/work/tracehr_cem_v1_group_confirm_20261023/expected.json": "c31ac7aedc60c72c37c3299dd9ccd45da0767d9a1aa20a97f92c29ee8e1f2117",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/work/tracehr_cem_v1_group_confirm_20261023/memory_entry.py": "cd35b569828689b465534aaf8c551e3d32a564f516ecf0bc36639d4668e850e4",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/cem_v1_group_confirm_seed_route.py": "0fc689d690a111274e3ecb408b628fac602e2202989f07927bba8912e1bc0815",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/models/group_v1_paths.py": "49b7cf14a5a6d33a06792b0d71f6d3317d3129aea3a0edbff946c9214dd1b3a8",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/prepare_group_v1_validation.py": "1fccdd84853af29c4ab9e4e82d982568b488daa279385868c512c77a3596fd42",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/group_v1_validation_common.py": "c54a12478670fa01ca236f0ee1a8e2c58d1878ddeff7ea984b637e6e6aa9610e",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/group_v1_validation_checks.py": "f92fa1fd75eae451f4fcff20e81eb4156577bb8a5534f832122de8110483b8ed",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/train_group_v1_validation.py": "ee1f84337dd49c52bd000cab91d87fbe4d5b094b4f5d4bc1cadb360e62d1e113",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/group_v1_validation_queue.py": "7a6c5f8fede9e7646fb5c3603f58075c5e963a5145cf0551a206867132430d5a",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/audit_group_v1_validation.py": "773cd2210bbaf15ef163f55e91163c800c0bc7e41a5df32efde9363dcbadd069",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/tests/test_group_v1_validation.py": "f86b126d16160c001ee117c6c402ce431f5535f0dd2ac138b9b3b3b5d716997e",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/work/tracehr_group_v1_validation_20261023/expected.json": "b50f7e310c064c5580e43078e94cbfb4706ff8f3eecdd4970ecf833266be82e8",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/work/tracehr_group_v1_validation_20261023/memory_entry.py": "cd35b569828689b465534aaf8c551e3d32a564f516ecf0bc36639d4668e850e4",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/mimiciii_fixed_common.py": "0c8da58c66829047fa4c191a6b0962d03838b922395237a21b53cb89202ab67a",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/train_mimiciii_fixed.py": "2bd5a6ee3707fbeb7b2d4f412de07a7f4906d215fdc5f7e13fef461b3e3dbfe5",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/mimiciii_fixed_queue.py": "225aa174af8f80a1f53758b8c38ea55bcfeb9fbc9166eaede6256f8d07811485",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/work/mimiciii_training_20261024/expected.json": "95859464f6c67980d4ced001e8170dd9ce8aafbcd144ec9ff331989c5495d397",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/mimiciii_baselines_common.py": "8aaeb8f66e02b63d2f79377da974ae56f1ef3fbec5ac18e727d0692954ce77f2",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/mimiciii_baselines_queue.py": "85c4ced182a33d16cd86fe342294354ada8014edbd9c4d2d11d3b7de46b1cbaf",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/train_mimiciii_numeric_baseline.py": "b64cd6158c2802d018a370ba45b800c4046174d46d51b83807662e306a81b977",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/train_mimiciii_clinical_baseline.py": "c248bbd0eb2e61431ac7f82baaa40193343630edf1641722391aeb35388cf0e8",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/Experiments/scripts/exp2c_metrics.py": "114fa6b345aa9f524122ef8e1b6756bcd17596979705e0aa567cf5cefe7277bf",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/models/__init__.py": "b30b6970dd379505f23c8f883bdeff4a8971095bd92d54b86963fac7310dbce8",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/models/amhp_encoder_adapter.py": "7ae6decf59c5d2c67a0690d294ebf8646b6708550a3e9ae0f2ec799c2cfc1f16",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/models/cem_connection_ablation.py": "a0563af5fae370333f525ef1661ff6b4a6e67b8608637f565b4540de240edf73",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/models/cem_evidence_structure.py": "b8fd10bdd51d1b771cf207f357d148977eefc1d09d11ea63fce3a1d2dd9eed3e",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/models/cem_gate_inputs.py": "347c744f749df53db596d735b80f6e8c67d0a1bb738f9ffddab47aaf128bd364",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/models/cem_gate_location.py": "721ec02eade6f8808202726788cfcd1f2abe7ddd99b9b463a5342b7aff7b6d16",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/models/cem_gate_start.py": "2f0ccb18ad8ce73840e4803f772dda89fe6d75feb1922e115c7905e0b1f229a8",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/models/cem_gated_event.py": "bf3166f866ca9fd97ea51e342ab43c625682ca23dec0aafda2b3b9109d2f12cf",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/models/cem_refine.py": "57079bff3476476d3346945da76ce56f53d6508e8ff31fbff61a345bbd6d5c27",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/models/clinical_2024plus_adapters.py": "fe6f75b18c98953bf39882360b8ef8da008c448b0e0454af013a32b1e4bad831",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/models/clinical_decoupled_mtpp_ode.py": "9548894caf5126d6dd7c3bdd663d249609dfd26de36036f229a96ac835c4d017",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/models/clinical_dense_optimization.py": "9d75da7551c88048d455c7b53373eb270174e4f0320a7d55c1e5b9c0da89859d",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/models/clinical_gru.py": "11fb08fc70ef39c87b832d2c7cc5d824279a2aa3789ccaedd4b4e6b45e6c82b5",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/models/clinical_hawkes_mamba.py": "0c0d6a5bbad11d338d9abfa9a518fb3d027d154aee10f65c5a1fce1db4062e50",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/models/clinical_heads.py": "bbd9fe0630265550f09755f4d7a4fdf050c45d4cf0cb9e814657feea26e9c96e",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/models/clinical_hybrid_student.py": "381e7e6d01e8392892b9a4e30a799fa1206311ccd3c93e19ed0d009f2d1e0f84",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/models/clinical_lstm.py": "4097160889b0b28e3a011f9d7c4d619ef431145e1f933bb942718fcceb37fe48",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/models/clinical_mamba.py": "f0b411ec1643a117dea7b1ff843b60f39f46c5467ffb28b567f7deeb53715858",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/models/clinical_pooling.py": "83583f05655e32557d1840ca91ecdd92a7ef3e73e3cbd71df6a294611dd4dca0",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/models/clinical_rep_screen.py": "c40577c130706ae9edfb30a92917adf8966c0521efd658dc396bb9a96cbf5100",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/models/clinical_rescnn.py": "feeb64ae9f87ec83f7383e264ffcca1b053d35071096b3b81b0e36d662c7f2a9",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/models/clinical_retain.py": "61e9f1c93ba7fa315a660460b943f2093beddf150474d8f73cb3290f5e8aaecb",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/models/clinical_rnn.py": "b08308bd19a0e0be5419b6118026efe34a2606900098a779a3aa3d38dfd0196c",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/models/clinical_s2p2.py": "b53f49f56a579cf7cbe38c930f736ae67c1bffb6c192f0ef12cc8deb81fcf8e2",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/models/clinical_seft_event.py": "64e2e8adce3d8ee81eb40e191955dfe2c54a707402c8ba1615a66ff5b11bd0d5",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/models/clinical_static.py": "530b01009ff103560820208514cc4205c4ed1ae86c5f904cd3420e5813a86233",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/models/clinical_stats_candidate.py": "27fb44888acb93856eb8e9d1edccb0658f61cf87bce20c057543de195184769c",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/models/clinical_tlstm.py": "f7492ae5e9e3ca5650756700ddefb7c24da9b899f2ddb8e3fc23824c7c46e3d8",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/models/clinical_tracehr.py": "dadffeb588fbf70f338df8a22a7d2a14147363f34e5e6138d0c04b4291efcbe6",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/models/clinical_tracehr_fullstream.py": "8bb4a1b52c6897e5958b23dd533b1232e35ec49f5ae4f277609779c94d3b16f0",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/models/clinical_tracehr_fusion.py": "d9cef4fa376c83c25b9971d91827a94449010482f83a047b983bf060bc27e015",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/models/clinical_tracehr_protected.py": "3f77268f4154a5a82e848b1a465f33a563d61aa7d07f97ae442b6a7c0b32acde",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/models/clinical_tracehr_shared.py": "c0890976ba7525cdf952cca0b69969ae2d7dad50dc81171b2a5ffb3ef5457917",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/models/clinical_tracehr_stable.py": "6c0558d05ca0f0636fc790fccdec8fa8b517df9f494cec1aa9977c6ab194df41",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/models/clinical_tracehr_warm.py": "74612da9f80c13315d8cc18c6db2cbafe7dc50e33f5273ee3b20e6125207dbef",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/models/clinical_transformer.py": "46cd86d285d0fd9529d79c3540ad51c1f204931c906b5177416c36070459ce81",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/models/clinical_www2027.py": "7481ab076e07509b6610498a22d2c809a7f379401abd7b65951527208902000f",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/models/clinical_xtsformer.py": "aa1d90d1d7e2bdcda863e92a90f3736c18acfd8e133fade36bcec7af50d62a29",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/models/group_v1_paths.py": "49b7cf14a5a6d33a06792b0d71f6d3317d3129aea3a0edbff946c9214dd1b3a8",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/models/mhp_encoder_adapter.py": "77b50e7a6e26d4d7cece222921a2b59e1eb72b197828b5c5ef63167d23adcd67",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/models/trace_frozen_sensitivity.py": "7d239a22b1bea5b5649d36b3527f8443236b5b0d4c9124137162d5c65829fd02",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/models/trace_representation_controls.py": "e00905ba88c8f9221cbabaedcce1938c49bbb7df9f3bd57fceeb8bfee4ab9a04",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/models/trace_representation_controls_v2.py": "e4d08cc17590efa64a00d9e619f85757855257d796f4382ee3ac8a72f7a755f3",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/models/tracehr_auxiliary_isolation.py": "7a2a95e648f4ebed4b66c55f93b8b12a7a563ad62f3cf5611ebffd8c311c53ac",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/models/tracehr_backbone_refine.py": "905f106f88ea8d24a18871a597ea143a8a9916bbaba68b9c90617c4381359a24",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/models/tracehr_c5_ablation.py": "7cf5819ab239e833e56936f59ddf2b1c00f8956ca07d880b4e914fdfd7c46c93",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/models/tracehr_calibrated_fusion.py": "a7cb55049af5b811eb050da36649ff90bd9da6f2786a188e1b5a1d11f7d89b5d",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/models/tracehr_centered_native.py": "76ee4b05cca2a373d7176aa25729728bd77e4f81f049a6919c4e07658aacfd64",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/models/tracehr_component_audit.py": "5a5e3caac1c5d7e3f3ee4ffd44ed855a5566d42707d346940dd6ddc019ae2518",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/models/tracehr_conditional.py": "cdd2b6c7d02ca802fc9ee1e77bede3d2d3bb4c2b094f7fbc84ab890502b32ec5",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/models/tracehr_context_cut.py": "a49b9048d1b440a5223ca7fcb5756b393aaf3f84d2ca140166a3c8e5881e8d8c",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/models/tracehr_direct_supervision.py": "b5421939b0ff522838a2c02b700b7507d78d32850162629d3650ed000f808607",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/models/tracehr_early_alignment.py": "104f8fda6fa0d12c3fdce6d7c385ae5e4fa4adb41e92f0349e1895a5efcba298",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/models/tracehr_expansion_adapters.py": "786440f88977f08e217704c0f5a40a30f723726b001f97f99d4d51c4a4111fcc",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/models/tracehr_fte_binding.py": "e5a5cd24441bbfd3d75795a66ed2c4819cc0aa68c0052e5da8fbf6a34a403b18",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/models/tracehr_joint_recovery.py": "fb631411b8debc9cedfe5e1b7f2a979096fb3df01cb9c0395aee133079085db7",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/models/tracehr_joint_redesign.py": "9c9ede92942ab4929acbf632d30a757426d20e8b333f6744407baadd023bdffb",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/models/tracehr_module_fusion.py": "18b01e76e7009eb9ac08b2ac6857fa6046aacee79542e494d5bc474c0a7d4650",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/models/tracehr_multiview.py": "db935d9e81ce6bb85b8d72a212f6fb1033ef5241beca7ba07a0ed28603090851",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/models/tracehr_native_adapters.py": "e3956970100609842b849d28d53e6d88df31b10f44280ec91d1fad60f3c72115",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/models/tracehr_native_anchor.py": "92cf876c9d9b5ffef79430d0c13520680ba4addaee7fe6f992bfc3d890087625",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/models/tracehr_native_joint.py": "21e254966227bfa558639f74c2d2da5c7a5390df986bc6f3c578e52cd2a19d51",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/models/tracehr_native_preserve.py": "95b21e24eeb1626721e4e65360fb5f355505a67875ccf748869c51de82765c47",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/models/tracehr_native_transfer.py": "88aba53b79a8a1a698b2e1a03ea919450eea3459dda08d22a031c490f7801a1d",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/models/tracehr_noa_ablation.py": "94ef085007d0cda314fbfcd586b2c171717d0b71f4df895f9a9ecc88270e2cb1",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/models/tracehr_noa_main_confirmation.py": "641e5bd5fefdf587e2cd96d1d6af9bcafe598d03649293f7e76a8d3579abed3c",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/models/tracehr_noa_pm_completion.py": "bcc5d1a2814664717338700f8251cd99bf59ec90ef23f792fce703f77cd1bddb",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/models/tracehr_noa_validation.py": "b009652fabea2f39dd93731d1bd962cf1172a754a66e9085ec0ee6ab996db43f",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/models/tracehr_not_confirmation.py": "2f4b18ea12f6485d7157c7584dc454d4c41f36f06a3207a214cfe78f527841bc",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/models/tracehr_not_functional.py": "90c64b5f066afff80265ac9503963c0e987b2519f22a0206994f1c6233bf3ec4",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/models/tracehr_not_stability_functional.py": "7c73bb0b3db0888df42a931c1b80a9bae85e502c0a623842d66d30fd2b2498d4",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/models/tracehr_pm_ablation.py": "5f2d1f5c59bfea6124a05e4677eabac14643ff7a3338eaefae4dc079727bb9eb",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/models/tracehr_pm_confirmation.py": "e29001126841a1a9369f841fbb5e35f203614e92bba3f4bb90c9b01a07257759",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/models/tracehr_pm_main_functional.py": "e5dab0b48751f77dd8732e6d2c5ba9be46ddf91e097b7e172c34276c7c8b315f",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/models/tracehr_pm_main_removal.py": "48f44df30dcdac694feea72256ab0872a45f81a18bdae8c7cdf355443f0805e0",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/models/tracehr_r_gain.py": "52b7effb7daad58af431ceb03d8ce981dd47582e629dfdc63fe35168a70ab9bf",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/models/tracehr_r_member.py": "144a165a295c470ba244f47459c2e46600cadc4bb4ae3e7d6640009a217754c3",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/models/tracehr_scratch_fusion.py": "117769e9c45c863cfd8c9848568a6936d153ccfdbcb7f0ba1eeea726f7822aac",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/models/tracehr_sequence_adapters.py": "1fb1061987e53b67201d505a832c1920554e163579e6f3dad846aebe5be16489",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/models/tracehr_structure.py": "eb0e724ee690c4bc43e97ef25d2f8ccb15a1695aed96c4f837b5917229d3700d",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/models/tracehr_trajectory_contribution.py": "58e26ae5e0cf0629cf6271ad8688680d635600cb76ffdc101c2399c661352011",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/models/tracehr_unified.py": "3cc387950c89486fea53e5244c170d1fc02f782f45eb3165621731fa04689284",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/models/tracehr_unified_next.py": "81be7bda725d448bcd644734e86648383a9569990090b3d758d848eb82ebe3dc",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/models/tracehr_update_space.py": "cc12c97b9646ec087721dcf7f2af21322fa90d5eda9bdcac63ae38e7eb4e532f",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/models/tracehr_weighted_fusion.py": "c573157dfacea7ee529e521a49640abcdbd0590a05e41bad941477a09c95b7f3",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/preprocess/ClinicalDataset.py": "499fbaabb9208759d8b058d6f064376ff9547a23143bbe60d4a749d910c9cde7",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/train_exp2_clinical_deep.py": "bbfeeac0b75b5f70a54765e87f247e77a0a12f8f6f5b4c9e9cbcb046d9cba277",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/transformer/__init__.py": "fcdddb4f163b16601aed6e9bd0f93db7d1000982d6c144ea37a2a3b82d5d7718",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/transformer/Constants.py": "014df94e1ae27d0df0e60d775f86c9c90d2f8c24c92b4b077b5d11a7f49df138",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/transformer/Layers.py": "1fbf30699dd5bdf6d9a56a1f6f5fef4b740d3b7a566cc5d52ba6acd9908d7d93",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/transformer/mamba.py": "d56ceaf55b5746a65bdb524ce907691c97ff5acfcbe4d3e2c1cbb0765938a1fa",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/transformer/mambapy/__init__.py": "8c69fa5fc39e49cb19e6283fea5098863801a66ce6020716fe2e9f702b178f2a",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/transformer/mambapy/mamba.py": "c001dd8710433a5c82e5ddce4b053fe7956d3ccc65205b91f8ea8e4a1720f51f",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/transformer/mambapy/mamba_mhp.py": "4e68eb88881d40ec79fc96e9f572b0d09b29c2d697f92959fe420425abfde333",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/transformer/mambapy/pscan.py": "3db4286ed41bd6f255de77244faf84b0cb9cd737f7bb963c632ba48aca1b3613",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/transformer/Models.py": "65278770ee5d2a093373d6692b9c16407995a8217c3d04b7c39867d3e64a6eb5",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/transformer/Models_mhp.py": "0884938fc0e80083180272d8777da1c4aba473de8ad8cf466da28c8e5df32999",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/transformer/Modules.py": "ea9e2568e79043609de4c926db94f8e2eeb49cdbdda20cc7f899d90553c61f59",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/clinical_source/transformer/SubLayers.py": "baa2d77a559cc1537815aa9ffb450cafa93707013d2d2d6f61264d235b08e6ba",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/work/mimiciii_baselines_20261024/expected.json": "0fb45808f8fe7604d44d58c0dcbc8e16242ce7e0af55abd68321b6ec1afee973",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/models/mimiciii_pm_mini.py": "5003e556c4707d9626207e33020af3baf1aedeed00ca6208a8b371bfb583ca24",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/mimiciii_pm_mini_common.py": "130b483c998f3478e3070abc90923d787133d55d25034c0571a74b546b549a91",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/train_mimiciii_pm_mini.py": "43a62b99c18ee8f37bfc9005bb5c3cc46dc5cb8d93d90d40b67a39684c674c47",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/mimiciii_pm_mini_queue.py": "7e6cccaef53ffb21f1edf361fdd8aebdd68dfe596db175f0c79b889710e656d3",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/work/mimiciii_pm_mini_20261024/expected.json": "8e8da887670a45e326088794053f29e2f7a0a8bd459c3bc6cabf34d74d928bf7",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/mimiciii_numeric_alignment_common.py": "42cdf076877855d1d2866dc3ea0fbe8fccbd334acefb622e252c1b19e42f88cd",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/train_mimiciii_numeric_alignment.py": "60a7b74c974ca54f4fa9881350fbe19a7799192d796fc11471c1edc4cff094eb",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/mimiciii_numeric_alignment_queue.py": "fa2a511d7ae521d1298fe21387a44f7ba82e9b2c5a0dbaaeafb33963289d5a3a",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/work/mimiciii_numeric_alignment_20261024/expected.json": "fb145e19fdbfd81392bde4fe411db8c743b8b8612c82820477765d2d966fdee1",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/mimiciii_ema_common.py": "da54f64652502549c403487f272ea7f994ea6e60ea232dfb4f19292fc1a0eaec",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/mimiciii_ema_runtime.py": "b29e5b30d2b86fd5d20ba3ab2dbccb17f5de5bd0c92b0e456f0d32abd184d31b",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/train_mimiciii_ema.py": "32d08501b9776b70c5fd1a06c2f011f628587044c108b0111392357e09c196d1",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/mimiciii_ema_queue.py": "db5fa1ab1174c2fe7d3570b25ae7960d051e7da9bf7b6938ffb1245d8b41eb7c",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/work/mimiciii_ema_20261024/expected.json": "5f8e7b51d72f4ba42db6a8091893f4934397365a66d26f14537411c6275e0932",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/mimiciii_ema_pm_common.py": "09a82cad712a5c8224a81470ef6f47a5b024c05e048582908f0284f988f7b76f",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/mimiciii_ema_pm_runtime.py": "ac1dd05a3badd84085d224685cd7f597865a4ff3f59d662c33cba1c710b3a70a",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/train_mimiciii_ema_pm.py": "eff47c234b06521f33f3c51c94e144f93958f102eeaab9c454930fc13f63fd80",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/mimiciii_ema_pm_queue.py": "e9edee545dfa536be74f093a554185baba43bccf05f9e7914b15279d788a9d44",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/work/mimiciii_ema_pm_20261024/expected.json": "72da96ae78941f03cdb54957e95431e6bb3b066ce6d6bbffa583107199ad3339",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/ema_cross_common.py": "2317bff96e8651dda38edb3160cc08a61078916e6cf60830fe734dbf27b6175e",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/train_ema_cross.py": "dad87e4214195075adf581e898680c589a7c538b210d17b73321c52fe2128028",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/ema_cross_queue.py": "da1119c99f0ef13ac5b6011162a6dc9b5d844373230a882aeaebc6305b84bd5e",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/work/tracehr_ema_cross_20261024/eicu_expected.json": "19af821ceac5180438773b7842e37ce7db9a34df9b5f11a9b8404a4873ab27bf",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/ema_pm_cross_common.py": "0550fa7a1ad9b2a1ec5356390651dfddd7fc75f74e775eb1d63f9ea944aed3a5",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/ema_pm_cross_runtime.py": "a814fff1d574f32ad8387182b4b6ac631ac346dafb4445ea30269b21d670c3fa",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/train_ema_pm_cross.py": "21b279f89d2e750f32a89b2d532ce227b2192781d3a2aa23f7cb65c30d757091",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/ema_pm_cross_queue.py": "b7f2d30c29c591261e7e4d0680a8de432c204594c275e53a361040d2242e3ab0",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/ema_cross_idle_gpu_queue.py": "f9a71e2133cefdfdc918cadbd24a86b5e5f84c1287dba0171554de3ab6823ce6",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/work/tracehr_ema_pm_cross_20261025/eicu_expected.json": "10e6da477e126d7314ff5beaf7efad53b1f18f3fa3e11cc58aa91d2353797ecc",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/work/tracehr_ema_pm_cross_20261025/eicu_old_results.json": "63900af0162a0c944072334e441f2416ce40626b49b47cd2050f6010aca3b5f7",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/models/ema_internal.py": "2ebe9bd7c1876fedba3e37e9ce503cf0e5d4d5575e2716a114c0016145c9d707",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/ema_internal_common.py": "521f216826e07f415c6c3aaa57134c0bb7facd9fcadb0ebc8aa8b3ffc86ea6a3",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/ema_internal_runtime.py": "76ba2eed7c753069626932e4d2ce765f630a71a0c0f93e26c65bba121b43fd60",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/train_ema_internal.py": "8ee81f6596d7030051ef2bac9d06136ebff4c3465f11c694bf0594af1b70d88b",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/ema_internal_queue.py": "5ab906d9310b8adcf384ab4c547c60424460256530c4f2133b793991c06d1a7e",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/analyze_ema_internal.py": "a87ddbb4041aab7c897fd870c4601accf2f06ce1bb4c831c079ef43843b1d956",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/work/tracehr_ema_internal_20261025/eicu_expected.json": "93e9bebe3483f2266d551b03b0e16ae9bce67ad771235907ef585e33a82b23b6",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/work/tracehr_ema_internal_20261025/eicu_old_results.json": "03bed6f1598b83a2909a9bcaa3cf15c9df5c052de297e88c2459c8089ab04968",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/models/cem_evidence_controls.py": "881f7e67cbc26bcbbca415c63280e8c409e26aed380f5bc9a0a78d066d64abd9",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/cem_evidence_common.py": "6576a9f07b821a2b703f4db218ff10507aa63b0ecd17171e1014248a662c9e4d",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/train_cem_evidence_controls.py": "95fe872a73c0dbb74238f10807c0719cddb90636647b84da2519dd884f0e6d26",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/work/cem_evidence_completion_20261025/eicu_expected.json": "5b8ea5a71cd23add25ca0bc5182b958ed3052b2dd1fdf2673e654a89a34e4e90",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/models/cem_additional_baselines.py": "cb386996cf1d8897609a5cbed222b9526cbf0001e27c4b6ad686821f9721d568",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/cem_additional_common.py": "e0735a50d86cc2f77a81c75a71bd830077868dc6211f0ed4d21e8f4c6ee368f3",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/train_cem_additional_baseline.py": "0c3afac620580cdb49fb3cbe548b0773b9eb786ae3fda5b73f3383e21d84b94f",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/models/clinical_seft_event.py": "64e2e8adce3d8ee81eb40e191955dfe2c54a707402c8ba1615a66ff5b11bd0d5",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/models/cem_sequence_baselines.py": "88108b4e055580063bc532ddcc2a70d13baa4ade3b557aeaf4290de6bb9bdfdc",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/models/cem_mtan_reference.py": "ee8098909bbab75ef7443b5d8e611cc0c0c280f4a178a0d24954abbbc724d871",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/models/cem_mtan_LICENSE": "fde85a5410bd00d42d838055b370687481d7869736a96b3501e6fc458aa5b7e3",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/cem_sequence_inputs.py": "cc8774c969c7f8c187f3b54c2c7887e527ff73569bd3610e41f1d752ca6f716f",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/work/cem_evidence_completion_20261025/eicu_sequence_expected.json": "405ccea56a3edde9445972444c52febaa77891182523a8e664e8a61ac99994b5",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/cem_replacement_common.py": "9e12ff6fd9eebc05e5ec16cba76b6de5c9797cdd02cc4d1578b9794ccbea39ac",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/models/cem_replacement_strats.py": "f166b8f08f2e213c1978d078ea525796cf9fc73c9337f31c03aae1eeeebe422c",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/train_cem_replacement_strats.py": "9caadccfce307d0ab4f1779a08d5b1cf5c94882ccc8791a1449b15e498b7feb9",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/train_cem_replacement_xgb.py": "8de356bf9c74e5e0bc02e0321e15aebf0ef023cfe817b1e3a1c8008b92700c62",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/cem_replacement_queue.py": "b8e59819408d464315e90277acb33dd39bb62facca9ef4ca5d6de360022f7303",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/cem_evidence_host_queue.py": "ffc40a095e2886687c50ccca2fd7fc29bbd89c78ec149f901f8f2ec2ad918c31",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/cem_icde72_queue.py": "24721bdae22dd45928ed6f6f24e40004bfb1db80cc5f5985209bd8ebf3665ee6",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/scripts/cem_icde72_common.py": "d360eeaa47949845732edb98071d47503cd9f301ee06c53746145a3583b5fc1a",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/work/cem_baseline_replacement_20261030/vendor/provenance.json": "54bdcac77f475a650e9dc5ac7741b0c674f2145ddd8925d1f0a93c5aea83382b",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/work/cem_baseline_replacement_20261030/vendor/pytabkit/LICENSE.txt": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/work/cem_baseline_replacement_20261030/vendor/strats/LICENSE": "7d34b7cee550edd92dbf7697486908e73d8aaa187a5bd7b9f4a6a4825b46d0fc",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/work/cem_baseline_replacement_20261030/vendor/strats/README.md": "0a6c2c0e7cfe0b8a693310a34cb35c337e16c0b1edd918d4c617aa32e9204088",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/work/cem_baseline_replacement_20261030/vendor/strats/run_main.sh": "d7d31538a2ef7591ac182bfb3aede1a1e34a35e53250e2c1a59c89ae894f2a3a",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/work/cem_baseline_replacement_20261030/vendor/pytabkit/pytabkit/models/sklearn/default_params.py": "2ef2e46ac5909121e506c0cefbbbb7f711cc83e89676515605d8d7105b43a8bf",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/work/cem_baseline_replacement_20261030/vendor/strats/src/evaluator.py": "58d7b37d660d5f1dd8c7168c118b1f0ed2b38f5c16b2b92181c9594f0702110a",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/work/cem_baseline_replacement_20261030/vendor/strats/src/main.py": "0be09687d73d8f30edad2405e8fe2fd0bd0febb72e32ab136b59e0732664cca1",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/work/cem_baseline_replacement_20261030/vendor/strats/src/modeling_strats.py": "a631202bbd4b8a1fbe647df7bc3cf36917caad570d1f1b499347a37753f2928d",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/work/cem_baseline_replacement_20261030/vendor/strats/src/models.py": "9501e1965c094be3ec646967e393382a5d3e8856bc1da901bb0288d2928cd5e0",
+    "/home/data/lxm/TRACEHR/work/cem_baseline_replacement_20261030/eicu/v1/work/cem_baseline_replacement_20261030/config.json": "03fbd91e9405b3edd9c3f0fea0010c100683c0418566441b62d46d05e13061df",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/formal_release.json": "ccc6cef29ff69da7799029e485ed7bc7e70742383f75c26cdd684029411352cf",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/fixed-checkpoint-lock.json": "d95a909bb4ec5d23f8e8d5493ffab30838e45142812f7c7175681483caa928ab",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/XGBoost_TD_t0_s48_exit.json": "6e80efe4da09fcf878491a20403ef35835af2879107ce9f47dad9eb9126ecaaa",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/test_XGBoost_TD_t0_s48_exit.json": "b0f2922798ae483cb6170f4c8fef3a53a0558723ecabe54677b529c6773559b3",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/probe_XGBoost_TD_t0_s48_exit.json": "7aa526994f56697b74d4a5908f63ae97e48a045b5b8b7b3b29f260f4e1b4e3c0",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/jobs/XGBoost_TD_t0_s48/completion.json": "e02d26da3d3e98a4bd31c22ae6dc7cb5f37dca8ae5a20c6d706ecdc4a14bc798",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/test/test_XGBoost_TD_t0_s48/completion.json": "c16b181907438303df9616b697df1f0fc9361f56107c6ce09262aaa79a5e5635",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/jobs/XGBoost_TD_t0_s48/run_manifest.json": "e0377f139503d65d763c6a87320549388bd0d00e3f5a8d845170dfdeec56a739",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/jobs/XGBoost_TD_t0_s48/history.json": "9e18b6ec8206e20c0fec185c97136c36a790bf96b93716b3d07cbb317d637c88",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/jobs/XGBoost_TD_t0_s48/initialization_observation.json": "97373de887ef01b7d16fbb808bfd4f9825dc930a3b2a6aaaa039fd2347a9e73a",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/pilots/probe_XGBoost_TD_t0_s48/completion.json": "53a8cefd8cc7fe320420e9db352b9b57337bcde1af0f6067a4ef323ca9b2956b",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/pilots/probe_XGBoost_TD_t0_s48/path_audit.json": "faab9421ef0bf564d041e047b5a8bf50ca6e6ae46c2f57329eaa5dbb9bc4f08c",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/jobs/XGBoost_TD_t0_s48/pilot_identity_check.json": "9d6cb6792192a509f6e313524d142c2eca51d96fd6279a474a422a3839d35761",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/test/test_XGBoost_TD_t0_s48/run_manifest.json": "e0377f139503d65d763c6a87320549388bd0d00e3f5a8d845170dfdeec56a739",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/jobs/XGBoost_TD_t0_s48/best.ubj": "03550a023e268575a46ba51834dc664898c3fbbf5b25d25cd640c9a61c306412",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/jobs/XGBoost_TD_t0_s48/predictions_dev.npz": "97622eb9d155dfcdea9fe3202a5e13830b31362cd565be4425d9df760d5134e0",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/test/test_XGBoost_TD_t0_s48/predictions_test.npz": "0a3b0c242b1f522d41995082adc97c527baafda151f58e4484ebc602ab930fcd",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/XGBoost_TD_t1_s48_exit.json": "35fbedec9f306b753ae2f4de588d564c58ed0390e8446670d0f363b984ba33d7",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/test_XGBoost_TD_t1_s48_exit.json": "7dc72f5d4f839c8be84dbd8a875531f6587e1542e0e28f9527e92a6565a226d1",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/probe_XGBoost_TD_t1_s48_exit.json": "ec840fe0d8e4fa8afc4c3d1bf90aee9eb255c54014bf3df50c7d87d89a9fe16d",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/jobs/XGBoost_TD_t1_s48/completion.json": "1f6747dd1aac450d681af5196496cfe3bdb7134c300838d34fb8ef2735555701",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/test/test_XGBoost_TD_t1_s48/completion.json": "b34de8d661622851f2ff9ad404f370db637e9cdcbc233b562347bb5399555706",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/jobs/XGBoost_TD_t1_s48/run_manifest.json": "9be04178803336559ccf11ff081c3ee7689f4bfa238df6be0c1159bddfd40ec7",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/jobs/XGBoost_TD_t1_s48/history.json": "8a0e25198b470229bd4a44b6a7e792794bed29ac6b278e9dd58d405fb0f0d2d4",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/jobs/XGBoost_TD_t1_s48/initialization_observation.json": "0470ffa0f92c156c8ca13dfecc80ec5a5df7ab6e9e728300adff14d8a5e5df72",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/pilots/probe_XGBoost_TD_t1_s48/completion.json": "43571aa5ee41db4291690a78f91bc8f827e853de170b582c20257a082a488994",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/pilots/probe_XGBoost_TD_t1_s48/path_audit.json": "b3ea746067348e7134eb2a94ecd12992449e5bcc33eccce467fb6d40941cc5d0",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/jobs/XGBoost_TD_t1_s48/pilot_identity_check.json": "9d6cb6792192a509f6e313524d142c2eca51d96fd6279a474a422a3839d35761",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/test/test_XGBoost_TD_t1_s48/run_manifest.json": "9be04178803336559ccf11ff081c3ee7689f4bfa238df6be0c1159bddfd40ec7",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/jobs/XGBoost_TD_t1_s48/best.ubj": "66d7e6e29f1983d2466e8b45a3b293cf8a9b36e5f7a24ec965916ecb3b036a89",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/jobs/XGBoost_TD_t1_s48/predictions_dev.npz": "617b6773dcf43516c13c7ef8fb865fd132ec8cede29bf26663db099369f472c4",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/test/test_XGBoost_TD_t1_s48/predictions_test.npz": "d6fafbaae6094612b95736d751ed82abcce710c4078a034b816f65e53af7049e",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/XGBoost_TD_t0_s49_exit.json": "b35c9b3a4b50bf981a1aee1720f21348970975773455e0efd87f8e3d9893f794",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/test_XGBoost_TD_t0_s49_exit.json": "30911731416cac88cfae36b3719ea20a8f06c4b74e9d2ca5ea9dc15076e28cd6",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/jobs/XGBoost_TD_t0_s49/completion.json": "a21b7d22a498740decfdbc43c7c51bdc6ec3ae37a109f908c631adcfc67ca5db",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/test/test_XGBoost_TD_t0_s49/completion.json": "9c9da4ce6fd5b94eb5ec2faa6c68b6b2418b111afe525327a564eba4521fa789",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/jobs/XGBoost_TD_t0_s49/run_manifest.json": "8ad71ef8d2147d03c3ea252b7e3f3a94616bff788cd5443a4aaa1a0005c9ee21",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/jobs/XGBoost_TD_t0_s49/history.json": "997a9cdd0200ce293187b5514019c8145bfabe5f22c3ad92a8c90f5d8a815bc0",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/jobs/XGBoost_TD_t0_s49/initialization_observation.json": "9fbfb6b59bb690a2344b037f5a2b4af0f58cc5754edf87c2ab20135b54d5c9fe",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/jobs/XGBoost_TD_t0_s49/pilot_identity_check.json": "32842b8bc646854f4825d89ff887286880a2ad1a9268909d111cb135c22796e2",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/test/test_XGBoost_TD_t0_s49/run_manifest.json": "8ad71ef8d2147d03c3ea252b7e3f3a94616bff788cd5443a4aaa1a0005c9ee21",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/jobs/XGBoost_TD_t0_s49/best.ubj": "ce16d3d78e19bfd5782c97d2c3901f4e0e5be887e314c8d85022b3f72ca6c82c",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/jobs/XGBoost_TD_t0_s49/predictions_dev.npz": "7047d785d0f8eaca954626df43545951dc14fb303e05b14cc66da8248e5896da",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/test/test_XGBoost_TD_t0_s49/predictions_test.npz": "d6e53d9acba07a41e6d2bb258cf391f14de823af6e55f7bb4278c95c00fc7f6d",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/XGBoost_TD_t1_s49_exit.json": "c7c19ebd8e4224d364e138528258678ccfbf02aefddf3365ab56025728e66924",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/test_XGBoost_TD_t1_s49_exit.json": "8bf124db9392b0f813f95e77950415959d3840f0cab28e70f88c5c359567f5a5",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/jobs/XGBoost_TD_t1_s49/completion.json": "15c6945bf87241c0c279efe251003d8061f4db5ec371263b3ed6d4dfb6497a56",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/test/test_XGBoost_TD_t1_s49/completion.json": "1cd52e63cf50f1918b81658c38dc628a42e35a43ecb028242de879f0e36865d4",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/jobs/XGBoost_TD_t1_s49/run_manifest.json": "99c10e0c14f6fe63f8ad2b8a6d2ebb86139dff0925a94797bf73178fec64048a",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/jobs/XGBoost_TD_t1_s49/history.json": "3bb5e35fc169aea436b386f05a1b736e3fef09030edb83aa4eee1da0f670ec30",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/jobs/XGBoost_TD_t1_s49/initialization_observation.json": "5cc1c0bc3204a318ea4a218bc87b8516d2ebc39b7e61a8b66c2251599da76450",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/jobs/XGBoost_TD_t1_s49/pilot_identity_check.json": "32842b8bc646854f4825d89ff887286880a2ad1a9268909d111cb135c22796e2",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/test/test_XGBoost_TD_t1_s49/run_manifest.json": "99c10e0c14f6fe63f8ad2b8a6d2ebb86139dff0925a94797bf73178fec64048a",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/jobs/XGBoost_TD_t1_s49/best.ubj": "d658c24bccf8ca025809979a7d1e0c162266a9526984fb7721925e017896a3e0",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/jobs/XGBoost_TD_t1_s49/predictions_dev.npz": "b8db10b2057ff3c0c757449cde34edd7304d472f165ac404035eaa4f81fe8fb0",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/test/test_XGBoost_TD_t1_s49/predictions_test.npz": "29521bb519337d6c527f9732de6f09cebca5db0e73f164b4f840372818359856",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/XGBoost_TD_t0_s50_exit.json": "88f759600f3449b03b838754c0e9de43f78f96e8db80f3ae12903ac0aea1f060",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/test_XGBoost_TD_t0_s50_exit.json": "76e41e70d0225fbfbfdc83a4dc94781e21dc5cac1dacd1fc98032fcf3148bb6e",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/jobs/XGBoost_TD_t0_s50/completion.json": "e3872780bac64693ceedfc9188218110e794cbee673f1b070086d7cc76d840f4",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/test/test_XGBoost_TD_t0_s50/completion.json": "c4923d94278c831329b06ae2bd12f2b3be0ddb0930c5e37bf7565f0cf0464b29",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/jobs/XGBoost_TD_t0_s50/run_manifest.json": "8ed1c9cc7a140bc1364d8f6b025aac272daaf37f9bb6b4870b8eb64aa9f9d7ce",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/jobs/XGBoost_TD_t0_s50/history.json": "bd016438bef2713804589772fce9e12ba96a1a9e838d48c063f0ab954147f49d",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/jobs/XGBoost_TD_t0_s50/initialization_observation.json": "1b1b4502be56244ef082981a8b805ef7040c9bf4fc1ba74acf6d5c6c67759fee",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/jobs/XGBoost_TD_t0_s50/pilot_identity_check.json": "3974ea7393b9d89a1ace4f1b9387256eac0f5ef667639289bc7a80ae1cadaf1d",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/test/test_XGBoost_TD_t0_s50/run_manifest.json": "8ed1c9cc7a140bc1364d8f6b025aac272daaf37f9bb6b4870b8eb64aa9f9d7ce",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/jobs/XGBoost_TD_t0_s50/best.ubj": "2680a9918799deabdf16dc15ed35bdd013802c09ed196321bf58556f8104772c",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/jobs/XGBoost_TD_t0_s50/predictions_dev.npz": "f8ca94a64c472ac4d48df474330ff56e07bddbc2781c7e2fd95d047747459ba4",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/test/test_XGBoost_TD_t0_s50/predictions_test.npz": "b2686bd6725c556f5906807286f1c24dab849397974f721dfd45919c88098ab4",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/XGBoost_TD_t1_s50_exit.json": "718321671ab292297d0edae2b10aa73509582243a3ab3ab547326d3a390d359b",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/test_XGBoost_TD_t1_s50_exit.json": "565c73d5c52e15fc8d7d891e4010c25c636f40940e0ffcf8b8b5ba7a02e62bf5",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/jobs/XGBoost_TD_t1_s50/completion.json": "44158ec4c1328c85dcd76d5b087f1746c6e878f4bfa1b3490a015a18438fb58f",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/test/test_XGBoost_TD_t1_s50/completion.json": "db70deb76c99a10d71c592eab76e4ff0900b98404a46654246ee367bd6af046a",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/jobs/XGBoost_TD_t1_s50/run_manifest.json": "95bd75829a8fe445a813c4ac4e3ba7d22524a4a77c4ddab56e041c4bd54e394d",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/jobs/XGBoost_TD_t1_s50/history.json": "ba73e66a482bbc9731dc0ca2aba2fad76068d20c249a6b51b16c9e6ff0805dcd",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/jobs/XGBoost_TD_t1_s50/initialization_observation.json": "1b6d514fa85c31424a39ce2719402e544653944364f079f4480cb69db58fc4c2",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/jobs/XGBoost_TD_t1_s50/pilot_identity_check.json": "3974ea7393b9d89a1ace4f1b9387256eac0f5ef667639289bc7a80ae1cadaf1d",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/test/test_XGBoost_TD_t1_s50/run_manifest.json": "95bd75829a8fe445a813c4ac4e3ba7d22524a4a77c4ddab56e041c4bd54e394d",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/jobs/XGBoost_TD_t1_s50/best.ubj": "aab9c376e08ab54ef7120b3118f27bd93edc797a413b4a567be0805912a9ac2e",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/jobs/XGBoost_TD_t1_s50/predictions_dev.npz": "ec5bee05948b9abb46f8133a8c69613dc4953dcc8fe50a0baa3516db5a7d9e66",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/test/test_XGBoost_TD_t1_s50/predictions_test.npz": "079b21f9eb658e21cc7e00c63d8ba6c68e940a3db79e5463e134a82df4f8bf0b",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/STraTS_supervised_t0_s48_exit.json": "31ec82d951a5666a06f8beaa9115244c719afa9a35767bb0538f7b556f7e9475",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/test_STraTS_supervised_t0_s48_exit.json": "e0dd35b1c6e4010feead12c91d9bbcd91b3a2b55c9737954bdd51b7f81cd3703",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/probe_STraTS_supervised_t0_s48_exit.json": "56e7c511ceb87359896b47e375618b3a81f7cda84ab4bbfc03c5f9739cd0b433",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/jobs/STraTS_supervised_t0_s48/completion.json": "702160854863b90ce4667cc26186de36d7d744b97e554a336699da8e5a74f756",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/test/test_STraTS_supervised_t0_s48/completion.json": "4508bc9f3a3bfbc35f0d5deb7e453864b6f9c3a768b8849efeff524bec94cf8a",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/jobs/STraTS_supervised_t0_s48/run_manifest.json": "34d43a8e2123c9704f535edf80384a56566e9148e6dd7fd5673f7ab25c790486",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/jobs/STraTS_supervised_t0_s48/history.json": "d030b4ba5c62b5febf28d658c9462bc1cc53f84c95cc03e0490ab35ef61dbc05",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/jobs/STraTS_supervised_t0_s48/initialization_observation.json": "391cb1d28ffb6c1b39550fc6c8ebcd54a2fc1ffc935fd3b70a2993c579c86ff4",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/pilots/probe_STraTS_supervised_t0_s48/completion.json": "91f17d26568af9ce880a6c4e5ca0b1ac1ab1812935c1fcc591f619e007671f02",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/pilots/probe_STraTS_supervised_t0_s48/path_audit.json": "00932a9969233a5159653081ca19062cd578a8e61ca39ceb9651256c4f0d010c",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/jobs/STraTS_supervised_t0_s48/pilot_identity_check.json": "692ec8c5a9a9359a8bd7b1562df14d61819e0328e65548f2402385df884a1c7d",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/test/test_STraTS_supervised_t0_s48/run_manifest.json": "34d43a8e2123c9704f535edf80384a56566e9148e6dd7fd5673f7ab25c790486",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/pilots/probe_STraTS_supervised_t0_s48/gradient_check.json": "c797f96f3b0c968dd59f9514326e476dc59280b148274ec3ea259ae93c1ac764",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/jobs/STraTS_supervised_t0_s48/best.pt": "025453bf3e32efc6b92a9fd2b483cf657c58928de98816249615d86bd6deaea0",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/jobs/STraTS_supervised_t0_s48/predictions_dev.npz": "38e62a0954ff4ff5b84d52db6e0c255be3cdc2efccef2a50a7057e94cb4bfe36",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/test/test_STraTS_supervised_t0_s48/predictions_test.npz": "04868189a178c9934c0fd7317f9a92699b8227f37a639152c024a2008b7b0845",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/STraTS_supervised_t1_s48_exit.json": "55d0ef5dfa3e9667c92ecdbd94fa63662398cb8c21aa8eea680e08a2d388983e",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/test_STraTS_supervised_t1_s48_exit.json": "258eff1ddeff9b107d328d06a184884e6487ef3004c0792408a44672fb744b64",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/probe_STraTS_supervised_t1_s48_exit.json": "7240eac9fe628d3ad566e5106df73656b6804c88ab7c9eed8403a54e16e8c326",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/jobs/STraTS_supervised_t1_s48/completion.json": "515be178372eef629df6b5c5a2654d6a05be1ae06e6b326fd8a2571f2935492e",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/test/test_STraTS_supervised_t1_s48/completion.json": "22d359c3e9e47e1acc6a846748eac4dde290899f07e37f51d359e9bb5ece4439",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/jobs/STraTS_supervised_t1_s48/run_manifest.json": "f11f869e8347bcc8cf22a88063a78821838fe32d6a4daab8aede9b6a8bb7bb6e",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/jobs/STraTS_supervised_t1_s48/history.json": "8d73b057d3b88b307062f8b1373d8f3c9ec7cccd23840acfb0036d46786b7b78",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/jobs/STraTS_supervised_t1_s48/initialization_observation.json": "4c9573a0b8a15575aa3afbc1e819951a869782d9b49db071f556dfd1d91753e3",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/pilots/probe_STraTS_supervised_t1_s48/completion.json": "8b905d2b84f48c03ef13391a620a0f7ff688b49d9dbbe8720a26b5c2f43fcbbc",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/pilots/probe_STraTS_supervised_t1_s48/path_audit.json": "49b5130fc4d9e1b760d925c83f84112275fdfca529ae440e5ce4a726dd37bdf9",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/jobs/STraTS_supervised_t1_s48/pilot_identity_check.json": "692ec8c5a9a9359a8bd7b1562df14d61819e0328e65548f2402385df884a1c7d",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/test/test_STraTS_supervised_t1_s48/run_manifest.json": "f11f869e8347bcc8cf22a88063a78821838fe32d6a4daab8aede9b6a8bb7bb6e",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/pilots/probe_STraTS_supervised_t1_s48/gradient_check.json": "0fa44b5e52b3dc6416178b7b0e03363c5fabe54edf26edbcbb79d63b5d75c4a0",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/jobs/STraTS_supervised_t1_s48/best.pt": "661cedbbe0582c5032cf62f3e895b0327a4bddb97fc6cacf7f1f4d3e8c849402",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/jobs/STraTS_supervised_t1_s48/predictions_dev.npz": "197cb4e92ecbe85ab5be95b30c1d9fcf2e41fa4f971b539a3e8c6c0b84095544",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/test/test_STraTS_supervised_t1_s48/predictions_test.npz": "b9fb144fc47ba017f2861fbf9273091b9ccba1990ec3b1664c9b7d957170cb33",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/STraTS_supervised_t0_s49_exit.json": "5037069bb96bc6ba7165e479c0663d796947a64cf19066a8cacb4c2bbe1d45fe",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/test_STraTS_supervised_t0_s49_exit.json": "bd88d49aed43c1455a2ab4f53e373ed1f6f522095db1afb5e85de9f436ae7d13",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/jobs/STraTS_supervised_t0_s49/completion.json": "0750c11ca1ef0d5d99d68cd825c9d67c1ade562cb1e16060e3ace1735046d84c",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/test/test_STraTS_supervised_t0_s49/completion.json": "ca7229fe2738a1fab8f40ee2e00b48f1b66b181f22c2040878492c03b225724d",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/jobs/STraTS_supervised_t0_s49/run_manifest.json": "0a8bda912c1a031d3228099ad168dd2cd94052c05f08a0d8e014da026288af79",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/jobs/STraTS_supervised_t0_s49/history.json": "f3e3f82a6a95cee24b065e977ea051453079251581f20c5573d052a8f77ec633",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/jobs/STraTS_supervised_t0_s49/initialization_observation.json": "26f46dc18063bc916b3cc2cac1aec61b84cb89387e5151c2e3781f8e740b08c0",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/jobs/STraTS_supervised_t0_s49/pilot_identity_check.json": "692ec8c5a9a9359a8bd7b1562df14d61819e0328e65548f2402385df884a1c7d",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/test/test_STraTS_supervised_t0_s49/run_manifest.json": "0a8bda912c1a031d3228099ad168dd2cd94052c05f08a0d8e014da026288af79",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/jobs/STraTS_supervised_t0_s49/best.pt": "2d463035b95cf26d64349183813e15ced911ea2ed4961d75d5c1ec14bee705f9",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/jobs/STraTS_supervised_t0_s49/predictions_dev.npz": "9b5bb22bacc7fcd8d64bc1df45e5fc0a1184deb7dfeac70f6663625941e463a3",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/test/test_STraTS_supervised_t0_s49/predictions_test.npz": "97f8b7b2ee7a86ba2a119fb6cacb67bc53a5e2642e7bd9bc34d296903a152061",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/STraTS_supervised_t1_s49_exit.json": "0ce498a2951281e6a25d0a5ff781940b8158dcac1480493ccf00e985313c39e6",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/test_STraTS_supervised_t1_s49_exit.json": "9ff31ef6d0b6349cdfc0d780d1da6e631b23fbea7e5760d3e820942eeed8fce3",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/jobs/STraTS_supervised_t1_s49/completion.json": "289baf8a35792f4a485f810c1abfcfbc2a6ad597513e5ef0c7ef614974fd2aa9",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/test/test_STraTS_supervised_t1_s49/completion.json": "389a6b10bb4d4bc403cf02b6de231d0138b3e9fbbc1bff7606a399ac70a893db",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/jobs/STraTS_supervised_t1_s49/run_manifest.json": "1acc9435acf0e94dc16bf3938f513a7caa881e85a2ad69b4bfc872126def8a19",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/jobs/STraTS_supervised_t1_s49/history.json": "2ca0bfb3d9fda61964e3bbb093aa8c1d380a4439723b37227be6d7e171a13516",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/jobs/STraTS_supervised_t1_s49/initialization_observation.json": "e9a7c35ab3149a718389d8e8038e453bf4abfc0bddd65a5e98e087ca0cf41bf5",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/jobs/STraTS_supervised_t1_s49/pilot_identity_check.json": "692ec8c5a9a9359a8bd7b1562df14d61819e0328e65548f2402385df884a1c7d",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/test/test_STraTS_supervised_t1_s49/run_manifest.json": "1acc9435acf0e94dc16bf3938f513a7caa881e85a2ad69b4bfc872126def8a19",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/jobs/STraTS_supervised_t1_s49/best.pt": "6cfc83a316c6ed087c2d51c74b10d6f7d11c4de88f83fc03d21d05c29933773c",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/jobs/STraTS_supervised_t1_s49/predictions_dev.npz": "e35831f508ffecd5135cf1b7263ab530858b58ec91910aaac2c9c17fc76a0640",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/test/test_STraTS_supervised_t1_s49/predictions_test.npz": "e9352f76fa3ba4c9a3e8d969e8af37e31952a205c28fd5012eaab701e65e1db2",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/STraTS_supervised_t0_s50_exit.json": "52282b71618c15a76047fa3991b85918768ce498d0054cefa81e6823a8d67609",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/test_STraTS_supervised_t0_s50_exit.json": "947c687b7c2a74b3fedb8e0a841d4dcd227d75134b1352c8f18fc36e762ac556",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/jobs/STraTS_supervised_t0_s50/completion.json": "c536fab6dd978605b0f2b805fb1708803f34c8eb4324c6e73705bad5117c8c29",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/test/test_STraTS_supervised_t0_s50/completion.json": "8503d3976c13d5cb45df1694b9a762651d5d70530f98023ef036b24f3bb70ac6",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/jobs/STraTS_supervised_t0_s50/run_manifest.json": "bb2e9dd7a985e373de0b065843468e23b653a49aa1326b78dd0edf9e89c2f302",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/jobs/STraTS_supervised_t0_s50/history.json": "dac760a2db6a3799d57a7e02c5374d646422f871f29eb6d58ac9dc192dcb1d71",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/jobs/STraTS_supervised_t0_s50/initialization_observation.json": "6929b5b31a6a0f983375697d5371f9e47cfaf4df3f5779d75a64ac67d0470a0f",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/jobs/STraTS_supervised_t0_s50/pilot_identity_check.json": "692ec8c5a9a9359a8bd7b1562df14d61819e0328e65548f2402385df884a1c7d",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/test/test_STraTS_supervised_t0_s50/run_manifest.json": "bb2e9dd7a985e373de0b065843468e23b653a49aa1326b78dd0edf9e89c2f302",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/jobs/STraTS_supervised_t0_s50/best.pt": "8e184775a59d32a1ea9a58e40a0a2d68938fa77ce0b51927c4c9123d1368b53c",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/jobs/STraTS_supervised_t0_s50/predictions_dev.npz": "45c640f4e6ba230ad83cb32f91834030d17e6a52ba0bb6df721c1f146b81900e",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/test/test_STraTS_supervised_t0_s50/predictions_test.npz": "0f88a3f7a0edbd8326a684850a3af3842f5b2f4a4ac405119a2199f0353c2ce4",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/STraTS_supervised_t1_s50_exit.json": "99dc2417cddd36fb93fbfbd4e7f640be2979e8407c73a34266b7fa6f3f8d1f56",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/test_STraTS_supervised_t1_s50_exit.json": "5727dc0a4bd6c700d13fa10afa6f8256dcec00aa91730e71caadd635897e8661",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/jobs/STraTS_supervised_t1_s50/completion.json": "221b145eed78b5c8a3f4ea47fad925aceffdb0b29facef9587912a571e9dce3b",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/test/test_STraTS_supervised_t1_s50/completion.json": "8de108a5e86e473bdcdff82f98bcf9126a1bc66a08e3cec6a772cab6f040cb75",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/jobs/STraTS_supervised_t1_s50/run_manifest.json": "3592cbe233a04392739b50980eff3f62994c1b0eaf8807ce6912627da8ce2a78",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/jobs/STraTS_supervised_t1_s50/history.json": "034870ae3d95dd754d7df03046deefaff8536aaa48725c3cc061b3aafca40651",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/jobs/STraTS_supervised_t1_s50/initialization_observation.json": "3a8438b661ceb7b5a9e3b565211bde6f9179f80c2e1704045ad3f5fc46d0bea6",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/jobs/STraTS_supervised_t1_s50/pilot_identity_check.json": "692ec8c5a9a9359a8bd7b1562df14d61819e0328e65548f2402385df884a1c7d",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/test/test_STraTS_supervised_t1_s50/run_manifest.json": "3592cbe233a04392739b50980eff3f62994c1b0eaf8807ce6912627da8ce2a78",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/jobs/STraTS_supervised_t1_s50/best.pt": "68a0ae285929fd03aa4af234764aa2791a891195faa6c09ffaedebb0c178a985",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/jobs/STraTS_supervised_t1_s50/predictions_dev.npz": "6b5da850a7044654c107ea1b1208a66b2a845021d36bc336c4499ac6793f04bf",
+    "/home/data/lxm/TRACEHR/runs/cem_baseline_replacement_20261030/eicu/v1/screen/test/test_STraTS_supervised_t1_s50/predictions_test.npz": "64d36eee156c9c3db0525fd6bbf6053d181319d8f5f7976da3e72d34f246ff6e",
+    "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu_statistics_v1/active-execution.json": "e29a1ec13551b7e8f2cf7e6c6efc51915ab2abd507c9f7348073c52d6efdde4f",
+    "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu_statistics_v1/execution_v2/exit.json": "e76280f5c75518912863c217203c770b5e54bb51f0ac1af49a796ce923722b97",
+    "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu_statistics_v1/completion.json": "81a4e6c7fac178cadc706359140dfc6e8e99ba4fe0b2ba9b63bbef20466f3bd0",
+    "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu_statistics_v1/verified-results.json": "9d2a99ad4c57a4e2842b30d3222265fd6e736f84edf68edbae51978bd946ba2d",
+    "/home/data/lxm/TRACEHR/work/cem_icde_evidence_20261028/analysis_eicu_v2/statistics.py": "dbf2650ba02d43591b84744c8d50dbd58048be175c237be1e394dd889580148e",
+    "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu_significance_v1/verified-results.json": "3b58798918db03e9772161a022caae55ebf58a854e7cd2dea8afd102eca42f4c",
+    "/home/data/lxm/TRACEHR/work/cem_icde_evidence_20261028/significance_v1/significance.py": "c59cdc26825de406baf42d5b8fc0f8d636176efccc48f3b108c8ead05ec5e34c",
+    "/home/data/lxm/TRACEHR/runs/cem_evidence_completion_20261025/eicu/comparison_v1/verified-results.json": "bc430e8a22d7d00dd0e2d3cc2345acc8a73a20af4bde260f5f75a8195de0cea9",
+    "/home/data/lxm/TRACEHR/runs/cem_evidence_completion_20261025/eicu/comparison_v1/bootstrap_cache/dev_CEM_Net.json": "2c2e604f17bdb7e1e29b65576fb87c68b04ae6270e08307cf44efc45404eeeb1",
+    "/home/data/lxm/TRACEHR/cache/tracehr_module_scratch_20261010/eicu/d3339549c979809df7d6fee3938bcf1e1cdb4f408b5241778c0fc78bebcd040a/dev_targets.npz": "e570c4b23def9239c4d590173175100df4acfec4081d5c97b4bd9b33886e2beb",
+    "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu_statistics_v1/bootstrap/random_dev_CEM_Net.json": "3b19bf10774642945cadb65149084ed6415efba92cbe0a3c0f38ac67722a8feb",
+    "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu_statistics_v1/bootstrap/random_dev_CEM_Net.npz": "7a8fc9aabb46121559ca12ea60e9e521a561410b9d26bd657cf27a15fa5648ea",
+    "/home/data/lxm/TRACEHR/runs/tracehr_ema_cross_20261024/eicu/v1/screen/jobs/fullEMA_t0_s48/predictions_dev.npz": "8b87c014daa0e08c2b2ba5f13e1cb4c9105e8cd0fc388a8eeee247393caa1ce5",
+    "/home/data/lxm/TRACEHR/runs/tracehr_ema_cross_20261024/eicu/v1/screen/jobs/fullEMA_t1_s48/predictions_dev.npz": "046113ef81669f4ef18bef37d20d56888a6fa1a3713ac362f06244bcc0521fda",
+    "/home/data/lxm/TRACEHR/runs/tracehr_ema_cross_20261024/eicu/v1/screen/jobs/fullEMA_t0_s49/predictions_dev.npz": "8bafa96fd6eec1db8e7c369647646e04cfb2157b42e98ca3cf50e2e88bf5ad60",
+    "/home/data/lxm/TRACEHR/runs/tracehr_ema_cross_20261024/eicu/v1/screen/jobs/fullEMA_t1_s49/predictions_dev.npz": "43ee1666bdd96af236405920536200b43705ad3b3123dfc7c11ede328d3dd4c5",
+    "/home/data/lxm/TRACEHR/runs/tracehr_ema_cross_20261024/eicu/v1/screen/jobs/fullEMA_t0_s50/predictions_dev.npz": "02771d57a9fbecdd93caa8b4d702f7a24558c55ddf1d6921150ba51d72c3fbc2",
+    "/home/data/lxm/TRACEHR/runs/tracehr_ema_cross_20261024/eicu/v1/screen/jobs/fullEMA_t1_s50/predictions_dev.npz": "f53b1b2211c38ab4ff3a5360fcaac9b93ee09f61700be53716a30878d193742d",
+    "/home/data/lxm/TRACEHR/runs/cem_evidence_completion_20261025/eicu/comparison_v1/bootstrap_cache/dev_EMA_NRE_MLP.json": "3693cc743ea8807e7d78ff5e7fcccdce9329b95f5070257f6f689b12cca23d8c",
+    "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu_statistics_v1/bootstrap/random_dev_EMA_NRE_MLP.json": "e47bc2c2cc5c818f45a39552a5cde7e2e8a2257dbb8a531d8cbc94252531ce2c",
+    "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu_statistics_v1/bootstrap/random_dev_EMA_NRE_MLP.npz": "1ea11073f7c3431c5b0712aa7e5c2e144f6569ea904b6f7771e2f456d1b723af",
+    "/home/data/lxm/TRACEHR/runs/cem_evidence_completion_20261025/eicu/controls_v1/screen/jobs/EMA_NRE_MLP_t0_s48/predictions_dev.npz": "b6c3406969a12c32067f0087ba4633115cc14e3641a1392979733bd7f874d193",
+    "/home/data/lxm/TRACEHR/runs/cem_evidence_completion_20261025/eicu/controls_v1/screen/jobs/EMA_NRE_MLP_t1_s48/predictions_dev.npz": "636b4bfc0d42808be119ba315096cbddac402cbff553e0e2738b0670b62ada05",
+    "/home/data/lxm/TRACEHR/runs/cem_evidence_completion_20261025/eicu/controls_v1/screen/jobs/EMA_NRE_MLP_t0_s49/predictions_dev.npz": "8277540a89f236985693a180b96a2e6329ea926b476cd1cea8c959e1fbd8fb14",
+    "/home/data/lxm/TRACEHR/runs/cem_evidence_completion_20261025/eicu/controls_v1/screen/jobs/EMA_NRE_MLP_t1_s49/predictions_dev.npz": "982846fdae1c20c9b00932416d0bd23437e56b30b17fb92cd89f7bfb1aad01e3",
+    "/home/data/lxm/TRACEHR/runs/cem_evidence_completion_20261025/eicu/controls_v1/screen/jobs/EMA_NRE_MLP_t0_s50/predictions_dev.npz": "5afabb2a38b9953837fb03bd1894941414e7330cf184dd096e34fac322dbf29d",
+    "/home/data/lxm/TRACEHR/runs/cem_evidence_completion_20261025/eicu/controls_v1/screen/jobs/EMA_NRE_MLP_t1_s50/predictions_dev.npz": "8091e337b0ce516771edcb21740b6140ca8f2366564e49d869d1f1eb584c9e29",
+    "/home/data/lxm/TRACEHR/runs/cem_evidence_completion_20261025/eicu/comparison_v1/bootstrap_cache/test_CEM_Net.json": "394fdbcd3d8e353b64211b471cc39dbfeb2f932017ba3570ff733554cacf829e",
+    "/home/data/lxm/TRACEHR/runs/tracehr_pm_test_20261021/eicu/features/test_targets.npz": "8d7fd3eb53ae25e76febaa4f3ddeab0bca388a1dfeb167cc6effb986395d1984",
+    "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu_statistics_v1/bootstrap/random_test_CEM_Net.json": "9648a793eba9bb6cfb48bc6cb0114b7869863b0758124d8ab0d1fd6ed08960b2",
+    "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu_statistics_v1/bootstrap/random_test_CEM_Net.npz": "bcc8d8def15ed5bb61a43717bbda5f07c52e4d8f3f14db9eb0f1ec49c8801998",
+    "/home/data/lxm/TRACEHR/runs/tracehr_ema_cross_20261024/eicu/v1/screen/test/test_fullEMA_t0_s48/predictions_test.npz": "80c1ea5150e80a089a8cf9dfc4622ed13352066c2a9aece599ea30a042737ab6",
+    "/home/data/lxm/TRACEHR/runs/tracehr_ema_cross_20261024/eicu/v1/screen/test/test_fullEMA_t1_s48/predictions_test.npz": "4036288a974f5a995684258d3c377512a2de192707fec4ee34c6eb75271dccb2",
+    "/home/data/lxm/TRACEHR/runs/tracehr_ema_cross_20261024/eicu/v1/screen/test/test_fullEMA_t0_s49/predictions_test.npz": "e57f66a0b991558f84839f5bf3c9d065fae1842957f2ef1aecf91e0fc5df8e0b",
+    "/home/data/lxm/TRACEHR/runs/tracehr_ema_cross_20261024/eicu/v1/screen/test/test_fullEMA_t1_s49/predictions_test.npz": "724215f0b52e3a099bf3b79fc54b9d4131f2306c351257e8a010f3a25bc8c6ae",
+    "/home/data/lxm/TRACEHR/runs/tracehr_ema_cross_20261024/eicu/v1/screen/test/test_fullEMA_t0_s50/predictions_test.npz": "a7e5b60d9d9cd5cbb5f61f991c4a0af0b36f1634f71f14c34ccb95ee4b0df449",
+    "/home/data/lxm/TRACEHR/runs/tracehr_ema_cross_20261024/eicu/v1/screen/test/test_fullEMA_t1_s50/predictions_test.npz": "74cd9e57e5f59bac6e0ad5cf8650500787c5ea2272c1ab02153d0196d378a624",
+    "/home/data/lxm/TRACEHR/runs/cem_evidence_completion_20261025/eicu/comparison_v1/bootstrap_cache/test_EMA_NRE_MLP.json": "582c8fb7cdba92337c8dca36afc40e8b6654e473df1a0066055681b60d2da7b6",
+    "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu_statistics_v1/bootstrap/random_test_EMA_NRE_MLP.json": "a59c9665199a2307375dc4eb338663505258ee50f802684e7346a0bb465f018a",
+    "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu_statistics_v1/bootstrap/random_test_EMA_NRE_MLP.npz": "1c81e79c8a2157dfe50c320944f7141601909cf62dede510c3f110a64757d70b",
+    "/home/data/lxm/TRACEHR/runs/cem_evidence_completion_20261025/eicu/controls_v1/screen/test/test_EMA_NRE_MLP_t0_s48/predictions_test.npz": "291da64b41015bfeb79fa9a9815cf36a29f1543d258cf32d249bcfb6b7913cd6",
+    "/home/data/lxm/TRACEHR/runs/cem_evidence_completion_20261025/eicu/controls_v1/screen/test/test_EMA_NRE_MLP_t1_s48/predictions_test.npz": "42cd314eb1dd828906d28d57accc109e2cacc3845b53ff22b903d44cc02f2f26",
+    "/home/data/lxm/TRACEHR/runs/cem_evidence_completion_20261025/eicu/controls_v1/screen/test/test_EMA_NRE_MLP_t0_s49/predictions_test.npz": "559a145b389808a0d3df72843df1ccce650156da760b3f8b99ec9e01bffb1d2b",
+    "/home/data/lxm/TRACEHR/runs/cem_evidence_completion_20261025/eicu/controls_v1/screen/test/test_EMA_NRE_MLP_t1_s49/predictions_test.npz": "7464f3b502d93ac0cd48b55d21e5ed7b4a667a282a42e71150655dfe91a8ba55",
+    "/home/data/lxm/TRACEHR/runs/cem_evidence_completion_20261025/eicu/controls_v1/screen/test/test_EMA_NRE_MLP_t0_s50/predictions_test.npz": "d4cbea9818628afa8dd9c910948839a29988b9083691cdf1ce21f9087ba8dee7",
+    "/home/data/lxm/TRACEHR/runs/cem_evidence_completion_20261025/eicu/controls_v1/screen/test/test_EMA_NRE_MLP_t1_s50/predictions_test.npz": "07fbc33ebee27cbecbabf8ba504416b62de8d1bcb8d1e4ae003c28393fc1262f"
+  },
+  "fit_audits": [
+    {
+      "id": "XGBoost_TD_t0_s48",
+      "fit_exit": 0,
+      "test_exit": 0,
+      "epochs": 314,
+      "best_epoch": 14,
+      "checkpoint_sha256": "03550a023e268575a46ba51834dc664898c3fbbf5b25d25cd640c9a61c306412",
+      "test_updates": 0,
+      "fit_seconds": 1001.7089200019836,
+      "parameters": null,
+      "peak_reserved_mib": 0.0,
+      "protocol": {
+        "params": {
+          "objective": "binary:logistic",
+          "learning_rate": 0.08,
+          "min_child_weight": 5e-06,
+          "reg_lambda": 0.0,
+          "reg_alpha": 0.0,
+          "max_depth": 6,
+          "colsample_bylevel": 0.9,
+          "subsample": 0.65,
+          "tree_method": "hist",
+          "max_bin": 256,
+          "nthread": 4,
+          "seed": 48,
+          "device": "cpu",
+          "disable_default_eval_metric": 1
+        },
+        "max_rounds": 1000,
+        "early_stopping_rounds": 300,
+        "selection": "validation AP only",
+        "recipe": "pytabkit XGB_TD_CLASS",
+        "class_weight": null,
+        "missing": "NaN only; dense zero is an observed value"
+      },
+      "source_manifest_sha256": "71ea9072a2a27be3501b28f38470c5360e96347e97594b23a6ad25e3721510eb"
+    },
+    {
+      "id": "XGBoost_TD_t1_s48",
+      "fit_exit": 0,
+      "test_exit": 0,
+      "epochs": 694,
+      "best_epoch": 394,
+      "checkpoint_sha256": "66d7e6e29f1983d2466e8b45a3b293cf8a9b36e5f7a24ec965916ecb3b036a89",
+      "test_updates": 0,
+      "fit_seconds": 1817.9758517742157,
+      "parameters": null,
+      "peak_reserved_mib": 0.0,
+      "protocol": {
+        "params": {
+          "objective": "binary:logistic",
+          "learning_rate": 0.08,
+          "min_child_weight": 5e-06,
+          "reg_lambda": 0.0,
+          "reg_alpha": 0.0,
+          "max_depth": 6,
+          "colsample_bylevel": 0.9,
+          "subsample": 0.65,
+          "tree_method": "hist",
+          "max_bin": 256,
+          "nthread": 4,
+          "seed": 48,
+          "device": "cpu",
+          "disable_default_eval_metric": 1
+        },
+        "max_rounds": 1000,
+        "early_stopping_rounds": 300,
+        "selection": "validation AP only",
+        "recipe": "pytabkit XGB_TD_CLASS",
+        "class_weight": null,
+        "missing": "NaN only; dense zero is an observed value"
+      },
+      "source_manifest_sha256": "71ea9072a2a27be3501b28f38470c5360e96347e97594b23a6ad25e3721510eb"
+    },
+    {
+      "id": "XGBoost_TD_t0_s49",
+      "fit_exit": 0,
+      "test_exit": 0,
+      "epochs": 310,
+      "best_epoch": 10,
+      "checkpoint_sha256": "ce16d3d78e19bfd5782c97d2c3901f4e0e5be887e314c8d85022b3f72ca6c82c",
+      "test_updates": 0,
+      "fit_seconds": 918.9199426174164,
+      "parameters": null,
+      "peak_reserved_mib": 0.0,
+      "protocol": {
+        "params": {
+          "objective": "binary:logistic",
+          "learning_rate": 0.08,
+          "min_child_weight": 5e-06,
+          "reg_lambda": 0.0,
+          "reg_alpha": 0.0,
+          "max_depth": 6,
+          "colsample_bylevel": 0.9,
+          "subsample": 0.65,
+          "tree_method": "hist",
+          "max_bin": 256,
+          "nthread": 4,
+          "seed": 49,
+          "device": "cpu",
+          "disable_default_eval_metric": 1
+        },
+        "max_rounds": 1000,
+        "early_stopping_rounds": 300,
+        "selection": "validation AP only",
+        "recipe": "pytabkit XGB_TD_CLASS",
+        "class_weight": null,
+        "missing": "NaN only; dense zero is an observed value"
+      },
+      "source_manifest_sha256": "71ea9072a2a27be3501b28f38470c5360e96347e97594b23a6ad25e3721510eb"
+    },
+    {
+      "id": "XGBoost_TD_t1_s49",
+      "fit_exit": 0,
+      "test_exit": 0,
+      "epochs": 823,
+      "best_epoch": 523,
+      "checkpoint_sha256": "d658c24bccf8ca025809979a7d1e0c162266a9526984fb7721925e017896a3e0",
+      "test_updates": 0,
+      "fit_seconds": 2110.5219423770905,
+      "parameters": null,
+      "peak_reserved_mib": 0.0,
+      "protocol": {
+        "params": {
+          "objective": "binary:logistic",
+          "learning_rate": 0.08,
+          "min_child_weight": 5e-06,
+          "reg_lambda": 0.0,
+          "reg_alpha": 0.0,
+          "max_depth": 6,
+          "colsample_bylevel": 0.9,
+          "subsample": 0.65,
+          "tree_method": "hist",
+          "max_bin": 256,
+          "nthread": 4,
+          "seed": 49,
+          "device": "cpu",
+          "disable_default_eval_metric": 1
+        },
+        "max_rounds": 1000,
+        "early_stopping_rounds": 300,
+        "selection": "validation AP only",
+        "recipe": "pytabkit XGB_TD_CLASS",
+        "class_weight": null,
+        "missing": "NaN only; dense zero is an observed value"
+      },
+      "source_manifest_sha256": "71ea9072a2a27be3501b28f38470c5360e96347e97594b23a6ad25e3721510eb"
+    },
+    {
+      "id": "XGBoost_TD_t0_s50",
+      "fit_exit": 0,
+      "test_exit": 0,
+      "epochs": 318,
+      "best_epoch": 18,
+      "checkpoint_sha256": "2680a9918799deabdf16dc15ed35bdd013802c09ed196321bf58556f8104772c",
+      "test_updates": 0,
+      "fit_seconds": 887.1142764091492,
+      "parameters": null,
+      "peak_reserved_mib": 0.0,
+      "protocol": {
+        "params": {
+          "objective": "binary:logistic",
+          "learning_rate": 0.08,
+          "min_child_weight": 5e-06,
+          "reg_lambda": 0.0,
+          "reg_alpha": 0.0,
+          "max_depth": 6,
+          "colsample_bylevel": 0.9,
+          "subsample": 0.65,
+          "tree_method": "hist",
+          "max_bin": 256,
+          "nthread": 4,
+          "seed": 50,
+          "device": "cpu",
+          "disable_default_eval_metric": 1
+        },
+        "max_rounds": 1000,
+        "early_stopping_rounds": 300,
+        "selection": "validation AP only",
+        "recipe": "pytabkit XGB_TD_CLASS",
+        "class_weight": null,
+        "missing": "NaN only; dense zero is an observed value"
+      },
+      "source_manifest_sha256": "71ea9072a2a27be3501b28f38470c5360e96347e97594b23a6ad25e3721510eb"
+    },
+    {
+      "id": "XGBoost_TD_t1_s50",
+      "fit_exit": 0,
+      "test_exit": 0,
+      "epochs": 352,
+      "best_epoch": 52,
+      "checkpoint_sha256": "aab9c376e08ab54ef7120b3118f27bd93edc797a413b4a567be0805912a9ac2e",
+      "test_updates": 0,
+      "fit_seconds": 945.0629043579102,
+      "parameters": null,
+      "peak_reserved_mib": 0.0,
+      "protocol": {
+        "params": {
+          "objective": "binary:logistic",
+          "learning_rate": 0.08,
+          "min_child_weight": 5e-06,
+          "reg_lambda": 0.0,
+          "reg_alpha": 0.0,
+          "max_depth": 6,
+          "colsample_bylevel": 0.9,
+          "subsample": 0.65,
+          "tree_method": "hist",
+          "max_bin": 256,
+          "nthread": 4,
+          "seed": 50,
+          "device": "cpu",
+          "disable_default_eval_metric": 1
+        },
+        "max_rounds": 1000,
+        "early_stopping_rounds": 300,
+        "selection": "validation AP only",
+        "recipe": "pytabkit XGB_TD_CLASS",
+        "class_weight": null,
+        "missing": "NaN only; dense zero is an observed value"
+      },
+      "source_manifest_sha256": "71ea9072a2a27be3501b28f38470c5360e96347e97594b23a6ad25e3721510eb"
+    },
+    {
+      "id": "STraTS_supervised_t0_s48",
+      "fit_exit": 0,
+      "test_exit": 0,
+      "epochs": 19,
+      "best_epoch": 9,
+      "checkpoint_sha256": "025453bf3e32efc6b92a9fd2b483cf657c58928de98816249615d86bd6deaea0",
+      "test_updates": 0,
+      "fit_seconds": 28368.935743570328,
+      "parameters": 360353,
+      "peak_reserved_mib": 864.0,
+      "protocol": {
+        "optimizer": "author_AdamW",
+        "lr": 0.0005,
+        "weight_decay": 0.0,
+        "eps": 1e-06,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "batch": 16,
+        "micro": 1,
+        "epochs": 50,
+        "patience": 10,
+        "clip_grad_norm": 0.3,
+        "hidden": 64,
+        "layers": 2,
+        "heads": 16,
+        "dropout": 0.2,
+        "attention_dropout": 0.2,
+        "pos_weight": "training negatives / positives",
+        "selection": "validation average precision",
+        "pretraining": false,
+        "max_observations": null,
+        "recipe": "official STraTS ss- author reimplementation"
+      },
+      "source_manifest_sha256": "71ea9072a2a27be3501b28f38470c5360e96347e97594b23a6ad25e3721510eb"
+    },
+    {
+      "id": "STraTS_supervised_t1_s48",
+      "fit_exit": 0,
+      "test_exit": 0,
+      "epochs": 17,
+      "best_epoch": 7,
+      "checkpoint_sha256": "661cedbbe0582c5032cf62f3e895b0327a4bddb97fc6cacf7f1f4d3e8c849402",
+      "test_updates": 0,
+      "fit_seconds": 24318.459626674652,
+      "parameters": 360353,
+      "peak_reserved_mib": 864.0,
+      "protocol": {
+        "optimizer": "author_AdamW",
+        "lr": 0.0005,
+        "weight_decay": 0.0,
+        "eps": 1e-06,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "batch": 16,
+        "micro": 1,
+        "epochs": 50,
+        "patience": 10,
+        "clip_grad_norm": 0.3,
+        "hidden": 64,
+        "layers": 2,
+        "heads": 16,
+        "dropout": 0.2,
+        "attention_dropout": 0.2,
+        "pos_weight": "training negatives / positives",
+        "selection": "validation average precision",
+        "pretraining": false,
+        "max_observations": null,
+        "recipe": "official STraTS ss- author reimplementation"
+      },
+      "source_manifest_sha256": "71ea9072a2a27be3501b28f38470c5360e96347e97594b23a6ad25e3721510eb"
+    },
+    {
+      "id": "STraTS_supervised_t0_s49",
+      "fit_exit": 0,
+      "test_exit": 0,
+      "epochs": 30,
+      "best_epoch": 20,
+      "checkpoint_sha256": "2d463035b95cf26d64349183813e15ced911ea2ed4961d75d5c1ec14bee705f9",
+      "test_updates": 0,
+      "fit_seconds": 40555.61354017258,
+      "parameters": 360353,
+      "peak_reserved_mib": 1262.0,
+      "protocol": {
+        "optimizer": "author_AdamW",
+        "lr": 0.0005,
+        "weight_decay": 0.0,
+        "eps": 1e-06,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "batch": 16,
+        "micro": 1,
+        "epochs": 50,
+        "patience": 10,
+        "clip_grad_norm": 0.3,
+        "hidden": 64,
+        "layers": 2,
+        "heads": 16,
+        "dropout": 0.2,
+        "attention_dropout": 0.2,
+        "pos_weight": "training negatives / positives",
+        "selection": "validation average precision",
+        "pretraining": false,
+        "max_observations": null,
+        "recipe": "official STraTS ss- author reimplementation"
+      },
+      "source_manifest_sha256": "71ea9072a2a27be3501b28f38470c5360e96347e97594b23a6ad25e3721510eb"
+    },
+    {
+      "id": "STraTS_supervised_t1_s49",
+      "fit_exit": 0,
+      "test_exit": 0,
+      "epochs": 22,
+      "best_epoch": 12,
+      "checkpoint_sha256": "6cfc83a316c6ed087c2d51c74b10d6f7d11c4de88f83fc03d21d05c29933773c",
+      "test_updates": 0,
+      "fit_seconds": 29829.920335769653,
+      "parameters": 360353,
+      "peak_reserved_mib": 1262.0,
+      "protocol": {
+        "optimizer": "author_AdamW",
+        "lr": 0.0005,
+        "weight_decay": 0.0,
+        "eps": 1e-06,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "batch": 16,
+        "micro": 1,
+        "epochs": 50,
+        "patience": 10,
+        "clip_grad_norm": 0.3,
+        "hidden": 64,
+        "layers": 2,
+        "heads": 16,
+        "dropout": 0.2,
+        "attention_dropout": 0.2,
+        "pos_weight": "training negatives / positives",
+        "selection": "validation average precision",
+        "pretraining": false,
+        "max_observations": null,
+        "recipe": "official STraTS ss- author reimplementation"
+      },
+      "source_manifest_sha256": "71ea9072a2a27be3501b28f38470c5360e96347e97594b23a6ad25e3721510eb"
+    },
+    {
+      "id": "STraTS_supervised_t0_s50",
+      "fit_exit": 0,
+      "test_exit": 0,
+      "epochs": 22,
+      "best_epoch": 12,
+      "checkpoint_sha256": "8e184775a59d32a1ea9a58e40a0a2d68938fa77ce0b51927c4c9123d1368b53c",
+      "test_updates": 0,
+      "fit_seconds": 29875.167350053787,
+      "parameters": 360353,
+      "peak_reserved_mib": 684.0,
+      "protocol": {
+        "optimizer": "author_AdamW",
+        "lr": 0.0005,
+        "weight_decay": 0.0,
+        "eps": 1e-06,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "batch": 16,
+        "micro": 1,
+        "epochs": 50,
+        "patience": 10,
+        "clip_grad_norm": 0.3,
+        "hidden": 64,
+        "layers": 2,
+        "heads": 16,
+        "dropout": 0.2,
+        "attention_dropout": 0.2,
+        "pos_weight": "training negatives / positives",
+        "selection": "validation average precision",
+        "pretraining": false,
+        "max_observations": null,
+        "recipe": "official STraTS ss- author reimplementation"
+      },
+      "source_manifest_sha256": "71ea9072a2a27be3501b28f38470c5360e96347e97594b23a6ad25e3721510eb"
+    },
+    {
+      "id": "STraTS_supervised_t1_s50",
+      "fit_exit": 0,
+      "test_exit": 0,
+      "epochs": 25,
+      "best_epoch": 15,
+      "checkpoint_sha256": "68a0ae285929fd03aa4af234764aa2791a891195faa6c09ffaedebb0c178a985",
+      "test_updates": 0,
+      "fit_seconds": 34030.02109694481,
+      "parameters": 360353,
+      "peak_reserved_mib": 684.0,
+      "protocol": {
+        "optimizer": "author_AdamW",
+        "lr": 0.0005,
+        "weight_decay": 0.0,
+        "eps": 1e-06,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "batch": 16,
+        "micro": 1,
+        "epochs": 50,
+        "patience": 10,
+        "clip_grad_norm": 0.3,
+        "hidden": 64,
+        "layers": 2,
+        "heads": 16,
+        "dropout": 0.2,
+        "attention_dropout": 0.2,
+        "pos_weight": "training negatives / positives",
+        "selection": "validation average precision",
+        "pretraining": false,
+        "max_observations": null,
+        "recipe": "official STraTS ss- author reimplementation"
+      },
+      "source_manifest_sha256": "71ea9072a2a27be3501b28f38470c5360e96347e97594b23a6ad25e3721510eb"
+    }
+  ],
+  "rows": [
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "XGBoost_TD",
+      "seed": 48,
+      "endpoint": 0,
+      "AP": 0.33839746708197693,
+      "AUROC": 0.8471351655416265,
+      "Brier": 0.04272922745697036,
+      "log_loss": 0.1650968032796278
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "XGBoost_TD",
+      "seed": 48,
+      "endpoint": 0,
+      "AP": 0.2842421952786688,
+      "AUROC": 0.8343511873254208,
+      "Brier": 0.04294266009279842,
+      "log_loss": 0.16691998759951923
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "XGBoost_TD",
+      "seed": 48,
+      "endpoint": 1,
+      "AP": 0.3612243412913835,
+      "AUROC": 0.8005347077713347,
+      "Brier": 0.08778459574797752,
+      "log_loss": 0.29713802059562605
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "XGBoost_TD",
+      "seed": 48,
+      "endpoint": 1,
+      "AP": 0.34067409671164195,
+      "AUROC": 0.8006473956176863,
+      "Brier": 0.08637195616200948,
+      "log_loss": 0.29202830349080544
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "XGBoost_TD",
+      "seed": 49,
+      "endpoint": 0,
+      "AP": 0.3075267783270992,
+      "AUROC": 0.8409583555016127,
+      "Brier": 0.04408289265268113,
+      "log_loss": 0.1711070813989389
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "XGBoost_TD",
+      "seed": 49,
+      "endpoint": 0,
+      "AP": 0.28225096135596095,
+      "AUROC": 0.8312559818975189,
+      "Brier": 0.0435636061232849,
+      "log_loss": 0.17058668970085253
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "XGBoost_TD",
+      "seed": 49,
+      "endpoint": 1,
+      "AP": 0.34745943979357713,
+      "AUROC": 0.7959947082576496,
+      "Brier": 0.08986690972340017,
+      "log_loss": 0.30190118374278047
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "XGBoost_TD",
+      "seed": 49,
+      "endpoint": 1,
+      "AP": 0.34217930417075215,
+      "AUROC": 0.8015391247942483,
+      "Brier": 0.08635475358500043,
+      "log_loss": 0.2913705311907495
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "XGBoost_TD",
+      "seed": 50,
+      "endpoint": 0,
+      "AP": 0.3192658309706215,
+      "AUROC": 0.8442586003687323,
+      "Brier": 0.042794935227597516,
+      "log_loss": 0.16423048262226392
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "XGBoost_TD",
+      "seed": 50,
+      "endpoint": 0,
+      "AP": 0.29398290673685296,
+      "AUROC": 0.838498493167306,
+      "Brier": 0.04242942657392091,
+      "log_loss": 0.16403076757252075
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "XGBoost_TD",
+      "seed": 50,
+      "endpoint": 1,
+      "AP": 0.34965380533948875,
+      "AUROC": 0.7867756322604937,
+      "Brier": 0.08805044223796574,
+      "log_loss": 0.3004696151868285
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "XGBoost_TD",
+      "seed": 50,
+      "endpoint": 1,
+      "AP": 0.33156358641262274,
+      "AUROC": 0.789598624725879,
+      "Brier": 0.08575804453411617,
+      "log_loss": 0.2936449020684516
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "STraTS_supervised",
+      "seed": 48,
+      "endpoint": 0,
+      "AP": 0.3862762807838962,
+      "AUROC": 0.8650012400381296,
+      "Brier": 0.06901134762809795,
+      "log_loss": 0.26698771056176346
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "STraTS_supervised",
+      "seed": 48,
+      "endpoint": 0,
+      "AP": 0.3489157134111198,
+      "AUROC": 0.8640544709967054,
+      "Brier": 0.06980407503719734,
+      "log_loss": 0.2765330776017293
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "STraTS_supervised",
+      "seed": 48,
+      "endpoint": 1,
+      "AP": 0.36411864303200764,
+      "AUROC": 0.7982364153956387,
+      "Brier": 0.2189700372043169,
+      "log_loss": 0.6443879866095477
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "STraTS_supervised",
+      "seed": 48,
+      "endpoint": 1,
+      "AP": 0.35356168867714716,
+      "AUROC": 0.8025507246035504,
+      "Brier": 0.2137991270466421,
+      "log_loss": 0.6290543541484223
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "STraTS_supervised",
+      "seed": 49,
+      "endpoint": 0,
+      "AP": 0.3813680043830776,
+      "AUROC": 0.8656918627635717,
+      "Brier": 0.05528773489867137,
+      "log_loss": 0.22941461242172545
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "STraTS_supervised",
+      "seed": 49,
+      "endpoint": 0,
+      "AP": 0.3494326476198175,
+      "AUROC": 0.8624163866700925,
+      "Brier": 0.05681999448796075,
+      "log_loss": 0.2378281717527735
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "STraTS_supervised",
+      "seed": 49,
+      "endpoint": 1,
+      "AP": 0.3670580928811456,
+      "AUROC": 0.804943811313457,
+      "Brier": 0.17349088675437396,
+      "log_loss": 0.5374359891511752
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "STraTS_supervised",
+      "seed": 49,
+      "endpoint": 1,
+      "AP": 0.36292695488046556,
+      "AUROC": 0.8011394848771511,
+      "Brier": 0.1713554621761814,
+      "log_loss": 0.5277097680124783
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "STraTS_supervised",
+      "seed": 50,
+      "endpoint": 0,
+      "AP": 0.3988884054005859,
+      "AUROC": 0.87373536893559,
+      "Brier": 0.08403685482064631,
+      "log_loss": 0.3706589019278359
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "STraTS_supervised",
+      "seed": 50,
+      "endpoint": 0,
+      "AP": 0.3489341021354793,
+      "AUROC": 0.865942045934933,
+      "Brier": 0.08363719739405782,
+      "log_loss": 0.3759856960068191
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "STraTS_supervised",
+      "seed": 50,
+      "endpoint": 1,
+      "AP": 0.37816304633559167,
+      "AUROC": 0.8093162423947963,
+      "Brier": 0.15553432494229458,
+      "log_loss": 0.49192159373887034
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "STraTS_supervised",
+      "seed": 50,
+      "endpoint": 1,
+      "AP": 0.36721752137978264,
+      "AUROC": 0.8042185072073248,
+      "Brier": 0.1534062191668464,
+      "log_loss": 0.4827393333609089
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "CEM-Net",
+      "seed": 48,
+      "endpoint": 0,
+      "AP": 0.4345274169276406,
+      "AUROC": 0.8889426931503712,
+      "Brier": 0.04031374902907988,
+      "log_loss": 0.16616985225954453
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "CEM-Net",
+      "seed": 48,
+      "endpoint": 1,
+      "AP": 0.4011181455739765,
+      "AUROC": 0.8151534130329209,
+      "Brier": 0.0867134970608901,
+      "log_loss": 0.29846916652051075
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "CEM-Net",
+      "seed": 49,
+      "endpoint": 0,
+      "AP": 0.43163453498355875,
+      "AUROC": 0.8879562047166708,
+      "Brier": 0.03873520243961936,
+      "log_loss": 0.14400070771950974
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "CEM-Net",
+      "seed": 49,
+      "endpoint": 1,
+      "AP": 0.3976992920114517,
+      "AUROC": 0.8180437483424957,
+      "Brier": 0.08433232606199675,
+      "log_loss": 0.28523372996086455
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "CEM-Net",
+      "seed": 50,
+      "endpoint": 0,
+      "AP": 0.4305670626944776,
+      "AUROC": 0.8879652105801809,
+      "Brier": 0.038471825650916586,
+      "log_loss": 0.14309449462569485
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "CEM-Net",
+      "seed": 50,
+      "endpoint": 1,
+      "AP": 0.3987553796528904,
+      "AUROC": 0.817579107412189,
+      "Brier": 0.08553667137259155,
+      "log_loss": 0.292384313493291
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "EMA_NRE_MLP",
+      "seed": 48,
+      "endpoint": 0,
+      "AP": 0.4328453303579909,
+      "AUROC": 0.878950687586133,
+      "Brier": 0.038273902420082814,
+      "log_loss": 0.1461218583157931
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "EMA_NRE_MLP",
+      "seed": 48,
+      "endpoint": 1,
+      "AP": 0.3967594230998397,
+      "AUROC": 0.8168552311007011,
+      "Brier": 0.08571093315914392,
+      "log_loss": 0.2906452167746629
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "EMA_NRE_MLP",
+      "seed": 49,
+      "endpoint": 0,
+      "AP": 0.43873636288020595,
+      "AUROC": 0.8833634452461971,
+      "Brier": 0.039322112512894705,
+      "log_loss": 0.15156236858630853
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "EMA_NRE_MLP",
+      "seed": 49,
+      "endpoint": 1,
+      "AP": 0.4006036408096947,
+      "AUROC": 0.8168456866027745,
+      "Brier": 0.08428578175494734,
+      "log_loss": 0.2861680407681855
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "EMA_NRE_MLP",
+      "seed": 50,
+      "endpoint": 0,
+      "AP": 0.43580364507436853,
+      "AUROC": 0.8830148721444484,
+      "Brier": 0.03818540802515009,
+      "log_loss": 0.14493082741419422
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "EMA_NRE_MLP",
+      "seed": 50,
+      "endpoint": 1,
+      "AP": 0.40428167236194,
+      "AUROC": 0.8166393436476026,
+      "Brier": 0.08511602809176533,
+      "log_loss": 0.29031680060593235
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "CEM-Net",
+      "seed": 48,
+      "endpoint": 0,
+      "AP": 0.3935388754828638,
+      "AUROC": 0.8751738647414767,
+      "Brier": 0.04056108514868051,
+      "log_loss": 0.17268539626451573
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "CEM-Net",
+      "seed": 48,
+      "endpoint": 1,
+      "AP": 0.3922187567407075,
+      "AUROC": 0.8142066275919412,
+      "Brier": 0.08399751562670088,
+      "log_loss": 0.29102426989111024
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "CEM-Net",
+      "seed": 49,
+      "endpoint": 0,
+      "AP": 0.3979448476688867,
+      "AUROC": 0.8827160075296336,
+      "Brier": 0.038952201347990226,
+      "log_loss": 0.14552454819822758
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "CEM-Net",
+      "seed": 49,
+      "endpoint": 1,
+      "AP": 0.3930729541555812,
+      "AUROC": 0.8177370414532489,
+      "Brier": 0.08174250010622207,
+      "log_loss": 0.2784049915049171
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "CEM-Net",
+      "seed": 50,
+      "endpoint": 0,
+      "AP": 0.3983095568340663,
+      "AUROC": 0.8829265934164322,
+      "Brier": 0.03878130288573077,
+      "log_loss": 0.1446221546758685
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "CEM-Net",
+      "seed": 50,
+      "endpoint": 1,
+      "AP": 0.3944413493286769,
+      "AUROC": 0.8161091838361281,
+      "Brier": 0.0826183478222263,
+      "log_loss": 0.28499862522323516
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "EMA_NRE_MLP",
+      "seed": 48,
+      "endpoint": 0,
+      "AP": 0.3990642921034545,
+      "AUROC": 0.8815681849122029,
+      "Brier": 0.038678176493807476,
+      "log_loss": 0.1457346926183146
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "EMA_NRE_MLP",
+      "seed": 48,
+      "endpoint": 1,
+      "AP": 0.3977165615427798,
+      "AUROC": 0.8151849774307913,
+      "Brier": 0.08262002180177933,
+      "log_loss": 0.28276932423114004
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "EMA_NRE_MLP",
+      "seed": 49,
+      "endpoint": 0,
+      "AP": 0.3963703683602421,
+      "AUROC": 0.8789204726432577,
+      "Brier": 0.039750629494627966,
+      "log_loss": 0.15360616526446785
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "EMA_NRE_MLP",
+      "seed": 49,
+      "endpoint": 1,
+      "AP": 0.3945304557967338,
+      "AUROC": 0.8142216555777011,
+      "Brier": 0.08191248692398664,
+      "log_loss": 0.2803193728510751
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "EMA_NRE_MLP",
+      "seed": 50,
+      "endpoint": 0,
+      "AP": 0.4007821848533511,
+      "AUROC": 0.8806875287973425,
+      "Brier": 0.03864322898408575,
+      "log_loss": 0.14584744730851823
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "EMA_NRE_MLP",
+      "seed": 50,
+      "endpoint": 1,
+      "AP": 0.39404407147642145,
+      "AUROC": 0.8140317377517868,
+      "Brier": 0.08273977442022362,
+      "log_loss": 0.28432209772548955
+    }
+  ],
+  "summaries": {
+    "dev:CEM-Net:0": {
+      "AP": {
+        "values": [
+          0.4345274169276406,
+          0.43163453498355875,
+          0.4305670626944776
+        ],
+        "mean": 0.432243004868559,
+        "sample_SD": 0.0020490920217860246
+      },
+      "AUROC": {
+        "values": [
+          0.8889426931503712,
+          0.8879562047166708,
+          0.8879652105801809
+        ],
+        "mean": 0.8882880361490743,
+        "sample_SD": 0.0005669674756145236
+      },
+      "Brier": {
+        "values": [
+          0.04031374902907988,
+          0.03873520243961936,
+          0.038471825650916586
+        ],
+        "mean": 0.03917359237320527,
+        "sample_SD": 0.0009961474454909872
+      },
+      "log_loss": {
+        "values": [
+          0.16616985225954453,
+          0.14400070771950974,
+          0.14309449462569485
+        ],
+        "mean": 0.15108835153491637,
+        "sample_SD": 0.013068819901700007
+      }
+    },
+    "dev:CEM-Net:1": {
+      "AP": {
+        "values": [
+          0.4011181455739765,
+          0.3976992920114517,
+          0.3987553796528904
+        ],
+        "mean": 0.39919093907943953,
+        "sample_SD": 0.0017505496082770718
+      },
+      "AUROC": {
+        "values": [
+          0.8151534130329209,
+          0.8180437483424957,
+          0.817579107412189
+        ],
+        "mean": 0.8169254229292019,
+        "sample_SD": 0.0015520912031570062
+      },
+      "Brier": {
+        "values": [
+          0.0867134970608901,
+          0.08433232606199675,
+          0.08553667137259155
+        ],
+        "mean": 0.08552749816515948,
+        "sample_SD": 0.0011906120032544717
+      },
+      "log_loss": {
+        "values": [
+          0.29846916652051075,
+          0.28523372996086455,
+          0.292384313493291
+        ],
+        "mean": 0.2920290699915555,
+        "sample_SD": 0.006624865560164137
+      }
+    },
+    "dev:EMA_NRE_MLP:0": {
+      "AP": {
+        "values": [
+          0.4328453303579909,
+          0.43873636288020595,
+          0.43580364507436853
+        ],
+        "mean": 0.4357951127708551,
+        "sample_SD": 0.0029455255294431482
+      },
+      "AUROC": {
+        "values": [
+          0.878950687586133,
+          0.8833634452461971,
+          0.8830148721444484
+        ],
+        "mean": 0.8817763349922595,
+        "sample_SD": 0.002453281119160155
+      },
+      "Brier": {
+        "values": [
+          0.038273902420082814,
+          0.039322112512894705,
+          0.03818540802515009
+        ],
+        "mean": 0.0385938076527092,
+        "sample_SD": 0.000632280627183054
+      },
+      "log_loss": {
+        "values": [
+          0.1461218583157931,
+          0.15156236858630853,
+          0.14493082741419422
+        ],
+        "mean": 0.1475383514387653,
+        "sample_SD": 0.003535417111874132
+      }
+    },
+    "dev:EMA_NRE_MLP:1": {
+      "AP": {
+        "values": [
+          0.3967594230998397,
+          0.4006036408096947,
+          0.40428167236194
+        ],
+        "mean": 0.4005482454238248,
+        "sample_SD": 0.0037614305758413204
+      },
+      "AUROC": {
+        "values": [
+          0.8168552311007011,
+          0.8168456866027745,
+          0.8166393436476026
+        ],
+        "mean": 0.8167800871170261,
+        "sample_SD": 0.00012198080791330559
+      },
+      "Brier": {
+        "values": [
+          0.08571093315914392,
+          0.08428578175494734,
+          0.08511602809176533
+        ],
+        "mean": 0.0850375810019522,
+        "sample_SD": 0.0007158069506829211
+      },
+      "log_loss": {
+        "values": [
+          0.2906452167746629,
+          0.2861680407681855,
+          0.29031680060593235
+        ],
+        "mean": 0.28904335271626025,
+        "sample_SD": 0.0024955016317419723
+      }
+    },
+    "dev:XGBoost_TD:0": {
+      "AP": {
+        "values": [
+          0.33839746708197693,
+          0.3075267783270992,
+          0.3192658309706215
+        ],
+        "mean": 0.3217300254598992,
+        "sample_SD": 0.015582170802262239
+      },
+      "AUROC": {
+        "values": [
+          0.8471351655416265,
+          0.8409583555016127,
+          0.8442586003687323
+        ],
+        "mean": 0.8441173738039905,
+        "sample_SD": 0.0030908258240388464
+      },
+      "Brier": {
+        "values": [
+          0.04272922745697036,
+          0.04408289265268113,
+          0.042794935227597516
+        ],
+        "mean": 0.043202351779083,
+        "sample_SD": 0.0007632781605272837
+      },
+      "log_loss": {
+        "values": [
+          0.1650968032796278,
+          0.1711070813989389,
+          0.16423048262226392
+        ],
+        "mean": 0.16681145576694356,
+        "sample_SD": 0.0037452540031399084
+      }
+    },
+    "dev:XGBoost_TD:1": {
+      "AP": {
+        "values": [
+          0.3612243412913835,
+          0.34745943979357713,
+          0.34965380533948875
+        ],
+        "mean": 0.35277919547481645,
+        "sample_SD": 0.007395551090661238
+      },
+      "AUROC": {
+        "values": [
+          0.8005347077713347,
+          0.7959947082576496,
+          0.7867756322604937
+        ],
+        "mean": 0.7944350160964927,
+        "sample_SD": 0.007010885782583883
+      },
+      "Brier": {
+        "values": [
+          0.08778459574797752,
+          0.08986690972340017,
+          0.08805044223796574
+        ],
+        "mean": 0.08856731590311447,
+        "sample_SD": 0.0011333034290750802
+      },
+      "log_loss": {
+        "values": [
+          0.29713802059562605,
+          0.30190118374278047,
+          0.3004696151868285
+        ],
+        "mean": 0.2998362731750783,
+        "sample_SD": 0.002443925606373546
+      }
+    },
+    "dev:STraTS_supervised:0": {
+      "AP": {
+        "values": [
+          0.3862762807838962,
+          0.3813680043830776,
+          0.3988884054005859
+        ],
+        "mean": 0.38884423018918657,
+        "sample_SD": 0.009038079777512188
+      },
+      "AUROC": {
+        "values": [
+          0.8650012400381296,
+          0.8656918627635717,
+          0.87373536893559
+        ],
+        "mean": 0.8681428239124305,
+        "sample_SD": 0.004855580275752263
+      },
+      "Brier": {
+        "values": [
+          0.06901134762809795,
+          0.05528773489867137,
+          0.08403685482064631
+        ],
+        "mean": 0.06944531244913854,
+        "sample_SD": 0.014379472110319267
+      },
+      "log_loss": {
+        "values": [
+          0.26698771056176346,
+          0.22941461242172545,
+          0.3706589019278359
+        ],
+        "mean": 0.2890204083037749,
+        "sample_SD": 0.07315440627101429
+      }
+    },
+    "dev:STraTS_supervised:1": {
+      "AP": {
+        "values": [
+          0.36411864303200764,
+          0.3670580928811456,
+          0.37816304633559167
+        ],
+        "mean": 0.3697799274162483,
+        "sample_SD": 0.007407266936312529
+      },
+      "AUROC": {
+        "values": [
+          0.7982364153956387,
+          0.804943811313457,
+          0.8093162423947963
+        ],
+        "mean": 0.8041654897012974,
+        "sample_SD": 0.005580768762615174
+      },
+      "Brier": {
+        "values": [
+          0.2189700372043169,
+          0.17349088675437396,
+          0.15553432494229458
+        ],
+        "mean": 0.18266508296699513,
+        "sample_SD": 0.032697810395472614
+      },
+      "log_loss": {
+        "values": [
+          0.6443879866095477,
+          0.5374359891511752,
+          0.49192159373887034
+        ],
+        "mean": 0.5579151898331978,
+        "sample_SD": 0.07826907744556495
+      }
+    },
+    "test:CEM-Net:0": {
+      "AP": {
+        "values": [
+          0.3935388754828638,
+          0.3979448476688867,
+          0.3983095568340663
+        ],
+        "mean": 0.3965977599952723,
+        "sample_SD": 0.00265534066345183
+      },
+      "AUROC": {
+        "values": [
+          0.8751738647414767,
+          0.8827160075296336,
+          0.8829265934164322
+        ],
+        "mean": 0.8802721552291809,
+        "sample_SD": 0.00441650438997749
+      },
+      "Brier": {
+        "values": [
+          0.04056108514868051,
+          0.038952201347990226,
+          0.03878130288573077
+        ],
+        "mean": 0.039431529794133835,
+        "sample_SD": 0.000981948596077951
+      },
+      "log_loss": {
+        "values": [
+          0.17268539626451573,
+          0.14552454819822758,
+          0.1446221546758685
+        ],
+        "mean": 0.15427736637953726,
+        "sample_SD": 0.015948205281535413
+      }
+    },
+    "test:CEM-Net:1": {
+      "AP": {
+        "values": [
+          0.3922187567407075,
+          0.3930729541555812,
+          0.3944413493286769
+        ],
+        "mean": 0.39324435340832187,
+        "sample_SD": 0.0011211657909980114
+      },
+      "AUROC": {
+        "values": [
+          0.8142066275919412,
+          0.8177370414532489,
+          0.8161091838361281
+        ],
+        "mean": 0.816017617627106,
+        "sample_SD": 0.001766987205953792
+      },
+      "Brier": {
+        "values": [
+          0.08399751562670088,
+          0.08174250010622207,
+          0.0826183478222263
+        ],
+        "mean": 0.08278612118504976,
+        "sample_SD": 0.0011368309792378546
+      },
+      "log_loss": {
+        "values": [
+          0.29102426989111024,
+          0.2784049915049171,
+          0.28499862522323516
+        ],
+        "mean": 0.28480929553975415,
+        "sample_SD": 0.00631176924830476
+      }
+    },
+    "test:EMA_NRE_MLP:0": {
+      "AP": {
+        "values": [
+          0.3990642921034545,
+          0.3963703683602421,
+          0.4007821848533511
+        ],
+        "mean": 0.39873894843901586,
+        "sample_SD": 0.00222382948249409
+      },
+      "AUROC": {
+        "values": [
+          0.8815681849122029,
+          0.8789204726432577,
+          0.8806875287973425
+        ],
+        "mean": 0.880392062117601,
+        "sample_SD": 0.001348358440441133
+      },
+      "Brier": {
+        "values": [
+          0.038678176493807476,
+          0.039750629494627966,
+          0.03864322898408575
+        ],
+        "mean": 0.03902401165750707,
+        "sample_SD": 0.0006295120674185922
+      },
+      "log_loss": {
+        "values": [
+          0.1457346926183146,
+          0.15360616526446785,
+          0.14584744730851823
+        ],
+        "mean": 0.14839610173043355,
+        "sample_SD": 0.00451239957523114
+      }
+    },
+    "test:EMA_NRE_MLP:1": {
+      "AP": {
+        "values": [
+          0.3977165615427798,
+          0.3945304557967338,
+          0.39404407147642145
+        ],
+        "mean": 0.39543036293864503,
+        "sample_SD": 0.0019947858205637712
+      },
+      "AUROC": {
+        "values": [
+          0.8151849774307913,
+          0.8142216555777011,
+          0.8140317377517868
+        ],
+        "mean": 0.8144794569200932,
+        "sample_SD": 0.0006183337192907474
+      },
+      "Brier": {
+        "values": [
+          0.08262002180177933,
+          0.08191248692398664,
+          0.08273977442022362
+        ],
+        "mean": 0.08242409438199653,
+        "sample_SD": 0.0004470926254419432
+      },
+      "log_loss": {
+        "values": [
+          0.28276932423114004,
+          0.2803193728510751,
+          0.28432209772548955
+        ],
+        "mean": 0.28247026493590155,
+        "sample_SD": 0.0020180507802370655
+      }
+    },
+    "test:XGBoost_TD:0": {
+      "AP": {
+        "values": [
+          0.2842421952786688,
+          0.28225096135596095,
+          0.29398290673685296
+        ],
+        "mean": 0.2868253544571609,
+        "sample_SD": 0.006278070492685579
+      },
+      "AUROC": {
+        "values": [
+          0.8343511873254208,
+          0.8312559818975189,
+          0.838498493167306
+        ],
+        "mean": 0.8347018874634152,
+        "sample_SD": 0.003633969635720699
+      },
+      "Brier": {
+        "values": [
+          0.04294266009279842,
+          0.0435636061232849,
+          0.04242942657392091
+        ],
+        "mean": 0.04297856426333474,
+        "sample_SD": 0.0005679415855924817
+      },
+      "log_loss": {
+        "values": [
+          0.16691998759951923,
+          0.17058668970085253,
+          0.16403076757252075
+        ],
+        "mean": 0.16717914829096417,
+        "sample_SD": 0.0032856356974229877
+      }
+    },
+    "test:XGBoost_TD:1": {
+      "AP": {
+        "values": [
+          0.34067409671164195,
+          0.34217930417075215,
+          0.33156358641262274
+        ],
+        "mean": 0.3381389957650056,
+        "sample_SD": 0.005743989770820749
+      },
+      "AUROC": {
+        "values": [
+          0.8006473956176863,
+          0.8015391247942483,
+          0.789598624725879
+        ],
+        "mean": 0.7972617150459378,
+        "sample_SD": 0.0066513915965846805
+      },
+      "Brier": {
+        "values": [
+          0.08637195616200948,
+          0.08635475358500043,
+          0.08575804453411617
+        ],
+        "mean": 0.08616158476037535,
+        "sample_SD": 0.0003495819186126825
+      },
+      "log_loss": {
+        "values": [
+          0.29202830349080544,
+          0.2913705311907495,
+          0.2936449020684516
+        ],
+        "mean": 0.2923479122500022,
+        "sample_SD": 0.0011703858515683294
+      }
+    },
+    "test:STraTS_supervised:0": {
+      "AP": {
+        "values": [
+          0.3489157134111198,
+          0.3494326476198175,
+          0.3489341021354793
+        ],
+        "mean": 0.34909415438880553,
+        "sample_SD": 0.0002932878907772729
+      },
+      "AUROC": {
+        "values": [
+          0.8640544709967054,
+          0.8624163866700925,
+          0.865942045934933
+        ],
+        "mean": 0.8641376345339102,
+        "sample_SD": 0.0017643002701862368
+      },
+      "Brier": {
+        "values": [
+          0.06980407503719734,
+          0.05681999448796075,
+          0.08363719739405782
+        ],
+        "mean": 0.07008708897307198,
+        "sample_SD": 0.01341084134544212
+      },
+      "log_loss": {
+        "values": [
+          0.2765330776017293,
+          0.2378281717527735,
+          0.3759856960068191
+        ],
+        "mean": 0.2967823151204406,
+        "sample_SD": 0.07126990312936232
+      }
+    },
+    "test:STraTS_supervised:1": {
+      "AP": {
+        "values": [
+          0.35356168867714716,
+          0.36292695488046556,
+          0.36721752137978264
+        ],
+        "mean": 0.3612353883124651,
+        "sample_SD": 0.006983300780510229
+      },
+      "AUROC": {
+        "values": [
+          0.8025507246035504,
+          0.8011394848771511,
+          0.8042185072073248
+        ],
+        "mean": 0.8026362388960088,
+        "sample_SD": 0.0015412913897404322
+      },
+      "Brier": {
+        "values": [
+          0.2137991270466421,
+          0.1713554621761814,
+          0.1534062191668464
+        ],
+        "mean": 0.1795202694632233,
+        "sample_SD": 0.031013285686464633
+      },
+      "log_loss": {
+        "values": [
+          0.6290543541484223,
+          0.5277097680124783,
+          0.4827393333609089
+        ],
+        "mean": 0.5465011518406031,
+        "sample_SD": 0.07494570305657657
+      }
+    }
+  },
+  "paired": [
+    {
+      "database": "eicu",
+      "split": "dev",
+      "candidate": "CEM-Net",
+      "baseline": "XGBoost_TD",
+      "endpoint": 0,
+      "values": [
+        0.09612994984566364,
+        0.12410775665645957,
+        0.11130123172385609
+      ],
+      "mean": 0.11051297940865977,
+      "sample_SD": 0.01400554978463409,
+      "family_count": 12,
+      "ci95": [
+        0.08876202543779615,
+        0.13122337406478124
+      ],
+      "adjusted_ci": [
+        0.07913538020394506,
+        0.14090272050995575
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.000599970001499925,
+      "wilcoxon": {
+        "p_two_sided": 0.25,
+        "nonzero_pairs": 3,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      }
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "candidate": "CEM-Net",
+      "baseline": "XGBoost_TD",
+      "endpoint": 1,
+      "values": [
+        0.03989380428259304,
+        0.05023985221787458,
+        0.04910157431340162
+      ],
+      "mean": 0.04641174360462308,
+      "sample_SD": 0.005673320800131253,
+      "family_count": 12,
+      "ci95": [
+        0.03352780893946833,
+        0.059262700413279745
+      ],
+      "adjusted_ci": [
+        0.027756322899500557,
+        0.0663090163009948
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.000599970001499925,
+      "wilcoxon": {
+        "p_two_sided": 0.25,
+        "nonzero_pairs": 3,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      }
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "candidate": "CEM-Net",
+      "baseline": "STraTS_supervised",
+      "endpoint": 0,
+      "values": [
+        0.04825113614374438,
+        0.05026653060048114,
+        0.03167865729389169
+      ],
+      "mean": 0.0433987746793724,
+      "sample_SD": 0.010199819476399903,
+      "family_count": 12,
+      "ci95": [
+        0.024014563123410153,
+        0.06280299603809784
+      ],
+      "adjusted_ci": [
+        0.014944916530082251,
+        0.07136317440145803
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.000599970001499925,
+      "wilcoxon": {
+        "p_two_sided": 0.25,
+        "nonzero_pairs": 3,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      }
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "candidate": "CEM-Net",
+      "baseline": "STraTS_supervised",
+      "endpoint": 1,
+      "values": [
+        0.036999502541968876,
+        0.030641199130306107,
+        0.020592333317298706
+      ],
+      "mean": 0.02941101166319123,
+      "sample_SD": 0.008272473716786648,
+      "family_count": 12,
+      "ci95": [
+        0.0172207424106104,
+        0.04141420390924129
+      ],
+      "adjusted_ci": [
+        0.011639946437051699,
+        0.04705100617402981
+      ],
+      "p_bootstrap_centered": 9.99950002499875e-05,
+      "p_bonferroni": 0.00119994000299985,
+      "wilcoxon": {
+        "p_two_sided": 0.25,
+        "nonzero_pairs": 3,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      }
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "candidate": "EMA_NRE_MLP",
+      "baseline": "XGBoost_TD",
+      "endpoint": 0,
+      "values": [
+        0.09444786327601395,
+        0.13120958455310677,
+        0.11653781410374703
+      ],
+      "mean": 0.11406508731095592,
+      "sample_SD": 0.018505183629391655,
+      "family_count": 12,
+      "ci95": [
+        0.09052664916157256,
+        0.13643967625208964
+      ],
+      "adjusted_ci": [
+        0.07956992100942578,
+        0.14678918761891274
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.000599970001499925,
+      "wilcoxon": {
+        "p_two_sided": 0.25,
+        "nonzero_pairs": 3,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      }
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "candidate": "EMA_NRE_MLP",
+      "baseline": "XGBoost_TD",
+      "endpoint": 1,
+      "values": [
+        0.035535081808456215,
+        0.053144201016117554,
+        0.05462786702245126
+      ],
+      "mean": 0.047769049949008345,
+      "sample_SD": 0.010620866186550932,
+      "family_count": 12,
+      "ci95": [
+        0.03459561674513401,
+        0.060604850316637815
+      ],
+      "adjusted_ci": [
+        0.029268102285223665,
+        0.06760387193342554
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.000599970001499925,
+      "wilcoxon": {
+        "p_two_sided": 0.25,
+        "nonzero_pairs": 3,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      }
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "candidate": "EMA_NRE_MLP",
+      "baseline": "STraTS_supervised",
+      "endpoint": 0,
+      "values": [
+        0.04656904957409469,
+        0.05736835849712835,
+        0.03691523967378263
+      ],
+      "mean": 0.04695088258166855,
+      "sample_SD": 0.010231904257504044,
+      "family_count": 12,
+      "ci95": [
+        0.028860034391354535,
+        0.06541339223813396
+      ],
+      "adjusted_ci": [
+        0.020200514293814992,
+        0.0738729370514721
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.000599970001499925,
+      "wilcoxon": {
+        "p_two_sided": 0.25,
+        "nonzero_pairs": 3,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      }
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "candidate": "EMA_NRE_MLP",
+      "baseline": "STraTS_supervised",
+      "endpoint": 1,
+      "values": [
+        0.032640780067832054,
+        0.03354554792854908,
+        0.026118626026348346
+      ],
+      "mean": 0.030768318007576494,
+      "sample_SD": 0.004052083150759571,
+      "family_count": 12,
+      "ci95": [
+        0.018727796080663994,
+        0.04253507861673656
+      ],
+      "adjusted_ci": [
+        0.01302789583031912,
+        0.048036234507269786
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.000599970001499925,
+      "wilcoxon": {
+        "p_two_sided": 0.25,
+        "nonzero_pairs": 3,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      }
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "candidate": "CEM-Net",
+      "baseline": "XGBoost_TD",
+      "endpoint": 0,
+      "values": [
+        0.10929668020419503,
+        0.11569388631292576,
+        0.10432665009721337
+      ],
+      "mean": 0.10977240553811139,
+      "sample_SD": 0.005698530577346079,
+      "family_count": 12,
+      "ci95": [
+        0.09395756746953783,
+        0.12505003121545388
+      ],
+      "adjusted_ci": [
+        0.086779765098135,
+        0.13219741445118624
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.000599970001499925,
+      "wilcoxon": {
+        "p_two_sided": 0.25,
+        "nonzero_pairs": 3,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      }
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "candidate": "CEM-Net",
+      "baseline": "XGBoost_TD",
+      "endpoint": 1,
+      "values": [
+        0.05154466002906555,
+        0.05089364998482904,
+        0.06287776291605418
+      ],
+      "mean": 0.055105357643316255,
+      "sample_SD": 0.006738966264360391,
+      "family_count": 12,
+      "ci95": [
+        0.04540392637795189,
+        0.06504576718242978
+      ],
+      "adjusted_ci": [
+        0.04049377184732334,
+        0.06967272699191475
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.000599970001499925,
+      "wilcoxon": {
+        "p_two_sided": 0.25,
+        "nonzero_pairs": 3,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      }
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "candidate": "CEM-Net",
+      "baseline": "STraTS_supervised",
+      "endpoint": 0,
+      "values": [
+        0.044623162071743994,
+        0.0485122000490692,
+        0.04937545469858701
+      ],
+      "mean": 0.047503605606466735,
+      "sample_SD": 0.002531603911559439,
+      "family_count": 12,
+      "ci95": [
+        0.03375995178903949,
+        0.06119737548071741
+      ],
+      "adjusted_ci": [
+        0.02782713270052668,
+        0.06762973544016833
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.000599970001499925,
+      "wilcoxon": {
+        "p_two_sided": 0.25,
+        "nonzero_pairs": 3,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      }
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "candidate": "CEM-Net",
+      "baseline": "STraTS_supervised",
+      "endpoint": 1,
+      "values": [
+        0.03865706806356034,
+        0.03014599927511563,
+        0.027223827948894275
+      ],
+      "mean": 0.032008965095856746,
+      "sample_SD": 0.0059399264403559365,
+      "family_count": 12,
+      "ci95": [
+        0.022580557697755313,
+        0.04150758101383581
+      ],
+      "adjusted_ci": [
+        0.018003228113523225,
+        0.045707392074685806
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.000599970001499925,
+      "wilcoxon": {
+        "p_two_sided": 0.25,
+        "nonzero_pairs": 3,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      }
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "candidate": "EMA_NRE_MLP",
+      "baseline": "XGBoost_TD",
+      "endpoint": 0,
+      "values": [
+        0.11482209682478572,
+        0.11411940700428114,
+        0.10679927811649814
+      ],
+      "mean": 0.111913593981855,
+      "sample_SD": 0.004443040999579101,
+      "family_count": 12,
+      "ci95": [
+        0.0954000811865021,
+        0.12726171533026362
+      ],
+      "adjusted_ci": [
+        0.08792579172435878,
+        0.13502129857873058
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.000599970001499925,
+      "wilcoxon": {
+        "p_two_sided": 0.25,
+        "nonzero_pairs": 3,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      }
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "candidate": "EMA_NRE_MLP",
+      "baseline": "XGBoost_TD",
+      "endpoint": 1,
+      "values": [
+        0.05704246483113784,
+        0.05235115162598164,
+        0.06248048506379872
+      ],
+      "mean": 0.0572913671736394,
+      "sample_SD": 0.005069251745149067,
+      "family_count": 12,
+      "ci95": [
+        0.047328015933058944,
+        0.06711316862413165
+      ],
+      "adjusted_ci": [
+        0.04233766485637738,
+        0.0717489595618102
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.000599970001499925,
+      "wilcoxon": {
+        "p_two_sided": 0.25,
+        "nonzero_pairs": 3,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      }
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "candidate": "EMA_NRE_MLP",
+      "baseline": "STraTS_supervised",
+      "endpoint": 0,
+      "values": [
+        0.05014857869233469,
+        0.04693772074042457,
+        0.05184808271787178
+      ],
+      "mean": 0.04964479405021035,
+      "sample_SD": 0.002493644503857773,
+      "family_count": 12,
+      "ci95": [
+        0.03678410120758103,
+        0.06204564602905792
+      ],
+      "adjusted_ci": [
+        0.03079113743321801,
+        0.0678211962051473
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.000599970001499925,
+      "wilcoxon": {
+        "p_two_sided": 0.25,
+        "nonzero_pairs": 3,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      }
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "candidate": "EMA_NRE_MLP",
+      "baseline": "STraTS_supervised",
+      "endpoint": 1,
+      "values": [
+        0.04415487286563263,
+        0.031603500916268235,
+        0.026826550096638813
+      ],
+      "mean": 0.034194974626179896,
+      "sample_SD": 0.008950111423243841,
+      "family_count": 12,
+      "ci95": [
+        0.024914331389577913,
+        0.04357531303970937
+      ],
+      "adjusted_ci": [
+        0.02037242312932936,
+        0.0474908248526631
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.000599970001499925,
+      "wilcoxon": {
+        "p_two_sided": 0.25,
+        "nonzero_pairs": 3,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      }
+    }
+  ],
+  "inference": "Fixed-model patient-cluster conditional inference. Two-sided null-centered bootstrap p=(1+count(|draw-observed|>=|observed|))/(B+1), approximate. Bonferroni family=12 for each candidate and split across all three databases. Exact seed signed ranks are supplemental. Historical test exposure and training/selection uncertainty are not covered."
+}

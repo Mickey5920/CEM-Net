@@ -1,0 +1,675 @@
+{
+  "complete": true,
+  "database": "mimic",
+  "rows": [
+    {
+      "split": "dev",
+      "endpoint": 0,
+      "baseline": "TabM_PLE",
+      "form": "raw",
+      "metric": "Brier",
+      "seed_differences": [
+        0.0002687846747631432,
+        -0.0005668029382927105,
+        0.0003036538662511151
+      ],
+      "mean": 1.878534240515928e-06,
+      "sample_SD": 0.0004928011039259909,
+      "method_values": {
+        "CEM-Net": [
+          0.04963210105227735,
+          0.04911610862869149,
+          0.049625268731652294
+        ],
+        "TabM_PLE": [
+          0.04936331637751421,
+          0.04968291156698419,
+          0.049321614865401174
+        ]
+      },
+      "ci95": [
+        -0.000830969531589468,
+        0.0008476356108429974
+      ],
+      "adjusted_ci": [
+        -0.0013302808934067868,
+        0.0013400484254575114
+      ],
+      "family": 24,
+      "negative_favors_CEM": true,
+      "validation_resubstitution": true
+    },
+    {
+      "split": "dev",
+      "endpoint": 0,
+      "baseline": "TabM_PLE",
+      "form": "raw",
+      "metric": "log_loss",
+      "seed_differences": [
+        0.0015171866788312152,
+        -0.0007824102027380414,
+        -0.0009626102222022596
+      ],
+      "mean": -7.594458203636191e-05,
+      "sample_SD": 0.0013826309784316505,
+      "method_values": {
+        "CEM-Net": [
+          0.17612074189296187,
+          0.17131540720039162,
+          0.17468851090562698
+        ],
+        "TabM_PLE": [
+          0.17460355521413065,
+          0.17209781740312965,
+          0.17565112112782924
+        ]
+      },
+      "ci95": [
+        -0.003288363569419019,
+        0.0031289745710178342
+      ],
+      "adjusted_ci": [
+        -0.0050653831616477825,
+        0.0050632251070108734
+      ],
+      "family": 24,
+      "negative_favors_CEM": true,
+      "validation_resubstitution": true
+    },
+    {
+      "split": "dev",
+      "endpoint": 0,
+      "baseline": "TabM_PLE",
+      "form": "Platt",
+      "metric": "Brier",
+      "seed_differences": [
+        -0.0008645627373290381,
+        -0.0004578241683429119,
+        -0.0002498772354258006
+      ],
+      "mean": -0.0005240880470325835,
+      "sample_SD": 0.0003126543503243772,
+      "method_values": {
+        "CEM-Net": [
+          0.048287323203955734,
+          0.048694940539604215,
+          0.0486800032765459
+        ],
+        "TabM_PLE": [
+          0.04915188594128478,
+          0.049152764707947126,
+          0.048929880511971696
+        ]
+      },
+      "ci95": [
+        -0.0011870519304615257,
+        0.00012344378220461205
+      ],
+      "adjusted_ci": [
+        -0.0015513445732100585,
+        0.0004884575974142222
+      ],
+      "family": 24,
+      "negative_favors_CEM": true,
+      "validation_resubstitution": true
+    },
+    {
+      "split": "dev",
+      "endpoint": 0,
+      "baseline": "TabM_PLE",
+      "form": "Platt",
+      "metric": "log_loss",
+      "seed_differences": [
+        -0.0030535549968857237,
+        -0.001556477096115742,
+        -0.0029437239172235984
+      ],
+      "mean": -0.002517918670075021,
+      "sample_SD": 0.0008344418143992482,
+      "method_values": {
+        "CEM-Net": [
+          0.16743410973110545,
+          0.16858496842534168,
+          0.16820926415325557
+        ],
+        "TabM_PLE": [
+          0.17048766472799118,
+          0.17014144552145744,
+          0.17115298807047916
+        ]
+      },
+      "ci95": [
+        -0.004912336204314125,
+        -0.0001342716374707564
+      ],
+      "adjusted_ci": [
+        -0.006241455314038992,
+        0.0012045929270995434
+      ],
+      "family": 24,
+      "negative_favors_CEM": true,
+      "validation_resubstitution": true
+    },
+    {
+      "split": "dev",
+      "endpoint": 1,
+      "baseline": "TabM_PLE",
+      "form": "raw",
+      "metric": "Brier",
+      "seed_differences": [
+        0.0006323640668043053,
+        0.00048401827242690033,
+        0.001061490656160673
+      ],
+      "mean": 0.0007259576651306262,
+      "sample_SD": 0.0002998973319813682,
+      "method_values": {
+        "CEM-Net": [
+          0.09511584212727642,
+          0.09447409603691091,
+          0.09455073851343458
+        ],
+        "TabM_PLE": [
+          0.09448347806047212,
+          0.09399007776448401,
+          0.09348924785727392
+        ]
+      },
+      "ci95": [
+        -0.0003177604237641727,
+        0.0017545631480561413
+      ],
+      "adjusted_ci": [
+        -0.0009216698159247428,
+        0.002385142228624377
+      ],
+      "family": 24,
+      "negative_favors_CEM": true,
+      "validation_resubstitution": true
+    },
+    {
+      "split": "dev",
+      "endpoint": 1,
+      "baseline": "TabM_PLE",
+      "form": "raw",
+      "metric": "log_loss",
+      "seed_differences": [
+        0.003941036900743801,
+        0.0015558739223875172,
+        0.0035014658869790033
+      ],
+      "mean": 0.0029994589033701074,
+      "sample_SD": 0.0012693537202153036,
+      "method_values": {
+        "CEM-Net": [
+          0.3120155238683421,
+          0.3059005439319476,
+          0.3056666444412341
+        ],
+        "TabM_PLE": [
+          0.3080744869675983,
+          0.30434467000956006,
+          0.3021651785542551
+        ]
+      },
+      "ci95": [
+        -0.0003702463547529408,
+        0.006431147648797148
+      ],
+      "adjusted_ci": [
+        -0.0021909684665617594,
+        0.00832192564415988
+      ],
+      "family": 24,
+      "negative_favors_CEM": true,
+      "validation_resubstitution": true
+    },
+    {
+      "split": "dev",
+      "endpoint": 1,
+      "baseline": "TabM_PLE",
+      "form": "Platt",
+      "metric": "Brier",
+      "seed_differences": [
+        -0.0003860052676428521,
+        -1.8685068040452116e-05,
+        0.0005658184232637077
+      ],
+      "mean": 5.370936252680115e-05,
+      "sample_SD": 0.0004800237492308211,
+      "method_values": {
+        "CEM-Net": [
+          0.09312692943058269,
+          0.0934215541231432,
+          0.09358861966466031
+        ],
+        "TabM_PLE": [
+          0.09351293469822554,
+          0.09344023919118365,
+          0.0930228012413966
+        ]
+      },
+      "ci95": [
+        -0.000721670216084001,
+        0.0008244872705228267
+      ],
+      "adjusted_ci": [
+        -0.0011656194510532574,
+        0.0012976768123303336
+      ],
+      "family": 24,
+      "negative_favors_CEM": true,
+      "validation_resubstitution": true
+    },
+    {
+      "split": "dev",
+      "endpoint": 1,
+      "baseline": "TabM_PLE",
+      "form": "Platt",
+      "metric": "log_loss",
+      "seed_differences": [
+        -0.0006428635016477253,
+        0.0003456934987438916,
+        0.001783521877271189
+      ],
+      "mean": 0.0004954506247891185,
+      "sample_SD": 0.0012201052820797332,
+      "method_values": {
+        "CEM-Net": [
+          0.3011047811578137,
+          0.3020917714829697,
+          0.30216969508078856
+        ],
+        "TabM_PLE": [
+          0.30174764465946147,
+          0.30174607798422576,
+          0.30038617320351735
+        ]
+      },
+      "ci95": [
+        -0.0018614332399065703,
+        0.0028829757842032356
+      ],
+      "adjusted_ci": [
+        -0.003128141801564615,
+        0.004170383346146937
+      ],
+      "family": 24,
+      "negative_favors_CEM": true,
+      "validation_resubstitution": true
+    },
+    {
+      "split": "test",
+      "endpoint": 0,
+      "baseline": "TabM_PLE",
+      "form": "raw",
+      "metric": "Brier",
+      "seed_differences": [
+        0.0006588601961090525,
+        -7.453368330121026e-05,
+        0.0004761806679862007
+      ],
+      "mean": 0.0003535023935980143,
+      "sample_SD": 0.0003817775724741517,
+      "method_values": {
+        "CEM-Net": [
+          0.049278686409937995,
+          0.048316940185532765,
+          0.04897605906538933
+        ],
+        "TabM_PLE": [
+          0.048619826213828946,
+          0.048391473868833974,
+          0.04849987839740313
+        ]
+      },
+      "ci95": [
+        -0.0002450708198063473,
+        0.0009542920548257761
+      ],
+      "adjusted_ci": [
+        -0.0005812624778619499,
+        0.0013010357243492447
+      ],
+      "family": 24,
+      "negative_favors_CEM": true,
+      "validation_resubstitution": false
+    },
+    {
+      "split": "test",
+      "endpoint": 0,
+      "baseline": "TabM_PLE",
+      "form": "raw",
+      "metric": "log_loss",
+      "seed_differences": [
+        0.0027530916802838553,
+        -0.0004909647958593642,
+        -0.0004923828406678472
+      ],
+      "mean": 0.0005899146812522147,
+      "sample_SD": 0.0018733663682172317,
+      "method_values": {
+        "CEM-Net": [
+          0.17400431784066972,
+          0.16725076971990532,
+          0.17171633834855404
+        ],
+        "TabM_PLE": [
+          0.17125122616038585,
+          0.16774173451576466,
+          0.17220872118922187
+        ]
+      },
+      "ci95": [
+        -0.0016515271371053699,
+        0.0028099786054199714
+      ],
+      "adjusted_ci": [
+        -0.0029482305376358413,
+        0.004077279479177513
+      ],
+      "family": 24,
+      "negative_favors_CEM": true,
+      "validation_resubstitution": false
+    },
+    {
+      "split": "test",
+      "endpoint": 0,
+      "baseline": "TabM_PLE",
+      "form": "Platt",
+      "metric": "Brier",
+      "seed_differences": [
+        -0.0006588320981392859,
+        -0.0002907799802144421,
+        -0.0003042306644074105
+      ],
+      "mean": -0.00041794758092037946,
+      "sample_SD": 0.00020872049061640776,
+      "method_values": {
+        "CEM-Net": [
+          0.04773143022286724,
+          0.04774421328859051,
+          0.04782656198062791
+        ],
+        "TabM_PLE": [
+          0.048390262321006516,
+          0.048034993268804956,
+          0.048130792645035315
+        ]
+      },
+      "ci95": [
+        -0.0008658770184893271,
+        2.8493784587565408e-05
+      ],
+      "adjusted_ci": [
+        -0.0011030623531914857,
+        0.00027905014520200367
+      ],
+      "family": 24,
+      "negative_favors_CEM": true,
+      "validation_resubstitution": false
+    },
+    {
+      "split": "test",
+      "endpoint": 0,
+      "baseline": "TabM_PLE",
+      "form": "Platt",
+      "metric": "log_loss",
+      "seed_differences": [
+        -0.002160228157587706,
+        -0.0015400483940457338,
+        -0.002904080081571085
+      ],
+      "mean": -0.002201452211068175,
+      "sample_SD": 0.0006829496160642706,
+      "method_values": {
+        "CEM-Net": [
+          0.16489251533431684,
+          0.16444779646027133,
+          0.16489153186380584
+        ],
+        "TabM_PLE": [
+          0.16705274349190452,
+          0.16598784485431706,
+          0.1677956119453769
+        ]
+      },
+      "ci95": [
+        -0.0037826892077286916,
+        -0.000632033313265289
+      ],
+      "adjusted_ci": [
+        -0.004677555536913694,
+        0.00030749584262736157
+      ],
+      "family": 24,
+      "negative_favors_CEM": true,
+      "validation_resubstitution": false
+    },
+    {
+      "split": "test",
+      "endpoint": 1,
+      "baseline": "TabM_PLE",
+      "form": "raw",
+      "metric": "Brier",
+      "seed_differences": [
+        0.00045638582768050694,
+        -0.00030980656525810116,
+        -0.00033836038596530264
+      ],
+      "mean": -6.392704118096562e-05,
+      "sample_SD": 0.0004508302799240383,
+      "method_values": {
+        "CEM-Net": [
+          0.09457910835988573,
+          0.09353158434777824,
+          0.09359374273489969
+        ],
+        "TabM_PLE": [
+          0.09412272253220523,
+          0.09384139091303634,
+          0.093932103120865
+        ]
+      },
+      "ci95": [
+        -0.0007944658546040249,
+        0.0006783453192415611
+      ],
+      "adjusted_ci": [
+        -0.0012436881193662159,
+        0.0011085197517836812
+      ],
+      "family": 24,
+      "negative_favors_CEM": true,
+      "validation_resubstitution": false
+    },
+    {
+      "split": "test",
+      "endpoint": 1,
+      "baseline": "TabM_PLE",
+      "form": "raw",
+      "metric": "log_loss",
+      "seed_differences": [
+        0.004477295834954346,
+        -1.4477397600121081e-05,
+        0.0006088586517064636
+      ],
+      "mean": 0.0016905590296868963,
+      "sample_SD": 0.0024334262828295127,
+      "method_values": {
+        "CEM-Net": [
+          0.3139598217411478,
+          0.30495740068229416,
+          0.3054114679640488
+        ],
+        "TabM_PLE": [
+          0.3094825259061934,
+          0.3049718780798943,
+          0.3048026093123424
+        ]
+      },
+      "ci95": [
+        -0.0007546314676341578,
+        0.0042477641336172225
+      ],
+      "adjusted_ci": [
+        -0.0022710085912721386,
+        0.005699354149125978
+      ],
+      "family": 24,
+      "negative_favors_CEM": true,
+      "validation_resubstitution": false
+    },
+    {
+      "split": "test",
+      "endpoint": 1,
+      "baseline": "TabM_PLE",
+      "form": "Platt",
+      "metric": "Brier",
+      "seed_differences": [
+        -0.0005111746338254653,
+        -0.0004936497430449686,
+        -0.00030305843806448853
+      ],
+      "mean": -0.0004359609383116408,
+      "sample_SD": 0.00011543000640290774,
+      "method_values": {
+        "CEM-Net": [
+          0.09283969325376781,
+          0.09273472482761423,
+          0.09286116705153043
+        ],
+        "TabM_PLE": [
+          0.09335086788759327,
+          0.0932283745706592,
+          0.09316422548959491
+        ]
+      },
+      "ci95": [
+        -0.0009821720144248534,
+        0.00011813700677358829
+      ],
+      "adjusted_ci": [
+        -0.0012922110754545722,
+        0.0004395512370028121
+      ],
+      "family": 24,
+      "negative_favors_CEM": true,
+      "validation_resubstitution": false
+    },
+    {
+      "split": "test",
+      "endpoint": 1,
+      "baseline": "TabM_PLE",
+      "form": "Platt",
+      "metric": "log_loss",
+      "seed_differences": [
+        -0.0006086256660815236,
+        -0.0011825906478524187,
+        -0.00013621186336410966
+      ],
+      "mean": -0.0006424760590993506,
+      "sample_SD": 0.0005240100447390333,
+      "method_values": {
+        "CEM-Net": [
+          0.30216766099309283,
+          0.3014056716174859,
+          0.3019336450096673
+        ],
+        "TabM_PLE": [
+          0.30277628665917433,
+          0.30258826226533825,
+          0.30206985687303145
+        ]
+      },
+      "ci95": [
+        -0.002404287790626326,
+        0.0011328435782934601
+      ],
+      "adjusted_ci": [
+        -0.003497329649449594,
+        0.0021416599744199355
+      ],
+      "family": 24,
+      "negative_favors_CEM": true,
+      "validation_resubstitution": false
+    }
+  ],
+  "replicates": 20000,
+  "source_sha256": "e7e7a00c42db5ee65b9717aa43b5c84577363d2680a78b661aab883824b32cbe",
+  "primary_sha256": "a718fac0278648004ad9aead05aba3047c6b6cd4ede206da8c2cff68f187dc8f",
+  "secondary_sha256": "97ef203260f3599df066696198139067bc0fb338f8730e135366f2687372bf4e",
+  "split_info": {
+    "dev": {
+      "patients": 5428,
+      "stays": 7460,
+      "rng_seed": 20261026,
+      "cluster_ids_sha256": "deb8a156de834c2d9f422cc2becae4eabf06b1589b1d03839356f5b11c8c7a7f"
+    },
+    "test": {
+      "patients": 10856,
+      "stays": 14884,
+      "rng_seed": 20261027,
+      "cluster_ids_sha256": "1a089d300dbce9f8d49a97d4f6448fbd60132db3f25096e7991d75a3bb81928a"
+    }
+  },
+  "protected": {
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimic_statistics_v1/verified-results.json": "a718fac0278648004ad9aead05aba3047c6b6cd4ede206da8c2cff68f187dc8f",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimic_secondary_v1/verified-results.json": "97ef203260f3599df066696198139067bc0fb338f8730e135366f2687372bf4e",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/work/cem_icde_evidence_20261028/mimic/basic_v2/work/cem_icde_evidence_20261028/config.json": "b61d158d4b234b4100e9c389037766c0ffc89a69a040a5586d510ce6dc5c9244",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/cache/tracehr_module_scratch_20261010/mimic/61d04c91241f3447c7e8bfe0f168265a16fbcd76a178758dc56e1d32f2a25cb6/dev_targets.npz": "9f252b03f5640dec8f0297ac178f22f6ed1f3e5bf9fe266cf17a0a3bc708cb1b",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimic_statistics_v1/bootstrap/random_dev_CEM_Net.json": "1cb1e63db01492c84b9af0df8ca68bd87079ad77c53134f6186cee76ee859951",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimic_statistics_v1/bootstrap/random_dev_CEM_Net.npz": "3f3a22fcac12ddbf32c1b21f7870528c5b9e5e7cda7ddc1bdf7260334238e3a4",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_ema_cross_20261024/mimic/v1/screen/jobs/fullEMA_t0_s48/predictions_dev.npz": "a043100d7abebef7b6703f1bfefec5d73e3ff058e209ed8f985520e8b04e77c3",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_ema_cross_20261024/mimic/v1/screen/jobs/fullEMA_t0_s49/predictions_dev.npz": "d9c1ce5b33ea66b672302853f79184ff4826abb4341e5f9b63a574872a183bd5",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_ema_cross_20261024/mimic/v1/screen/jobs/fullEMA_t0_s50/predictions_dev.npz": "63c603b2dce72d0e991dddc71daddf2dbb4fd672bb52f2b378f89cfe1cc5e472",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimic_statistics_v1/bootstrap/random_dev_TabM_PLE.json": "3e2807ea6baa6ab603ef8f90e0c37210327d1d66764c4e7e1e5316553c979477",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimic_statistics_v1/bootstrap/random_dev_TabM_PLE.npz": "6e8a35c9d08eb8c9a2afebd61b0432370f129362228d63d017f7dd204b097909",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_evidence_completion_20261025/mimic/tabular_v1/screen/jobs/TabM_PLE_t0_s48/predictions_dev.npz": "65bf8979708b81339b4941bf33d6fb5f80d115c52cc8a9a24b33b4c7fc4f006f",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_evidence_completion_20261025/mimic/tabular_v1/screen/jobs/TabM_PLE_t0_s49/predictions_dev.npz": "df3363bc7ed304fb0c0b9f07a0432a0fc7535ff42f36899afb69be55c52ccd2e",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_evidence_completion_20261025/mimic/tabular_v1/screen/jobs/TabM_PLE_t0_s50/predictions_dev.npz": "b64192c26da2062a15293988b3c3118ec0233ca89977660fd4212fe4bbf9e980",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_ema_cross_20261024/mimic/v1/screen/jobs/fullEMA_t1_s48/predictions_dev.npz": "133492442005cd8c88a1c99cba5210491a8bf2cd218dfd9f857495b70a9c14c6",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_ema_cross_20261024/mimic/v1/screen/jobs/fullEMA_t1_s49/predictions_dev.npz": "90e90c5dd1ba6b47ab63c88ed30efc8eea30e1ef808fbc0970f6ddc696e90968",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_ema_cross_20261024/mimic/v1/screen/jobs/fullEMA_t1_s50/predictions_dev.npz": "46c41a28a6ede9727d7fdb0efb604f14a9ad48809e410deb14397dde1d971965",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_evidence_completion_20261025/mimic/tabular_v1/screen/jobs/TabM_PLE_t1_s48/predictions_dev.npz": "5fe0906e87f19457a2c1440f5ee84c31783b852d8b1e1ce0b3188bd73fc0b730",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_evidence_completion_20261025/mimic/tabular_v1/screen/jobs/TabM_PLE_t1_s49/predictions_dev.npz": "d80d492d3546fcbaa9b86e0f61ca97f909d88e8f1e96c56a8ede41d17a98c350",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_evidence_completion_20261025/mimic/tabular_v1/screen/jobs/TabM_PLE_t1_s50/predictions_dev.npz": "35e7f3c6d797f0ef42274e37518d67ec72a5465653d116c07eef466ebf621411",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_pm_test_20261021/mimic/features/test_targets.npz": "91b18b5d479cc6dfcbe147263bfacd0f19a5d682a17709f058ccb7cd6a50083e",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimic_statistics_v1/bootstrap/random_test_CEM_Net.json": "4cbc06affbbb38ae6cba1c8ea5df40648df52ac4cd941fc0bfcabd5bba08e930",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimic_statistics_v1/bootstrap/random_test_CEM_Net.npz": "513bf811533c8b7fba7556d769722aa366e9948447415dfc93e783634e4ebef1",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_ema_cross_20261024/mimic/v1/screen/test/test_fullEMA_t0_s48/predictions_test.npz": "2ef34d679b87bec064b41ed20d5e4ec024c7d6f604902c46bd2d78044a0e9faf",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_ema_cross_20261024/mimic/v1/screen/test/test_fullEMA_t0_s49/predictions_test.npz": "4a6fc803eb0ebc75d6589c09be3d9cd0b991bd44ec75ff25cba606314c2472f5",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_ema_cross_20261024/mimic/v1/screen/test/test_fullEMA_t0_s50/predictions_test.npz": "6521fe8065be1ebfc6cb92c1197941f57b202d61b7f9ad1226bf80b39543826b",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimic_statistics_v1/bootstrap/random_test_TabM_PLE.json": "607f56da82258e14097b3d1988f812b0a7f93795a3183d3eade3169dacb93a4b",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimic_statistics_v1/bootstrap/random_test_TabM_PLE.npz": "f45c1937b1aad278eb02b087e104127a7a5733c42161b4376dc46cca1f7afa71",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_evidence_completion_20261025/mimic/tabular_v1/screen/test/test_TabM_PLE_t0_s48/predictions_test.npz": "bd1f1f11c41a15d3a33efb5612eb7d51e7b271dba60ae0d5adb07b7948a13e8d",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_evidence_completion_20261025/mimic/tabular_v1/screen/test/test_TabM_PLE_t0_s49/predictions_test.npz": "65dd54d6d2b6a7aa59ebdc1f6727f9ae064c866e8b86e0a50a8486762721e5cf",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_evidence_completion_20261025/mimic/tabular_v1/screen/test/test_TabM_PLE_t0_s50/predictions_test.npz": "8898a4527e03335b4d3d92ada67b14f3b83bfcd2f6105ae2e9c4ae3fd663835a",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_ema_cross_20261024/mimic/v1/screen/test/test_fullEMA_t1_s48/predictions_test.npz": "5267553117f72d733d5e4a21945201f1e692d279d5890dc2b5439f37552ca442",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_ema_cross_20261024/mimic/v1/screen/test/test_fullEMA_t1_s49/predictions_test.npz": "711820bae8f84b3d763b920353520eca3d992bfaa052deb821dc8ebb38344607",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_ema_cross_20261024/mimic/v1/screen/test/test_fullEMA_t1_s50/predictions_test.npz": "cb9cec1efd89b3f78937472054d56b201257c85924179523a6165c1299f4011a",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_evidence_completion_20261025/mimic/tabular_v1/screen/test/test_TabM_PLE_t1_s48/predictions_test.npz": "5c26bdf80df70a7612f08233231be50fdf87a599a5e03e84eb13b40f6f2f0e8a",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_evidence_completion_20261025/mimic/tabular_v1/screen/test/test_TabM_PLE_t1_s49/predictions_test.npz": "49f17dd3a04365f92865813630b6392f899a97a578a115c6d0f67fb34aa37431",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_evidence_completion_20261025/mimic/tabular_v1/screen/test/test_TabM_PLE_t1_s50/predictions_test.npz": "1e6d805c6a850c8116ca18d4d5c1ea1f61868a09e2a9373b7d38e42004ffb887"
+  },
+  "bootstrap_files": {
+    "dev_loss_differences.npz": "37f0846527e6d1e7d474c29e2912a3658c8e5f8f11e79cbf29ce07d7b8f65aa5",
+    "test_loss_differences.npz": "174724d85803d659f15e991c78d2cc8ded718ae6b4ce8131696b3cb2a2c0deff"
+  },
+  "family_definition": "24 CEM-minus-validation-selected-baseline contrasts: 3 databases x 2 endpoints x 2 losses x raw/fixed Platt; Validation and Test separate",
+  "interpretation": "Percentile patient-cluster intervals conditional on fixed models and fixed overall Validation calibrators; Validation is fitting-set description. Lower differences favor CEM.",
+  "interval_level": 0.9979166666666667,
+  "calibration_refits": 0,
+  "training_runs": 0,
+  "AP_recomputations": 0,
+  "seed_probability_pooling": false,
+  "original_AP_caches_unchanged": true,
+  "checks": [
+    "float32_and_float64_loss_parity_including_extreme_probabilities",
+    "unequal_stay_count_patient_multiplicity_matches_sklearn",
+    "sign_swap_and_identical_predictions",
+    "unchanged_draw_stream"
+  ],
+  "numpy_version": "2.2.5",
+  "sklearn_version": "1.7.1"
+}

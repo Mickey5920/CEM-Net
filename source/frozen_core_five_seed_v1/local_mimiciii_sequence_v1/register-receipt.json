@@ -1,0 +1,65 @@
+{
+  "database": "mimiciii",
+  "stage": "sequence",
+  "stage_order": 2,
+  "source": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/work/cem_core_five_seed_20261107/mimiciii/sequence_v1",
+  "output": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_core_five_seed_20261107/mimiciii/sequence_v1/screen",
+  "source_manifest_sha256": "e916e01f7aae9855c0131812cc6d5f9666363d9a12528de7a1bdec21c430643d",
+  "matrix": [
+    {
+      "variant": "SeFT",
+      "seed": 51,
+      "endpoint": 0
+    },
+    {
+      "variant": "SeFT",
+      "seed": 52,
+      "endpoint": 0
+    },
+    {
+      "variant": "mTAND_Enc",
+      "seed": 51,
+      "endpoint": 0
+    },
+    {
+      "variant": "mTAND_Enc",
+      "seed": 52,
+      "endpoint": 0
+    },
+    {
+      "variant": "SeFT",
+      "seed": 51,
+      "endpoint": 1
+    },
+    {
+      "variant": "SeFT",
+      "seed": 52,
+      "endpoint": 1
+    },
+    {
+      "variant": "mTAND_Enc",
+      "seed": 51,
+      "endpoint": 1
+    },
+    {
+      "variant": "mTAND_Enc",
+      "seed": 52,
+      "endpoint": 1
+    }
+  ],
+  "variants": [
+    "SeFT",
+    "mTAND_Enc"
+  ],
+  "entries": {
+    "tree": "scripts/cem_core_five_seed_entry.py",
+    "cem": "scripts/cem_core_five_seed_entry.py",
+    "tabular": "scripts/cem_core_five_seed_entry.py"
+  },
+  "expected_gib": 6.0,
+  "retention_multiplier": 3,
+  "min_available_ram_gib": 24,
+  "cpu_min_available_ram_gib": 24,
+  "probe_gpu_mib": 24576,
+  "probe_requirement_basis": "conservative headroom above archived measurements; bounded original-path probe before formal fits"
+}

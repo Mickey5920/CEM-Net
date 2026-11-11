@@ -1,0 +1,6 @@
+{
+  "path": "/home/data/lxm/TRACEHR/runs/cem_aggregation_stress_20261106/eicu/v1/windows",
+  "completion_sha256": "05f51de9c8c48e3a8d3ea5b6f22544470ac909cc5d64ae618a0d2cf9242fff18",
+  "feature_function_unchanged": true,
+  "reason": "execution-only parallel batch processing; previous completed predictions retained"
+}

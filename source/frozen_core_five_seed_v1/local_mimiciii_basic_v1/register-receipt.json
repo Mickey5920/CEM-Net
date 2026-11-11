@@ -1,0 +1,56 @@
+{
+  "database": "mimiciii",
+  "stage": "basic",
+  "stage_order": 4,
+  "source": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/work/cem_core_five_seed_20261107/mimiciii/basic_v1",
+  "output": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_core_five_seed_20261107/mimiciii/basic_v1/screen",
+  "source_manifest_sha256": "546cef0f4a0aa55314a0e74d6fcda67e53c0f45426524f4da2a13f15ff255e2a",
+  "matrix": [
+    {
+      "variant": "TabM_PLE_basic",
+      "seed": 51,
+      "endpoint": 0
+    },
+    {
+      "variant": "TabM_PLE_basic",
+      "seed": 52,
+      "endpoint": 0
+    },
+    {
+      "variant": "CEM_basic",
+      "seed": 51,
+      "endpoint": 0
+    },
+    {
+      "variant": "CEM_basic",
+      "seed": 52,
+      "endpoint": 0
+    },
+    {
+      "variant": "TabM_mini_basic",
+      "seed": 51,
+      "endpoint": 1
+    },
+    {
+      "variant": "TabM_mini_basic",
+      "seed": 52,
+      "endpoint": 1
+    }
+  ],
+  "variants": [
+    "CEM_basic",
+    "TabM_PLE_basic",
+    "TabM_mini_basic"
+  ],
+  "entries": {
+    "tree": "scripts/cem_core_five_seed_entry.py",
+    "cem": "scripts/cem_core_five_seed_entry.py",
+    "tabular": "scripts/cem_core_five_seed_entry.py"
+  },
+  "expected_gib": 12.0,
+  "retention_multiplier": 13,
+  "min_available_ram_gib": 24,
+  "cpu_min_available_ram_gib": 24,
+  "probe_gpu_mib": 24576,
+  "probe_requirement_basis": "conservative headroom above archived measurements; bounded original-path probe before formal fits"
+}

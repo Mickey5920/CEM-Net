@@ -1,0 +1,14 @@
+{
+  "job_id": "cem_los_secondary_metrics_20261110_eicu",
+  "wrapper_pid": 3487971,
+  "child_pid": 3487972,
+  "child_identity": {
+    "start_ticks": "105095569",
+    "state": "R",
+    "boot": "8123672c-cb85-4243-be25-70318f0e0750"
+  },
+  "source_manifest_sha256": "3e7b34ddc141a15a4b1a5baa1e94549c3716f398db742589083b912c17500d4c",
+  "started_at": 1794309645.1344533,
+  "returncode": 0,
+  "finished_at": 1794310025.2984796
+}

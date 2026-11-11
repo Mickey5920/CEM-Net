@@ -1,0 +1,4613 @@
+{
+  "complete": true,
+  "source_sha256": "ea5317c23b352d6960a2478961cad44b1a0b2b4bd32a57d1eefda203f1038569",
+  "primary_results_sha256": "9d2a99ad4c57a4e2842b30d3222265fd6e736f84edf68edbae51978bd946ba2d",
+  "analysis": "leave one patient-connected hospital component out of fixed validation/test predictions",
+  "training_executed": false,
+  "checkpoints_changed": false,
+  "bootstrap_resampled": false,
+  "selection_changed": false,
+  "primary_intervals_changed": false,
+  "patient_records_exported": false,
+  "self_test": [
+    "patient_connected_hospital_union",
+    "exact_subset_AP",
+    "contrast_swap_symmetry",
+    "identical_prediction_zero",
+    "tied_scores"
+  ],
+  "partitions": {
+    "dev": {
+      "stays": 13129,
+      "patients": 10708,
+      "hospitals": 30,
+      "components": 13,
+      "component_details": [
+        {
+          "component": "DEV-01",
+          "stays": 3093,
+          "stay_fraction": 0.23558534541853912,
+          "hospitals": 4,
+          "patients": 2649,
+          "mortality_positive": 161,
+          "LOS_positive": 379
+        },
+        {
+          "component": "DEV-02",
+          "stays": 2818,
+          "stay_fraction": 0.21463934800822607,
+          "hospitals": 1,
+          "patients": 2178,
+          "mortality_positive": 173,
+          "LOS_positive": 346
+        },
+        {
+          "component": "DEV-03",
+          "stays": 2321,
+          "stay_fraction": 0.17678421814304213,
+          "hospitals": 4,
+          "patients": 1920,
+          "mortality_positive": 142,
+          "LOS_positive": 280
+        },
+        {
+          "component": "DEV-04",
+          "stays": 1708,
+          "stay_fraction": 0.1300936857338716,
+          "hospitals": 7,
+          "patients": 1380,
+          "mortality_positive": 79,
+          "LOS_positive": 131
+        },
+        {
+          "component": "DEV-05",
+          "stays": 1109,
+          "stay_fraction": 0.08446949501104425,
+          "hospitals": 4,
+          "patients": 804,
+          "mortality_positive": 41,
+          "LOS_positive": 73
+        },
+        {
+          "component": "DEV-06",
+          "stays": 788,
+          "stay_fraction": 0.06001980348846066,
+          "hospitals": 1,
+          "patients": 618,
+          "mortality_positive": 47,
+          "LOS_positive": 106
+        },
+        {
+          "component": "DEV-07",
+          "stays": 529,
+          "stay_fraction": 0.04029248229111128,
+          "hospitals": 1,
+          "patients": 476,
+          "mortality_positive": 43,
+          "LOS_positive": 71
+        },
+        {
+          "component": "DEV-08",
+          "stays": 493,
+          "stay_fraction": 0.03755046081194303,
+          "hospitals": 3,
+          "patients": 440,
+          "mortality_positive": 28,
+          "LOS_positive": 43
+        },
+        {
+          "component": "DEV-09",
+          "stays": 103,
+          "stay_fraction": 0.007845228120953614,
+          "hospitals": 1,
+          "patients": 80,
+          "mortality_positive": 1,
+          "LOS_positive": 5
+        },
+        {
+          "component": "DEV-10",
+          "stays": 84,
+          "stay_fraction": 0.006398050118059258,
+          "hospitals": 1,
+          "patients": 84,
+          "mortality_positive": 5,
+          "LOS_positive": 5
+        },
+        {
+          "component": "DEV-11",
+          "stays": 45,
+          "stay_fraction": 0.0034275268489603167,
+          "hospitals": 1,
+          "patients": 43,
+          "mortality_positive": 2,
+          "LOS_positive": 2
+        },
+        {
+          "component": "DEV-12",
+          "stays": 33,
+          "stay_fraction": 0.0025135196892375655,
+          "hospitals": 1,
+          "patients": 31,
+          "mortality_positive": 2,
+          "LOS_positive": 14
+        },
+        {
+          "component": "DEV-13",
+          "stays": 5,
+          "stay_fraction": 0.0003808363165511463,
+          "hospitals": 1,
+          "patients": 5,
+          "mortality_positive": 0,
+          "LOS_positive": 0
+        }
+      ],
+      "largest_stay_fraction": 0.23558534541853912,
+      "inverse_size_concentration": 6.111004493026933,
+      "concentration_note": "Descriptive inverse squared stay shares, not an inferential degrees-of-freedom estimate"
+    },
+    "test": {
+      "stays": 26709,
+      "patients": 21504,
+      "hospitals": 47,
+      "components": 22,
+      "component_details": [
+        {
+          "component": "TEST-01",
+          "stays": 4667,
+          "stay_fraction": 0.17473510801602457,
+          "hospitals": 6,
+          "patients": 3814,
+          "mortality_positive": 308,
+          "LOS_positive": 581
+        },
+        {
+          "component": "TEST-02",
+          "stays": 3555,
+          "stay_fraction": 0.13310120184207572,
+          "hospitals": 5,
+          "patients": 2726,
+          "mortality_positive": 189,
+          "LOS_positive": 391
+        },
+        {
+          "component": "TEST-03",
+          "stays": 3361,
+          "stay_fraction": 0.1258377325994983,
+          "hospitals": 5,
+          "patients": 2827,
+          "mortality_positive": 201,
+          "LOS_positive": 389
+        },
+        {
+          "component": "TEST-04",
+          "stays": 3294,
+          "stay_fraction": 0.12332921487139166,
+          "hospitals": 4,
+          "patients": 2531,
+          "mortality_positive": 139,
+          "LOS_positive": 335
+        },
+        {
+          "component": "TEST-05",
+          "stays": 2915,
+          "stay_fraction": 0.10913924145419147,
+          "hospitals": 1,
+          "patients": 2302,
+          "mortality_positive": 204,
+          "LOS_positive": 523
+        },
+        {
+          "component": "TEST-06",
+          "stays": 2462,
+          "stay_fraction": 0.09217866636714216,
+          "hospitals": 7,
+          "patients": 2054,
+          "mortality_positive": 81,
+          "LOS_positive": 239
+        },
+        {
+          "component": "TEST-07",
+          "stays": 1981,
+          "stay_fraction": 0.07416975551312292,
+          "hospitals": 2,
+          "patients": 1580,
+          "mortality_positive": 100,
+          "LOS_positive": 258
+        },
+        {
+          "component": "TEST-08",
+          "stays": 1630,
+          "stay_fraction": 0.06102811786289266,
+          "hospitals": 3,
+          "patients": 1367,
+          "mortality_positive": 107,
+          "LOS_positive": 164
+        },
+        {
+          "component": "TEST-09",
+          "stays": 1127,
+          "stay_fraction": 0.042195514620539894,
+          "hospitals": 1,
+          "patients": 772,
+          "mortality_positive": 47,
+          "LOS_positive": 53
+        },
+        {
+          "component": "TEST-10",
+          "stays": 656,
+          "stay_fraction": 0.02456100939758134,
+          "hospitals": 1,
+          "patients": 581,
+          "mortality_positive": 76,
+          "LOS_positive": 151
+        },
+        {
+          "component": "TEST-11",
+          "stays": 394,
+          "stay_fraction": 0.014751581863791231,
+          "hospitals": 1,
+          "patients": 350,
+          "mortality_positive": 10,
+          "LOS_positive": 8
+        },
+        {
+          "component": "TEST-12",
+          "stays": 313,
+          "stay_fraction": 0.011718896252199634,
+          "hospitals": 1,
+          "patients": 260,
+          "mortality_positive": 23,
+          "LOS_positive": 49
+        },
+        {
+          "component": "TEST-13",
+          "stays": 170,
+          "stay_fraction": 0.006364895728031749,
+          "hospitals": 1,
+          "patients": 167,
+          "mortality_positive": 1,
+          "LOS_positive": 3
+        },
+        {
+          "component": "TEST-14",
+          "stays": 83,
+          "stay_fraction": 0.0031075667378037365,
+          "hospitals": 1,
+          "patients": 82,
+          "mortality_positive": 5,
+          "LOS_positive": 3
+        },
+        {
+          "component": "TEST-15",
+          "stays": 49,
+          "stay_fraction": 0.0018345875921973866,
+          "hospitals": 1,
+          "patients": 41,
+          "mortality_positive": 1,
+          "LOS_positive": 2
+        },
+        {
+          "component": "TEST-16",
+          "stays": 13,
+          "stay_fraction": 0.0004867273203788985,
+          "hospitals": 1,
+          "patients": 11,
+          "mortality_positive": 0,
+          "LOS_positive": 2
+        },
+        {
+          "component": "TEST-17",
+          "stays": 9,
+          "stay_fraction": 0.000336965067954622,
+          "hospitals": 1,
+          "patients": 9,
+          "mortality_positive": 0,
+          "LOS_positive": 0
+        },
+        {
+          "component": "TEST-18",
+          "stays": 9,
+          "stay_fraction": 0.000336965067954622,
+          "hospitals": 1,
+          "patients": 9,
+          "mortality_positive": 0,
+          "LOS_positive": 0
+        },
+        {
+          "component": "TEST-19",
+          "stays": 7,
+          "stay_fraction": 0.00026208394174248383,
+          "hospitals": 1,
+          "patients": 7,
+          "mortality_positive": 0,
+          "LOS_positive": 1
+        },
+        {
+          "component": "TEST-20",
+          "stays": 5,
+          "stay_fraction": 0.00018720281553034557,
+          "hospitals": 1,
+          "patients": 5,
+          "mortality_positive": 0,
+          "LOS_positive": 0
+        },
+        {
+          "component": "TEST-21",
+          "stays": 5,
+          "stay_fraction": 0.00018720281553034557,
+          "hospitals": 1,
+          "patients": 5,
+          "mortality_positive": 0,
+          "LOS_positive": 0
+        },
+        {
+          "component": "TEST-22",
+          "stays": 4,
+          "stay_fraction": 0.00014976225242427645,
+          "hospitals": 1,
+          "patients": 4,
+          "mortality_positive": 0,
+          "LOS_positive": 0
+        }
+      ],
+      "largest_stay_fraction": 0.17473510801602457,
+      "inverse_size_concentration": 8.950933692650173,
+      "concentration_note": "Descriptive inverse squared stay shares, not an inferential degrees-of-freedom estimate"
+    }
+  },
+  "rows": [
+    {
+      "split": "dev",
+      "baseline": "TabM_mini_PLE_hospital",
+      "endpoint": 0,
+      "omitted_component": "DEV-01",
+      "omitted_stays": 3093,
+      "retained_stays": 10036,
+      "CEM_AP": [
+        0.4015842759950601,
+        0.40176429554909254,
+        0.39338020553476377
+      ],
+      "baseline_AP": [
+        0.4103581371136429,
+        0.41047761623734297,
+        0.40859746209264547
+      ],
+      "seed_differences": [
+        -0.008773861118582804,
+        -0.008713320688250425,
+        -0.015217256557881698
+      ],
+      "mean": -0.010901479454904975,
+      "sample_SD": 0.00373769518391479,
+      "positive_seeds": 0,
+      "influence": -0.005230586395823965,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "dev",
+      "baseline": "TabM_mini_PLE_hospital",
+      "endpoint": 0,
+      "omitted_component": "DEV-02",
+      "omitted_stays": 2818,
+      "retained_stays": 10311,
+      "CEM_AP": [
+        0.3686177190693643,
+        0.3734455596141246,
+        0.3688431655632021
+      ],
+      "baseline_AP": [
+        0.3706220835529616,
+        0.37500161818201405,
+        0.3759948487540174
+      ],
+      "seed_differences": [
+        -0.0020043644835973096,
+        -0.001556058567889429,
+        -0.007151683190815272
+      ],
+      "mean": -0.003570702080767337,
+      "sample_SD": 0.0031093108290109524,
+      "positive_seeds": 0,
+      "influence": 0.0021001909783136727,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "dev",
+      "baseline": "TabM_mini_PLE_hospital",
+      "endpoint": 0,
+      "omitted_component": "DEV-03",
+      "omitted_stays": 2321,
+      "retained_stays": 10808,
+      "CEM_AP": [
+        0.38787447860578195,
+        0.3850500334638256,
+        0.38474587471117166
+      ],
+      "baseline_AP": [
+        0.39117752744187734,
+        0.39275538913089747,
+        0.39364746584078786
+      ],
+      "seed_differences": [
+        -0.0033030488360953902,
+        -0.007705355667071867,
+        -0.008901591129616193
+      ],
+      "mean": -0.006636665210927817,
+      "sample_SD": 0.002948303481898586,
+      "positive_seeds": 0,
+      "influence": -0.000965772151846807,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "dev",
+      "baseline": "TabM_mini_PLE_hospital",
+      "endpoint": 0,
+      "omitted_component": "DEV-04",
+      "omitted_stays": 1708,
+      "retained_stays": 11421,
+      "CEM_AP": [
+        0.3996564339899165,
+        0.39448974346816146,
+        0.38873770331538166
+      ],
+      "baseline_AP": [
+        0.3978130488541311,
+        0.4032780391829944,
+        0.40032436977354546
+      ],
+      "seed_differences": [
+        0.0018433851357854136,
+        -0.008788295714832917,
+        -0.011586666458163808
+      ],
+      "mean": -0.006177192345737104,
+      "sample_SD": 0.007085546348526141,
+      "positive_seeds": 1,
+      "influence": -0.0005062992866560938,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "dev",
+      "baseline": "TabM_mini_PLE_hospital",
+      "endpoint": 0,
+      "omitted_component": "DEV-05",
+      "omitted_stays": 1109,
+      "retained_stays": 12020,
+      "CEM_AP": [
+        0.398535783741217,
+        0.3966866365571562,
+        0.3920791686047178
+      ],
+      "baseline_AP": [
+        0.3990326300619489,
+        0.4024566726866271,
+        0.4023343312739398
+      ],
+      "seed_differences": [
+        -0.0004968463207318807,
+        -0.005770036129470912,
+        -0.010255162669221995
+      ],
+      "mean": -0.005507348373141596,
+      "sample_SD": 0.004884458837199507,
+      "positive_seeds": 0,
+      "influence": 0.00016354468593941362,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "dev",
+      "baseline": "TabM_mini_PLE_hospital",
+      "endpoint": 0,
+      "omitted_component": "DEV-06",
+      "omitted_stays": 788,
+      "retained_stays": 12341,
+      "CEM_AP": [
+        0.39734839599495,
+        0.39434474313783685,
+        0.3931654311327441
+      ],
+      "baseline_AP": [
+        0.3992840933261073,
+        0.4006570373172394,
+        0.40066464789650974
+      ],
+      "seed_differences": [
+        -0.0019356973311573378,
+        -0.0063122941794025444,
+        -0.007499216763765637
+      ],
+      "mean": -0.005249069424775173,
+      "sample_SD": 0.0029301915088252965,
+      "positive_seeds": 0,
+      "influence": 0.000421823634305837,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "dev",
+      "baseline": "TabM_mini_PLE_hospital",
+      "endpoint": 0,
+      "omitted_component": "DEV-07",
+      "omitted_stays": 529,
+      "retained_stays": 12600,
+      "CEM_AP": [
+        0.3979336325494507,
+        0.3977308332155361,
+        0.39444395258890214
+      ],
+      "baseline_AP": [
+        0.3981312619530436,
+        0.4008893619522122,
+        0.40122601080129816
+      ],
+      "seed_differences": [
+        -0.0001976294035929138,
+        -0.003158528736676103,
+        -0.006782058212396025
+      ],
+      "mean": -0.0033794054508883473,
+      "sample_SD": 0.0032977667559592485,
+      "positive_seeds": 0,
+      "influence": 0.0022914876081926625,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "dev",
+      "baseline": "TabM_mini_PLE_hospital",
+      "endpoint": 0,
+      "omitted_component": "DEV-08",
+      "omitted_stays": 493,
+      "retained_stays": 12636,
+      "CEM_AP": [
+        0.401778822872077,
+        0.3981119323222554,
+        0.39593090899949096
+      ],
+      "baseline_AP": [
+        0.4020550442432418,
+        0.40286208227460674,
+        0.4050179349006386
+      ],
+      "seed_differences": [
+        -0.0002762213711647865,
+        -0.004750149952351346,
+        -0.009087025901147627
+      ],
+      "mean": -0.0047044657415545865,
+      "sample_SD": 0.004405579916620357,
+      "positive_seeds": 0,
+      "influence": 0.0009664273175264233,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "dev",
+      "baseline": "TabM_mini_PLE_hospital",
+      "endpoint": 0,
+      "omitted_component": "DEV-09",
+      "omitted_stays": 103,
+      "retained_stays": 13026,
+      "CEM_AP": [
+        0.395391473226403,
+        0.39364990082286166,
+        0.3899754470424291
+      ],
+      "baseline_AP": [
+        0.3969216867574352,
+        0.39933822473508607,
+        0.39920782987282755
+      ],
+      "seed_differences": [
+        -0.0015302135310322207,
+        -0.005688323912224402,
+        -0.009232382830398456
+      ],
+      "mean": -0.00548364009121836,
+      "sample_SD": 0.0038551620690914106,
+      "positive_seeds": 0,
+      "influence": 0.00018725296786265,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "dev",
+      "baseline": "TabM_mini_PLE_hospital",
+      "endpoint": 0,
+      "omitted_component": "DEV-10",
+      "omitted_stays": 84,
+      "retained_stays": 13045,
+      "CEM_AP": [
+        0.3950849921860163,
+        0.3933881497140339,
+        0.38958692019366764
+      ],
+      "baseline_AP": [
+        0.3969282458251944,
+        0.399629968863462,
+        0.3991863332621779
+      ],
+      "seed_differences": [
+        -0.001843253639178144,
+        -0.006241819149428118,
+        -0.009599413068510254
+      ],
+      "mean": -0.005894828619038839,
+      "sample_SD": 0.0038897048852630485,
+      "positive_seeds": 0,
+      "influence": -0.000223935559957829,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "dev",
+      "baseline": "TabM_mini_PLE_hospital",
+      "endpoint": 0,
+      "omitted_component": "DEV-11",
+      "omitted_stays": 45,
+      "retained_stays": 13084,
+      "CEM_AP": [
+        0.3940700019976876,
+        0.39266534661366465,
+        0.3892352450512446
+      ],
+      "baseline_AP": [
+        0.3963316474321305,
+        0.398899116845411,
+        0.3984725155522527
+      ],
+      "seed_differences": [
+        -0.002261645434442905,
+        -0.006233770231746372,
+        -0.009237270501008088
+      ],
+      "mean": -0.0059108953890657885,
+      "sample_SD": 0.003499003056636295,
+      "positive_seeds": 0,
+      "influence": -0.00024000232998477866,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "dev",
+      "baseline": "TabM_mini_PLE_hospital",
+      "endpoint": 0,
+      "omitted_component": "DEV-12",
+      "omitted_stays": 33,
+      "retained_stays": 13096,
+      "CEM_AP": [
+        0.39545766178125996,
+        0.3935925054713465,
+        0.389706302948061
+      ],
+      "baseline_AP": [
+        0.3973550879562682,
+        0.39978551341758706,
+        0.39956108035938476
+      ],
+      "seed_differences": [
+        -0.0018974261750082655,
+        -0.0061930079462405585,
+        -0.009854777411323734
+      ],
+      "mean": -0.005981737177524186,
+      "sample_SD": 0.003982880387082738,
+      "positive_seeds": 0,
+      "influence": -0.0003108441184431765,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "dev",
+      "baseline": "TabM_mini_PLE_hospital",
+      "endpoint": 0,
+      "omitted_component": "DEV-13",
+      "omitted_stays": 5,
+      "retained_stays": 13124,
+      "CEM_AP": [
+        0.39474074490750455,
+        0.3930552742261705,
+        0.3893272056338438
+      ],
+      "baseline_AP": [
+        0.3964509812234561,
+        0.39894252701626326,
+        0.3987548180665618
+      ],
+      "seed_differences": [
+        -0.0017102363159515743,
+        -0.0058872527900927785,
+        -0.009427612432718002
+      ],
+      "mean": -0.005675033846254118,
+      "sample_SD": 0.0038630624110933304,
+      "positive_seeds": 0,
+      "influence": -4.1407871731085136e-06,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "dev",
+      "baseline": "TabM_mini_PLE_hospital",
+      "endpoint": 1,
+      "omitted_component": "DEV-01",
+      "omitted_stays": 3093,
+      "retained_stays": 10036,
+      "CEM_AP": [
+        0.33828707047123807,
+        0.3398547041006049,
+        0.338338573291372
+      ],
+      "baseline_AP": [
+        0.3220857025627024,
+        0.32028023980040365,
+        0.3177249608668169
+      ],
+      "seed_differences": [
+        0.016201367908535658,
+        0.019574464300201266,
+        0.020613612424555117
+      ],
+      "mean": 0.01879648154443068,
+      "sample_SD": 0.00230671157570539,
+      "positive_seeds": 3,
+      "influence": -0.00012489184395251401,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "dev",
+      "baseline": "TabM_mini_PLE_hospital",
+      "endpoint": 1,
+      "omitted_component": "DEV-02",
+      "omitted_stays": 2818,
+      "retained_stays": 10311,
+      "CEM_AP": [
+        0.33362346995221903,
+        0.333530262801289,
+        0.3317352432443669
+      ],
+      "baseline_AP": [
+        0.3082871694708047,
+        0.31153121421798663,
+        0.31084455794337945
+      ],
+      "seed_differences": [
+        0.02533630048141433,
+        0.021999048583302372,
+        0.02089068530098742
+      ],
+      "mean": 0.022742011455234707,
+      "sample_SD": 0.002314058978270218,
+      "positive_seeds": 3,
+      "influence": 0.0038206380668515116,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "dev",
+      "baseline": "TabM_mini_PLE_hospital",
+      "endpoint": 1,
+      "omitted_component": "DEV-03",
+      "omitted_stays": 2321,
+      "retained_stays": 10808,
+      "CEM_AP": [
+        0.34797724863058965,
+        0.3516561842703204,
+        0.3457279850948723
+      ],
+      "baseline_AP": [
+        0.3315462665009924,
+        0.3362493437671796,
+        0.3367871564791449
+      ],
+      "seed_differences": [
+        0.01643098212959726,
+        0.01540684050314084,
+        0.00894082861572737
+      ],
+      "mean": 0.01359288374948849,
+      "sample_SD": 0.00406121031755622,
+      "positive_seeds": 3,
+      "influence": -0.005328489638894705,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "dev",
+      "baseline": "TabM_mini_PLE_hospital",
+      "endpoint": 1,
+      "omitted_component": "DEV-04",
+      "omitted_stays": 1708,
+      "retained_stays": 11421,
+      "CEM_AP": [
+        0.3497927544540907,
+        0.35499593442493793,
+        0.3498140094683416
+      ],
+      "baseline_AP": [
+        0.33336070780179305,
+        0.33397898750180177,
+        0.3356482100478434
+      ],
+      "seed_differences": [
+        0.01643204665229764,
+        0.02101694692313616,
+        0.014165799420498226
+      ],
+      "mean": 0.017204930998644008,
+      "sample_SD": 0.003490353590303701,
+      "positive_seeds": 3,
+      "influence": -0.0017164423897391874,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "dev",
+      "baseline": "TabM_mini_PLE_hospital",
+      "endpoint": 1,
+      "omitted_component": "DEV-05",
+      "omitted_stays": 1109,
+      "retained_stays": 12020,
+      "CEM_AP": [
+        0.3481865182217064,
+        0.3514572904512303,
+        0.3481016971191679
+      ],
+      "baseline_AP": [
+        0.32835111631144026,
+        0.33014173724356904,
+        0.32881581827717354
+      ],
+      "seed_differences": [
+        0.019835401910266115,
+        0.021315553207661264,
+        0.01928587884199434
+      ],
+      "mean": 0.020145611319973906,
+      "sample_SD": 0.0010497937492978317,
+      "positive_seeds": 3,
+      "influence": 0.0012242379315907104,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "dev",
+      "baseline": "TabM_mini_PLE_hospital",
+      "endpoint": 1,
+      "omitted_component": "DEV-06",
+      "omitted_stays": 788,
+      "retained_stays": 12341,
+      "CEM_AP": [
+        0.34247032376366493,
+        0.3459879609339776,
+        0.3415425705421546
+      ],
+      "baseline_AP": [
+        0.3215747559866974,
+        0.3233929401809342,
+        0.32265770641034913
+      ],
+      "seed_differences": [
+        0.02089556777696755,
+        0.022595020753043427,
+        0.018884864131805457
+      ],
+      "mean": 0.020791817553938812,
+      "sample_SD": 0.0018572529768754909,
+      "positive_seeds": 3,
+      "influence": 0.0018704441655556167,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "dev",
+      "baseline": "TabM_mini_PLE_hospital",
+      "endpoint": 1,
+      "omitted_component": "DEV-07",
+      "omitted_stays": 529,
+      "retained_stays": 12600,
+      "CEM_AP": [
+        0.3437400541261334,
+        0.3476314043351889,
+        0.3429342776596357
+      ],
+      "baseline_AP": [
+        0.32574667647637806,
+        0.32807844414524967,
+        0.3278620406008861
+      ],
+      "seed_differences": [
+        0.017993377649755338,
+        0.01955296018993924,
+        0.015072237058749605
+      ],
+      "mean": 0.01753952496614806,
+      "sample_SD": 0.0022745783429918625,
+      "positive_seeds": 3,
+      "influence": -0.0013818484222351338,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "dev",
+      "baseline": "TabM_mini_PLE_hospital",
+      "endpoint": 1,
+      "omitted_component": "DEV-08",
+      "omitted_stays": 493,
+      "retained_stays": 12636,
+      "CEM_AP": [
+        0.34585754987607065,
+        0.3490132851607587,
+        0.3451741282109013
+      ],
+      "baseline_AP": [
+        0.326442099082894,
+        0.3280477657179966,
+        0.32821347992549227
+      ],
+      "seed_differences": [
+        0.019415450793176636,
+        0.020965519442762093,
+        0.016960648285409052
+      ],
+      "mean": 0.01911387284044926,
+      "sample_SD": 0.002019395997056545,
+      "positive_seeds": 3,
+      "influence": 0.0001924994520660639,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "dev",
+      "baseline": "TabM_mini_PLE_hospital",
+      "endpoint": 1,
+      "omitted_component": "DEV-09",
+      "omitted_stays": 103,
+      "retained_stays": 13026,
+      "CEM_AP": [
+        0.3441453152930822,
+        0.3472264445893909,
+        0.3432394337548792
+      ],
+      "baseline_AP": [
+        0.32492817178394157,
+        0.32662361184504884,
+        0.32606446036033704
+      ],
+      "seed_differences": [
+        0.01921714350914061,
+        0.020602832744342048,
+        0.01717497339454216
+      ],
+      "mean": 0.018998316549341605,
+      "sample_SD": 0.001724374918413564,
+      "positive_seeds": 3,
+      "influence": 7.694316095840925e-05,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "dev",
+      "baseline": "TabM_mini_PLE_hospital",
+      "endpoint": 1,
+      "omitted_component": "DEV-10",
+      "omitted_stays": 84,
+      "retained_stays": 13045,
+      "CEM_AP": [
+        0.3435686235376231,
+        0.3465789293600392,
+        0.34259527037891796
+      ],
+      "baseline_AP": [
+        0.3240526238805404,
+        0.32587477060689624,
+        0.32534269626239637
+      ],
+      "seed_differences": [
+        0.019515999657082672,
+        0.020704158753142965,
+        0.01725257411652159
+      ],
+      "mean": 0.01915757750891574,
+      "sample_SD": 0.0017534848026608681,
+      "positive_seeds": 3,
+      "influence": 0.00023620412053254602,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "dev",
+      "baseline": "TabM_mini_PLE_hospital",
+      "endpoint": 1,
+      "omitted_component": "DEV-11",
+      "omitted_stays": 45,
+      "retained_stays": 13084,
+      "CEM_AP": [
+        0.34369585457729734,
+        0.3468091586298577,
+        0.34274226711491573
+      ],
+      "baseline_AP": [
+        0.32468655581752887,
+        0.3264072438814639,
+        0.32598670257692075
+      ],
+      "seed_differences": [
+        0.019009298759768478,
+        0.020401914748393757,
+        0.016755564537994982
+      ],
+      "mean": 0.018722259348719072,
+      "sample_SD": 0.0018400437988918875,
+      "positive_seeds": 3,
+      "influence": -0.00019911403966412292,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "dev",
+      "baseline": "TabM_mini_PLE_hospital",
+      "endpoint": 1,
+      "omitted_component": "DEV-12",
+      "omitted_stays": 33,
+      "retained_stays": 13096,
+      "CEM_AP": [
+        0.3403568397173333,
+        0.3436212229197154,
+        0.3397131805848382
+      ],
+      "baseline_AP": [
+        0.32167680969698725,
+        0.3239971920180125,
+        0.32333910613059225
+      ],
+      "seed_differences": [
+        0.018680030020346072,
+        0.019624030901702894,
+        0.016374074454245935
+      ],
+      "mean": 0.018226045125431634,
+      "sample_SD": 0.001671864510419316,
+      "positive_seeds": 3,
+      "influence": -0.0006953282629515618,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "dev",
+      "baseline": "TabM_mini_PLE_hospital",
+      "endpoint": 1,
+      "omitted_component": "DEV-13",
+      "omitted_stays": 5,
+      "retained_stays": 13124,
+      "CEM_AP": [
+        0.34327213009209023,
+        0.34637335034078015,
+        0.34239305402796
+      ],
+      "baseline_AP": [
+        0.3241229382483595,
+        0.3258225113016264,
+        0.3253537677133792
+      ],
+      "seed_differences": [
+        0.019149191843730706,
+        0.020550839039153723,
+        0.017039286314580793
+      ],
+      "mean": 0.018913105732488406,
+      "sample_SD": 0.00176764055263083,
+      "positive_seeds": 3,
+      "influence": -8.267655894789172e-06,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "dev",
+      "baseline": "LightGBM_hospital",
+      "endpoint": 0,
+      "omitted_component": "DEV-01",
+      "omitted_stays": 3093,
+      "retained_stays": 10036,
+      "CEM_AP": [
+        0.4015842759950601,
+        0.40176429554909254,
+        0.39338020553476377
+      ],
+      "baseline_AP": [
+        0.3761663729670235,
+        0.3928619528334951,
+        0.3893197592789519
+      ],
+      "seed_differences": [
+        0.025417903028036593,
+        0.008902342715597422,
+        0.004060446255811867
+      ],
+      "mean": 0.012793563999815294,
+      "sample_SD": 0.01119783203376549,
+      "positive_seeds": 3,
+      "influence": -0.008096590942797226,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "dev",
+      "baseline": "LightGBM_hospital",
+      "endpoint": 0,
+      "omitted_component": "DEV-02",
+      "omitted_stays": 2818,
+      "retained_stays": 10311,
+      "CEM_AP": [
+        0.3686177190693643,
+        0.3734455596141246,
+        0.3688431655632021
+      ],
+      "baseline_AP": [
+        0.3386577287372752,
+        0.3550719532482096,
+        0.3500406126520369
+      ],
+      "seed_differences": [
+        0.029959990332089126,
+        0.018373606365915007,
+        0.018802552911165227
+      ],
+      "mean": 0.022378716536389787,
+      "sample_SD": 0.006569077793624355,
+      "positive_seeds": 3,
+      "influence": 0.0014885615937772663,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "dev",
+      "baseline": "LightGBM_hospital",
+      "endpoint": 0,
+      "omitted_component": "DEV-03",
+      "omitted_stays": 2321,
+      "retained_stays": 10808,
+      "CEM_AP": [
+        0.38787447860578195,
+        0.3850500334638256,
+        0.38474587471117166
+      ],
+      "baseline_AP": [
+        0.3592656971689161,
+        0.36651264088023794,
+        0.36525071059982467
+      ],
+      "seed_differences": [
+        0.02860878143686585,
+        0.018537392583587664,
+        0.019495164111346996
+      ],
+      "mean": 0.022213779377266835,
+      "sample_SD": 0.005558900078392606,
+      "positive_seeds": 3,
+      "influence": 0.001323624434654315,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "dev",
+      "baseline": "LightGBM_hospital",
+      "endpoint": 0,
+      "omitted_component": "DEV-04",
+      "omitted_stays": 1708,
+      "retained_stays": 11421,
+      "CEM_AP": [
+        0.3996564339899165,
+        0.39448974346816146,
+        0.38873770331538166
+      ],
+      "baseline_AP": [
+        0.36915209415628886,
+        0.378964972130002,
+        0.3751021919956268
+      ],
+      "seed_differences": [
+        0.03050433983362766,
+        0.015524771338159438,
+        0.013635511319754878
+      ],
+      "mean": 0.01988820749718066,
+      "sample_SD": 0.009242241351155154,
+      "positive_seeds": 3,
+      "influence": -0.001001947445431861,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "dev",
+      "baseline": "LightGBM_hospital",
+      "endpoint": 0,
+      "omitted_component": "DEV-05",
+      "omitted_stays": 1109,
+      "retained_stays": 12020,
+      "CEM_AP": [
+        0.398535783741217,
+        0.3966866365571562,
+        0.3920791686047178
+      ],
+      "baseline_AP": [
+        0.36214388817483883,
+        0.3788288552538849,
+        0.37296478121344745
+      ],
+      "seed_differences": [
+        0.036391895566378174,
+        0.017857781303271314,
+        0.01911438739127036
+      ],
+      "mean": 0.02445468808697328,
+      "sample_SD": 0.010357000363033164,
+      "positive_seeds": 3,
+      "influence": 0.003564533144360761,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "dev",
+      "baseline": "LightGBM_hospital",
+      "endpoint": 0,
+      "omitted_component": "DEV-06",
+      "omitted_stays": 788,
+      "retained_stays": 12341,
+      "CEM_AP": [
+        0.39734839599495,
+        0.39434474313783685,
+        0.3931654311327441
+      ],
+      "baseline_AP": [
+        0.3700958111848843,
+        0.38241959083509924,
+        0.37922555422839577
+      ],
+      "seed_differences": [
+        0.02725258481006565,
+        0.011925152302737607,
+        0.013939876904348336
+      ],
+      "mean": 0.017705871339050532,
+      "sample_SD": 0.00832884039817849,
+      "positive_seeds": 3,
+      "influence": -0.003184283603561988,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "dev",
+      "baseline": "LightGBM_hospital",
+      "endpoint": 0,
+      "omitted_component": "DEV-07",
+      "omitted_stays": 529,
+      "retained_stays": 12600,
+      "CEM_AP": [
+        0.3979336325494507,
+        0.3977308332155361,
+        0.39444395258890214
+      ],
+      "baseline_AP": [
+        0.36660953528348805,
+        0.3779650075852696,
+        0.37431446705407345
+      ],
+      "seed_differences": [
+        0.031324097265962636,
+        0.01976582563026652,
+        0.020129485534828684
+      ],
+      "mean": 0.023739802810352612,
+      "sample_SD": 0.00657070802300591,
+      "positive_seeds": 3,
+      "influence": 0.002849647867740092,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "dev",
+      "baseline": "LightGBM_hospital",
+      "endpoint": 0,
+      "omitted_component": "DEV-08",
+      "omitted_stays": 493,
+      "retained_stays": 12636,
+      "CEM_AP": [
+        0.401778822872077,
+        0.3981119323222554,
+        0.39593090899949096
+      ],
+      "baseline_AP": [
+        0.3692440734607101,
+        0.38280579595790093,
+        0.37688289269570613
+      ],
+      "seed_differences": [
+        0.032534749411366914,
+        0.015306136364354461,
+        0.01904801630378483
+      ],
+      "mean": 0.022296300693168736,
+      "sample_SD": 0.009061997047376385,
+      "positive_seeds": 3,
+      "influence": 0.0014061457505562154,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "dev",
+      "baseline": "LightGBM_hospital",
+      "endpoint": 0,
+      "omitted_component": "DEV-09",
+      "omitted_stays": 103,
+      "retained_stays": 13026,
+      "CEM_AP": [
+        0.395391473226403,
+        0.39364990082286166,
+        0.3899754470424291
+      ],
+      "baseline_AP": [
+        0.36491035476578015,
+        0.37772958419650643,
+        0.37372930294449963
+      ],
+      "seed_differences": [
+        0.030481118460622847,
+        0.015920316626355235,
+        0.01624614409792946
+      ],
+      "mean": 0.02088252639496918,
+      "sample_SD": 0.008314220836460278,
+      "positive_seeds": 3,
+      "influence": -7.628547643339506e-06,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "dev",
+      "baseline": "LightGBM_hospital",
+      "endpoint": 0,
+      "omitted_component": "DEV-10",
+      "omitted_stays": 84,
+      "retained_stays": 13045,
+      "CEM_AP": [
+        0.3950849921860163,
+        0.3933881497140339,
+        0.38958692019366764
+      ],
+      "baseline_AP": [
+        0.3645173630984544,
+        0.3776223058531489,
+        0.3728283815074837
+      ],
+      "seed_differences": [
+        0.030567629087561887,
+        0.01576584386088503,
+        0.016758538686183932
+      ],
+      "mean": 0.02103067054487695,
+      "sample_SD": 0.008274149166996701,
+      "positive_seeds": 3,
+      "influence": 0.00014051560226443008,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "dev",
+      "baseline": "LightGBM_hospital",
+      "endpoint": 0,
+      "omitted_component": "DEV-11",
+      "omitted_stays": 45,
+      "retained_stays": 13084,
+      "CEM_AP": [
+        0.3940700019976876,
+        0.39266534661366465,
+        0.3892352450512446
+      ],
+      "baseline_AP": [
+        0.36323712039009465,
+        0.3760550069606844,
+        0.3725372173816028
+      ],
+      "seed_differences": [
+        0.030832881607592955,
+        0.016610339652980255,
+        0.016698027669641846
+      ],
+      "mean": 0.021380416310071686,
+      "sample_SD": 0.008186192487823592,
+      "positive_seeds": 3,
+      "influence": 0.000490261367459166,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "dev",
+      "baseline": "LightGBM_hospital",
+      "endpoint": 0,
+      "omitted_component": "DEV-12",
+      "omitted_stays": 33,
+      "retained_stays": 13096,
+      "CEM_AP": [
+        0.39545766178125996,
+        0.3935925054713465,
+        0.389706302948061
+      ],
+      "baseline_AP": [
+        0.3650391036363372,
+        0.37780032319552703,
+        0.37367980352867924
+      ],
+      "seed_differences": [
+        0.03041855814492278,
+        0.015792182275819466,
+        0.01602649941938178
+      ],
+      "mean": 0.020745746613374676,
+      "sample_SD": 0.008377719756865784,
+      "positive_seeds": 3,
+      "influence": -0.00014440832923784397,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "dev",
+      "baseline": "LightGBM_hospital",
+      "endpoint": 0,
+      "omitted_component": "DEV-13",
+      "omitted_stays": 5,
+      "retained_stays": 13124,
+      "CEM_AP": [
+        0.39474074490750455,
+        0.3930552742261705,
+        0.3893272056338438
+      ],
+      "baseline_AP": [
+        0.3642887016854022,
+        0.37710506940576694,
+        0.3730379525703735
+      ],
+      "seed_differences": [
+        0.03045204322210232,
+        0.015950204820403546,
+        0.016289253063470344
+      ],
+      "mean": 0.020897167035325404,
+      "sample_SD": 0.008276501835694783,
+      "positive_seeds": 3,
+      "influence": 7.0120927128831945e-06,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "dev",
+      "baseline": "LightGBM_hospital",
+      "endpoint": 1,
+      "omitted_component": "DEV-01",
+      "omitted_stays": 3093,
+      "retained_stays": 10036,
+      "CEM_AP": [
+        0.33828707047123807,
+        0.3398547041006049,
+        0.338338573291372
+      ],
+      "baseline_AP": [
+        0.31266526110696036,
+        0.31601544510563373,
+        0.3151349174754848
+      ],
+      "seed_differences": [
+        0.025621809364277714,
+        0.02383925899497119,
+        0.023203655815887236
+      ],
+      "mean": 0.02422157472504538,
+      "sample_SD": 0.0012535910952120653,
+      "positive_seeds": 3,
+      "influence": 0.0033503508144742296,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "dev",
+      "baseline": "LightGBM_hospital",
+      "endpoint": 1,
+      "omitted_component": "DEV-02",
+      "omitted_stays": 2818,
+      "retained_stays": 10311,
+      "CEM_AP": [
+        0.33362346995221903,
+        0.333530262801289,
+        0.3317352432443669
+      ],
+      "baseline_AP": [
+        0.30951803150864504,
+        0.3172527751469177,
+        0.31136423416459724
+      ],
+      "seed_differences": [
+        0.02410543844357399,
+        0.016277487654371314,
+        0.02037100907976963
+      ],
+      "mean": 0.02025131172590498,
+      "sample_SD": 0.003915347874957773,
+      "positive_seeds": 3,
+      "influence": -0.0006199121846661715,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "dev",
+      "baseline": "LightGBM_hospital",
+      "endpoint": 1,
+      "omitted_component": "DEV-03",
+      "omitted_stays": 2321,
+      "retained_stays": 10808,
+      "CEM_AP": [
+        0.34797724863058965,
+        0.3516561842703204,
+        0.3457279850948723
+      ],
+      "baseline_AP": [
+        0.32687020082953616,
+        0.33436813653003705,
+        0.3268173064482676
+      ],
+      "seed_differences": [
+        0.02110704780105349,
+        0.017288047740283363,
+        0.018910678646604673
+      ],
+      "mean": 0.01910192472931384,
+      "sample_SD": 0.001916669419632468,
+      "positive_seeds": 3,
+      "influence": -0.0017692991812573097,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "dev",
+      "baseline": "LightGBM_hospital",
+      "endpoint": 1,
+      "omitted_component": "DEV-04",
+      "omitted_stays": 1708,
+      "retained_stays": 11421,
+      "CEM_AP": [
+        0.3497927544540907,
+        0.35499593442493793,
+        0.3498140094683416
+      ],
+      "baseline_AP": [
+        0.32558200347793953,
+        0.33486477804504905,
+        0.3287819017494198
+      ],
+      "seed_differences": [
+        0.024210750976151163,
+        0.02013115637988888,
+        0.021032107718921833
+      ],
+      "mean": 0.021791338358320627,
+      "sample_SD": 0.0021431510423473485,
+      "positive_seeds": 3,
+      "influence": 0.000920114447749476,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "dev",
+      "baseline": "LightGBM_hospital",
+      "endpoint": 1,
+      "omitted_component": "DEV-05",
+      "omitted_stays": 1109,
+      "retained_stays": 12020,
+      "CEM_AP": [
+        0.3481865182217064,
+        0.3514572904512303,
+        0.3481016971191679
+      ],
+      "baseline_AP": [
+        0.32381756023828595,
+        0.3326971700780994,
+        0.32547341749602193
+      ],
+      "seed_differences": [
+        0.024368957983420425,
+        0.018760120373130906,
+        0.022628279623145953
+      ],
+      "mean": 0.02191911932656576,
+      "sample_SD": 0.0028708789732996127,
+      "positive_seeds": 3,
+      "influence": 0.0010478954159946104,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "dev",
+      "baseline": "LightGBM_hospital",
+      "endpoint": 1,
+      "omitted_component": "DEV-06",
+      "omitted_stays": 788,
+      "retained_stays": 12341,
+      "CEM_AP": [
+        0.34247032376366493,
+        0.3459879609339776,
+        0.3415425705421546
+      ],
+      "baseline_AP": [
+        0.32039643957367303,
+        0.32854580351935103,
+        0.32110614480452593
+      ],
+      "seed_differences": [
+        0.0220738841899919,
+        0.01744215741462657,
+        0.02043642573762866
+      ],
+      "mean": 0.019984155780749042,
+      "sample_SD": 0.0023487516505222403,
+      "positive_seeds": 3,
+      "influence": -0.0008870681298221092,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "dev",
+      "baseline": "LightGBM_hospital",
+      "endpoint": 1,
+      "omitted_component": "DEV-07",
+      "omitted_stays": 529,
+      "retained_stays": 12600,
+      "CEM_AP": [
+        0.3437400541261334,
+        0.3476314043351889,
+        0.3429342776596357
+      ],
+      "baseline_AP": [
+        0.3218820982320105,
+        0.3287978109772375,
+        0.3224117434819902
+      ],
+      "seed_differences": [
+        0.02185795589412287,
+        0.018833593357951428,
+        0.02052253417764549
+      ],
+      "mean": 0.020404694476573264,
+      "sample_SD": 0.0015156209400476542,
+      "positive_seeds": 3,
+      "influence": -0.0004665294339978865,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "dev",
+      "baseline": "LightGBM_hospital",
+      "endpoint": 1,
+      "omitted_component": "DEV-08",
+      "omitted_stays": 493,
+      "retained_stays": 12636,
+      "CEM_AP": [
+        0.34585754987607065,
+        0.3490132851607587,
+        0.3451741282109013
+      ],
+      "baseline_AP": [
+        0.3236281247867487,
+        0.3318045521965712,
+        0.3252802461905479
+      ],
+      "seed_differences": [
+        0.022229425089321964,
+        0.017208732964187512,
+        0.019893882020353415
+      ],
+      "mean": 0.01977734669128763,
+      "sample_SD": 0.002512373920426083,
+      "positive_seeds": 3,
+      "influence": -0.001093877219283522,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "dev",
+      "baseline": "LightGBM_hospital",
+      "endpoint": 1,
+      "omitted_component": "DEV-09",
+      "omitted_stays": 103,
+      "retained_stays": 13026,
+      "CEM_AP": [
+        0.3441453152930822,
+        0.3472264445893909,
+        0.3432394337548792
+      ],
+      "baseline_AP": [
+        0.32077859499225925,
+        0.3285187446566678,
+        0.32220485910666874
+      ],
+      "seed_differences": [
+        0.02336672030082293,
+        0.018707699932723088,
+        0.021034574648210458
+      ],
+      "mean": 0.02103633162725216,
+      "sample_SD": 0.002329510680985132,
+      "positive_seeds": 3,
+      "influence": 0.00016510771668100735,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "dev",
+      "baseline": "LightGBM_hospital",
+      "endpoint": 1,
+      "omitted_component": "DEV-10",
+      "omitted_stays": 84,
+      "retained_stays": 13045,
+      "CEM_AP": [
+        0.3435686235376231,
+        0.3465789293600392,
+        0.34259527037891796
+      ],
+      "baseline_AP": [
+        0.3199251677392075,
+        0.3277325626322871,
+        0.32140640928188513
+      ],
+      "seed_differences": [
+        0.02364345579841559,
+        0.018846366727752084,
+        0.02118886109703283
+      ],
+      "mean": 0.021226227874400167,
+      "sample_SD": 0.00239876282591838,
+      "positive_seeds": 3,
+      "influence": 0.00035500396382901617,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "dev",
+      "baseline": "LightGBM_hospital",
+      "endpoint": 1,
+      "omitted_component": "DEV-11",
+      "omitted_stays": 45,
+      "retained_stays": 13084,
+      "CEM_AP": [
+        0.34369585457729734,
+        0.3468091586298577,
+        0.34274226711491573
+      ],
+      "baseline_AP": [
+        0.32082361070255927,
+        0.3282490364229276,
+        0.3221748096313902
+      ],
+      "seed_differences": [
+        0.022872243874738074,
+        0.018560122206930096,
+        0.02056745748352551
+      ],
+      "mean": 0.02066660785506456,
+      "sample_SD": 0.0021577700101324546,
+      "positive_seeds": 3,
+      "influence": -0.00020461605550659012,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "dev",
+      "baseline": "LightGBM_hospital",
+      "endpoint": 1,
+      "omitted_component": "DEV-12",
+      "omitted_stays": 33,
+      "retained_stays": 13096,
+      "CEM_AP": [
+        0.3403568397173333,
+        0.3436212229197154,
+        0.3397131805848382
+      ],
+      "baseline_AP": [
+        0.3181471633933128,
+        0.3261570089269077,
+        0.3200868973798024
+      ],
+      "seed_differences": [
+        0.022209676324020544,
+        0.01746421399280773,
+        0.01962628320503579
+      ],
+      "mean": 0.01976672450728802,
+      "sample_SD": 0.002375846376299121,
+      "positive_seeds": 3,
+      "influence": -0.001104499403283131,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "dev",
+      "baseline": "LightGBM_hospital",
+      "endpoint": 1,
+      "omitted_component": "DEV-13",
+      "omitted_stays": 5,
+      "retained_stays": 13124,
+      "CEM_AP": [
+        0.34327213009209023,
+        0.34637335034078015,
+        0.34239305402796
+      ],
+      "baseline_AP": [
+        0.32007993105429616,
+        0.3277621724796891,
+        0.3215290541712381
+      ],
+      "seed_differences": [
+        0.02319219903779407,
+        0.018611177861091066,
+        0.020863999856721882
+      ],
+      "mean": 0.02088912558520234,
+      "sample_SD": 0.00229061394216138,
+      "positive_seeds": 3,
+      "influence": 1.790167463118844e-05,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "TabM_mini_PLE_hospital",
+      "endpoint": 0,
+      "omitted_component": "TEST-01",
+      "omitted_stays": 4667,
+      "retained_stays": 22042,
+      "CEM_AP": [
+        0.3551896779533008,
+        0.3546894209010678,
+        0.3565127990947916
+      ],
+      "baseline_AP": [
+        0.3588262542817267,
+        0.36186166018566784,
+        0.3654766645593256
+      ],
+      "seed_differences": [
+        -0.0036365763284259,
+        -0.007172239284600035,
+        -0.008963865464533982
+      ],
+      "mean": -0.006590893692519972,
+      "sample_SD": 0.0027108069661997305,
+      "positive_seeds": 0,
+      "influence": -0.002276051859766759,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "TabM_mini_PLE_hospital",
+      "endpoint": 0,
+      "omitted_component": "TEST-02",
+      "omitted_stays": 3555,
+      "retained_stays": 23154,
+      "CEM_AP": [
+        0.36636329038271553,
+        0.36910237396220624,
+        0.367450164311224
+      ],
+      "baseline_AP": [
+        0.3662203576199803,
+        0.3705445526780172,
+        0.3734752344453233
+      ],
+      "seed_differences": [
+        0.00014293276273524835,
+        -0.0014421787158109822,
+        -0.0060250701340993085
+      ],
+      "mean": -0.0024414386957250143,
+      "sample_SD": 0.0032031165002904933,
+      "positive_seeds": 1,
+      "influence": 0.0018734031370281992,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "TabM_mini_PLE_hospital",
+      "endpoint": 0,
+      "omitted_component": "TEST-03",
+      "omitted_stays": 3361,
+      "retained_stays": 23348,
+      "CEM_AP": [
+        0.36033185126121897,
+        0.36470991397794844,
+        0.3643832088003486
+      ],
+      "baseline_AP": [
+        0.3626907077599762,
+        0.36860970527507075,
+        0.3681338949198366
+      ],
+      "seed_differences": [
+        -0.0023588564987572225,
+        -0.0038997912971223125,
+        -0.0037506861194880337
+      ],
+      "mean": -0.0033364446384558564,
+      "sample_SD": 0.00084989235592451,
+      "positive_seeds": 0,
+      "influence": 0.000978397194297357,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "TabM_mini_PLE_hospital",
+      "endpoint": 0,
+      "omitted_component": "TEST-04",
+      "omitted_stays": 3294,
+      "retained_stays": 23415,
+      "CEM_AP": [
+        0.380541473667069,
+        0.38333319889379686,
+        0.3792016180719596
+      ],
+      "baseline_AP": [
+        0.38197386592779115,
+        0.3853241471389105,
+        0.38819272491404533
+      ],
+      "seed_differences": [
+        -0.0014323922607221706,
+        -0.001990948245113644,
+        -0.008991106842085705
+      ],
+      "mean": -0.00413814911597384,
+      "sample_SD": 0.004212053562752558,
+      "positive_seeds": 0,
+      "influence": 0.0001766927167793737,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "TabM_mini_PLE_hospital",
+      "endpoint": 0,
+      "omitted_component": "TEST-05",
+      "omitted_stays": 2915,
+      "retained_stays": 23794,
+      "CEM_AP": [
+        0.37826509500150923,
+        0.3806044015106497,
+        0.3796193522652234
+      ],
+      "baseline_AP": [
+        0.3830039921659725,
+        0.3833378015002466,
+        0.38598152237070327
+      ],
+      "seed_differences": [
+        -0.0047388971644632405,
+        -0.002733399989596874,
+        -0.006362170105479847
+      ],
+      "mean": -0.004611489086513321,
+      "sample_SD": 0.0018177369865375191,
+      "positive_seeds": 0,
+      "influence": -0.00029664725376010725,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "TabM_mini_PLE_hospital",
+      "endpoint": 0,
+      "omitted_component": "TEST-06",
+      "omitted_stays": 2462,
+      "retained_stays": 24247,
+      "CEM_AP": [
+        0.378253500700067,
+        0.3821330468682563,
+        0.37967649755713156
+      ],
+      "baseline_AP": [
+        0.38208279434973674,
+        0.3874031993023308,
+        0.38705186437596806
+      ],
+      "seed_differences": [
+        -0.0038292936496697183,
+        -0.0052701524340745265,
+        -0.007375366818836493
+      ],
+      "mean": -0.005491604300860246,
+      "sample_SD": 0.0017833786550388797,
+      "positive_seeds": 0,
+      "influence": -0.0011767624681070328,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "TabM_mini_PLE_hospital",
+      "endpoint": 0,
+      "omitted_component": "TEST-07",
+      "omitted_stays": 1981,
+      "retained_stays": 24728,
+      "CEM_AP": [
+        0.37213971378124255,
+        0.37664464814139176,
+        0.3743505655606221
+      ],
+      "baseline_AP": [
+        0.376396993724025,
+        0.38141305744099,
+        0.38141813980109873
+      ],
+      "seed_differences": [
+        -0.004257279942782466,
+        -0.004768409299598264,
+        -0.0070675742404766595
+      ],
+      "mean": -0.0053644211609524635,
+      "sample_SD": 0.0014969506050866535,
+      "positive_seeds": 0,
+      "influence": -0.00104957932819925,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "TabM_mini_PLE_hospital",
+      "endpoint": 0,
+      "omitted_component": "TEST-08",
+      "omitted_stays": 1630,
+      "retained_stays": 25079,
+      "CEM_AP": [
+        0.3656421350938521,
+        0.3700208424277086,
+        0.36633409920863014
+      ],
+      "baseline_AP": [
+        0.3685550496626146,
+        0.37226596633449904,
+        0.3734576856790942
+      ],
+      "seed_differences": [
+        -0.0029129145687624702,
+        -0.002245123906790436,
+        -0.007123586470464072
+      ],
+      "mean": -0.004093874982005659,
+      "sample_SD": 0.0026449668938432723,
+      "positive_seeds": 0,
+      "influence": 0.0002209668507475544,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "TabM_mini_PLE_hospital",
+      "endpoint": 0,
+      "omitted_component": "TEST-09",
+      "omitted_stays": 1127,
+      "retained_stays": 25582,
+      "CEM_AP": [
+        0.36521117967478456,
+        0.36860493338719513,
+        0.36604836765232196
+      ],
+      "baseline_AP": [
+        0.3679417848136949,
+        0.3718745316981811,
+        0.37378563334873616
+      ],
+      "seed_differences": [
+        -0.0027306051389103247,
+        -0.003269598310985944,
+        -0.007737265696414197
+      ],
+      "mean": -0.004579156382103489,
+      "sample_SD": 0.0027482483950214682,
+      "positive_seeds": 0,
+      "influence": -0.0002643145493502752,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "TabM_mini_PLE_hospital",
+      "endpoint": 0,
+      "omitted_component": "TEST-10",
+      "omitted_stays": 656,
+      "retained_stays": 26053,
+      "CEM_AP": [
+        0.3658835108930871,
+        0.3701551479486711,
+        0.3700708399966104
+      ],
+      "baseline_AP": [
+        0.3686621482154099,
+        0.3729404173383768,
+        0.37391263896265503
+      ],
+      "seed_differences": [
+        -0.0027786373223227523,
+        -0.0027852693897056913,
+        -0.0038417989660446406
+      ],
+      "mean": -0.0031352352260243612,
+      "sample_SD": 0.0006119111333461963,
+      "positive_seeds": 0,
+      "influence": 0.0011796066067288522,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "TabM_mini_PLE_hospital",
+      "endpoint": 0,
+      "omitted_component": "TEST-11",
+      "omitted_stays": 394,
+      "retained_stays": 26315,
+      "CEM_AP": [
+        0.37033967356183894,
+        0.3736647243491888,
+        0.3715296097635699
+      ],
+      "baseline_AP": [
+        0.37310380495065715,
+        0.376545392932027,
+        0.37865555624209846
+      ],
+      "seed_differences": [
+        -0.002764131388818203,
+        -0.0028806685828381973,
+        -0.007125946478528544
+      ],
+      "mean": -0.004256915483394981,
+      "sample_SD": 0.002485336872070932,
+      "positive_seeds": 0,
+      "influence": 5.792634935823226e-05,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "TabM_mini_PLE_hospital",
+      "endpoint": 0,
+      "omitted_component": "TEST-12",
+      "omitted_stays": 313,
+      "retained_stays": 26396,
+      "CEM_AP": [
+        0.36901009571317783,
+        0.3715617955600298,
+        0.3704486835883458
+      ],
+      "baseline_AP": [
+        0.3719594389357682,
+        0.37532457783314244,
+        0.37768865044550337
+      ],
+      "seed_differences": [
+        -0.0029493432225903837,
+        -0.0037627822731126637,
+        -0.007239966857157554
+      ],
+      "mean": -0.004650697450953534,
+      "sample_SD": 0.002278959810013493,
+      "positive_seeds": 0,
+      "influence": -0.0003358556182003203,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "TabM_mini_PLE_hospital",
+      "endpoint": 0,
+      "omitted_component": "TEST-13",
+      "omitted_stays": 170,
+      "retained_stays": 26539,
+      "CEM_AP": [
+        0.36944840391982536,
+        0.37266978239144427,
+        0.37089732456635127
+      ],
+      "baseline_AP": [
+        0.3721229956271296,
+        0.3759386963354855,
+        0.3775933498033572
+      ],
+      "seed_differences": [
+        -0.002674591707304219,
+        -0.0032689139440412185,
+        -0.006696025237005909
+      ],
+      "mean": -0.004213176962783782,
+      "sample_SD": 0.0021706465384479026,
+      "positive_seeds": 0,
+      "influence": 0.00010166486996943114,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "TabM_mini_PLE_hospital",
+      "endpoint": 0,
+      "omitted_component": "TEST-14",
+      "omitted_stays": 83,
+      "retained_stays": 26626,
+      "CEM_AP": [
+        0.36990788315411915,
+        0.3732759320493233,
+        0.37142589369836515
+      ],
+      "baseline_AP": [
+        0.3727618874393384,
+        0.37673648260795434,
+        0.3783382445666137
+      ],
+      "seed_differences": [
+        -0.002854004285219258,
+        -0.003460550558631037,
+        -0.00691235086824854
+      ],
+      "mean": -0.004408968570699612,
+      "sample_SD": 0.002189101822942104,
+      "positive_seeds": 0,
+      "influence": -9.412673794639836e-05,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "TabM_mini_PLE_hospital",
+      "endpoint": 0,
+      "omitted_component": "TEST-15",
+      "omitted_stays": 49,
+      "retained_stays": 26660,
+      "CEM_AP": [
+        0.3692452179579583,
+        0.37232820033465974,
+        0.3707566636435099
+      ],
+      "baseline_AP": [
+        0.37197488010024465,
+        0.3758455884529963,
+        0.377465901617742
+      ],
+      "seed_differences": [
+        -0.002729662142286371,
+        -0.003517388118336573,
+        -0.006709237974232118
+      ],
+      "mean": -0.0043187627449516874,
+      "sample_SD": 0.0021073459421007646,
+      "positive_seeds": 0,
+      "influence": -3.920912198474014e-06,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "TabM_mini_PLE_hospital",
+      "endpoint": 0,
+      "omitted_component": "TEST-16",
+      "omitted_stays": 13,
+      "retained_stays": 26696,
+      "CEM_AP": [
+        0.3692039750989191,
+        0.3724183722117784,
+        0.370715032389697
+      ],
+      "baseline_AP": [
+        0.3719799009964896,
+        0.37582740692081895,
+        0.37749321999638796
+      ],
+      "seed_differences": [
+        -0.002775925897570475,
+        -0.003409034709040526,
+        -0.006778187606690966
+      ],
+      "mean": -0.004321049404433989,
+      "sample_SD": 0.002151360685829608,
+      "positive_seeds": 0,
+      "influence": -6.207571680775896e-06,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "TabM_mini_PLE_hospital",
+      "endpoint": 0,
+      "omitted_component": "TEST-17",
+      "omitted_stays": 9,
+      "retained_stays": 26700,
+      "CEM_AP": [
+        0.36919184280709877,
+        0.3724038197187808,
+        0.3707716277554982
+      ],
+      "baseline_AP": [
+        0.371961374757463,
+        0.37581568192416986,
+        0.37746408588260016
+      ],
+      "seed_differences": [
+        -0.0027695319503642235,
+        -0.0034118622053890824,
+        -0.006692458127101952
+      ],
+      "mean": -0.004291284094285086,
+      "sample_SD": 0.0021041327408306693,
+      "positive_seeds": 0,
+      "influence": 2.3557738468127365e-05,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "TabM_mini_PLE_hospital",
+      "endpoint": 0,
+      "omitted_component": "TEST-18",
+      "omitted_stays": 9,
+      "retained_stays": 26700,
+      "CEM_AP": [
+        0.36917869017663524,
+        0.3724043010790315,
+        0.37070000250615454
+      ],
+      "baseline_AP": [
+        0.3719706538460712,
+        0.37580337128194913,
+        0.3774681608297186
+      ],
+      "seed_differences": [
+        -0.0027919636694359595,
+        -0.003399070202917631,
+        -0.0067681583235640885
+      ],
+      "mean": -0.00431973073197256,
+      "sample_SD": 0.0021420184030953265,
+      "positive_seeds": 0,
+      "influence": -4.888899219346321e-06,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "TabM_mini_PLE_hospital",
+      "endpoint": 0,
+      "omitted_component": "TEST-19",
+      "omitted_stays": 7,
+      "retained_stays": 26702,
+      "CEM_AP": [
+        0.3691684821195431,
+        0.3723944546563641,
+        0.3706851694092528
+      ],
+      "baseline_AP": [
+        0.3720025858894452,
+        0.3758312824639368,
+        0.3774925673372309
+      ],
+      "seed_differences": [
+        -0.0028341037699020633,
+        -0.0034368278075727066,
+        -0.006807397927978132
+      ],
+      "mean": -0.0043594431684843005,
+      "sample_SD": 0.002141303562037124,
+      "positive_seeds": 0,
+      "influence": -4.4601335731087044e-05,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "TabM_mini_PLE_hospital",
+      "endpoint": 0,
+      "omitted_component": "TEST-20",
+      "omitted_stays": 5,
+      "retained_stays": 26704,
+      "CEM_AP": [
+        0.36917418668493024,
+        0.37239292300800775,
+        0.3706874465828972
+      ],
+      "baseline_AP": [
+        0.3719575203873148,
+        0.3758006190840373,
+        0.377465402518268
+      ],
+      "seed_differences": [
+        -0.0027833337023845384,
+        -0.0034076960760295316,
+        -0.006777955935370783
+      ],
+      "mean": -0.004322995237928284,
+      "sample_SD": 0.0021488557682860948,
+      "positive_seeds": 0,
+      "influence": -8.153405175070905e-06,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "TabM_mini_PLE_hospital",
+      "endpoint": 0,
+      "omitted_component": "TEST-21",
+      "omitted_stays": 5,
+      "retained_stays": 26704,
+      "CEM_AP": [
+        0.36940155488161247,
+        0.37261754778547357,
+        0.3709069553241243
+      ],
+      "baseline_AP": [
+        0.37238131272076724,
+        0.37609262942519683,
+        0.3777990906077358
+      ],
+      "seed_differences": [
+        -0.002979757839154773,
+        -0.0034750816397232653,
+        -0.006892135283611489
+      ],
+      "mean": -0.004448991587496509,
+      "sample_SD": 0.0021302698788538926,
+      "positive_seeds": 0,
+      "influence": -0.0001341497547432957,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "TabM_mini_PLE_hospital",
+      "endpoint": 0,
+      "omitted_component": "TEST-22",
+      "omitted_stays": 4,
+      "retained_stays": 26705,
+      "CEM_AP": [
+        0.3691587905830629,
+        0.3723849069808293,
+        0.37067713699495153
+      ],
+      "baseline_AP": [
+        0.3719454952032859,
+        0.3757891350640093,
+        0.37744317855657156
+      ],
+      "seed_differences": [
+        -0.002786704620223013,
+        -0.003404228083179972,
+        -0.006766041561620029
+      ],
+      "mean": -0.004318991421674338,
+      "sample_SD": 0.0021415822649111004,
+      "positive_seeds": 0,
+      "influence": -4.149588921124707e-06,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "TabM_mini_PLE_hospital",
+      "endpoint": 1,
+      "omitted_component": "TEST-01",
+      "omitted_stays": 4667,
+      "retained_stays": 22042,
+      "CEM_AP": [
+        0.3741109207006876,
+        0.37333380230269936,
+        0.3759282098724339
+      ],
+      "baseline_AP": [
+        0.3652447728345679,
+        0.3685928903113891,
+        0.36995369626171615
+      ],
+      "seed_differences": [
+        0.008866147866119667,
+        0.00474091199131027,
+        0.005974513610717769
+      ],
+      "mean": 0.006527191156049235,
+      "sample_SD": 0.0021174234596647934,
+      "positive_seeds": 3,
+      "influence": 0.000897937609670274,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "TabM_mini_PLE_hospital",
+      "endpoint": 1,
+      "omitted_component": "TEST-02",
+      "omitted_stays": 3555,
+      "retained_stays": 23154,
+      "CEM_AP": [
+        0.3712994676588327,
+        0.36858888197258677,
+        0.37226238902760694
+      ],
+      "baseline_AP": [
+        0.36320376359760387,
+        0.36699343445374843,
+        0.36687782978888156
+      ],
+      "seed_differences": [
+        0.008095704061228837,
+        0.0015954475188383332,
+        0.005384559238725384
+      ],
+      "mean": 0.005025236939597518,
+      "sample_SD": 0.003264991296345296,
+      "positive_seeds": 3,
+      "influence": -0.0006040166067814434,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "TabM_mini_PLE_hospital",
+      "endpoint": 1,
+      "omitted_component": "TEST-03",
+      "omitted_stays": 3361,
+      "retained_stays": 23348,
+      "CEM_AP": [
+        0.3669290035924224,
+        0.36205457366580834,
+        0.3653908449932921
+      ],
+      "baseline_AP": [
+        0.35461129955578885,
+        0.36015488307899274,
+        0.36026930504011595
+      ],
+      "seed_differences": [
+        0.01231770403663357,
+        0.0018996905868156055,
+        0.005121539953176157
+      ],
+      "mean": 0.006446311525541777,
+      "sample_SD": 0.0053338556269698625,
+      "positive_seeds": 3,
+      "influence": 0.0008170579791628163,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "TabM_mini_PLE_hospital",
+      "endpoint": 1,
+      "omitted_component": "TEST-04",
+      "omitted_stays": 3294,
+      "retained_stays": 23415,
+      "CEM_AP": [
+        0.38322162056654036,
+        0.38077853765289454,
+        0.3832440419454881
+      ],
+      "baseline_AP": [
+        0.37364455857608714,
+        0.3775537740198033,
+        0.37858555057111276
+      ],
+      "seed_differences": [
+        0.009577061990453217,
+        0.0032247636330912655,
+        0.004658491374375351
+      ],
+      "mean": 0.005820105665973278,
+      "sample_SD": 0.003331656408915729,
+      "positive_seeds": 3,
+      "influence": 0.00019085211959431712,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "TabM_mini_PLE_hospital",
+      "endpoint": 1,
+      "omitted_component": "TEST-05",
+      "omitted_stays": 2915,
+      "retained_stays": 23794,
+      "CEM_AP": [
+        0.3718656104532922,
+        0.3686979015518732,
+        0.3753982697834657
+      ],
+      "baseline_AP": [
+        0.36750228981451305,
+        0.371314346604236,
+        0.3724962547468697
+      ],
+      "seed_differences": [
+        0.0043633206387791446,
+        -0.0026164450523628036,
+        0.002902015036595984
+      ],
+      "mean": 0.001549630207670775,
+      "sample_SD": 0.003681167045916398,
+      "positive_seeds": 2,
+      "influence": -0.004079623338708186,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "TabM_mini_PLE_hospital",
+      "endpoint": 1,
+      "omitted_component": "TEST-06",
+      "omitted_stays": 2462,
+      "retained_stays": 24247,
+      "CEM_AP": [
+        0.38020423124158687,
+        0.3785655491956559,
+        0.38160298395248626
+      ],
+      "baseline_AP": [
+        0.372278586017013,
+        0.3771610980358908,
+        0.3754480525898868
+      ],
+      "seed_differences": [
+        0.00792564522457384,
+        0.0014044511597650633,
+        0.006154931362599481
+      ],
+      "mean": 0.0051616759156461285,
+      "sample_SD": 0.0033721521755254737,
+      "positive_seeds": 3,
+      "influence": -0.00046757763073283255,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "TabM_mini_PLE_hospital",
+      "endpoint": 1,
+      "omitted_component": "TEST-07",
+      "omitted_stays": 1981,
+      "retained_stays": 24728,
+      "CEM_AP": [
+        0.38212455721729527,
+        0.3791896168087181,
+        0.3807475468745661
+      ],
+      "baseline_AP": [
+        0.3692797448935273,
+        0.37329230798081425,
+        0.3723107228058521
+      ],
+      "seed_differences": [
+        0.012844812323767996,
+        0.005897308827903847,
+        0.008436824068713988
+      ],
+      "mean": 0.009059648406795276,
+      "sample_SD": 0.0035153781906561545,
+      "positive_seeds": 3,
+      "influence": 0.0034303948604163153,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "TabM_mini_PLE_hospital",
+      "endpoint": 1,
+      "omitted_component": "TEST-08",
+      "omitted_stays": 1630,
+      "retained_stays": 25079,
+      "CEM_AP": [
+        0.37984285697516035,
+        0.37716004644438345,
+        0.38133168982471927
+      ],
+      "baseline_AP": [
+        0.37056794250982555,
+        0.375733975288796,
+        0.3756817935844593
+      ],
+      "seed_differences": [
+        0.009274914465334794,
+        0.0014260711555874606,
+        0.005649896240259966
+      ],
+      "mean": 0.005450293953727407,
+      "sample_SD": 0.003928226842970392,
+      "positive_seeds": 3,
+      "influence": -0.00017895959265155394,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "TabM_mini_PLE_hospital",
+      "endpoint": 1,
+      "omitted_component": "TEST-09",
+      "omitted_stays": 1127,
+      "retained_stays": 25582,
+      "CEM_AP": [
+        0.3830259078856613,
+        0.38002621217760424,
+        0.38399918095225355
+      ],
+      "baseline_AP": [
+        0.374908197222681,
+        0.3781957976251833,
+        0.3782189271556689
+      ],
+      "seed_differences": [
+        0.008117710662980337,
+        0.0018304145524209448,
+        0.0057802537965846446
+      ],
+      "mean": 0.005242793003995309,
+      "sample_SD": 0.00317791931507738,
+      "positive_seeds": 3,
+      "influence": -0.0003864605423836518,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "TabM_mini_PLE_hospital",
+      "endpoint": 1,
+      "omitted_component": "TEST-10",
+      "omitted_stays": 656,
+      "retained_stays": 26053,
+      "CEM_AP": [
+        0.3697184651275489,
+        0.3662349201094043,
+        0.37115830301863423
+      ],
+      "baseline_AP": [
+        0.36046275684071094,
+        0.36568531754806105,
+        0.36488824625590954
+      ],
+      "seed_differences": [
+        0.009255708286837971,
+        0.000549602561343232,
+        0.006270056762724685
+      ],
+      "mean": 0.005358455870301963,
+      "sample_SD": 0.004424062766979295,
+      "positive_seeds": 3,
+      "influence": -0.0002707976760769979,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "TabM_mini_PLE_hospital",
+      "endpoint": 1,
+      "omitted_component": "TEST-11",
+      "omitted_stays": 394,
+      "retained_stays": 26315,
+      "CEM_AP": [
+        0.3781140998342326,
+        0.3749296731947078,
+        0.3785810627324687
+      ],
+      "baseline_AP": [
+        0.3687917035349667,
+        0.37278847641489293,
+        0.3726123069450265
+      ],
+      "seed_differences": [
+        0.0093223962992659,
+        0.002141196779814891,
+        0.005968755787442215
+      ],
+      "mean": 0.005810782955507669,
+      "sample_SD": 0.003593205142524278,
+      "positive_seeds": 3,
+      "influence": 0.00018152940912870806,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "TabM_mini_PLE_hospital",
+      "endpoint": 1,
+      "omitted_component": "TEST-12",
+      "omitted_stays": 313,
+      "retained_stays": 26396,
+      "CEM_AP": [
+        0.37847664496507805,
+        0.375619073352785,
+        0.37940735423847904
+      ],
+      "baseline_AP": [
+        0.36937561470878816,
+        0.37364089341907447,
+        0.3737538178806095
+      ],
+      "seed_differences": [
+        0.009101030256289888,
+        0.001978179933710522,
+        0.005653536357869526
+      ],
+      "mean": 0.0055775821826233125,
+      "sample_SD": 0.003562032559792266,
+      "positive_seeds": 3,
+      "influence": -5.167136375564853e-05,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "TabM_mini_PLE_hospital",
+      "endpoint": 1,
+      "omitted_component": "TEST-13",
+      "omitted_stays": 170,
+      "retained_stays": 26539,
+      "CEM_AP": [
+        0.37706031620694663,
+        0.3742466819864715,
+        0.37788645267362775
+      ],
+      "baseline_AP": [
+        0.36792285190970314,
+        0.37214491927376403,
+        0.3721150325570024
+      ],
+      "seed_differences": [
+        0.009137464297243492,
+        0.0021017627127074556,
+        0.005771420116625348
+      ],
+      "mean": 0.005670215708858765,
+      "sample_SD": 0.0035189424470676214,
+      "positive_seeds": 3,
+      "influence": 4.096216247980421e-05,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "TabM_mini_PLE_hospital",
+      "endpoint": 1,
+      "omitted_component": "TEST-14",
+      "omitted_stays": 83,
+      "retained_stays": 26626,
+      "CEM_AP": [
+        0.3771524492001562,
+        0.3743676166699419,
+        0.37799436240293166
+      ],
+      "baseline_AP": [
+        0.36817729265530436,
+        0.37240074014777413,
+        0.37230436022286184
+      ],
+      "seed_differences": [
+        0.00897515654485187,
+        0.0019668765221677598,
+        0.00569000218006982
+      ],
+      "mean": 0.005544011749029816,
+      "sample_SD": 0.0035064201293562546,
+      "positive_seeds": 3,
+      "influence": -8.524179734914483e-05,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "TabM_mini_PLE_hospital",
+      "endpoint": 1,
+      "omitted_component": "TEST-15",
+      "omitted_stays": 49,
+      "retained_stays": 26660,
+      "CEM_AP": [
+        0.3767185459728081,
+        0.37384699063412896,
+        0.37754436991704265
+      ],
+      "baseline_AP": [
+        0.3675769088744462,
+        0.37169878618461827,
+        0.37171330468392216
+      ],
+      "seed_differences": [
+        0.00914163709836191,
+        0.0021482044495106933,
+        0.0058310652331204915
+      ],
+      "mean": 0.005706968926997698,
+      "sample_SD": 0.0034983674726076918,
+      "positive_seeds": 3,
+      "influence": 7.771538061873695e-05,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "TabM_mini_PLE_hospital",
+      "endpoint": 1,
+      "omitted_component": "TEST-16",
+      "omitted_stays": 13,
+      "retained_stays": 26696,
+      "CEM_AP": [
+        0.37681097758394533,
+        0.37401194627230183,
+        0.3777045316727319
+      ],
+      "baseline_AP": [
+        0.3677712571724179,
+        0.37202549383729555,
+        0.3719737478757946
+      ],
+      "seed_differences": [
+        0.009039720411527452,
+        0.0019864524350062807,
+        0.0057307837969372555
+      ],
+      "mean": 0.005585652214490329,
+      "sample_SD": 0.003528873002719484,
+      "positive_seeds": 3,
+      "influence": -4.360133188863191e-05,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "TabM_mini_PLE_hospital",
+      "endpoint": 1,
+      "omitted_component": "TEST-17",
+      "omitted_stays": 9,
+      "retained_stays": 26700,
+      "CEM_AP": [
+        0.376752673517611,
+        0.3739975171266676,
+        0.37759889223808585
+      ],
+      "baseline_AP": [
+        0.3676601599327556,
+        0.37191470649393865,
+        0.3718868940754325
+      ],
+      "seed_differences": [
+        0.00909251358485541,
+        0.002082810632728971,
+        0.005711998162653331
+      ],
+      "mean": 0.005629107460079237,
+      "sample_SD": 0.0035055865444590657,
+      "positive_seeds": 3,
+      "influence": -1.4608629972379106e-07,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "TabM_mini_PLE_hospital",
+      "endpoint": 1,
+      "omitted_component": "TEST-18",
+      "omitted_stays": 9,
+      "retained_stays": 26700,
+      "CEM_AP": [
+        0.37671612811290917,
+        0.3739073392832428,
+        0.37755460439886435
+      ],
+      "baseline_AP": [
+        0.3676195560110721,
+        0.3718589688085939,
+        0.3718275684765819
+      ],
+      "seed_differences": [
+        0.009096572101837064,
+        0.0020483704746488973,
+        0.005727035922282464
+      ],
+      "mean": 0.005623992832922808,
+      "sample_SD": 0.0035252304822625522,
+      "positive_seeds": 3,
+      "influence": -5.2607134561526506e-06,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "TabM_mini_PLE_hospital",
+      "endpoint": 1,
+      "omitted_component": "TEST-19",
+      "omitted_stays": 7,
+      "retained_stays": 26702,
+      "CEM_AP": [
+        0.3767218443390369,
+        0.3739174764372609,
+        0.3775227250484786
+      ],
+      "baseline_AP": [
+        0.36757547436836024,
+        0.3717706128893556,
+        0.371747148880087
+      ],
+      "seed_differences": [
+        0.009146369970676638,
+        0.002146863547905331,
+        0.0057755761683916385
+      ],
+      "mean": 0.005689603228991202,
+      "sample_SD": 0.003500545107599109,
+      "positive_seeds": 3,
+      "influence": 6.034968261224138e-05,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "TabM_mini_PLE_hospital",
+      "endpoint": 1,
+      "omitted_component": "TEST-20",
+      "omitted_stays": 5,
+      "retained_stays": 26704,
+      "CEM_AP": [
+        0.37672653813554535,
+        0.37391698774978366,
+        0.3775609644557494
+      ],
+      "baseline_AP": [
+        0.36767015116549495,
+        0.37187781024711275,
+        0.3718643131225946
+      ],
+      "seed_differences": [
+        0.0090563869700504,
+        0.002039177502670908,
+        0.0056966513331547786
+      ],
+      "mean": 0.005597405268625362,
+      "sample_SD": 0.003509657321343998,
+      "positive_seeds": 3,
+      "influence": -3.1848277753598886e-05,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "TabM_mini_PLE_hospital",
+      "endpoint": 1,
+      "omitted_component": "TEST-21",
+      "omitted_stays": 5,
+      "retained_stays": 26704,
+      "CEM_AP": [
+        0.37673215512033253,
+        0.3739249084716882,
+        0.37757041999594054
+      ],
+      "baseline_AP": [
+        0.36761872126504325,
+        0.37185745166812084,
+        0.3718386944788465
+      ],
+      "seed_differences": [
+        0.009113433855289288,
+        0.002067456803567347,
+        0.005731725517094055
+      ],
+      "mean": 0.005637538725316897,
+      "sample_SD": 0.0035239326777276848,
+      "positive_seeds": 3,
+      "influence": 8.285178937935886e-06,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "TabM_mini_PLE_hospital",
+      "endpoint": 1,
+      "omitted_component": "TEST-22",
+      "omitted_stays": 4,
+      "retained_stays": 26705,
+      "CEM_AP": [
+        0.3767067567410588,
+        0.3738999049430761,
+        0.3775469965327303
+      ],
+      "baseline_AP": [
+        0.3676025587539635,
+        0.3718434136037594,
+        0.37182022176238205
+      ],
+      "seed_differences": [
+        0.009104197987095275,
+        0.002056491339316735,
+        0.00572677477034822
+      ],
+      "mean": 0.005629154698920076,
+      "sample_SD": 0.0035248673034661434,
+      "positive_seeds": 3,
+      "influence": -9.884745888477653e-08,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "LightGBM_hospital",
+      "endpoint": 0,
+      "omitted_component": "TEST-01",
+      "omitted_stays": 4667,
+      "retained_stays": 22042,
+      "CEM_AP": [
+        0.3551896779533008,
+        0.3546894209010678,
+        0.3565127990947916
+      ],
+      "baseline_AP": [
+        0.3471416204246766,
+        0.3483391424359184,
+        0.344523350504739
+      ],
+      "seed_differences": [
+        0.008048057528624197,
+        0.006350278465149406,
+        0.011989448590052632
+      ],
+      "mean": 0.008795928194608746,
+      "sample_SD": 0.0028930162156787843,
+      "positive_seeds": 3,
+      "influence": 0.0027312097088039175,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "LightGBM_hospital",
+      "endpoint": 0,
+      "omitted_component": "TEST-02",
+      "omitted_stays": 3555,
+      "retained_stays": 23154,
+      "CEM_AP": [
+        0.36636329038271553,
+        0.36910237396220624,
+        0.367450164311224
+      ],
+      "baseline_AP": [
+        0.36055802653320024,
+        0.36318241895861625,
+        0.3593145744682706
+      ],
+      "seed_differences": [
+        0.005805263849515296,
+        0.005919955003589994,
+        0.008135589842953428
+      ],
+      "mean": 0.006620269565352906,
+      "sample_SD": 0.0013135582107338215,
+      "positive_seeds": 3,
+      "influence": 0.0005555510795480778,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "LightGBM_hospital",
+      "endpoint": 0,
+      "omitted_component": "TEST-03",
+      "omitted_stays": 3361,
+      "retained_stays": 23348,
+      "CEM_AP": [
+        0.36033185126121897,
+        0.36470991397794844,
+        0.3643832088003486
+      ],
+      "baseline_AP": [
+        0.3591016057796648,
+        0.3627215792291338,
+        0.35574778689175357
+      ],
+      "seed_differences": [
+        0.0012302454815541486,
+        0.0019883347488146574,
+        0.008635421908595009
+      ],
+      "mean": 0.003951334046321271,
+      "sample_SD": 0.004074209636286405,
+      "positive_seeds": 3,
+      "influence": -0.0021133844394835566,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "LightGBM_hospital",
+      "endpoint": 0,
+      "omitted_component": "TEST-04",
+      "omitted_stays": 3294,
+      "retained_stays": 23415,
+      "CEM_AP": [
+        0.380541473667069,
+        0.38333319889379686,
+        0.3792016180719596
+      ],
+      "baseline_AP": [
+        0.3757290415644985,
+        0.3761593308864681,
+        0.3724423295060819
+      ],
+      "seed_differences": [
+        0.004812432102570485,
+        0.007173868007328776,
+        0.006759288565877708
+      ],
+      "mean": 0.0062485295585923235,
+      "sample_SD": 0.0012608532649411534,
+      "positive_seeds": 3,
+      "influence": 0.00018381107278749552,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "LightGBM_hospital",
+      "endpoint": 0,
+      "omitted_component": "TEST-05",
+      "omitted_stays": 2915,
+      "retained_stays": 23794,
+      "CEM_AP": [
+        0.37826509500150923,
+        0.3806044015106497,
+        0.3796193522652234
+      ],
+      "baseline_AP": [
+        0.38108966373560255,
+        0.38128272602974633,
+        0.3760256275772974
+      ],
+      "seed_differences": [
+        -0.0028245687340933134,
+        -0.000678324519096607,
+        0.0035937246879260143
+      ],
+      "mean": 3.02771449120313e-05,
+      "sample_SD": 0.003267293964653472,
+      "positive_seeds": 1,
+      "influence": -0.006034441340892796,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "LightGBM_hospital",
+      "endpoint": 0,
+      "omitted_component": "TEST-06",
+      "omitted_stays": 2462,
+      "retained_stays": 24247,
+      "CEM_AP": [
+        0.378253500700067,
+        0.3821330468682563,
+        0.37967649755713156
+      ],
+      "baseline_AP": [
+        0.3767151867724673,
+        0.3761706392056372,
+        0.3712848327884616
+      ],
+      "seed_differences": [
+        0.0015383139275997326,
+        0.005962407662619074,
+        0.008391664768669982
+      ],
+      "mean": 0.005297462119629596,
+      "sample_SD": 0.0034747257257308458,
+      "positive_seeds": 3,
+      "influence": -0.0007672563661752316,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "LightGBM_hospital",
+      "endpoint": 0,
+      "omitted_component": "TEST-07",
+      "omitted_stays": 1981,
+      "retained_stays": 24728,
+      "CEM_AP": [
+        0.37213971378124255,
+        0.37664464814139176,
+        0.3743505655606221
+      ],
+      "baseline_AP": [
+        0.36808816215658524,
+        0.36902427156593925,
+        0.3676793626939449
+      ],
+      "seed_differences": [
+        0.0040515516246573124,
+        0.007620376575452503,
+        0.006671202866677162
+      ],
+      "mean": 0.0061143770222623255,
+      "sample_SD": 0.0018484234223009606,
+      "positive_seeds": 3,
+      "influence": 4.9658536457497515e-05,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "LightGBM_hospital",
+      "endpoint": 0,
+      "omitted_component": "TEST-08",
+      "omitted_stays": 1630,
+      "retained_stays": 25079,
+      "CEM_AP": [
+        0.3656421350938521,
+        0.3700208424277086,
+        0.36633409920863014
+      ],
+      "baseline_AP": [
+        0.36181889507768183,
+        0.3618466985759982,
+        0.3556229769816877
+      ],
+      "seed_differences": [
+        0.003823240016170293,
+        0.008174143851710391,
+        0.010711122226942427
+      ],
+      "mean": 0.007569502031607704,
+      "sample_SD": 0.0034835218006107876,
+      "positive_seeds": 3,
+      "influence": 0.001504783545802876,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "LightGBM_hospital",
+      "endpoint": 0,
+      "omitted_component": "TEST-09",
+      "omitted_stays": 1127,
+      "retained_stays": 25582,
+      "CEM_AP": [
+        0.36521117967478456,
+        0.36860493338719513,
+        0.36604836765232196
+      ],
+      "baseline_AP": [
+        0.3626574604533437,
+        0.36357411348920055,
+        0.3588234995782731
+      ],
+      "seed_differences": [
+        0.0025537192214408755,
+        0.005030819897994587,
+        0.0072248680740488735
+      ],
+      "mean": 0.004936469064494779,
+      "sample_SD": 0.002337003307794372,
+      "positive_seeds": 3,
+      "influence": -0.001128249421310049,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "LightGBM_hospital",
+      "endpoint": 0,
+      "omitted_component": "TEST-10",
+      "omitted_stays": 656,
+      "retained_stays": 26053,
+      "CEM_AP": [
+        0.3658835108930871,
+        0.3701551479486711,
+        0.3700708399966104
+      ],
+      "baseline_AP": [
+        0.3612437541034599,
+        0.3597211786036746,
+        0.3568178183922779
+      ],
+      "seed_differences": [
+        0.004639756789627247,
+        0.010433969344996519,
+        0.013253021604332504
+      ],
+      "mean": 0.009442249246318757,
+      "sample_SD": 0.00439143646858872,
+      "positive_seeds": 3,
+      "influence": 0.003377530760513929,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "LightGBM_hospital",
+      "endpoint": 0,
+      "omitted_component": "TEST-11",
+      "omitted_stays": 394,
+      "retained_stays": 26315,
+      "CEM_AP": [
+        0.37033967356183894,
+        0.3736647243491888,
+        0.3715296097635699
+      ],
+      "baseline_AP": [
+        0.36677498785362395,
+        0.36805417056174267,
+        0.36339266475248466
+      ],
+      "seed_differences": [
+        0.0035646857082149985,
+        0.005610553787446126,
+        0.00813694501108525
+      ],
+      "mean": 0.005770728168915458,
+      "sample_SD": 0.0022903341803174057,
+      "positive_seeds": 3,
+      "influence": -0.00029399031688936983,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "LightGBM_hospital",
+      "endpoint": 0,
+      "omitted_component": "TEST-12",
+      "omitted_stays": 313,
+      "retained_stays": 26396,
+      "CEM_AP": [
+        0.36901009571317783,
+        0.3715617955600298,
+        0.3704486835883458
+      ],
+      "baseline_AP": [
+        0.3639751958910544,
+        0.3652754611564172,
+        0.36098758611197246
+      ],
+      "seed_differences": [
+        0.0050348998221234065,
+        0.006286334403612592,
+        0.009461097476373359
+      ],
+      "mean": 0.006927443900703119,
+      "sample_SD": 0.0022816819364378325,
+      "positive_seeds": 3,
+      "influence": 0.000862725414898291,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "LightGBM_hospital",
+      "endpoint": 0,
+      "omitted_component": "TEST-13",
+      "omitted_stays": 170,
+      "retained_stays": 26539,
+      "CEM_AP": [
+        0.36944840391982536,
+        0.37266978239144427,
+        0.37089732456635127
+      ],
+      "baseline_AP": [
+        0.3657742965073092,
+        0.3666745207583911,
+        0.36223686365584773
+      ],
+      "seed_differences": [
+        0.00367410741251617,
+        0.005995261633053195,
+        0.008660460910503542
+      ],
+      "mean": 0.006109943318690969,
+      "sample_SD": 0.0024951541472398586,
+      "positive_seeds": 3,
+      "influence": 4.522483288614109e-05,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "LightGBM_hospital",
+      "endpoint": 0,
+      "omitted_component": "TEST-14",
+      "omitted_stays": 83,
+      "retained_stays": 26626,
+      "CEM_AP": [
+        0.36990788315411915,
+        0.3732759320493233,
+        0.37142589369836515
+      ],
+      "baseline_AP": [
+        0.3664601533537991,
+        0.3671602673875831,
+        0.36287448788658166
+      ],
+      "seed_differences": [
+        0.003447729800320043,
+        0.006115664661740183,
+        0.008551405811783486
+      ],
+      "mean": 0.006038266757947904,
+      "sample_SD": 0.0025527181658245054,
+      "positive_seeds": 3,
+      "influence": -2.645172785692429e-05,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "LightGBM_hospital",
+      "endpoint": 0,
+      "omitted_component": "TEST-15",
+      "omitted_stays": 49,
+      "retained_stays": 26660,
+      "CEM_AP": [
+        0.3692452179579583,
+        0.37232820033465974,
+        0.3707566636435099
+      ],
+      "baseline_AP": [
+        0.3656222318370467,
+        0.36634750432313523,
+        0.3620695292026629
+      ],
+      "seed_differences": [
+        0.0036229861209116088,
+        0.005980696011524511,
+        0.00868713444084701
+      ],
+      "mean": 0.006096938857761043,
+      "sample_SD": 0.0025340745551486873,
+      "positive_seeds": 3,
+      "influence": 3.22203719562153e-05,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "LightGBM_hospital",
+      "endpoint": 0,
+      "omitted_component": "TEST-16",
+      "omitted_stays": 13,
+      "retained_stays": 26696,
+      "CEM_AP": [
+        0.3692039750989191,
+        0.3724183722117784,
+        0.370715032389697
+      ],
+      "baseline_AP": [
+        0.36558513821246974,
+        0.3664414576614904,
+        0.36205899836194544
+      ],
+      "seed_differences": [
+        0.0036188368864493725,
+        0.005976914550288037,
+        0.008656034027751558
+      ],
+      "mean": 0.006083928488162989,
+      "sample_SD": 0.0025203031062275734,
+      "positive_seeds": 3,
+      "influence": 1.921000235816095e-05,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "LightGBM_hospital",
+      "endpoint": 0,
+      "omitted_component": "TEST-17",
+      "omitted_stays": 9,
+      "retained_stays": 26700,
+      "CEM_AP": [
+        0.36919184280709877,
+        0.3724038197187808,
+        0.3707716277554982
+      ],
+      "baseline_AP": [
+        0.36560153426366676,
+        0.36644117779789254,
+        0.36208217480703064
+      ],
+      "seed_differences": [
+        0.003590308543432008,
+        0.005962641920888245,
+        0.008689452948467569
+      ],
+      "mean": 0.006080801137595941,
+      "sample_SD": 0.002551624897241187,
+      "positive_seeds": 3,
+      "influence": 1.6082651791112998e-05,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "LightGBM_hospital",
+      "endpoint": 0,
+      "omitted_component": "TEST-18",
+      "omitted_stays": 9,
+      "retained_stays": 26700,
+      "CEM_AP": [
+        0.36917869017663524,
+        0.3724043010790315,
+        0.37070000250615454
+      ],
+      "baseline_AP": [
+        0.36566308331748665,
+        0.36656018210717745,
+        0.3621683859801183
+      ],
+      "seed_differences": [
+        0.00351560685914859,
+        0.005844118971854051,
+        0.008531616526036234
+      ],
+      "mean": 0.005963780785679625,
+      "sample_SD": 0.002510144907538924,
+      "positive_seeds": 3,
+      "influence": -0.0001009377001252032,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "LightGBM_hospital",
+      "endpoint": 0,
+      "omitted_component": "TEST-19",
+      "omitted_stays": 7,
+      "retained_stays": 26702,
+      "CEM_AP": [
+        0.3691684821195431,
+        0.3723944546563641,
+        0.3706851694092528
+      ],
+      "baseline_AP": [
+        0.3655864928870432,
+        0.36645622810355816,
+        0.3620747168951356
+      ],
+      "seed_differences": [
+        0.003581989232499916,
+        0.005938226552805959,
+        0.008610452514117184
+      ],
+      "mean": 0.006043556099807686,
+      "sample_SD": 0.002515885823869392,
+      "positive_seeds": 3,
+      "influence": -2.1162385997142152e-05,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "LightGBM_hospital",
+      "endpoint": 0,
+      "omitted_component": "TEST-20",
+      "omitted_stays": 5,
+      "retained_stays": 26704,
+      "CEM_AP": [
+        0.36917418668493024,
+        0.37239292300800775,
+        0.3706874465828972
+      ],
+      "baseline_AP": [
+        0.36557473537926344,
+        0.36643949602701176,
+        0.3620654246076339
+      ],
+      "seed_differences": [
+        0.003599451305666801,
+        0.0059534269809959905,
+        0.008622021975263294
+      ],
+      "mean": 0.006058300087308695,
+      "sample_SD": 0.0025129271396308927,
+      "positive_seeds": 3,
+      "influence": -6.418398496133015e-06,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "LightGBM_hospital",
+      "endpoint": 0,
+      "omitted_component": "TEST-21",
+      "omitted_stays": 5,
+      "retained_stays": 26704,
+      "CEM_AP": [
+        0.36940155488161247,
+        0.37261754778547357,
+        0.3709069553241243
+      ],
+      "baseline_AP": [
+        0.36568826766734164,
+        0.36662516279363555,
+        0.3623214594056045
+      ],
+      "seed_differences": [
+        0.003713287214270833,
+        0.005992384991838018,
+        0.008585495918519814
+      ],
+      "mean": 0.006097056041542888,
+      "sample_SD": 0.0024377902772643556,
+      "positive_seeds": 3,
+      "influence": 3.2337555738060075e-05,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "LightGBM_hospital",
+      "endpoint": 0,
+      "omitted_component": "TEST-22",
+      "omitted_stays": 4,
+      "retained_stays": 26705,
+      "CEM_AP": [
+        0.3691587905830629,
+        0.3723849069808293,
+        0.37067713699495153
+      ],
+      "baseline_AP": [
+        0.365560854453236,
+        0.3664196816791712,
+        0.36204541740085366
+      ],
+      "seed_differences": [
+        0.0035979361298268953,
+        0.005965225301658106,
+        0.008631719594097864
+      ],
+      "mean": 0.006064960341860955,
+      "sample_SD": 0.0025183733440407832,
+      "positive_seeds": 3,
+      "influence": 2.4185605612681016e-07,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "LightGBM_hospital",
+      "endpoint": 1,
+      "omitted_component": "TEST-01",
+      "omitted_stays": 4667,
+      "retained_stays": 22042,
+      "CEM_AP": [
+        0.3741109207006876,
+        0.37333380230269936,
+        0.3759282098724339
+      ],
+      "baseline_AP": [
+        0.3539674395541298,
+        0.35378792627184585,
+        0.35533574381257754
+      ],
+      "seed_differences": [
+        0.020143481146557785,
+        0.019545876030853504,
+        0.020592466059856374
+      ],
+      "mean": 0.020093941079089222,
+      "sample_SD": 0.0005250507936530039,
+      "positive_seeds": 3,
+      "influence": 0.0016106728862476105,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "LightGBM_hospital",
+      "endpoint": 1,
+      "omitted_component": "TEST-02",
+      "omitted_stays": 3555,
+      "retained_stays": 23154,
+      "CEM_AP": [
+        0.3712994676588327,
+        0.36858888197258677,
+        0.37226238902760694
+      ],
+      "baseline_AP": [
+        0.35294835562815374,
+        0.35108883980233413,
+        0.3529283018148913
+      ],
+      "seed_differences": [
+        0.018351112030678962,
+        0.01750004217025264,
+        0.019334087212715623
+      ],
+      "mean": 0.01839508047121574,
+      "sample_SD": 0.0009178127381270045,
+      "positive_seeds": 3,
+      "influence": -8.818772162587016e-05,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "LightGBM_hospital",
+      "endpoint": 1,
+      "omitted_component": "TEST-03",
+      "omitted_stays": 3361,
+      "retained_stays": 23348,
+      "CEM_AP": [
+        0.3669290035924224,
+        0.36205457366580834,
+        0.3653908449932921
+      ],
+      "baseline_AP": [
+        0.34725479243521024,
+        0.347202345129096,
+        0.3524220984746889
+      ],
+      "seed_differences": [
+        0.019674211157212185,
+        0.014852228536712364,
+        0.012968746518603191
+      ],
+      "mean": 0.015831728737509248,
+      "sample_SD": 0.003458378158534685,
+      "positive_seeds": 3,
+      "influence": -0.0026515394553323635,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "LightGBM_hospital",
+      "endpoint": 1,
+      "omitted_component": "TEST-04",
+      "omitted_stays": 3294,
+      "retained_stays": 23415,
+      "CEM_AP": [
+        0.38322162056654036,
+        0.38077853765289454,
+        0.3832440419454881
+      ],
+      "baseline_AP": [
+        0.36407385382243673,
+        0.36313459149886074,
+        0.36679389612476354
+      ],
+      "seed_differences": [
+        0.019147766744103623,
+        0.017643946154033807,
+        0.01645014582072457
+      ],
+      "mean": 0.017747286239620668,
+      "sample_SD": 0.00135177625424104,
+      "positive_seeds": 3,
+      "influence": -0.0007359819532209433,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "LightGBM_hospital",
+      "endpoint": 1,
+      "omitted_component": "TEST-05",
+      "omitted_stays": 2915,
+      "retained_stays": 23794,
+      "CEM_AP": [
+        0.3718656104532922,
+        0.3686979015518732,
+        0.3753982697834657
+      ],
+      "baseline_AP": [
+        0.35661998253887933,
+        0.35583329993386403,
+        0.36034989993075545
+      ],
+      "seed_differences": [
+        0.015245627914412863,
+        0.012864601618009175,
+        0.015048369852710242
+      ],
+      "mean": 0.014386199795044094,
+      "sample_SD": 0.0013214285621983726,
+      "positive_seeds": 3,
+      "influence": -0.004097068397797518,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "LightGBM_hospital",
+      "endpoint": 1,
+      "omitted_component": "TEST-06",
+      "omitted_stays": 2462,
+      "retained_stays": 24247,
+      "CEM_AP": [
+        0.38020423124158687,
+        0.3785655491956559,
+        0.38160298395248626
+      ],
+      "baseline_AP": [
+        0.3617111291333677,
+        0.3612893367266598,
+        0.3640873394621282
+      ],
+      "seed_differences": [
+        0.01849310210821914,
+        0.017276212468996077,
+        0.017515644490358084
+      ],
+      "mean": 0.017761653022524432,
+      "sample_SD": 0.0006446667720117812,
+      "positive_seeds": 3,
+      "influence": -0.0007216151703171789,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "LightGBM_hospital",
+      "endpoint": 1,
+      "omitted_component": "TEST-07",
+      "omitted_stays": 1981,
+      "retained_stays": 24728,
+      "CEM_AP": [
+        0.38212455721729527,
+        0.3791896168087181,
+        0.3807475468745661
+      ],
+      "baseline_AP": [
+        0.35922060816792534,
+        0.3576438671683651,
+        0.36179437782651513
+      ],
+      "seed_differences": [
+        0.02290394904936993,
+        0.021545749640352996,
+        0.018953169048050944
+      ],
+      "mean": 0.021134289245924625,
+      "sample_SD": 0.0020072718791541116,
+      "positive_seeds": 3,
+      "influence": 0.0026510210530830136,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "LightGBM_hospital",
+      "endpoint": 1,
+      "omitted_component": "TEST-08",
+      "omitted_stays": 1630,
+      "retained_stays": 25079,
+      "CEM_AP": [
+        0.37984285697516035,
+        0.37716004644438345,
+        0.38133168982471927
+      ],
+      "baseline_AP": [
+        0.35985437375732904,
+        0.35845099799393293,
+        0.36298452033896295
+      ],
+      "seed_differences": [
+        0.01998848321783131,
+        0.018709048450450516,
+        0.01834716948575632
+      ],
+      "mean": 0.019014900384679383,
+      "sample_SD": 0.0008623437516606336,
+      "positive_seeds": 3,
+      "influence": 0.000531632191837772,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "LightGBM_hospital",
+      "endpoint": 1,
+      "omitted_component": "TEST-09",
+      "omitted_stays": 1127,
+      "retained_stays": 25582,
+      "CEM_AP": [
+        0.3830259078856613,
+        0.38002621217760424,
+        0.38399918095225355
+      ],
+      "baseline_AP": [
+        0.36263707368023956,
+        0.36159324551111355,
+        0.3660734371061487
+      ],
+      "seed_differences": [
+        0.020388834205421758,
+        0.01843296666649069,
+        0.017925743846104847
+      ],
+      "mean": 0.0189158482393391,
+      "sample_SD": 0.0013006092762960714,
+      "positive_seeds": 3,
+      "influence": 0.00043258004649748827,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "LightGBM_hospital",
+      "endpoint": 1,
+      "omitted_component": "TEST-10",
+      "omitted_stays": 656,
+      "retained_stays": 26053,
+      "CEM_AP": [
+        0.3697184651275489,
+        0.3662349201094043,
+        0.37115830301863423
+      ],
+      "baseline_AP": [
+        0.3486209859126311,
+        0.3467049610853024,
+        0.3491486960080251
+      ],
+      "seed_differences": [
+        0.021097479214917836,
+        0.019529959024101873,
+        0.02200960701060911
+      ],
+      "mean": 0.020879015083209607,
+      "sample_SD": 0.001254176409792348,
+      "positive_seeds": 3,
+      "influence": 0.0023957468903679953,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "LightGBM_hospital",
+      "endpoint": 1,
+      "omitted_component": "TEST-11",
+      "omitted_stays": 394,
+      "retained_stays": 26315,
+      "CEM_AP": [
+        0.3781140998342326,
+        0.3749296731947078,
+        0.3785810627324687
+      ],
+      "baseline_AP": [
+        0.35832241387267855,
+        0.35747822196041,
+        0.36086186231698414
+      ],
+      "seed_differences": [
+        0.019791685961554062,
+        0.01745145123429781,
+        0.01771920041548458
+      ],
+      "mean": 0.01832077920377882,
+      "sample_SD": 0.0012808580809590916,
+      "positive_seeds": 3,
+      "influence": -0.0001624889890627923,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "LightGBM_hospital",
+      "endpoint": 1,
+      "omitted_component": "TEST-12",
+      "omitted_stays": 313,
+      "retained_stays": 26396,
+      "CEM_AP": [
+        0.37847664496507805,
+        0.375619073352785,
+        0.37940735423847904
+      ],
+      "baseline_AP": [
+        0.35880892583544793,
+        0.3578996469912543,
+        0.361578218780275
+      ],
+      "seed_differences": [
+        0.019667719129630112,
+        0.017719426361530677,
+        0.017829135458204026
+      ],
+      "mean": 0.018405426983121604,
+      "sample_SD": 0.0010945524742222328,
+      "positive_seeds": 3,
+      "influence": -7.784120972000735e-05,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "LightGBM_hospital",
+      "endpoint": 1,
+      "omitted_component": "TEST-13",
+      "omitted_stays": 170,
+      "retained_stays": 26539,
+      "CEM_AP": [
+        0.37706031620694663,
+        0.3742466819864715,
+        0.37788645267362775
+      ],
+      "baseline_AP": [
+        0.3573468593544097,
+        0.3563312887058914,
+        0.35983023274623527
+      ],
+      "seed_differences": [
+        0.019713456852536948,
+        0.01791539328058006,
+        0.01805621992739248
+      ],
+      "mean": 0.01856169002016983,
+      "sample_SD": 0.0009999415799029695,
+      "positive_seeds": 3,
+      "influence": 7.842182732821848e-05,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "LightGBM_hospital",
+      "endpoint": 1,
+      "omitted_component": "TEST-14",
+      "omitted_stays": 83,
+      "retained_stays": 26626,
+      "CEM_AP": [
+        0.3771524492001562,
+        0.3743676166699419,
+        0.37799436240293166
+      ],
+      "baseline_AP": [
+        0.3574759196555881,
+        0.3565589867543547,
+        0.3599570394757461
+      ],
+      "seed_differences": [
+        0.01967652954456811,
+        0.017808629915587182,
+        0.018037322927185573
+      ],
+      "mean": 0.018507494129113622,
+      "sample_SD": 0.001018851301873155,
+      "positive_seeds": 3,
+      "influence": 2.4225936272010556e-05,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "LightGBM_hospital",
+      "endpoint": 1,
+      "omitted_component": "TEST-15",
+      "omitted_stays": 49,
+      "retained_stays": 26660,
+      "CEM_AP": [
+        0.3767185459728081,
+        0.37384699063412896,
+        0.37754436991704265
+      ],
+      "baseline_AP": [
+        0.35703241030169103,
+        0.35589382678838233,
+        0.3594378829355115
+      ],
+      "seed_differences": [
+        0.0196861356711171,
+        0.017953163845746634,
+        0.018106486981531167
+      ],
+      "mean": 0.0185819288327983,
+      "sample_SD": 0.0009593391226955151,
+      "positive_seeds": 3,
+      "influence": 9.866063995668875e-05,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "LightGBM_hospital",
+      "endpoint": 1,
+      "omitted_component": "TEST-16",
+      "omitted_stays": 13,
+      "retained_stays": 26696,
+      "CEM_AP": [
+        0.37681097758394533,
+        0.37401194627230183,
+        0.3777045316727319
+      ],
+      "baseline_AP": [
+        0.35720994044593624,
+        0.3562050531120976,
+        0.35971034412095515
+      ],
+      "seed_differences": [
+        0.019601037138009092,
+        0.01780689316020423,
+        0.01799418755177673
+      ],
+      "mean": 0.01846737261666335,
+      "sample_SD": 0.0009862384257861689,
+      "positive_seeds": 3,
+      "influence": -1.5895576178259763e-05,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "LightGBM_hospital",
+      "endpoint": 1,
+      "omitted_component": "TEST-17",
+      "omitted_stays": 9,
+      "retained_stays": 26700,
+      "CEM_AP": [
+        0.376752673517611,
+        0.3739975171266676,
+        0.37759889223808585
+      ],
+      "baseline_AP": [
+        0.3571114767887547,
+        0.3561373540314884,
+        0.35963184003358367
+      ],
+      "seed_differences": [
+        0.01964119672885628,
+        0.017860163095179238,
+        0.017967052204502176
+      ],
+      "mean": 0.01848947067617923,
+      "sample_SD": 0.0009988548421739042,
+      "positive_seeds": 3,
+      "influence": 6.202483337620218e-06,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "LightGBM_hospital",
+      "endpoint": 1,
+      "omitted_component": "TEST-18",
+      "omitted_stays": 9,
+      "retained_stays": 26700,
+      "CEM_AP": [
+        0.37671612811290917,
+        0.3739073392832428,
+        0.37755460439886435
+      ],
+      "baseline_AP": [
+        0.3570643838019187,
+        0.3560660650823674,
+        0.3595822585280792
+      ],
+      "seed_differences": [
+        0.019651744310990482,
+        0.017841274200875445,
+        0.017972345870785167
+      ],
+      "mean": 0.01848845479421703,
+      "sample_SD": 0.0010095676403983475,
+      "positive_seeds": 3,
+      "influence": 5.186601375418987e-06,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "LightGBM_hospital",
+      "endpoint": 1,
+      "omitted_component": "TEST-19",
+      "omitted_stays": 7,
+      "retained_stays": 26702,
+      "CEM_AP": [
+        0.3767218443390369,
+        0.3739174764372609,
+        0.3775227250484786
+      ],
+      "baseline_AP": [
+        0.3569767672010141,
+        0.35603699089692825,
+        0.35962595622645105
+      ],
+      "seed_differences": [
+        0.01974507713802276,
+        0.01788048554033267,
+        0.017896768822027564
+      ],
+      "mean": 0.018507443833460997,
+      "sample_SD": 0.0010718528041368549,
+      "positive_seeds": 3,
+      "influence": 2.4175640619385208e-05,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "LightGBM_hospital",
+      "endpoint": 1,
+      "omitted_component": "TEST-20",
+      "omitted_stays": 5,
+      "retained_stays": 26704,
+      "CEM_AP": [
+        0.37672653813554535,
+        0.37391698774978366,
+        0.3775609644557494
+      ],
+      "baseline_AP": [
+        0.3571310817415122,
+        0.35610552845156096,
+        0.3596138332152342
+      ],
+      "seed_differences": [
+        0.01959545639403315,
+        0.017811459298222698,
+        0.01794713124051517
+      ],
+      "mean": 0.018451348977590338,
+      "sample_SD": 0.0009931455352821844,
+      "positive_seeds": 3,
+      "influence": -3.191921525127345e-05,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "LightGBM_hospital",
+      "endpoint": 1,
+      "omitted_component": "TEST-21",
+      "omitted_stays": 5,
+      "retained_stays": 26704,
+      "CEM_AP": [
+        0.37673215512033253,
+        0.3739249084716882,
+        0.37757041999594054
+      ],
+      "baseline_AP": [
+        0.357077896001467,
+        0.35607728748125733,
+        0.359597557267723
+      ],
+      "seed_differences": [
+        0.019654259118865536,
+        0.017847620990430857,
+        0.01797286272821752
+      ],
+      "mean": 0.01849158094583797,
+      "sample_SD": 0.0010088541885460915,
+      "positive_seeds": 3,
+      "influence": 8.312752996359613e-06,
+      "same_mean_sign_as_full": true
+    },
+    {
+      "split": "test",
+      "baseline": "LightGBM_hospital",
+      "endpoint": 1,
+      "omitted_component": "TEST-22",
+      "omitted_stays": 4,
+      "retained_stays": 26705,
+      "CEM_AP": [
+        0.3767067567410588,
+        0.3738999049430761,
+        0.3775469965327303
+      ],
+      "baseline_AP": [
+        0.3570592724709307,
+        0.35606115229727864,
+        0.3595777764904981
+      ],
+      "seed_differences": [
+        0.01964748427012808,
+        0.017838752645797484,
+        0.01796922004223217
+      ],
+      "mean": 0.01848515231938591,
+      "sample_SD": 0.0010087205302610738,
+      "positive_seeds": 3,
+      "influence": 1.8841265442999522e-06,
+      "same_mean_sign_as_full": true
+    }
+  ],
+  "summaries": [
+    {
+      "split": "dev",
+      "baseline": "TabM_mini_PLE_hospital",
+      "endpoint": 0,
+      "full": {
+        "CEM_AP": [
+          0.394719199176738,
+          0.39302051535620364,
+          0.38930276914976947
+        ],
+        "baseline_AP": [
+          0.39642348050761556,
+          0.3989190239550162,
+          0.39871265839732234
+        ],
+        "seed_differences": [
+          -0.0017042813308775773,
+          -0.00589850859881258,
+          -0.009409889247552872
+        ],
+        "mean": -0.00567089305908101,
+        "sample_SD": 0.0038578433051159188,
+        "positive_seeds": 0
+      },
+      "leave_one_out_range": [
+        -0.010901479454904975,
+        -0.0033794054508883473
+      ],
+      "positive_leaveouts": 0,
+      "negative_leaveouts": 13,
+      "sign_reversals": 0,
+      "components": 13,
+      "largest_absolute_influence": -0.005230586395823965,
+      "most_influential_component": "DEV-01"
+    },
+    {
+      "split": "dev",
+      "baseline": "TabM_mini_PLE_hospital",
+      "endpoint": 1,
+      "full": {
+        "CEM_AP": [
+          0.3432128870583818,
+          0.34633067177253585,
+          0.34232534452695695
+        ],
+        "baseline_AP": [
+          0.32403325194754273,
+          0.3257589951927033,
+          0.325312536052479
+        ],
+        "seed_differences": [
+          0.01917963511083909,
+          0.020571676579832554,
+          0.017012808474477947
+        ],
+        "mean": 0.018921373388383195,
+        "sample_SD": 0.0017934352192906175,
+        "positive_seeds": 3
+      },
+      "leave_one_out_range": [
+        0.01359288374948849,
+        0.022742011455234707
+      ],
+      "positive_leaveouts": 13,
+      "negative_leaveouts": 0,
+      "sign_reversals": 0,
+      "components": 13,
+      "largest_absolute_influence": -0.005328489638894705,
+      "most_influential_component": "DEV-03"
+    },
+    {
+      "split": "dev",
+      "baseline": "LightGBM_hospital",
+      "endpoint": 0,
+      "full": {
+        "CEM_AP": [
+          0.394719199176738,
+          0.39302051535620364,
+          0.38930276914976947
+        ],
+        "baseline_AP": [
+          0.3642629963374742,
+          0.37708668788084265,
+          0.37302233463655665
+        ],
+        "seed_differences": [
+          0.030456202839263757,
+          0.015933827475360984,
+          0.016280434513212816
+        ],
+        "mean": 0.02089015494261252,
+        "sample_SD": 0.008286252975889722,
+        "positive_seeds": 3
+      },
+      "leave_one_out_range": [
+        0.012793563999815294,
+        0.02445468808697328
+      ],
+      "positive_leaveouts": 13,
+      "negative_leaveouts": 0,
+      "sign_reversals": 0,
+      "components": 13,
+      "largest_absolute_influence": -0.008096590942797226,
+      "most_influential_component": "DEV-01"
+    },
+    {
+      "split": "dev",
+      "baseline": "LightGBM_hospital",
+      "endpoint": 1,
+      "full": {
+        "CEM_AP": [
+          0.3432128870583818,
+          0.34633067177253585,
+          0.34232534452695695
+        ],
+        "baseline_AP": [
+          0.3200441100239909,
+          0.3277201831527769,
+          0.32149093844939336
+        ],
+        "seed_differences": [
+          0.02316877703439091,
+          0.018610488619758947,
+          0.020834406077563594
+        ],
+        "mean": 0.02087122391057115,
+        "sample_SD": 0.0022793672328877855,
+        "positive_seeds": 3
+      },
+      "leave_one_out_range": [
+        0.01910192472931384,
+        0.02422157472504538
+      ],
+      "positive_leaveouts": 13,
+      "negative_leaveouts": 0,
+      "sign_reversals": 0,
+      "components": 13,
+      "largest_absolute_influence": 0.0033503508144742296,
+      "most_influential_component": "DEV-01"
+    },
+    {
+      "split": "test",
+      "baseline": "TabM_mini_PLE_hospital",
+      "endpoint": 0,
+      "full": {
+        "CEM_AP": [
+          0.36915766764701974,
+          0.37238167281221557,
+          0.3706757622245338
+        ],
+        "baseline_AP": [
+          0.3719406197838695,
+          0.37577997447347716,
+          0.3774390339246821
+        ],
+        "seed_differences": [
+          -0.002782952136849759,
+          -0.0033983016612615935,
+          -0.006763271700148288
+        ],
+        "mean": -0.004314841832753213,
+        "sample_SD": 0.0021426083102057325,
+        "positive_seeds": 0
+      },
+      "leave_one_out_range": [
+        -0.006590893692519972,
+        -0.0024414386957250143
+      ],
+      "positive_leaveouts": 0,
+      "negative_leaveouts": 22,
+      "sign_reversals": 0,
+      "components": 22,
+      "largest_absolute_influence": -0.002276051859766759,
+      "most_influential_component": "TEST-01"
+    },
+    {
+      "split": "test",
+      "baseline": "TabM_mini_PLE_hospital",
+      "endpoint": 1,
+      "full": {
+        "CEM_AP": [
+          0.37670280021051383,
+          0.3738979042175302,
+          0.3775445719129372
+        ],
+        "baseline_AP": [
+          0.36760000313411534,
+          0.3718395541047609,
+          0.37181795846296817
+        ],
+        "seed_differences": [
+          0.009102797076398494,
+          0.002058350112769336,
+          0.0057266134499690535
+        ],
+        "mean": 0.005629253546378961,
+        "sample_SD": 0.0035232325312085666,
+        "positive_seeds": 3
+      },
+      "leave_one_out_range": [
+        0.001549630207670775,
+        0.009059648406795276
+      ],
+      "positive_leaveouts": 22,
+      "negative_leaveouts": 0,
+      "sign_reversals": 0,
+      "components": 22,
+      "largest_absolute_influence": -0.004079623338708186,
+      "most_influential_component": "TEST-05"
+    },
+    {
+      "split": "test",
+      "baseline": "LightGBM_hospital",
+      "endpoint": 0,
+      "full": {
+        "CEM_AP": [
+          0.36915766764701974,
+          0.37238167281221557,
+          0.3706757622245338
+        ],
+        "baseline_AP": [
+          0.36555996572078525,
+          0.36641816114098613,
+          0.36204282036458324
+        ],
+        "seed_differences": [
+          0.0035977019262344867,
+          0.005963511671229438,
+          0.00863294185995056
+        ],
+        "mean": 0.006064718485804828,
+        "sample_SD": 0.0025191451748578595,
+        "positive_seeds": 3
+      },
+      "leave_one_out_range": [
+        3.02771449120313e-05,
+        0.009442249246318757
+      ],
+      "positive_leaveouts": 22,
+      "negative_leaveouts": 0,
+      "sign_reversals": 0,
+      "components": 22,
+      "largest_absolute_influence": -0.006034441340892796,
+      "most_influential_component": "TEST-05"
+    },
+    {
+      "split": "test",
+      "baseline": "LightGBM_hospital",
+      "endpoint": 1,
+      "full": {
+        "CEM_AP": [
+          0.37670280021051383,
+          0.3738979042175302,
+          0.3775445719129372
+        ],
+        "baseline_AP": [
+          0.3570583344886883,
+          0.35606056369238676,
+          0.3595765735813814
+        ],
+        "seed_differences": [
+          0.019644465721825544,
+          0.017837340525143464,
+          0.017967998331555823
+        ],
+        "mean": 0.01848326819284161,
+        "sample_SD": 0.0010077463180696406,
+        "positive_seeds": 3
+      },
+      "leave_one_out_range": [
+        0.014386199795044094,
+        0.021134289245924625
+      ],
+      "positive_leaveouts": 22,
+      "negative_leaveouts": 0,
+      "sign_reversals": 0,
+      "components": 22,
+      "largest_absolute_influence": -0.004097068397797518,
+      "most_influential_component": "TEST-05"
+    }
+  ],
+  "inputs_sha256": {
+    "runs/cem_icde_evidence_20261028/eicu_statistics_v1/verified-results.json": "9d2a99ad4c57a4e2842b30d3222265fd6e736f84edf68edbae51978bd946ba2d",
+    "work/cem_icde_evidence_20261028/eicu/hospital_v1/work/cem_icde_evidence_20261028/config.json": "90e65d75ab6baa690e23e0be2ddfc1deee9efd0a7d9ec0a179d62ab702503038",
+    "work/cem_icde_evidence_20261028/eicu/hospital_v1/source_manifest.json": "65a75589cf731b90a036298bc49210eb93872c89f1487381eb772f3079b0c884",
+    "runs/cem_icde_evidence_20261028/eicu/hospital_preparation_v2/completion.json": "d4033c5a6a85c9062992e13e61b38297922bc01b1099c82423de1debdb602d20",
+    "runs/cem_icde_evidence_20261028/eicu/hospital_preparation_v2/dev_targets.npz": "c4bebbd3d1f9f3ce42709b8cc043a84cb86482ac5ece17b96bedb2b435fecaf3",
+    "runs/cem_icde_evidence_20261028/eicu_statistics_v1/bootstrap/hospital_dev_CEM_hospital.json": "3b728375ef112e0e00384917aaf1fa0ba8ceaf5d94b21e66567a93f4d4efb5cd",
+    "runs/cem_icde_evidence_20261028/eicu/hospital_v1/screen/jobs/CEM_hospital_t0_s48/predictions_dev.npz": "acfb36b98a98a23676a42959fb83bdfe2fd20ea99d523f77038f5f9b4bcc3fc3",
+    "runs/cem_icde_evidence_20261028/eicu/hospital_v1/screen/jobs/CEM_hospital_t1_s48/predictions_dev.npz": "3817ad960d6b9521bfefac0155824a5263420c67693c0dedf86239eabfd9b8ff",
+    "runs/cem_icde_evidence_20261028/eicu/hospital_v1/screen/jobs/CEM_hospital_t0_s49/predictions_dev.npz": "341c428ed531c2164caa61fa235ac0f006789b02b42f083c82965ad432254a52",
+    "runs/cem_icde_evidence_20261028/eicu/hospital_v1/screen/jobs/CEM_hospital_t1_s49/predictions_dev.npz": "847aff8ebe3afe2c6d50c1e979241bbf149dae7782283d68d5ca4f5040a82591",
+    "runs/cem_icde_evidence_20261028/eicu/hospital_v1/screen/jobs/CEM_hospital_t0_s50/predictions_dev.npz": "1e937c9d149e5a5423db10ccd65d336dd6a1796866922138786acd7bdd0ac9d2",
+    "runs/cem_icde_evidence_20261028/eicu/hospital_v1/screen/jobs/CEM_hospital_t1_s50/predictions_dev.npz": "4f4f045a532a7ef96f470fd327480be11659a447c2e014d739ce26569d5cab8e",
+    "runs/cem_icde_evidence_20261028/eicu_statistics_v1/bootstrap/hospital_dev_TabM_mini_PLE_hospital.json": "754e58935f3fb9571c562df14c665c2d2c13fc0821bc137bd385b65566d4b0db",
+    "runs/cem_icde_evidence_20261028/eicu/hospital_v1/screen/jobs/TabM_mini_PLE_hospital_t0_s48/predictions_dev.npz": "0387f50cbe77eb5aa659dc40daa663631230e8c0a70accb91c147c03a912dbc7",
+    "runs/cem_icde_evidence_20261028/eicu/hospital_v1/screen/jobs/TabM_mini_PLE_hospital_t1_s48/predictions_dev.npz": "032061192bb64bd17bf7d8e0223577a1ce6c317e84c534c29128545f2f3f3390",
+    "runs/cem_icde_evidence_20261028/eicu/hospital_v1/screen/jobs/TabM_mini_PLE_hospital_t0_s49/predictions_dev.npz": "cad2d9a8fe8112b108303ad28311852dd0aa878e7a5f758894f26ca3eb212479",
+    "runs/cem_icde_evidence_20261028/eicu/hospital_v1/screen/jobs/TabM_mini_PLE_hospital_t1_s49/predictions_dev.npz": "e2a8ea9606c4570a963a9c06ae779c692d42cfa3745a73a3509ad0ced6bf1deb",
+    "runs/cem_icde_evidence_20261028/eicu/hospital_v1/screen/jobs/TabM_mini_PLE_hospital_t0_s50/predictions_dev.npz": "917778a2a51ab9c1d4fbddba771cb5d568f462bfae3e17471224d8f26fa1c829",
+    "runs/cem_icde_evidence_20261028/eicu/hospital_v1/screen/jobs/TabM_mini_PLE_hospital_t1_s50/predictions_dev.npz": "961add64c6be3268fadf2bb23054bc51d7b6636bf85f05b9139266ace9416e41",
+    "runs/cem_icde_evidence_20261028/eicu_statistics_v1/bootstrap/hospital_dev_LightGBM_hospital.json": "613d743731b2246e410bcf72c8d0ac2df65fa42b514ebba09113118e829903c5",
+    "runs/cem_icde_evidence_20261028/eicu/hospital_v1/screen/jobs/LightGBM_hospital_t0_s48/predictions_dev.npz": "d24c5591f517c92b8819ed00e57a042e37f71cb96d56c0485a285532ebfb703e",
+    "runs/cem_icde_evidence_20261028/eicu/hospital_v1/screen/jobs/LightGBM_hospital_t1_s48/predictions_dev.npz": "905426b917abd479859bbcc78bd316c7f0eafff9e7af156d5a72744b6410b3af",
+    "runs/cem_icde_evidence_20261028/eicu/hospital_v1/screen/jobs/LightGBM_hospital_t0_s49/predictions_dev.npz": "9e3ea6a1f845b78644561203d4ee1b32ddcf2bf8218ea4cd35588be1c118b7a8",
+    "runs/cem_icde_evidence_20261028/eicu/hospital_v1/screen/jobs/LightGBM_hospital_t1_s49/predictions_dev.npz": "11bdfb908e4a422e585da5fbd320e66083f0327bef11943ed607d17d80b71610",
+    "runs/cem_icde_evidence_20261028/eicu/hospital_v1/screen/jobs/LightGBM_hospital_t0_s50/predictions_dev.npz": "77ae77d7349ab5869aefd242d0b8a7a0f392e2e5bfc76461f43cd48963b9ae31",
+    "runs/cem_icde_evidence_20261028/eicu/hospital_v1/screen/jobs/LightGBM_hospital_t1_s50/predictions_dev.npz": "cbf24734adcf3ba411e425aaff5390ea2e8e272bc803247dd7adbbd2859b3175",
+    "runs/cem_icde_evidence_20261028/eicu/hospital_preparation_v2/test_targets.npz": "8920bc5d7847493a9706854ef8703b25e1d9ce22584f4d588454cda6e7c7b2f2",
+    "runs/cem_icde_evidence_20261028/eicu_statistics_v1/bootstrap/hospital_test_CEM_hospital.json": "d447badc73eb9f36142a240b999bae35093d152d481617d14bcdf0a6884efede",
+    "runs/cem_icde_evidence_20261028/eicu/hospital_v1/screen/test/test_CEM_hospital_t0_s48/predictions_test.npz": "002b1ef84538b1a6d2cec48e4f0198d2e153bc1809c6383761ed259599242543",
+    "runs/cem_icde_evidence_20261028/eicu/hospital_v1/screen/test/test_CEM_hospital_t1_s48/predictions_test.npz": "0ee73bd349bc97ce408c7fa46024bb82d7221d27b31d2095063affcf478cd1ca",
+    "runs/cem_icde_evidence_20261028/eicu/hospital_v1/screen/test/test_CEM_hospital_t0_s49/predictions_test.npz": "4bd79d0e8209cacc66cc7c8e27b901eff3082a6194be3a9e3a8c924b6be61b6e",
+    "runs/cem_icde_evidence_20261028/eicu/hospital_v1/screen/test/test_CEM_hospital_t1_s49/predictions_test.npz": "064258c0e7f0f48b40980a3ae35044fd107b4bc9d04b5bdb9de8b6344fee82ff",
+    "runs/cem_icde_evidence_20261028/eicu/hospital_v1/screen/test/test_CEM_hospital_t0_s50/predictions_test.npz": "83bd3e9dc30858fda435189ee82fc1d66bac6cd9d786fd492af921446288c827",
+    "runs/cem_icde_evidence_20261028/eicu/hospital_v1/screen/test/test_CEM_hospital_t1_s50/predictions_test.npz": "121f45e06d5fa32b969d985ac4f4da51d1492ea953d2c03bde91c591a473154c",
+    "runs/cem_icde_evidence_20261028/eicu_statistics_v1/bootstrap/hospital_test_TabM_mini_PLE_hospital.json": "4a2bb426b16d85f5b097a95c651eb5ce20583867e0f8c9a11f597d93cd4b46b4",
+    "runs/cem_icde_evidence_20261028/eicu/hospital_v1/screen/test/test_TabM_mini_PLE_hospital_t0_s48/predictions_test.npz": "ab21fb55ae807dad9b7853f285b8cf33ac1da0266bc0908e334364575e88aa9b",
+    "runs/cem_icde_evidence_20261028/eicu/hospital_v1/screen/test/test_TabM_mini_PLE_hospital_t1_s48/predictions_test.npz": "4343d48e49d9c1348e8fb4ec82b0fd0f3cbd30e4e53ece215d70e4b512e09ed6",
+    "runs/cem_icde_evidence_20261028/eicu/hospital_v1/screen/test/test_TabM_mini_PLE_hospital_t0_s49/predictions_test.npz": "955ded65b75cefb7afb4b37b2f8310f86ed5b4a5dd30acd450b836feca73c191",
+    "runs/cem_icde_evidence_20261028/eicu/hospital_v1/screen/test/test_TabM_mini_PLE_hospital_t1_s49/predictions_test.npz": "0a938e74d3059ea69eb8fe84cccb89e4922cfcd849bc542bdc605001292f5723",
+    "runs/cem_icde_evidence_20261028/eicu/hospital_v1/screen/test/test_TabM_mini_PLE_hospital_t0_s50/predictions_test.npz": "b3affc16dffb6964937abca8940466c760ba47dd75a4d2638c9187b9ce645696",
+    "runs/cem_icde_evidence_20261028/eicu/hospital_v1/screen/test/test_TabM_mini_PLE_hospital_t1_s50/predictions_test.npz": "aadc068ab00283725f589cadb6507230a5797ac7a8c9e0c4802729baebacce33",
+    "runs/cem_icde_evidence_20261028/eicu_statistics_v1/bootstrap/hospital_test_LightGBM_hospital.json": "2e9833259f65b45ffdf185a441cb98b57cdb4bd77620c371950e0a97b6383e9b",
+    "runs/cem_icde_evidence_20261028/eicu/hospital_v1/screen/test/test_LightGBM_hospital_t0_s48/predictions_test.npz": "c51eef7c74c20a4ee69904b6f623cbb275c78b411738f8a81612220ae8f4d7a3",
+    "runs/cem_icde_evidence_20261028/eicu/hospital_v1/screen/test/test_LightGBM_hospital_t1_s48/predictions_test.npz": "b6d1c59250552f9e101cfc71ff0bb5e547c1d60ab3995ba0c8f4dd5e4c1a7cb0",
+    "runs/cem_icde_evidence_20261028/eicu/hospital_v1/screen/test/test_LightGBM_hospital_t0_s49/predictions_test.npz": "1aaa1f191d0aab579c99e59fbe98c7e1bb56c55a3e026b740c05e64793051157",
+    "runs/cem_icde_evidence_20261028/eicu/hospital_v1/screen/test/test_LightGBM_hospital_t1_s49/predictions_test.npz": "70c89f4eb8ae0424031ea475cf539457261a2dd9749203d8e95c46f3d8f473db",
+    "runs/cem_icde_evidence_20261028/eicu/hospital_v1/screen/test/test_LightGBM_hospital_t0_s50/predictions_test.npz": "65bfd02c0eaf3b26689f56285f98cd51b6645714b146499165e052db7f98b632",
+    "runs/cem_icde_evidence_20261028/eicu/hospital_v1/screen/test/test_LightGBM_hospital_t1_s50/predictions_test.npz": "741cffccb5cddc9a6d8ed08292de0a46adb0cbe51fd124bfe939d24d90659703"
+  },
+  "limitations": "Descriptive case-mix influence at fixed weights, not refitted leave-one-hospital-out validation or a new significance test. All components remain in the primary estimate and original adjusted component-bootstrap intervals."
+}

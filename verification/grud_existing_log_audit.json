@@ -1,0 +1,3825 @@
+{
+  "scope": "Read-only audit of existing histories, completion records and saved validation probabilities; no fitting, inference or resampling.",
+  "records": [
+    {
+      "database": "mimiciii",
+      "id": "GRU_D_t0_s48",
+      "seed": 48,
+      "endpoint": 0,
+      "history": [
+        {
+          "epoch": 1,
+          "dev_ap": 0.12328979018102475,
+          "loss": 0.27212291562560253,
+          "lr": 0.001,
+          "seconds": 109.01924681663513
+        },
+        {
+          "epoch": 2,
+          "dev_ap": 0.12183517998691584,
+          "loss": 0.26937324942922686,
+          "lr": 0.001,
+          "seconds": 109.62279009819031
+        },
+        {
+          "epoch": 3,
+          "dev_ap": 0.09268235577871549,
+          "loss": 0.27011518706229565,
+          "lr": 0.001,
+          "seconds": 107.01708769798279
+        },
+        {
+          "epoch": 4,
+          "dev_ap": 0.09067893666856222,
+          "loss": 0.26969876344867405,
+          "lr": 0.001,
+          "seconds": 106.53540706634521
+        },
+        {
+          "epoch": 5,
+          "dev_ap": 0.0985229966140295,
+          "loss": 0.26921238582568846,
+          "lr": 0.001,
+          "seconds": 108.32701349258423
+        },
+        {
+          "epoch": 6,
+          "dev_ap": 0.10466189752885692,
+          "loss": 0.2691974749565428,
+          "lr": 0.001,
+          "seconds": 106.96762084960938
+        },
+        {
+          "epoch": 7,
+          "dev_ap": 0.09051775788327282,
+          "loss": 0.26814096673509585,
+          "lr": 0.001,
+          "seconds": 106.55143213272095
+        },
+        {
+          "epoch": 8,
+          "dev_ap": 0.0798495907984959,
+          "loss": 0.2679496379185699,
+          "lr": 0.001,
+          "seconds": 107.19516324996948
+        },
+        {
+          "epoch": 9,
+          "dev_ap": 0.0798495907984959,
+          "loss": 0.26790580006495696,
+          "lr": 0.001,
+          "seconds": 107.20565176010132
+        },
+        {
+          "epoch": 10,
+          "dev_ap": 0.0798495907984959,
+          "loss": 0.2673577755539903,
+          "lr": 0.001,
+          "seconds": 107.9750337600708
+        },
+        {
+          "epoch": 11,
+          "dev_ap": 0.0798495907984959,
+          "loss": 0.2667432401594246,
+          "lr": 0.001,
+          "seconds": 108.55191087722778
+        }
+      ],
+      "completion": {
+        "epochs": 11,
+        "best_epoch": 1,
+        "optimizer_updates": 10813,
+        "dev_ap": 0.12328979018102475,
+        "metrics": {
+          "mean_ap": 0.12328979018102475,
+          "ap": [
+            0.12328979018102475
+          ],
+          "auroc": [
+            0.5809976294481143
+          ],
+          "brier": [
+            0.07348475016895827
+          ],
+          "log_loss": [
+            0.2784794786186179
+          ],
+          "prevalence": [
+            0.0798495907984959
+          ],
+          "mean_auroc": 0.5809976294481143,
+          "mean_brier": 0.07348475016895827,
+          "top_fraction": {
+            "0.05": [
+              {
+                "precision": 0.21348314606741575,
+                "recall": 0.1342400946185689,
+                "selected": 227
+              }
+            ],
+            "0.1": [
+              {
+                "precision": 0.1478751391093354,
+                "recall": 0.185560770128889,
+                "selected": 453
+              }
+            ]
+          }
+        },
+        "checkpoint_replay": {
+          "complete": true,
+          "max_probability_drift": 0.0
+        },
+        "from_scratch": true,
+        "frozen_learnable_parameters": 0
+      },
+      "exit_record": {
+        "job_id": "GRU_D_t0_s48",
+        "wrapper_pid": 2336195,
+        "child_pid": 2336202,
+        "child_identity": {
+          "start_ticks": "100200271",
+          "state": "R",
+          "boot": "b71f789a-6443-4d31-a384-079f6507be54"
+        },
+        "source_manifest_sha256": "d197badf566cd9571a2a4c3d4678ec7d584c64edb62d8531fcb1085f402796be",
+        "started_at": 1792965530.3138747,
+        "returncode": 0,
+        "finished_at": 1792966725.7923179
+      },
+      "prediction_summary": {
+        "count": 4521,
+        "prevalence": 0.0798495907984959,
+        "constant_prevalence_log_loss": 0.2784018665248075,
+        "mean": 0.07651534368376953,
+        "std": 1.0101525880565199e-08,
+        "minimum": 0.0765153169631958,
+        "maximum": 0.07651543617248535,
+        "unique_probabilities": 8,
+        "quantiles": [
+          0.0765153169631958,
+          0.0765153169631958,
+          0.076515331864357,
+          0.07651534676551819,
+          0.07651534676551819,
+          0.07651538401842117,
+          0.07651543617248535
+        ]
+      },
+      "log_error_lines": [],
+      "file_hashes": {
+        "runs/cem_evidence_completion_20261025/mimiciii/sequence_v2/screen/jobs/GRU_D_t0_s48/history.json": "145bf4496491b55e080ce6d2c5d9aa47985fd4ad5ff8b05e57a659b3e4e5c8db",
+        "runs/cem_evidence_completion_20261025/mimiciii/sequence_v2/screen/jobs/GRU_D_t0_s48/completion.json": "651dfd36feadecf84340c7db83cfd592ea9d1a74c189fe6e0ef78d91f2724bee",
+        "runs/cem_evidence_completion_20261025/mimiciii/sequence_v2/screen/jobs/GRU_D_t0_s48/run_manifest.json": "2dafe88f9530b709ad0b704edcaf6adf9f5357b1c669cec07dd735577ebb9bea",
+        "runs/cem_evidence_completion_20261025/mimiciii/sequence_v2/screen/jobs/GRU_D_t0_s48/predictions_dev.npz": "c21ab452f52f5afcb1b1465985ca8516033f4871f7e63a5a8b1c2e9a891c6ab5",
+        "runs/cem_evidence_completion_20261025/mimiciii/sequence_v2/screen/GRU_D_t0_s48.log": "eeeeeef724a10e46286d9f50fa47abfe25fead4c91c3349e63ce46fc9c5e36b5",
+        "runs/cem_evidence_completion_20261025/mimiciii/sequence_v2/screen/GRU_D_t0_s48_exit.json": "e924b6f15a4be80de854ad532ab780a9a4636ee421c44338bc3f86cee6979d12"
+      },
+      "source_hashes": {
+        "scripts/train_cem_additional_baseline.py": "0c3afac620580cdb49fb3cbe548b0773b9eb786ae3fda5b73f3383e21d84b94f",
+        "models/cem_sequence_baselines.py": "88108b4e055580063bc532ddcc2a70d13baa4ade3b557aeaf4290de6bb9bdfdc",
+        "scripts/cem_sequence_inputs.py": "cc8774c969c7f8c187f3b54c2c7887e527ff73569bd3610e41f1d752ca6f716f"
+      },
+      "protocol": {
+        "epochs": 100,
+        "batch": 32,
+        "micro": 32,
+        "optimizer": "Adam",
+        "lr": 0.001,
+        "weight_decay": 0.0,
+        "patience": 10,
+        "selection": "validation AP",
+        "precision": "float32",
+        "hidden": 64,
+        "mlp_hidden": 64,
+        "dropout": 0.3,
+        "recurrent_dropout": 0.3,
+        "loss": "BCE",
+        "input": "24 hourly means and observation masks",
+        "decay_initialization": "Glorot fixed before outcomes",
+        "implementation": "GRU-D paper equations; PyTorch; train-mean imputation"
+      }
+    },
+    {
+      "database": "mimiciii",
+      "id": "GRU_D_t1_s48",
+      "seed": 48,
+      "endpoint": 1,
+      "history": [
+        {
+          "epoch": 1,
+          "dev_ap": 0.18971422001720586,
+          "loss": 0.4578503373014063,
+          "lr": 0.001,
+          "seconds": 106.1372537612915
+        },
+        {
+          "epoch": 2,
+          "dev_ap": 0.2908111637303936,
+          "loss": 0.4538245408877118,
+          "lr": 0.001,
+          "seconds": 105.31547808647156
+        },
+        {
+          "epoch": 3,
+          "dev_ap": 0.2158231710936915,
+          "loss": 0.4537569662968664,
+          "lr": 0.001,
+          "seconds": 104.87227654457092
+        },
+        {
+          "epoch": 4,
+          "dev_ap": 0.20591012833764044,
+          "loss": 0.452355211224413,
+          "lr": 0.001,
+          "seconds": 104.81360673904419
+        },
+        {
+          "epoch": 5,
+          "dev_ap": 0.23921001074544196,
+          "loss": 0.4522214090004281,
+          "lr": 0.001,
+          "seconds": 106.08337092399597
+        },
+        {
+          "epoch": 6,
+          "dev_ap": 0.30915564169402027,
+          "loss": 0.4524123338192833,
+          "lr": 0.001,
+          "seconds": 104.5105791091919
+        },
+        {
+          "epoch": 7,
+          "dev_ap": 0.1768485534235706,
+          "loss": 0.45152343263182937,
+          "lr": 0.001,
+          "seconds": 104.41740798950195
+        },
+        {
+          "epoch": 8,
+          "dev_ap": 0.17050672026363206,
+          "loss": 0.45177559680178536,
+          "lr": 0.001,
+          "seconds": 104.43650197982788
+        },
+        {
+          "epoch": 9,
+          "dev_ap": 0.1891620855014543,
+          "loss": 0.45113511559262093,
+          "lr": 0.001,
+          "seconds": 104.4158878326416
+        },
+        {
+          "epoch": 10,
+          "dev_ap": 0.17606827219033466,
+          "loss": 0.4507875292000833,
+          "lr": 0.001,
+          "seconds": 104.4966721534729
+        },
+        {
+          "epoch": 11,
+          "dev_ap": 0.1798790253903131,
+          "loss": 0.45033756461053587,
+          "lr": 0.001,
+          "seconds": 104.42770028114319
+        },
+        {
+          "epoch": 12,
+          "dev_ap": 0.16788233161251032,
+          "loss": 0.4504324357398405,
+          "lr": 0.001,
+          "seconds": 104.48610496520996
+        },
+        {
+          "epoch": 13,
+          "dev_ap": 0.1674082273125817,
+          "loss": 0.4501498229177437,
+          "lr": 0.001,
+          "seconds": 106.86451411247253
+        },
+        {
+          "epoch": 14,
+          "dev_ap": 0.16560790107981682,
+          "loss": 0.4501245076286937,
+          "lr": 0.001,
+          "seconds": 105.87728714942932
+        },
+        {
+          "epoch": 15,
+          "dev_ap": 0.16736553711132116,
+          "loss": 0.4493233829747133,
+          "lr": 0.001,
+          "seconds": 104.76142907142639
+        },
+        {
+          "epoch": 16,
+          "dev_ap": 0.16575270955705587,
+          "loss": 0.4498734260303963,
+          "lr": 0.001,
+          "seconds": 104.9544448852539
+        }
+      ],
+      "completion": {
+        "epochs": 16,
+        "best_epoch": 6,
+        "optimizer_updates": 15728,
+        "dev_ap": 0.30915564169402027,
+        "metrics": {
+          "mean_ap": 0.30915564169402027,
+          "ap": [
+            0.30915564169402027
+          ],
+          "auroc": [
+            0.7085803420602904
+          ],
+          "brier": [
+            0.13948075023353176
+          ],
+          "log_loss": [
+            0.4524809214713783
+          ],
+          "prevalence": [
+            0.16677726166777262
+          ],
+          "mean_auroc": 0.7085803420602904,
+          "mean_brier": 0.13948075023353176,
+          "top_fraction": {
+            "0.05": [
+              {
+                "precision": 0.4111877649405702,
+                "recall": 0.12379260297282418,
+                "selected": 227
+              }
+            ],
+            "0.1": [
+              {
+                "precision": 0.37793558339317535,
+                "recall": 0.22706209453197407,
+                "selected": 453
+              }
+            ]
+          }
+        },
+        "checkpoint_replay": {
+          "complete": true,
+          "max_probability_drift": 0.0
+        },
+        "from_scratch": true,
+        "frozen_learnable_parameters": 0
+      },
+      "exit_record": {
+        "job_id": "GRU_D_t1_s48",
+        "wrapper_pid": 2457779,
+        "child_pid": 2457788,
+        "child_identity": {
+          "start_ticks": "100722297",
+          "state": "R",
+          "boot": "b71f789a-6443-4d31-a384-079f6507be54"
+        },
+        "source_manifest_sha256": "d197badf566cd9571a2a4c3d4678ec7d584c64edb62d8531fcb1085f402796be",
+        "started_at": 1792970750.5705898,
+        "returncode": 0,
+        "finished_at": 1792972442.4157844
+      },
+      "prediction_summary": {
+        "count": 4521,
+        "prevalence": 0.16677726166777262,
+        "constant_prevalence_log_loss": 0.4507391606292839,
+        "mean": 0.18955518521188872,
+        "std": 0.00013848275667961393,
+        "minimum": 0.18024486303329468,
+        "maximum": 0.18956048786640167,
+        "unique_probabilities": 59,
+        "quantiles": [
+          0.18024486303329468,
+          0.18955715000629425,
+          0.18955719470977783,
+          0.18955719470977783,
+          0.1895572692155838,
+          0.18955780267715455,
+          0.18956048786640167
+        ]
+      },
+      "log_error_lines": [],
+      "file_hashes": {
+        "runs/cem_evidence_completion_20261025/mimiciii/sequence_v2/screen/jobs/GRU_D_t1_s48/history.json": "839dc65fbab0b967fa30cc208924c8972e1473a2957af54f5645fb6bd916e372",
+        "runs/cem_evidence_completion_20261025/mimiciii/sequence_v2/screen/jobs/GRU_D_t1_s48/completion.json": "d9b98bd90474209663e4c02d05a9b962f6cc0db9f2021ac320f62ab67e56e3ab",
+        "runs/cem_evidence_completion_20261025/mimiciii/sequence_v2/screen/jobs/GRU_D_t1_s48/run_manifest.json": "05f803aea25c38cbaa69b025fe70ce80d470c8d854e3b52f850a69d50f727941",
+        "runs/cem_evidence_completion_20261025/mimiciii/sequence_v2/screen/jobs/GRU_D_t1_s48/predictions_dev.npz": "76c8906b0e348026e65243fa26d0e4686d4e7fbb78d08fa4df541643e056a9c2",
+        "runs/cem_evidence_completion_20261025/mimiciii/sequence_v2/screen/GRU_D_t1_s48.log": "eeeeeef724a10e46286d9f50fa47abfe25fead4c91c3349e63ce46fc9c5e36b5",
+        "runs/cem_evidence_completion_20261025/mimiciii/sequence_v2/screen/GRU_D_t1_s48_exit.json": "91000de0dafdf79ce649ef1c611f378e0e749b9fd4694f2a70fc4c171d880705"
+      },
+      "source_hashes": {
+        "scripts/train_cem_additional_baseline.py": "0c3afac620580cdb49fb3cbe548b0773b9eb786ae3fda5b73f3383e21d84b94f",
+        "models/cem_sequence_baselines.py": "88108b4e055580063bc532ddcc2a70d13baa4ade3b557aeaf4290de6bb9bdfdc",
+        "scripts/cem_sequence_inputs.py": "cc8774c969c7f8c187f3b54c2c7887e527ff73569bd3610e41f1d752ca6f716f"
+      },
+      "protocol": {
+        "epochs": 100,
+        "batch": 32,
+        "micro": 32,
+        "optimizer": "Adam",
+        "lr": 0.001,
+        "weight_decay": 0.0,
+        "patience": 10,
+        "selection": "validation AP",
+        "precision": "float32",
+        "hidden": 64,
+        "mlp_hidden": 64,
+        "dropout": 0.3,
+        "recurrent_dropout": 0.3,
+        "loss": "BCE",
+        "input": "24 hourly means and observation masks",
+        "decay_initialization": "Glorot fixed before outcomes",
+        "implementation": "GRU-D paper equations; PyTorch; train-mean imputation"
+      }
+    },
+    {
+      "database": "mimiciii",
+      "id": "GRU_D_t0_s49",
+      "seed": 49,
+      "endpoint": 0,
+      "history": [
+        {
+          "epoch": 1,
+          "dev_ap": 0.16944463523674663,
+          "loss": 0.27323961737694064,
+          "lr": 0.001,
+          "seconds": 131.41219663619995
+        },
+        {
+          "epoch": 2,
+          "dev_ap": 0.1515391158972722,
+          "loss": 0.26999267090038176,
+          "lr": 0.001,
+          "seconds": 140.12571358680725
+        },
+        {
+          "epoch": 3,
+          "dev_ap": 0.1409271587103635,
+          "loss": 0.26858768187417564,
+          "lr": 0.001,
+          "seconds": 135.335542678833
+        },
+        {
+          "epoch": 4,
+          "dev_ap": 0.10838620718005473,
+          "loss": 0.26863599613354866,
+          "lr": 0.001,
+          "seconds": 136.70935463905334
+        },
+        {
+          "epoch": 5,
+          "dev_ap": 0.09330623194130683,
+          "loss": 0.26901118705346283,
+          "lr": 0.001,
+          "seconds": 140.21975708007812
+        },
+        {
+          "epoch": 6,
+          "dev_ap": 0.08758266816877149,
+          "loss": 0.26799776255875973,
+          "lr": 0.001,
+          "seconds": 140.23077011108398
+        },
+        {
+          "epoch": 7,
+          "dev_ap": 0.10369388413170433,
+          "loss": 0.26771897980603676,
+          "lr": 0.001,
+          "seconds": 136.72123861312866
+        },
+        {
+          "epoch": 8,
+          "dev_ap": 0.08061019912219936,
+          "loss": 0.2680052716803435,
+          "lr": 0.001,
+          "seconds": 144.7392280101776
+        },
+        {
+          "epoch": 9,
+          "dev_ap": 0.07399914411251779,
+          "loss": 0.26784321585835524,
+          "lr": 0.001,
+          "seconds": 142.3638665676117
+        },
+        {
+          "epoch": 10,
+          "dev_ap": 0.07997174955401783,
+          "loss": 0.2674425732467456,
+          "lr": 0.001,
+          "seconds": 147.70235466957092
+        },
+        {
+          "epoch": 11,
+          "dev_ap": 0.08078046659809308,
+          "loss": 0.26748652103379256,
+          "lr": 0.001,
+          "seconds": 145.1001796722412
+        }
+      ],
+      "completion": {
+        "epochs": 11,
+        "best_epoch": 1,
+        "optimizer_updates": 10813,
+        "dev_ap": 0.16944463523674663,
+        "metrics": {
+          "mean_ap": 0.16944463523674663,
+          "ap": [
+            0.16944463523674663
+          ],
+          "auroc": [
+            0.6512824952056255
+          ],
+          "brier": [
+            0.07371865321420681
+          ],
+          "log_loss": [
+            0.28030329393443537
+          ],
+          "prevalence": [
+            0.0798495907984959
+          ],
+          "mean_auroc": 0.6512824952056255,
+          "mean_brier": 0.07371865321420681,
+          "top_fraction": {
+            "0.05": [
+              {
+                "precision": 0.2593936252915263,
+                "recall": 0.16310901091738636,
+                "selected": 227
+              }
+            ],
+            "0.1": [
+              {
+                "precision": 0.21072630550428836,
+                "recall": 0.26442940829208483,
+                "selected": 453
+              }
+            ]
+          }
+        },
+        "checkpoint_replay": {
+          "complete": true,
+          "max_probability_drift": 0.0
+        },
+        "from_scratch": true,
+        "frozen_learnable_parameters": 0
+      },
+      "exit_record": {
+        "job_id": "GRU_D_t0_s49",
+        "wrapper_pid": 3181093,
+        "child_pid": 3181096,
+        "child_identity": {
+          "start_ticks": "103573085",
+          "state": "R",
+          "boot": "b71f789a-6443-4d31-a384-079f6507be54"
+        },
+        "source_manifest_sha256": "d197badf566cd9571a2a4c3d4678ec7d584c64edb62d8531fcb1085f402796be",
+        "started_at": 1792999258.4535537,
+        "returncode": 0,
+        "finished_at": 1793000812.447873
+      },
+      "prediction_summary": {
+        "count": 4521,
+        "prevalence": 0.0798495907984959,
+        "constant_prevalence_log_loss": 0.2784018665248075,
+        "mean": 0.06419571893019002,
+        "std": 3.5588695854648376e-07,
+        "minimum": 0.06418811529874802,
+        "maximum": 0.06419681757688522,
+        "unique_probabilities": 177,
+        "quantiles": [
+          0.06418811529874802,
+          0.06419445872306824,
+          0.06419557332992554,
+          0.06419575959444046,
+          0.064195916056633,
+          0.06419634819030762,
+          0.06419681757688522
+        ]
+      },
+      "log_error_lines": [],
+      "file_hashes": {
+        "runs/cem_evidence_completion_20261025/mimiciii/sequence_v2/screen/jobs/GRU_D_t0_s49/history.json": "464e4d2f8b978c816b52555744215bb2e19287810bc1da7fe2b48eda68d131c5",
+        "runs/cem_evidence_completion_20261025/mimiciii/sequence_v2/screen/jobs/GRU_D_t0_s49/completion.json": "f61fb28724820d855418b99b3d8f5187be218df9a67e3b46fd3726aac70ca482",
+        "runs/cem_evidence_completion_20261025/mimiciii/sequence_v2/screen/jobs/GRU_D_t0_s49/run_manifest.json": "975cef3862e1316c75868b84ac5fb6616d777df664164291818d1581cac353fd",
+        "runs/cem_evidence_completion_20261025/mimiciii/sequence_v2/screen/jobs/GRU_D_t0_s49/predictions_dev.npz": "95db7718e9b27f25da4d3af3aaf262db6ecc2578d33ed7833bd22ba423381079",
+        "runs/cem_evidence_completion_20261025/mimiciii/sequence_v2/screen/GRU_D_t0_s49.log": "eeeeeef724a10e46286d9f50fa47abfe25fead4c91c3349e63ce46fc9c5e36b5",
+        "runs/cem_evidence_completion_20261025/mimiciii/sequence_v2/screen/GRU_D_t0_s49_exit.json": "8025107744f338c6564a4fa03fc5a4e4e6d92a2f66f47f0750455a7b7ad129ed"
+      },
+      "source_hashes": {
+        "scripts/train_cem_additional_baseline.py": "0c3afac620580cdb49fb3cbe548b0773b9eb786ae3fda5b73f3383e21d84b94f",
+        "models/cem_sequence_baselines.py": "88108b4e055580063bc532ddcc2a70d13baa4ade3b557aeaf4290de6bb9bdfdc",
+        "scripts/cem_sequence_inputs.py": "cc8774c969c7f8c187f3b54c2c7887e527ff73569bd3610e41f1d752ca6f716f"
+      },
+      "protocol": {
+        "epochs": 100,
+        "batch": 32,
+        "micro": 32,
+        "optimizer": "Adam",
+        "lr": 0.001,
+        "weight_decay": 0.0,
+        "patience": 10,
+        "selection": "validation AP",
+        "precision": "float32",
+        "hidden": 64,
+        "mlp_hidden": 64,
+        "dropout": 0.3,
+        "recurrent_dropout": 0.3,
+        "loss": "BCE",
+        "input": "24 hourly means and observation masks",
+        "decay_initialization": "Glorot fixed before outcomes",
+        "implementation": "GRU-D paper equations; PyTorch; train-mean imputation"
+      }
+    },
+    {
+      "database": "mimiciii",
+      "id": "GRU_D_t1_s49",
+      "seed": 49,
+      "endpoint": 1,
+      "history": [
+        {
+          "epoch": 1,
+          "dev_ap": 0.23183738631089837,
+          "loss": 0.4575128977027577,
+          "lr": 0.001,
+          "seconds": 142.88561701774597
+        },
+        {
+          "epoch": 2,
+          "dev_ap": 0.23950557275535497,
+          "loss": 0.45400655171927357,
+          "lr": 0.001,
+          "seconds": 147.87712168693542
+        },
+        {
+          "epoch": 3,
+          "dev_ap": 0.19194110314628088,
+          "loss": 0.45347645351274307,
+          "lr": 0.001,
+          "seconds": 138.8974950313568
+        },
+        {
+          "epoch": 4,
+          "dev_ap": 0.21922216874995307,
+          "loss": 0.45312079909586844,
+          "lr": 0.001,
+          "seconds": 140.084477186203
+        },
+        {
+          "epoch": 5,
+          "dev_ap": 0.24997085183223003,
+          "loss": 0.452209460388886,
+          "lr": 0.001,
+          "seconds": 146.16848945617676
+        },
+        {
+          "epoch": 6,
+          "dev_ap": 0.1813076288853626,
+          "loss": 0.45126550068105103,
+          "lr": 0.001,
+          "seconds": 144.21292090415955
+        },
+        {
+          "epoch": 7,
+          "dev_ap": 0.2075887981188539,
+          "loss": 0.45156125315482476,
+          "lr": 0.001,
+          "seconds": 145.33073711395264
+        },
+        {
+          "epoch": 8,
+          "dev_ap": 0.16677726166777262,
+          "loss": 0.4522459149533116,
+          "lr": 0.001,
+          "seconds": 151.39047050476074
+        },
+        {
+          "epoch": 9,
+          "dev_ap": 0.16796726114599836,
+          "loss": 0.451128129978854,
+          "lr": 0.001,
+          "seconds": 127.84209394454956
+        },
+        {
+          "epoch": 10,
+          "dev_ap": 0.2120521945779223,
+          "loss": 0.451157026649306,
+          "lr": 0.001,
+          "seconds": 127.19883561134338
+        },
+        {
+          "epoch": 11,
+          "dev_ap": 0.16677726166777262,
+          "loss": 0.45005618435245437,
+          "lr": 0.001,
+          "seconds": 144.14018416404724
+        },
+        {
+          "epoch": 12,
+          "dev_ap": 0.15859085727551286,
+          "loss": 0.45062289873877714,
+          "lr": 0.001,
+          "seconds": 136.793359041214
+        },
+        {
+          "epoch": 13,
+          "dev_ap": 0.16677726166777262,
+          "loss": 0.4500326071639178,
+          "lr": 0.001,
+          "seconds": 138.97657537460327
+        },
+        {
+          "epoch": 14,
+          "dev_ap": 0.16677726166777262,
+          "loss": 0.4497082225943077,
+          "lr": 0.001,
+          "seconds": 137.87207555770874
+        },
+        {
+          "epoch": 15,
+          "dev_ap": 0.16677726166777262,
+          "loss": 0.4498111695380003,
+          "lr": 0.001,
+          "seconds": 145.6365349292755
+        }
+      ],
+      "completion": {
+        "epochs": 15,
+        "best_epoch": 5,
+        "optimizer_updates": 14745,
+        "dev_ap": 0.24997085183223003,
+        "metrics": {
+          "mean_ap": 0.24997085183223003,
+          "ap": [
+            0.24997085183223003
+          ],
+          "auroc": [
+            0.6442069162678263
+          ],
+          "brier": [
+            0.13898112401388824
+          ],
+          "log_loss": [
+            0.4508067074964709
+          ],
+          "prevalence": [
+            0.16677726166777262
+          ],
+          "mean_auroc": 0.6442069162678263,
+          "mean_brier": 0.13898112401388824,
+          "top_fraction": {
+            "0.05": [
+              {
+                "precision": 0.3419651407776288,
+                "recall": 0.10295236996886171,
+                "selected": 227
+              }
+            ],
+            "0.1": [
+              {
+                "precision": 0.3339576783285393,
+                "recall": 0.20064035581276962,
+                "selected": 453
+              }
+            ]
+          }
+        },
+        "checkpoint_replay": {
+          "complete": true,
+          "max_probability_drift": 0.0
+        },
+        "from_scratch": true,
+        "frozen_learnable_parameters": 0
+      },
+      "exit_record": {
+        "job_id": "GRU_D_t1_s49",
+        "wrapper_pid": 3276866,
+        "child_pid": 3276869,
+        "child_identity": {
+          "start_ticks": "103857867",
+          "state": "R",
+          "boot": "b71f789a-6443-4d31-a384-079f6507be54"
+        },
+        "source_manifest_sha256": "d197badf566cd9571a2a4c3d4678ec7d584c64edb62d8531fcb1085f402796be",
+        "started_at": 1793002106.2674818,
+        "returncode": 0,
+        "finished_at": 1793004233.5510314
+      },
+      "prediction_summary": {
+        "count": 4521,
+        "prevalence": 0.16677726166777262,
+        "constant_prevalence_log_loss": 0.4507391606292839,
+        "mean": 0.16247323751317747,
+        "std": 7.598226835183815e-08,
+        "minimum": 0.1624731868505478,
+        "maximum": 0.16247567534446716,
+        "unique_probabilities": 35,
+        "quantiles": [
+          0.1624731868505478,
+          0.16247320175170898,
+          0.16247321665287018,
+          0.16247323155403137,
+          0.16247323155403137,
+          0.162473464012146,
+          0.16247567534446716
+        ]
+      },
+      "log_error_lines": [],
+      "file_hashes": {
+        "runs/cem_evidence_completion_20261025/mimiciii/sequence_v2/screen/jobs/GRU_D_t1_s49/history.json": "4523173b68a1e5f3ed241a78021151f893aa68fd3418212e5e4d56945576ae7b",
+        "runs/cem_evidence_completion_20261025/mimiciii/sequence_v2/screen/jobs/GRU_D_t1_s49/completion.json": "fef9ee9bd89b8d4976e24a27c0c74481ccb457ae5f40ee4652162f698fc03fbc",
+        "runs/cem_evidence_completion_20261025/mimiciii/sequence_v2/screen/jobs/GRU_D_t1_s49/run_manifest.json": "52681a4fa18198a43d5bd1a3c0d4aee40ec336b74ab09bb05d3b947c86f41493",
+        "runs/cem_evidence_completion_20261025/mimiciii/sequence_v2/screen/jobs/GRU_D_t1_s49/predictions_dev.npz": "46defa523ba96f248dc28fe0bcda7c90317312d9997fcfd6458f3bba7099d0f1",
+        "runs/cem_evidence_completion_20261025/mimiciii/sequence_v2/screen/GRU_D_t1_s49.log": "eeeeeef724a10e46286d9f50fa47abfe25fead4c91c3349e63ce46fc9c5e36b5",
+        "runs/cem_evidence_completion_20261025/mimiciii/sequence_v2/screen/GRU_D_t1_s49_exit.json": "daecec79b3dbbf9719d1e85148484860507e70b4f44ff6b6090397bf43317f05"
+      },
+      "source_hashes": {
+        "scripts/train_cem_additional_baseline.py": "0c3afac620580cdb49fb3cbe548b0773b9eb786ae3fda5b73f3383e21d84b94f",
+        "models/cem_sequence_baselines.py": "88108b4e055580063bc532ddcc2a70d13baa4ade3b557aeaf4290de6bb9bdfdc",
+        "scripts/cem_sequence_inputs.py": "cc8774c969c7f8c187f3b54c2c7887e527ff73569bd3610e41f1d752ca6f716f"
+      },
+      "protocol": {
+        "epochs": 100,
+        "batch": 32,
+        "micro": 32,
+        "optimizer": "Adam",
+        "lr": 0.001,
+        "weight_decay": 0.0,
+        "patience": 10,
+        "selection": "validation AP",
+        "precision": "float32",
+        "hidden": 64,
+        "mlp_hidden": 64,
+        "dropout": 0.3,
+        "recurrent_dropout": 0.3,
+        "loss": "BCE",
+        "input": "24 hourly means and observation masks",
+        "decay_initialization": "Glorot fixed before outcomes",
+        "implementation": "GRU-D paper equations; PyTorch; train-mean imputation"
+      }
+    },
+    {
+      "database": "mimiciii",
+      "id": "GRU_D_t0_s50",
+      "seed": 50,
+      "endpoint": 0,
+      "history": [
+        {
+          "epoch": 1,
+          "dev_ap": 0.08201245409523313,
+          "loss": 0.2721992184236764,
+          "lr": 0.001,
+          "seconds": 136.96539688110352
+        },
+        {
+          "epoch": 2,
+          "dev_ap": 0.11524282461013532,
+          "loss": 0.2699281785482329,
+          "lr": 0.001,
+          "seconds": 128.61647176742554
+        },
+        {
+          "epoch": 3,
+          "dev_ap": 0.08760729983011303,
+          "loss": 0.26930865019248107,
+          "lr": 0.001,
+          "seconds": 132.07106590270996
+        },
+        {
+          "epoch": 4,
+          "dev_ap": 0.09312521763225368,
+          "loss": 0.268645478941436,
+          "lr": 0.001,
+          "seconds": 128.44884252548218
+        },
+        {
+          "epoch": 5,
+          "dev_ap": 0.10623841430895165,
+          "loss": 0.2688824179377117,
+          "lr": 0.001,
+          "seconds": 129.0200891494751
+        },
+        {
+          "epoch": 6,
+          "dev_ap": 0.1025090528709699,
+          "loss": 0.26800522482609135,
+          "lr": 0.001,
+          "seconds": 129.1030912399292
+        },
+        {
+          "epoch": 7,
+          "dev_ap": 0.07986725663716814,
+          "loss": 0.2689330670959502,
+          "lr": 0.001,
+          "seconds": 130.89455127716064
+        },
+        {
+          "epoch": 8,
+          "dev_ap": 0.07986725663716814,
+          "loss": 0.26734053621009435,
+          "lr": 0.001,
+          "seconds": 131.86908388137817
+        },
+        {
+          "epoch": 9,
+          "dev_ap": 0.07856954774977415,
+          "loss": 0.2682419837171188,
+          "lr": 0.001,
+          "seconds": 130.1979238986969
+        },
+        {
+          "epoch": 10,
+          "dev_ap": 0.0798495907984959,
+          "loss": 0.2667906250892195,
+          "lr": 0.001,
+          "seconds": 129.0657913684845
+        },
+        {
+          "epoch": 11,
+          "dev_ap": 0.08189146249481491,
+          "loss": 0.26713857630862403,
+          "lr": 0.001,
+          "seconds": 130.8899631500244
+        },
+        {
+          "epoch": 12,
+          "dev_ap": 0.08007700105789742,
+          "loss": 0.266773352132784,
+          "lr": 0.001,
+          "seconds": 127.47032284736633
+        }
+      ],
+      "completion": {
+        "epochs": 12,
+        "best_epoch": 2,
+        "optimizer_updates": 11796,
+        "dev_ap": 0.11524282461013532,
+        "metrics": {
+          "mean_ap": 0.11524282461013532,
+          "ap": [
+            0.11524282461013532
+          ],
+          "auroc": [
+            0.5747832543149372
+          ],
+          "brier": [
+            0.07360475716200413
+          ],
+          "log_loss": [
+            0.2793816299747625
+          ],
+          "prevalence": [
+            0.0798495907984959
+          ],
+          "mean_auroc": 0.5747832543149372,
+          "mean_brier": 0.07360475716200413,
+          "top_fraction": {
+            "0.05": [
+              {
+                "precision": 0.21368113646488146,
+                "recall": 0.1343645927355349,
+                "selected": 227
+              }
+            ],
+            "0.1": [
+              {
+                "precision": 0.1794339560475767,
+                "recall": 0.22516227725637739,
+                "selected": 453
+              }
+            ]
+          }
+        },
+        "checkpoint_replay": {
+          "complete": true,
+          "max_probability_drift": 0.0
+        },
+        "from_scratch": true,
+        "frozen_learnable_parameters": 0
+      },
+      "exit_record": {
+        "job_id": "GRU_D_t0_s50",
+        "wrapper_pid": 357342,
+        "child_pid": 357345,
+        "child_identity": {
+          "start_ticks": "108202158",
+          "state": "R",
+          "boot": "b71f789a-6443-4d31-a384-079f6507be54"
+        },
+        "source_manifest_sha256": "d197badf566cd9571a2a4c3d4678ec7d584c64edb62d8531fcb1085f402796be",
+        "started_at": 1793045549.1792085,
+        "returncode": 0,
+        "finished_at": 1793047126.2379541
+      },
+      "prediction_summary": {
+        "count": 4521,
+        "prevalence": 0.0798495907984959,
+        "constant_prevalence_log_loss": 0.2784018665248075,
+        "mean": 0.06839850129470232,
+        "std": 7.519193986010859e-08,
+        "minimum": 0.06839841604232788,
+        "maximum": 0.0683995708823204,
+        "unique_probabilities": 29,
+        "quantiles": [
+          0.06839841604232788,
+          0.06839841604232788,
+          0.06839848309755325,
+          0.06839848309755325,
+          0.06839850544929504,
+          0.0683988407254219,
+          0.0683995708823204
+        ]
+      },
+      "log_error_lines": [],
+      "file_hashes": {
+        "runs/cem_evidence_completion_20261025/mimiciii/sequence_v2/screen/jobs/GRU_D_t0_s50/history.json": "1a79f55db873705916ce9f787a2dbadcc8b9724b051b3121fdb6d7ef1f82d36d",
+        "runs/cem_evidence_completion_20261025/mimiciii/sequence_v2/screen/jobs/GRU_D_t0_s50/completion.json": "19b6be6dedc69219e5714dbbfe99b78d5ce583a2358b0338c444c01dfc59e5e3",
+        "runs/cem_evidence_completion_20261025/mimiciii/sequence_v2/screen/jobs/GRU_D_t0_s50/run_manifest.json": "12a07a3a702f75a45f80c3c2526354548618f077b45a2ed2dcc4e6cd79661df3",
+        "runs/cem_evidence_completion_20261025/mimiciii/sequence_v2/screen/jobs/GRU_D_t0_s50/predictions_dev.npz": "99c2b0727f3f9fd94464175e024b0ca3226f8ff555009e2a53508fcfdd51e487",
+        "runs/cem_evidence_completion_20261025/mimiciii/sequence_v2/screen/GRU_D_t0_s50.log": "eeeeeef724a10e46286d9f50fa47abfe25fead4c91c3349e63ce46fc9c5e36b5",
+        "runs/cem_evidence_completion_20261025/mimiciii/sequence_v2/screen/GRU_D_t0_s50_exit.json": "da58f4d7f5075705d5cf4e4323b08724bf48c60c82fd7cc83778b654b48b92fa"
+      },
+      "source_hashes": {
+        "scripts/train_cem_additional_baseline.py": "0c3afac620580cdb49fb3cbe548b0773b9eb786ae3fda5b73f3383e21d84b94f",
+        "models/cem_sequence_baselines.py": "88108b4e055580063bc532ddcc2a70d13baa4ade3b557aeaf4290de6bb9bdfdc",
+        "scripts/cem_sequence_inputs.py": "cc8774c969c7f8c187f3b54c2c7887e527ff73569bd3610e41f1d752ca6f716f"
+      },
+      "protocol": {
+        "epochs": 100,
+        "batch": 32,
+        "micro": 32,
+        "optimizer": "Adam",
+        "lr": 0.001,
+        "weight_decay": 0.0,
+        "patience": 10,
+        "selection": "validation AP",
+        "precision": "float32",
+        "hidden": 64,
+        "mlp_hidden": 64,
+        "dropout": 0.3,
+        "recurrent_dropout": 0.3,
+        "loss": "BCE",
+        "input": "24 hourly means and observation masks",
+        "decay_initialization": "Glorot fixed before outcomes",
+        "implementation": "GRU-D paper equations; PyTorch; train-mean imputation"
+      }
+    },
+    {
+      "database": "mimiciii",
+      "id": "GRU_D_t1_s50",
+      "seed": 50,
+      "endpoint": 1,
+      "history": [
+        {
+          "epoch": 1,
+          "dev_ap": 0.34440223974677253,
+          "loss": 0.4562975209182535,
+          "lr": 0.001,
+          "seconds": 127.19767475128174
+        },
+        {
+          "epoch": 2,
+          "dev_ap": 0.1620618267044717,
+          "loss": 0.45386847435019967,
+          "lr": 0.001,
+          "seconds": 125.96943235397339
+        },
+        {
+          "epoch": 3,
+          "dev_ap": 0.17028624403433706,
+          "loss": 0.4533360286652123,
+          "lr": 0.001,
+          "seconds": 133.80537128448486
+        },
+        {
+          "epoch": 4,
+          "dev_ap": 0.2077348123838737,
+          "loss": 0.4525365718875772,
+          "lr": 0.001,
+          "seconds": 126.66353583335876
+        },
+        {
+          "epoch": 5,
+          "dev_ap": 0.31193580561070794,
+          "loss": 0.4528621153487927,
+          "lr": 0.001,
+          "seconds": 134.42482829093933
+        },
+        {
+          "epoch": 6,
+          "dev_ap": 0.16488236847959606,
+          "loss": 0.45239068765086266,
+          "lr": 0.001,
+          "seconds": 126.87633228302002
+        },
+        {
+          "epoch": 7,
+          "dev_ap": 0.170757979192432,
+          "loss": 0.45226316249945564,
+          "lr": 0.001,
+          "seconds": 129.11799359321594
+        },
+        {
+          "epoch": 8,
+          "dev_ap": 0.17973881369935513,
+          "loss": 0.45095539727422046,
+          "lr": 0.001,
+          "seconds": 132.2788107395172
+        },
+        {
+          "epoch": 9,
+          "dev_ap": 0.28026275926490407,
+          "loss": 0.45069693632677116,
+          "lr": 0.001,
+          "seconds": 129.28078198432922
+        },
+        {
+          "epoch": 10,
+          "dev_ap": 0.16677726166777262,
+          "loss": 0.4502792018103693,
+          "lr": 0.001,
+          "seconds": 132.31039547920227
+        },
+        {
+          "epoch": 11,
+          "dev_ap": 0.16677726166777262,
+          "loss": 0.4507295035591209,
+          "lr": 0.001,
+          "seconds": 130.77108907699585
+        }
+      ],
+      "completion": {
+        "epochs": 11,
+        "best_epoch": 1,
+        "optimizer_updates": 10813,
+        "dev_ap": 0.34440223974677253,
+        "metrics": {
+          "mean_ap": 0.34440223974677253,
+          "ap": [
+            0.34440223974677253
+          ],
+          "auroc": [
+            0.7141394027006835
+          ],
+          "brier": [
+            0.13940945684193348
+          ],
+          "log_loss": [
+            0.45246769808198734
+          ],
+          "prevalence": [
+            0.16677726166777262
+          ],
+          "mean_auroc": 0.7141394027006835,
+          "mean_brier": 0.13940945684193348,
+          "top_fraction": {
+            "0.05": [
+              {
+                "precision": 0.49074889867841415,
+                "recall": 0.14774535809018569,
+                "selected": 227
+              }
+            ],
+            "0.1": [
+              {
+                "precision": 0.41280353200883,
+                "recall": 0.2480106100795756,
+                "selected": 453
+              }
+            ]
+          }
+        },
+        "checkpoint_replay": {
+          "complete": true,
+          "max_probability_drift": 0.0
+        },
+        "from_scratch": true,
+        "frozen_learnable_parameters": 0
+      },
+      "exit_record": {
+        "job_id": "GRU_D_t1_s50",
+        "wrapper_pid": 394700,
+        "child_pid": 394701,
+        "child_identity": {
+          "start_ticks": "108360260",
+          "state": "R",
+          "boot": "b71f789a-6443-4d31-a384-079f6507be54"
+        },
+        "source_manifest_sha256": "d197badf566cd9571a2a4c3d4678ec7d584c64edb62d8531fcb1085f402796be",
+        "started_at": 1793047130.1977577,
+        "returncode": 0,
+        "finished_at": 1793048570.7101393
+      },
+      "prediction_summary": {
+        "count": 4521,
+        "prevalence": 0.16677726166777262,
+        "constant_prevalence_log_loss": 0.4507391606292839,
+        "mean": 0.14559624815271957,
+        "std": 1.1250199116611763e-05,
+        "minimum": 0.14536188542842865,
+        "maximum": 0.14562350511550903,
+        "unique_probabilities": 1553,
+        "quantiles": [
+          0.14536188542842865,
+          0.14556199312210083,
+          0.14559179544448853,
+          0.14559651911258698,
+          0.14560215175151825,
+          0.1456143766641617,
+          0.14562350511550903
+        ]
+      },
+      "log_error_lines": [],
+      "file_hashes": {
+        "runs/cem_evidence_completion_20261025/mimiciii/sequence_v2/screen/jobs/GRU_D_t1_s50/history.json": "bff1f588555b204cfb5a244599d306791757adf24c6f4734a7f9610c0fd86dd2",
+        "runs/cem_evidence_completion_20261025/mimiciii/sequence_v2/screen/jobs/GRU_D_t1_s50/completion.json": "860323031e38155225bf0525c16eb78bf8b7b7f65ca76faa3b8f15abf0579d0e",
+        "runs/cem_evidence_completion_20261025/mimiciii/sequence_v2/screen/jobs/GRU_D_t1_s50/run_manifest.json": "8073e3f56e3aa8203b3ef76358d8143045745e1cc6faa8412cee600f90734443",
+        "runs/cem_evidence_completion_20261025/mimiciii/sequence_v2/screen/jobs/GRU_D_t1_s50/predictions_dev.npz": "9a66c2d6fc1e66df69006ef540f18ad3745c742e6de35dc47c0b3174aae2b97b",
+        "runs/cem_evidence_completion_20261025/mimiciii/sequence_v2/screen/GRU_D_t1_s50.log": "eeeeeef724a10e46286d9f50fa47abfe25fead4c91c3349e63ce46fc9c5e36b5",
+        "runs/cem_evidence_completion_20261025/mimiciii/sequence_v2/screen/GRU_D_t1_s50_exit.json": "65034916080a8eed5ca43c502b6e7391226c9ffeb3ca987b44431014cfa0dcdf"
+      },
+      "source_hashes": {
+        "scripts/train_cem_additional_baseline.py": "0c3afac620580cdb49fb3cbe548b0773b9eb786ae3fda5b73f3383e21d84b94f",
+        "models/cem_sequence_baselines.py": "88108b4e055580063bc532ddcc2a70d13baa4ade3b557aeaf4290de6bb9bdfdc",
+        "scripts/cem_sequence_inputs.py": "cc8774c969c7f8c187f3b54c2c7887e527ff73569bd3610e41f1d752ca6f716f"
+      },
+      "protocol": {
+        "epochs": 100,
+        "batch": 32,
+        "micro": 32,
+        "optimizer": "Adam",
+        "lr": 0.001,
+        "weight_decay": 0.0,
+        "patience": 10,
+        "selection": "validation AP",
+        "precision": "float32",
+        "hidden": 64,
+        "mlp_hidden": 64,
+        "dropout": 0.3,
+        "recurrent_dropout": 0.3,
+        "loss": "BCE",
+        "input": "24 hourly means and observation masks",
+        "decay_initialization": "Glorot fixed before outcomes",
+        "implementation": "GRU-D paper equations; PyTorch; train-mean imputation"
+      }
+    },
+    {
+      "database": "mimic",
+      "id": "GRU_D_t0_s48",
+      "seed": 48,
+      "endpoint": 0,
+      "history": [
+        {
+          "epoch": 1,
+          "dev_ap": 0.19348889464271232,
+          "loss": 0.2634436704236404,
+          "lr": 0.001,
+          "seconds": 252.39180731773376
+        },
+        {
+          "epoch": 2,
+          "dev_ap": 0.0800752518687908,
+          "loss": 0.26143511078471904,
+          "lr": 0.001,
+          "seconds": 254.04529666900635
+        },
+        {
+          "epoch": 3,
+          "dev_ap": 0.08838547509117926,
+          "loss": 0.26116110583905205,
+          "lr": 0.001,
+          "seconds": 252.2003948688507
+        },
+        {
+          "epoch": 4,
+          "dev_ap": 0.08498862358800208,
+          "loss": 0.25941918655759255,
+          "lr": 0.001,
+          "seconds": 205.94088673591614
+        },
+        {
+          "epoch": 5,
+          "dev_ap": 0.07613941018766757,
+          "loss": 0.26017970641057503,
+          "lr": 0.001,
+          "seconds": 206.10773873329163
+        },
+        {
+          "epoch": 6,
+          "dev_ap": 0.0724536573917616,
+          "loss": 0.25956382752877577,
+          "lr": 0.001,
+          "seconds": 209.54877424240112
+        },
+        {
+          "epoch": 7,
+          "dev_ap": 0.06901797887173439,
+          "loss": 0.2587804173679561,
+          "lr": 0.001,
+          "seconds": 205.75687456130981
+        },
+        {
+          "epoch": 8,
+          "dev_ap": 0.07613941018766757,
+          "loss": 0.258865688900268,
+          "lr": 0.001,
+          "seconds": 199.71313285827637
+        },
+        {
+          "epoch": 9,
+          "dev_ap": 0.08402362602755634,
+          "loss": 0.25822104294671944,
+          "lr": 0.001,
+          "seconds": 201.52540469169617
+        },
+        {
+          "epoch": 10,
+          "dev_ap": 0.07613941018766757,
+          "loss": 0.2580183933067243,
+          "lr": 0.001,
+          "seconds": 199.85861349105835
+        },
+        {
+          "epoch": 11,
+          "dev_ap": 0.07534229477832857,
+          "loss": 0.2581551584339675,
+          "lr": 0.001,
+          "seconds": 196.43029308319092
+        }
+      ],
+      "completion": {
+        "epochs": 11,
+        "best_epoch": 1,
+        "optimizer_updates": 17919,
+        "dev_ap": 0.19348889464271232,
+        "metrics": {
+          "mean_ap": 0.19348889464271232,
+          "ap": [
+            0.19348889464271232
+          ],
+          "auroc": [
+            0.6903739434576116
+          ],
+          "brier": [
+            0.07048010707815602
+          ],
+          "log_loss": [
+            0.2703227415570179
+          ],
+          "prevalence": [
+            0.0761394128203392
+          ],
+          "mean_auroc": 0.6903739434576116,
+          "mean_brier": 0.07048010707815602,
+          "top_fraction": {
+            "0.05": [
+              {
+                "precision": 0.29172641685890643,
+                "recall": 0.19157386177530297,
+                "selected": 373
+              }
+            ],
+            "0.1": [
+              {
+                "precision": 0.2209892152083841,
+                "recall": 0.29024287772087065,
+                "selected": 746
+              }
+            ]
+          }
+        },
+        "checkpoint_replay": {
+          "complete": true,
+          "max_probability_drift": 0.0
+        },
+        "from_scratch": true,
+        "frozen_learnable_parameters": 0
+      },
+      "exit_record": {
+        "job_id": "GRU_D_t0_s48",
+        "wrapper_pid": 2134177,
+        "child_pid": 2134180,
+        "child_identity": {
+          "start_ticks": "99502965",
+          "state": "R",
+          "boot": "b71f789a-6443-4d31-a384-079f6507be54"
+        },
+        "source_manifest_sha256": "90d823c9ccfac9ea5f0d4411829a2102d814c4f6f545a9624ced7c1c24f418de",
+        "started_at": 1792958557.248318,
+        "returncode": 0,
+        "finished_at": 1792960956.8728464
+      },
+      "prediction_summary": {
+        "count": 7460,
+        "prevalence": 0.07613941018766757,
+        "constant_prevalence_log_loss": 0.26923769630472466,
+        "mean": 0.06439538018393452,
+        "std": 1.8803022285940824e-07,
+        "minimum": 0.0643935576081276,
+        "maximum": 0.0643962025642395,
+        "unique_probabilities": 121,
+        "quantiles": [
+          0.0643935576081276,
+          0.06439467519521713,
+          0.06439532339572906,
+          0.06439539790153503,
+          0.0643954798579216,
+          0.06439574062824249,
+          0.0643962025642395
+        ]
+      },
+      "log_error_lines": [],
+      "file_hashes": {
+        "runs/cem_evidence_completion_20261025/mimic/sequence_v2/screen/jobs/GRU_D_t0_s48/history.json": "005434cadea55339a4837188307dfdb1b4163d6932e029db6a0cee441e2a9ab0",
+        "runs/cem_evidence_completion_20261025/mimic/sequence_v2/screen/jobs/GRU_D_t0_s48/completion.json": "85cfa70cfad37f52a934c151ae7a145fc4d2b6d895f09dee44c205ba10bd9873",
+        "runs/cem_evidence_completion_20261025/mimic/sequence_v2/screen/jobs/GRU_D_t0_s48/run_manifest.json": "f0fce46c00ee783d4f193d6e0effec37d35605a4037e1dab58fc5fa373f4f3a4",
+        "runs/cem_evidence_completion_20261025/mimic/sequence_v2/screen/jobs/GRU_D_t0_s48/predictions_dev.npz": "136fed4a8a20d89c6e70ea05f2c54acd72bcf39a19d1c532bebf31bc67115e90",
+        "runs/cem_evidence_completion_20261025/mimic/sequence_v2/screen/GRU_D_t0_s48.log": "eeeeeef724a10e46286d9f50fa47abfe25fead4c91c3349e63ce46fc9c5e36b5",
+        "runs/cem_evidence_completion_20261025/mimic/sequence_v2/screen/GRU_D_t0_s48_exit.json": "6c6fee06b01ebe8a3e82eeb852feabbecd0556e2524adf9902df6ee7bdec48d1"
+      },
+      "source_hashes": {
+        "scripts/train_cem_additional_baseline.py": "0c3afac620580cdb49fb3cbe548b0773b9eb786ae3fda5b73f3383e21d84b94f",
+        "models/cem_sequence_baselines.py": "88108b4e055580063bc532ddcc2a70d13baa4ade3b557aeaf4290de6bb9bdfdc",
+        "scripts/cem_sequence_inputs.py": "cc8774c969c7f8c187f3b54c2c7887e527ff73569bd3610e41f1d752ca6f716f"
+      },
+      "protocol": {
+        "epochs": 100,
+        "batch": 32,
+        "micro": 32,
+        "optimizer": "Adam",
+        "lr": 0.001,
+        "weight_decay": 0.0,
+        "patience": 10,
+        "selection": "validation AP",
+        "precision": "float32",
+        "hidden": 64,
+        "mlp_hidden": 64,
+        "dropout": 0.3,
+        "recurrent_dropout": 0.3,
+        "loss": "BCE",
+        "input": "24 hourly means and observation masks",
+        "decay_initialization": "Glorot fixed before outcomes",
+        "implementation": "GRU-D paper equations; PyTorch; train-mean imputation"
+      }
+    },
+    {
+      "database": "mimic",
+      "id": "GRU_D_t1_s48",
+      "seed": 48,
+      "endpoint": 1,
+      "history": [
+        {
+          "epoch": 1,
+          "dev_ap": 0.18172551787903898,
+          "loss": 0.428795937500645,
+          "lr": 0.001,
+          "seconds": 178.12310218811035
+        },
+        {
+          "epoch": 2,
+          "dev_ap": 0.22523398723214552,
+          "loss": 0.42656115200205397,
+          "lr": 0.001,
+          "seconds": 180.0420536994934
+        },
+        {
+          "epoch": 3,
+          "dev_ap": 0.16417477671316213,
+          "loss": 0.4262338069214343,
+          "lr": 0.001,
+          "seconds": 181.82556104660034
+        },
+        {
+          "epoch": 4,
+          "dev_ap": 0.248181938112288,
+          "loss": 0.4255656313368607,
+          "lr": 0.001,
+          "seconds": 178.6169776916504
+        },
+        {
+          "epoch": 5,
+          "dev_ap": 0.29670027761780465,
+          "loss": 0.42507603421589374,
+          "lr": 0.001,
+          "seconds": 181.75828504562378
+        },
+        {
+          "epoch": 6,
+          "dev_ap": 0.1539568887369058,
+          "loss": 0.4240155921203639,
+          "lr": 0.001,
+          "seconds": 178.3152139186859
+        },
+        {
+          "epoch": 7,
+          "dev_ap": 0.1416855519184872,
+          "loss": 0.423465098194649,
+          "lr": 0.001,
+          "seconds": 177.7587275505066
+        },
+        {
+          "epoch": 8,
+          "dev_ap": 0.15320635919298722,
+          "loss": 0.4232633146908683,
+          "lr": 0.001,
+          "seconds": 178.39561414718628
+        },
+        {
+          "epoch": 9,
+          "dev_ap": 0.14850834970938454,
+          "loss": 0.4232542666735331,
+          "lr": 0.001,
+          "seconds": 178.20964097976685
+        },
+        {
+          "epoch": 10,
+          "dev_ap": 0.15369067014738266,
+          "loss": 0.4226769051311414,
+          "lr": 0.001,
+          "seconds": 198.54845714569092
+        },
+        {
+          "epoch": 11,
+          "dev_ap": 0.15308310991957105,
+          "loss": 0.4225216044170021,
+          "lr": 0.001,
+          "seconds": 196.77063965797424
+        },
+        {
+          "epoch": 12,
+          "dev_ap": 0.15308310991957105,
+          "loss": 0.4221536678469067,
+          "lr": 0.001,
+          "seconds": 195.872545003891
+        },
+        {
+          "epoch": 13,
+          "dev_ap": 0.15310363319479822,
+          "loss": 0.42207679674913023,
+          "lr": 0.001,
+          "seconds": 197.46827864646912
+        },
+        {
+          "epoch": 14,
+          "dev_ap": 0.15308310991957105,
+          "loss": 0.42201563760204125,
+          "lr": 0.001,
+          "seconds": 197.97395038604736
+        },
+        {
+          "epoch": 15,
+          "dev_ap": 0.15308310991957105,
+          "loss": 0.4219759712543011,
+          "lr": 0.001,
+          "seconds": 199.16770815849304
+        }
+      ],
+      "completion": {
+        "epochs": 15,
+        "best_epoch": 5,
+        "optimizer_updates": 24435,
+        "dev_ap": 0.29670027761780465,
+        "metrics": {
+          "mean_ap": 0.29670027761780465,
+          "ap": [
+            0.29670027761780465
+          ],
+          "auroc": [
+            0.7215345725026596
+          ],
+          "brier": [
+            0.12965669358444998
+          ],
+          "log_loss": [
+            0.4280512440383394
+          ],
+          "prevalence": [
+            0.15308311581611633
+          ],
+          "mean_auroc": 0.7215345725026596,
+          "mean_brier": 0.12965669358444998,
+          "top_fraction": {
+            "0.05": [
+              {
+                "precision": 0.4418179005980614,
+                "recall": 0.14430654721810587,
+                "selected": 373
+              }
+            ],
+            "0.1": [
+              {
+                "precision": 0.3848671488369768,
+                "recall": 0.2514105893453456,
+                "selected": 746
+              }
+            ]
+          }
+        },
+        "checkpoint_replay": {
+          "complete": true,
+          "max_probability_drift": 0.0
+        },
+        "from_scratch": true,
+        "frozen_learnable_parameters": 0
+      },
+      "exit_record": {
+        "job_id": "GRU_D_t1_s48",
+        "wrapper_pid": 2134620,
+        "child_pid": 2134622,
+        "child_identity": {
+          "start_ticks": "99504213",
+          "state": "R",
+          "boot": "b71f789a-6443-4d31-a384-079f6507be54"
+        },
+        "source_manifest_sha256": "90d823c9ccfac9ea5f0d4411829a2102d814c4f6f545a9624ced7c1c24f418de",
+        "started_at": 1792958569.7365785,
+        "returncode": 0,
+        "finished_at": 1792961384.4881926
+      },
+      "prediction_summary": {
+        "count": 7460,
+        "prevalence": 0.15308310991957105,
+        "constant_prevalence_log_loss": 0.4280199849039822,
+        "mean": 0.15024978498111782,
+        "std": 2.672214414804547e-08,
+        "minimum": 0.15024971961975098,
+        "maximum": 0.15025080740451813,
+        "unique_probabilities": 21,
+        "quantiles": [
+          0.15024971961975098,
+          0.15024974942207336,
+          0.15024977922439575,
+          0.15024977922439575,
+          0.15024979412555695,
+          0.15024986863136292,
+          0.15025080740451813
+        ]
+      },
+      "log_error_lines": [],
+      "file_hashes": {
+        "runs/cem_evidence_completion_20261025/mimic/sequence_v2/screen/jobs/GRU_D_t1_s48/history.json": "26653f7fa02fbe8880c8ec124403c74dd97f8ec7a038447cfa5244994a8e61f4",
+        "runs/cem_evidence_completion_20261025/mimic/sequence_v2/screen/jobs/GRU_D_t1_s48/completion.json": "9400d9c1acda0eee0ccb7c54835ec1ec1e19bb7c9d83dafae030e74d0884f66e",
+        "runs/cem_evidence_completion_20261025/mimic/sequence_v2/screen/jobs/GRU_D_t1_s48/run_manifest.json": "bc129ba679d78a7dd3e758dd71ebd5d831fbe8d7155d593fc904fbd3b468fd0b",
+        "runs/cem_evidence_completion_20261025/mimic/sequence_v2/screen/jobs/GRU_D_t1_s48/predictions_dev.npz": "1fb41cf68e36949da0a4355d02f98f9ed074a6930cec79332e18a38a4ab58ffb",
+        "runs/cem_evidence_completion_20261025/mimic/sequence_v2/screen/GRU_D_t1_s48.log": "eeeeeef724a10e46286d9f50fa47abfe25fead4c91c3349e63ce46fc9c5e36b5",
+        "runs/cem_evidence_completion_20261025/mimic/sequence_v2/screen/GRU_D_t1_s48_exit.json": "9310523d790e8705b9f680a44576500ec19b52da4316dc9490b2cd1ce890d3c2"
+      },
+      "source_hashes": {
+        "scripts/train_cem_additional_baseline.py": "0c3afac620580cdb49fb3cbe548b0773b9eb786ae3fda5b73f3383e21d84b94f",
+        "models/cem_sequence_baselines.py": "88108b4e055580063bc532ddcc2a70d13baa4ade3b557aeaf4290de6bb9bdfdc",
+        "scripts/cem_sequence_inputs.py": "cc8774c969c7f8c187f3b54c2c7887e527ff73569bd3610e41f1d752ca6f716f"
+      },
+      "protocol": {
+        "epochs": 100,
+        "batch": 32,
+        "micro": 32,
+        "optimizer": "Adam",
+        "lr": 0.001,
+        "weight_decay": 0.0,
+        "patience": 10,
+        "selection": "validation AP",
+        "precision": "float32",
+        "hidden": 64,
+        "mlp_hidden": 64,
+        "dropout": 0.3,
+        "recurrent_dropout": 0.3,
+        "loss": "BCE",
+        "input": "24 hourly means and observation masks",
+        "decay_initialization": "Glorot fixed before outcomes",
+        "implementation": "GRU-D paper equations; PyTorch; train-mean imputation"
+      }
+    },
+    {
+      "database": "mimic",
+      "id": "GRU_D_t0_s49",
+      "seed": 49,
+      "endpoint": 0,
+      "history": [
+        {
+          "epoch": 1,
+          "dev_ap": 0.1066178615664096,
+          "loss": 0.26274651845584873,
+          "lr": 0.001,
+          "seconds": 188.7820179462433
+        },
+        {
+          "epoch": 2,
+          "dev_ap": 0.1529896895809331,
+          "loss": 0.26110429025833853,
+          "lr": 0.001,
+          "seconds": 182.2996702194214
+        },
+        {
+          "epoch": 3,
+          "dev_ap": 0.08728082146110788,
+          "loss": 0.26045787642611856,
+          "lr": 0.001,
+          "seconds": 184.55244851112366
+        },
+        {
+          "epoch": 4,
+          "dev_ap": 0.11219998425607042,
+          "loss": 0.2600386618057336,
+          "lr": 0.001,
+          "seconds": 176.6020700931549
+        },
+        {
+          "epoch": 5,
+          "dev_ap": 0.0766693283815811,
+          "loss": 0.2600546561478104,
+          "lr": 0.001,
+          "seconds": 180.7499074935913
+        },
+        {
+          "epoch": 6,
+          "dev_ap": 0.07499981750640157,
+          "loss": 0.259338552575729,
+          "lr": 0.001,
+          "seconds": 175.49144530296326
+        },
+        {
+          "epoch": 7,
+          "dev_ap": 0.07613941018766757,
+          "loss": 0.258674840546968,
+          "lr": 0.001,
+          "seconds": 176.00710916519165
+        },
+        {
+          "epoch": 8,
+          "dev_ap": 0.07613941018766757,
+          "loss": 0.25876040854621235,
+          "lr": 0.001,
+          "seconds": 176.69753432273865
+        },
+        {
+          "epoch": 9,
+          "dev_ap": 0.07613941018766757,
+          "loss": 0.25826751445253326,
+          "lr": 0.001,
+          "seconds": 177.27783060073853
+        },
+        {
+          "epoch": 10,
+          "dev_ap": 0.07661754710569045,
+          "loss": 0.2583185635852854,
+          "lr": 0.001,
+          "seconds": 179.02534914016724
+        },
+        {
+          "epoch": 11,
+          "dev_ap": 0.07613941018766757,
+          "loss": 0.2581390258078794,
+          "lr": 0.001,
+          "seconds": 179.19580698013306
+        },
+        {
+          "epoch": 12,
+          "dev_ap": 0.18032207711675455,
+          "loss": 0.25775778546685707,
+          "lr": 0.001,
+          "seconds": 178.40545177459717
+        },
+        {
+          "epoch": 13,
+          "dev_ap": 0.07613941018766757,
+          "loss": 0.2576671628223492,
+          "lr": 0.001,
+          "seconds": 176.96155905723572
+        },
+        {
+          "epoch": 14,
+          "dev_ap": 0.07618025751072961,
+          "loss": 0.2574986491299557,
+          "lr": 0.001,
+          "seconds": 176.63663148880005
+        },
+        {
+          "epoch": 15,
+          "dev_ap": 0.07613941018766757,
+          "loss": 0.25732784550320287,
+          "lr": 0.001,
+          "seconds": 176.62077927589417
+        },
+        {
+          "epoch": 16,
+          "dev_ap": 0.07613941018766757,
+          "loss": 0.25715886331934235,
+          "lr": 0.001,
+          "seconds": 175.57054495811462
+        },
+        {
+          "epoch": 17,
+          "dev_ap": 0.07613941018766757,
+          "loss": 0.2569511666326579,
+          "lr": 0.001,
+          "seconds": 171.5731074810028
+        },
+        {
+          "epoch": 18,
+          "dev_ap": 0.07613941018766757,
+          "loss": 0.25724151267853873,
+          "lr": 0.001,
+          "seconds": 171.21526503562927
+        },
+        {
+          "epoch": 19,
+          "dev_ap": 0.07613941018766757,
+          "loss": 0.2568196247022978,
+          "lr": 0.001,
+          "seconds": 171.46160221099854
+        },
+        {
+          "epoch": 20,
+          "dev_ap": 0.07613941018766757,
+          "loss": 0.257072097090976,
+          "lr": 0.001,
+          "seconds": 171.86306381225586
+        },
+        {
+          "epoch": 21,
+          "dev_ap": 0.07613941018766757,
+          "loss": 0.25667869999752535,
+          "lr": 0.001,
+          "seconds": 171.4481918811798
+        },
+        {
+          "epoch": 22,
+          "dev_ap": 0.07613941018766757,
+          "loss": 0.2569431629457575,
+          "lr": 0.001,
+          "seconds": 171.535382270813
+        }
+      ],
+      "completion": {
+        "epochs": 22,
+        "best_epoch": 12,
+        "optimizer_updates": 35838,
+        "dev_ap": 0.18032207711675455,
+        "metrics": {
+          "mean_ap": 0.18032207711675455,
+          "ap": [
+            0.18032207711675455
+          ],
+          "auroc": [
+            0.7362660984771076
+          ],
+          "brier": [
+            0.07070759843912253
+          ],
+          "log_loss": [
+            0.2723287716128392
+          ],
+          "prevalence": [
+            0.0761394128203392
+          ],
+          "mean_auroc": 0.7362660984771076,
+          "mean_brier": 0.07070759843912253,
+          "top_fraction": {
+            "0.05": [
+              {
+                "precision": 0.35064935064935066,
+                "recall": 0.23026797146515457,
+                "selected": 373
+              }
+            ],
+            "0.1": [
+              {
+                "precision": 0.23800883191366615,
+                "recall": 0.31259610670351223,
+                "selected": 746
+              }
+            ]
+          }
+        },
+        "checkpoint_replay": {
+          "complete": true,
+          "max_probability_drift": 0.0
+        },
+        "from_scratch": true,
+        "frozen_learnable_parameters": 0
+      },
+      "exit_record": {
+        "job_id": "GRU_D_t0_s49",
+        "wrapper_pid": 2548060,
+        "child_pid": 2548063,
+        "child_identity": {
+          "start_ticks": "101128222",
+          "state": "R",
+          "boot": "b71f789a-6443-4d31-a384-079f6507be54"
+        },
+        "source_manifest_sha256": "90d823c9ccfac9ea5f0d4411829a2102d814c4f6f545a9624ced7c1c24f418de",
+        "started_at": 1792974809.8239567,
+        "returncode": 0,
+        "finished_at": 1792978714.2755525
+      },
+      "prediction_summary": {
+        "count": 7460,
+        "prevalence": 0.07613941018766757,
+        "constant_prevalence_log_loss": 0.26923769630472466,
+        "mean": 0.05702400157283043,
+        "std": 1.1612795067022986e-08,
+        "minimum": 0.05702393129467964,
+        "maximum": 0.0570240244269371,
+        "unique_probabilities": 8,
+        "quantiles": [
+          0.05702393129467964,
+          0.057023968547582626,
+          0.057023994624614716,
+          0.057023994624614716,
+          0.05702401325106621,
+          0.0570240244269371,
+          0.0570240244269371
+        ]
+      },
+      "log_error_lines": [],
+      "file_hashes": {
+        "runs/cem_evidence_completion_20261025/mimic/sequence_v2/screen/jobs/GRU_D_t0_s49/history.json": "aba85eb737662890397a1639228aa0e90685b7e961701dc56a7dbe0614871347",
+        "runs/cem_evidence_completion_20261025/mimic/sequence_v2/screen/jobs/GRU_D_t0_s49/completion.json": "5354f200fb0a61061c9a4918a0b70582a573a7e7ec357c40dc8244e727f31061",
+        "runs/cem_evidence_completion_20261025/mimic/sequence_v2/screen/jobs/GRU_D_t0_s49/run_manifest.json": "612c9a0cd23b65ee708c797d1f943d10a24a9e4c28f11241d423bcfb51672c6e",
+        "runs/cem_evidence_completion_20261025/mimic/sequence_v2/screen/jobs/GRU_D_t0_s49/predictions_dev.npz": "fc173a3f1791180945ce90860cc9d492edaed8efb450e684df3e698eabe1af63",
+        "runs/cem_evidence_completion_20261025/mimic/sequence_v2/screen/GRU_D_t0_s49.log": "eeeeeef724a10e46286d9f50fa47abfe25fead4c91c3349e63ce46fc9c5e36b5",
+        "runs/cem_evidence_completion_20261025/mimic/sequence_v2/screen/GRU_D_t0_s49_exit.json": "1c88d534d5f4989eee9ff0017f8965e438799df3763396d71bba6c4607ffca4d"
+      },
+      "source_hashes": {
+        "scripts/train_cem_additional_baseline.py": "0c3afac620580cdb49fb3cbe548b0773b9eb786ae3fda5b73f3383e21d84b94f",
+        "models/cem_sequence_baselines.py": "88108b4e055580063bc532ddcc2a70d13baa4ade3b557aeaf4290de6bb9bdfdc",
+        "scripts/cem_sequence_inputs.py": "cc8774c969c7f8c187f3b54c2c7887e527ff73569bd3610e41f1d752ca6f716f"
+      },
+      "protocol": {
+        "epochs": 100,
+        "batch": 32,
+        "micro": 32,
+        "optimizer": "Adam",
+        "lr": 0.001,
+        "weight_decay": 0.0,
+        "patience": 10,
+        "selection": "validation AP",
+        "precision": "float32",
+        "hidden": 64,
+        "mlp_hidden": 64,
+        "dropout": 0.3,
+        "recurrent_dropout": 0.3,
+        "loss": "BCE",
+        "input": "24 hourly means and observation masks",
+        "decay_initialization": "Glorot fixed before outcomes",
+        "implementation": "GRU-D paper equations; PyTorch; train-mean imputation"
+      }
+    },
+    {
+      "database": "mimic",
+      "id": "GRU_D_t1_s49",
+      "seed": 49,
+      "endpoint": 1,
+      "history": [
+        {
+          "epoch": 1,
+          "dev_ap": 0.17330290988528968,
+          "loss": 0.4285988869014749,
+          "lr": 0.001,
+          "seconds": 191.15264415740967
+        },
+        {
+          "epoch": 2,
+          "dev_ap": 0.15179311852689553,
+          "loss": 0.4259048083192469,
+          "lr": 0.001,
+          "seconds": 186.2447850704193
+        },
+        {
+          "epoch": 3,
+          "dev_ap": 0.18808717180900547,
+          "loss": 0.425979671634118,
+          "lr": 0.001,
+          "seconds": 183.83216905593872
+        },
+        {
+          "epoch": 4,
+          "dev_ap": 0.3291269389854054,
+          "loss": 0.4252788836849046,
+          "lr": 0.001,
+          "seconds": 184.66107034683228
+        },
+        {
+          "epoch": 5,
+          "dev_ap": 0.15600262787315275,
+          "loss": 0.4245846833346952,
+          "lr": 0.001,
+          "seconds": 182.0700671672821
+        },
+        {
+          "epoch": 6,
+          "dev_ap": 0.15812499490516774,
+          "loss": 0.4236262268717264,
+          "lr": 0.001,
+          "seconds": 182.81492042541504
+        },
+        {
+          "epoch": 7,
+          "dev_ap": 0.16046969958979052,
+          "loss": 0.4234218559405655,
+          "lr": 0.001,
+          "seconds": 182.39056944847107
+        },
+        {
+          "epoch": 8,
+          "dev_ap": 0.19025762878236246,
+          "loss": 0.423727935212169,
+          "lr": 0.001,
+          "seconds": 183.0173032283783
+        },
+        {
+          "epoch": 9,
+          "dev_ap": 0.15308310991957105,
+          "loss": 0.42293287282373854,
+          "lr": 0.001,
+          "seconds": 182.18538069725037
+        },
+        {
+          "epoch": 10,
+          "dev_ap": 0.15308310991957105,
+          "loss": 0.42289267904821687,
+          "lr": 0.001,
+          "seconds": 184.67810940742493
+        },
+        {
+          "epoch": 11,
+          "dev_ap": 0.15308310991957105,
+          "loss": 0.42275500357944906,
+          "lr": 0.001,
+          "seconds": 182.72380447387695
+        },
+        {
+          "epoch": 12,
+          "dev_ap": 0.15308310991957105,
+          "loss": 0.42231677549977004,
+          "lr": 0.001,
+          "seconds": 184.94910144805908
+        },
+        {
+          "epoch": 13,
+          "dev_ap": 0.15308310991957105,
+          "loss": 0.4220811830646167,
+          "lr": 0.001,
+          "seconds": 183.50887489318848
+        },
+        {
+          "epoch": 14,
+          "dev_ap": 0.15308310991957105,
+          "loss": 0.42219984308339875,
+          "lr": 0.001,
+          "seconds": 178.31500434875488
+        }
+      ],
+      "completion": {
+        "epochs": 14,
+        "best_epoch": 4,
+        "optimizer_updates": 22806,
+        "dev_ap": 0.3291269389854054,
+        "metrics": {
+          "mean_ap": 0.3291269389854054,
+          "ap": [
+            0.3291269389854054
+          ],
+          "auroc": [
+            0.7185968674828376
+          ],
+          "brier": [
+            0.12966589955372212
+          ],
+          "log_loss": [
+            0.42808743151722534
+          ],
+          "prevalence": [
+            0.15308311581611633
+          ],
+          "mean_auroc": 0.7185968674828376,
+          "mean_brier": 0.12966589955372212,
+          "top_fraction": {
+            "0.05": [
+              {
+                "precision": 0.45334930504059473,
+                "recall": 0.14807293413322403,
+                "selected": 373
+              }
+            ],
+            "0.1": [
+              {
+                "precision": 0.4145522788203753,
+                "recall": 0.2708021015761821,
+                "selected": 746
+              }
+            ]
+          }
+        },
+        "checkpoint_replay": {
+          "complete": true,
+          "max_probability_drift": 0.0
+        },
+        "from_scratch": true,
+        "frozen_learnable_parameters": 0
+      },
+      "exit_record": {
+        "job_id": "GRU_D_t1_s49",
+        "wrapper_pid": 2562298,
+        "child_pid": 2562300,
+        "child_identity": {
+          "start_ticks": "101191698",
+          "state": "R",
+          "boot": "b71f789a-6443-4d31-a384-079f6507be54"
+        },
+        "source_manifest_sha256": "90d823c9ccfac9ea5f0d4411829a2102d814c4f6f545a9624ced7c1c24f418de",
+        "started_at": 1792975444.583294,
+        "returncode": 0,
+        "finished_at": 1792978033.2402751
+      },
+      "prediction_summary": {
+        "count": 7460,
+        "prevalence": 0.15308310991957105,
+        "constant_prevalence_log_loss": 0.4280199849039822,
+        "mean": 0.1489292758679262,
+        "std": 1.3708152727488566e-07,
+        "minimum": 0.14892809092998505,
+        "maximum": 0.148929625749588,
+        "unique_probabilities": 56,
+        "quantiles": [
+          0.14892809092998505,
+          0.1489289104938507,
+          0.1489291936159134,
+          0.14892928302288055,
+          0.14892937242984772,
+          0.14892955124378204,
+          0.148929625749588
+        ]
+      },
+      "log_error_lines": [],
+      "file_hashes": {
+        "runs/cem_evidence_completion_20261025/mimic/sequence_v2/screen/jobs/GRU_D_t1_s49/history.json": "c54501f55fcda03e7cd44ad154465fbe79b71474a344021df9c76bb8bb0a10db",
+        "runs/cem_evidence_completion_20261025/mimic/sequence_v2/screen/jobs/GRU_D_t1_s49/completion.json": "d516c59f295b59d64bb2dfeba1ed1f03f4f47ddfeb12de4940b114df20c0458c",
+        "runs/cem_evidence_completion_20261025/mimic/sequence_v2/screen/jobs/GRU_D_t1_s49/run_manifest.json": "754ccae84356bf470cf39fa325f6381520778f81c24ad20565ea77f9b64f91aa",
+        "runs/cem_evidence_completion_20261025/mimic/sequence_v2/screen/jobs/GRU_D_t1_s49/predictions_dev.npz": "8a096f73314c3abed8ee0ae63f17b6f0d1c9a6ded4f83225f9773c8da7c38f43",
+        "runs/cem_evidence_completion_20261025/mimic/sequence_v2/screen/GRU_D_t1_s49.log": "eeeeeef724a10e46286d9f50fa47abfe25fead4c91c3349e63ce46fc9c5e36b5",
+        "runs/cem_evidence_completion_20261025/mimic/sequence_v2/screen/GRU_D_t1_s49_exit.json": "64332b434bc9f0f2c5a0ec53d71870cf2d1d2ab848276dcab3b66d89ea33712b"
+      },
+      "source_hashes": {
+        "scripts/train_cem_additional_baseline.py": "0c3afac620580cdb49fb3cbe548b0773b9eb786ae3fda5b73f3383e21d84b94f",
+        "models/cem_sequence_baselines.py": "88108b4e055580063bc532ddcc2a70d13baa4ade3b557aeaf4290de6bb9bdfdc",
+        "scripts/cem_sequence_inputs.py": "cc8774c969c7f8c187f3b54c2c7887e527ff73569bd3610e41f1d752ca6f716f"
+      },
+      "protocol": {
+        "epochs": 100,
+        "batch": 32,
+        "micro": 32,
+        "optimizer": "Adam",
+        "lr": 0.001,
+        "weight_decay": 0.0,
+        "patience": 10,
+        "selection": "validation AP",
+        "precision": "float32",
+        "hidden": 64,
+        "mlp_hidden": 64,
+        "dropout": 0.3,
+        "recurrent_dropout": 0.3,
+        "loss": "BCE",
+        "input": "24 hourly means and observation masks",
+        "decay_initialization": "Glorot fixed before outcomes",
+        "implementation": "GRU-D paper equations; PyTorch; train-mean imputation"
+      }
+    },
+    {
+      "database": "mimic",
+      "id": "GRU_D_t0_s50",
+      "seed": 50,
+      "endpoint": 0,
+      "history": [
+        {
+          "epoch": 1,
+          "dev_ap": 0.19713162443987373,
+          "loss": 0.2626897892827668,
+          "lr": 0.001,
+          "seconds": 235.04926753044128
+        },
+        {
+          "epoch": 2,
+          "dev_ap": 0.21105020015728576,
+          "loss": 0.2615814062540844,
+          "lr": 0.001,
+          "seconds": 234.98165941238403
+        },
+        {
+          "epoch": 3,
+          "dev_ap": 0.10166051445456777,
+          "loss": 0.2605409562897738,
+          "lr": 0.001,
+          "seconds": 235.4331567287445
+        },
+        {
+          "epoch": 4,
+          "dev_ap": 0.09174373759628318,
+          "loss": 0.2603478621568066,
+          "lr": 0.001,
+          "seconds": 243.1863512992859
+        },
+        {
+          "epoch": 5,
+          "dev_ap": 0.07627232442594334,
+          "loss": 0.2598220291878675,
+          "lr": 0.001,
+          "seconds": 233.63915371894836
+        },
+        {
+          "epoch": 6,
+          "dev_ap": 0.14128414595842428,
+          "loss": 0.25959040807260597,
+          "lr": 0.001,
+          "seconds": 233.1512734889984
+        },
+        {
+          "epoch": 7,
+          "dev_ap": 0.09979826449802238,
+          "loss": 0.2589579587160628,
+          "lr": 0.001,
+          "seconds": 229.07148218154907
+        },
+        {
+          "epoch": 8,
+          "dev_ap": 0.13185269815022896,
+          "loss": 0.2585979627298562,
+          "lr": 0.001,
+          "seconds": 224.485826253891
+        },
+        {
+          "epoch": 9,
+          "dev_ap": 0.09145060190773631,
+          "loss": 0.25852607611911527,
+          "lr": 0.001,
+          "seconds": 236.31113004684448
+        },
+        {
+          "epoch": 10,
+          "dev_ap": 0.07613941018766757,
+          "loss": 0.2579453512422824,
+          "lr": 0.001,
+          "seconds": 215.68174934387207
+        },
+        {
+          "epoch": 11,
+          "dev_ap": 0.07613941018766757,
+          "loss": 0.2580336726581653,
+          "lr": 0.001,
+          "seconds": 231.7780725955963
+        },
+        {
+          "epoch": 12,
+          "dev_ap": 0.07613941018766757,
+          "loss": 0.2576677980875116,
+          "lr": 0.001,
+          "seconds": 230.1318953037262
+        }
+      ],
+      "completion": {
+        "epochs": 12,
+        "best_epoch": 2,
+        "optimizer_updates": 19548,
+        "dev_ap": 0.21105020015728576,
+        "metrics": {
+          "mean_ap": 0.21105020015728576,
+          "ap": [
+            0.21105020015728576
+          ],
+          "auroc": [
+            0.7411210589129671
+          ],
+          "brier": [
+            0.07049653137526325
+          ],
+          "log_loss": [
+            0.27023714590563513
+          ],
+          "prevalence": [
+            0.0761394128203392
+          ],
+          "mean_auroc": 0.7411210589129671,
+          "mean_brier": 0.07049653137526325,
+          "top_fraction": {
+            "0.05": [
+              {
+                "precision": 0.3227857441522985,
+                "recall": 0.21197021579015374,
+                "selected": 373
+              }
+            ],
+            "0.1": [
+              {
+                "precision": 0.2582382572524315,
+                "recall": 0.33916503505336953,
+                "selected": 746
+              }
+            ]
+          }
+        },
+        "checkpoint_replay": {
+          "complete": true,
+          "max_probability_drift": 0.0
+        },
+        "from_scratch": true,
+        "frozen_learnable_parameters": 0
+      },
+      "exit_record": {
+        "job_id": "GRU_D_t0_s50",
+        "wrapper_pid": 3735721,
+        "child_pid": 3735724,
+        "child_identity": {
+          "start_ticks": "105280318",
+          "state": "R",
+          "boot": "b71f789a-6443-4d31-a384-079f6507be54"
+        },
+        "source_manifest_sha256": "90d823c9ccfac9ea5f0d4411829a2102d814c4f6f545a9624ced7c1c24f418de",
+        "started_at": 1793016330.785142,
+        "returncode": 0,
+        "finished_at": 1793019133.7432437
+      },
+      "prediction_summary": {
+        "count": 7460,
+        "prevalence": 0.07613941018766757,
+        "constant_prevalence_log_loss": 0.26923769630472466,
+        "mean": 0.08856251335955018,
+        "std": 5.322707362727874e-07,
+        "minimum": 0.08856241405010223,
+        "maximum": 0.08860844373703003,
+        "unique_probabilities": 18,
+        "quantiles": [
+          0.08856241405010223,
+          0.08856245130300522,
+          0.0885624960064888,
+          0.08856251090765,
+          0.08856251090765,
+          0.08856256306171417,
+          0.08860844373703003
+        ]
+      },
+      "log_error_lines": [],
+      "file_hashes": {
+        "runs/cem_evidence_completion_20261025/mimic/sequence_v2/screen/jobs/GRU_D_t0_s50/history.json": "83d3f63a97adbe5792515f81f4b96e69d78a16ca43ae7c7cb810b1087ca0b534",
+        "runs/cem_evidence_completion_20261025/mimic/sequence_v2/screen/jobs/GRU_D_t0_s50/completion.json": "8cebe057dcee86a71eb0a2f0edb73170975f9542b7da7f0ae4a5e61b5dd8774f",
+        "runs/cem_evidence_completion_20261025/mimic/sequence_v2/screen/jobs/GRU_D_t0_s50/run_manifest.json": "245ad328268b9157d92725325b507d69d2eff3f9a5a617c2936134b61833275c",
+        "runs/cem_evidence_completion_20261025/mimic/sequence_v2/screen/jobs/GRU_D_t0_s50/predictions_dev.npz": "252bfc7813aa38be6e832cc27b45046294b6221f4e69e5ea1816001fe2039f47",
+        "runs/cem_evidence_completion_20261025/mimic/sequence_v2/screen/GRU_D_t0_s50.log": "eeeeeef724a10e46286d9f50fa47abfe25fead4c91c3349e63ce46fc9c5e36b5",
+        "runs/cem_evidence_completion_20261025/mimic/sequence_v2/screen/GRU_D_t0_s50_exit.json": "9ba6f153f921ea94ae3671b6344ee585e1f421598a392ed2fcc72d1e193693c2"
+      },
+      "source_hashes": {
+        "scripts/train_cem_additional_baseline.py": "0c3afac620580cdb49fb3cbe548b0773b9eb786ae3fda5b73f3383e21d84b94f",
+        "models/cem_sequence_baselines.py": "88108b4e055580063bc532ddcc2a70d13baa4ade3b557aeaf4290de6bb9bdfdc",
+        "scripts/cem_sequence_inputs.py": "cc8774c969c7f8c187f3b54c2c7887e527ff73569bd3610e41f1d752ca6f716f"
+      },
+      "protocol": {
+        "epochs": 100,
+        "batch": 32,
+        "micro": 32,
+        "optimizer": "Adam",
+        "lr": 0.001,
+        "weight_decay": 0.0,
+        "patience": 10,
+        "selection": "validation AP",
+        "precision": "float32",
+        "hidden": 64,
+        "mlp_hidden": 64,
+        "dropout": 0.3,
+        "recurrent_dropout": 0.3,
+        "loss": "BCE",
+        "input": "24 hourly means and observation masks",
+        "decay_initialization": "Glorot fixed before outcomes",
+        "implementation": "GRU-D paper equations; PyTorch; train-mean imputation"
+      }
+    },
+    {
+      "database": "mimic",
+      "id": "GRU_D_t1_s50",
+      "seed": 50,
+      "endpoint": 1,
+      "history": [
+        {
+          "epoch": 1,
+          "dev_ap": 0.1446392053100557,
+          "loss": 0.4284432986108821,
+          "lr": 0.001,
+          "seconds": 215.58391499519348
+        },
+        {
+          "epoch": 2,
+          "dev_ap": 0.17147651624491672,
+          "loss": 0.4269157260666652,
+          "lr": 0.001,
+          "seconds": 203.06317949295044
+        },
+        {
+          "epoch": 3,
+          "dev_ap": 0.1738981206588766,
+          "loss": 0.42565930356623566,
+          "lr": 0.001,
+          "seconds": 194.011456489563
+        },
+        {
+          "epoch": 4,
+          "dev_ap": 0.27456404472821505,
+          "loss": 0.425257371784524,
+          "lr": 0.001,
+          "seconds": 189.97439289093018
+        },
+        {
+          "epoch": 5,
+          "dev_ap": 0.24751841304480657,
+          "loss": 0.42405109468569974,
+          "lr": 0.001,
+          "seconds": 203.181298494339
+        },
+        {
+          "epoch": 6,
+          "dev_ap": 0.1444115123175903,
+          "loss": 0.42422281686611674,
+          "lr": 0.001,
+          "seconds": 201.10640239715576
+        },
+        {
+          "epoch": 7,
+          "dev_ap": 0.1528250457396053,
+          "loss": 0.42338093459338494,
+          "lr": 0.001,
+          "seconds": 208.88248014450073
+        },
+        {
+          "epoch": 8,
+          "dev_ap": 0.16652346647886723,
+          "loss": 0.4236940413533861,
+          "lr": 0.001,
+          "seconds": 211.00251746177673
+        },
+        {
+          "epoch": 9,
+          "dev_ap": 0.1361260116658328,
+          "loss": 0.4235810536409492,
+          "lr": 0.001,
+          "seconds": 213.25433778762817
+        },
+        {
+          "epoch": 10,
+          "dev_ap": 0.15574659736588153,
+          "loss": 0.4227652087489076,
+          "lr": 0.001,
+          "seconds": 209.66135048866272
+        },
+        {
+          "epoch": 11,
+          "dev_ap": 0.15316797584783765,
+          "loss": 0.4226785761842946,
+          "lr": 0.001,
+          "seconds": 209.00492572784424
+        },
+        {
+          "epoch": 12,
+          "dev_ap": 0.15308310991957105,
+          "loss": 0.4222802605911925,
+          "lr": 0.001,
+          "seconds": 199.36832571029663
+        },
+        {
+          "epoch": 13,
+          "dev_ap": 0.15310363319479822,
+          "loss": 0.42198509625115055,
+          "lr": 0.001,
+          "seconds": 203.69976210594177
+        },
+        {
+          "epoch": 14,
+          "dev_ap": 0.14604636375507715,
+          "loss": 0.4220676973227031,
+          "lr": 0.001,
+          "seconds": 222.31113648414612
+        }
+      ],
+      "completion": {
+        "epochs": 14,
+        "best_epoch": 4,
+        "optimizer_updates": 22806,
+        "dev_ap": 0.27456404472821505,
+        "metrics": {
+          "mean_ap": 0.27456404472821505,
+          "ap": [
+            0.27456404472821505
+          ],
+          "auroc": [
+            0.6965895817082819
+          ],
+          "brier": [
+            0.1297497453609754
+          ],
+          "log_loss": [
+            0.42842451808968074
+          ],
+          "prevalence": [
+            0.15308311581611633
+          ],
+          "mean_auroc": 0.6965895817082819,
+          "mean_brier": 0.1297497453609754,
+          "top_fraction": {
+            "0.05": [
+              {
+                "precision": 0.4282213471849866,
+                "recall": 0.13986564141856392,
+                "selected": 373
+              }
+            ],
+            "0.1": [
+              {
+                "precision": 0.3814291349374553,
+                "recall": 0.2491647413864638,
+                "selected": 746
+              }
+            ]
+          }
+        },
+        "checkpoint_replay": {
+          "complete": true,
+          "max_probability_drift": 0.0
+        },
+        "from_scratch": true,
+        "frozen_learnable_parameters": 0
+      },
+      "exit_record": {
+        "job_id": "GRU_D_t1_s50",
+        "wrapper_pid": 3927416,
+        "child_pid": 3927417,
+        "child_identity": {
+          "start_ticks": "105888416",
+          "state": "R",
+          "boot": "b71f789a-6443-4d31-a384-079f6507be54"
+        },
+        "source_manifest_sha256": "90d823c9ccfac9ea5f0d4411829a2102d814c4f6f545a9624ced7c1c24f418de",
+        "started_at": 1793022411.76507,
+        "returncode": 0,
+        "finished_at": 1793025312.1432955
+      },
+      "prediction_summary": {
+        "count": 7460,
+        "prevalence": 0.15308310991957105,
+        "constant_prevalence_log_loss": 0.4280199849039822,
+        "mean": 0.1430291534628689,
+        "std": 3.624884393200542e-08,
+        "minimum": 0.14302906394004822,
+        "maximum": 0.14302952587604523,
+        "unique_probabilities": 16,
+        "quantiles": [
+          0.14302906394004822,
+          0.1430290937423706,
+          0.143029123544693,
+          0.14302915334701538,
+          0.14302915334701538,
+          0.14302928745746613,
+          0.14302952587604523
+        ]
+      },
+      "log_error_lines": [],
+      "file_hashes": {
+        "runs/cem_evidence_completion_20261025/mimic/sequence_v2/screen/jobs/GRU_D_t1_s50/history.json": "882549fdb6efd0456345f3951db3484181ee63381b770c5a11f56b10ec398edd",
+        "runs/cem_evidence_completion_20261025/mimic/sequence_v2/screen/jobs/GRU_D_t1_s50/completion.json": "4dfea63233a191df723a9f6131f8a7ac3f85f1998bef8a8b2b8a79f85b4348e1",
+        "runs/cem_evidence_completion_20261025/mimic/sequence_v2/screen/jobs/GRU_D_t1_s50/run_manifest.json": "6b98b000c64537a45d79e3378bcabab2644e0aa08083c61536618dd5480fed6d",
+        "runs/cem_evidence_completion_20261025/mimic/sequence_v2/screen/jobs/GRU_D_t1_s50/predictions_dev.npz": "3ddcd58c3a2c7daa19fe655de3bcb5491b24dacfa138e7a9f58315fc619269f6",
+        "runs/cem_evidence_completion_20261025/mimic/sequence_v2/screen/GRU_D_t1_s50.log": "eeeeeef724a10e46286d9f50fa47abfe25fead4c91c3349e63ce46fc9c5e36b5",
+        "runs/cem_evidence_completion_20261025/mimic/sequence_v2/screen/GRU_D_t1_s50_exit.json": "13f211f3d8f504567338df0ab822bff415eb4fb3e5f7910d87476d63acd16c50"
+      },
+      "source_hashes": {
+        "scripts/train_cem_additional_baseline.py": "0c3afac620580cdb49fb3cbe548b0773b9eb786ae3fda5b73f3383e21d84b94f",
+        "models/cem_sequence_baselines.py": "88108b4e055580063bc532ddcc2a70d13baa4ade3b557aeaf4290de6bb9bdfdc",
+        "scripts/cem_sequence_inputs.py": "cc8774c969c7f8c187f3b54c2c7887e527ff73569bd3610e41f1d752ca6f716f"
+      },
+      "protocol": {
+        "epochs": 100,
+        "batch": 32,
+        "micro": 32,
+        "optimizer": "Adam",
+        "lr": 0.001,
+        "weight_decay": 0.0,
+        "patience": 10,
+        "selection": "validation AP",
+        "precision": "float32",
+        "hidden": 64,
+        "mlp_hidden": 64,
+        "dropout": 0.3,
+        "recurrent_dropout": 0.3,
+        "loss": "BCE",
+        "input": "24 hourly means and observation masks",
+        "decay_initialization": "Glorot fixed before outcomes",
+        "implementation": "GRU-D paper equations; PyTorch; train-mean imputation"
+      }
+    },
+    {
+      "database": "eicu",
+      "id": "GRU_D_t0_s48",
+      "seed": 48,
+      "endpoint": 0,
+      "history": [
+        {
+          "epoch": 1,
+          "dev_ap": 0.08013198240992121,
+          "loss": 0.21124106700880912,
+          "lr": 0.001,
+          "seconds": 466.3072590827942
+        },
+        {
+          "epoch": 2,
+          "dev_ap": 0.05420210366658376,
+          "loss": 0.20996829065832953,
+          "lr": 0.001,
+          "seconds": 455.979864358902
+        },
+        {
+          "epoch": 3,
+          "dev_ap": 0.0557105604226415,
+          "loss": 0.20914875364880542,
+          "lr": 0.001,
+          "seconds": 464.57770109176636
+        },
+        {
+          "epoch": 4,
+          "dev_ap": 0.052968036529680365,
+          "loss": 0.20863629755544064,
+          "lr": 0.001,
+          "seconds": 461.1458809375763
+        },
+        {
+          "epoch": 5,
+          "dev_ap": 0.053051575429941045,
+          "loss": 0.20762237179967036,
+          "lr": 0.001,
+          "seconds": 464.89746284484863
+        },
+        {
+          "epoch": 6,
+          "dev_ap": 0.052968036529680365,
+          "loss": 0.20729137373316367,
+          "lr": 0.001,
+          "seconds": 457.82973313331604
+        },
+        {
+          "epoch": 7,
+          "dev_ap": 0.052968036529680365,
+          "loss": 0.20680229260302926,
+          "lr": 0.001,
+          "seconds": 456.7635681629181
+        },
+        {
+          "epoch": 8,
+          "dev_ap": 0.052968036529680365,
+          "loss": 0.20738878407053923,
+          "lr": 0.001,
+          "seconds": 458.33521604537964
+        },
+        {
+          "epoch": 9,
+          "dev_ap": 0.052968036529680365,
+          "loss": 0.20669293920107318,
+          "lr": 0.001,
+          "seconds": 475.57619190216064
+        },
+        {
+          "epoch": 10,
+          "dev_ap": 0.052968036529680365,
+          "loss": 0.2063883259674335,
+          "lr": 0.001,
+          "seconds": 483.29353404045105
+        },
+        {
+          "epoch": 11,
+          "dev_ap": 0.052968036529680365,
+          "loss": 0.20629850164428495,
+          "lr": 0.001,
+          "seconds": 478.6654243469238
+        }
+      ],
+      "completion": {
+        "epochs": 11,
+        "best_epoch": 1,
+        "optimizer_updates": 31823,
+        "dev_ap": 0.08013198240992121,
+        "metrics": {
+          "mean_ap": 0.08013198240992121,
+          "ap": [
+            0.08013198240992121
+          ],
+          "auroc": [
+            0.5839728073724308
+          ],
+          "brier": [
+            0.05017447873444955
+          ],
+          "log_loss": [
+            0.20728878957741062
+          ],
+          "prevalence": [
+            0.05296803638339043
+          ],
+          "mean_auroc": 0.5839728073724308,
+          "mean_brier": 0.05017447873444955,
+          "top_fraction": {
+            "0.05": [
+              {
+                "precision": 0.140484883572538,
+                "recall": 0.13261288578614577,
+                "selected": 657
+              }
+            ],
+            "0.1": [
+              {
+                "precision": 0.10254826056036634,
+                "recall": 0.19360404364413988,
+                "selected": 1314
+              }
+            ]
+          }
+        },
+        "checkpoint_replay": {
+          "complete": true,
+          "max_probability_drift": 0.0
+        },
+        "from_scratch": true,
+        "frozen_learnable_parameters": 0
+      },
+      "exit_record": {
+        "job_id": "GRU_D_t0_s48",
+        "wrapper_pid": 2401300,
+        "child_pid": 2401301,
+        "child_identity": {
+          "start_ticks": "100015007",
+          "state": "R",
+          "boot": "5619abba-f7e1-4c48-a674-635086d01a76"
+        },
+        "source_manifest_sha256": "32f31938ff9a78c2a443fa5a182896183b662e85cd778cf7f320fc3d9aeac218",
+        "started_at": 1792965343.512568,
+        "returncode": 0,
+        "finished_at": 1792970505.7058735
+      },
+      "prediction_summary": {
+        "count": 13140,
+        "prevalence": 0.052968036529680365,
+        "constant_prevalence_log_loss": 0.20716340522255355,
+        "mean": 0.04949590269606589,
+        "std": 1.1149880465384679e-08,
+        "minimum": 0.049495864659547806,
+        "maximum": 0.04949606955051422,
+        "unique_probabilities": 13,
+        "quantiles": [
+          0.049495864659547806,
+          0.0494958870112896,
+          0.049495894461870193,
+          0.04949590936303139,
+          0.04949590936303139,
+          0.04949593171477318,
+          0.04949606955051422
+        ]
+      },
+      "log_error_lines": [],
+      "file_hashes": {
+        "runs/cem_evidence_completion_20261025/eicu/sequence_v2/screen/jobs/GRU_D_t0_s48/history.json": "873b653c7d0c5900732a3625d5cf04e0e121e4283558a6a83c4ebbea604dbc1e",
+        "runs/cem_evidence_completion_20261025/eicu/sequence_v2/screen/jobs/GRU_D_t0_s48/completion.json": "ebbc429f0daeb72c575bf3fa2b177ab3b4d89632fcd261f86f3aa38d799a58f5",
+        "runs/cem_evidence_completion_20261025/eicu/sequence_v2/screen/jobs/GRU_D_t0_s48/run_manifest.json": "3e4a353314dfc0cf283a17a111fb50bd1a8dba1665e69a943c38d4e5e8bfb7a6",
+        "runs/cem_evidence_completion_20261025/eicu/sequence_v2/screen/jobs/GRU_D_t0_s48/predictions_dev.npz": "1284af46ef11e69d5d25f678abb46924de12d525191f26d483c7373a337d02fa",
+        "runs/cem_evidence_completion_20261025/eicu/sequence_v2/screen/GRU_D_t0_s48.log": "eeeeeef724a10e46286d9f50fa47abfe25fead4c91c3349e63ce46fc9c5e36b5",
+        "runs/cem_evidence_completion_20261025/eicu/sequence_v2/screen/GRU_D_t0_s48_exit.json": "9cda40d6eb7086e00b946b6a4937333477a60b5b338c4f973d43b86fa0838c13"
+      },
+      "source_hashes": {
+        "scripts/train_cem_additional_baseline.py": "0c3afac620580cdb49fb3cbe548b0773b9eb786ae3fda5b73f3383e21d84b94f",
+        "models/cem_sequence_baselines.py": "88108b4e055580063bc532ddcc2a70d13baa4ade3b557aeaf4290de6bb9bdfdc",
+        "scripts/cem_sequence_inputs.py": "cc8774c969c7f8c187f3b54c2c7887e527ff73569bd3610e41f1d752ca6f716f"
+      },
+      "protocol": {
+        "epochs": 100,
+        "batch": 32,
+        "micro": 32,
+        "optimizer": "Adam",
+        "lr": 0.001,
+        "weight_decay": 0.0,
+        "patience": 10,
+        "selection": "validation AP",
+        "precision": "float32",
+        "hidden": 64,
+        "mlp_hidden": 64,
+        "dropout": 0.3,
+        "recurrent_dropout": 0.3,
+        "loss": "BCE",
+        "input": "24 hourly means and observation masks",
+        "decay_initialization": "Glorot fixed before outcomes",
+        "implementation": "GRU-D paper equations; PyTorch; train-mean imputation"
+      }
+    },
+    {
+      "database": "eicu",
+      "id": "GRU_D_t1_s48",
+      "seed": 48,
+      "endpoint": 1,
+      "history": [
+        {
+          "epoch": 1,
+          "dev_ap": 0.12647341959669822,
+          "loss": 0.35999222146996623,
+          "lr": 0.001,
+          "seconds": 449.52396607398987
+        },
+        {
+          "epoch": 2,
+          "dev_ap": 0.11400836606677049,
+          "loss": 0.35896292856641343,
+          "lr": 0.001,
+          "seconds": 460.02475094795227
+        },
+        {
+          "epoch": 3,
+          "dev_ap": 0.11378016593395822,
+          "loss": 0.3575091233846145,
+          "lr": 0.001,
+          "seconds": 468.5743610858917
+        },
+        {
+          "epoch": 4,
+          "dev_ap": 0.11580762837215981,
+          "loss": 0.35619893702632355,
+          "lr": 0.001,
+          "seconds": 458.17681097984314
+        },
+        {
+          "epoch": 5,
+          "dev_ap": 0.115220700152207,
+          "loss": 0.35562720524332986,
+          "lr": 0.001,
+          "seconds": 464.9232904911041
+        },
+        {
+          "epoch": 6,
+          "dev_ap": 0.11558684143327924,
+          "loss": 0.3554165450492374,
+          "lr": 0.001,
+          "seconds": 454.52548241615295
+        },
+        {
+          "epoch": 7,
+          "dev_ap": 0.115220700152207,
+          "loss": 0.35492162171622277,
+          "lr": 0.001,
+          "seconds": 455.529274225235
+        },
+        {
+          "epoch": 8,
+          "dev_ap": 0.115220700152207,
+          "loss": 0.35461084321491376,
+          "lr": 0.001,
+          "seconds": 456.12234592437744
+        },
+        {
+          "epoch": 9,
+          "dev_ap": 0.115220700152207,
+          "loss": 0.3542752535649806,
+          "lr": 0.001,
+          "seconds": 459.0556426048279
+        },
+        {
+          "epoch": 10,
+          "dev_ap": 0.115220700152207,
+          "loss": 0.3540051098240257,
+          "lr": 0.001,
+          "seconds": 459.84239053726196
+        },
+        {
+          "epoch": 11,
+          "dev_ap": 0.115220700152207,
+          "loss": 0.35371927374966144,
+          "lr": 0.001,
+          "seconds": 463.6122908592224
+        }
+      ],
+      "completion": {
+        "epochs": 11,
+        "best_epoch": 1,
+        "optimizer_updates": 31823,
+        "dev_ap": 0.12647341959669822,
+        "metrics": {
+          "mean_ap": 0.12647341959669822,
+          "ap": [
+            0.12647341959669822
+          ],
+          "auroc": [
+            0.5156845927487722
+          ],
+          "brier": [
+            0.1019673061982717
+          ],
+          "log_loss": [
+            0.3574057980558742
+          ],
+          "prevalence": [
+            0.11522070318460464
+          ],
+          "mean_auroc": 0.5156845927487722,
+          "mean_brier": 0.1019673061982717,
+          "top_fraction": {
+            "0.05": [
+              {
+                "precision": 0.2102199773815294,
+                "recall": 0.0912249175295012,
+                "selected": 657
+              }
+            ],
+            "0.1": [
+              {
+                "precision": 0.17722745576626855,
+                "recall": 0.15381563862409306,
+                "selected": 1314
+              }
+            ]
+          }
+        },
+        "checkpoint_replay": {
+          "complete": true,
+          "max_probability_drift": 0.0
+        },
+        "from_scratch": true,
+        "frozen_learnable_parameters": 0
+      },
+      "exit_record": {
+        "job_id": "GRU_D_t1_s48",
+        "wrapper_pid": 2410918,
+        "child_pid": 2410919,
+        "child_identity": {
+          "start_ticks": "100030596",
+          "state": "R",
+          "boot": "5619abba-f7e1-4c48-a674-635086d01a76"
+        },
+        "source_manifest_sha256": "32f31938ff9a78c2a443fa5a182896183b662e85cd778cf7f320fc3d9aeac218",
+        "started_at": 1792965499.4016783,
+        "returncode": 0,
+        "finished_at": 1792970587.8337102
+      },
+      "prediction_summary": {
+        "count": 13140,
+        "prevalence": 0.115220700152207,
+        "constant_prevalence_log_loss": 0.3572931522092347,
+        "mean": 0.11048614845655098,
+        "std": 1.704559870874597e-08,
+        "minimum": 0.11048588156700134,
+        "maximum": 0.1104862317442894,
+        "unique_probabilities": 15,
+        "quantiles": [
+          0.11048588156700134,
+          0.11048610508441925,
+          0.11048614978790283,
+          0.11048614978790283,
+          0.11048614978790283,
+          0.11048619449138641,
+          0.1104862317442894
+        ]
+      },
+      "log_error_lines": [],
+      "file_hashes": {
+        "runs/cem_evidence_completion_20261025/eicu/sequence_v2/screen/jobs/GRU_D_t1_s48/history.json": "46cd17afe001d74b0f80f547587f7297331944a34156c5be18f54fc597646c51",
+        "runs/cem_evidence_completion_20261025/eicu/sequence_v2/screen/jobs/GRU_D_t1_s48/completion.json": "5b17478b7a58d5da5a44496912fb5075b3fc309f3b7b296d6de5bd415d338139",
+        "runs/cem_evidence_completion_20261025/eicu/sequence_v2/screen/jobs/GRU_D_t1_s48/run_manifest.json": "ef4051e1acd613542a51809ffde15e340622a232c406580dc6cbde9e5d6dd9b9",
+        "runs/cem_evidence_completion_20261025/eicu/sequence_v2/screen/jobs/GRU_D_t1_s48/predictions_dev.npz": "02a9ba31839b15771ea9656b5eeb8bb4b584c68b02481c6735ebcec7aa4c8c3f",
+        "runs/cem_evidence_completion_20261025/eicu/sequence_v2/screen/GRU_D_t1_s48.log": "eeeeeef724a10e46286d9f50fa47abfe25fead4c91c3349e63ce46fc9c5e36b5",
+        "runs/cem_evidence_completion_20261025/eicu/sequence_v2/screen/GRU_D_t1_s48_exit.json": "ac464facb0949a95c0fb8af060fba517b4133cf9f3ffc045ba257956f7afbac0"
+      },
+      "source_hashes": {
+        "scripts/train_cem_additional_baseline.py": "0c3afac620580cdb49fb3cbe548b0773b9eb786ae3fda5b73f3383e21d84b94f",
+        "models/cem_sequence_baselines.py": "88108b4e055580063bc532ddcc2a70d13baa4ade3b557aeaf4290de6bb9bdfdc",
+        "scripts/cem_sequence_inputs.py": "cc8774c969c7f8c187f3b54c2c7887e527ff73569bd3610e41f1d752ca6f716f"
+      },
+      "protocol": {
+        "epochs": 100,
+        "batch": 32,
+        "micro": 32,
+        "optimizer": "Adam",
+        "lr": 0.001,
+        "weight_decay": 0.0,
+        "patience": 10,
+        "selection": "validation AP",
+        "precision": "float32",
+        "hidden": 64,
+        "mlp_hidden": 64,
+        "dropout": 0.3,
+        "recurrent_dropout": 0.3,
+        "loss": "BCE",
+        "input": "24 hourly means and observation masks",
+        "decay_initialization": "Glorot fixed before outcomes",
+        "implementation": "GRU-D paper equations; PyTorch; train-mean imputation"
+      }
+    },
+    {
+      "database": "eicu",
+      "id": "GRU_D_t0_s49",
+      "seed": 49,
+      "endpoint": 0,
+      "history": [
+        {
+          "epoch": 1,
+          "dev_ap": 0.05569696783226646,
+          "loss": 0.21100115263950803,
+          "lr": 0.001,
+          "seconds": 460.3449664115906
+        },
+        {
+          "epoch": 2,
+          "dev_ap": 0.055350313042945604,
+          "loss": 0.2098719076156835,
+          "lr": 0.001,
+          "seconds": 463.912478685379
+        },
+        {
+          "epoch": 3,
+          "dev_ap": 0.05439216546325663,
+          "loss": 0.20908007418285768,
+          "lr": 0.001,
+          "seconds": 457.652943611145
+        },
+        {
+          "epoch": 4,
+          "dev_ap": 0.052968036529680365,
+          "loss": 0.20862402232334742,
+          "lr": 0.001,
+          "seconds": 459.40510964393616
+        },
+        {
+          "epoch": 5,
+          "dev_ap": 0.052972067889489306,
+          "loss": 0.2076092325499087,
+          "lr": 0.001,
+          "seconds": 457.17307806015015
+        },
+        {
+          "epoch": 6,
+          "dev_ap": 0.052968036529680365,
+          "loss": 0.20789048373715285,
+          "lr": 0.001,
+          "seconds": 458.55839681625366
+        },
+        {
+          "epoch": 7,
+          "dev_ap": 0.052968036529680365,
+          "loss": 0.2072798538586634,
+          "lr": 0.001,
+          "seconds": 467.03428888320923
+        },
+        {
+          "epoch": 8,
+          "dev_ap": 0.052968036529680365,
+          "loss": 0.207221089443788,
+          "lr": 0.001,
+          "seconds": 460.6013641357422
+        },
+        {
+          "epoch": 9,
+          "dev_ap": 0.052968036529680365,
+          "loss": 0.20682503989317785,
+          "lr": 0.001,
+          "seconds": 461.9533760547638
+        },
+        {
+          "epoch": 10,
+          "dev_ap": 0.052968036529680365,
+          "loss": 0.20645168606824327,
+          "lr": 0.001,
+          "seconds": 462.3771936893463
+        },
+        {
+          "epoch": 11,
+          "dev_ap": 0.052968036529680365,
+          "loss": 0.20641689696195015,
+          "lr": 0.001,
+          "seconds": 463.53406715393066
+        }
+      ],
+      "completion": {
+        "epochs": 11,
+        "best_epoch": 1,
+        "optimizer_updates": 31823,
+        "dev_ap": 0.05569696783226646,
+        "metrics": {
+          "mean_ap": 0.05569696783226646,
+          "ap": [
+            0.05569696783226646
+          ],
+          "auroc": [
+            0.5252953923231248
+          ],
+          "brier": [
+            0.05024845279858988
+          ],
+          "log_loss": [
+            0.20793732172372578
+          ],
+          "prevalence": [
+            0.05296803638339043
+          ],
+          "mean_auroc": 0.5252953923231248,
+          "mean_brier": 0.05024845279858988,
+          "top_fraction": {
+            "0.05": [
+              {
+                "precision": 0.056958238602369274,
+                "recall": 0.05376661316344341,
+                "selected": 657
+              }
+            ],
+            "0.1": [
+              {
+                "precision": 0.056958238602369274,
+                "recall": 0.10753322632688682,
+                "selected": 1314
+              }
+            ]
+          }
+        },
+        "checkpoint_replay": {
+          "complete": true,
+          "max_probability_drift": 0.0
+        },
+        "from_scratch": true,
+        "frozen_learnable_parameters": 0
+      },
+      "exit_record": {
+        "job_id": "GRU_D_t0_s49",
+        "wrapper_pid": 2669671,
+        "child_pid": 2669676,
+        "child_identity": {
+          "start_ticks": "100469460",
+          "state": "R",
+          "boot": "5619abba-f7e1-4c48-a674-635086d01a76"
+        },
+        "source_manifest_sha256": "32f31938ff9a78c2a443fa5a182896183b662e85cd778cf7f320fc3d9aeac218",
+        "started_at": 1792969888.0402167,
+        "returncode": 0,
+        "finished_at": 1792974997.5088735
+      },
+      "prediction_summary": {
+        "count": 13140,
+        "prevalence": 0.052968036529680365,
+        "constant_prevalence_log_loss": 0.20716340522255355,
+        "mean": 0.06224323740594735,
+        "std": 1.0754529076592846e-08,
+        "minimum": 0.06224322319030762,
+        "maximum": 0.06224324554204941,
+        "unique_probabilities": 2,
+        "quantiles": [
+          0.06224322319030762,
+          0.06224322319030762,
+          0.06224322319030762,
+          0.06224324554204941,
+          0.06224324554204941,
+          0.06224324554204941,
+          0.06224324554204941
+        ]
+      },
+      "log_error_lines": [],
+      "file_hashes": {
+        "runs/cem_evidence_completion_20261025/eicu/sequence_v2/screen/jobs/GRU_D_t0_s49/history.json": "bf0f9a3862dd89c7ddd8cb2e8bac434911988211053b9e3638986cdd521ec28b",
+        "runs/cem_evidence_completion_20261025/eicu/sequence_v2/screen/jobs/GRU_D_t0_s49/completion.json": "4674f71a204c14dc25efc568b9c1ccd6e4eb91f95a340e9b7af9c4224f83ff81",
+        "runs/cem_evidence_completion_20261025/eicu/sequence_v2/screen/jobs/GRU_D_t0_s49/run_manifest.json": "2144ef19e0843d3665274cec575fd13811e401c3e6b5e642dff6be345bbbc4b9",
+        "runs/cem_evidence_completion_20261025/eicu/sequence_v2/screen/jobs/GRU_D_t0_s49/predictions_dev.npz": "eb43cbaa7048e81e192dba6aadda548315b6579a81a6711969cf4dcbcca76a0b",
+        "runs/cem_evidence_completion_20261025/eicu/sequence_v2/screen/GRU_D_t0_s49.log": "eeeeeef724a10e46286d9f50fa47abfe25fead4c91c3349e63ce46fc9c5e36b5",
+        "runs/cem_evidence_completion_20261025/eicu/sequence_v2/screen/GRU_D_t0_s49_exit.json": "3091acb1921cf6cdf233382d13d9abda72426c5f396f42b3578c898af02c6249"
+      },
+      "source_hashes": {
+        "scripts/train_cem_additional_baseline.py": "0c3afac620580cdb49fb3cbe548b0773b9eb786ae3fda5b73f3383e21d84b94f",
+        "models/cem_sequence_baselines.py": "88108b4e055580063bc532ddcc2a70d13baa4ade3b557aeaf4290de6bb9bdfdc",
+        "scripts/cem_sequence_inputs.py": "cc8774c969c7f8c187f3b54c2c7887e527ff73569bd3610e41f1d752ca6f716f"
+      },
+      "protocol": {
+        "epochs": 100,
+        "batch": 32,
+        "micro": 32,
+        "optimizer": "Adam",
+        "lr": 0.001,
+        "weight_decay": 0.0,
+        "patience": 10,
+        "selection": "validation AP",
+        "precision": "float32",
+        "hidden": 64,
+        "mlp_hidden": 64,
+        "dropout": 0.3,
+        "recurrent_dropout": 0.3,
+        "loss": "BCE",
+        "input": "24 hourly means and observation masks",
+        "decay_initialization": "Glorot fixed before outcomes",
+        "implementation": "GRU-D paper equations; PyTorch; train-mean imputation"
+      }
+    },
+    {
+      "database": "eicu",
+      "id": "GRU_D_t1_s49",
+      "seed": 49,
+      "endpoint": 1,
+      "history": [
+        {
+          "epoch": 1,
+          "dev_ap": 0.13399427348138482,
+          "loss": 0.35940377306755944,
+          "lr": 0.001,
+          "seconds": 459.1842770576477
+        },
+        {
+          "epoch": 2,
+          "dev_ap": 0.1190663661831706,
+          "loss": 0.35770569549788855,
+          "lr": 0.001,
+          "seconds": 457.0713334083557
+        },
+        {
+          "epoch": 3,
+          "dev_ap": 0.1156572568653716,
+          "loss": 0.35729170412361244,
+          "lr": 0.001,
+          "seconds": 454.86409091949463
+        },
+        {
+          "epoch": 4,
+          "dev_ap": 0.115220700152207,
+          "loss": 0.35599613385803724,
+          "lr": 0.001,
+          "seconds": 457.9376735687256
+        },
+        {
+          "epoch": 5,
+          "dev_ap": 0.115220700152207,
+          "loss": 0.3560530298797932,
+          "lr": 0.001,
+          "seconds": 459.28608560562134
+        },
+        {
+          "epoch": 6,
+          "dev_ap": 0.115220700152207,
+          "loss": 0.3553295320664272,
+          "lr": 0.001,
+          "seconds": 475.0583028793335
+        },
+        {
+          "epoch": 7,
+          "dev_ap": 0.115220700152207,
+          "loss": 0.3549160439539386,
+          "lr": 0.001,
+          "seconds": 491.81497144699097
+        },
+        {
+          "epoch": 8,
+          "dev_ap": 0.115220700152207,
+          "loss": 0.3547553043114864,
+          "lr": 0.001,
+          "seconds": 482.03591537475586
+        },
+        {
+          "epoch": 9,
+          "dev_ap": 0.115220700152207,
+          "loss": 0.3540952948943623,
+          "lr": 0.001,
+          "seconds": 487.3111870288849
+        },
+        {
+          "epoch": 10,
+          "dev_ap": 0.115220700152207,
+          "loss": 0.3541001735556256,
+          "lr": 0.001,
+          "seconds": 488.83559584617615
+        },
+        {
+          "epoch": 11,
+          "dev_ap": 0.115220700152207,
+          "loss": 0.3540815974845947,
+          "lr": 0.001,
+          "seconds": 486.2574055194855
+        }
+      ],
+      "completion": {
+        "epochs": 11,
+        "best_epoch": 1,
+        "optimizer_updates": 31823,
+        "dev_ap": 0.13399427348138482,
+        "metrics": {
+          "mean_ap": 0.13399427348138482,
+          "ap": [
+            0.13399427348138482
+          ],
+          "auroc": [
+            0.5524231832673134
+          ],
+          "brier": [
+            0.10205435896878587
+          ],
+          "log_loss": [
+            0.35786043458757816
+          ],
+          "prevalence": [
+            0.11522070318460464
+          ],
+          "mean_auroc": 0.5524231832673134,
+          "mean_brier": 0.10205435896878587,
+          "top_fraction": {
+            "0.05": [
+              {
+                "precision": 0.1843567963762396,
+                "recall": 0.08000159525706038,
+                "selected": 657
+              }
+            ],
+            "0.1": [
+              {
+                "precision": 0.18233555286140352,
+                "recall": 0.15824895406861572,
+                "selected": 1314
+              }
+            ]
+          }
+        },
+        "checkpoint_replay": {
+          "complete": true,
+          "max_probability_drift": 0.0
+        },
+        "from_scratch": true,
+        "frozen_learnable_parameters": 0
+      },
+      "exit_record": {
+        "job_id": "GRU_D_t1_s49",
+        "wrapper_pid": 2831661,
+        "child_pid": 2831663,
+        "child_identity": {
+          "start_ticks": "100746624",
+          "state": "R",
+          "boot": "5619abba-f7e1-4c48-a674-635086d01a76"
+        },
+        "source_manifest_sha256": "32f31938ff9a78c2a443fa5a182896183b662e85cd778cf7f320fc3d9aeac218",
+        "started_at": 1792972659.6860747,
+        "returncode": 0,
+        "finished_at": 1792977898.3839304
+      },
+      "prediction_summary": {
+        "count": 13140,
+        "prevalence": 0.115220700152207,
+        "constant_prevalence_log_loss": 0.3572931522092347,
+        "mean": 0.1047579683561893,
+        "std": 9.53814526609377e-09,
+        "minimum": 0.1047578826546669,
+        "maximum": 0.10475800931453705,
+        "unique_probabilities": 7,
+        "quantiles": [
+          0.1047578826546669,
+          0.10475794225931168,
+          0.10475796461105347,
+          0.10475796461105347,
+          0.10475796461105347,
+          0.10475798696279526,
+          0.10475800931453705
+        ]
+      },
+      "log_error_lines": [],
+      "file_hashes": {
+        "runs/cem_evidence_completion_20261025/eicu/sequence_v2/screen/jobs/GRU_D_t1_s49/history.json": "bcdf2ef160388927dca5ed58730c7701ba45b082f688fa46ad9bd9fe626b92d6",
+        "runs/cem_evidence_completion_20261025/eicu/sequence_v2/screen/jobs/GRU_D_t1_s49/completion.json": "80b0331bd49f256dc9f16864a5cf4858a31864ca34635823e2312b1d4d1e56d7",
+        "runs/cem_evidence_completion_20261025/eicu/sequence_v2/screen/jobs/GRU_D_t1_s49/run_manifest.json": "9520125825c45438ed435042a5e627f53a66d89120525ccd3d0ffc18c82055da",
+        "runs/cem_evidence_completion_20261025/eicu/sequence_v2/screen/jobs/GRU_D_t1_s49/predictions_dev.npz": "84d2b1efa660b68d03452f1da9e3917895c5167b799ee47f6d72d9eb4be333fd",
+        "runs/cem_evidence_completion_20261025/eicu/sequence_v2/screen/GRU_D_t1_s49.log": "eeeeeef724a10e46286d9f50fa47abfe25fead4c91c3349e63ce46fc9c5e36b5",
+        "runs/cem_evidence_completion_20261025/eicu/sequence_v2/screen/GRU_D_t1_s49_exit.json": "05f3e21e7cf560a19c4e847d3eaca4f6b54c088dd2954e92acd65d4f9eb72e73"
+      },
+      "source_hashes": {
+        "scripts/train_cem_additional_baseline.py": "0c3afac620580cdb49fb3cbe548b0773b9eb786ae3fda5b73f3383e21d84b94f",
+        "models/cem_sequence_baselines.py": "88108b4e055580063bc532ddcc2a70d13baa4ade3b557aeaf4290de6bb9bdfdc",
+        "scripts/cem_sequence_inputs.py": "cc8774c969c7f8c187f3b54c2c7887e527ff73569bd3610e41f1d752ca6f716f"
+      },
+      "protocol": {
+        "epochs": 100,
+        "batch": 32,
+        "micro": 32,
+        "optimizer": "Adam",
+        "lr": 0.001,
+        "weight_decay": 0.0,
+        "patience": 10,
+        "selection": "validation AP",
+        "precision": "float32",
+        "hidden": 64,
+        "mlp_hidden": 64,
+        "dropout": 0.3,
+        "recurrent_dropout": 0.3,
+        "loss": "BCE",
+        "input": "24 hourly means and observation masks",
+        "decay_initialization": "Glorot fixed before outcomes",
+        "implementation": "GRU-D paper equations; PyTorch; train-mean imputation"
+      }
+    },
+    {
+      "database": "eicu",
+      "id": "GRU_D_t0_s50",
+      "seed": 50,
+      "endpoint": 0,
+      "history": [
+        {
+          "epoch": 1,
+          "dev_ap": 0.053534220332756,
+          "loss": 0.21298681059517705,
+          "lr": 0.001,
+          "seconds": 466.00355863571167
+        },
+        {
+          "epoch": 2,
+          "dev_ap": 0.05224091593239083,
+          "loss": 0.210412823746217,
+          "lr": 0.001,
+          "seconds": 453.9315731525421
+        },
+        {
+          "epoch": 3,
+          "dev_ap": 0.052968036529680365,
+          "loss": 0.20944663528339896,
+          "lr": 0.001,
+          "seconds": 446.48409843444824
+        },
+        {
+          "epoch": 4,
+          "dev_ap": 0.052968036529680365,
+          "loss": 0.20890019241130242,
+          "lr": 0.001,
+          "seconds": 447.7962455749512
+        },
+        {
+          "epoch": 5,
+          "dev_ap": 0.052968036529680365,
+          "loss": 0.20807727624996808,
+          "lr": 0.001,
+          "seconds": 455.7064037322998
+        },
+        {
+          "epoch": 6,
+          "dev_ap": 0.052968036529680365,
+          "loss": 0.20766770502533574,
+          "lr": 0.001,
+          "seconds": 459.0242540836334
+        },
+        {
+          "epoch": 7,
+          "dev_ap": 0.052968036529680365,
+          "loss": 0.20703543396024232,
+          "lr": 0.001,
+          "seconds": 455.89995074272156
+        },
+        {
+          "epoch": 8,
+          "dev_ap": 0.052968036529680365,
+          "loss": 0.20679162128562897,
+          "lr": 0.001,
+          "seconds": 447.4396331310272
+        },
+        {
+          "epoch": 9,
+          "dev_ap": 0.052968036529680365,
+          "loss": 0.2064033967826095,
+          "lr": 0.001,
+          "seconds": 456.95390272140503
+        },
+        {
+          "epoch": 10,
+          "dev_ap": 0.052968036529680365,
+          "loss": 0.2059888791374402,
+          "lr": 0.001,
+          "seconds": 461.9568045139313
+        },
+        {
+          "epoch": 11,
+          "dev_ap": 0.052968036529680365,
+          "loss": 0.2057438595024151,
+          "lr": 0.001,
+          "seconds": 460.3555574417114
+        }
+      ],
+      "completion": {
+        "epochs": 11,
+        "best_epoch": 1,
+        "optimizer_updates": 31823,
+        "dev_ap": 0.053534220332756,
+        "metrics": {
+          "mean_ap": 0.053534220332756,
+          "ap": [
+            0.053534220332756
+          ],
+          "auroc": [
+            0.5011957015706225
+          ],
+          "brier": [
+            0.05016312271690764
+          ],
+          "log_loss": [
+            0.2071703271505224
+          ],
+          "prevalence": [
+            0.05296803638339043
+          ],
+          "mean_auroc": 0.5011957015706225,
+          "mean_brier": 0.05016312271690764,
+          "top_fraction": {
+            "0.05": [
+              {
+                "precision": 0.05524863799537399,
+                "recall": 0.05215280914218493,
+                "selected": 657
+              }
+            ],
+            "0.1": [
+              {
+                "precision": 0.054048321434482606,
+                "recall": 0.1020395033978594,
+                "selected": 1314
+              }
+            ]
+          }
+        },
+        "checkpoint_replay": {
+          "complete": true,
+          "max_probability_drift": 0.0
+        },
+        "from_scratch": true,
+        "frozen_learnable_parameters": 0
+      },
+      "exit_record": {
+        "job_id": "GRU_D_t0_s50",
+        "wrapper_pid": 3019185,
+        "child_pid": 3019186,
+        "child_identity": {
+          "start_ticks": "100980778",
+          "state": "R",
+          "boot": "5619abba-f7e1-4c48-a674-635086d01a76"
+        },
+        "source_manifest_sha256": "32f31938ff9a78c2a443fa5a182896183b662e85cd778cf7f320fc3d9aeac218",
+        "started_at": 1792975001.2236178,
+        "returncode": 0,
+        "finished_at": 1792980048.4939845
+      },
+      "prediction_summary": {
+        "count": 13140,
+        "prevalence": 0.052968036529680365,
+        "constant_prevalence_log_loss": 0.20716340522255355,
+        "mean": 0.0538041368194911,
+        "std": 2.756744021678474e-10,
+        "minimum": 0.05380413681268692,
+        "maximum": 0.053804147988557816,
+        "unique_probabilities": 2,
+        "quantiles": [
+          0.05380413681268692,
+          0.05380413681268692,
+          0.05380413681268692,
+          0.05380413681268692,
+          0.05380413681268692,
+          0.05380413681268692,
+          0.053804147988557816
+        ]
+      },
+      "log_error_lines": [],
+      "file_hashes": {
+        "runs/cem_evidence_completion_20261025/eicu/sequence_v2/screen/jobs/GRU_D_t0_s50/history.json": "794fb7cfc7ec14044701f01090e06074597b8f7f74d204d8412dbd70a84f5c8a",
+        "runs/cem_evidence_completion_20261025/eicu/sequence_v2/screen/jobs/GRU_D_t0_s50/completion.json": "92fbf8c56d40b328cf96a771f7995aaca09b72f3b6235244e069e1e1f1f0df60",
+        "runs/cem_evidence_completion_20261025/eicu/sequence_v2/screen/jobs/GRU_D_t0_s50/run_manifest.json": "1afff38ea33e0c3229217381177e84cb4f88a1c6c084aa358b9a03ddd8dbcf83",
+        "runs/cem_evidence_completion_20261025/eicu/sequence_v2/screen/jobs/GRU_D_t0_s50/predictions_dev.npz": "9e40b9e9ee3d21952f8e9341539d58e6a84fca66f875af21b54d95523fd16630",
+        "runs/cem_evidence_completion_20261025/eicu/sequence_v2/screen/GRU_D_t0_s50.log": "eeeeeef724a10e46286d9f50fa47abfe25fead4c91c3349e63ce46fc9c5e36b5",
+        "runs/cem_evidence_completion_20261025/eicu/sequence_v2/screen/GRU_D_t0_s50_exit.json": "5fd340de2c311e4ea6236eb686f59dda0311cb47d5541a0702036f4f74637224"
+      },
+      "source_hashes": {
+        "scripts/train_cem_additional_baseline.py": "0c3afac620580cdb49fb3cbe548b0773b9eb786ae3fda5b73f3383e21d84b94f",
+        "models/cem_sequence_baselines.py": "88108b4e055580063bc532ddcc2a70d13baa4ade3b557aeaf4290de6bb9bdfdc",
+        "scripts/cem_sequence_inputs.py": "cc8774c969c7f8c187f3b54c2c7887e527ff73569bd3610e41f1d752ca6f716f"
+      },
+      "protocol": {
+        "epochs": 100,
+        "batch": 32,
+        "micro": 32,
+        "optimizer": "Adam",
+        "lr": 0.001,
+        "weight_decay": 0.0,
+        "patience": 10,
+        "selection": "validation AP",
+        "precision": "float32",
+        "hidden": 64,
+        "mlp_hidden": 64,
+        "dropout": 0.3,
+        "recurrent_dropout": 0.3,
+        "loss": "BCE",
+        "input": "24 hourly means and observation masks",
+        "decay_initialization": "Glorot fixed before outcomes",
+        "implementation": "GRU-D paper equations; PyTorch; train-mean imputation"
+      }
+    },
+    {
+      "database": "eicu",
+      "id": "GRU_D_t1_s50",
+      "seed": 50,
+      "endpoint": 1,
+      "history": [
+        {
+          "epoch": 1,
+          "dev_ap": 0.11509769142668906,
+          "loss": 0.3612534172088833,
+          "lr": 0.001,
+          "seconds": 458.240478515625
+        },
+        {
+          "epoch": 2,
+          "dev_ap": 0.115220700152207,
+          "loss": 0.3590245979232636,
+          "lr": 0.001,
+          "seconds": 458.59737253189087
+        },
+        {
+          "epoch": 3,
+          "dev_ap": 0.11527669704774715,
+          "loss": 0.35684211006934297,
+          "lr": 0.001,
+          "seconds": 465.448269367218
+        },
+        {
+          "epoch": 4,
+          "dev_ap": 0.11522946951822817,
+          "loss": 0.3563748118351069,
+          "lr": 0.001,
+          "seconds": 473.60716557502747
+        },
+        {
+          "epoch": 5,
+          "dev_ap": 0.115220700152207,
+          "loss": 0.35539576217330127,
+          "lr": 0.001,
+          "seconds": 464.6052632331848
+        },
+        {
+          "epoch": 6,
+          "dev_ap": 0.115220700152207,
+          "loss": 0.35504039774491336,
+          "lr": 0.001,
+          "seconds": 471.0520191192627
+        },
+        {
+          "epoch": 7,
+          "dev_ap": 0.115220700152207,
+          "loss": 0.35462742886589377,
+          "lr": 0.001,
+          "seconds": 470.0710983276367
+        },
+        {
+          "epoch": 8,
+          "dev_ap": 0.115220700152207,
+          "loss": 0.3541655221132484,
+          "lr": 0.001,
+          "seconds": 469.0973410606384
+        },
+        {
+          "epoch": 9,
+          "dev_ap": 0.115220700152207,
+          "loss": 0.3540554648163523,
+          "lr": 0.001,
+          "seconds": 467.9125163555145
+        },
+        {
+          "epoch": 10,
+          "dev_ap": 0.115220700152207,
+          "loss": 0.35380264259566946,
+          "lr": 0.001,
+          "seconds": 469.6344060897827
+        },
+        {
+          "epoch": 11,
+          "dev_ap": 0.115220700152207,
+          "loss": 0.35374605356632766,
+          "lr": 0.001,
+          "seconds": 455.86433720588684
+        },
+        {
+          "epoch": 12,
+          "dev_ap": 0.115220700152207,
+          "loss": 0.35355506281872556,
+          "lr": 0.001,
+          "seconds": 466.3876259326935
+        },
+        {
+          "epoch": 13,
+          "dev_ap": 0.115220700152207,
+          "loss": 0.3534189515904438,
+          "lr": 0.001,
+          "seconds": 459.5457718372345
+        }
+      ],
+      "completion": {
+        "epochs": 13,
+        "best_epoch": 3,
+        "optimizer_updates": 37609,
+        "dev_ap": 0.11527669704774715,
+        "metrics": {
+          "mean_ap": 0.11527669704774715,
+          "ap": [
+            0.11527669704774715
+          ],
+          "auroc": [
+            0.5001582227781262
+          ],
+          "brier": [
+            0.10261624903679635
+          ],
+          "log_loss": [
+            0.36021919327556917
+          ],
+          "prevalence": [
+            0.11522070318460464
+          ],
+          "mean_auroc": 0.5001582227781262,
+          "mean_brier": 0.10261624903679635,
+          "top_fraction": {
+            "0.05": [
+              {
+                "precision": 0.11583387361894017,
+                "recall": 0.05026608650438817,
+                "selected": 657
+              }
+            ],
+            "0.1": [
+              {
+                "precision": 0.1155111507417122,
+                "recall": 0.10025208195152566,
+                "selected": 1314
+              }
+            ]
+          }
+        },
+        "checkpoint_replay": {
+          "complete": true,
+          "max_probability_drift": 0.0
+        },
+        "from_scratch": true,
+        "frozen_learnable_parameters": 0
+      },
+      "exit_record": {
+        "job_id": "GRU_D_t1_s50",
+        "wrapper_pid": 3193660,
+        "child_pid": 3193661,
+        "child_identity": {
+          "start_ticks": "101271040",
+          "state": "R",
+          "boot": "5619abba-f7e1-4c48-a674-635086d01a76"
+        },
+        "source_manifest_sha256": "32f31938ff9a78c2a443fa5a182896183b662e85cd778cf7f320fc3d9aeac218",
+        "started_at": 1792977903.8474617,
+        "returncode": 0,
+        "finished_at": 1792983993.4541554
+      },
+      "prediction_summary": {
+        "count": 13140,
+        "prevalence": 0.115220700152207,
+        "constant_prevalence_log_loss": 0.3572931522092347,
+        "mean": 0.14113129676522368,
+        "std": 5.812390495081243e-10,
+        "minimum": 0.14113129675388336,
+        "maximum": 0.14113132655620575,
+        "unique_probabilities": 2,
+        "quantiles": [
+          0.14113129675388336,
+          0.14113129675388336,
+          0.14113129675388336,
+          0.14113129675388336,
+          0.14113129675388336,
+          0.14113129675388336,
+          0.14113132655620575
+        ]
+      },
+      "log_error_lines": [],
+      "file_hashes": {
+        "runs/cem_evidence_completion_20261025/eicu/sequence_v2/screen/jobs/GRU_D_t1_s50/history.json": "4e17f48a12008d46bdba376127c43759ba3af899a97493268c6c183bbfaec737",
+        "runs/cem_evidence_completion_20261025/eicu/sequence_v2/screen/jobs/GRU_D_t1_s50/completion.json": "18d26070d7ad36b2e48420da1ae4a296a37e32a29af7214f227d6127e0e51aee",
+        "runs/cem_evidence_completion_20261025/eicu/sequence_v2/screen/jobs/GRU_D_t1_s50/run_manifest.json": "a86441e874c800aa94c6e687074e7c7423ea4a76b03e891ce5ba21b59552d407",
+        "runs/cem_evidence_completion_20261025/eicu/sequence_v2/screen/jobs/GRU_D_t1_s50/predictions_dev.npz": "fc1f18e57809d6dede767690233ded7d1a4f2907a789e507d5038c9928bc26f5",
+        "runs/cem_evidence_completion_20261025/eicu/sequence_v2/screen/GRU_D_t1_s50.log": "eeeeeef724a10e46286d9f50fa47abfe25fead4c91c3349e63ce46fc9c5e36b5",
+        "runs/cem_evidence_completion_20261025/eicu/sequence_v2/screen/GRU_D_t1_s50_exit.json": "6176eed4f2eb380c93a8077dac867856d5d12573320f57b12cd1271041cfce77"
+      },
+      "source_hashes": {
+        "scripts/train_cem_additional_baseline.py": "0c3afac620580cdb49fb3cbe548b0773b9eb786ae3fda5b73f3383e21d84b94f",
+        "models/cem_sequence_baselines.py": "88108b4e055580063bc532ddcc2a70d13baa4ade3b557aeaf4290de6bb9bdfdc",
+        "scripts/cem_sequence_inputs.py": "cc8774c969c7f8c187f3b54c2c7887e527ff73569bd3610e41f1d752ca6f716f"
+      },
+      "protocol": {
+        "epochs": 100,
+        "batch": 32,
+        "micro": 32,
+        "optimizer": "Adam",
+        "lr": 0.001,
+        "weight_decay": 0.0,
+        "patience": 10,
+        "selection": "validation AP",
+        "precision": "float32",
+        "hidden": 64,
+        "mlp_hidden": 64,
+        "dropout": 0.3,
+        "recurrent_dropout": 0.3,
+        "loss": "BCE",
+        "input": "24 hourly means and observation masks",
+        "decay_initialization": "Glorot fixed before outcomes",
+        "implementation": "GRU-D paper equations; PyTorch; train-mean imputation"
+      }
+    }
+  ]
+}

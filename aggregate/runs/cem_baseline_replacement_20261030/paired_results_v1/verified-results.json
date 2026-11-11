@@ -1,0 +1,3189 @@
+{
+  "complete": true,
+  "all_databases": true,
+  "verified_new_fits": 36,
+  "verified_fixed_tests": 36,
+  "rows": [
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "method": "XGBoost_TD",
+      "seed": 48,
+      "endpoint": 0,
+      "AP": 0.4375559432879821,
+      "AUROC": 0.868768644790113,
+      "Brier": 0.06155671196436799,
+      "log_loss": 0.25990555553916345
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "method": "XGBoost_TD",
+      "seed": 48,
+      "endpoint": 0,
+      "AP": 0.4463331645241921,
+      "AUROC": 0.8744342998711416,
+      "Brier": 0.060065367736013016,
+      "log_loss": 0.24980983597898138
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "method": "XGBoost_TD",
+      "seed": 48,
+      "endpoint": 1,
+      "AP": 0.5124474881298774,
+      "AUROC": 0.8435525529183704,
+      "Brier": 0.10471988620213074,
+      "log_loss": 0.33658781815089533
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "method": "XGBoost_TD",
+      "seed": 48,
+      "endpoint": 1,
+      "AP": 0.5111580991606384,
+      "AUROC": 0.8451598225457854,
+      "Brier": 0.10315889010798547,
+      "log_loss": 0.33266178973157456
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "method": "XGBoost_TD",
+      "seed": 49,
+      "endpoint": 0,
+      "AP": 0.42902832810699565,
+      "AUROC": 0.8691581877264011,
+      "Brier": 0.0628345412598072,
+      "log_loss": 0.2692835540153716
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "method": "XGBoost_TD",
+      "seed": 49,
+      "endpoint": 0,
+      "AP": 0.4340814219114019,
+      "AUROC": 0.8670785434108174,
+      "Brier": 0.060616163090416474,
+      "log_loss": 0.26305314905230287
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "method": "XGBoost_TD",
+      "seed": 49,
+      "endpoint": 1,
+      "AP": 0.5215778373744069,
+      "AUROC": 0.8417638447525946,
+      "Brier": 0.10721212126287646,
+      "log_loss": 0.347006351211711
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "method": "XGBoost_TD",
+      "seed": 49,
+      "endpoint": 1,
+      "AP": 0.5119632392126928,
+      "AUROC": 0.8432877019110454,
+      "Brier": 0.1065605730410366,
+      "log_loss": 0.34484253230688544
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "method": "XGBoost_TD",
+      "seed": 50,
+      "endpoint": 0,
+      "AP": 0.4325073497622402,
+      "AUROC": 0.8654944864692095,
+      "Brier": 0.061582937643843816,
+      "log_loss": 0.2578907513499245
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "method": "XGBoost_TD",
+      "seed": 50,
+      "endpoint": 0,
+      "AP": 0.4456509246821633,
+      "AUROC": 0.8707397018635891,
+      "Brier": 0.059268542329582126,
+      "log_loss": 0.24730716653899523
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "method": "XGBoost_TD",
+      "seed": 50,
+      "endpoint": 1,
+      "AP": 0.5198031289982386,
+      "AUROC": 0.8427823926757498,
+      "Brier": 0.10919135696149565,
+      "log_loss": 0.36477354022537833
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "method": "XGBoost_TD",
+      "seed": 50,
+      "endpoint": 1,
+      "AP": 0.5086862982927546,
+      "AUROC": 0.8421804793254465,
+      "Brier": 0.10820254073931948,
+      "log_loss": 0.36354904272273475
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "method": "STraTS_supervised",
+      "seed": 48,
+      "endpoint": 0,
+      "AP": 0.4515216817540636,
+      "AUROC": 0.8748901289154057,
+      "Brier": 0.08125564479162375,
+      "log_loss": 0.2932683602617699
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "method": "STraTS_supervised",
+      "seed": 48,
+      "endpoint": 0,
+      "AP": 0.4606359811090843,
+      "AUROC": 0.8819076535318273,
+      "Brier": 0.07528350247999333,
+      "log_loss": 0.2649416457442297
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "method": "STraTS_supervised",
+      "seed": 48,
+      "endpoint": 1,
+      "AP": 0.5067549780138749,
+      "AUROC": 0.8392334942777534,
+      "Brier": 0.1586101995156638,
+      "log_loss": 0.5000483555823968
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "method": "STraTS_supervised",
+      "seed": 48,
+      "endpoint": 1,
+      "AP": 0.5146892076923264,
+      "AUROC": 0.8422413992293254,
+      "Brier": 0.15356996554095706,
+      "log_loss": 0.4843215723433835
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "method": "STraTS_supervised",
+      "seed": 49,
+      "endpoint": 0,
+      "AP": 0.4511427568381584,
+      "AUROC": 0.8689357820157682,
+      "Brier": 0.08085173531195697,
+      "log_loss": 0.2703534860695154
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "method": "STraTS_supervised",
+      "seed": 49,
+      "endpoint": 0,
+      "AP": 0.46560947462231134,
+      "AUROC": 0.8781940577309413,
+      "Brier": 0.07593757042337419,
+      "log_loss": 0.2543851979485106
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "method": "STraTS_supervised",
+      "seed": 49,
+      "endpoint": 1,
+      "AP": 0.514016712667058,
+      "AUROC": 0.8417828567082983,
+      "Brier": 0.1704030698084331,
+      "log_loss": 0.5425425751602038
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "method": "STraTS_supervised",
+      "seed": 49,
+      "endpoint": 1,
+      "AP": 0.5244439155366113,
+      "AUROC": 0.8480150153566147,
+      "Brier": 0.16672501246854296,
+      "log_loss": 0.5254918869657662
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "method": "STraTS_supervised",
+      "seed": 50,
+      "endpoint": 0,
+      "AP": 0.4450258088631751,
+      "AUROC": 0.8631605582782869,
+      "Brier": 0.07721812259315625,
+      "log_loss": 0.28771682838092194
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "method": "STraTS_supervised",
+      "seed": 50,
+      "endpoint": 0,
+      "AP": 0.43699241352839013,
+      "AUROC": 0.8696441051394619,
+      "Brier": 0.06959957323309462,
+      "log_loss": 0.259073157889323
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "method": "STraTS_supervised",
+      "seed": 50,
+      "endpoint": 1,
+      "AP": 0.5174671256153096,
+      "AUROC": 0.8416057638616521,
+      "Brier": 0.17723781206155095,
+      "log_loss": 0.5687505226004911
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "method": "STraTS_supervised",
+      "seed": 50,
+      "endpoint": 1,
+      "AP": 0.5192526182672569,
+      "AUROC": 0.8493738269252645,
+      "Brier": 0.1742419636878243,
+      "log_loss": 0.5527492197445196
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "method": "CEM-Net",
+      "seed": 48,
+      "endpoint": 0,
+      "AP": 0.4908907691428215,
+      "AUROC": 0.8796578681014275,
+      "Brier": 0.05513020174301189,
+      "log_loss": 0.20509855011390846
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "method": "CEM-Net",
+      "seed": 48,
+      "endpoint": 1,
+      "AP": 0.5342937847174059,
+      "AUROC": 0.8519450991051002,
+      "Brier": 0.10254366062291034,
+      "log_loss": 0.3283210003691222
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "method": "CEM-Net",
+      "seed": 49,
+      "endpoint": 0,
+      "AP": 0.48941037710790913,
+      "AUROC": 0.877852652887279,
+      "Brier": 0.0553768645497867,
+      "log_loss": 0.21199452468061272
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "method": "CEM-Net",
+      "seed": 49,
+      "endpoint": 1,
+      "AP": 0.528870313281435,
+      "AUROC": 0.8514916287542452,
+      "Brier": 0.1029061050935588,
+      "log_loss": 0.32859736594637184
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "method": "CEM-Net",
+      "seed": 50,
+      "endpoint": 0,
+      "AP": 0.48820737365733163,
+      "AUROC": 0.8803703654378863,
+      "Brier": 0.05483690377178764,
+      "log_loss": 0.2019339331463047
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "method": "CEM-Net",
+      "seed": 50,
+      "endpoint": 1,
+      "AP": 0.5322880718795656,
+      "AUROC": 0.8530580026602654,
+      "Brier": 0.10270353287904162,
+      "log_loss": 0.32756794016897184
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "method": "EMA_NRE_MLP",
+      "seed": 48,
+      "endpoint": 0,
+      "AP": 0.508035250750394,
+      "AUROC": 0.8757164926486256,
+      "Brier": 0.05496476373846614,
+      "log_loss": 0.22616609860807513
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "method": "EMA_NRE_MLP",
+      "seed": 48,
+      "endpoint": 1,
+      "AP": 0.5374790297315454,
+      "AUROC": 0.8515659162107905,
+      "Brier": 0.10295439595902253,
+      "log_loss": 0.3293377077236357
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "method": "EMA_NRE_MLP",
+      "seed": 49,
+      "endpoint": 0,
+      "AP": 0.4883984642877729,
+      "AUROC": 0.8750392872363095,
+      "Brier": 0.055214745629638205,
+      "log_loss": 0.20993846716454445
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "method": "EMA_NRE_MLP",
+      "seed": 49,
+      "endpoint": 1,
+      "AP": 0.5321221490696896,
+      "AUROC": 0.8515557060864312,
+      "Brier": 0.10289816761502614,
+      "log_loss": 0.32905056814341754
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "method": "EMA_NRE_MLP",
+      "seed": 50,
+      "endpoint": 0,
+      "AP": 0.4927197995161506,
+      "AUROC": 0.875234391647134,
+      "Brier": 0.05484974387863376,
+      "log_loss": 0.2095900695795006
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "method": "EMA_NRE_MLP",
+      "seed": 50,
+      "endpoint": 1,
+      "AP": 0.5344731484381893,
+      "AUROC": 0.8518750365276001,
+      "Brier": 0.10281089958551418,
+      "log_loss": 0.32871781819049956
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "method": "CEM-Net",
+      "seed": 48,
+      "endpoint": 0,
+      "AP": 0.49044997661499473,
+      "AUROC": 0.8865149192851672,
+      "Brier": 0.05335103664997399,
+      "log_loss": 0.19636697637397627
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "method": "CEM-Net",
+      "seed": 48,
+      "endpoint": 1,
+      "AP": 0.5465509463417983,
+      "AUROC": 0.8540247572090774,
+      "Brier": 0.10058808397146732,
+      "log_loss": 0.3239091882712831
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "method": "CEM-Net",
+      "seed": 49,
+      "endpoint": 0,
+      "AP": 0.4810901777845332,
+      "AUROC": 0.8864574960908387,
+      "Brier": 0.05446345933184452,
+      "log_loss": 0.20265226382414084
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "method": "CEM-Net",
+      "seed": 49,
+      "endpoint": 1,
+      "AP": 0.5500209844930679,
+      "AUROC": 0.8566939910135366,
+      "Brier": 0.09993777255882104,
+      "log_loss": 0.32121676055740983
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "method": "CEM-Net",
+      "seed": 50,
+      "endpoint": 0,
+      "AP": 0.4873562345910792,
+      "AUROC": 0.8874403954979527,
+      "Brier": 0.05343377729469055,
+      "log_loss": 0.1935391806419849
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "method": "CEM-Net",
+      "seed": 50,
+      "endpoint": 1,
+      "AP": 0.5506028724175384,
+      "AUROC": 0.8568641757194858,
+      "Brier": 0.09971094633843848,
+      "log_loss": 0.32095856354725055
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "method": "EMA_NRE_MLP",
+      "seed": 48,
+      "endpoint": 0,
+      "AP": 0.4943099863565789,
+      "AUROC": 0.8814805900147252,
+      "Brier": 0.05421246484487451,
+      "log_loss": 0.21920099143345595
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "method": "EMA_NRE_MLP",
+      "seed": 48,
+      "endpoint": 1,
+      "AP": 0.5510034402342407,
+      "AUROC": 0.8554703496473667,
+      "Brier": 0.10035652854953901,
+      "log_loss": 0.3232204752164563
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "method": "EMA_NRE_MLP",
+      "seed": 49,
+      "endpoint": 0,
+      "AP": 0.48563818268265735,
+      "AUROC": 0.8833172726045803,
+      "Brier": 0.05373757688719741,
+      "log_loss": 0.2007038681928046
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "method": "EMA_NRE_MLP",
+      "seed": 49,
+      "endpoint": 1,
+      "AP": 0.5495346122904812,
+      "AUROC": 0.8561900132237515,
+      "Brier": 0.10029381237743354,
+      "log_loss": 0.32224503154909495
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "method": "EMA_NRE_MLP",
+      "seed": 50,
+      "endpoint": 0,
+      "AP": 0.4891865664829259,
+      "AUROC": 0.8844782870695516,
+      "Brier": 0.05351041674621002,
+      "log_loss": 0.20053341962836177
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "method": "EMA_NRE_MLP",
+      "seed": 50,
+      "endpoint": 1,
+      "AP": 0.5525429927545553,
+      "AUROC": 0.8555378903139573,
+      "Brier": 0.0998474016752492,
+      "log_loss": 0.3220821368037859
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "method": "XGBoost_TD",
+      "seed": 48,
+      "endpoint": 0,
+      "AP": 0.5064210867419687,
+      "AUROC": 0.8906095452576165,
+      "Brier": 0.05373530815893452,
+      "log_loss": 0.215800892354788
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "method": "XGBoost_TD",
+      "seed": 48,
+      "endpoint": 0,
+      "AP": 0.49232439065710304,
+      "AUROC": 0.8999787173721242,
+      "Brier": 0.05382200149683538,
+      "log_loss": 0.21285468202522703
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "method": "XGBoost_TD",
+      "seed": 48,
+      "endpoint": 1,
+      "AP": 0.5115580075721733,
+      "AUROC": 0.8500033817702626,
+      "Brier": 0.098027343237151,
+      "log_loss": 0.31600785178467944
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "method": "XGBoost_TD",
+      "seed": 48,
+      "endpoint": 1,
+      "AP": 0.4781977794550483,
+      "AUROC": 0.8392473429148934,
+      "Brier": 0.0984630943665179,
+      "log_loss": 0.31921018306796256
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "method": "XGBoost_TD",
+      "seed": 49,
+      "endpoint": 0,
+      "AP": 0.5117600286054331,
+      "AUROC": 0.8978035362494177,
+      "Brier": 0.05450292393529107,
+      "log_loss": 0.21502002993972197
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "method": "XGBoost_TD",
+      "seed": 49,
+      "endpoint": 0,
+      "AP": 0.4991578116406962,
+      "AUROC": 0.8956698405345689,
+      "Brier": 0.05370819551568043,
+      "log_loss": 0.21834615796453405
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "method": "XGBoost_TD",
+      "seed": 49,
+      "endpoint": 1,
+      "AP": 0.5132075234026227,
+      "AUROC": 0.8472103721665893,
+      "Brier": 0.09817661835823915,
+      "log_loss": 0.3175656174937617
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "method": "XGBoost_TD",
+      "seed": 49,
+      "endpoint": 1,
+      "AP": 0.47852071653701245,
+      "AUROC": 0.8387082845332998,
+      "Brier": 0.09824769502745917,
+      "log_loss": 0.31949921648456425
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "method": "XGBoost_TD",
+      "seed": 50,
+      "endpoint": 0,
+      "AP": 0.5146092026668527,
+      "AUROC": 0.896081034961948,
+      "Brier": 0.05485528565107624,
+      "log_loss": 0.23223416902204394
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "method": "XGBoost_TD",
+      "seed": 50,
+      "endpoint": 0,
+      "AP": 0.49555101713598837,
+      "AUROC": 0.9007619852115107,
+      "Brier": 0.055359661168725774,
+      "log_loss": 0.2317720755307142
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "method": "XGBoost_TD",
+      "seed": 50,
+      "endpoint": 1,
+      "AP": 0.5169467376126466,
+      "AUROC": 0.8495113619164991,
+      "Brier": 0.0976754833595002,
+      "log_loss": 0.3155443049036033
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "method": "XGBoost_TD",
+      "seed": 50,
+      "endpoint": 1,
+      "AP": 0.48584243165111346,
+      "AUROC": 0.8402598098075211,
+      "Brier": 0.09772927669667829,
+      "log_loss": 0.31757750782449023
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "method": "STraTS_supervised",
+      "seed": 48,
+      "endpoint": 0,
+      "AP": 0.49726284539859894,
+      "AUROC": 0.8980285879525556,
+      "Brier": 0.08015059677316647,
+      "log_loss": 0.2902273233392525
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "method": "STraTS_supervised",
+      "seed": 48,
+      "endpoint": 0,
+      "AP": 0.4833027336846768,
+      "AUROC": 0.902505682468098,
+      "Brier": 0.07916687593198092,
+      "log_loss": 0.28562350379101864
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "method": "STraTS_supervised",
+      "seed": 48,
+      "endpoint": 1,
+      "AP": 0.5220975608064968,
+      "AUROC": 0.8529320779758608,
+      "Brier": 0.1523905449998814,
+      "log_loss": 0.4534158584265517
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "method": "STraTS_supervised",
+      "seed": 48,
+      "endpoint": 1,
+      "AP": 0.5029246241808294,
+      "AUROC": 0.8448774864888474,
+      "Brier": 0.15279606788306027,
+      "log_loss": 0.4606687454415674
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "method": "STraTS_supervised",
+      "seed": 49,
+      "endpoint": 0,
+      "AP": 0.5033600539638601,
+      "AUROC": 0.8987106402197282,
+      "Brier": 0.06513182299733974,
+      "log_loss": 0.23250076623881935
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "method": "STraTS_supervised",
+      "seed": 49,
+      "endpoint": 0,
+      "AP": 0.48661730890935034,
+      "AUROC": 0.9036255863535041,
+      "Brier": 0.0654473109260196,
+      "log_loss": 0.2327380405110258
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "method": "STraTS_supervised",
+      "seed": 49,
+      "endpoint": 1,
+      "AP": 0.5259691471602774,
+      "AUROC": 0.8545093134507418,
+      "Brier": 0.15089447730579594,
+      "log_loss": 0.4686632792935645
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "method": "STraTS_supervised",
+      "seed": 49,
+      "endpoint": 1,
+      "AP": 0.5132872295270879,
+      "AUROC": 0.8479641156740043,
+      "Brier": 0.15171204806862437,
+      "log_loss": 0.4725318871286686
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "method": "STraTS_supervised",
+      "seed": 50,
+      "endpoint": 0,
+      "AP": 0.5111748533311569,
+      "AUROC": 0.9006035268488468,
+      "Brier": 0.057993404539921495,
+      "log_loss": 0.20319313253319096
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "method": "STraTS_supervised",
+      "seed": 50,
+      "endpoint": 0,
+      "AP": 0.4849220659893325,
+      "AUROC": 0.9036774857554216,
+      "Brier": 0.05853272261047644,
+      "log_loss": 0.20513010552926833
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "method": "STraTS_supervised",
+      "seed": 50,
+      "endpoint": 1,
+      "AP": 0.5180809695377651,
+      "AUROC": 0.8533359500473725,
+      "Brier": 0.16071556420280406,
+      "log_loss": 0.4957109296825222
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "method": "STraTS_supervised",
+      "seed": 50,
+      "endpoint": 1,
+      "AP": 0.5101532203280905,
+      "AUROC": 0.8458992226450422,
+      "Brier": 0.16079633800503335,
+      "log_loss": 0.5002676086228274
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "method": "CEM-Net",
+      "seed": 48,
+      "endpoint": 0,
+      "AP": 0.5474081407189633,
+      "AUROC": 0.9099177552254909,
+      "Brier": 0.04963210105227735,
+      "log_loss": 0.17612074189296187
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "method": "CEM-Net",
+      "seed": 48,
+      "endpoint": 1,
+      "AP": 0.5571081009028568,
+      "AUROC": 0.8641808992071689,
+      "Brier": 0.09511584212727642,
+      "log_loss": 0.3120155238683421
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "method": "CEM-Net",
+      "seed": 49,
+      "endpoint": 0,
+      "AP": 0.5412670553145409,
+      "AUROC": 0.9086846966885469,
+      "Brier": 0.04911610862869149,
+      "log_loss": 0.17131540720039162
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "method": "CEM-Net",
+      "seed": 49,
+      "endpoint": 1,
+      "AP": 0.5544622988495091,
+      "AUROC": 0.8629139827330137,
+      "Brier": 0.09447409603691091,
+      "log_loss": 0.3059005439319476
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "method": "CEM-Net",
+      "seed": 50,
+      "endpoint": 0,
+      "AP": 0.5409574181514573,
+      "AUROC": 0.9094643309654794,
+      "Brier": 0.049625268731652294,
+      "log_loss": 0.17468851090562698
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "method": "CEM-Net",
+      "seed": 50,
+      "endpoint": 1,
+      "AP": 0.5529449691956088,
+      "AUROC": 0.8632402404050583,
+      "Brier": 0.09455073851343458,
+      "log_loss": 0.3056666444412341
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "method": "EMA_NRE_MLP",
+      "seed": 48,
+      "endpoint": 0,
+      "AP": 0.5473191763921662,
+      "AUROC": 0.9098738177760703,
+      "Brier": 0.049315579233955534,
+      "log_loss": 0.17506829506080632
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "method": "EMA_NRE_MLP",
+      "seed": 48,
+      "endpoint": 1,
+      "AP": 0.562726144738937,
+      "AUROC": 0.8658737246983989,
+      "Brier": 0.09396603057222438,
+      "log_loss": 0.3079638815096813
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "method": "EMA_NRE_MLP",
+      "seed": 49,
+      "endpoint": 0,
+      "AP": 0.5554025413552659,
+      "AUROC": 0.9106281624745571,
+      "Brier": 0.04872721537439769,
+      "log_loss": 0.17519809797250807
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "method": "EMA_NRE_MLP",
+      "seed": 49,
+      "endpoint": 1,
+      "AP": 0.5568837734612935,
+      "AUROC": 0.8646050064613987,
+      "Brier": 0.09405340661020396,
+      "log_loss": 0.3057890099782789
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "method": "EMA_NRE_MLP",
+      "seed": 50,
+      "endpoint": 0,
+      "AP": 0.5442588796898279,
+      "AUROC": 0.909612492132131,
+      "Brier": 0.04993631967260244,
+      "log_loss": 0.18475436946147622
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "method": "EMA_NRE_MLP",
+      "seed": 50,
+      "endpoint": 1,
+      "AP": 0.5616043231146033,
+      "AUROC": 0.8651286264635165,
+      "Brier": 0.09400982277828415,
+      "log_loss": 0.3074387271876649
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "method": "CEM-Net",
+      "seed": 48,
+      "endpoint": 0,
+      "AP": 0.5470954117470451,
+      "AUROC": 0.9138215595279684,
+      "Brier": 0.049278686409937995,
+      "log_loss": 0.17400431784066972
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "method": "CEM-Net",
+      "seed": 48,
+      "endpoint": 1,
+      "AP": 0.5411550678000061,
+      "AUROC": 0.8567858214782536,
+      "Brier": 0.09457910835988573,
+      "log_loss": 0.3139598217411478
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "method": "CEM-Net",
+      "seed": 49,
+      "endpoint": 0,
+      "AP": 0.544330171984472,
+      "AUROC": 0.915093159426442,
+      "Brier": 0.048316940185532765,
+      "log_loss": 0.16725076971990532
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "method": "CEM-Net",
+      "seed": 49,
+      "endpoint": 1,
+      "AP": 0.5411683322897266,
+      "AUROC": 0.8580655491718421,
+      "Brier": 0.09353158434777824,
+      "log_loss": 0.30495740068229416
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "method": "CEM-Net",
+      "seed": 50,
+      "endpoint": 0,
+      "AP": 0.5428731503131702,
+      "AUROC": 0.9145149071349284,
+      "Brier": 0.04897605906538933,
+      "log_loss": 0.17171633834855404
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "method": "CEM-Net",
+      "seed": 50,
+      "endpoint": 1,
+      "AP": 0.5401992708244943,
+      "AUROC": 0.8574017560361853,
+      "Brier": 0.09359374273489969,
+      "log_loss": 0.3054114679640488
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "method": "EMA_NRE_MLP",
+      "seed": 48,
+      "endpoint": 0,
+      "AP": 0.5465555855782204,
+      "AUROC": 0.9151332459047886,
+      "Brier": 0.04899845587911765,
+      "log_loss": 0.17253596793286075
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "method": "EMA_NRE_MLP",
+      "seed": 48,
+      "endpoint": 1,
+      "AP": 0.5470900307237846,
+      "AUROC": 0.8572961113393338,
+      "Brier": 0.09364294576211114,
+      "log_loss": 0.31115715012375467
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "method": "EMA_NRE_MLP",
+      "seed": 49,
+      "endpoint": 0,
+      "AP": 0.5450016127729527,
+      "AUROC": 0.9141095882983115,
+      "Brier": 0.048997768095864404,
+      "log_loss": 0.17475609328572708
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "method": "EMA_NRE_MLP",
+      "seed": 49,
+      "endpoint": 1,
+      "AP": 0.5474916245348748,
+      "AUROC": 0.8581527620893168,
+      "Brier": 0.09288907989592514,
+      "log_loss": 0.3061344346029104
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "method": "EMA_NRE_MLP",
+      "seed": 50,
+      "endpoint": 0,
+      "AP": 0.5427629961214406,
+      "AUROC": 0.9132562820869344,
+      "Brier": 0.04968615324441193,
+      "log_loss": 0.18366540475517068
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "method": "EMA_NRE_MLP",
+      "seed": 50,
+      "endpoint": 1,
+      "AP": 0.5469487757210721,
+      "AUROC": 0.8574444373476956,
+      "Brier": 0.09340536517294838,
+      "log_loss": 0.3093792858328196
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "XGBoost_TD",
+      "seed": 48,
+      "endpoint": 0,
+      "AP": 0.33839746708197693,
+      "AUROC": 0.8471351655416265,
+      "Brier": 0.04272922745697036,
+      "log_loss": 0.1650968032796278
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "XGBoost_TD",
+      "seed": 48,
+      "endpoint": 0,
+      "AP": 0.2842421952786688,
+      "AUROC": 0.8343511873254208,
+      "Brier": 0.04294266009279842,
+      "log_loss": 0.16691998759951923
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "XGBoost_TD",
+      "seed": 48,
+      "endpoint": 1,
+      "AP": 0.3612243412913835,
+      "AUROC": 0.8005347077713347,
+      "Brier": 0.08778459574797752,
+      "log_loss": 0.29713802059562605
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "XGBoost_TD",
+      "seed": 48,
+      "endpoint": 1,
+      "AP": 0.34067409671164195,
+      "AUROC": 0.8006473956176863,
+      "Brier": 0.08637195616200948,
+      "log_loss": 0.29202830349080544
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "XGBoost_TD",
+      "seed": 49,
+      "endpoint": 0,
+      "AP": 0.3075267783270992,
+      "AUROC": 0.8409583555016127,
+      "Brier": 0.04408289265268113,
+      "log_loss": 0.1711070813989389
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "XGBoost_TD",
+      "seed": 49,
+      "endpoint": 0,
+      "AP": 0.28225096135596095,
+      "AUROC": 0.8312559818975189,
+      "Brier": 0.0435636061232849,
+      "log_loss": 0.17058668970085253
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "XGBoost_TD",
+      "seed": 49,
+      "endpoint": 1,
+      "AP": 0.34745943979357713,
+      "AUROC": 0.7959947082576496,
+      "Brier": 0.08986690972340017,
+      "log_loss": 0.30190118374278047
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "XGBoost_TD",
+      "seed": 49,
+      "endpoint": 1,
+      "AP": 0.34217930417075215,
+      "AUROC": 0.8015391247942483,
+      "Brier": 0.08635475358500043,
+      "log_loss": 0.2913705311907495
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "XGBoost_TD",
+      "seed": 50,
+      "endpoint": 0,
+      "AP": 0.3192658309706215,
+      "AUROC": 0.8442586003687323,
+      "Brier": 0.042794935227597516,
+      "log_loss": 0.16423048262226392
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "XGBoost_TD",
+      "seed": 50,
+      "endpoint": 0,
+      "AP": 0.29398290673685296,
+      "AUROC": 0.838498493167306,
+      "Brier": 0.04242942657392091,
+      "log_loss": 0.16403076757252075
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "XGBoost_TD",
+      "seed": 50,
+      "endpoint": 1,
+      "AP": 0.34965380533948875,
+      "AUROC": 0.7867756322604937,
+      "Brier": 0.08805044223796574,
+      "log_loss": 0.3004696151868285
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "XGBoost_TD",
+      "seed": 50,
+      "endpoint": 1,
+      "AP": 0.33156358641262274,
+      "AUROC": 0.789598624725879,
+      "Brier": 0.08575804453411617,
+      "log_loss": 0.2936449020684516
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "STraTS_supervised",
+      "seed": 48,
+      "endpoint": 0,
+      "AP": 0.3862762807838962,
+      "AUROC": 0.8650012400381296,
+      "Brier": 0.06901134762809795,
+      "log_loss": 0.26698771056176346
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "STraTS_supervised",
+      "seed": 48,
+      "endpoint": 0,
+      "AP": 0.3489157134111198,
+      "AUROC": 0.8640544709967054,
+      "Brier": 0.06980407503719734,
+      "log_loss": 0.2765330776017293
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "STraTS_supervised",
+      "seed": 48,
+      "endpoint": 1,
+      "AP": 0.36411864303200764,
+      "AUROC": 0.7982364153956387,
+      "Brier": 0.2189700372043169,
+      "log_loss": 0.6443879866095477
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "STraTS_supervised",
+      "seed": 48,
+      "endpoint": 1,
+      "AP": 0.35356168867714716,
+      "AUROC": 0.8025507246035504,
+      "Brier": 0.2137991270466421,
+      "log_loss": 0.6290543541484223
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "STraTS_supervised",
+      "seed": 49,
+      "endpoint": 0,
+      "AP": 0.3813680043830776,
+      "AUROC": 0.8656918627635717,
+      "Brier": 0.05528773489867137,
+      "log_loss": 0.22941461242172545
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "STraTS_supervised",
+      "seed": 49,
+      "endpoint": 0,
+      "AP": 0.3494326476198175,
+      "AUROC": 0.8624163866700925,
+      "Brier": 0.05681999448796075,
+      "log_loss": 0.2378281717527735
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "STraTS_supervised",
+      "seed": 49,
+      "endpoint": 1,
+      "AP": 0.3670580928811456,
+      "AUROC": 0.804943811313457,
+      "Brier": 0.17349088675437396,
+      "log_loss": 0.5374359891511752
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "STraTS_supervised",
+      "seed": 49,
+      "endpoint": 1,
+      "AP": 0.36292695488046556,
+      "AUROC": 0.8011394848771511,
+      "Brier": 0.1713554621761814,
+      "log_loss": 0.5277097680124783
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "STraTS_supervised",
+      "seed": 50,
+      "endpoint": 0,
+      "AP": 0.3988884054005859,
+      "AUROC": 0.87373536893559,
+      "Brier": 0.08403685482064631,
+      "log_loss": 0.3706589019278359
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "STraTS_supervised",
+      "seed": 50,
+      "endpoint": 0,
+      "AP": 0.3489341021354793,
+      "AUROC": 0.865942045934933,
+      "Brier": 0.08363719739405782,
+      "log_loss": 0.3759856960068191
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "STraTS_supervised",
+      "seed": 50,
+      "endpoint": 1,
+      "AP": 0.37816304633559167,
+      "AUROC": 0.8093162423947963,
+      "Brier": 0.15553432494229458,
+      "log_loss": 0.49192159373887034
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "STraTS_supervised",
+      "seed": 50,
+      "endpoint": 1,
+      "AP": 0.36721752137978264,
+      "AUROC": 0.8042185072073248,
+      "Brier": 0.1534062191668464,
+      "log_loss": 0.4827393333609089
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "CEM-Net",
+      "seed": 48,
+      "endpoint": 0,
+      "AP": 0.4345274169276406,
+      "AUROC": 0.8889426931503712,
+      "Brier": 0.04031374902907988,
+      "log_loss": 0.16616985225954453
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "CEM-Net",
+      "seed": 48,
+      "endpoint": 1,
+      "AP": 0.4011181455739765,
+      "AUROC": 0.8151534130329209,
+      "Brier": 0.0867134970608901,
+      "log_loss": 0.29846916652051075
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "CEM-Net",
+      "seed": 49,
+      "endpoint": 0,
+      "AP": 0.43163453498355875,
+      "AUROC": 0.8879562047166708,
+      "Brier": 0.03873520243961936,
+      "log_loss": 0.14400070771950974
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "CEM-Net",
+      "seed": 49,
+      "endpoint": 1,
+      "AP": 0.3976992920114517,
+      "AUROC": 0.8180437483424957,
+      "Brier": 0.08433232606199675,
+      "log_loss": 0.28523372996086455
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "CEM-Net",
+      "seed": 50,
+      "endpoint": 0,
+      "AP": 0.4305670626944776,
+      "AUROC": 0.8879652105801809,
+      "Brier": 0.038471825650916586,
+      "log_loss": 0.14309449462569485
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "CEM-Net",
+      "seed": 50,
+      "endpoint": 1,
+      "AP": 0.3987553796528904,
+      "AUROC": 0.817579107412189,
+      "Brier": 0.08553667137259155,
+      "log_loss": 0.292384313493291
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "EMA_NRE_MLP",
+      "seed": 48,
+      "endpoint": 0,
+      "AP": 0.4328453303579909,
+      "AUROC": 0.878950687586133,
+      "Brier": 0.038273902420082814,
+      "log_loss": 0.1461218583157931
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "EMA_NRE_MLP",
+      "seed": 48,
+      "endpoint": 1,
+      "AP": 0.3967594230998397,
+      "AUROC": 0.8168552311007011,
+      "Brier": 0.08571093315914392,
+      "log_loss": 0.2906452167746629
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "EMA_NRE_MLP",
+      "seed": 49,
+      "endpoint": 0,
+      "AP": 0.43873636288020595,
+      "AUROC": 0.8833634452461971,
+      "Brier": 0.039322112512894705,
+      "log_loss": 0.15156236858630853
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "EMA_NRE_MLP",
+      "seed": 49,
+      "endpoint": 1,
+      "AP": 0.4006036408096947,
+      "AUROC": 0.8168456866027745,
+      "Brier": 0.08428578175494734,
+      "log_loss": 0.2861680407681855
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "EMA_NRE_MLP",
+      "seed": 50,
+      "endpoint": 0,
+      "AP": 0.43580364507436853,
+      "AUROC": 0.8830148721444484,
+      "Brier": 0.03818540802515009,
+      "log_loss": 0.14493082741419422
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "EMA_NRE_MLP",
+      "seed": 50,
+      "endpoint": 1,
+      "AP": 0.40428167236194,
+      "AUROC": 0.8166393436476026,
+      "Brier": 0.08511602809176533,
+      "log_loss": 0.29031680060593235
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "CEM-Net",
+      "seed": 48,
+      "endpoint": 0,
+      "AP": 0.3935388754828638,
+      "AUROC": 0.8751738647414767,
+      "Brier": 0.04056108514868051,
+      "log_loss": 0.17268539626451573
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "CEM-Net",
+      "seed": 48,
+      "endpoint": 1,
+      "AP": 0.3922187567407075,
+      "AUROC": 0.8142066275919412,
+      "Brier": 0.08399751562670088,
+      "log_loss": 0.29102426989111024
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "CEM-Net",
+      "seed": 49,
+      "endpoint": 0,
+      "AP": 0.3979448476688867,
+      "AUROC": 0.8827160075296336,
+      "Brier": 0.038952201347990226,
+      "log_loss": 0.14552454819822758
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "CEM-Net",
+      "seed": 49,
+      "endpoint": 1,
+      "AP": 0.3930729541555812,
+      "AUROC": 0.8177370414532489,
+      "Brier": 0.08174250010622207,
+      "log_loss": 0.2784049915049171
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "CEM-Net",
+      "seed": 50,
+      "endpoint": 0,
+      "AP": 0.3983095568340663,
+      "AUROC": 0.8829265934164322,
+      "Brier": 0.03878130288573077,
+      "log_loss": 0.1446221546758685
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "CEM-Net",
+      "seed": 50,
+      "endpoint": 1,
+      "AP": 0.3944413493286769,
+      "AUROC": 0.8161091838361281,
+      "Brier": 0.0826183478222263,
+      "log_loss": 0.28499862522323516
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "EMA_NRE_MLP",
+      "seed": 48,
+      "endpoint": 0,
+      "AP": 0.3990642921034545,
+      "AUROC": 0.8815681849122029,
+      "Brier": 0.038678176493807476,
+      "log_loss": 0.1457346926183146
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "EMA_NRE_MLP",
+      "seed": 48,
+      "endpoint": 1,
+      "AP": 0.3977165615427798,
+      "AUROC": 0.8151849774307913,
+      "Brier": 0.08262002180177933,
+      "log_loss": 0.28276932423114004
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "EMA_NRE_MLP",
+      "seed": 49,
+      "endpoint": 0,
+      "AP": 0.3963703683602421,
+      "AUROC": 0.8789204726432577,
+      "Brier": 0.039750629494627966,
+      "log_loss": 0.15360616526446785
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "EMA_NRE_MLP",
+      "seed": 49,
+      "endpoint": 1,
+      "AP": 0.3945304557967338,
+      "AUROC": 0.8142216555777011,
+      "Brier": 0.08191248692398664,
+      "log_loss": 0.2803193728510751
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "EMA_NRE_MLP",
+      "seed": 50,
+      "endpoint": 0,
+      "AP": 0.4007821848533511,
+      "AUROC": 0.8806875287973425,
+      "Brier": 0.03864322898408575,
+      "log_loss": 0.14584744730851823
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "EMA_NRE_MLP",
+      "seed": 50,
+      "endpoint": 1,
+      "AP": 0.39404407147642145,
+      "AUROC": 0.8140317377517868,
+      "Brier": 0.08273977442022362,
+      "log_loss": 0.28432209772548955
+    }
+  ],
+  "paired": [
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "candidate": "CEM-Net",
+      "baseline": "XGBoost_TD",
+      "endpoint": 0,
+      "values": [
+        0.053334825854839396,
+        0.060382049000913485,
+        0.05570002389509143
+      ],
+      "mean": 0.05647229958361477,
+      "sample_SD": 0.003586522803768818,
+      "family_count": 12,
+      "ci95": [
+        0.031345248178785,
+        0.07902053224581015
+      ],
+      "adjusted_ci": [
+        0.020558043278747485,
+        0.08973625418574464
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.000599970001499925,
+      "wilcoxon": {
+        "p_two_sided": 0.25,
+        "nonzero_pairs": 3,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm_full_family": 0.000599970001499925,
+      "holm_family_count": 12
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "candidate": "CEM-Net",
+      "baseline": "XGBoost_TD",
+      "endpoint": 1,
+      "values": [
+        0.021846296587528458,
+        0.007292475907028084,
+        0.012484942881327066
+      ],
+      "mean": 0.013874571791961202,
+      "sample_SD": 0.007375752536656362,
+      "family_count": 12,
+      "ci95": [
+        -0.0020241866512535336,
+        0.02952101212313898
+      ],
+      "adjusted_ci": [
+        -0.010259992633345955,
+        0.03663038060427132
+      ],
+      "p_bootstrap_centered": 0.0855457227138643,
+      "p_bonferroni": 1.0,
+      "wilcoxon": {
+        "p_two_sided": 0.25,
+        "nonzero_pairs": 3,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm_full_family": 0.0855457227138643,
+      "holm_family_count": 12
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "candidate": "CEM-Net",
+      "baseline": "STraTS_supervised",
+      "endpoint": 0,
+      "values": [
+        0.039369087388757884,
+        0.038267620269750724,
+        0.043181564794156524
+      ],
+      "mean": 0.04027275748422171,
+      "sample_SD": 0.002578599896903577,
+      "family_count": 12,
+      "ci95": [
+        0.01628239207946774,
+        0.06404629990619366
+      ],
+      "adjusted_ci": [
+        0.006480475842065848,
+        0.07507765139741933
+      ],
+      "p_bootstrap_centered": 0.0010499475026248687,
+      "p_bonferroni": 0.012599370031498424,
+      "wilcoxon": {
+        "p_two_sided": 0.25,
+        "nonzero_pairs": 3,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm_full_family": 0.003149842507874606,
+      "holm_family_count": 12
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "candidate": "CEM-Net",
+      "baseline": "STraTS_supervised",
+      "endpoint": 1,
+      "values": [
+        0.027538806703530927,
+        0.014853600614377016,
+        0.014820946264256007
+      ],
+      "mean": 0.019071117860721316,
+      "sample_SD": 0.007333251825120095,
+      "family_count": 12,
+      "ci95": [
+        0.0024459375414666367,
+        0.035664841659709824
+      ],
+      "adjusted_ci": [
+        -0.005008739957155507,
+        0.04430950018164068
+      ],
+      "p_bootstrap_centered": 0.025098745062746862,
+      "p_bonferroni": 0.3011849407529623,
+      "wilcoxon": {
+        "p_two_sided": 0.25,
+        "nonzero_pairs": 3,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm_full_family": 0.050197490125493724,
+      "holm_family_count": 12
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "candidate": "EMA_NRE_MLP",
+      "baseline": "XGBoost_TD",
+      "endpoint": 0,
+      "values": [
+        0.07047930746241193,
+        0.059370136180777244,
+        0.06021244975391038
+      ],
+      "mean": 0.06335396446569985,
+      "sample_SD": 0.006185083479991721,
+      "family_count": 12,
+      "ci95": [
+        0.036852771048352356,
+        0.0866844830301401
+      ],
+      "adjusted_ci": [
+        0.024317977985004128,
+        0.0985973148314492
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.000599970001499925,
+      "wilcoxon": {
+        "p_two_sided": 0.25,
+        "nonzero_pairs": 3,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm_full_family": 0.000599970001499925,
+      "holm_family_count": 12
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "candidate": "EMA_NRE_MLP",
+      "baseline": "XGBoost_TD",
+      "endpoint": 1,
+      "values": [
+        0.025031541601667984,
+        0.010544311695282693,
+        0.014670019439950721
+      ],
+      "mean": 0.016748624245633798,
+      "sample_SD": 0.0074639403831871995,
+      "family_count": 12,
+      "ci95": [
+        -5.408987724781095e-05,
+        0.032848732580418864
+      ],
+      "adjusted_ci": [
+        -0.008202231460566818,
+        0.040093992669454896
+      ],
+      "p_bootstrap_centered": 0.0464476776161192,
+      "p_bonferroni": 0.5573721313934303,
+      "wilcoxon": {
+        "p_two_sided": 0.25,
+        "nonzero_pairs": 3,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm_full_family": 0.0464476776161192,
+      "holm_family_count": 12
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "candidate": "EMA_NRE_MLP",
+      "baseline": "STraTS_supervised",
+      "endpoint": 0,
+      "values": [
+        0.05651356899633042,
+        0.037255707449614484,
+        0.04769399065297547
+      ],
+      "mean": 0.04715442236630679,
+      "sample_SD": 0.009640262355875177,
+      "family_count": 12,
+      "ci95": [
+        0.022358978877409688,
+        0.07139459476738678
+      ],
+      "adjusted_ci": [
+        0.010355099647632577,
+        0.08345477944904828
+      ],
+      "p_bootstrap_centered": 0.00044997750112494374,
+      "p_bonferroni": 0.005399730013499325,
+      "wilcoxon": {
+        "p_two_sided": 0.25,
+        "nonzero_pairs": 3,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm_full_family": 0.0013499325033748313,
+      "holm_family_count": 12
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "candidate": "EMA_NRE_MLP",
+      "baseline": "STraTS_supervised",
+      "endpoint": 1,
+      "values": [
+        0.030724051717670453,
+        0.018105436402631625,
+        0.017006022822879663
+      ],
+      "mean": 0.021945170314393914,
+      "sample_SD": 0.00762258135899065,
+      "family_count": 12,
+      "ci95": [
+        0.0042785014507956244,
+        0.03872966592519653
+      ],
+      "adjusted_ci": [
+        -0.003921228234914193,
+        0.047223698415526046
+      ],
+      "p_bootstrap_centered": 0.012899355032248387,
+      "p_bonferroni": 0.15479226038698066,
+      "wilcoxon": {
+        "p_two_sided": 0.25,
+        "nonzero_pairs": 3,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm_full_family": 0.025798710064496775,
+      "holm_family_count": 12
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "candidate": "CEM-Net",
+      "baseline": "XGBoost_TD",
+      "endpoint": 0,
+      "values": [
+        0.04411681209080265,
+        0.0470087558731313,
+        0.04170530990891591
+      ],
+      "mean": 0.044276959290949956,
+      "sample_SD": 0.0026553474571370875,
+      "family_count": 12,
+      "ci95": [
+        0.025524985277810414,
+        0.06293267754725711
+      ],
+      "adjusted_ci": [
+        0.0176237504488156,
+        0.07207516317945618
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.000599970001499925,
+      "wilcoxon": {
+        "p_two_sided": 0.25,
+        "nonzero_pairs": 3,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm_full_family": 0.000599970001499925,
+      "holm_family_count": 12
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "candidate": "CEM-Net",
+      "baseline": "XGBoost_TD",
+      "endpoint": 1,
+      "values": [
+        0.03539284718115998,
+        0.03805774528037509,
+        0.04191657412478378
+      ],
+      "mean": 0.038455722195439614,
+      "sample_SD": 0.0032800217266710265,
+      "family_count": 12,
+      "ci95": [
+        0.026651159727076684,
+        0.04977362022678796
+      ],
+      "adjusted_ci": [
+        0.02127603968364513,
+        0.055482897873900774
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.000599970001499925,
+      "wilcoxon": {
+        "p_two_sided": 0.25,
+        "nonzero_pairs": 3,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm_full_family": 0.000599970001499925,
+      "holm_family_count": 12
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "candidate": "CEM-Net",
+      "baseline": "STraTS_supervised",
+      "endpoint": 0,
+      "values": [
+        0.029813995505910407,
+        0.015480703162221887,
+        0.05036382106268905
+      ],
+      "mean": 0.03188617324360712,
+      "sample_SD": 0.017533636788953044,
+      "family_count": 12,
+      "ci95": [
+        0.014316340967608376,
+        0.04918652360025552
+      ],
+      "adjusted_ci": [
+        0.005915212782752156,
+        0.05684713804717755
+      ],
+      "p_bootstrap_centered": 0.0004999750012499375,
+      "p_bonferroni": 0.00599970001499925,
+      "wilcoxon": {
+        "p_two_sided": 0.25,
+        "nonzero_pairs": 3,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm_full_family": 0.000599970001499925,
+      "holm_family_count": 12
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "candidate": "CEM-Net",
+      "baseline": "STraTS_supervised",
+      "endpoint": 1,
+      "values": [
+        0.03186173864947195,
+        0.025577068956456617,
+        0.031350254150281476
+      ],
+      "mean": 0.02959635391873668,
+      "sample_SD": 0.0034901852105921286,
+      "family_count": 12,
+      "ci95": [
+        0.017424050557127754,
+        0.041809921284632616
+      ],
+      "adjusted_ci": [
+        0.012001207590604074,
+        0.046887192744804324
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.000599970001499925,
+      "wilcoxon": {
+        "p_two_sided": 0.25,
+        "nonzero_pairs": 3,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm_full_family": 0.000599970001499925,
+      "holm_family_count": 12
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "candidate": "EMA_NRE_MLP",
+      "baseline": "XGBoost_TD",
+      "endpoint": 0,
+      "values": [
+        0.04797682183238683,
+        0.05155676077125543,
+        0.04353564180076264
+      ],
+      "mean": 0.04768974146813496,
+      "sample_SD": 0.00401825817193894,
+      "family_count": 12,
+      "ci95": [
+        0.02851340196025736,
+        0.06677049670825254
+      ],
+      "adjusted_ci": [
+        0.020288464931227122,
+        0.07552473059787662
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.000599970001499925,
+      "wilcoxon": {
+        "p_two_sided": 0.25,
+        "nonzero_pairs": 3,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm_full_family": 0.000599970001499925,
+      "holm_family_count": 12
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "candidate": "EMA_NRE_MLP",
+      "baseline": "XGBoost_TD",
+      "endpoint": 1,
+      "values": [
+        0.03984534107360238,
+        0.03757137307778835,
+        0.04385669446180074
+      ],
+      "mean": 0.04042446953773049,
+      "sample_SD": 0.0031824296627817853,
+      "family_count": 12,
+      "ci95": [
+        0.028038189760113883,
+        0.05228804746338102
+      ],
+      "adjusted_ci": [
+        0.02235523204051139,
+        0.057984970983757225
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.000599970001499925,
+      "wilcoxon": {
+        "p_two_sided": 0.25,
+        "nonzero_pairs": 3,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm_full_family": 0.000599970001499925,
+      "holm_family_count": 12
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "candidate": "EMA_NRE_MLP",
+      "baseline": "STraTS_supervised",
+      "endpoint": 0,
+      "values": [
+        0.03367400524749459,
+        0.020028708060346012,
+        0.05219415295453578
+      ],
+      "mean": 0.03529895542079212,
+      "sample_SD": 0.016144172589809748,
+      "family_count": 12,
+      "ci95": [
+        0.017381586581497452,
+        0.05294886402908744
+      ],
+      "adjusted_ci": [
+        0.009416830414046612,
+        0.06087654748543665
+      ],
+      "p_bootstrap_centered": 9.99950002499875e-05,
+      "p_bonferroni": 0.00119994000299985,
+      "wilcoxon": {
+        "p_two_sided": 0.25,
+        "nonzero_pairs": 3,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm_full_family": 0.000599970001499925,
+      "holm_family_count": 12
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "candidate": "EMA_NRE_MLP",
+      "baseline": "STraTS_supervised",
+      "endpoint": 1,
+      "values": [
+        0.03631423254191435,
+        0.02509069675386988,
+        0.033290374487298435
+      ],
+      "mean": 0.03156510126102755,
+      "sample_SD": 0.00580726826273284,
+      "family_count": 12,
+      "ci95": [
+        0.018800434157458835,
+        0.04424269052201438
+      ],
+      "adjusted_ci": [
+        0.013411254766837532,
+        0.04948543560308621
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.000599970001499925,
+      "wilcoxon": {
+        "p_two_sided": 0.25,
+        "nonzero_pairs": 3,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm_full_family": 0.000599970001499925,
+      "holm_family_count": 12
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "candidate": "CEM-Net",
+      "baseline": "XGBoost_TD",
+      "endpoint": 0,
+      "values": [
+        0.040987053976994536,
+        0.029507026709107764,
+        0.02634821548460453
+      ],
+      "mean": 0.03228076539023561,
+      "sample_SD": 0.007703513341648631,
+      "family_count": 12,
+      "ci95": [
+        0.01751881481293282,
+        0.04720036827887936
+      ],
+      "adjusted_ci": [
+        0.010987713410782828,
+        0.05412410659822091
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.000599970001499925,
+      "wilcoxon": {
+        "p_two_sided": 0.25,
+        "nonzero_pairs": 3,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm_full_family": 0.000599970001499925,
+      "holm_family_count": 12
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "candidate": "CEM-Net",
+      "baseline": "XGBoost_TD",
+      "endpoint": 1,
+      "values": [
+        0.045550093330683494,
+        0.041254775446886494,
+        0.035998231582962115
+      ],
+      "mean": 0.040934366786844034,
+      "sample_SD": 0.004783984949178706,
+      "family_count": 12,
+      "ci95": [
+        0.02825745482095726,
+        0.05384770674376046
+      ],
+      "adjusted_ci": [
+        0.022094759855169992,
+        0.06024823071318226
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.000599970001499925,
+      "wilcoxon": {
+        "p_two_sided": 0.25,
+        "nonzero_pairs": 3,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm_full_family": 0.000599970001499925,
+      "holm_family_count": 12
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "candidate": "CEM-Net",
+      "baseline": "STraTS_supervised",
+      "endpoint": 0,
+      "values": [
+        0.050145295320364325,
+        0.03790700135068081,
+        0.029782564820300395
+      ],
+      "mean": 0.039278287163781844,
+      "sample_SD": 0.010250391062806705,
+      "family_count": 12,
+      "ci95": [
+        0.02182323306049727,
+        0.055845667930212395
+      ],
+      "adjusted_ci": [
+        0.014131089838820448,
+        0.06343309429301186
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.000599970001499925,
+      "wilcoxon": {
+        "p_two_sided": 0.25,
+        "nonzero_pairs": 3,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm_full_family": 0.000599970001499925,
+      "holm_family_count": 12
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "candidate": "CEM-Net",
+      "baseline": "STraTS_supervised",
+      "endpoint": 1,
+      "values": [
+        0.035010540096359954,
+        0.02849315168923172,
+        0.0348639996578437
+      ],
+      "mean": 0.032789230481145126,
+      "sample_SD": 0.0037212347768954645,
+      "family_count": 12,
+      "ci95": [
+        0.02073512555557093,
+        0.04481238248854329
+      ],
+      "adjusted_ci": [
+        0.015057941367901288,
+        0.050427311910319114
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.000599970001499925,
+      "wilcoxon": {
+        "p_two_sided": 0.25,
+        "nonzero_pairs": 3,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm_full_family": 0.000599970001499925,
+      "holm_family_count": 12
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "candidate": "EMA_NRE_MLP",
+      "baseline": "XGBoost_TD",
+      "endpoint": 0,
+      "values": [
+        0.04089808965019748,
+        0.043642512749832774,
+        0.029649677022975163
+      ],
+      "mean": 0.03806342647433514,
+      "sample_SD": 0.007414603793200832,
+      "family_count": 12,
+      "ci95": [
+        0.022907860537917477,
+        0.05334459487363877
+      ],
+      "adjusted_ci": [
+        0.016550668266864334,
+        0.06034449569922144
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.000599970001499925,
+      "wilcoxon": {
+        "p_two_sided": 0.25,
+        "nonzero_pairs": 3,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm_full_family": 0.000599970001499925,
+      "holm_family_count": 12
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "candidate": "EMA_NRE_MLP",
+      "baseline": "XGBoost_TD",
+      "endpoint": 1,
+      "values": [
+        0.051168137166763716,
+        0.04367625005867082,
+        0.04465758550195664
+      ],
+      "mean": 0.04650065757579706,
+      "sample_SD": 0.00407182749046788,
+      "family_count": 12,
+      "ci95": [
+        0.03360361131312392,
+        0.05962773520622378
+      ],
+      "adjusted_ci": [
+        0.02713559529054012,
+        0.0660268734979148
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.000599970001499925,
+      "wilcoxon": {
+        "p_two_sided": 0.25,
+        "nonzero_pairs": 3,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm_full_family": 0.000599970001499925,
+      "holm_family_count": 12
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "candidate": "EMA_NRE_MLP",
+      "baseline": "STraTS_supervised",
+      "endpoint": 0,
+      "values": [
+        0.050056330993567266,
+        0.05204248739140582,
+        0.033084026358671026
+      ],
+      "mean": 0.04506094824788137,
+      "sample_SD": 0.010419750369579551,
+      "family_count": 12,
+      "ci95": [
+        0.027158730281695007,
+        0.06183397689997894
+      ],
+      "adjusted_ci": [
+        0.019337247758301413,
+        0.07028014397424721
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.000599970001499925,
+      "wilcoxon": {
+        "p_two_sided": 0.25,
+        "nonzero_pairs": 3,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm_full_family": 0.000599970001499925,
+      "holm_family_count": 12
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "candidate": "EMA_NRE_MLP",
+      "baseline": "STraTS_supervised",
+      "endpoint": 1,
+      "values": [
+        0.040628583932440177,
+        0.030914626301016046,
+        0.04352335357683823
+      ],
+      "mean": 0.03835552127009815,
+      "sample_SD": 0.0066045523148216215,
+      "family_count": 12,
+      "ci95": [
+        0.026054176899357254,
+        0.050580845403022476
+      ],
+      "adjusted_ci": [
+        0.01996605883930908,
+        0.05576165729733187
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.000599970001499925,
+      "wilcoxon": {
+        "p_two_sided": 0.25,
+        "nonzero_pairs": 3,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm_full_family": 0.000599970001499925,
+      "holm_family_count": 12
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "candidate": "CEM-Net",
+      "baseline": "XGBoost_TD",
+      "endpoint": 0,
+      "values": [
+        0.054771021089942085,
+        0.04517236034377575,
+        0.04732213317718181
+      ],
+      "mean": 0.049088504870299886,
+      "sample_SD": 0.005037223813638342,
+      "family_count": 12,
+      "ci95": [
+        0.03846258740249241,
+        0.05926960139172409
+      ],
+      "adjusted_ci": [
+        0.033778233504582846,
+        0.06417537593347726
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.000599970001499925,
+      "wilcoxon": {
+        "p_two_sided": 0.25,
+        "nonzero_pairs": 3,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm_full_family": 0.000599970001499925,
+      "holm_family_count": 12
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "candidate": "CEM-Net",
+      "baseline": "XGBoost_TD",
+      "endpoint": 1,
+      "values": [
+        0.06295728834495778,
+        0.06264761575271416,
+        0.0543568391733808
+      ],
+      "mean": 0.05998724775701758,
+      "sample_SD": 0.004878534605044303,
+      "family_count": 12,
+      "ci95": [
+        0.05001664585898505,
+        0.06923439370610558
+      ],
+      "adjusted_ci": [
+        0.046007470416263796,
+        0.07363331885082096
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.000599970001499925,
+      "wilcoxon": {
+        "p_two_sided": 0.25,
+        "nonzero_pairs": 3,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm_full_family": 0.000599970001499925,
+      "holm_family_count": 12
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "candidate": "CEM-Net",
+      "baseline": "STraTS_supervised",
+      "endpoint": 0,
+      "values": [
+        0.06379267806236832,
+        0.057712863075121634,
+        0.057951084323837665
+      ],
+      "mean": 0.059818875153775874,
+      "sample_SD": 0.003443474917592448,
+      "family_count": 12,
+      "ci95": [
+        0.048039141922937206,
+        0.07126267405724955
+      ],
+      "adjusted_ci": [
+        0.042432563332833656,
+        0.07705006912831602
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.000599970001499925,
+      "wilcoxon": {
+        "p_two_sided": 0.25,
+        "nonzero_pairs": 3,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm_full_family": 0.000599970001499925,
+      "holm_family_count": 12
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "candidate": "CEM-Net",
+      "baseline": "STraTS_supervised",
+      "endpoint": 1,
+      "values": [
+        0.03823044361917671,
+        0.027881102762638665,
+        0.030046050496403742
+      ],
+      "mean": 0.03205253229273971,
+      "sample_SD": 0.005458634530766153,
+      "family_count": 12,
+      "ci95": [
+        0.022881602339869387,
+        0.04112509035777623
+      ],
+      "adjusted_ci": [
+        0.01869497058089636,
+        0.04576776945288679
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.000599970001499925,
+      "wilcoxon": {
+        "p_two_sided": 0.25,
+        "nonzero_pairs": 3,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm_full_family": 0.000599970001499925,
+      "holm_family_count": 12
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "candidate": "EMA_NRE_MLP",
+      "baseline": "XGBoost_TD",
+      "endpoint": 0,
+      "values": [
+        0.05423119492111733,
+        0.045843801132256445,
+        0.04721197898545226
+      ],
+      "mean": 0.04909565834627535,
+      "sample_SD": 0.004499808839622933,
+      "family_count": 12,
+      "ci95": [
+        0.03803059332991844,
+        0.05970657749847642
+      ],
+      "adjusted_ci": [
+        0.0327764694033099,
+        0.06466821332511334
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.000599970001499925,
+      "wilcoxon": {
+        "p_two_sided": 0.25,
+        "nonzero_pairs": 3,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm_full_family": 0.000599970001499925,
+      "holm_family_count": 12
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "candidate": "EMA_NRE_MLP",
+      "baseline": "XGBoost_TD",
+      "endpoint": 1,
+      "values": [
+        0.06889225126873627,
+        0.06897090799786232,
+        0.061106344069958685
+      ],
+      "mean": 0.06632316777885243,
+      "sample_SD": 0.004518073032556698,
+      "family_count": 12,
+      "ci95": [
+        0.05589299184248855,
+        0.07604351245054931
+      ],
+      "adjusted_ci": [
+        0.051393781508886426,
+        0.0809947000249767
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.000599970001499925,
+      "wilcoxon": {
+        "p_two_sided": 0.25,
+        "nonzero_pairs": 3,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm_full_family": 0.000599970001499925,
+      "holm_family_count": 12
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "candidate": "EMA_NRE_MLP",
+      "baseline": "STraTS_supervised",
+      "endpoint": 0,
+      "values": [
+        0.06325285189354357,
+        0.05838430386360233,
+        0.057840930132108115
+      ],
+      "mean": 0.05982602862975134,
+      "sample_SD": 0.0029801261741695144,
+      "family_count": 12,
+      "ci95": [
+        0.0474663577553122,
+        0.07194896607488441
+      ],
+      "adjusted_ci": [
+        0.042269072183539716,
+        0.07757928360953065
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.000599970001499925,
+      "wilcoxon": {
+        "p_two_sided": 0.25,
+        "nonzero_pairs": 3,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm_full_family": 0.000599970001499925,
+      "holm_family_count": 12
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "candidate": "EMA_NRE_MLP",
+      "baseline": "STraTS_supervised",
+      "endpoint": 1,
+      "values": [
+        0.0441654065429552,
+        0.034204395007786825,
+        0.03679555539298163
+      ],
+      "mean": 0.03838845231457455,
+      "sample_SD": 0.005168019751612267,
+      "family_count": 12,
+      "ci95": [
+        0.028941009117394355,
+        0.04785034416224233
+      ],
+      "adjusted_ci": [
+        0.024292118630919957,
+        0.05257441007439427
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.000599970001499925,
+      "wilcoxon": {
+        "p_two_sided": 0.25,
+        "nonzero_pairs": 3,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm_full_family": 0.000599970001499925,
+      "holm_family_count": 12
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "candidate": "CEM-Net",
+      "baseline": "XGBoost_TD",
+      "endpoint": 0,
+      "values": [
+        0.09612994984566364,
+        0.12410775665645957,
+        0.11130123172385609
+      ],
+      "mean": 0.11051297940865977,
+      "sample_SD": 0.01400554978463409,
+      "family_count": 12,
+      "ci95": [
+        0.08876202543779615,
+        0.13122337406478124
+      ],
+      "adjusted_ci": [
+        0.07913538020394506,
+        0.14090272050995575
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.000599970001499925,
+      "wilcoxon": {
+        "p_two_sided": 0.25,
+        "nonzero_pairs": 3,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm_full_family": 0.000599970001499925,
+      "holm_family_count": 12
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "candidate": "CEM-Net",
+      "baseline": "XGBoost_TD",
+      "endpoint": 1,
+      "values": [
+        0.03989380428259304,
+        0.05023985221787458,
+        0.04910157431340162
+      ],
+      "mean": 0.04641174360462308,
+      "sample_SD": 0.005673320800131253,
+      "family_count": 12,
+      "ci95": [
+        0.03352780893946833,
+        0.059262700413279745
+      ],
+      "adjusted_ci": [
+        0.027756322899500557,
+        0.0663090163009948
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.000599970001499925,
+      "wilcoxon": {
+        "p_two_sided": 0.25,
+        "nonzero_pairs": 3,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm_full_family": 0.000599970001499925,
+      "holm_family_count": 12
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "candidate": "CEM-Net",
+      "baseline": "STraTS_supervised",
+      "endpoint": 0,
+      "values": [
+        0.04825113614374438,
+        0.05026653060048114,
+        0.03167865729389169
+      ],
+      "mean": 0.0433987746793724,
+      "sample_SD": 0.010199819476399903,
+      "family_count": 12,
+      "ci95": [
+        0.024014563123410153,
+        0.06280299603809784
+      ],
+      "adjusted_ci": [
+        0.014944916530082251,
+        0.07136317440145803
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.000599970001499925,
+      "wilcoxon": {
+        "p_two_sided": 0.25,
+        "nonzero_pairs": 3,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm_full_family": 0.000599970001499925,
+      "holm_family_count": 12
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "candidate": "CEM-Net",
+      "baseline": "STraTS_supervised",
+      "endpoint": 1,
+      "values": [
+        0.036999502541968876,
+        0.030641199130306107,
+        0.020592333317298706
+      ],
+      "mean": 0.02941101166319123,
+      "sample_SD": 0.008272473716786648,
+      "family_count": 12,
+      "ci95": [
+        0.0172207424106104,
+        0.04141420390924129
+      ],
+      "adjusted_ci": [
+        0.011639946437051699,
+        0.04705100617402981
+      ],
+      "p_bootstrap_centered": 9.99950002499875e-05,
+      "p_bonferroni": 0.00119994000299985,
+      "wilcoxon": {
+        "p_two_sided": 0.25,
+        "nonzero_pairs": 3,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm_full_family": 0.000599970001499925,
+      "holm_family_count": 12
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "candidate": "EMA_NRE_MLP",
+      "baseline": "XGBoost_TD",
+      "endpoint": 0,
+      "values": [
+        0.09444786327601395,
+        0.13120958455310677,
+        0.11653781410374703
+      ],
+      "mean": 0.11406508731095592,
+      "sample_SD": 0.018505183629391655,
+      "family_count": 12,
+      "ci95": [
+        0.09052664916157256,
+        0.13643967625208964
+      ],
+      "adjusted_ci": [
+        0.07956992100942578,
+        0.14678918761891274
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.000599970001499925,
+      "wilcoxon": {
+        "p_two_sided": 0.25,
+        "nonzero_pairs": 3,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm_full_family": 0.000599970001499925,
+      "holm_family_count": 12
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "candidate": "EMA_NRE_MLP",
+      "baseline": "XGBoost_TD",
+      "endpoint": 1,
+      "values": [
+        0.035535081808456215,
+        0.053144201016117554,
+        0.05462786702245126
+      ],
+      "mean": 0.047769049949008345,
+      "sample_SD": 0.010620866186550932,
+      "family_count": 12,
+      "ci95": [
+        0.03459561674513401,
+        0.060604850316637815
+      ],
+      "adjusted_ci": [
+        0.029268102285223665,
+        0.06760387193342554
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.000599970001499925,
+      "wilcoxon": {
+        "p_two_sided": 0.25,
+        "nonzero_pairs": 3,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm_full_family": 0.000599970001499925,
+      "holm_family_count": 12
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "candidate": "EMA_NRE_MLP",
+      "baseline": "STraTS_supervised",
+      "endpoint": 0,
+      "values": [
+        0.04656904957409469,
+        0.05736835849712835,
+        0.03691523967378263
+      ],
+      "mean": 0.04695088258166855,
+      "sample_SD": 0.010231904257504044,
+      "family_count": 12,
+      "ci95": [
+        0.028860034391354535,
+        0.06541339223813396
+      ],
+      "adjusted_ci": [
+        0.020200514293814992,
+        0.0738729370514721
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.000599970001499925,
+      "wilcoxon": {
+        "p_two_sided": 0.25,
+        "nonzero_pairs": 3,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm_full_family": 0.000599970001499925,
+      "holm_family_count": 12
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "candidate": "EMA_NRE_MLP",
+      "baseline": "STraTS_supervised",
+      "endpoint": 1,
+      "values": [
+        0.032640780067832054,
+        0.03354554792854908,
+        0.026118626026348346
+      ],
+      "mean": 0.030768318007576494,
+      "sample_SD": 0.004052083150759571,
+      "family_count": 12,
+      "ci95": [
+        0.018727796080663994,
+        0.04253507861673656
+      ],
+      "adjusted_ci": [
+        0.01302789583031912,
+        0.048036234507269786
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.000599970001499925,
+      "wilcoxon": {
+        "p_two_sided": 0.25,
+        "nonzero_pairs": 3,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm_full_family": 0.000599970001499925,
+      "holm_family_count": 12
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "candidate": "CEM-Net",
+      "baseline": "XGBoost_TD",
+      "endpoint": 0,
+      "values": [
+        0.10929668020419503,
+        0.11569388631292576,
+        0.10432665009721337
+      ],
+      "mean": 0.10977240553811139,
+      "sample_SD": 0.005698530577346079,
+      "family_count": 12,
+      "ci95": [
+        0.09395756746953783,
+        0.12505003121545388
+      ],
+      "adjusted_ci": [
+        0.086779765098135,
+        0.13219741445118624
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.000599970001499925,
+      "wilcoxon": {
+        "p_two_sided": 0.25,
+        "nonzero_pairs": 3,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm_full_family": 0.000599970001499925,
+      "holm_family_count": 12
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "candidate": "CEM-Net",
+      "baseline": "XGBoost_TD",
+      "endpoint": 1,
+      "values": [
+        0.05154466002906555,
+        0.05089364998482904,
+        0.06287776291605418
+      ],
+      "mean": 0.055105357643316255,
+      "sample_SD": 0.006738966264360391,
+      "family_count": 12,
+      "ci95": [
+        0.04540392637795189,
+        0.06504576718242978
+      ],
+      "adjusted_ci": [
+        0.04049377184732334,
+        0.06967272699191475
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.000599970001499925,
+      "wilcoxon": {
+        "p_two_sided": 0.25,
+        "nonzero_pairs": 3,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm_full_family": 0.000599970001499925,
+      "holm_family_count": 12
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "candidate": "CEM-Net",
+      "baseline": "STraTS_supervised",
+      "endpoint": 0,
+      "values": [
+        0.044623162071743994,
+        0.0485122000490692,
+        0.04937545469858701
+      ],
+      "mean": 0.047503605606466735,
+      "sample_SD": 0.002531603911559439,
+      "family_count": 12,
+      "ci95": [
+        0.03375995178903949,
+        0.06119737548071741
+      ],
+      "adjusted_ci": [
+        0.02782713270052668,
+        0.06762973544016833
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.000599970001499925,
+      "wilcoxon": {
+        "p_two_sided": 0.25,
+        "nonzero_pairs": 3,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm_full_family": 0.000599970001499925,
+      "holm_family_count": 12
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "candidate": "CEM-Net",
+      "baseline": "STraTS_supervised",
+      "endpoint": 1,
+      "values": [
+        0.03865706806356034,
+        0.03014599927511563,
+        0.027223827948894275
+      ],
+      "mean": 0.032008965095856746,
+      "sample_SD": 0.0059399264403559365,
+      "family_count": 12,
+      "ci95": [
+        0.022580557697755313,
+        0.04150758101383581
+      ],
+      "adjusted_ci": [
+        0.018003228113523225,
+        0.045707392074685806
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.000599970001499925,
+      "wilcoxon": {
+        "p_two_sided": 0.25,
+        "nonzero_pairs": 3,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm_full_family": 0.000599970001499925,
+      "holm_family_count": 12
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "candidate": "EMA_NRE_MLP",
+      "baseline": "XGBoost_TD",
+      "endpoint": 0,
+      "values": [
+        0.11482209682478572,
+        0.11411940700428114,
+        0.10679927811649814
+      ],
+      "mean": 0.111913593981855,
+      "sample_SD": 0.004443040999579101,
+      "family_count": 12,
+      "ci95": [
+        0.0954000811865021,
+        0.12726171533026362
+      ],
+      "adjusted_ci": [
+        0.08792579172435878,
+        0.13502129857873058
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.000599970001499925,
+      "wilcoxon": {
+        "p_two_sided": 0.25,
+        "nonzero_pairs": 3,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm_full_family": 0.000599970001499925,
+      "holm_family_count": 12
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "candidate": "EMA_NRE_MLP",
+      "baseline": "XGBoost_TD",
+      "endpoint": 1,
+      "values": [
+        0.05704246483113784,
+        0.05235115162598164,
+        0.06248048506379872
+      ],
+      "mean": 0.0572913671736394,
+      "sample_SD": 0.005069251745149067,
+      "family_count": 12,
+      "ci95": [
+        0.047328015933058944,
+        0.06711316862413165
+      ],
+      "adjusted_ci": [
+        0.04233766485637738,
+        0.0717489595618102
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.000599970001499925,
+      "wilcoxon": {
+        "p_two_sided": 0.25,
+        "nonzero_pairs": 3,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm_full_family": 0.000599970001499925,
+      "holm_family_count": 12
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "candidate": "EMA_NRE_MLP",
+      "baseline": "STraTS_supervised",
+      "endpoint": 0,
+      "values": [
+        0.05014857869233469,
+        0.04693772074042457,
+        0.05184808271787178
+      ],
+      "mean": 0.04964479405021035,
+      "sample_SD": 0.002493644503857773,
+      "family_count": 12,
+      "ci95": [
+        0.03678410120758103,
+        0.06204564602905792
+      ],
+      "adjusted_ci": [
+        0.03079113743321801,
+        0.0678211962051473
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.000599970001499925,
+      "wilcoxon": {
+        "p_two_sided": 0.25,
+        "nonzero_pairs": 3,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm_full_family": 0.000599970001499925,
+      "holm_family_count": 12
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "candidate": "EMA_NRE_MLP",
+      "baseline": "STraTS_supervised",
+      "endpoint": 1,
+      "values": [
+        0.04415487286563263,
+        0.031603500916268235,
+        0.026826550096638813
+      ],
+      "mean": 0.034194974626179896,
+      "sample_SD": 0.008950111423243841,
+      "family_count": 12,
+      "ci95": [
+        0.024914331389577913,
+        0.04357531303970937
+      ],
+      "adjusted_ci": [
+        0.02037242312932936,
+        0.0474908248526631
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.000599970001499925,
+      "wilcoxon": {
+        "p_two_sided": 0.25,
+        "nonzero_pairs": 3,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm_full_family": 0.000599970001499925,
+      "holm_family_count": 12
+    }
+  ],
+  "replicates": 20000,
+  "calibration_fits": 0,
+  "existing_AP_caches_recomputed": false,
+  "old_families_unchanged": true,
+  "secondary_selected_baselines_unchanged": true,
+  "inference": "Fixed-model patient-cluster conditional inference. Two-sided null-centered bootstrap p=(1+count(|draw-observed|>=|observed|))/(B+1), approximate. Bonferroni family=12 for each candidate and split across all three databases. Exact seed signed ranks are supplemental. Historical test exposure and training/selection uncertainty are not covered.",
+  "inputs": {
+    "F:\\Code\\Disease-Ranking-Hawkes-Mamba-0624\\runs\\cem_baseline_replacement_20261030\\mimiciii_results_v1\\verified-results.json": "a53aca1fd9b03063c697bc4066eaf032faf47067a463659b0e06f5a591be8b7b",
+    "F:\\Code\\Disease-Ranking-Hawkes-Mamba-0624\\runs\\cem_baseline_replacement_20261030\\mimic_results_v1\\verified-results.json": "02234ac9505ac97b174c69a77655d5dde552eaf35722bf6836269ad6b43af881",
+    "F:\\Code\\Disease-Ranking-Hawkes-Mamba-0624\\runs\\cem_baseline_replacement_20261030\\eicu_results_v1\\verified-results.json": "9c60979187972942b07519195c3ca63e93c33ab96f8dcd82fda8a8a2c07a6527"
+  }
+}

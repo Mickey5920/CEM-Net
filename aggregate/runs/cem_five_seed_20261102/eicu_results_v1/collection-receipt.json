@@ -1,0 +1,23 @@
+{
+  "receipt": {
+    "complete": true,
+    "files": {
+      "verified-results.json": "71d05c4f39b5fb46d97d4c01c166cbe2cc4a14c08441fdc5b972cc389ce45371",
+      "RESULTS.md": "3205ecfa858e8212d41e3cba967882d0c2e8ed9c9644de800a300a925d268df5"
+    }
+  },
+  "exit": {
+    "job_id": "five_seed_statistics_eicu",
+    "wrapper_pid": 1832410,
+    "child_pid": 1832411,
+    "child_identity": {
+      "start_ticks": "36392222",
+      "state": "R",
+      "boot": "8123672c-cb85-4243-be25-70318f0e0750"
+    },
+    "source_manifest_sha256": "f501d343b4d285f28bfeae3e47748fd567b50fa1ed1eb0d1633ec7e9bda7c25b",
+    "started_at": 1793622611.668527,
+    "returncode": 0,
+    "finished_at": 1793622796.0598774
+  }
+}

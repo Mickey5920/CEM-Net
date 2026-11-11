@@ -1,0 +1,28 @@
+{
+  "complete": true,
+  "project": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624",
+  "source": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/work/cem_aggregation_stress_20261106/mimiciii/v3",
+  "output": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_aggregation_stress_20261106/mimiciii/v3",
+  "cache": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/cache/cem_aggregation_stress_20261106/mimiciii",
+  "temp": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/work/cem_aggregation_stress_20261106/tmp/mimiciii",
+  "input_paths": [
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/work/cem_matched_controls_20261105/mimiciii/v4",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_adaptation_20261024/v1/preparation",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_adaptation_20261024/v1/preparation",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_test_20261024/v1/inputs",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_matched_controls_20261105/mimiciii/v3/windows",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimiciii/stress_inputs_v2",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/cache/cem_evidence_completion_20261025/native_observations/mimiciii"
+  ],
+  "expected_gib": 2,
+  "free_gib": 256.0935592651367,
+  "available_memory_gib": 100.26607131958008,
+  "cpus": 192,
+  "load_average": [
+    63.58349609375,
+    54.00732421875,
+    47.72119140625
+  ],
+  "source_manifest_sha256": "12a8a88c5ca4bc4ea2e4956294d890260575d5d60fc41e4a485c8cf24a6171fb",
+  "scope": "resolved declared paths; fcntl writer lock; no arbitrary-write sandbox"
+}

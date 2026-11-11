@@ -1,0 +1,112 @@
+{
+  "status": "running",
+  "groups": {
+    "mimiciii_controls": {
+      "phase": "probes",
+      "status": "storage_review_required",
+      "counts": {
+        "pending": 20,
+        "running": 0,
+        "completed": 0,
+        "failed": 0
+      },
+      "probe_counts": {
+        "pending": 0,
+        "running": 0,
+        "completed": 10,
+        "failed": 0
+      },
+      "evaluation_counts": {
+        "pending": 20,
+        "running": 0,
+        "completed": 0,
+        "failed": 0
+      }
+    },
+    "mimic_controls": {
+      "phase": "probes",
+      "status": "preflight",
+      "counts": {
+        "pending": 16,
+        "running": 0,
+        "completed": 0,
+        "failed": 0
+      },
+      "probe_counts": {
+        "pending": 7,
+        "running": 1,
+        "completed": 0,
+        "failed": 0
+      },
+      "evaluation_counts": {
+        "pending": 16,
+        "running": 0,
+        "completed": 0,
+        "failed": 0
+      }
+    },
+    "mimic_sequence": {
+      "phase": "probes",
+      "status": "preflight",
+      "counts": {
+        "pending": 8,
+        "running": 0,
+        "completed": 0,
+        "failed": 0
+      },
+      "probe_counts": {
+        "pending": 4,
+        "running": 0,
+        "completed": 0,
+        "failed": 0
+      },
+      "evaluation_counts": {
+        "pending": 8,
+        "running": 0,
+        "completed": 0,
+        "failed": 0
+      }
+    },
+    "mimic_replacement": {
+      "phase": "probes",
+      "status": "preflight",
+      "counts": {
+        "pending": 8,
+        "running": 0,
+        "completed": 0,
+        "failed": 0
+      },
+      "probe_counts": {
+        "pending": 3,
+        "running": 1,
+        "completed": 0,
+        "failed": 0
+      },
+      "evaluation_counts": {
+        "pending": 8,
+        "running": 0,
+        "completed": 0,
+        "failed": 0
+      }
+    }
+  },
+  "active": [
+    {
+      "id": "probe_EMA_noP_t0_s51",
+      "database": "mimic",
+      "action": "probe",
+      "progress": {
+        "status": "training_probe",
+        "ema_enabled": false,
+        "updates": 7
+      }
+    },
+    {
+      "id": "probe_XGBoost_TD_t0_s51",
+      "database": "mimic",
+      "action": "probe",
+      "progress": null
+    }
+  ],
+  "failed": []
+}

@@ -1,0 +1,6 @@
+{
+  "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_aggregation_stress_20261106/mimic/v1/windows",
+  "completion_sha256": "adb2539e8045f094a434f54ace670c8a984c7376d9708ce26d2323b73f8a69c3",
+  "feature_function_unchanged": true,
+  "reason": "execution-only parallel batch processing; previous completed predictions retained"
+}

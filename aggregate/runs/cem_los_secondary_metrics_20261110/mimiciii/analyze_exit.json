@@ -1,0 +1,14 @@
+{
+  "job_id": "cem_los_secondary_metrics_20261110_mimiciii",
+  "wrapper_pid": 4001179,
+  "child_pid": 4001182,
+  "child_identity": {
+    "start_ticks": "234611531",
+    "state": "R",
+    "boot": "b71f789a-6443-4d31-a384-079f6507be54"
+  },
+  "source_manifest_sha256": "3e7b34ddc141a15a4b1a5baa1e94549c3716f398db742589083b912c17500d4c",
+  "started_at": 1794309642.916627,
+  "returncode": 0,
+  "finished_at": 1794309782.750397
+}

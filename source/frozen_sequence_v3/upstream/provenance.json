@@ -1,0 +1,62 @@
+{
+  "complete": true,
+  "sources": {
+    "ft": {
+      "repository": "https://github.com/yandex-research/rtdl-revisiting-models",
+      "commit": "e3ed46cac38568785289d8fa16b8cfa585bde27e"
+    },
+    "tcn": {
+      "repository": "https://github.com/locuslab/TCN",
+      "commit": "2f8c2b817050206397458dfd1f5a25ce8a32fe65"
+    },
+    "modern": {
+      "repository": "https://github.com/luodhhh/ModernTCN",
+      "commit": "56a9a2c018385cd5acef015378cae7f084d1b11c"
+    },
+    "lite": {
+      "repository": "https://github.com/MSD-IRIMAS/LITE",
+      "commit": "e62f64393104be8eda415b4d974987028ca68754"
+    },
+    "tv": {
+      "repository": "https://github.com/Curyyfaust/TVNet",
+      "commit": "8c909592e310954f69b3ad808f3f96937d8859d0"
+    }
+  },
+  "files": {
+    "ft/LICENSE": "bd39fcc730a79d256b14fcdccbfc8ac9f0c7fad4a2e8d01fc513def67980fe35",
+    "lite/LICENSE": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+    "lite/main.py": "9b40f00292ebc951f62038f1b29120638b47a98bd00cac899c78cd67f4fb973b",
+    "lite/README.md": "bdbdceebb459664d6640e1bb5baeff554d1597747ea278054d06c1d86d1458c0",
+    "modern/LICENSE": "62c172f180a9c70514e597a2e3bd22f12d3eb6eb2af1cbd79c83d4292a749115",
+    "tcn/LICENSE": "7b9a89cb975f5891f02be043c0ca5c9b9d6c43ced216c2d508f0f7e4380a6cbd",
+    "tv/README.md": "ffcc52eebdfc93610ab67cceecd760e255030dde949063fb20a19fff3f03fc69",
+    "tv/TVNet_code.zip": "2f8793c5871df19698f2df8dbc3e640509775fc059f2308ea18e9b4b12e168a1",
+    "ft/package/README.md": "106285b6ce0a24d3be9d09461db6b20037fa6723bcb193ce922dbffb9c7cec4f",
+    "ft/package/rtdl_revisiting_models.py": "ca7cef3b44cd54b1aeb51f2cc733bef01fbfe3eff00b5c2bd28ca4b4db6b01b2",
+    "lite/src/classifiers/lite.py": "29cfdef9e58e30abccea0fa6d00f6caaed4d91e6dd853231c757c761fbf2c5d6",
+    "lite/src/classifiers/litemv.py": "b8d4e4cdefeb42ce6faf9f540bc4439575c5210f070b8c194d5ff08614542458",
+    "modern/ModernTCN-classification/exp/exp_classification.py": "f4d55ead7bd7700383582b833780d200bc6722fda7259605361a3d5133864bdd",
+    "modern/ModernTCN-classification/layers/RevIN.py": "1e08d0b3679f4ef79ac7f98a7f719f8d7f8a04595022ed34f702c7d70c0c4d90",
+    "modern/ModernTCN-classification/models/ModernTCN.py": "ff510ce62aa9a8b7df26c2f7819a9cc499c4a93fb7b0067e22cc4fe3af58eaa3",
+    "modern/ModernTCN-classification/models/ModernTCN_Layer.py": "b2291534c6a11ebd80882bed89f7cf8c76c721b8e0495294659f2c5b0fe88cea",
+    "modern/ModernTCN-classification/scripts/classification.sh": "84d8c8f393fc2a25b10eeaa92c034d122b273e5e23474ffee40d2e597324d9ea",
+    "tcn/TCN/tcn.py": "f93c67de970f4c9e1a96a7d2bed1df89c521faf6ca94e36455267605b1ad585f",
+    "tv/unpacked/TVNet_code/run.py": "5bf9092a2e2b6a946f1d7f5b6e4293b466b7d199419a0684aab97b1ab3cd770d",
+    "tv/unpacked/TVNet_code/.ipynb_checkpoints/result_long_term_forecast-checkpoint.txt": "fa94280eab31615e133d52bff262764349eed1eda2ad20301374699bc766e261",
+    "tv/unpacked/TVNet_code/data_process/data_factory.py": "c0f972afcf2c9b140d73c0ff8a8bbbeaa679f2e73e1a810d939c53fdebbf2549",
+    "tv/unpacked/TVNet_code/data_process/data_loader.py": "fcfa441fd90eac1643ca8e38c98c2cdf1a7b705da478ecd698bbc8788eaada1f",
+    "tv/unpacked/TVNet_code/data_process/m4.py": "22f535bf29401e75bc220769cf118f416382a38da18ae9015a38fbd3754f421c",
+    "tv/unpacked/TVNet_code/data_process/uea.py": "f493a2ebecd0ec46702b69ba5514419551f2d0519ad639ffe6af441de200da3d",
+    "tv/unpacked/TVNet_code/data_process/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tv/unpacked/TVNet_code/exp/exp_basic.py": "af1393258e23c02c6893d8a4e4c39a9c7c6bf2398d2399e90d1db9e11b43113a",
+    "tv/unpacked/TVNet_code/exp/exp_long_term_forecasting.py": "f6b21e23b4faabcec94c6b032d64bdbb78f0871bb53bc8e61c0494bece1cdcc2",
+    "tv/unpacked/TVNet_code/model/TVNet.py": "80ecd5ea01505d7dda86a0131dbb510885644369f1f0ffeff5c2ed095f727640",
+    "tv/unpacked/TVNet_code/utils/augmentation.py": "e0c41df6fbf5ed6ba8654e8fdd31074a95bdade9fea053369fab35e037782555",
+    "tv/unpacked/TVNet_code/utils/dtw_metric.py": "308c56507b01a945f38796f2f9b4bb104adc213ab574aa2693f93635c9748889",
+    "tv/unpacked/TVNet_code/utils/metrics.py": "743a63a7d2661c994027bdbf5bffe8a2892e5ca381b9b319d5e0fb2715cf53ff",
+    "tv/unpacked/TVNet_code/utils/print_args.py": "686fc926aeebd7c87cfbfcb69f755af4e939cdbca416994fd0c287e2178401a8",
+    "tv/unpacked/TVNet_code/utils/timefeatures.py": "fea1b145463569b610b67c941c640b27e844f93cc00e937554c0ea872dfca92c",
+    "tv/unpacked/TVNet_code/utils/tools.py": "d76bd97e2043eeabb236a057930fd192c4efba8f03dd5b672e7f6692d7207400",
+    "tv/unpacked/TVNet_code/utils/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

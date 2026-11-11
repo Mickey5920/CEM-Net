@@ -1,0 +1,122 @@
+{
+  "database": "mimiciii",
+  "verified_new_cells": 46,
+  "pending_cells": 16,
+  "metric_rows": 348,
+  "AP_tasks": 162,
+  "missing_cells": [
+    {
+      "database": "mimiciii",
+      "stage": "sequence",
+      "id": "SeFT_t0_s51",
+      "train": "running",
+      "test": "pending"
+    },
+    {
+      "database": "mimiciii",
+      "stage": "sequence",
+      "id": "SeFT_t0_s52",
+      "train": "running",
+      "test": "pending"
+    },
+    {
+      "database": "mimiciii",
+      "stage": "sequence",
+      "id": "mTAND_Enc_t0_s51",
+      "train": "running",
+      "test": "pending"
+    },
+    {
+      "database": "mimiciii",
+      "stage": "sequence",
+      "id": "mTAND_Enc_t0_s52",
+      "train": "running",
+      "test": "pending"
+    },
+    {
+      "database": "mimiciii",
+      "stage": "sequence",
+      "id": "SeFT_t1_s51",
+      "train": "pending",
+      "test": "pending"
+    },
+    {
+      "database": "mimiciii",
+      "stage": "sequence",
+      "id": "SeFT_t1_s52",
+      "train": "pending",
+      "test": "pending"
+    },
+    {
+      "database": "mimiciii",
+      "stage": "sequence",
+      "id": "mTAND_Enc_t1_s51",
+      "train": "pending",
+      "test": "pending"
+    },
+    {
+      "database": "mimiciii",
+      "stage": "sequence",
+      "id": "mTAND_Enc_t1_s52",
+      "train": "pending",
+      "test": "pending"
+    },
+    {
+      "database": "mimiciii",
+      "stage": "replacement",
+      "id": "XGBoost_TD_t0_s51",
+      "train": "completed",
+      "test": "pending"
+    },
+    {
+      "database": "mimiciii",
+      "stage": "replacement",
+      "id": "XGBoost_TD_t0_s52",
+      "train": "completed",
+      "test": "pending"
+    },
+    {
+      "database": "mimiciii",
+      "stage": "replacement",
+      "id": "STraTS_supervised_t0_s51",
+      "train": "pending",
+      "test": "pending"
+    },
+    {
+      "database": "mimiciii",
+      "stage": "replacement",
+      "id": "STraTS_supervised_t0_s52",
+      "train": "pending",
+      "test": "pending"
+    },
+    {
+      "database": "mimiciii",
+      "stage": "replacement",
+      "id": "XGBoost_TD_t1_s51",
+      "train": "completed",
+      "test": "pending"
+    },
+    {
+      "database": "mimiciii",
+      "stage": "replacement",
+      "id": "XGBoost_TD_t1_s52",
+      "train": "completed",
+      "test": "pending"
+    },
+    {
+      "database": "mimiciii",
+      "stage": "replacement",
+      "id": "STraTS_supervised_t1_s51",
+      "train": "pending",
+      "test": "pending"
+    },
+    {
+      "database": "mimiciii",
+      "stage": "replacement",
+      "id": "STraTS_supervised_t1_s52",
+      "train": "pending",
+      "test": "pending"
+    }
+  ],
+  "old_three_seed_predictions_unchanged": true
+}

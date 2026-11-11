@@ -1,0 +1,10 @@
+{
+  "complete": true,
+  "model": "window_t0_s48",
+  "rows": 2048,
+  "sequential_seconds": 5.751021146774292,
+  "parallel_seconds": 2.2875328063964844,
+  "batches_in_parallel": 4,
+  "threads_per_batch": 4,
+  "predictions_exact": true
+}

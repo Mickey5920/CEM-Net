@@ -1,0 +1,16 @@
+\begin{table*}[tp]
+\centering\footnotesize
+\setlength{\tabcolsep}{3pt}
+\caption{Hospital-held-out CEM-Net minus each comparator, with 98.75\% patient-connected hospital-component intervals for four contrasts per partition.}
+\label{tab:hospital-pairs}
+\begin{tabular}{llrr}
+\toprule
+Comparator & Endpoint & Validation difference [interval] & Test difference [interval] \\
+\midrule
+TabM-mini+PLE & Mortality & $-0.0057\ [-0.0242,+0.0053]$ & $-0.0043\ [-0.0128,+0.0027]$ \\
+TabM-mini+PLE & LOS & $+0.0189\ [+0.0023,+0.0362]$ & $+0.0056\ [-0.0086,+0.0169]$ \\
+LightGBM & Mortality & $+0.0209\ [-0.0125,+0.0421]$ & $+0.0061\ [-0.0137,+0.0220]$ \\
+LightGBM & LOS & $+0.0209\ [+0.0094,+0.0356]$ & $+0.0185\ [+0.0001,+0.0310]$ \\
+\bottomrule
+\end{tabular}
+\end{table*}

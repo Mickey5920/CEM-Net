@@ -1,0 +1,18 @@
+\begin{table*}[!t]
+\centering\small
+\setlength{\tabcolsep}{2.5pt}
+\caption{Five-seed aggregation controls replacing duration ($D$) with windows ($W$) or observation-point summaries ($O$). AP: mean $\pm$ sample SD; differences: CEM-Net minus control. $D-W$ retains 99.5833\% intervals and 12-way Holm $p_H$; $D-O$ uses 99.1667\% intervals and six-way Holm $p_H$.}
+\label{tab:targeted-aggregation}
+\begin{tabular}{lrrrr}
+\toprule
+Task & AP ($W$) & $D-W$ [interval] & AP ($O$) & $D-O$ [interval] \\
+\midrule
+MIMIC-III / LOS & $0.5522\pm0.0013$ & \shortstack[r]{$-0.0023;\ p_H=1$\\$[-0.0067,+0.0020]$} & $0.5504\pm0.0021$ & \shortstack[r]{$-0.0004;\ p_H=1$\\$[-0.0035,+0.0027]$} \\
+MIMIC-IV / LOS & $0.5419\pm0.0018$ & \shortstack[r]{$-0.0006;\ p_H=1$\\$[-0.0035,+0.0023]$} & $0.5418\pm0.0011$ & \shortstack[r]{$-0.0006;\ p_H=1$\\$[-0.0026,+0.0014]$} \\
+eICU / LOS & $0.3912\pm0.0017$ & \shortstack[r]{$+0.0020;\ p_H=1$\\$[-0.0019,+0.0060]$} & $0.3914\pm0.0010$ & \shortstack[r]{$+0.0018;\ p_H=0.782$\\$[-0.0014,+0.0048]$} \\
+MIMIC-III / Mort. & $0.4761\pm0.0066$ & \shortstack[r]{$+0.0094;\ p_H=0.113$\\$[-0.0012,+0.0201]$} & $0.4844\pm0.0050$ & \shortstack[r]{$+0.0010;\ p_H=1$\\$[-0.0039,+0.0059]$} \\
+MIMIC-IV / Mort. & $0.5414\pm0.0021$ & \shortstack[r]{$+0.0025;\ p_H=1$\\$[-0.0023,+0.0073]$} & $0.5443\pm0.0014$ & \shortstack[r]{$-0.0004;\ p_H=1$\\$[-0.0035,+0.0025]$} \\
+eICU / Mort. & $0.3905\pm0.0037$ & \shortstack[r]{$+0.0017;\ p_H=1$\\$[-0.0049,+0.0080]$} & $0.3945\pm0.0026$ & \shortstack[r]{$-0.0023;\ p_H=0.788$\\$[-0.0068,+0.0019]$} \\
+\bottomrule
+\end{tabular}
+\end{table*}

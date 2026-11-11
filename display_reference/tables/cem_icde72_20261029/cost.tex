@@ -1,0 +1,50 @@
+\begin{table*}[!t]
+\centering\small
+\setlength{\tabcolsep}{2.5pt}
+\caption{Predictor costs: parameters (millions), batch-32 allocated memory (MiB), and batch-1 latency (ms), resident forward versus preprocessing/transfers plus prediction. Source-table processing is excluded. (a) Original configurations: checkpoint medians, same GPU per database, validation-selected baselines. (b) Separate matched measurements for CEM-Net and matched TabM-mini: ten checkpoints per method (five seeds, two outcomes), with shared input transformation and transfer.}
+\label{tab:cost}
+\label{tab:matched-cost}
+\begin{minipage}[t]{0.49\textwidth}
+\centering
+\begin{tabular}[t]{lrrrr}
+\toprule
+\multicolumn{5}{l}{\textit{(a) Original configurations}} \\
+Method & Params & Resident & With prep. & Memory \\
+\midrule
+% original-cost-rows
+\multicolumn{5}{l}{\textit{MIMIC-III / Mortality}} \\
+TabM+PLE & 74.14 & 0.73 & 115.97 & 1233 \\
+CEM-Net & 12.90 & 0.74 & 0.91 & 180 \\
+\multicolumn{5}{l}{\textit{MIMIC-III / LOS}} \\
+TabM-mini & 4.08 & 0.46 & 116.06 & 109 \\
+CEM-Net & 12.90 & 0.76 & 0.84 & 180 \\
+\multicolumn{5}{l}{\textit{MIMIC-IV / both endpoints}} \\
+TabM+PLE & 67.85 & 0.76 & 116.28 & 1132 \\
+CEM-Net & 11.83 & 0.77 & 0.97 & 167 \\
+\multicolumn{5}{l}{\textit{eICU / both endpoints}} \\
+TabM-mini+PLE & 98.84 & 1.05 & 172.49 & 1637 \\
+CEM-Net & 17.12 & 1.09 & 1.19 & 227 \\
+% end-original-cost-rows
+\bottomrule
+\end{tabular}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.49\textwidth}
+\centering
+\begin{tabular}[t]{lrrrr}
+\toprule
+\multicolumn{5}{l}{\textit{(b) Matched configurations}} \\
+Method & Params & Resident & With prep. & Memory \\
+\midrule
+\multicolumn{5}{l}{\textit{MIMIC-III / both endpoints}} \\
+Matched TabM-mini & 12.86 & 1.08 & 1.16 & 179 \\
+CEM-Net & 12.90 & 1.25 & 1.35 & 179 \\
+\multicolumn{5}{l}{\textit{MIMIC-IV / both endpoints}} \\
+Matched TabM-mini & 11.79 & 1.21 & 1.32 & 167 \\
+CEM-Net & 11.83 & 1.27 & 1.39 & 167 \\
+\multicolumn{5}{l}{\textit{eICU / both endpoints}} \\
+Matched TabM-mini & 17.07 & 1.03 & 1.15 & 227 \\
+CEM-Net & 17.12 & 1.09 & 1.20 & 227 \\
+\bottomrule
+\end{tabular}
+\end{minipage}
+\end{table*}

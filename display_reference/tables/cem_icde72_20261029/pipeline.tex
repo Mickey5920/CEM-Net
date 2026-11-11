@@ -1,0 +1,15 @@
+\begin{table*}[!t]
+\centering\small
+\setlength{\tabcolsep}{2pt}
+\caption{Construction medians: seconds at 128/512/2,048 stays, three repetitions, two CPU threads. Full pipeline: MIMIC-III Xeon 8468; IV/eICU i7-14700KF. Matched laboratory block: III/IV Xeon 8468; eICU EPYC 7313, including read, admission, merge, normalization, sort and aggregation. $D/O/W$: duration/observation/window. RSS: peak process MiB for $D/O/W$ at 2,048 stays. OS caches remain for the full pipeline; the matched block uses warm-cache fresh processes.}
+\label{tab:pipeline}
+\begin{tabular}{lrrrrr}
+\toprule
+Database & Full pipeline & Lab: duration & Lab: observation & Lab: window & RSS ($D/O/W$) \\
+\midrule
+MIMIC-III & 15.24/18.62/22.20 & 0.61/1.36/4.88 & 0.59/1.25/4.58 & 0.54/1.21/4.04 & 741/742/741 \\
+MIMIC-IV & 2.61/4.34/11.47 & 0.51/1.35/4.87 & 0.49/1.25/5.80 & 0.50/1.17/4.05 & 646/645/645 \\
+eICU & 1.99/3.26/8.59 & 0.57/1.51/5.39 & 0.55/1.46/5.10 & 0.51/1.25/4.51 & 659/659/658 \\
+\bottomrule
+\end{tabular}
+\end{table*}

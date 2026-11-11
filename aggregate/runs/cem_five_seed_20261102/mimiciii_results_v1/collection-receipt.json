@@ -1,0 +1,23 @@
+{
+  "receipt": {
+    "complete": true,
+    "files": {
+      "verified-results.json": "a021f3b5b879700a2676367b35924b8226023483e288330d40b53fee30811db7",
+      "RESULTS.md": "7827b731509f7b24a28f60475074b2f1461d630b7b379a922b2b4cb0800b7a26"
+    }
+  },
+  "exit": {
+    "job_id": "five_seed_statistics_mimiciii",
+    "wrapper_pid": 268607,
+    "child_pid": 268608,
+    "child_identity": {
+      "start_ticks": "165908735",
+      "state": "R",
+      "boot": "b71f789a-6443-4d31-a384-079f6507be54"
+    },
+    "source_manifest_sha256": "f501d343b4d285f28bfeae3e47748fd567b50fa1ed1eb0d1633ec7e9bda7c25b",
+    "started_at": 1793622614.9532218,
+    "returncode": 0,
+    "finished_at": 1793622701.5145066
+  }
+}

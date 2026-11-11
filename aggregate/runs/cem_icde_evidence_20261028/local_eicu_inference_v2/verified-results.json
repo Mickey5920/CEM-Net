@@ -1,0 +1,1590 @@
+{
+  "complete": true,
+  "database": "eicu",
+  "formal_fits": 0,
+  "fixed_stress_cases": 48,
+  "zero_updates": true,
+  "selection": {
+    "complete": true,
+    "database": "eicu",
+    "selection": "maximum unrounded three-seed Validation AP mean across nine fixed baselines",
+    "test_used_for_selection": false,
+    "pool": [
+      "RealMLP",
+      "TabM",
+      "TabM-mini",
+      "TabM_mini_PLE",
+      "TabM_PLE",
+      "SeFT",
+      "GRU_D",
+      "mTAND_Enc",
+      "LightGBM_full"
+    ],
+    "selected": {
+      "0": {
+        "method": "TabM_mini_PLE",
+        "means": {
+          "RealMLP": 0.41685105868012123,
+          "TabM": 0.413218638078729,
+          "TabM-mini": 0.4130552292950516,
+          "TabM_mini_PLE": 0.4359938474191738,
+          "TabM_PLE": 0.43560830084041147,
+          "SeFT": 0.33019959675659555,
+          "GRU_D": 0.06312105685831455,
+          "mTAND_Enc": 0.37261971361959145,
+          "LightGBM_full": 0.41986449706270257
+        }
+      },
+      "1": {
+        "method": "TabM_mini_PLE",
+        "means": {
+          "RealMLP": 0.38606933978379204,
+          "TabM": 0.38864205889189485,
+          "TabM-mini": 0.3901181356264489,
+          "TabM_mini_PLE": 0.40028264238482353,
+          "TabM_PLE": 0.40025203025617545,
+          "SeFT": 0.3458580383387011,
+          "GRU_D": 0.12524813004194338,
+          "mTAND_Enc": 0.36099339862373014,
+          "LightGBM_full": 0.3880972538946226
+        }
+      }
+    },
+    "jobs": [
+      {
+        "method": "CEM-Net",
+        "seed": 48,
+        "endpoint": 0,
+        "fit": "/home/data/lxm/TRACEHR/runs/tracehr_ema_cross_20261024/eicu/v1/screen/jobs/fullEMA_t0_s48",
+        "checkpoint": "/home/data/lxm/TRACEHR/runs/tracehr_ema_cross_20261024/eicu/v1/screen/jobs/fullEMA_t0_s48/best.pt",
+        "checkpoint_sha256": "a7c4952f742aeaac80f0b98813c7163335031db6aed5fedb3117da795bb9d79f",
+        "fit_completion_sha256": "1d67bbf07b7292b8b6abff2d64bf7e80206e3079b671b58b45795e78b239f99b"
+      },
+      {
+        "method": "CEM-Net",
+        "seed": 49,
+        "endpoint": 0,
+        "fit": "/home/data/lxm/TRACEHR/runs/tracehr_ema_cross_20261024/eicu/v1/screen/jobs/fullEMA_t0_s49",
+        "checkpoint": "/home/data/lxm/TRACEHR/runs/tracehr_ema_cross_20261024/eicu/v1/screen/jobs/fullEMA_t0_s49/best.pt",
+        "checkpoint_sha256": "0b0555dbb906f3b621998e0f443919478021812f6f19bb0e483f8e446ad41af2",
+        "fit_completion_sha256": "e53bd23d1d50394a4f783b606c75762179f267ae4c2363396ff7730889f6c225"
+      },
+      {
+        "method": "CEM-Net",
+        "seed": 50,
+        "endpoint": 0,
+        "fit": "/home/data/lxm/TRACEHR/runs/tracehr_ema_cross_20261024/eicu/v1/screen/jobs/fullEMA_t0_s50",
+        "checkpoint": "/home/data/lxm/TRACEHR/runs/tracehr_ema_cross_20261024/eicu/v1/screen/jobs/fullEMA_t0_s50/best.pt",
+        "checkpoint_sha256": "19c73b047fb15d5a75440e72a6ccfed3bf604dc61b4f0da5b9cc091c107d4df7",
+        "fit_completion_sha256": "ea7105b9bf07587df5dcad4df9567d7621b9c40e85ac6ebdd3e66a2d619ed083"
+      },
+      {
+        "method": "TabM_mini_PLE",
+        "seed": 48,
+        "endpoint": 0,
+        "fit": "/home/data/lxm/TRACEHR/runs/cem_evidence_completion_20261025/eicu/tabular_v1/screen/jobs/TabM_mini_PLE_t0_s48",
+        "checkpoint": "/home/data/lxm/TRACEHR/runs/cem_evidence_completion_20261025/eicu/tabular_v1/screen/jobs/TabM_mini_PLE_t0_s48/best.pt",
+        "checkpoint_sha256": "2f0ec188133ec0d338c000bfb75357990877a6ae1ede0b00db4ada2b01b69343",
+        "fit_completion_sha256": "bd66e89e8868bc5528cece7a6ec523e777ac5a1d72da9a2fa5ad6889769eec02"
+      },
+      {
+        "method": "TabM_mini_PLE",
+        "seed": 49,
+        "endpoint": 0,
+        "fit": "/home/data/lxm/TRACEHR/runs/cem_evidence_completion_20261025/eicu/tabular_v1/screen/jobs/TabM_mini_PLE_t0_s49",
+        "checkpoint": "/home/data/lxm/TRACEHR/runs/cem_evidence_completion_20261025/eicu/tabular_v1/screen/jobs/TabM_mini_PLE_t0_s49/best.pt",
+        "checkpoint_sha256": "94d3a56554f0bfee7c70e3723426d97dc8eee000ec0bb2fcc7f1c8f43d773d05",
+        "fit_completion_sha256": "994890386f84b74140b239467e07edd9d15995d48d41a953249cd50b323ec2a4"
+      },
+      {
+        "method": "TabM_mini_PLE",
+        "seed": 50,
+        "endpoint": 0,
+        "fit": "/home/data/lxm/TRACEHR/runs/cem_evidence_completion_20261025/eicu/tabular_v1/screen/jobs/TabM_mini_PLE_t0_s50",
+        "checkpoint": "/home/data/lxm/TRACEHR/runs/cem_evidence_completion_20261025/eicu/tabular_v1/screen/jobs/TabM_mini_PLE_t0_s50/best.pt",
+        "checkpoint_sha256": "3c599768b3f21b5ca1e2f4a67a4b396f27bdf81ddefbbd59b99bdadfc36a88ee",
+        "fit_completion_sha256": "f2cf952e8f928d86d2ac5182ac936ed07e996a95285b180173de42951092d516"
+      },
+      {
+        "method": "CEM-Net",
+        "seed": 48,
+        "endpoint": 1,
+        "fit": "/home/data/lxm/TRACEHR/runs/tracehr_ema_cross_20261024/eicu/v1/screen/jobs/fullEMA_t1_s48",
+        "checkpoint": "/home/data/lxm/TRACEHR/runs/tracehr_ema_cross_20261024/eicu/v1/screen/jobs/fullEMA_t1_s48/best.pt",
+        "checkpoint_sha256": "0da8197c6932ca91892b64077a5f9f088c7b343c362eaaf3dec043743ea54228",
+        "fit_completion_sha256": "8f7655fc748bf0272e1efc63797d087fad0e3362b5ba012aac747b9aaf5fbb83"
+      },
+      {
+        "method": "CEM-Net",
+        "seed": 49,
+        "endpoint": 1,
+        "fit": "/home/data/lxm/TRACEHR/runs/tracehr_ema_cross_20261024/eicu/v1/screen/jobs/fullEMA_t1_s49",
+        "checkpoint": "/home/data/lxm/TRACEHR/runs/tracehr_ema_cross_20261024/eicu/v1/screen/jobs/fullEMA_t1_s49/best.pt",
+        "checkpoint_sha256": "6a203684fdb328f0f66a068be5f77a59d2e700025bd26090d10a4bfcc35f0b6e",
+        "fit_completion_sha256": "8937442e2fdc6225bf428ddab6c87152ba4b50a051bf06f0527341b8ed214b26"
+      },
+      {
+        "method": "CEM-Net",
+        "seed": 50,
+        "endpoint": 1,
+        "fit": "/home/data/lxm/TRACEHR/runs/tracehr_ema_cross_20261024/eicu/v1/screen/jobs/fullEMA_t1_s50",
+        "checkpoint": "/home/data/lxm/TRACEHR/runs/tracehr_ema_cross_20261024/eicu/v1/screen/jobs/fullEMA_t1_s50/best.pt",
+        "checkpoint_sha256": "b7bc516a68796c563695fbf4185ded7f7966a7e1297e352245a0065ef03a79e6",
+        "fit_completion_sha256": "57cd22e3859d74794927c096871346aceee5792c9caf69c6818c552fd5aed85d"
+      },
+      {
+        "method": "TabM_mini_PLE",
+        "seed": 48,
+        "endpoint": 1,
+        "fit": "/home/data/lxm/TRACEHR/runs/cem_evidence_completion_20261025/eicu/tabular_v1/screen/jobs/TabM_mini_PLE_t1_s48",
+        "checkpoint": "/home/data/lxm/TRACEHR/runs/cem_evidence_completion_20261025/eicu/tabular_v1/screen/jobs/TabM_mini_PLE_t1_s48/best.pt",
+        "checkpoint_sha256": "7e36f0524ded4b3a2d5875fbe9687a83e3289a1978147b10b362128fe21cdf4d",
+        "fit_completion_sha256": "dacc4192b940b4cc684da764fa489280873b2d73ae764682543ea1814f721472"
+      },
+      {
+        "method": "TabM_mini_PLE",
+        "seed": 49,
+        "endpoint": 1,
+        "fit": "/home/data/lxm/TRACEHR/runs/cem_evidence_completion_20261025/eicu/tabular_v1/screen/jobs/TabM_mini_PLE_t1_s49",
+        "checkpoint": "/home/data/lxm/TRACEHR/runs/cem_evidence_completion_20261025/eicu/tabular_v1/screen/jobs/TabM_mini_PLE_t1_s49/best.pt",
+        "checkpoint_sha256": "4c39970dbfd2567063ef4b97928705cdd86e5d8d69e82303c646987bff5fe313",
+        "fit_completion_sha256": "d42376adaee34c1dc034e98caab91bcbe17cdb6372f9b469f510fe8dca8308ab"
+      },
+      {
+        "method": "TabM_mini_PLE",
+        "seed": 50,
+        "endpoint": 1,
+        "fit": "/home/data/lxm/TRACEHR/runs/cem_evidence_completion_20261025/eicu/tabular_v1/screen/jobs/TabM_mini_PLE_t1_s50",
+        "checkpoint": "/home/data/lxm/TRACEHR/runs/cem_evidence_completion_20261025/eicu/tabular_v1/screen/jobs/TabM_mini_PLE_t1_s50/best.pt",
+        "checkpoint_sha256": "f92a34c03ab33781d8f6e189cd66c6ded4a43d69a185a745c11c99a85b97fca0",
+        "fit_completion_sha256": "f001709162ae0de19e40ed67dde591e172828c58107369945fcbafafbeee1e0e"
+      }
+    ],
+    "formal_training_launched": false
+  },
+  "records": [
+    {
+      "complete": true,
+      "job": {
+        "method": "CEM-Net",
+        "seed": 48,
+        "endpoint": 0,
+        "fit": "/home/data/lxm/TRACEHR/runs/tracehr_ema_cross_20261024/eicu/v1/screen/jobs/fullEMA_t0_s48",
+        "checkpoint": "/home/data/lxm/TRACEHR/runs/tracehr_ema_cross_20261024/eicu/v1/screen/jobs/fullEMA_t0_s48/best.pt",
+        "checkpoint_sha256": "a7c4952f742aeaac80f0b98813c7163335031db6aed5fedb3117da795bb9d79f",
+        "fit_completion_sha256": "1d67bbf07b7292b8b6abff2d64bf7e80206e3079b671b58b45795e78b239f99b"
+      },
+      "probe": false,
+      "optimizer_updates": 0,
+      "parameters_updated": false,
+      "dev_replay_max_drift": 0.0,
+      "clean_test_replay_max_drift": 0.0,
+      "results": [
+        {
+          "condition": "lab_drop25",
+          "AP": 0.3836202280187079,
+          "AUROC": 0.8678066599796334,
+          "seconds": 1.0677375849336386,
+          "rows": 26229
+        },
+        {
+          "condition": "lab_drop50",
+          "AP": 0.3580007192258157,
+          "AUROC": 0.8546639984854988,
+          "seconds": 1.0838186270557344,
+          "rows": 26229
+        },
+        {
+          "condition": "lab_delay2h",
+          "AP": 0.39001108700866605,
+          "AUROC": 0.8725989581942382,
+          "seconds": 1.045488104224205,
+          "rows": 26229
+        },
+        {
+          "condition": "lab_delay6h",
+          "AP": 0.3749382464893302,
+          "AUROC": 0.86397778664566,
+          "seconds": 1.0289790881797671,
+          "rows": 26229
+        }
+      ],
+      "timing": {
+        "device": "NVIDIA RTX 5880 Ada Generation",
+        "precision": "FP32; TF32 disabled",
+        "threads": 4,
+        "warmup": 10,
+        "rows": [
+          {
+            "batch": 1,
+            "resident_model": {
+              "median_ms": 1.075943000614643,
+              "p95_ms": 1.3001727289520202,
+              "records_per_second": 929.4172641382862,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 1.1679615126922727,
+              "p95_ms": 1.447458006441593,
+              "records_per_second": 856.192596359529,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 102.32568359375,
+            "peak_reserved_mib": 1532.0
+          },
+          {
+            "batch": 8,
+            "resident_model": {
+              "median_ms": 1.1126126628369093,
+              "p95_ms": 1.44142311764881,
+              "records_per_second": 7190.283076234113,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 1.2641075300052762,
+              "p95_ms": 1.9706052378751326,
+              "records_per_second": 6328.575544492333,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 130.546875,
+            "peak_reserved_mib": 1532.0
+          },
+          {
+            "batch": 32,
+            "resident_model": {
+              "median_ms": 1.1075823567807674,
+              "p95_ms": 1.1292796931229532,
+              "records_per_second": 28891.75672047475,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 1.409240416251123,
+              "p95_ms": 1.5074917930178342,
+              "records_per_second": 22707.268136069186,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 227.30810546875,
+            "peak_reserved_mib": 1532.0
+          }
+        ],
+        "parameters": 17124404,
+        "scope": "warm dense-feature inference; source-table scan and evidence extraction measured separately; no training updates"
+      },
+      "artifacts": {
+        "lab_drop25.npz": "6b644e36f0d688b29a9eeaa1e336c70811f85fdf8d66023998f846f3438361ad",
+        "lab_drop50.npz": "1516b597df618c096be621b22bbfd352f56382e61c94a9e3d22645861906cfd7",
+        "lab_delay2h.npz": "3671ee1380259618c1d1856c3964b6a4ed14084e6012ad51f2a2bc283bd9f026",
+        "lab_delay6h.npz": "06dce8242834f524708211ebbd975d13324d75c9d28d392c6a84df5e2751cb2e"
+      },
+      "source_sha256": "f292af7539b1180d6abb6486da52aa231062dee23798403b6eebbea972f4ac8c",
+      "checkpoint_hash_unchanged": true,
+      "test_loaded": true
+    },
+    {
+      "complete": true,
+      "job": {
+        "method": "CEM-Net",
+        "seed": 49,
+        "endpoint": 0,
+        "fit": "/home/data/lxm/TRACEHR/runs/tracehr_ema_cross_20261024/eicu/v1/screen/jobs/fullEMA_t0_s49",
+        "checkpoint": "/home/data/lxm/TRACEHR/runs/tracehr_ema_cross_20261024/eicu/v1/screen/jobs/fullEMA_t0_s49/best.pt",
+        "checkpoint_sha256": "0b0555dbb906f3b621998e0f443919478021812f6f19bb0e483f8e446ad41af2",
+        "fit_completion_sha256": "e53bd23d1d50394a4f783b606c75762179f267ae4c2363396ff7730889f6c225"
+      },
+      "probe": false,
+      "optimizer_updates": 0,
+      "parameters_updated": false,
+      "dev_replay_max_drift": 0.0,
+      "clean_test_replay_max_drift": 0.0,
+      "results": [
+        {
+          "condition": "lab_drop25",
+          "AP": 0.3873116681259579,
+          "AUROC": 0.8770042817107112,
+          "seconds": 1.190477822907269,
+          "rows": 26229
+        },
+        {
+          "condition": "lab_drop50",
+          "AP": 0.3669273254487526,
+          "AUROC": 0.8666216943049108,
+          "seconds": 1.1804946700576693,
+          "rows": 26229
+        },
+        {
+          "condition": "lab_delay2h",
+          "AP": 0.3926073414461069,
+          "AUROC": 0.8803329302914378,
+          "seconds": 1.1964576679747552,
+          "rows": 26229
+        },
+        {
+          "condition": "lab_delay6h",
+          "AP": 0.3745792667737026,
+          "AUROC": 0.872150991309561,
+          "seconds": 1.1855915139894933,
+          "rows": 26229
+        }
+      ],
+      "timing": {
+        "device": "NVIDIA RTX 5880 Ada Generation",
+        "precision": "FP32; TF32 disabled",
+        "threads": 4,
+        "warmup": 10,
+        "rows": [
+          {
+            "batch": 1,
+            "resident_model": {
+              "median_ms": 1.0704025626182556,
+              "p95_ms": 1.1023482657037675,
+              "records_per_second": 934.2279577077547,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 1.1649299412965775,
+              "p95_ms": 1.198185421526432,
+              "records_per_second": 858.4207208950188,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 102.32568359375,
+            "peak_reserved_mib": 1532.0
+          },
+          {
+            "batch": 8,
+            "resident_model": {
+              "median_ms": 1.1512750061228871,
+              "p95_ms": 1.268229621928185,
+              "records_per_second": 6948.817578296388,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 1.387068536132574,
+              "p95_ms": 1.4355996390804648,
+              "records_per_second": 5767.559274544291,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 130.546875,
+            "peak_reserved_mib": 1532.0
+          },
+          {
+            "batch": 32,
+            "resident_model": {
+              "median_ms": 1.1302510974928737,
+              "p95_ms": 1.1654989211820066,
+              "records_per_second": 28312.292791382813,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 1.4607923803851008,
+              "p95_ms": 1.9105856190435584,
+              "records_per_second": 21905.91930084138,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 227.30810546875,
+            "peak_reserved_mib": 1532.0
+          }
+        ],
+        "parameters": 17124404,
+        "scope": "warm dense-feature inference; source-table scan and evidence extraction measured separately; no training updates"
+      },
+      "artifacts": {
+        "lab_drop25.npz": "0cf211fb68bef919167d0631f5876562f1b83e49b039e31332c956839eb8bb56",
+        "lab_drop50.npz": "480c3a0955aaaa444303b2f0fc56af80f1c208be5254b53f8d22f4217085ef97",
+        "lab_delay2h.npz": "37fca4611f43c1bb2ffe5d91470fea77d25e2f463dc0d59bee11673a113b6b0c",
+        "lab_delay6h.npz": "47cde1a3e002c30132d4c6349ce75a087e84a01a9f5d0ba8d14b33fdbb0ea3c4"
+      },
+      "source_sha256": "f292af7539b1180d6abb6486da52aa231062dee23798403b6eebbea972f4ac8c",
+      "checkpoint_hash_unchanged": true,
+      "test_loaded": true
+    },
+    {
+      "complete": true,
+      "job": {
+        "method": "CEM-Net",
+        "seed": 50,
+        "endpoint": 0,
+        "fit": "/home/data/lxm/TRACEHR/runs/tracehr_ema_cross_20261024/eicu/v1/screen/jobs/fullEMA_t0_s50",
+        "checkpoint": "/home/data/lxm/TRACEHR/runs/tracehr_ema_cross_20261024/eicu/v1/screen/jobs/fullEMA_t0_s50/best.pt",
+        "checkpoint_sha256": "19c73b047fb15d5a75440e72a6ccfed3bf604dc61b4f0da5b9cc091c107d4df7",
+        "fit_completion_sha256": "ea7105b9bf07587df5dcad4df9567d7621b9c40e85ac6ebdd3e66a2d619ed083"
+      },
+      "probe": false,
+      "optimizer_updates": 0,
+      "parameters_updated": false,
+      "dev_replay_max_drift": 0.0,
+      "clean_test_replay_max_drift": 0.0,
+      "results": [
+        {
+          "condition": "lab_drop25",
+          "AP": 0.38792794934962815,
+          "AUROC": 0.8761299912852232,
+          "seconds": 1.2405324329156429,
+          "rows": 26229
+        },
+        {
+          "condition": "lab_drop50",
+          "AP": 0.36666270222202435,
+          "AUROC": 0.8655008296417762,
+          "seconds": 1.2345046577975154,
+          "rows": 26229
+        },
+        {
+          "condition": "lab_delay2h",
+          "AP": 0.39210792946319045,
+          "AUROC": 0.880427246121652,
+          "seconds": 1.2561527469661087,
+          "rows": 26229
+        },
+        {
+          "condition": "lab_delay6h",
+          "AP": 0.3740247674371205,
+          "AUROC": 0.8721564539592781,
+          "seconds": 1.2385254178661853,
+          "rows": 26229
+        }
+      ],
+      "timing": {
+        "device": "NVIDIA RTX 5880 Ada Generation",
+        "precision": "FP32; TF32 disabled",
+        "threads": 4,
+        "warmup": 10,
+        "rows": [
+          {
+            "batch": 1,
+            "resident_model": {
+              "median_ms": 1.0716049000620842,
+              "p95_ms": 1.7936597811058155,
+              "records_per_second": 933.1797567760882,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 1.1822585947811604,
+              "p95_ms": 1.8383311340585338,
+              "records_per_second": 845.8386383607582,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 102.32568359375,
+            "peak_reserved_mib": 1532.0
+          },
+          {
+            "batch": 8,
+            "resident_model": {
+              "median_ms": 1.115913037210703,
+              "p95_ms": 1.1257381411269307,
+              "records_per_second": 7169.017417339724,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 1.2680944055318832,
+              "p95_ms": 1.2990250368602574,
+              "records_per_second": 6308.67856927775,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 130.546875,
+            "peak_reserved_mib": 1532.0
+          },
+          {
+            "batch": 32,
+            "resident_model": {
+              "median_ms": 1.1167355114594102,
+              "p95_ms": 1.4321528724394739,
+              "records_per_second": 28654.94978142199,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 1.4266835059970617,
+              "p95_ms": 1.8390998127870257,
+              "records_per_second": 22429.641798961053,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 227.30810546875,
+            "peak_reserved_mib": 1532.0
+          }
+        ],
+        "parameters": 17124404,
+        "scope": "warm dense-feature inference; source-table scan and evidence extraction measured separately; no training updates"
+      },
+      "artifacts": {
+        "lab_drop25.npz": "d0bf5055652dff96d7f31b9af66196f2eedf2e789c012426ea3f31ed57062b56",
+        "lab_drop50.npz": "3b65afed6ba6f63a61f2f46a1ff94cad65c9674497fdf9a25b4ff3190f415b30",
+        "lab_delay2h.npz": "2fff03af545d09238af72ea3469e6df7caee4911b08eb37d416f36b1fb2b015e",
+        "lab_delay6h.npz": "b25d088e44105ebf9ad38f9800fe5dd30c7239b2de2dad28711fc0a46255af73"
+      },
+      "source_sha256": "f292af7539b1180d6abb6486da52aa231062dee23798403b6eebbea972f4ac8c",
+      "checkpoint_hash_unchanged": true,
+      "test_loaded": true
+    },
+    {
+      "complete": true,
+      "job": {
+        "method": "TabM_mini_PLE",
+        "seed": 48,
+        "endpoint": 0,
+        "fit": "/home/data/lxm/TRACEHR/runs/cem_evidence_completion_20261025/eicu/tabular_v1/screen/jobs/TabM_mini_PLE_t0_s48",
+        "checkpoint": "/home/data/lxm/TRACEHR/runs/cem_evidence_completion_20261025/eicu/tabular_v1/screen/jobs/TabM_mini_PLE_t0_s48/best.pt",
+        "checkpoint_sha256": "2f0ec188133ec0d338c000bfb75357990877a6ae1ede0b00db4ada2b01b69343",
+        "fit_completion_sha256": "bd66e89e8868bc5528cece7a6ec523e777ac5a1d72da9a2fa5ad6889769eec02"
+      },
+      "probe": false,
+      "optimizer_updates": 0,
+      "parameters_updated": false,
+      "dev_replay_max_drift": 0.0,
+      "clean_test_replay_max_drift": 0.0,
+      "results": [
+        {
+          "condition": "lab_drop25",
+          "AP": 0.3946500185181789,
+          "AUROC": 0.8760109084821716,
+          "seconds": 160.33309216308407,
+          "rows": 26229
+        },
+        {
+          "condition": "lab_drop50",
+          "AP": 0.3698262573845866,
+          "AUROC": 0.8638951363113193,
+          "seconds": 160.42488042404875,
+          "rows": 26229
+        },
+        {
+          "condition": "lab_delay2h",
+          "AP": 0.40080013402271825,
+          "AUROC": 0.881063282117464,
+          "seconds": 160.6883922391571,
+          "rows": 26229
+        },
+        {
+          "condition": "lab_delay6h",
+          "AP": 0.3803654715550166,
+          "AUROC": 0.8730912184338049,
+          "seconds": 162.7344316500239,
+          "rows": 26229
+        }
+      ],
+      "timing": {
+        "device": "NVIDIA RTX 5880 Ada Generation",
+        "precision": "FP32; TF32 disabled",
+        "threads": 4,
+        "warmup": 10,
+        "rows": [
+          {
+            "batch": 1,
+            "resident_model": {
+              "median_ms": 1.057934481650591,
+              "p95_ms": 1.0989500093273818,
+              "records_per_second": 945.2381195098193,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 180.6228740606457,
+              "p95_ms": 184.87264085561037,
+              "records_per_second": 5.536397342809645,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 457.34375,
+            "peak_reserved_mib": 1900.0
+          },
+          {
+            "batch": 8,
+            "resident_model": {
+              "median_ms": 2.8827815549448133,
+              "p95_ms": 2.9230952146463096,
+              "records_per_second": 2775.0975394849675,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 179.2921320302412,
+              "p95_ms": 201.66685617296025,
+              "records_per_second": 44.619916721446764,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 723.642578125,
+            "peak_reserved_mib": 1900.0
+          },
+          {
+            "batch": 32,
+            "resident_model": {
+              "median_ms": 9.732817998155951,
+              "p95_ms": 9.847277507651597,
+              "records_per_second": 3287.845309145095,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 189.91720804478973,
+              "p95_ms": 199.7006510850042,
+              "records_per_second": 168.4944736153302,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 1637.380859375,
+            "peak_reserved_mib": 1900.0
+          }
+        ],
+        "parameters": 98836064,
+        "scope": "warm dense-feature inference; source-table scan and evidence extraction measured separately; no training updates"
+      },
+      "artifacts": {
+        "lab_drop25.npz": "b4625a9b163b9d98b9757978c3c851dcbe463d611d9964124d35479165b79ff5",
+        "lab_drop50.npz": "1a8fa3763ab5dab852ffd92a1aca67b63fb976fc3608bb5b98c086e879392558",
+        "lab_delay2h.npz": "9ccdba316516611d4f79bfb8852298de148c42e1857e83d7dde99a4222829f53",
+        "lab_delay6h.npz": "a3ab0cf975edfbe79444b4f2a7ef4b9d28e7e5321b30a089ddef0895509d49bb"
+      },
+      "source_sha256": "f292af7539b1180d6abb6486da52aa231062dee23798403b6eebbea972f4ac8c",
+      "checkpoint_hash_unchanged": true,
+      "test_loaded": true
+    },
+    {
+      "complete": true,
+      "job": {
+        "method": "TabM_mini_PLE",
+        "seed": 49,
+        "endpoint": 0,
+        "fit": "/home/data/lxm/TRACEHR/runs/cem_evidence_completion_20261025/eicu/tabular_v1/screen/jobs/TabM_mini_PLE_t0_s49",
+        "checkpoint": "/home/data/lxm/TRACEHR/runs/cem_evidence_completion_20261025/eicu/tabular_v1/screen/jobs/TabM_mini_PLE_t0_s49/best.pt",
+        "checkpoint_sha256": "94d3a56554f0bfee7c70e3723426d97dc8eee000ec0bb2fcc7f1c8f43d773d05",
+        "fit_completion_sha256": "994890386f84b74140b239467e07edd9d15995d48d41a953249cd50b323ec2a4"
+      },
+      "probe": false,
+      "optimizer_updates": 0,
+      "parameters_updated": false,
+      "dev_replay_max_drift": 0.0,
+      "clean_test_replay_max_drift": 0.0,
+      "results": [
+        {
+          "condition": "lab_drop25",
+          "AP": 0.39415109949227434,
+          "AUROC": 0.8764774394935305,
+          "seconds": 161.26031821989454,
+          "rows": 26229
+        },
+        {
+          "condition": "lab_drop50",
+          "AP": 0.3711734232883154,
+          "AUROC": 0.8655603414354446,
+          "seconds": 160.6485504778102,
+          "rows": 26229
+        },
+        {
+          "condition": "lab_delay2h",
+          "AP": 0.39963943718242334,
+          "AUROC": 0.8808517339752947,
+          "seconds": 160.7871570829302,
+          "rows": 26229
+        },
+        {
+          "condition": "lab_delay6h",
+          "AP": 0.3785047162643031,
+          "AUROC": 0.8726342507604335,
+          "seconds": 160.74265755712986,
+          "rows": 26229
+        }
+      ],
+      "timing": {
+        "device": "NVIDIA RTX 5880 Ada Generation",
+        "precision": "FP32; TF32 disabled",
+        "threads": 4,
+        "warmup": 10,
+        "rows": [
+          {
+            "batch": 1,
+            "resident_model": {
+              "median_ms": 1.0238955728709698,
+              "p95_ms": 1.1052891379222272,
+              "records_per_second": 976.6620996280242,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 169.82113104313612,
+              "p95_ms": 175.43694919440895,
+              "records_per_second": 5.888548697429125,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 457.34375,
+            "peak_reserved_mib": 1900.0
+          },
+          {
+            "batch": 8,
+            "resident_model": {
+              "median_ms": 2.88783002179116,
+              "p95_ms": 2.9325907584279776,
+              "records_per_second": 2770.246150096482,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 181.46427848841995,
+              "p95_ms": 188.20872599026188,
+              "records_per_second": 44.08581163543169,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 723.642578125,
+            "peak_reserved_mib": 1900.0
+          },
+          {
+            "batch": 32,
+            "resident_model": {
+              "median_ms": 9.71949496306479,
+              "p95_ms": 9.76573385996744,
+              "records_per_second": 3292.3521357440604,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 195.48212550580502,
+              "p95_ms": 199.32874175719917,
+              "records_per_second": 163.69783128355505,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 1637.380859375,
+            "peak_reserved_mib": 1900.0
+          }
+        ],
+        "parameters": 98836064,
+        "scope": "warm dense-feature inference; source-table scan and evidence extraction measured separately; no training updates"
+      },
+      "artifacts": {
+        "lab_drop25.npz": "087be46545f10f2f24b9e5814772d75e05371c6632edaf33145d301dcefff261",
+        "lab_drop50.npz": "02672bc9f9a766acf6524c3cf81af3684d92b9ae49e304d60ddde629ca0f8a65",
+        "lab_delay2h.npz": "51b14fa8f101dac4a1b43821d67b292abf2afc11041d753243b06f2ce52bebb4",
+        "lab_delay6h.npz": "6d6cf45a9cafc097486d5e6e3614493bfab0228417a833f46f23f9ed17dadf40"
+      },
+      "source_sha256": "f292af7539b1180d6abb6486da52aa231062dee23798403b6eebbea972f4ac8c",
+      "checkpoint_hash_unchanged": true,
+      "test_loaded": true
+    },
+    {
+      "complete": true,
+      "job": {
+        "method": "TabM_mini_PLE",
+        "seed": 50,
+        "endpoint": 0,
+        "fit": "/home/data/lxm/TRACEHR/runs/cem_evidence_completion_20261025/eicu/tabular_v1/screen/jobs/TabM_mini_PLE_t0_s50",
+        "checkpoint": "/home/data/lxm/TRACEHR/runs/cem_evidence_completion_20261025/eicu/tabular_v1/screen/jobs/TabM_mini_PLE_t0_s50/best.pt",
+        "checkpoint_sha256": "3c599768b3f21b5ca1e2f4a67a4b396f27bdf81ddefbbd59b99bdadfc36a88ee",
+        "fit_completion_sha256": "f2cf952e8f928d86d2ac5182ac936ed07e996a95285b180173de42951092d516"
+      },
+      "probe": false,
+      "optimizer_updates": 0,
+      "parameters_updated": false,
+      "dev_replay_max_drift": 0.0,
+      "clean_test_replay_max_drift": 0.0,
+      "results": [
+        {
+          "condition": "lab_drop25",
+          "AP": 0.3960114408154152,
+          "AUROC": 0.8768577672276429,
+          "seconds": 160.35740739200264,
+          "rows": 26229
+        },
+        {
+          "condition": "lab_drop50",
+          "AP": 0.37157002856800175,
+          "AUROC": 0.8660199442081375,
+          "seconds": 160.08161278394982,
+          "rows": 26229
+        },
+        {
+          "condition": "lab_delay2h",
+          "AP": 0.4023376722389585,
+          "AUROC": 0.8812024834597184,
+          "seconds": 159.8544274060987,
+          "rows": 26229
+        },
+        {
+          "condition": "lab_delay6h",
+          "AP": 0.38250467237803265,
+          "AUROC": 0.8728416389986173,
+          "seconds": 160.08404098218307,
+          "rows": 26229
+        }
+      ],
+      "timing": {
+        "device": "NVIDIA RTX 5880 Ada Generation",
+        "precision": "FP32; TF32 disabled",
+        "threads": 4,
+        "warmup": 10,
+        "rows": [
+          {
+            "batch": 1,
+            "resident_model": {
+              "median_ms": 1.0322564048692584,
+              "p95_ms": 1.3335174182429905,
+              "records_per_second": 968.7515575421943,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 168.54043444618583,
+              "p95_ms": 186.83035183930767,
+              "records_per_second": 5.933294305820099,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 457.34375,
+            "peak_reserved_mib": 1900.0
+          },
+          {
+            "batch": 8,
+            "resident_model": {
+              "median_ms": 2.8972839936614037,
+              "p95_ms": 2.987096889410168,
+              "records_per_second": 2761.2067085940403,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 186.2480699783191,
+              "p95_ms": 196.78425103193146,
+              "records_per_second": 42.95346524090837,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 723.642578125,
+            "peak_reserved_mib": 1900.0
+          },
+          {
+            "batch": 32,
+            "resident_model": {
+              "median_ms": 9.71881696023047,
+              "p95_ms": 9.77144796634093,
+              "records_per_second": 3292.5818163820177,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 194.02687950059772,
+              "p95_ms": 200.16539567150173,
+              "records_per_second": 164.92560248540934,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 1637.380859375,
+            "peak_reserved_mib": 1900.0
+          }
+        ],
+        "parameters": 98836064,
+        "scope": "warm dense-feature inference; source-table scan and evidence extraction measured separately; no training updates"
+      },
+      "artifacts": {
+        "lab_drop25.npz": "ba9704cb105bc47b1c84d4a521663d52af6561288f1f4992b5cdf8bc52693c27",
+        "lab_drop50.npz": "86151854ef591a3a526f862d540895f6e40eaf1c7a50197b51c39b3f2f7db961",
+        "lab_delay2h.npz": "4097aab27a225dbf0bcb826761aedd599558d1ad2073377fa23a3ab2c2084988",
+        "lab_delay6h.npz": "689443b3ac1583d0461c8029a8999073cc0cc5c6cc78dca7a2217d3823167017"
+      },
+      "source_sha256": "f292af7539b1180d6abb6486da52aa231062dee23798403b6eebbea972f4ac8c",
+      "checkpoint_hash_unchanged": true,
+      "test_loaded": true
+    },
+    {
+      "complete": true,
+      "job": {
+        "method": "CEM-Net",
+        "seed": 48,
+        "endpoint": 1,
+        "fit": "/home/data/lxm/TRACEHR/runs/tracehr_ema_cross_20261024/eicu/v1/screen/jobs/fullEMA_t1_s48",
+        "checkpoint": "/home/data/lxm/TRACEHR/runs/tracehr_ema_cross_20261024/eicu/v1/screen/jobs/fullEMA_t1_s48/best.pt",
+        "checkpoint_sha256": "0da8197c6932ca91892b64077a5f9f088c7b343c362eaaf3dec043743ea54228",
+        "fit_completion_sha256": "8f7655fc748bf0272e1efc63797d087fad0e3362b5ba012aac747b9aaf5fbb83"
+      },
+      "probe": false,
+      "optimizer_updates": 0,
+      "parameters_updated": false,
+      "dev_replay_max_drift": 0.0,
+      "clean_test_replay_max_drift": 0.0,
+      "results": [
+        {
+          "condition": "lab_drop25",
+          "AP": 0.38734299889850193,
+          "AUROC": 0.809592182268125,
+          "seconds": 1.2111396419350058,
+          "rows": 26229
+        },
+        {
+          "condition": "lab_drop50",
+          "AP": 0.3773467774897152,
+          "AUROC": 0.8009886015451007,
+          "seconds": 1.204697818029672,
+          "rows": 26229
+        },
+        {
+          "condition": "lab_delay2h",
+          "AP": 0.38862409089997574,
+          "AUROC": 0.8122241109827788,
+          "seconds": 1.1964440359733999,
+          "rows": 26229
+        },
+        {
+          "condition": "lab_delay6h",
+          "AP": 0.37809763627579146,
+          "AUROC": 0.804369537728266,
+          "seconds": 1.2025022190064192,
+          "rows": 26229
+        }
+      ],
+      "timing": {
+        "device": "NVIDIA RTX 5880 Ada Generation",
+        "precision": "FP32; TF32 disabled",
+        "threads": 4,
+        "warmup": 10,
+        "rows": [
+          {
+            "batch": 1,
+            "resident_model": {
+              "median_ms": 1.0987864807248116,
+              "p95_ms": 1.4272927306592464,
+              "records_per_second": 910.0949252127244,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 1.1996410321444273,
+              "p95_ms": 1.6594448941759763,
+              "records_per_second": 833.58269115924,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 102.32568359375,
+            "peak_reserved_mib": 1532.0
+          },
+          {
+            "batch": 8,
+            "resident_model": {
+              "median_ms": 1.1357259936630726,
+              "p95_ms": 1.1432867962867022,
+              "records_per_second": 7043.952541930902,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 1.2867845362052321,
+              "p95_ms": 1.2969320872798562,
+              "records_per_second": 6217.047046269495,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 130.546875,
+            "peak_reserved_mib": 1532.0
+          },
+          {
+            "batch": 32,
+            "resident_model": {
+              "median_ms": 1.166107482276857,
+              "p95_ms": 1.7490546219050884,
+              "records_per_second": 27441.72427186482,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 1.8072385573759675,
+              "p95_ms": 2.454281691461801,
+              "records_per_second": 17706.572200663217,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 227.30810546875,
+            "peak_reserved_mib": 1532.0
+          }
+        ],
+        "parameters": 17124404,
+        "scope": "warm dense-feature inference; source-table scan and evidence extraction measured separately; no training updates"
+      },
+      "artifacts": {
+        "lab_drop25.npz": "16024596d29f56c8b342e0efb3f78c83ccc5aab471ff096fbcd8c5d516e8d4f5",
+        "lab_drop50.npz": "7c41a96467806e8ccf990c9c8c6848aa1f43968e2e75a4776745dc30c3110e02",
+        "lab_delay2h.npz": "d1d87a57b29d86a1d3dffeffbb731bc42c58fa62583237031316096630536a8d",
+        "lab_delay6h.npz": "4cac504f50562cfd6a0428e834707b9a7c121e303f7af07e5d1e43346d5579d5"
+      },
+      "source_sha256": "f292af7539b1180d6abb6486da52aa231062dee23798403b6eebbea972f4ac8c",
+      "checkpoint_hash_unchanged": true,
+      "test_loaded": true
+    },
+    {
+      "complete": true,
+      "job": {
+        "method": "CEM-Net",
+        "seed": 49,
+        "endpoint": 1,
+        "fit": "/home/data/lxm/TRACEHR/runs/tracehr_ema_cross_20261024/eicu/v1/screen/jobs/fullEMA_t1_s49",
+        "checkpoint": "/home/data/lxm/TRACEHR/runs/tracehr_ema_cross_20261024/eicu/v1/screen/jobs/fullEMA_t1_s49/best.pt",
+        "checkpoint_sha256": "6a203684fdb328f0f66a068be5f77a59d2e700025bd26090d10a4bfcc35f0b6e",
+        "fit_completion_sha256": "8937442e2fdc6225bf428ddab6c87152ba4b50a051bf06f0527341b8ed214b26"
+      },
+      "probe": false,
+      "optimizer_updates": 0,
+      "parameters_updated": false,
+      "dev_replay_max_drift": 0.0,
+      "clean_test_replay_max_drift": 0.0,
+      "results": [
+        {
+          "condition": "lab_drop25",
+          "AP": 0.38742960048089803,
+          "AUROC": 0.8134955580600564,
+          "seconds": 1.171170325949788,
+          "rows": 26229
+        },
+        {
+          "condition": "lab_drop50",
+          "AP": 0.37915152366930904,
+          "AUROC": 0.8060983080489803,
+          "seconds": 1.1876289481297135,
+          "rows": 26229
+        },
+        {
+          "condition": "lab_delay2h",
+          "AP": 0.38911060620474597,
+          "AUROC": 0.8150644444480425,
+          "seconds": 1.194710895884782,
+          "rows": 26229
+        },
+        {
+          "condition": "lab_delay6h",
+          "AP": 0.3805964439484534,
+          "AUROC": 0.8061319039133258,
+          "seconds": 1.1909448141232133,
+          "rows": 26229
+        }
+      ],
+      "timing": {
+        "device": "NVIDIA RTX 5880 Ada Generation",
+        "precision": "FP32; TF32 disabled",
+        "threads": 4,
+        "warmup": 10,
+        "rows": [
+          {
+            "batch": 1,
+            "resident_model": {
+              "median_ms": 1.098546083085239,
+              "p95_ms": 1.1288958718068898,
+              "records_per_second": 910.2940836050549,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 1.2016299879178405,
+              "p95_ms": 1.23960169730708,
+              "records_per_second": 832.2029327287173,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 102.32568359375,
+            "peak_reserved_mib": 1532.0
+          },
+          {
+            "batch": 8,
+            "resident_model": {
+              "median_ms": 1.159210572950542,
+              "p95_ms": 1.3505493057891718,
+              "records_per_second": 6901.248303522265,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 1.3900140766054392,
+              "p95_ms": 1.6426007263362405,
+              "records_per_second": 5755.337398839041,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 130.546875,
+            "peak_reserved_mib": 1532.0
+          },
+          {
+            "batch": 32,
+            "resident_model": {
+              "median_ms": 1.157777151092887,
+              "p95_ms": 1.455661654472351,
+              "records_per_second": 27639.170430849765,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 1.7656305572018027,
+              "p95_ms": 2.0728577277623117,
+              "records_per_second": 18123.83676158962,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 227.30810546875,
+            "peak_reserved_mib": 1532.0
+          }
+        ],
+        "parameters": 17124404,
+        "scope": "warm dense-feature inference; source-table scan and evidence extraction measured separately; no training updates"
+      },
+      "artifacts": {
+        "lab_drop25.npz": "d6d01fd5889be9499c6f5eb267b21933b761dc01d74a41c8c251300dc1866c44",
+        "lab_drop50.npz": "b634c6f6ce7b8c2d0efad8d66395c3041cd1dec282903bc170fedfc55d8e1053",
+        "lab_delay2h.npz": "760f4f330cbe04bbdab65831b223c5fea870c97332e66ede6511f469af574407",
+        "lab_delay6h.npz": "619f68b0c141453f8cf80f50cfe48c29abf40e2c65e16ee091e17a08d12b3ce2"
+      },
+      "source_sha256": "f292af7539b1180d6abb6486da52aa231062dee23798403b6eebbea972f4ac8c",
+      "checkpoint_hash_unchanged": true,
+      "test_loaded": true
+    },
+    {
+      "complete": true,
+      "job": {
+        "method": "CEM-Net",
+        "seed": 50,
+        "endpoint": 1,
+        "fit": "/home/data/lxm/TRACEHR/runs/tracehr_ema_cross_20261024/eicu/v1/screen/jobs/fullEMA_t1_s50",
+        "checkpoint": "/home/data/lxm/TRACEHR/runs/tracehr_ema_cross_20261024/eicu/v1/screen/jobs/fullEMA_t1_s50/best.pt",
+        "checkpoint_sha256": "b7bc516a68796c563695fbf4185ded7f7966a7e1297e352245a0065ef03a79e6",
+        "fit_completion_sha256": "57cd22e3859d74794927c096871346aceee5792c9caf69c6818c552fd5aed85d"
+      },
+      "probe": false,
+      "optimizer_updates": 0,
+      "parameters_updated": false,
+      "dev_replay_max_drift": 0.0,
+      "clean_test_replay_max_drift": 0.0,
+      "results": [
+        {
+          "condition": "lab_drop25",
+          "AP": 0.3890727652979969,
+          "AUROC": 0.8118230801306624,
+          "seconds": 1.2138675809837878,
+          "rows": 26229
+        },
+        {
+          "condition": "lab_drop50",
+          "AP": 0.37956521383102815,
+          "AUROC": 0.8040200009096273,
+          "seconds": 1.174268822884187,
+          "rows": 26229
+        },
+        {
+          "condition": "lab_delay2h",
+          "AP": 0.3898027444042952,
+          "AUROC": 0.8142139281609292,
+          "seconds": 1.187848289962858,
+          "rows": 26229
+        },
+        {
+          "condition": "lab_delay6h",
+          "AP": 0.3789318323319079,
+          "AUROC": 0.8052683466904799,
+          "seconds": 1.1932402800302953,
+          "rows": 26229
+        }
+      ],
+      "timing": {
+        "device": "NVIDIA RTX 5880 Ada Generation",
+        "precision": "FP32; TF32 disabled",
+        "threads": 4,
+        "warmup": 10,
+        "rows": [
+          {
+            "batch": 1,
+            "resident_model": {
+              "median_ms": 1.105483970604837,
+              "p95_ms": 1.140879315789789,
+              "records_per_second": 904.5811848840068,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 1.2019154382869601,
+              "p95_ms": 1.323413953650742,
+              "records_per_second": 832.0052876808523,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 102.32568359375,
+            "peak_reserved_mib": 1532.0
+          },
+          {
+            "batch": 8,
+            "resident_model": {
+              "median_ms": 1.1754254810512066,
+              "p95_ms": 1.2067901669070125,
+              "records_per_second": 6806.046090514764,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 1.413623453117907,
+              "p95_ms": 1.5187663491815324,
+              "records_per_second": 5659.21567186445,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 130.546875,
+            "peak_reserved_mib": 1532.0
+          },
+          {
+            "batch": 32,
+            "resident_model": {
+              "median_ms": 1.2398420367389917,
+              "p95_ms": 1.3738986104726791,
+              "records_per_second": 25809.739508563343,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 1.8861819989979267,
+              "p95_ms": 2.0760179380886252,
+              "records_per_second": 16965.48902332896,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 227.30810546875,
+            "peak_reserved_mib": 1532.0
+          }
+        ],
+        "parameters": 17124404,
+        "scope": "warm dense-feature inference; source-table scan and evidence extraction measured separately; no training updates"
+      },
+      "artifacts": {
+        "lab_drop25.npz": "20df7ee64aaf3206b4410e8d54814f51947ad63c7207a9ca614293bc6b2d5500",
+        "lab_drop50.npz": "524e64e6ec0431672f8f168c202a5c2657bedbb0c5d278f17d1048fb458d61e9",
+        "lab_delay2h.npz": "917acce9a0910c9e4f42c36c68931c2b1e61010b126c34a9e4f8e51240a51cf2",
+        "lab_delay6h.npz": "96d1503fce3d2d685c6a0e082dd101b60a1e73619418c3eb755887c6a7d0e867"
+      },
+      "source_sha256": "f292af7539b1180d6abb6486da52aa231062dee23798403b6eebbea972f4ac8c",
+      "checkpoint_hash_unchanged": true,
+      "test_loaded": true
+    },
+    {
+      "complete": true,
+      "job": {
+        "method": "TabM_mini_PLE",
+        "seed": 48,
+        "endpoint": 1,
+        "fit": "/home/data/lxm/TRACEHR/runs/cem_evidence_completion_20261025/eicu/tabular_v1/screen/jobs/TabM_mini_PLE_t1_s48",
+        "checkpoint": "/home/data/lxm/TRACEHR/runs/cem_evidence_completion_20261025/eicu/tabular_v1/screen/jobs/TabM_mini_PLE_t1_s48/best.pt",
+        "checkpoint_sha256": "7e36f0524ded4b3a2d5875fbe9687a83e3289a1978147b10b362128fe21cdf4d",
+        "fit_completion_sha256": "dacc4192b940b4cc684da764fa489280873b2d73ae764682543ea1814f721472"
+      },
+      "probe": false,
+      "optimizer_updates": 0,
+      "parameters_updated": false,
+      "dev_replay_max_drift": 0.0,
+      "clean_test_replay_max_drift": 0.0,
+      "results": [
+        {
+          "condition": "lab_drop25",
+          "AP": 0.3858352293119418,
+          "AUROC": 0.8146361836511118,
+          "seconds": 158.71056572697125,
+          "rows": 26229
+        },
+        {
+          "condition": "lab_drop50",
+          "AP": 0.3767794855405644,
+          "AUROC": 0.8052805928062019,
+          "seconds": 159.51007428206503,
+          "rows": 26229
+        },
+        {
+          "condition": "lab_delay2h",
+          "AP": 0.38766960189755817,
+          "AUROC": 0.816656682353568,
+          "seconds": 159.79923891299404,
+          "rows": 26229
+        },
+        {
+          "condition": "lab_delay6h",
+          "AP": 0.3781878601257732,
+          "AUROC": 0.8082050668009422,
+          "seconds": 160.1109014900867,
+          "rows": 26229
+        }
+      ],
+      "timing": {
+        "device": "NVIDIA RTX 5880 Ada Generation",
+        "precision": "FP32; TF32 disabled",
+        "threads": 4,
+        "warmup": 10,
+        "rows": [
+          {
+            "batch": 1,
+            "resident_model": {
+              "median_ms": 1.0577705688774586,
+              "p95_ms": 1.1902051279321313,
+              "records_per_second": 945.3845941858955,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 175.15756655484438,
+              "p95_ms": 197.0614189398475,
+              "records_per_second": 5.709145312240254,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 457.34375,
+            "peak_reserved_mib": 1900.0
+          },
+          {
+            "batch": 8,
+            "resident_model": {
+              "median_ms": 2.8873225674033165,
+              "p95_ms": 2.9358538682572544,
+              "records_per_second": 2770.7330280020346,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 182.73962254170328,
+              "p95_ms": 188.6099840165116,
+              "records_per_second": 43.778135736130835,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 723.642578125,
+            "peak_reserved_mib": 1900.0
+          },
+          {
+            "batch": 32,
+            "resident_model": {
+              "median_ms": 9.730113088153303,
+              "p95_ms": 9.789187426213175,
+              "records_per_second": 3288.759309381608,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 194.11418959498405,
+              "p95_ms": 198.45024447422475,
+              "records_per_second": 164.8514210463823,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 1637.380859375,
+            "peak_reserved_mib": 1900.0
+          }
+        ],
+        "parameters": 98836064,
+        "scope": "warm dense-feature inference; source-table scan and evidence extraction measured separately; no training updates"
+      },
+      "artifacts": {
+        "lab_drop25.npz": "44ade373aa7d564ea248eb88f510e9b02916b1c69b726ee4f10167426c334c15",
+        "lab_drop50.npz": "0522ae5a30023b4fe23615c029e355c7b44a378bc6bed26f69e07b871492f839",
+        "lab_delay2h.npz": "268c3cdb3ae32272ea69da7aef38cfb0f56763b22c13c881e45b5677068705e4",
+        "lab_delay6h.npz": "446f72412febe50bd5474cf234b0de9ce7abb3f39063386065e62b2eeadccdf6"
+      },
+      "source_sha256": "f292af7539b1180d6abb6486da52aa231062dee23798403b6eebbea972f4ac8c",
+      "checkpoint_hash_unchanged": true,
+      "test_loaded": true
+    },
+    {
+      "complete": true,
+      "job": {
+        "method": "TabM_mini_PLE",
+        "seed": 49,
+        "endpoint": 1,
+        "fit": "/home/data/lxm/TRACEHR/runs/cem_evidence_completion_20261025/eicu/tabular_v1/screen/jobs/TabM_mini_PLE_t1_s49",
+        "checkpoint": "/home/data/lxm/TRACEHR/runs/cem_evidence_completion_20261025/eicu/tabular_v1/screen/jobs/TabM_mini_PLE_t1_s49/best.pt",
+        "checkpoint_sha256": "4c39970dbfd2567063ef4b97928705cdd86e5d8d69e82303c646987bff5fe313",
+        "fit_completion_sha256": "d42376adaee34c1dc034e98caab91bcbe17cdb6372f9b469f510fe8dca8308ab"
+      },
+      "probe": false,
+      "optimizer_updates": 0,
+      "parameters_updated": false,
+      "dev_replay_max_drift": 0.0,
+      "clean_test_replay_max_drift": 0.0,
+      "results": [
+        {
+          "condition": "lab_drop25",
+          "AP": 0.3853426292114899,
+          "AUROC": 0.813986175430612,
+          "seconds": 159.50896251993254,
+          "rows": 26229
+        },
+        {
+          "condition": "lab_drop50",
+          "AP": 0.3775134286939751,
+          "AUROC": 0.8041334025906127,
+          "seconds": 158.66620490816422,
+          "rows": 26229
+        },
+        {
+          "condition": "lab_delay2h",
+          "AP": 0.3882014110614549,
+          "AUROC": 0.8172559619228227,
+          "seconds": 160.3015238281805,
+          "rows": 26229
+        },
+        {
+          "condition": "lab_delay6h",
+          "AP": 0.3790741861454716,
+          "AUROC": 0.8088423358229353,
+          "seconds": 161.23560045310296,
+          "rows": 26229
+        }
+      ],
+      "timing": {
+        "device": "NVIDIA RTX 5880 Ada Generation",
+        "precision": "FP32; TF32 disabled",
+        "threads": 4,
+        "warmup": 10,
+        "rows": [
+          {
+            "batch": 1,
+            "resident_model": {
+              "median_ms": 1.0704295709729195,
+              "p95_ms": 1.394752669148147,
+              "records_per_second": 934.2043859000405,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 179.64106937870383,
+              "p95_ms": 225.2072026603855,
+              "records_per_second": 5.5666557956849285,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 457.34375,
+            "peak_reserved_mib": 1900.0
+          },
+          {
+            "batch": 8,
+            "resident_model": {
+              "median_ms": 2.8932240093126893,
+              "p95_ms": 3.0268145608715713,
+              "records_per_second": 2765.0814365737515,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 183.194256038405,
+              "p95_ms": 202.8784875175915,
+              "records_per_second": 43.669491462237076,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 723.642578125,
+            "peak_reserved_mib": 1900.0
+          },
+          {
+            "batch": 32,
+            "resident_model": {
+              "median_ms": 9.71506186760962,
+              "p95_ms": 9.755659406073391,
+              "records_per_second": 3293.8544742251406,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 195.31680806539953,
+              "p95_ms": 200.0332007766701,
+              "records_per_second": 163.83638621252288,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 1637.380859375,
+            "peak_reserved_mib": 1900.0
+          }
+        ],
+        "parameters": 98836064,
+        "scope": "warm dense-feature inference; source-table scan and evidence extraction measured separately; no training updates"
+      },
+      "artifacts": {
+        "lab_drop25.npz": "b85e442bad69fc8723e42a6276155e488513f356d2a5b79082c9a1357d4e4e2e",
+        "lab_drop50.npz": "6fd502cd62413cd204eb38242b1d99ae8db23ea78b3ce0106c25130e27442488",
+        "lab_delay2h.npz": "099ad6479f4c804da0076e42c4dc1939b4042eed04eb74528d4c4e3b7373eefb",
+        "lab_delay6h.npz": "414bf1d4e7d57b810654fc9f61b876946de85673a5be350bf9bf86d12449d6b2"
+      },
+      "source_sha256": "f292af7539b1180d6abb6486da52aa231062dee23798403b6eebbea972f4ac8c",
+      "checkpoint_hash_unchanged": true,
+      "test_loaded": true
+    },
+    {
+      "complete": true,
+      "job": {
+        "method": "TabM_mini_PLE",
+        "seed": 50,
+        "endpoint": 1,
+        "fit": "/home/data/lxm/TRACEHR/runs/cem_evidence_completion_20261025/eicu/tabular_v1/screen/jobs/TabM_mini_PLE_t1_s50",
+        "checkpoint": "/home/data/lxm/TRACEHR/runs/cem_evidence_completion_20261025/eicu/tabular_v1/screen/jobs/TabM_mini_PLE_t1_s50/best.pt",
+        "checkpoint_sha256": "f92a34c03ab33781d8f6e189cd66c6ded4a43d69a185a745c11c99a85b97fca0",
+        "fit_completion_sha256": "f001709162ae0de19e40ed67dde591e172828c58107369945fcbafafbeee1e0e"
+      },
+      "probe": false,
+      "optimizer_updates": 0,
+      "parameters_updated": false,
+      "dev_replay_max_drift": 0.0,
+      "clean_test_replay_max_drift": 0.0,
+      "results": [
+        {
+          "condition": "lab_drop25",
+          "AP": 0.38471585356970406,
+          "AUROC": 0.8141297287558962,
+          "seconds": 158.4862263579853,
+          "rows": 26229
+        },
+        {
+          "condition": "lab_drop50",
+          "AP": 0.37571171248796387,
+          "AUROC": 0.8042756680131016,
+          "seconds": 157.20772606390528,
+          "rows": 26229
+        },
+        {
+          "condition": "lab_delay2h",
+          "AP": 0.38513227784463866,
+          "AUROC": 0.8159934860084448,
+          "seconds": 157.07222695392556,
+          "rows": 26229
+        },
+        {
+          "condition": "lab_delay6h",
+          "AP": 0.37526734371872683,
+          "AUROC": 0.8071364165775315,
+          "seconds": 155.9475817088969,
+          "rows": 26229
+        }
+      ],
+      "timing": {
+        "device": "NVIDIA RTX 5880 Ada Generation",
+        "precision": "FP32; TF32 disabled",
+        "threads": 4,
+        "warmup": 10,
+        "rows": [
+          {
+            "batch": 1,
+            "resident_model": {
+              "median_ms": 1.0222330456599593,
+              "p95_ms": 1.1117779766209421,
+              "records_per_second": 978.250511706354,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 161.7942120647058,
+              "p95_ms": 169.54143131151795,
+              "records_per_second": 6.18069081235164,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 457.34375,
+            "peak_reserved_mib": 1900.0
+          },
+          {
+            "batch": 8,
+            "resident_model": {
+              "median_ms": 2.8951725689694285,
+              "p95_ms": 2.9735359130427237,
+              "records_per_second": 2763.2204331252337,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 174.81322144158185,
+              "p95_ms": 177.16215961845592,
+              "records_per_second": 45.76312897862475,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 723.642578125,
+            "peak_reserved_mib": 1900.0
+          },
+          {
+            "batch": 32,
+            "resident_model": {
+              "median_ms": 9.724911535158753,
+              "p95_ms": 9.753495245240629,
+              "records_per_second": 3290.5183645434176,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 185.54626451805234,
+              "p95_ms": 190.67837846232578,
+              "records_per_second": 172.46372533081433,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 1637.380859375,
+            "peak_reserved_mib": 1900.0
+          }
+        ],
+        "parameters": 98836064,
+        "scope": "warm dense-feature inference; source-table scan and evidence extraction measured separately; no training updates"
+      },
+      "artifacts": {
+        "lab_drop25.npz": "572d7b0954125509568ebd3369ef1e73f687083c3e626db923a3f50e14d00adf",
+        "lab_drop50.npz": "baa82698acf99052fdeeac9a122c89258d7ae38333213dc356f866d09808de0b",
+        "lab_delay2h.npz": "81a68c929935847c5902cfc3a3fabcc6ef638545e9b338ee98c04d6498b021cc",
+        "lab_delay6h.npz": "72ca29cc609ca877dd88bf00d5b989793a6d969a3d9b8c21977672c90f471d56"
+      },
+      "source_sha256": "f292af7539b1180d6abb6486da52aa231062dee23798403b6eebbea972f4ac8c",
+      "checkpoint_hash_unchanged": true,
+      "test_loaded": true
+    }
+  ],
+  "gpu_lease": {
+    "gpu": 3,
+    "policy": {
+      "preferred": true,
+      "lease": null,
+      "observed": {
+        "index": 3,
+        "used_mib": 2,
+        "free_mib": 48510,
+        "utilization": 0,
+        "processes": [],
+        "fully_idle": true
+      },
+      "time": 1793220322.1499813
+    },
+    "main_groups_complete": true,
+    "same_gpu_for_all_twelve_checkpoints": true
+  },
+  "paired_statistics_pending": true
+}

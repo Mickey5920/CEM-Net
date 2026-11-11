@@ -1,0 +1,11 @@
+{
+  "complete": true,
+  "rows": 2048,
+  "seconds": 2.5007753372192383,
+  "max_probability_drift": 3.5762786865234375e-07,
+  "projected_full_condition_seconds": 32.0277521093376,
+  "device": "CPU",
+  "threads": 4,
+  "batch": 256,
+  "optimizer_updates": 0
+}

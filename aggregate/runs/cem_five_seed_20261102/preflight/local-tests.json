@@ -1,0 +1,13 @@
+{
+  "complete": true,
+  "checks": [
+    "exactly_30_fits_and_nine_existing_Table_VI_contrasts",
+    "mimiciii_derived_sources_compile_and_original_protocols_identical",
+    "mimic_derived_sources_compile_and_original_protocols_identical",
+    "eicu_derived_sources_compile_and_original_protocols_identical",
+    "raw_gain_resets_original_patience",
+    "EMA_AP_cannot_change_budget",
+    "stopping_only_at_original_boundaries",
+    "eICU_fixed_256"
+  ]
+}

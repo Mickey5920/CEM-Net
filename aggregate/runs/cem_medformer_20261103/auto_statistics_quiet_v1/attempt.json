@@ -1,0 +1,22 @@
+{
+  "pid": 33864,
+  "parent_pid": 37564,
+  "started_at": 1793725232.7489216,
+  "source_hashes": {
+    "scripts/continue_cem_medformer.py": "4b4a96adf69c2c065f4054ce52cb75a981b1ff01bff6544edf9cb6a58fe33204",
+    "scripts/collect_cem_medformer.py": "dbcf1a936fae67b039bfed1f5e907974baa4c691ec57af4845620ccea3c25650",
+    "scripts/cem_medformer_statistics.py": "c61fb0837c022c6a018a9341db578809a898f1bf6e9a6cc2c68cbdc55ea5c711",
+    "scripts/launch_cem_medformer.py": "25f0f1706e64773ae2a3464427cb627d2f8ad87609d123db54cabf6ef8b66c4e",
+    "scripts/cem_medformer_common.py": "59a676656d87212934ddfdf2acd9ad60476a475e77ec0d09a2e133fc29d85685",
+    "scripts/collect_cem_replacements.py": "b1a3a3a3c79852317744306e33d12e8044af8b2902d6112fb669f004c83a705b",
+    "scripts/cem_replacement_statistics.py": "cd51cf7bc83ff85ac8604d3acc753c4bf4b6db02853d75d11284c0797293b12d",
+    "scripts/cem_icde72_statistics.py": "dbf2650ba02d43591b84744c8d50dbd58048be175c237be1e394dd889580148e",
+    "scripts/cem_icde72_significance.py": "c59cdc26825de406baf42d5b8fc0f8d636176efccc48f3b108c8ead05ec5e34c",
+    "scripts/launch_ema_cross.py": "27f1797c685447c9b9d90a284c9f52b779ecc34d08c2f387093aebd990dacdcd"
+  },
+  "interval_seconds": 600,
+  "automatic_retries": false,
+  "only_new_training_release": "Two verified 20-step paths per database",
+  "independent_of_CNN": true,
+  "statistics_wait_for_existing_CNN_CPU_writers": true
+}

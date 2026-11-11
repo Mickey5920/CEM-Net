@@ -1,0 +1,86 @@
+{
+  "database": "eicu",
+  "stage": "hospital",
+  "stage_order": 3,
+  "source": "/home/data/lxm/TRACEHR/work/cem_core_five_seed_20261107/eicu/hospital_v1",
+  "output": "/home/data/lxm/TRACEHR/runs/cem_core_five_seed_20261107/eicu/hospital_v1/screen",
+  "source_manifest_sha256": "256fa2a2bfddeadcf294b1271f5070dbe5b3291687339a2594497744146e196c",
+  "matrix": [
+    {
+      "variant": "CEM_hospital",
+      "seed": 51,
+      "endpoint": 0
+    },
+    {
+      "variant": "CEM_hospital",
+      "seed": 52,
+      "endpoint": 0
+    },
+    {
+      "variant": "TabM_mini_PLE_hospital",
+      "seed": 51,
+      "endpoint": 0
+    },
+    {
+      "variant": "TabM_mini_PLE_hospital",
+      "seed": 52,
+      "endpoint": 0
+    },
+    {
+      "variant": "LightGBM_hospital",
+      "seed": 51,
+      "endpoint": 0
+    },
+    {
+      "variant": "LightGBM_hospital",
+      "seed": 52,
+      "endpoint": 0
+    },
+    {
+      "variant": "CEM_hospital",
+      "seed": 51,
+      "endpoint": 1
+    },
+    {
+      "variant": "CEM_hospital",
+      "seed": 52,
+      "endpoint": 1
+    },
+    {
+      "variant": "TabM_mini_PLE_hospital",
+      "seed": 51,
+      "endpoint": 1
+    },
+    {
+      "variant": "TabM_mini_PLE_hospital",
+      "seed": 52,
+      "endpoint": 1
+    },
+    {
+      "variant": "LightGBM_hospital",
+      "seed": 51,
+      "endpoint": 1
+    },
+    {
+      "variant": "LightGBM_hospital",
+      "seed": 52,
+      "endpoint": 1
+    }
+  ],
+  "variants": [
+    "CEM_hospital",
+    "LightGBM_hospital",
+    "TabM_mini_PLE_hospital"
+  ],
+  "entries": {
+    "tree": "scripts/cem_core_five_seed_entry.py",
+    "cem": "scripts/cem_core_five_seed_entry.py",
+    "tabular": "scripts/cem_core_five_seed_entry.py"
+  },
+  "expected_gib": 20.0,
+  "retention_multiplier": 13,
+  "min_available_ram_gib": 24,
+  "cpu_min_available_ram_gib": 24,
+  "probe_gpu_mib": 24576,
+  "probe_requirement_basis": "conservative headroom above archived measurements; bounded original-path probe before formal fits"
+}

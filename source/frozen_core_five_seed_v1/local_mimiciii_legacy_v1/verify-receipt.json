@@ -1,0 +1,163 @@
+{
+  "complete": true,
+  "formal_fits": 12,
+  "test_evaluations": 12,
+  "initials": {
+    "CEM_noEMA:51:0": {
+      "initial_weights_sha256": "407793bca93dc033a3e8e813ee6229329d9e802471507d1de12f3583a2acd8aa",
+      "parameters": 12902328,
+      "tensor_hashes": {
+        "base.input_members": "05e64fc1040098fe9fa1308712cb6f667c00bc77d35cee6eb4048bf017801b1f",
+        "base.numerical.frequency": "2e2581e93bae008b839acbc7267ae0ab70b7965edbd190ca5c54e3d87476ac61",
+        "base.numerical.phase": "1f2e598ed75ec4a3a27ffa05a3325de57e40d7100b5e82d82a6fcbcc869f4397",
+        "base.numerical.weight": "4b79b2d88048b461f135cfe70cb7e2308885fc912421e446fad9765d1261ed29",
+        "base.numerical.bias": "48533e540d90e4ab41f6c7b64780c1ac5d062282a8ac87b8e353c474725f5f70",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.0.scale": "92fb85ffe6fd8757cac6a2d8031d470f072204a2f961447bb05066aa7131ce08",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.1.weight": "176293b6df29dc95c0f75eb2393599229b9ecd7bb62b9092454c105b04443e30",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.2.bias": "3933debc6ed9d5a9d520d9b86cafa76590793921ec98596d3d507bdec17d72cd",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.3.weight": "893a106828fbdb9521e1d868c985aab7ad2ae2f606edc55329265a5e7676006c",
+        "base.net.tfms.1.tfms.0.tfms.1.tfms.0.weight": "1f7d42e26d83ed4776435d05d4c1e05f53f21179e136ddfae0f32ddce1651013",
+        "base.net.tfms.1.tfms.0.tfms.1.tfms.1.bias": "a119f9f7dc51f38ff181b2a5e4a8d860a759194fd86b7cb9b4880badccf50cdd",
+        "base.net.tfms.1.tfms.0.tfms.1.tfms.2.weight": "893a106828fbdb9521e1d868c985aab7ad2ae2f606edc55329265a5e7676006c",
+        "base.net.tfms.1.tfms.0.tfms.2.tfms.0.weight": "04cf5cd58913861f5cf53bddea8974771afc09af8a99914897f33b6d4bb7c292",
+        "base.net.tfms.1.tfms.0.tfms.2.tfms.1.bias": "fb2ece52533596bce84424387cd08f706b4ffbee52653a02a32f3a46f4718d17",
+        "base.net.tfms.1.tfms.0.tfms.2.tfms.2.weight": "893a106828fbdb9521e1d868c985aab7ad2ae2f606edc55329265a5e7676006c",
+        "base.net.tfms.1.tfms.0.tfms.3.tfms.0.weight": "08cd39aaac87b77bf71ed1d3840ae5fd8ad064896928f4318aa6648af60859d6",
+        "base.net.tfms.1.tfms.0.tfms.3.tfms.1.bias": "d73e897a36b25a16c132b17f0e8fba76bd23db6977566a54dd152ac7a2c2baae"
+      },
+      "buffer_hashes": {
+        "base.feature_map": "4714a853e8cd3b87caa0caff4ddb93e373b6dcf586125344de78eef0523d973f",
+        "base.encoded_center": "9036914db6e0df8d8037f8676465fea4ccb5cad8b2793ec0935831a080fb63f7",
+        "base.numerical.center": "f1e76e9c6397ad5320a943b7918811a10de6f2d20188a2de1ab41a50d01adbb0",
+        "base.numerical.factor": "8b694f8cc21604dac4a2e6ec367f0b9507208814c9599f50e116d9ec082baf43",
+        "base.numerical.binary": "3ce4aeb911a9cc740f5f17ea1b135a0f41f0f65d08ed1c3822c6e1321dc328c5",
+        "base.numerical.numeric_indices": "9b75fce053bf6300f47645683e67cf27be9269f92c00dc99525d73ad3d75a821",
+        "base.numerical.passthrough": "3ce4aeb911a9cc740f5f17ea1b135a0f41f0f65d08ed1c3822c6e1321dc328c5"
+      }
+    },
+    "CEM_noEMA:52:0": {
+      "initial_weights_sha256": "f6a1f284b74a11dde797c0cbef4d9802ec59277b2a70cfaf2e7733623488d045",
+      "parameters": 12902328,
+      "tensor_hashes": {
+        "base.input_members": "7f3868014f562384d0ea43ee5d5b501016ea538540f308ddfe2b395a2a2859dd",
+        "base.numerical.frequency": "e4adcd242391bb0b9be99159210b206e874d453e744a9415d11a88a4a919e2d6",
+        "base.numerical.phase": "58fac4f9f7148cfdc1b3c34c4d1ff2cbe73d93bd1759fb6110227c95cc4aa716",
+        "base.numerical.weight": "1baf76e745dd4d2f56b86933c1dc7a9a38d18b4cf0ecbace7d5a37c3df3fa150",
+        "base.numerical.bias": "d7548438c6e8bb96a356fca8031d9f785edc380a1dce270c055f8a0fc53b883e",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.0.scale": "92fb85ffe6fd8757cac6a2d8031d470f072204a2f961447bb05066aa7131ce08",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.1.weight": "ce9012151911c6f44fbf4878a57b1870543f62f9e9d5d0402a7836ed3e71deb1",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.2.bias": "e2f935596c5e1e4c6bc0d2f86fc8acff31a5eedc64f041f395289e3eb8a07b7b",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.3.weight": "893a106828fbdb9521e1d868c985aab7ad2ae2f606edc55329265a5e7676006c",
+        "base.net.tfms.1.tfms.0.tfms.1.tfms.0.weight": "9cbfa5f7c71521781363e83db9eaf82578b7a9440d9fe95b62f413dc247dd8b2",
+        "base.net.tfms.1.tfms.0.tfms.1.tfms.1.bias": "d041657eb85f7b6a03beeb4b212a2fea1d1962390980762c98c9ae80055b18e3",
+        "base.net.tfms.1.tfms.0.tfms.1.tfms.2.weight": "893a106828fbdb9521e1d868c985aab7ad2ae2f606edc55329265a5e7676006c",
+        "base.net.tfms.1.tfms.0.tfms.2.tfms.0.weight": "ba958fe854aad840d9cdf50f73fe4e78cacc6d7b1f00adb511e4304e213fce9a",
+        "base.net.tfms.1.tfms.0.tfms.2.tfms.1.bias": "8d9a35ed72100b6f7ddc77a140ac8f421ecc1b657f2e38aa2da8d683cb89ecf1",
+        "base.net.tfms.1.tfms.0.tfms.2.tfms.2.weight": "893a106828fbdb9521e1d868c985aab7ad2ae2f606edc55329265a5e7676006c",
+        "base.net.tfms.1.tfms.0.tfms.3.tfms.0.weight": "3fe0bcde9701ba3b7be19d437ce8746007e317e7beadd2eb7d34dd8ac10775c6",
+        "base.net.tfms.1.tfms.0.tfms.3.tfms.1.bias": "df8e9823047d843e2525d50d0b50e9ad1268fa317bbcdc3770daf83e58109290"
+      },
+      "buffer_hashes": {
+        "base.feature_map": "4714a853e8cd3b87caa0caff4ddb93e373b6dcf586125344de78eef0523d973f",
+        "base.encoded_center": "d1cef07fa763ebfa8effa9d2a7cef7c6ccca2c06f4f09734c436e2581d8ddfd9",
+        "base.numerical.center": "f1e76e9c6397ad5320a943b7918811a10de6f2d20188a2de1ab41a50d01adbb0",
+        "base.numerical.factor": "8b694f8cc21604dac4a2e6ec367f0b9507208814c9599f50e116d9ec082baf43",
+        "base.numerical.binary": "3ce4aeb911a9cc740f5f17ea1b135a0f41f0f65d08ed1c3822c6e1321dc328c5",
+        "base.numerical.numeric_indices": "9b75fce053bf6300f47645683e67cf27be9269f92c00dc99525d73ad3d75a821",
+        "base.numerical.passthrough": "3ce4aeb911a9cc740f5f17ea1b135a0f41f0f65d08ed1c3822c6e1321dc328c5"
+      }
+    },
+    "CEM_noEMA:51:1": {
+      "initial_weights_sha256": "407793bca93dc033a3e8e813ee6229329d9e802471507d1de12f3583a2acd8aa",
+      "parameters": 12902328,
+      "tensor_hashes": {
+        "base.input_members": "05e64fc1040098fe9fa1308712cb6f667c00bc77d35cee6eb4048bf017801b1f",
+        "base.numerical.frequency": "2e2581e93bae008b839acbc7267ae0ab70b7965edbd190ca5c54e3d87476ac61",
+        "base.numerical.phase": "1f2e598ed75ec4a3a27ffa05a3325de57e40d7100b5e82d82a6fcbcc869f4397",
+        "base.numerical.weight": "4b79b2d88048b461f135cfe70cb7e2308885fc912421e446fad9765d1261ed29",
+        "base.numerical.bias": "48533e540d90e4ab41f6c7b64780c1ac5d062282a8ac87b8e353c474725f5f70",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.0.scale": "92fb85ffe6fd8757cac6a2d8031d470f072204a2f961447bb05066aa7131ce08",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.1.weight": "176293b6df29dc95c0f75eb2393599229b9ecd7bb62b9092454c105b04443e30",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.2.bias": "3933debc6ed9d5a9d520d9b86cafa76590793921ec98596d3d507bdec17d72cd",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.3.weight": "893a106828fbdb9521e1d868c985aab7ad2ae2f606edc55329265a5e7676006c",
+        "base.net.tfms.1.tfms.0.tfms.1.tfms.0.weight": "1f7d42e26d83ed4776435d05d4c1e05f53f21179e136ddfae0f32ddce1651013",
+        "base.net.tfms.1.tfms.0.tfms.1.tfms.1.bias": "a119f9f7dc51f38ff181b2a5e4a8d860a759194fd86b7cb9b4880badccf50cdd",
+        "base.net.tfms.1.tfms.0.tfms.1.tfms.2.weight": "893a106828fbdb9521e1d868c985aab7ad2ae2f606edc55329265a5e7676006c",
+        "base.net.tfms.1.tfms.0.tfms.2.tfms.0.weight": "04cf5cd58913861f5cf53bddea8974771afc09af8a99914897f33b6d4bb7c292",
+        "base.net.tfms.1.tfms.0.tfms.2.tfms.1.bias": "fb2ece52533596bce84424387cd08f706b4ffbee52653a02a32f3a46f4718d17",
+        "base.net.tfms.1.tfms.0.tfms.2.tfms.2.weight": "893a106828fbdb9521e1d868c985aab7ad2ae2f606edc55329265a5e7676006c",
+        "base.net.tfms.1.tfms.0.tfms.3.tfms.0.weight": "08cd39aaac87b77bf71ed1d3840ae5fd8ad064896928f4318aa6648af60859d6",
+        "base.net.tfms.1.tfms.0.tfms.3.tfms.1.bias": "d73e897a36b25a16c132b17f0e8fba76bd23db6977566a54dd152ac7a2c2baae"
+      },
+      "buffer_hashes": {
+        "base.feature_map": "4714a853e8cd3b87caa0caff4ddb93e373b6dcf586125344de78eef0523d973f",
+        "base.encoded_center": "9036914db6e0df8d8037f8676465fea4ccb5cad8b2793ec0935831a080fb63f7",
+        "base.numerical.center": "f1e76e9c6397ad5320a943b7918811a10de6f2d20188a2de1ab41a50d01adbb0",
+        "base.numerical.factor": "8b694f8cc21604dac4a2e6ec367f0b9507208814c9599f50e116d9ec082baf43",
+        "base.numerical.binary": "3ce4aeb911a9cc740f5f17ea1b135a0f41f0f65d08ed1c3822c6e1321dc328c5",
+        "base.numerical.numeric_indices": "9b75fce053bf6300f47645683e67cf27be9269f92c00dc99525d73ad3d75a821",
+        "base.numerical.passthrough": "3ce4aeb911a9cc740f5f17ea1b135a0f41f0f65d08ed1c3822c6e1321dc328c5"
+      }
+    },
+    "CEM_noEMA:52:1": {
+      "initial_weights_sha256": "f6a1f284b74a11dde797c0cbef4d9802ec59277b2a70cfaf2e7733623488d045",
+      "parameters": 12902328,
+      "tensor_hashes": {
+        "base.input_members": "7f3868014f562384d0ea43ee5d5b501016ea538540f308ddfe2b395a2a2859dd",
+        "base.numerical.frequency": "e4adcd242391bb0b9be99159210b206e874d453e744a9415d11a88a4a919e2d6",
+        "base.numerical.phase": "58fac4f9f7148cfdc1b3c34c4d1ff2cbe73d93bd1759fb6110227c95cc4aa716",
+        "base.numerical.weight": "1baf76e745dd4d2f56b86933c1dc7a9a38d18b4cf0ecbace7d5a37c3df3fa150",
+        "base.numerical.bias": "d7548438c6e8bb96a356fca8031d9f785edc380a1dce270c055f8a0fc53b883e",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.0.scale": "92fb85ffe6fd8757cac6a2d8031d470f072204a2f961447bb05066aa7131ce08",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.1.weight": "ce9012151911c6f44fbf4878a57b1870543f62f9e9d5d0402a7836ed3e71deb1",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.2.bias": "e2f935596c5e1e4c6bc0d2f86fc8acff31a5eedc64f041f395289e3eb8a07b7b",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.3.weight": "893a106828fbdb9521e1d868c985aab7ad2ae2f606edc55329265a5e7676006c",
+        "base.net.tfms.1.tfms.0.tfms.1.tfms.0.weight": "9cbfa5f7c71521781363e83db9eaf82578b7a9440d9fe95b62f413dc247dd8b2",
+        "base.net.tfms.1.tfms.0.tfms.1.tfms.1.bias": "d041657eb85f7b6a03beeb4b212a2fea1d1962390980762c98c9ae80055b18e3",
+        "base.net.tfms.1.tfms.0.tfms.1.tfms.2.weight": "893a106828fbdb9521e1d868c985aab7ad2ae2f606edc55329265a5e7676006c",
+        "base.net.tfms.1.tfms.0.tfms.2.tfms.0.weight": "ba958fe854aad840d9cdf50f73fe4e78cacc6d7b1f00adb511e4304e213fce9a",
+        "base.net.tfms.1.tfms.0.tfms.2.tfms.1.bias": "8d9a35ed72100b6f7ddc77a140ac8f421ecc1b657f2e38aa2da8d683cb89ecf1",
+        "base.net.tfms.1.tfms.0.tfms.2.tfms.2.weight": "893a106828fbdb9521e1d868c985aab7ad2ae2f606edc55329265a5e7676006c",
+        "base.net.tfms.1.tfms.0.tfms.3.tfms.0.weight": "3fe0bcde9701ba3b7be19d437ce8746007e317e7beadd2eb7d34dd8ac10775c6",
+        "base.net.tfms.1.tfms.0.tfms.3.tfms.1.bias": "df8e9823047d843e2525d50d0b50e9ad1268fa317bbcdc3770daf83e58109290"
+      },
+      "buffer_hashes": {
+        "base.feature_map": "4714a853e8cd3b87caa0caff4ddb93e373b6dcf586125344de78eef0523d973f",
+        "base.encoded_center": "d1cef07fa763ebfa8effa9d2a7cef7c6ccca2c06f4f09734c436e2581d8ddfd9",
+        "base.numerical.center": "f1e76e9c6397ad5320a943b7918811a10de6f2d20188a2de1ab41a50d01adbb0",
+        "base.numerical.factor": "8b694f8cc21604dac4a2e6ec367f0b9507208814c9599f50e116d9ec082baf43",
+        "base.numerical.binary": "3ce4aeb911a9cc740f5f17ea1b135a0f41f0f65d08ed1c3822c6e1321dc328c5",
+        "base.numerical.numeric_indices": "9b75fce053bf6300f47645683e67cf27be9269f92c00dc99525d73ad3d75a821",
+        "base.numerical.passthrough": "3ce4aeb911a9cc740f5f17ea1b135a0f41f0f65d08ed1c3822c6e1321dc328c5"
+      }
+    }
+  },
+  "archived_seed48": {
+    "CEM_noEMA:0": {
+      "initial_exact": true,
+      "protocol_exact": true
+    },
+    "CEM_noEMA:1": {
+      "initial_exact": true,
+      "protocol_exact": true
+    },
+    "TabM:0": {
+      "initial_exact": true,
+      "parameters_exact": true
+    },
+    "TabM:1": {
+      "initial_exact": true,
+      "parameters_exact": true
+    }
+  },
+  "test_loaded": false,
+  "cpu_checks": [
+    "other_gpu_requires_900_continuous_seconds",
+    "external_activity_resets_lease",
+    "observation_gap_resets_timer",
+    "preferred_pool_not_blocked_by_waiting_idle_timer"
+  ],
+  "original_preprocessing_preserved": true,
+  "source_manifest_sha256": "b7f9ac18ee331de4e9cae15b146e1ce37cb231a8338886667cf2651717ba2d7f",
+  "verified_at": 1794058708.1370902
+}

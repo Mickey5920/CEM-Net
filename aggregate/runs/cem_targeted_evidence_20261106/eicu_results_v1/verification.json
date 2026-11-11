@@ -1,0 +1,99 @@
+{
+  "complete": true,
+  "source_manifest_sha256": "14eda6fc39bf3b3c061dd02e7e6acca20150c68962abecd68888b88046571bed",
+  "formal_fits": 17,
+  "reused_basic_fits": [
+    {
+      "seed": 48,
+      "endpoint": 0,
+      "fit": "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu/basic_v2/screen/jobs/CEM_basic_t0_s48",
+      "prediction": "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu/basic_v2/screen/test/test_CEM_basic_t0_s48/predictions_test.npz",
+      "prediction_sha256": "5906bb060aad920101d7f787f117dc386b5702fca670227889764242a0e39543",
+      "checkpoint_sha256": "8548d09598478a1838005cce0b5d199062cf724c4f23c7da2703cfc4e72a29a5",
+      "cpu_replay_max_probability_drift": 1.7881393432617188e-07,
+      "initial_parameters_identical": true,
+      "original_epoch_budget": 256
+    },
+    {
+      "seed": 49,
+      "endpoint": 0,
+      "fit": "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu/basic_v2/screen/jobs/CEM_basic_t0_s49",
+      "prediction": "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu/basic_v2/screen/test/test_CEM_basic_t0_s49/predictions_test.npz",
+      "prediction_sha256": "1e6acb2d5756c2e2b3cc9ea767c4810615e618f19999393643bce20b80cf7cdb",
+      "checkpoint_sha256": "9cae727ed007edf5b3a44f60de3003103580a0a864b053dd34e95648635c17ac",
+      "cpu_replay_max_probability_drift": 1.1920928955078125e-07,
+      "initial_parameters_identical": true,
+      "original_epoch_budget": 256
+    },
+    {
+      "seed": 50,
+      "endpoint": 0,
+      "fit": "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu/basic_v2/screen/jobs/CEM_basic_t0_s50",
+      "prediction": "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu/basic_v2/screen/test/test_CEM_basic_t0_s50/predictions_test.npz",
+      "prediction_sha256": "720ac076605a1bc8de9a44ba922ec40b979a5f38b0862cb69e91beeb3d073ce7",
+      "checkpoint_sha256": "224dfa0186e55a7c2a0df4442e2ef0c03e7172fc49517752081d7c2222c420e0",
+      "cpu_replay_max_probability_drift": 1.1920928955078125e-07,
+      "initial_parameters_identical": true,
+      "original_epoch_budget": 256
+    }
+  ],
+  "original_protected": {
+    "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu/basic_v2/screen/jobs/CEM_basic_t0_s48/completion.json": "09c1383f0805009216d1865d4e85ca3e2d5309a8dad62482f33b88de28d1dedc",
+    "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu/basic_v2/screen/jobs/CEM_basic_t0_s48/run_manifest.json": "1eff2295317b60a1edca14e63eb7f834edbcaf8ec3854d8f964da57a4107285e",
+    "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu/basic_v2/screen/test/test_CEM_basic_t0_s48/completion.json": "027edc2e0a63cf12166fb679e50e947b1da8bb4e8953b7cf510b91daf905f271",
+    "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu/basic_v2/screen/jobs/CEM_basic_t0_s48/best.pt": "8548d09598478a1838005cce0b5d199062cf724c4f23c7da2703cfc4e72a29a5",
+    "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu/basic_v2/screen/test/test_CEM_basic_t0_s48/predictions_test.npz": "5906bb060aad920101d7f787f117dc386b5702fca670227889764242a0e39543",
+    "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu/basic_v2/screen/jobs/CEM_basic_t0_s49/completion.json": "c86b1cb7d3b9bca2312ed23cef71c99502f7c92ec6fb0cd54216f94ef683bc6c",
+    "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu/basic_v2/screen/jobs/CEM_basic_t0_s49/run_manifest.json": "9da95100323983a4f73e55651fc1b0223ae20dc32e3cd44cdefe3c7667db426f",
+    "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu/basic_v2/screen/test/test_CEM_basic_t0_s49/completion.json": "7af4a84f2447a69ea6537c4a760395baf0cea6f4d12fc0454f9c1e6b7af02719",
+    "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu/basic_v2/screen/jobs/CEM_basic_t0_s49/best.pt": "9cae727ed007edf5b3a44f60de3003103580a0a864b053dd34e95648635c17ac",
+    "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu/basic_v2/screen/test/test_CEM_basic_t0_s49/predictions_test.npz": "1e6acb2d5756c2e2b3cc9ea767c4810615e618f19999393643bce20b80cf7cdb",
+    "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu/basic_v2/screen/jobs/CEM_basic_t0_s50/completion.json": "3796ef6bb6d9ce8628ca3c9f49e4372ef31817299a37f431c99429197ec23161",
+    "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu/basic_v2/screen/jobs/CEM_basic_t0_s50/run_manifest.json": "9c7f0e25f43984a6836ff8bb9da885fea612a7be899f9d2b5a6472d4980a2e89",
+    "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu/basic_v2/screen/test/test_CEM_basic_t0_s50/completion.json": "fb70ef5f25268cd88afa7fc91ba790bd72858dd9a36ae83b3c10a22aed266d64",
+    "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu/basic_v2/screen/jobs/CEM_basic_t0_s50/best.pt": "224dfa0186e55a7c2a0df4442e2ef0c03e7172fc49517752081d7c2222c420e0",
+    "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu/basic_v2/screen/test/test_CEM_basic_t0_s50/predictions_test.npz": "720ac076605a1bc8de9a44ba922ec40b979a5f38b0862cb69e91beeb3d073ce7"
+  },
+  "new_paths": {
+    "CEM_basic:0": {
+      "parameters": 17124404,
+      "complete": true,
+      "removed_input_probability_invariance_exact": true,
+      "removed_input_gradient_exactly_zero": true,
+      "retained_input_gradient_nonzero": true,
+      "removed_columns": 9185,
+      "optimizer_updates": 0
+    },
+    "matched_basic:0": {
+      "parameters": 17067452,
+      "complete": true,
+      "removed_input_probability_invariance_exact": true,
+      "removed_input_gradient_exactly_zero": true,
+      "retained_input_gradient_nonzero": true,
+      "removed_columns": 9185,
+      "optimizer_updates": 0
+    },
+    "observation_weighted:0": {
+      "parameters": 17124404,
+      "original_parameter_count": true,
+      "other_coordinates_and_transforms_unchanged": true
+    },
+    "observation_weighted:1": {
+      "parameters": 17124404,
+      "original_parameter_count": true,
+      "other_coordinates_and_transforms_unchanged": true
+    }
+  },
+  "overlay_sha256": "346e9696605645ffa7d3387de49e03a807c0050f6d08ec2b3da316568354ae93",
+  "overlay_bytes": 255177485,
+  "unit_checks": [
+    "same_coverage",
+    "constant_path_equality",
+    "empty_and_zero_coverage",
+    "distinct_measures",
+    "same_value_insertion_discriminates",
+    "discrepancy_known_values"
+  ],
+  "new_training_updates": 0,
+  "original_results_unchanged": true
+}

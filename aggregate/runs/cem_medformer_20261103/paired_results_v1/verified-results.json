@@ -1,0 +1,3258 @@
+{
+  "complete": true,
+  "verified_new_fits": 30,
+  "verified_fixed_tests": 30,
+  "seeds": [
+    48,
+    49,
+    50,
+    51,
+    52
+  ],
+  "replicates": 20000,
+  "deferred_methods": [
+    "MedSpaformer"
+  ],
+  "family_count": 6,
+  "active_comparisons_per_split": 6,
+  "inference": "Five paired fixed fits; 20000 common patient-cluster draws. Six fixed CEM-Net versus Medformer comparisons per split form an independent family; all previous families remain unchanged. Centered Bootstrap p is approximate, never zero; exact five-seed signed-rank is supplemental (minimum two-sided p=.0625). Intervals condition on fitted models and do not cover training-population or historical selection uncertainty. No new calibration or reselection of prior secondary baselines.",
+  "paired": [
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "candidate": "CEM-Net",
+      "baseline": "Medformer",
+      "endpoint": 0,
+      "values": [
+        0.09708778979710464,
+        0.09854277911484421,
+        0.10314737276437813,
+        0.09474674780433096,
+        0.09244295445053125
+      ],
+      "mean": 0.09719352878623784,
+      "sample_SD": 0.004056926453351111,
+      "family_count": 6,
+      "ci95": [
+        0.06406361686167499,
+        0.13055658173850207
+      ],
+      "adjusted_ci": [
+        0.05213435841253868,
+        0.14219317845675095
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.0002999850007499625,
+      "wilcoxon": {
+        "p_two_sided": 0.0625,
+        "nonzero_pairs": 5,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm": 0.0002999850007499625
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "candidate": "CEM-Net",
+      "baseline": "Medformer",
+      "endpoint": 1,
+      "values": [
+        0.02145707123318119,
+        0.01463810298105328,
+        0.01632135972908555,
+        0.024764447728859773,
+        0.022031053668923217
+      ],
+      "mean": 0.019842407068220602,
+      "sample_SD": 0.004216229179299223,
+      "family_count": 6,
+      "ci95": [
+        -0.0009310962511437978,
+        0.03902200983050812
+      ],
+      "adjusted_ci": [
+        -0.008086910228335345,
+        0.04559703562471039
+      ],
+      "p_bootstrap_centered": 0.05344732763361832,
+      "p_bonferroni": 0.32068396580170994,
+      "wilcoxon": {
+        "p_two_sided": 0.0625,
+        "nonzero_pairs": 5,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm": 0.05344732763361832
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "candidate": "CEM-Net",
+      "baseline": "Medformer",
+      "endpoint": 0,
+      "values": [
+        0.06165214350625714,
+        0.05087184078754414,
+        0.06848570382498914,
+        0.055696046848063174,
+        0.06173993822835755
+      ],
+      "mean": 0.05968913463904223,
+      "sample_SD": 0.006691940107098906,
+      "family_count": 6,
+      "ci95": [
+        0.0346889777033215,
+        0.08443860479645138
+      ],
+      "adjusted_ci": [
+        0.02579388510282375,
+        0.09286292527091917
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.0002999850007499625,
+      "wilcoxon": {
+        "p_two_sided": 0.0625,
+        "nonzero_pairs": 5,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm": 0.0002999850007499625
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "candidate": "CEM-Net",
+      "baseline": "Medformer",
+      "endpoint": 1,
+      "values": [
+        0.0319495473603737,
+        0.03295551663259144,
+        0.02952809878543572,
+        0.034383689350337865,
+        0.039410486939490785
+      ],
+      "mean": 0.0336454678136459,
+      "sample_SD": 0.0036771362188911037,
+      "family_count": 6,
+      "ci95": [
+        0.018985560801668883,
+        0.04810549424963209
+      ],
+      "adjusted_ci": [
+        0.013878278444975203,
+        0.05321738180596846
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.0002999850007499625,
+      "wilcoxon": {
+        "p_two_sided": 0.0625,
+        "nonzero_pairs": 5,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm": 0.0002999850007499625
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "candidate": "CEM-Net",
+      "baseline": "Medformer",
+      "endpoint": 0,
+      "values": [
+        0.08219224541882592,
+        0.08749260936968845,
+        0.081492674198204,
+        0.08710259929215897,
+        0.08893159284771873
+      ],
+      "mean": 0.08544234422531921,
+      "sample_SD": 0.0033651866803032222,
+      "family_count": 6,
+      "ci95": [
+        0.06424646723990565,
+        0.10644860441076148
+      ],
+      "adjusted_ci": [
+        0.05704804201405941,
+        0.11347643679360753
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.0002999850007499625,
+      "wilcoxon": {
+        "p_two_sided": 0.0625,
+        "nonzero_pairs": 5,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm": 0.0002999850007499625
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "candidate": "CEM-Net",
+      "baseline": "Medformer",
+      "endpoint": 1,
+      "values": [
+        0.0588452352198397,
+        0.058577294406482794,
+        0.05923731723779835,
+        0.06139990122390504,
+        0.05996313740218384
+      ],
+      "mean": 0.05960457709804194,
+      "sample_SD": 0.0011312099528742767,
+      "family_count": 6,
+      "ci95": [
+        0.043493380985173136,
+        0.07564228708994825
+      ],
+      "adjusted_ci": [
+        0.0383544950689505,
+        0.08096328564763379
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.0002999850007499625,
+      "wilcoxon": {
+        "p_two_sided": 0.0625,
+        "nonzero_pairs": 5,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm": 0.0002999850007499625
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "candidate": "CEM-Net",
+      "baseline": "Medformer",
+      "endpoint": 0,
+      "values": [
+        0.07975543102870541,
+        0.08186302542969814,
+        0.07755774826177775,
+        0.07709269320876055,
+        0.07679754041386622
+      ],
+      "mean": 0.07861328766856161,
+      "sample_SD": 0.0021557247049810435,
+      "family_count": 6,
+      "ci95": [
+        0.06171266990958827,
+        0.09497816002575238
+      ],
+      "adjusted_ci": [
+        0.056289778422792154,
+        0.10101186129057327
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.0002999850007499625,
+      "wilcoxon": {
+        "p_two_sided": 0.0625,
+        "nonzero_pairs": 5,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm": 0.0002999850007499625
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "candidate": "CEM-Net",
+      "baseline": "Medformer",
+      "endpoint": 1,
+      "values": [
+        0.054714472728893404,
+        0.06062444881623441,
+        0.06805384688719618,
+        0.06553217424662011,
+        0.06515440355018753
+      ],
+      "mean": 0.06281586924582633,
+      "sample_SD": 0.005261140901584647,
+      "family_count": 6,
+      "ci95": [
+        0.050534120651356075,
+        0.07412373745624189
+      ],
+      "adjusted_ci": [
+        0.04648142667819179,
+        0.07850445907356297
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.0002999850007499625,
+      "wilcoxon": {
+        "p_two_sided": 0.0625,
+        "nonzero_pairs": 5,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm": 0.0002999850007499625
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "candidate": "CEM-Net",
+      "baseline": "Medformer",
+      "endpoint": 0,
+      "values": [
+        0.09287994573080599,
+        0.09714697649606718,
+        0.09009663579301813,
+        0.10688917919709873,
+        0.09667746411423694
+      ],
+      "mean": 0.0967380402662454,
+      "sample_SD": 0.006368077942462891,
+      "family_count": 6,
+      "ci95": [
+        0.07253363695307721,
+        0.1214244922606046
+      ],
+      "adjusted_ci": [
+        0.06425522863182359,
+        0.12928145997111992
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.0002999850007499625,
+      "wilcoxon": {
+        "p_two_sided": 0.0625,
+        "nonzero_pairs": 5,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm": 0.0002999850007499625
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "candidate": "CEM-Net",
+      "baseline": "Medformer",
+      "endpoint": 1,
+      "values": [
+        0.058772960861820434,
+        0.0585582970662637,
+        0.05556401640665343,
+        0.057643322882700465,
+        0.06029978231234839
+      ],
+      "mean": 0.05816767590595728,
+      "sample_SD": 0.0017406048789257982,
+      "family_count": 6,
+      "ci95": [
+        0.04175859435715039,
+        0.07454758141102685
+      ],
+      "adjusted_ci": [
+        0.03580348812074948,
+        0.08003400325377316
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.0002999850007499625,
+      "wilcoxon": {
+        "p_two_sided": 0.0625,
+        "nonzero_pairs": 5,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm": 0.0002999850007499625
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "candidate": "CEM-Net",
+      "baseline": "Medformer",
+      "endpoint": 0,
+      "values": [
+        0.0940740857859822,
+        0.0991429549626785,
+        0.09998262771934069,
+        0.08066764672806043,
+        0.0922021365778028
+      ],
+      "mean": 0.09321389035477293,
+      "sample_SD": 0.007748248570824325,
+      "family_count": 6,
+      "ci95": [
+        0.07539402057864245,
+        0.11048232371470058
+      ],
+      "adjusted_ci": [
+        0.06957268507761971,
+        0.116474865022947
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.0002999850007499625,
+      "wilcoxon": {
+        "p_two_sided": 0.0625,
+        "nonzero_pairs": 5,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm": 0.0002999850007499625
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "candidate": "CEM-Net",
+      "baseline": "Medformer",
+      "endpoint": 1,
+      "values": [
+        0.05502739655046812,
+        0.05563065819892288,
+        0.05695852446638239,
+        0.05725941072364382,
+        0.06418514190954577
+      ],
+      "mean": 0.057812226369792594,
+      "sample_SD": 0.003679775175268567,
+      "family_count": 6,
+      "ci95": [
+        0.04564869639335455,
+        0.07026491570007735
+      ],
+      "adjusted_ci": [
+        0.04134690499559743,
+        0.07465752384610157
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.0002999850007499625,
+      "wilcoxon": {
+        "p_two_sided": 0.0625,
+        "nonzero_pairs": 5,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm": 0.0002999850007499625
+    }
+  ],
+  "rows": [
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "method": "CEM-Net",
+      "seed": 48,
+      "endpoint": 0,
+      "AP": 0.4908907691428215,
+      "AUROC": 0.8796578681014275,
+      "Brier": 0.05513020174301189,
+      "log_loss": 0.20509855011390846
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "method": "CEM-Net",
+      "seed": 49,
+      "endpoint": 0,
+      "AP": 0.48941037710790913,
+      "AUROC": 0.877852652887279,
+      "Brier": 0.0553768645497867,
+      "log_loss": 0.21199452468061272
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "method": "CEM-Net",
+      "seed": 50,
+      "endpoint": 0,
+      "AP": 0.48820737365733163,
+      "AUROC": 0.8803703654378863,
+      "Brier": 0.05483690377178764,
+      "log_loss": 0.2019339331463047
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "method": "CEM-Net",
+      "seed": 51,
+      "endpoint": 0,
+      "AP": 0.48216791533093734,
+      "AUROC": 0.877123508416791,
+      "Brier": 0.05705796543317172,
+      "log_loss": 0.2294865439282036
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "method": "CEM-Net",
+      "seed": 52,
+      "endpoint": 0,
+      "AP": 0.4783973326003329,
+      "AUROC": 0.8789580225868313,
+      "Brier": 0.05550031294438987,
+      "log_loss": 0.204061102559912
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "method": "CEM-Net",
+      "seed": 48,
+      "endpoint": 1,
+      "AP": 0.5342937847174059,
+      "AUROC": 0.8519450991051002,
+      "Brier": 0.10254366062291034,
+      "log_loss": 0.3283210003691222
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "method": "CEM-Net",
+      "seed": 49,
+      "endpoint": 1,
+      "AP": 0.528870313281435,
+      "AUROC": 0.8514916287542452,
+      "Brier": 0.1029061050935588,
+      "log_loss": 0.32859736594637184
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "method": "CEM-Net",
+      "seed": 50,
+      "endpoint": 1,
+      "AP": 0.5322880718795656,
+      "AUROC": 0.8530580026602654,
+      "Brier": 0.10270353287904162,
+      "log_loss": 0.32756794016897184
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "method": "CEM-Net",
+      "seed": 51,
+      "endpoint": 1,
+      "AP": 0.5320825922134945,
+      "AUROC": 0.853104476329763,
+      "Brier": 0.10267166437134656,
+      "log_loss": 0.32723938158479277
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "method": "CEM-Net",
+      "seed": 52,
+      "endpoint": 1,
+      "AP": 0.5345851646655235,
+      "AUROC": 0.852559466932928,
+      "Brier": 0.10242603091340033,
+      "log_loss": 0.3274558317665157
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "method": "CEM-Net",
+      "seed": 48,
+      "endpoint": 0,
+      "AP": 0.49044997661499473,
+      "AUROC": 0.8865149192851672,
+      "Brier": 0.05335103664997399,
+      "log_loss": 0.19636697637397627
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "method": "CEM-Net",
+      "seed": 49,
+      "endpoint": 0,
+      "AP": 0.4810901777845332,
+      "AUROC": 0.8864574960908387,
+      "Brier": 0.05446345933184452,
+      "log_loss": 0.20265226382414084
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "method": "CEM-Net",
+      "seed": 50,
+      "endpoint": 0,
+      "AP": 0.4873562345910792,
+      "AUROC": 0.8874403954979527,
+      "Brier": 0.05343377729469055,
+      "log_loss": 0.1935391806419849
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "method": "CEM-Net",
+      "seed": 51,
+      "endpoint": 0,
+      "AP": 0.4790506803459712,
+      "AUROC": 0.8820764846001824,
+      "Brier": 0.05506901908145453,
+      "log_loss": 0.219456637521776
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "method": "CEM-Net",
+      "seed": 52,
+      "endpoint": 0,
+      "AP": 0.48936565686674527,
+      "AUROC": 0.8869058783986493,
+      "Brier": 0.053378829024126294,
+      "log_loss": 0.1940782482957785
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "method": "CEM-Net",
+      "seed": 48,
+      "endpoint": 1,
+      "AP": 0.5465509463417983,
+      "AUROC": 0.8540247572090774,
+      "Brier": 0.10058808397146732,
+      "log_loss": 0.3239091882712831
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "method": "CEM-Net",
+      "seed": 49,
+      "endpoint": 1,
+      "AP": 0.5500209844930679,
+      "AUROC": 0.8566939910135366,
+      "Brier": 0.09993777255882104,
+      "log_loss": 0.32121676055740983
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "method": "CEM-Net",
+      "seed": 50,
+      "endpoint": 1,
+      "AP": 0.5506028724175384,
+      "AUROC": 0.8568641757194858,
+      "Brier": 0.09971094633843848,
+      "log_loss": 0.32095856354725055
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "method": "CEM-Net",
+      "seed": 51,
+      "endpoint": 1,
+      "AP": 0.5508797388530158,
+      "AUROC": 0.8562803044306677,
+      "Brier": 0.09988248217897258,
+      "log_loss": 0.3212509744530074
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "method": "CEM-Net",
+      "seed": 52,
+      "endpoint": 1,
+      "AP": 0.5515675992870688,
+      "AUROC": 0.8563769053577522,
+      "Brier": 0.09993133829602784,
+      "log_loss": 0.3214542027047078
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "method": "Medformer",
+      "seed": 48,
+      "endpoint": 0,
+      "AP": 0.39380297934571684,
+      "AUROC": 0.8561534466226295,
+      "Brier": 0.06159990811556089,
+      "log_loss": 0.21954585747676622
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "method": "Medformer",
+      "seed": 48,
+      "endpoint": 0,
+      "AP": 0.4287978331087376,
+      "AUROC": 0.8630632179511094,
+      "Brier": 0.056243216765469804,
+      "log_loss": 0.20418611491652172
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "method": "Medformer",
+      "seed": 48,
+      "endpoint": 1,
+      "AP": 0.5128367134842247,
+      "AUROC": 0.8351557818525953,
+      "Brier": 0.10589771953584975,
+      "log_loss": 0.341420366395103
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "method": "Medformer",
+      "seed": 48,
+      "endpoint": 1,
+      "AP": 0.5146013989814247,
+      "AUROC": 0.8382522786088045,
+      "Brier": 0.10390267155686207,
+      "log_loss": 0.3362564633001792
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "method": "Medformer",
+      "seed": 49,
+      "endpoint": 0,
+      "AP": 0.3908675979930649,
+      "AUROC": 0.8533647187300235,
+      "Brier": 0.06267047048136477,
+      "log_loss": 0.2301487434755643
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "method": "Medformer",
+      "seed": 49,
+      "endpoint": 0,
+      "AP": 0.4302183369969891,
+      "AUROC": 0.8658582145684707,
+      "Brier": 0.05661571990636448,
+      "log_loss": 0.21052988474919987
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "method": "Medformer",
+      "seed": 49,
+      "endpoint": 1,
+      "AP": 0.5142322103003817,
+      "AUROC": 0.8359183725202601,
+      "Brier": 0.10633022772494066,
+      "log_loss": 0.3454854748156382
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "method": "Medformer",
+      "seed": 49,
+      "endpoint": 1,
+      "AP": 0.5170654678604765,
+      "AUROC": 0.8403298206262086,
+      "Brier": 0.10409545984294713,
+      "log_loss": 0.33908500227786614
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "method": "Medformer",
+      "seed": 50,
+      "endpoint": 0,
+      "AP": 0.3850600008929535,
+      "AUROC": 0.8447421691881527,
+      "Brier": 0.06185034423546589,
+      "log_loss": 0.22505985451910424
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "method": "Medformer",
+      "seed": 50,
+      "endpoint": 0,
+      "AP": 0.41887053076609004,
+      "AUROC": 0.8595408035636766,
+      "Brier": 0.05660253586642312,
+      "log_loss": 0.20667187113956884
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "method": "Medformer",
+      "seed": 50,
+      "endpoint": 1,
+      "AP": 0.5159667121504801,
+      "AUROC": 0.8378723790786806,
+      "Brier": 0.10663557594582129,
+      "log_loss": 0.34170023299724034
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "method": "Medformer",
+      "seed": 50,
+      "endpoint": 1,
+      "AP": 0.5210747736321026,
+      "AUROC": 0.8392261528125357,
+      "Brier": 0.10461239652640064,
+      "log_loss": 0.3377571018547486
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "method": "Medformer",
+      "seed": 51,
+      "endpoint": 0,
+      "AP": 0.3874211675266064,
+      "AUROC": 0.8531236682292775,
+      "Brier": 0.06250758683521233,
+      "log_loss": 0.22259781489821873
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "method": "Medformer",
+      "seed": 51,
+      "endpoint": 0,
+      "AP": 0.42335463349790803,
+      "AUROC": 0.8611484810791434,
+      "Brier": 0.05642458936318234,
+      "log_loss": 0.20582514426551954
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "method": "Medformer",
+      "seed": 51,
+      "endpoint": 1,
+      "AP": 0.5073181444846347,
+      "AUROC": 0.8358078215185765,
+      "Brier": 0.1057787753430078,
+      "log_loss": 0.3415612071650844
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "method": "Medformer",
+      "seed": 51,
+      "endpoint": 1,
+      "AP": 0.5164960495026779,
+      "AUROC": 0.8380642311739279,
+      "Brier": 0.10377585659404541,
+      "log_loss": 0.33679097445925366
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "method": "Medformer",
+      "seed": 52,
+      "endpoint": 0,
+      "AP": 0.38595437814980166,
+      "AUROC": 0.8537349509908374,
+      "Brier": 0.0621681045483119,
+      "log_loss": 0.2292026397902635
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "method": "Medformer",
+      "seed": 52,
+      "endpoint": 0,
+      "AP": 0.4276257186383877,
+      "AUROC": 0.8655360257475976,
+      "Brier": 0.05646409674648832,
+      "log_loss": 0.210015591785519
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "method": "Medformer",
+      "seed": 52,
+      "endpoint": 1,
+      "AP": 0.5125541109966003,
+      "AUROC": 0.8383723230990333,
+      "Brier": 0.106650641612058,
+      "log_loss": 0.3455429625343639
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "method": "Medformer",
+      "seed": 52,
+      "endpoint": 1,
+      "AP": 0.512157112347578,
+      "AUROC": 0.8380424581958821,
+      "Brier": 0.10498710453655223,
+      "log_loss": 0.3420076004052684
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "method": "CEM-Net",
+      "seed": 48,
+      "endpoint": 0,
+      "AP": 0.5474081407189633,
+      "AUROC": 0.9099177552254909,
+      "Brier": 0.04963210105227735,
+      "log_loss": 0.17612074189296187
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "method": "CEM-Net",
+      "seed": 49,
+      "endpoint": 0,
+      "AP": 0.5412670553145409,
+      "AUROC": 0.9086846966885469,
+      "Brier": 0.04911610862869149,
+      "log_loss": 0.17131540720039162
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "method": "CEM-Net",
+      "seed": 50,
+      "endpoint": 0,
+      "AP": 0.5409574181514573,
+      "AUROC": 0.9094643309654794,
+      "Brier": 0.049625268731652294,
+      "log_loss": 0.17468851090562698
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "method": "CEM-Net",
+      "seed": 51,
+      "endpoint": 0,
+      "AP": 0.5444619965702041,
+      "AUROC": 0.9103635159768827,
+      "Brier": 0.049277554352869186,
+      "log_loss": 0.17282799295505116
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "method": "CEM-Net",
+      "seed": 52,
+      "endpoint": 0,
+      "AP": 0.5454621464887415,
+      "AUROC": 0.9097197812528098,
+      "Brier": 0.04949589247189664,
+      "log_loss": 0.1757222347494692
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "method": "CEM-Net",
+      "seed": 48,
+      "endpoint": 1,
+      "AP": 0.5571081009028568,
+      "AUROC": 0.8641808992071689,
+      "Brier": 0.09511584212727642,
+      "log_loss": 0.3120155238683421
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "method": "CEM-Net",
+      "seed": 49,
+      "endpoint": 1,
+      "AP": 0.5544622988495091,
+      "AUROC": 0.8629139827330137,
+      "Brier": 0.09447409603691091,
+      "log_loss": 0.3059005439319476
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "method": "CEM-Net",
+      "seed": 50,
+      "endpoint": 1,
+      "AP": 0.5529449691956088,
+      "AUROC": 0.8632402404050583,
+      "Brier": 0.09455073851343458,
+      "log_loss": 0.3056666444412341
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "method": "CEM-Net",
+      "seed": 51,
+      "endpoint": 1,
+      "AP": 0.5584950989179001,
+      "AUROC": 0.8649271062191864,
+      "Brier": 0.09378835663290168,
+      "log_loss": 0.304008908863459
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "method": "CEM-Net",
+      "seed": 52,
+      "endpoint": 1,
+      "AP": 0.5570482799334299,
+      "AUROC": 0.8645206008019786,
+      "Brier": 0.09483698656932044,
+      "log_loss": 0.31033147692212965
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "method": "CEM-Net",
+      "seed": 48,
+      "endpoint": 0,
+      "AP": 0.5470954117470451,
+      "AUROC": 0.9138215595279684,
+      "Brier": 0.049278686409937995,
+      "log_loss": 0.17400431784066972
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "method": "CEM-Net",
+      "seed": 49,
+      "endpoint": 0,
+      "AP": 0.544330171984472,
+      "AUROC": 0.915093159426442,
+      "Brier": 0.048316940185532765,
+      "log_loss": 0.16725076971990532
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "method": "CEM-Net",
+      "seed": 50,
+      "endpoint": 0,
+      "AP": 0.5428731503131702,
+      "AUROC": 0.9145149071349284,
+      "Brier": 0.04897605906538933,
+      "log_loss": 0.17171633834855404
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "method": "CEM-Net",
+      "seed": 51,
+      "endpoint": 0,
+      "AP": 0.5434731251471175,
+      "AUROC": 0.914426052002168,
+      "Brier": 0.04876505372058927,
+      "log_loss": 0.17049826117824854
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "method": "CEM-Net",
+      "seed": 52,
+      "endpoint": 0,
+      "AP": 0.5418594476190164,
+      "AUROC": 0.9141077808564537,
+      "Brier": 0.049233348757179156,
+      "log_loss": 0.17356048776568717
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "method": "CEM-Net",
+      "seed": 48,
+      "endpoint": 1,
+      "AP": 0.5411550678000061,
+      "AUROC": 0.8567858214782536,
+      "Brier": 0.09457910835988573,
+      "log_loss": 0.3139598217411478
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "method": "CEM-Net",
+      "seed": 49,
+      "endpoint": 1,
+      "AP": 0.5411683322897266,
+      "AUROC": 0.8580655491718421,
+      "Brier": 0.09353158434777824,
+      "log_loss": 0.30495740068229416
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "method": "CEM-Net",
+      "seed": 50,
+      "endpoint": 1,
+      "AP": 0.5401992708244943,
+      "AUROC": 0.8574017560361853,
+      "Brier": 0.09359374273489969,
+      "log_loss": 0.3054114679640488
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "method": "CEM-Net",
+      "seed": 51,
+      "endpoint": 1,
+      "AP": 0.541605825850046,
+      "AUROC": 0.8578599529918459,
+      "Brier": 0.09334784830347577,
+      "log_loss": 0.3053996221033056
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "method": "CEM-Net",
+      "seed": 52,
+      "endpoint": 1,
+      "AP": 0.542081486229978,
+      "AUROC": 0.8577713523535302,
+      "Brier": 0.09420437894170432,
+      "log_loss": 0.31175156621865385
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "method": "Medformer",
+      "seed": 48,
+      "endpoint": 0,
+      "AP": 0.46521589530013735,
+      "AUROC": 0.8830612447172881,
+      "Brier": 0.054113771918208556,
+      "log_loss": 0.19037665501312845
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "method": "Medformer",
+      "seed": 48,
+      "endpoint": 0,
+      "AP": 0.4673399807183397,
+      "AUROC": 0.8930659300566477,
+      "Brier": 0.05266012937608492,
+      "log_loss": 0.18340398915123227
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "method": "Medformer",
+      "seed": 48,
+      "endpoint": 1,
+      "AP": 0.4982628656830171,
+      "AUROC": 0.8431489215201998,
+      "Brier": 0.09960958943640276,
+      "log_loss": 0.3244975264181629
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "method": "Medformer",
+      "seed": 48,
+      "endpoint": 1,
+      "AP": 0.4864405950711127,
+      "AUROC": 0.8375423855312666,
+      "Brier": 0.09839516678718394,
+      "log_loss": 0.3238832643549212
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "method": "Medformer",
+      "seed": 49,
+      "endpoint": 0,
+      "AP": 0.45377444594485244,
+      "AUROC": 0.8802965062575102,
+      "Brier": 0.05395109054495879,
+      "log_loss": 0.19312418667064965
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "method": "Medformer",
+      "seed": 49,
+      "endpoint": 0,
+      "AP": 0.46246714655477383,
+      "AUROC": 0.8937089920490633,
+      "Brier": 0.052401659125195586,
+      "log_loss": 0.18413252186941947
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "method": "Medformer",
+      "seed": 49,
+      "endpoint": 1,
+      "AP": 0.49588500444302636,
+      "AUROC": 0.8431877287199334,
+      "Brier": 0.09964696715260467,
+      "log_loss": 0.3207823468364005
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "method": "Medformer",
+      "seed": 49,
+      "endpoint": 1,
+      "AP": 0.4805438834734922,
+      "AUROC": 0.833972704954359,
+      "Brier": 0.0989010039311523,
+      "log_loss": 0.3233366818826719
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "method": "Medformer",
+      "seed": 50,
+      "endpoint": 0,
+      "AP": 0.45946474395325326,
+      "AUROC": 0.8807790518502775,
+      "Brier": 0.05418022302601088,
+      "log_loss": 0.19360347770767206
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "method": "Medformer",
+      "seed": 50,
+      "endpoint": 0,
+      "AP": 0.46531540205139243,
+      "AUROC": 0.8921246078819441,
+      "Brier": 0.052679924726777884,
+      "log_loss": 0.18540763127658308
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "method": "Medformer",
+      "seed": 50,
+      "endpoint": 1,
+      "AP": 0.4937076519578104,
+      "AUROC": 0.8404472474330423,
+      "Brier": 0.10082230982721062,
+      "log_loss": 0.324458846804917
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "method": "Medformer",
+      "seed": 50,
+      "endpoint": 1,
+      "AP": 0.4721454239372981,
+      "AUROC": 0.829866527942026,
+      "Brier": 0.10086548905375368,
+      "log_loss": 0.32886004075184105
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "method": "Medformer",
+      "seed": 51,
+      "endpoint": 0,
+      "AP": 0.45735939727804514,
+      "AUROC": 0.8799825578543811,
+      "Brier": 0.055052802240696204,
+      "log_loss": 0.19609309383501072
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "method": "Medformer",
+      "seed": 51,
+      "endpoint": 0,
+      "AP": 0.466380431938357,
+      "AUROC": 0.8950462408178728,
+      "Brier": 0.05316243610153593,
+      "log_loss": 0.185866148243597
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "method": "Medformer",
+      "seed": 51,
+      "endpoint": 1,
+      "AP": 0.497095197693995,
+      "AUROC": 0.8421655747983828,
+      "Brier": 0.09953832534129267,
+      "log_loss": 0.32118366007083443
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "method": "Medformer",
+      "seed": 51,
+      "endpoint": 1,
+      "AP": 0.4760736516034259,
+      "AUROC": 0.8336876350692713,
+      "Brier": 0.09928739928670581,
+      "log_loss": 0.32346875593355084
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "method": "Medformer",
+      "seed": 52,
+      "endpoint": 0,
+      "AP": 0.45653055364102274,
+      "AUROC": 0.8819030331145317,
+      "Brier": 0.05401842598474949,
+      "log_loss": 0.19180071726835643
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "method": "Medformer",
+      "seed": 52,
+      "endpoint": 0,
+      "AP": 0.46506190720515017,
+      "AUROC": 0.8915863129657874,
+      "Brier": 0.05247722344249823,
+      "log_loss": 0.1843926519588868
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "method": "Medformer",
+      "seed": 52,
+      "endpoint": 1,
+      "AP": 0.497085142531246,
+      "AUROC": 0.8418677295404284,
+      "Brier": 0.09961540829889043,
+      "log_loss": 0.3214401153934334
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "method": "Medformer",
+      "seed": 52,
+      "endpoint": 1,
+      "AP": 0.47692708267979045,
+      "AUROC": 0.834736253868939,
+      "Brier": 0.09882798346209276,
+      "log_loss": 0.32234411999273194
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "CEM-Net",
+      "seed": 48,
+      "endpoint": 0,
+      "AP": 0.4345274169276406,
+      "AUROC": 0.8889426931503712,
+      "Brier": 0.04031374902907988,
+      "log_loss": 0.16616985225954453
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "CEM-Net",
+      "seed": 49,
+      "endpoint": 0,
+      "AP": 0.43163453498355875,
+      "AUROC": 0.8879562047166708,
+      "Brier": 0.03873520243961936,
+      "log_loss": 0.14400070771950974
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "CEM-Net",
+      "seed": 50,
+      "endpoint": 0,
+      "AP": 0.4305670626944776,
+      "AUROC": 0.8879652105801809,
+      "Brier": 0.038471825650916586,
+      "log_loss": 0.14309449462569485
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "CEM-Net",
+      "seed": 51,
+      "endpoint": 0,
+      "AP": 0.43838050277473917,
+      "AUROC": 0.8806309738894617,
+      "Brier": 0.04111318818929556,
+      "log_loss": 0.18157591555830638
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "CEM-Net",
+      "seed": 52,
+      "endpoint": 0,
+      "AP": 0.4320873701231281,
+      "AUROC": 0.8838165094566185,
+      "Brier": 0.04084625580448633,
+      "log_loss": 0.16630012156102986
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "CEM-Net",
+      "seed": 48,
+      "endpoint": 1,
+      "AP": 0.4011181455739765,
+      "AUROC": 0.8151534130329209,
+      "Brier": 0.0867134970608901,
+      "log_loss": 0.29846916652051075
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "CEM-Net",
+      "seed": 49,
+      "endpoint": 1,
+      "AP": 0.3976992920114517,
+      "AUROC": 0.8180437483424957,
+      "Brier": 0.08433232606199675,
+      "log_loss": 0.28523372996086455
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "CEM-Net",
+      "seed": 50,
+      "endpoint": 1,
+      "AP": 0.3987553796528904,
+      "AUROC": 0.817579107412189,
+      "Brier": 0.08553667137259155,
+      "log_loss": 0.292384313493291
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "CEM-Net",
+      "seed": 51,
+      "endpoint": 1,
+      "AP": 0.4026621849099469,
+      "AUROC": 0.8161123510120918,
+      "Brier": 0.08583157230753978,
+      "log_loss": 0.29443844278660913
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "CEM-Net",
+      "seed": 52,
+      "endpoint": 1,
+      "AP": 0.4013674113319516,
+      "AUROC": 0.8133567181107529,
+      "Brier": 0.08615298621075104,
+      "log_loss": 0.29502523057799396
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "CEM-Net",
+      "seed": 48,
+      "endpoint": 0,
+      "AP": 0.3935388754828638,
+      "AUROC": 0.8751738647414767,
+      "Brier": 0.04056108514868051,
+      "log_loss": 0.17268539626451573
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "CEM-Net",
+      "seed": 49,
+      "endpoint": 0,
+      "AP": 0.3979448476688867,
+      "AUROC": 0.8827160075296336,
+      "Brier": 0.038952201347990226,
+      "log_loss": 0.14552454819822758
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "CEM-Net",
+      "seed": 50,
+      "endpoint": 0,
+      "AP": 0.3983095568340663,
+      "AUROC": 0.8829265934164322,
+      "Brier": 0.03878130288573077,
+      "log_loss": 0.1446221546758685
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "CEM-Net",
+      "seed": 51,
+      "endpoint": 0,
+      "AP": 0.38275817952568925,
+      "AUROC": 0.868939130922926,
+      "Brier": 0.041992711069267497,
+      "log_loss": 0.1899478412726604
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "CEM-Net",
+      "seed": 52,
+      "endpoint": 0,
+      "AP": 0.388227778199175,
+      "AUROC": 0.8753998023024137,
+      "Brier": 0.04129917333237491,
+      "log_loss": 0.1704759462624306
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "CEM-Net",
+      "seed": 48,
+      "endpoint": 1,
+      "AP": 0.3922187567407075,
+      "AUROC": 0.8142066275919412,
+      "Brier": 0.08399751562670088,
+      "log_loss": 0.29102426989111024
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "CEM-Net",
+      "seed": 49,
+      "endpoint": 1,
+      "AP": 0.3930729541555812,
+      "AUROC": 0.8177370414532489,
+      "Brier": 0.08174250010622207,
+      "log_loss": 0.2784049915049171
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "CEM-Net",
+      "seed": 50,
+      "endpoint": 1,
+      "AP": 0.3944413493286769,
+      "AUROC": 0.8161091838361281,
+      "Brier": 0.0826183478222263,
+      "log_loss": 0.28499862522323516
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "CEM-Net",
+      "seed": 51,
+      "endpoint": 1,
+      "AP": 0.39095753143033796,
+      "AUROC": 0.8161957677011936,
+      "Brier": 0.08342039863003545,
+      "log_loss": 0.2874279717863657
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "CEM-Net",
+      "seed": 52,
+      "endpoint": 1,
+      "AP": 0.3954888270832543,
+      "AUROC": 0.8136070904421275,
+      "Brier": 0.08336804555214196,
+      "log_loss": 0.28737602370430215
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "Medformer",
+      "seed": 48,
+      "endpoint": 0,
+      "AP": 0.3416474711968346,
+      "AUROC": 0.8405784350672622,
+      "Brier": 0.04168937606957849,
+      "log_loss": 0.16056730267750577
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "Medformer",
+      "seed": 48,
+      "endpoint": 0,
+      "AP": 0.2994647896968816,
+      "AUROC": 0.835655842764275,
+      "Brier": 0.04183611224250261,
+      "log_loss": 0.16122169495538816
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "Medformer",
+      "seed": 48,
+      "endpoint": 1,
+      "AP": 0.3423451847121561,
+      "AUROC": 0.7901066620368276,
+      "Brier": 0.088135111569533,
+      "log_loss": 0.3004736536635785
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "Medformer",
+      "seed": 48,
+      "endpoint": 1,
+      "AP": 0.3371913601902394,
+      "AUROC": 0.7883776928759547,
+      "Brier": 0.08581980931172008,
+      "log_loss": 0.29442984190783617
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "Medformer",
+      "seed": 49,
+      "endpoint": 0,
+      "AP": 0.33448755848749157,
+      "AUROC": 0.842387459034867,
+      "Brier": 0.04199766789096267,
+      "log_loss": 0.1607023042824444
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "Medformer",
+      "seed": 49,
+      "endpoint": 0,
+      "AP": 0.2988018927062082,
+      "AUROC": 0.8367711411501907,
+      "Brier": 0.04206730030881407,
+      "log_loss": 0.16130546856122138
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "Medformer",
+      "seed": 49,
+      "endpoint": 1,
+      "AP": 0.339140994945188,
+      "AUROC": 0.7874936852919969,
+      "Brier": 0.08863250753144612,
+      "log_loss": 0.303118090855547
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "Medformer",
+      "seed": 49,
+      "endpoint": 1,
+      "AP": 0.3374422959566583,
+      "AUROC": 0.7878052532009536,
+      "Brier": 0.08611204107457124,
+      "log_loss": 0.2960735572072662
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "Medformer",
+      "seed": 50,
+      "endpoint": 0,
+      "AP": 0.34047042690145946,
+      "AUROC": 0.8429716855651249,
+      "Brier": 0.04193514993670681,
+      "log_loss": 0.16289971242571644
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "Medformer",
+      "seed": 50,
+      "endpoint": 0,
+      "AP": 0.29832692911472564,
+      "AUROC": 0.8360203154906711,
+      "Brier": 0.042211332436703365,
+      "log_loss": 0.16469544435437475
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "Medformer",
+      "seed": 50,
+      "endpoint": 1,
+      "AP": 0.34319136324623695,
+      "AUROC": 0.7906652424154761,
+      "Brier": 0.08800038257923051,
+      "log_loss": 0.2985516216538026
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "Medformer",
+      "seed": 50,
+      "endpoint": 1,
+      "AP": 0.33748282486229453,
+      "AUROC": 0.7914236418623457,
+      "Brier": 0.08573996897640121,
+      "log_loss": 0.29211582019434
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "Medformer",
+      "seed": 51,
+      "endpoint": 0,
+      "AP": 0.33149132357764044,
+      "AUROC": 0.8402582650735063,
+      "Brier": 0.042108298176454374,
+      "log_loss": 0.16268943963404667
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "Medformer",
+      "seed": 51,
+      "endpoint": 0,
+      "AP": 0.3020905327976288,
+      "AUROC": 0.8340723701309064,
+      "Brier": 0.041925110425860286,
+      "log_loss": 0.16320922333277416
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "Medformer",
+      "seed": 51,
+      "endpoint": 1,
+      "AP": 0.3450188620272464,
+      "AUROC": 0.7873054655203877,
+      "Brier": 0.08878288546940043,
+      "log_loss": 0.3031901863394597
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "Medformer",
+      "seed": 51,
+      "endpoint": 1,
+      "AP": 0.33369812070669413,
+      "AUROC": 0.7852580169741172,
+      "Brier": 0.08687649554328833,
+      "log_loss": 0.2979924447488527
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "Medformer",
+      "seed": 52,
+      "endpoint": 0,
+      "AP": 0.33540990600889115,
+      "AUROC": 0.8439046006569201,
+      "Brier": 0.04195507299081757,
+      "log_loss": 0.16137360608841766
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "Medformer",
+      "seed": 52,
+      "endpoint": 0,
+      "AP": 0.2960256416213722,
+      "AUROC": 0.8375966378264421,
+      "Brier": 0.04223994718957708,
+      "log_loss": 0.162879155911003
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "Medformer",
+      "seed": 52,
+      "endpoint": 1,
+      "AP": 0.3410676290196032,
+      "AUROC": 0.7860351951088538,
+      "Brier": 0.08881798505561743,
+      "log_loss": 0.305072220032411
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "Medformer",
+      "seed": 52,
+      "endpoint": 1,
+      "AP": 0.3313036851737085,
+      "AUROC": 0.7860587539783317,
+      "Brier": 0.08661009343007606,
+      "log_loss": 0.2983232820212823
+    }
+  ],
+  "fit_audits": [
+    {
+      "database": "mimiciii",
+      "id": "Medformer_t0_s48",
+      "epochs": 28,
+      "best_epoch": 18,
+      "fit_seconds": 986.7779443264008,
+      "parameters": 2797058,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "082829f925229c30e308314fb881a9538c889c229af4c67df8b40d656222dc8b",
+      "peak_reserved_mib": 296.0
+    },
+    {
+      "database": "mimiciii",
+      "id": "Medformer_t1_s48",
+      "epochs": 22,
+      "best_epoch": 12,
+      "fit_seconds": 795.7704269886017,
+      "parameters": 2797058,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "b013aa506e925c8840071b03133bdc036e91b25dca15729a539cdf213d0e0f79",
+      "peak_reserved_mib": 296.0
+    },
+    {
+      "database": "mimiciii",
+      "id": "Medformer_t0_s49",
+      "epochs": 30,
+      "best_epoch": 20,
+      "fit_seconds": 1087.92427277565,
+      "parameters": 2797058,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "66509c1e57a98d1bdb6ac0339dc1716f5eca96ed35f870e098e0533b200d46b5",
+      "peak_reserved_mib": 294.0
+    },
+    {
+      "database": "mimiciii",
+      "id": "Medformer_t1_s49",
+      "epochs": 22,
+      "best_epoch": 12,
+      "fit_seconds": 773.2182576656342,
+      "parameters": 2797058,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "7696587fb547615ef26a135e9b03c484a032fd2d379fc99d7b33528585b1b0da",
+      "peak_reserved_mib": 294.0
+    },
+    {
+      "database": "mimiciii",
+      "id": "Medformer_t0_s50",
+      "epochs": 27,
+      "best_epoch": 17,
+      "fit_seconds": 1010.4373183250427,
+      "parameters": 2797058,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "a97ff5a07766cdafabcbb249d8607bfcd8a4ef97cb544828ba766fc06c8fc9a1",
+      "peak_reserved_mib": 296.0
+    },
+    {
+      "database": "mimiciii",
+      "id": "Medformer_t1_s50",
+      "epochs": 23,
+      "best_epoch": 13,
+      "fit_seconds": 815.6046717166901,
+      "parameters": 2797058,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "7d9f2c33ab6fd72d96d2b59c9b806be8a17fd45bb7f4be109185532f451466ed",
+      "peak_reserved_mib": 296.0
+    },
+    {
+      "database": "mimiciii",
+      "id": "Medformer_t0_s51",
+      "epochs": 29,
+      "best_epoch": 19,
+      "fit_seconds": 1043.5258526802063,
+      "parameters": 2797058,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "d657c17905b2c617209597b880b31c1e146da79f72b7bfd6fef62b84adfc84aa",
+      "peak_reserved_mib": 296.0
+    },
+    {
+      "database": "mimiciii",
+      "id": "Medformer_t1_s51",
+      "epochs": 19,
+      "best_epoch": 9,
+      "fit_seconds": 703.7129662036896,
+      "parameters": 2797058,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "5ee0ad3b6d1835644c90527cbc689b7c813da52a41c0b6793024c0f5a0aacb9f",
+      "peak_reserved_mib": 296.0
+    },
+    {
+      "database": "mimiciii",
+      "id": "Medformer_t0_s52",
+      "epochs": 28,
+      "best_epoch": 18,
+      "fit_seconds": 1014.784437417984,
+      "parameters": 2797058,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "2c167d2e0c67c9f24eee14fbe77d846107da87cdf60af0a4e8c6813cb3a36927",
+      "peak_reserved_mib": 294.0
+    },
+    {
+      "database": "mimiciii",
+      "id": "Medformer_t1_s52",
+      "epochs": 24,
+      "best_epoch": 14,
+      "fit_seconds": 833.7416062355042,
+      "parameters": 2797058,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "2f10278bb2565ba459e17a1b58ff71073770b18ca9a098995618456865460396",
+      "peak_reserved_mib": 294.0
+    },
+    {
+      "database": "mimic",
+      "id": "Medformer_t0_s48",
+      "epochs": 26,
+      "best_epoch": 16,
+      "fit_seconds": 1509.0312767028809,
+      "parameters": 2759810,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "4edd1937e7545633b006aa379e5028847aa1d3c960b31097cce28ba369d1534c",
+      "peak_reserved_mib": 296.0
+    },
+    {
+      "database": "mimic",
+      "id": "Medformer_t1_s48",
+      "epochs": 24,
+      "best_epoch": 14,
+      "fit_seconds": 1416.1004920005798,
+      "parameters": 2759810,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "4191caa8816014018c25e9cce97d3977be066ba7f0c7ec6be23e8f5f30811002",
+      "peak_reserved_mib": 296.0
+    },
+    {
+      "database": "mimic",
+      "id": "Medformer_t0_s49",
+      "epochs": 23,
+      "best_epoch": 13,
+      "fit_seconds": 1361.2778453826904,
+      "parameters": 2759810,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "d81dc5550f67750dc44fc20ee67bab9afea29e4f261f5aae4b774ff08a7f9fca",
+      "peak_reserved_mib": 296.0
+    },
+    {
+      "database": "mimic",
+      "id": "Medformer_t1_s49",
+      "epochs": 24,
+      "best_epoch": 14,
+      "fit_seconds": 1400.7169108390808,
+      "parameters": 2759810,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "2660635048bf9071ce0413f215f22e2924e66c3a159738d1b38318e76e70a54f",
+      "peak_reserved_mib": 296.0
+    },
+    {
+      "database": "mimic",
+      "id": "Medformer_t0_s50",
+      "epochs": 25,
+      "best_epoch": 15,
+      "fit_seconds": 1512.7489116191864,
+      "parameters": 2759810,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "8e9217c324f6661328fe5ffb040b39207d3b86a057481d7abef1ee7513e849bd",
+      "peak_reserved_mib": 296.0
+    },
+    {
+      "database": "mimic",
+      "id": "Medformer_t1_s50",
+      "epochs": 26,
+      "best_epoch": 16,
+      "fit_seconds": 1601.23371052742,
+      "parameters": 2759810,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "a3317afc606ecfa6c1497e26e0308e9be08ea52faec2dcacba83b5219b4d7364",
+      "peak_reserved_mib": 296.0
+    },
+    {
+      "database": "mimic",
+      "id": "Medformer_t0_s51",
+      "epochs": 28,
+      "best_epoch": 18,
+      "fit_seconds": 1614.4865005016327,
+      "parameters": 2759810,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "be817a88fb92697541ee886f4e3f800f00cc086c92d04ac56b05d615ef57a10a",
+      "peak_reserved_mib": 296.0
+    },
+    {
+      "database": "mimic",
+      "id": "Medformer_t1_s51",
+      "epochs": 24,
+      "best_epoch": 14,
+      "fit_seconds": 1358.7101454734802,
+      "parameters": 2759810,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "5872aaa53ce270a03671f75d49c0792d8996fe3e6c072f4b8e9e66ac33affa38",
+      "peak_reserved_mib": 296.0
+    },
+    {
+      "database": "mimic",
+      "id": "Medformer_t0_s52",
+      "epochs": 26,
+      "best_epoch": 16,
+      "fit_seconds": 1479.9503276348114,
+      "parameters": 2759810,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "884318266a01ccfee46336c6eaa55269e0eddcc167208a520fc9ce0a64a6a0c9",
+      "peak_reserved_mib": 296.0
+    },
+    {
+      "database": "mimic",
+      "id": "Medformer_t1_s52",
+      "epochs": 21,
+      "best_epoch": 11,
+      "fit_seconds": 1228.409466266632,
+      "parameters": 2759810,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "7a1865085dde333effb7656f073036d5f46b64f20db6473ea89c1fa2ce282f64",
+      "peak_reserved_mib": 296.0
+    },
+    {
+      "database": "eicu",
+      "id": "Medformer_t0_s48",
+      "epochs": 24,
+      "best_epoch": 14,
+      "fit_seconds": 2097.1533436775208,
+      "parameters": 2943490,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "55c6a7d7d03c6f41f0b69b6469659a30bae33e8957e934db5322000c8e4b7740",
+      "peak_reserved_mib": 294.0
+    },
+    {
+      "database": "eicu",
+      "id": "Medformer_t1_s48",
+      "epochs": 26,
+      "best_epoch": 16,
+      "fit_seconds": 2171.675396680832,
+      "parameters": 2943490,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "132463117d79aa38b2550f83b1e11f6fbd7f3cba2c1888c8e4d1ec80e66c6258",
+      "peak_reserved_mib": 294.0
+    },
+    {
+      "database": "eicu",
+      "id": "Medformer_t0_s49",
+      "epochs": 24,
+      "best_epoch": 14,
+      "fit_seconds": 1731.6350939273834,
+      "parameters": 2943490,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "5cf8f2ed6df3c4cace2fd76c08cba8c1a2cb094c6c8ecab17177dbf35e7d0743",
+      "peak_reserved_mib": 294.0
+    },
+    {
+      "database": "eicu",
+      "id": "Medformer_t1_s49",
+      "epochs": 26,
+      "best_epoch": 16,
+      "fit_seconds": 1896.6391546726227,
+      "parameters": 2943490,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "6c53be08bac1f6d815efbe52727b7d2621e05e0b75cd55d1f3bdf6ee9bf927f8",
+      "peak_reserved_mib": 294.0
+    },
+    {
+      "database": "eicu",
+      "id": "Medformer_t0_s50",
+      "epochs": 27,
+      "best_epoch": 17,
+      "fit_seconds": 2133.352440595627,
+      "parameters": 2943490,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "89f22563b8eaae207a958aa5c69dfbd6404e08cd20c5c5416a642dafa5ed0da2",
+      "peak_reserved_mib": 294.0
+    },
+    {
+      "database": "eicu",
+      "id": "Medformer_t1_s50",
+      "epochs": 25,
+      "best_epoch": 15,
+      "fit_seconds": 2049.316681623459,
+      "parameters": 2943490,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "d455ce6cb325c30f9cb46f467142bfc88e3f78ba6ab725039d5c96ab38b06d81",
+      "peak_reserved_mib": 294.0
+    },
+    {
+      "database": "eicu",
+      "id": "Medformer_t0_s51",
+      "epochs": 24,
+      "best_epoch": 14,
+      "fit_seconds": 1749.557591676712,
+      "parameters": 2943490,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "addb8f8b28204ee1335ee07747868c0ee03da7086f25e96b4aaaecaf56ce4f09",
+      "peak_reserved_mib": 294.0
+    },
+    {
+      "database": "eicu",
+      "id": "Medformer_t1_s51",
+      "epochs": 28,
+      "best_epoch": 18,
+      "fit_seconds": 1998.0253961086273,
+      "parameters": 2943490,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "40f2b4a936f59969124d214ddab969cc3f833180075c2221b728bb5832d55e57",
+      "peak_reserved_mib": 294.0
+    },
+    {
+      "database": "eicu",
+      "id": "Medformer_t0_s52",
+      "epochs": 24,
+      "best_epoch": 14,
+      "fit_seconds": 1704.2893042564392,
+      "parameters": 2943490,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "7c7c12545684f8df3b8afeeb17a8d9e2d0ee9c9a39a64fbecb1c977f73fd4cbd",
+      "peak_reserved_mib": 294.0
+    },
+    {
+      "database": "eicu",
+      "id": "Medformer_t1_s52",
+      "epochs": 28,
+      "best_epoch": 18,
+      "fit_seconds": 2021.9543871879578,
+      "parameters": 2943490,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "1e72794f71bcc80db17ab0409f47d69ed4bcea63357a10b4ffb462280d5edfae",
+      "peak_reserved_mib": 294.0
+    }
+  ],
+  "summaries": {
+    "mimiciii:dev:CEM-Net:0": {
+      "AP": {
+        "values": [
+          0.4908907691428215,
+          0.48941037710790913,
+          0.48820737365733163,
+          0.48216791533093734,
+          0.4783973326003329
+        ],
+        "mean": 0.48581475356786646,
+        "sample_SD": 0.005308875506812673
+      },
+      "AUROC": {
+        "values": [
+          0.8796578681014275,
+          0.877852652887279,
+          0.8803703654378863,
+          0.877123508416791,
+          0.8789580225868313
+        ],
+        "mean": 0.878792483486043,
+        "sample_SD": 0.0013166970529078317
+      },
+      "Brier": {
+        "values": [
+          0.05513020174301189,
+          0.0553768645497867,
+          0.05483690377178764,
+          0.05705796543317172,
+          0.05550031294438987
+        ],
+        "mean": 0.05558044968842957,
+        "sample_SD": 0.0008640754198694417
+      },
+      "log_loss": {
+        "values": [
+          0.20509855011390846,
+          0.21199452468061272,
+          0.2019339331463047,
+          0.2294865439282036,
+          0.204061102559912
+        ],
+        "mean": 0.21051493088578827,
+        "sample_SD": 0.011255375406441597
+      }
+    },
+    "mimiciii:dev:Medformer:0": {
+      "AP": {
+        "values": [
+          0.39380297934571684,
+          0.3908675979930649,
+          0.3850600008929535,
+          0.3874211675266064,
+          0.38595437814980166
+        ],
+        "mean": 0.38862122478162864,
+        "sample_SD": 0.003644560910651529
+      },
+      "AUROC": {
+        "values": [
+          0.8561534466226295,
+          0.8533647187300235,
+          0.8447421691881527,
+          0.8531236682292775,
+          0.8537349509908374
+        ],
+        "mean": 0.8522237907521841,
+        "sample_SD": 0.004353503126184389
+      },
+      "Brier": {
+        "values": [
+          0.06159990811556089,
+          0.06267047048136477,
+          0.06185034423546589,
+          0.06250758683521233,
+          0.0621681045483119
+        ],
+        "mean": 0.06215928284318316,
+        "sample_SD": 0.0004447048020921596
+      },
+      "log_loss": {
+        "values": [
+          0.21954585747676622,
+          0.2301487434755643,
+          0.22505985451910424,
+          0.22259781489821873,
+          0.2292026397902635
+        ],
+        "mean": 0.2253109820319834,
+        "sample_SD": 0.004449998257112396
+      }
+    },
+    "mimiciii:dev:CEM-Net:1": {
+      "AP": {
+        "values": [
+          0.5342937847174059,
+          0.528870313281435,
+          0.5322880718795656,
+          0.5320825922134945,
+          0.5345851646655235
+        ],
+        "mean": 0.5324239853514848,
+        "sample_SD": 0.0022874905805377595
+      },
+      "AUROC": {
+        "values": [
+          0.8519450991051002,
+          0.8514916287542452,
+          0.8530580026602654,
+          0.853104476329763,
+          0.852559466932928
+        ],
+        "mean": 0.8524317347564605,
+        "sample_SD": 0.0007038682002454356
+      },
+      "Brier": {
+        "values": [
+          0.10254366062291034,
+          0.1029061050935588,
+          0.10270353287904162,
+          0.10267166437134656,
+          0.10242603091340033
+        ],
+        "mean": 0.10265019877605153,
+        "sample_SD": 0.00018055120491400798
+      },
+      "log_loss": {
+        "values": [
+          0.3283210003691222,
+          0.32859736594637184,
+          0.32756794016897184,
+          0.32723938158479277,
+          0.3274558317665157
+        ],
+        "mean": 0.3278363039671549,
+        "sample_SD": 0.0005889058694921064
+      }
+    },
+    "mimiciii:dev:Medformer:1": {
+      "AP": {
+        "values": [
+          0.5128367134842247,
+          0.5142322103003817,
+          0.5159667121504801,
+          0.5073181444846347,
+          0.5125541109966003
+        ],
+        "mean": 0.5125815782832642,
+        "sample_SD": 0.003238568400160242
+      },
+      "AUROC": {
+        "values": [
+          0.8351557818525953,
+          0.8359183725202601,
+          0.8378723790786806,
+          0.8358078215185765,
+          0.8383723230990333
+        ],
+        "mean": 0.8366253356138292,
+        "sample_SD": 0.0014084385898443285
+      },
+      "Brier": {
+        "values": [
+          0.10589771953584975,
+          0.10633022772494066,
+          0.10663557594582129,
+          0.1057787753430078,
+          0.106650641612058
+        ],
+        "mean": 0.1062585880323355,
+        "sample_SD": 0.00040663387415460503
+      },
+      "log_loss": {
+        "values": [
+          0.341420366395103,
+          0.3454854748156382,
+          0.34170023299724034,
+          0.3415612071650844,
+          0.3455429625343639
+        ],
+        "mean": 0.34314204878148596,
+        "sample_SD": 0.002167839687207581
+      }
+    },
+    "mimiciii:test:CEM-Net:0": {
+      "AP": {
+        "values": [
+          0.49044997661499473,
+          0.4810901777845332,
+          0.4873562345910792,
+          0.4790506803459712,
+          0.48936565686674527
+        ],
+        "mean": 0.4854625452406647,
+        "sample_SD": 0.005097166370504561
+      },
+      "AUROC": {
+        "values": [
+          0.8865149192851672,
+          0.8864574960908387,
+          0.8874403954979527,
+          0.8820764846001824,
+          0.8869058783986493
+        ],
+        "mean": 0.8858790347745581,
+        "sample_SD": 0.0021616318818664837
+      },
+      "Brier": {
+        "values": [
+          0.05335103664997399,
+          0.05446345933184452,
+          0.05343377729469055,
+          0.05506901908145453,
+          0.053378829024126294
+        ],
+        "mean": 0.05393922427641797,
+        "sample_SD": 0.0007852933956261008
+      },
+      "log_loss": {
+        "values": [
+          0.19636697637397627,
+          0.20265226382414084,
+          0.1935391806419849,
+          0.219456637521776,
+          0.1940782482957785
+        ],
+        "mean": 0.2012186613315313,
+        "sample_SD": 0.010818707877241849
+      }
+    },
+    "mimiciii:test:Medformer:0": {
+      "AP": {
+        "values": [
+          0.4287978331087376,
+          0.4302183369969891,
+          0.41887053076609004,
+          0.42335463349790803,
+          0.4276257186383877
+        ],
+        "mean": 0.42577341060162255,
+        "sample_SD": 0.004632380055816067
+      },
+      "AUROC": {
+        "values": [
+          0.8630632179511094,
+          0.8658582145684707,
+          0.8595408035636766,
+          0.8611484810791434,
+          0.8655360257475976
+        ],
+        "mean": 0.8630293485819995,
+        "sample_SD": 0.0027383694612065227
+      },
+      "Brier": {
+        "values": [
+          0.056243216765469804,
+          0.05661571990636448,
+          0.05660253586642312,
+          0.05642458936318234,
+          0.05646409674648832
+        ],
+        "mean": 0.05647003172958561,
+        "sample_SD": 0.00015192732783123102
+      },
+      "log_loss": {
+        "values": [
+          0.20418611491652172,
+          0.21052988474919987,
+          0.20667187113956884,
+          0.20582514426551954,
+          0.210015591785519
+        ],
+        "mean": 0.2074457213712658,
+        "sample_SD": 0.0027370808475645774
+      }
+    },
+    "mimiciii:test:CEM-Net:1": {
+      "AP": {
+        "values": [
+          0.5465509463417983,
+          0.5500209844930679,
+          0.5506028724175384,
+          0.5508797388530158,
+          0.5515675992870688
+        ],
+        "mean": 0.5499244282784979,
+        "sample_SD": 0.0019661268516300073
+      },
+      "AUROC": {
+        "values": [
+          0.8540247572090774,
+          0.8566939910135366,
+          0.8568641757194858,
+          0.8562803044306677,
+          0.8563769053577522
+        ],
+        "mean": 0.856048026746104,
+        "sample_SD": 0.0011553249180379437
+      },
+      "Brier": {
+        "values": [
+          0.10058808397146732,
+          0.09993777255882104,
+          0.09971094633843848,
+          0.09988248217897258,
+          0.09993133829602784
+        ],
+        "mean": 0.10001012466874545,
+        "sample_SD": 0.00033588664548473194
+      },
+      "log_loss": {
+        "values": [
+          0.3239091882712831,
+          0.32121676055740983,
+          0.32095856354725055,
+          0.3212509744530074,
+          0.3214542027047078
+        ],
+        "mean": 0.32175793790673174,
+        "sample_SD": 0.001215423530848213
+      }
+    },
+    "mimiciii:test:Medformer:1": {
+      "AP": {
+        "values": [
+          0.5146013989814247,
+          0.5170654678604765,
+          0.5210747736321026,
+          0.5164960495026779,
+          0.512157112347578
+        ],
+        "mean": 0.516278960464852,
+        "sample_SD": 0.003296566012589655
+      },
+      "AUROC": {
+        "values": [
+          0.8382522786088045,
+          0.8403298206262086,
+          0.8392261528125357,
+          0.8380642311739279,
+          0.8380424581958821
+        ],
+        "mean": 0.8387829882834718,
+        "sample_SD": 0.0009919342781011455
+      },
+      "Brier": {
+        "values": [
+          0.10390267155686207,
+          0.10409545984294713,
+          0.10461239652640064,
+          0.10377585659404541,
+          0.10498710453655223
+        ],
+        "mean": 0.10427469781136149,
+        "sample_SD": 0.0005101313820202722
+      },
+      "log_loss": {
+        "values": [
+          0.3362564633001792,
+          0.33908500227786614,
+          0.3377571018547486,
+          0.33679097445925366,
+          0.3420076004052684
+        ],
+        "mean": 0.33837942845946317,
+        "sample_SD": 0.0022955894484203033
+      }
+    },
+    "mimic:dev:CEM-Net:0": {
+      "AP": {
+        "values": [
+          0.5474081407189633,
+          0.5412670553145409,
+          0.5409574181514573,
+          0.5444619965702041,
+          0.5454621464887415
+        ],
+        "mean": 0.5439113514487814,
+        "sample_SD": 0.0027682907396248137
+      },
+      "AUROC": {
+        "values": [
+          0.9099177552254909,
+          0.9086846966885469,
+          0.9094643309654794,
+          0.9103635159768827,
+          0.9097197812528098
+        ],
+        "mean": 0.9096300160218419,
+        "sample_SD": 0.0006224857447876387
+      },
+      "Brier": {
+        "values": [
+          0.04963210105227735,
+          0.04911610862869149,
+          0.049625268731652294,
+          0.049277554352869186,
+          0.04949589247189664
+        ],
+        "mean": 0.04942938504747739,
+        "sample_SD": 0.00022642996059675838
+      },
+      "log_loss": {
+        "values": [
+          0.17612074189296187,
+          0.17131540720039162,
+          0.17468851090562698,
+          0.17282799295505116,
+          0.1757222347494692
+        ],
+        "mean": 0.17413497754070018,
+        "sample_SD": 0.0020265259871675456
+      }
+    },
+    "mimic:dev:Medformer:0": {
+      "AP": {
+        "values": [
+          0.46521589530013735,
+          0.45377444594485244,
+          0.45946474395325326,
+          0.45735939727804514,
+          0.45653055364102274
+        ],
+        "mean": 0.4584690072234622,
+        "sample_SD": 0.004287765515833952
+      },
+      "AUROC": {
+        "values": [
+          0.8830612447172881,
+          0.8802965062575102,
+          0.8807790518502775,
+          0.8799825578543811,
+          0.8819030331145317
+        ],
+        "mean": 0.8812044787587977,
+        "sample_SD": 0.0012682715429632267
+      },
+      "Brier": {
+        "values": [
+          0.054113771918208556,
+          0.05395109054495879,
+          0.05418022302601088,
+          0.055052802240696204,
+          0.05401842598474949
+        ],
+        "mean": 0.05426326274292479,
+        "sample_SD": 0.0004500033997475279
+      },
+      "log_loss": {
+        "values": [
+          0.19037665501312845,
+          0.19312418667064965,
+          0.19360347770767206,
+          0.19609309383501072,
+          0.19180071726835643
+        ],
+        "mean": 0.19299962609896346,
+        "sample_SD": 0.002136998738684592
+      }
+    },
+    "mimic:dev:CEM-Net:1": {
+      "AP": {
+        "values": [
+          0.5571081009028568,
+          0.5544622988495091,
+          0.5529449691956088,
+          0.5584950989179001,
+          0.5570482799334299
+        ],
+        "mean": 0.5560117495598609,
+        "sample_SD": 0.002249963600986993
+      },
+      "AUROC": {
+        "values": [
+          0.8641808992071689,
+          0.8629139827330137,
+          0.8632402404050583,
+          0.8649271062191864,
+          0.8645206008019786
+        ],
+        "mean": 0.8639565658732813,
+        "sample_SD": 0.000853011018291752
+      },
+      "Brier": {
+        "values": [
+          0.09511584212727642,
+          0.09447409603691091,
+          0.09455073851343458,
+          0.09378835663290168,
+          0.09483698656932044
+        ],
+        "mean": 0.09455320397596881,
+        "sample_SD": 0.0004970789304327238
+      },
+      "log_loss": {
+        "values": [
+          0.3120155238683421,
+          0.3059005439319476,
+          0.3056666444412341,
+          0.304008908863459,
+          0.31033147692212965
+        ],
+        "mean": 0.3075846196054225,
+        "sample_SD": 0.0034087602079103923
+      }
+    },
+    "mimic:dev:Medformer:1": {
+      "AP": {
+        "values": [
+          0.4982628656830171,
+          0.49588500444302636,
+          0.4937076519578104,
+          0.497095197693995,
+          0.497085142531246
+        ],
+        "mean": 0.496407172461819,
+        "sample_SD": 0.0017274757493061152
+      },
+      "AUROC": {
+        "values": [
+          0.8431489215201998,
+          0.8431877287199334,
+          0.8404472474330423,
+          0.8421655747983828,
+          0.8418677295404284
+        ],
+        "mean": 0.8421634404023972,
+        "sample_SD": 0.0011239558897686212
+      },
+      "Brier": {
+        "values": [
+          0.09960958943640276,
+          0.09964696715260467,
+          0.10082230982721062,
+          0.09953832534129267,
+          0.09961540829889043
+        ],
+        "mean": 0.09984652001128023,
+        "sample_SD": 0.0005469277337554078
+      },
+      "log_loss": {
+        "values": [
+          0.3244975264181629,
+          0.3207823468364005,
+          0.324458846804917,
+          0.32118366007083443,
+          0.3214401153934334
+        ],
+        "mean": 0.3224724991047497,
+        "sample_SD": 0.001845931315012155
+      }
+    },
+    "mimic:test:CEM-Net:0": {
+      "AP": {
+        "values": [
+          0.5470954117470451,
+          0.544330171984472,
+          0.5428731503131702,
+          0.5434731251471175,
+          0.5418594476190164
+        ],
+        "mean": 0.5439262613621642,
+        "sample_SD": 0.001987004800734558
+      },
+      "AUROC": {
+        "values": [
+          0.9138215595279684,
+          0.915093159426442,
+          0.9145149071349284,
+          0.914426052002168,
+          0.9141077808564537
+        ],
+        "mean": 0.9143926917895921,
+        "sample_SD": 0.0004780352248480324
+      },
+      "Brier": {
+        "values": [
+          0.049278686409937995,
+          0.048316940185532765,
+          0.04897605906538933,
+          0.04876505372058927,
+          0.049233348757179156
+        ],
+        "mean": 0.0489140176277257,
+        "sample_SD": 0.00039290474308367534
+      },
+      "log_loss": {
+        "values": [
+          0.17400431784066972,
+          0.16725076971990532,
+          0.17171633834855404,
+          0.17049826117824854,
+          0.17356048776568717
+        ],
+        "mean": 0.17140603497061296,
+        "sample_SD": 0.00271934327858939
+      }
+    },
+    "mimic:test:Medformer:0": {
+      "AP": {
+        "values": [
+          0.4673399807183397,
+          0.46246714655477383,
+          0.46531540205139243,
+          0.466380431938357,
+          0.46506190720515017
+        ],
+        "mean": 0.4653129736936026,
+        "sample_SD": 0.0018309831351808936
+      },
+      "AUROC": {
+        "values": [
+          0.8930659300566477,
+          0.8937089920490633,
+          0.8921246078819441,
+          0.8950462408178728,
+          0.8915863129657874
+        ],
+        "mean": 0.8931064167542632,
+        "sample_SD": 0.0013603600392771832
+      },
+      "Brier": {
+        "values": [
+          0.05266012937608492,
+          0.052401659125195586,
+          0.052679924726777884,
+          0.05316243610153593,
+          0.05247722344249823
+        ],
+        "mean": 0.05267627455441851,
+        "sample_SD": 0.000296505488803021
+      },
+      "log_loss": {
+        "values": [
+          0.18340398915123227,
+          0.18413252186941947,
+          0.18540763127658308,
+          0.185866148243597,
+          0.1843926519588868
+        ],
+        "mean": 0.18464058849994375,
+        "sample_SD": 0.0009923625200922376
+      }
+    },
+    "mimic:test:CEM-Net:1": {
+      "AP": {
+        "values": [
+          0.5411550678000061,
+          0.5411683322897266,
+          0.5401992708244943,
+          0.541605825850046,
+          0.542081486229978
+        ],
+        "mean": 0.5412419965988502,
+        "sample_SD": 0.0006959480317901077
+      },
+      "AUROC": {
+        "values": [
+          0.8567858214782536,
+          0.8580655491718421,
+          0.8574017560361853,
+          0.8578599529918459,
+          0.8577713523535302
+        ],
+        "mean": 0.8575768864063313,
+        "sample_SD": 0.0005032865391190298
+      },
+      "Brier": {
+        "values": [
+          0.09457910835988573,
+          0.09353158434777824,
+          0.09359374273489969,
+          0.09334784830347577,
+          0.09420437894170432
+        ],
+        "mean": 0.09385133253754874,
+        "sample_SD": 0.0005187454087304766
+      },
+      "log_loss": {
+        "values": [
+          0.3139598217411478,
+          0.30495740068229416,
+          0.3054114679640488,
+          0.3053996221033056,
+          0.31175156621865385
+        ],
+        "mean": 0.30829597574189005,
+        "sample_SD": 0.004238973637424874
+      }
+    },
+    "mimic:test:Medformer:1": {
+      "AP": {
+        "values": [
+          0.4864405950711127,
+          0.4805438834734922,
+          0.4721454239372981,
+          0.4760736516034259,
+          0.47692708267979045
+        ],
+        "mean": 0.4784261273530238,
+        "sample_SD": 0.005383890235488987
+      },
+      "AUROC": {
+        "values": [
+          0.8375423855312666,
+          0.833972704954359,
+          0.829866527942026,
+          0.8336876350692713,
+          0.834736253868939
+        ],
+        "mean": 0.8339611014731723,
+        "sample_SD": 0.0027507684225605666
+      },
+      "Brier": {
+        "values": [
+          0.09839516678718394,
+          0.0989010039311523,
+          0.10086548905375368,
+          0.09928739928670581,
+          0.09882798346209276
+        ],
+        "mean": 0.0992554085041777,
+        "sample_SD": 0.0009541610668446754
+      },
+      "log_loss": {
+        "values": [
+          0.3238832643549212,
+          0.3233366818826719,
+          0.32886004075184105,
+          0.32346875593355084,
+          0.32234411999273194
+        ],
+        "mean": 0.3243785725831434,
+        "sample_SD": 0.002568130988590324
+      }
+    },
+    "eicu:dev:CEM-Net:0": {
+      "AP": {
+        "values": [
+          0.4345274169276406,
+          0.43163453498355875,
+          0.4305670626944776,
+          0.43838050277473917,
+          0.4320873701231281
+        ],
+        "mean": 0.4334393775007088,
+        "sample_SD": 0.003119860636913929
+      },
+      "AUROC": {
+        "values": [
+          0.8889426931503712,
+          0.8879562047166708,
+          0.8879652105801809,
+          0.8806309738894617,
+          0.8838165094566185
+        ],
+        "mean": 0.8858623183586605,
+        "sample_SD": 0.003530138936787439
+      },
+      "Brier": {
+        "values": [
+          0.04031374902907988,
+          0.03873520243961936,
+          0.038471825650916586,
+          0.04111318818929556,
+          0.04084625580448633
+        ],
+        "mean": 0.03989604422267955,
+        "sample_SD": 0.0012180692690085752
+      },
+      "log_loss": {
+        "values": [
+          0.16616985225954453,
+          0.14400070771950974,
+          0.14309449462569485,
+          0.18157591555830638,
+          0.16630012156102986
+        ],
+        "mean": 0.16022821834481707,
+        "sample_SD": 0.01646808874869962
+      }
+    },
+    "eicu:dev:Medformer:0": {
+      "AP": {
+        "values": [
+          0.3416474711968346,
+          0.33448755848749157,
+          0.34047042690145946,
+          0.33149132357764044,
+          0.33540990600889115
+        ],
+        "mean": 0.33670133723446344,
+        "sample_SD": 0.004253913825725291
+      },
+      "AUROC": {
+        "values": [
+          0.8405784350672622,
+          0.842387459034867,
+          0.8429716855651249,
+          0.8402582650735063,
+          0.8439046006569201
+        ],
+        "mean": 0.8420200890795361,
+        "sample_SD": 0.001563191491795509
+      },
+      "Brier": {
+        "values": [
+          0.04168937606957849,
+          0.04199766789096267,
+          0.04193514993670681,
+          0.042108298176454374,
+          0.04195507299081757
+        ],
+        "mean": 0.04193711301290398,
+        "sample_SD": 0.00015384347649441283
+      },
+      "log_loss": {
+        "values": [
+          0.16056730267750577,
+          0.1607023042824444,
+          0.16289971242571644,
+          0.16268943963404667,
+          0.16137360608841766
+        ],
+        "mean": 0.16164647302162619,
+        "sample_SD": 0.0010941786830202921
+      }
+    },
+    "eicu:dev:CEM-Net:1": {
+      "AP": {
+        "values": [
+          0.4011181455739765,
+          0.3976992920114517,
+          0.3987553796528904,
+          0.4026621849099469,
+          0.4013674113319516
+        ],
+        "mean": 0.4003204826960435,
+        "sample_SD": 0.0020332291456445985
+      },
+      "AUROC": {
+        "values": [
+          0.8151534130329209,
+          0.8180437483424957,
+          0.817579107412189,
+          0.8161123510120918,
+          0.8133567181107529
+        ],
+        "mean": 0.8160490675820901,
+        "sample_SD": 0.001895700448211102
+      },
+      "Brier": {
+        "values": [
+          0.0867134970608901,
+          0.08433232606199675,
+          0.08553667137259155,
+          0.08583157230753978,
+          0.08615298621075104
+        ],
+        "mean": 0.08571341060275386,
+        "sample_SD": 0.0008868473785787675
+      },
+      "log_loss": {
+        "values": [
+          0.29846916652051075,
+          0.28523372996086455,
+          0.292384313493291,
+          0.29443844278660913,
+          0.29502523057799396
+        ],
+        "mean": 0.2931101766678539,
+        "sample_SD": 0.004917209185048082
+      }
+    },
+    "eicu:dev:Medformer:1": {
+      "AP": {
+        "values": [
+          0.3423451847121561,
+          0.339140994945188,
+          0.34319136324623695,
+          0.3450188620272464,
+          0.3410676290196032
+        ],
+        "mean": 0.34215280679008614,
+        "sample_SD": 0.0022123800974620795
+      },
+      "AUROC": {
+        "values": [
+          0.7901066620368276,
+          0.7874936852919969,
+          0.7906652424154761,
+          0.7873054655203877,
+          0.7860351951088538
+        ],
+        "mean": 0.7883212500747083,
+        "sample_SD": 0.001976406145339635
+      },
+      "Brier": {
+        "values": [
+          0.088135111569533,
+          0.08863250753144612,
+          0.08800038257923051,
+          0.08878288546940043,
+          0.08881798505561743
+        ],
+        "mean": 0.08847377444104551,
+        "sample_SD": 0.00038013785801880673
+      },
+      "log_loss": {
+        "values": [
+          0.3004736536635785,
+          0.303118090855547,
+          0.2985516216538026,
+          0.3031901863394597,
+          0.305072220032411
+        ],
+        "mean": 0.3020811545089598,
+        "sample_SD": 0.0025638507511675573
+      }
+    },
+    "eicu:test:CEM-Net:0": {
+      "AP": {
+        "values": [
+          0.3935388754828638,
+          0.3979448476688867,
+          0.3983095568340663,
+          0.38275817952568925,
+          0.388227778199175
+        ],
+        "mean": 0.39215584754213617,
+        "sample_SD": 0.006652806169437069
+      },
+      "AUROC": {
+        "values": [
+          0.8751738647414767,
+          0.8827160075296336,
+          0.8829265934164322,
+          0.868939130922926,
+          0.8753998023024137
+        ],
+        "mean": 0.8770310797825764,
+        "sample_SD": 0.005887814424079871
+      },
+      "Brier": {
+        "values": [
+          0.04056108514868051,
+          0.038952201347990226,
+          0.03878130288573077,
+          0.041992711069267497,
+          0.04129917333237491
+        ],
+        "mean": 0.04031729475680878,
+        "sample_SD": 0.0014189159731283498
+      },
+      "log_loss": {
+        "values": [
+          0.17268539626451573,
+          0.14552454819822758,
+          0.1446221546758685,
+          0.1899478412726604,
+          0.1704759462624306
+        ],
+        "mean": 0.16465117733474055,
+        "sample_SD": 0.019399661749988792
+      }
+    },
+    "eicu:test:Medformer:0": {
+      "AP": {
+        "values": [
+          0.2994647896968816,
+          0.2988018927062082,
+          0.29832692911472564,
+          0.3020905327976288,
+          0.2960256416213722
+        ],
+        "mean": 0.2989419571873633,
+        "sample_SD": 0.002184585560010402
+      },
+      "AUROC": {
+        "values": [
+          0.835655842764275,
+          0.8367711411501907,
+          0.8360203154906711,
+          0.8340723701309064,
+          0.8375966378264421
+        ],
+        "mean": 0.836023261472497,
+        "sample_SD": 0.0013205888247401674
+      },
+      "Brier": {
+        "values": [
+          0.04183611224250261,
+          0.04206730030881407,
+          0.042211332436703365,
+          0.041925110425860286,
+          0.04223994718957708
+        ],
+        "mean": 0.04205596052069148,
+        "sample_SD": 0.00017576627246675727
+      },
+      "log_loss": {
+        "values": [
+          0.16122169495538816,
+          0.16130546856122138,
+          0.16469544435437475,
+          0.16320922333277416,
+          0.162879155911003
+        ],
+        "mean": 0.1626621974229523,
+        "sample_SD": 0.0014488065760311598
+      }
+    },
+    "eicu:test:CEM-Net:1": {
+      "AP": {
+        "values": [
+          0.3922187567407075,
+          0.3930729541555812,
+          0.3944413493286769,
+          0.39095753143033796,
+          0.3954888270832543
+        ],
+        "mean": 0.39323588374771157,
+        "sample_SD": 0.0017875180853986468
+      },
+      "AUROC": {
+        "values": [
+          0.8142066275919412,
+          0.8177370414532489,
+          0.8161091838361281,
+          0.8161957677011936,
+          0.8136070904421275
+        ],
+        "mean": 0.8155711422049279,
+        "sample_SD": 0.0016650949535522482
+      },
+      "Brier": {
+        "values": [
+          0.08399751562670088,
+          0.08174250010622207,
+          0.0826183478222263,
+          0.08342039863003545,
+          0.08336804555214196
+        ],
+        "mean": 0.08302936154746533,
+        "sample_SD": 0.0008703280742631966
+      },
+      "log_loss": {
+        "values": [
+          0.29102426989111024,
+          0.2784049915049171,
+          0.28499862522323516,
+          0.2874279717863657,
+          0.28737602370430215
+        ],
+        "mean": 0.28584637642198607,
+        "sample_SD": 0.004683608039254781
+      }
+    },
+    "eicu:test:Medformer:1": {
+      "AP": {
+        "values": [
+          0.3371913601902394,
+          0.3374422959566583,
+          0.33748282486229453,
+          0.33369812070669413,
+          0.3313036851737085
+        ],
+        "mean": 0.33542365737791896,
+        "sample_SD": 0.002801405604343038
+      },
+      "AUROC": {
+        "values": [
+          0.7883776928759547,
+          0.7878052532009536,
+          0.7914236418623457,
+          0.7852580169741172,
+          0.7860587539783317
+        ],
+        "mean": 0.7877846717783406,
+        "sample_SD": 0.0023956720164470006
+      },
+      "Brier": {
+        "values": [
+          0.08581980931172008,
+          0.08611204107457124,
+          0.08573996897640121,
+          0.08687649554328833,
+          0.08661009343007606
+        ],
+        "mean": 0.0862316816672114,
+        "sample_SD": 0.000496163903358746
+      },
+      "log_loss": {
+        "values": [
+          0.29442984190783617,
+          0.2960735572072662,
+          0.29211582019434,
+          0.2979924447488527,
+          0.2983232820212823
+        ],
+        "mean": 0.29578698921591545,
+        "sample_SD": 0.0025835183044052522
+      }
+    }
+  },
+  "old_results_unchanged": true,
+  "existing_AP_caches_recomputed": false,
+  "calibration_fits": 0,
+  "overall_paper_task_complete": false,
+  "inputs": {
+    "F:\\Code\\Disease-Ranking-Hawkes-Mamba-0624\\runs\\cem_medformer_20261103\\mimiciii_results_v1\\verified-results.json": "4d651d284f1c0e9052310726ff1b701a57457f32c350d31193a9710bc27d7f48",
+    "F:\\Code\\Disease-Ranking-Hawkes-Mamba-0624\\runs\\cem_medformer_20261103\\mimic_results_v1\\verified-results.json": "507295739556fb6d3869381105afae073ca43609696e220ec0234ffcae9315bc",
+    "F:\\Code\\Disease-Ranking-Hawkes-Mamba-0624\\runs\\cem_medformer_20261103\\eicu_results_v1\\verified-results.json": "236c1237bba5d20a7046a1aea1c0670a3cdaf46f786ed7f3a6670e1e4977fe43"
+  }
+}

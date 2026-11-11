@@ -1,0 +1,24 @@
+\begin{table*}[!tbp]
+\centering\small
+\setlength{\tabcolsep}{1.6pt}
+\caption{Added temporal evidence with five seeds: AP gains for CEM-Net ($\Delta C$), comparator ($\Delta B$), and interaction $I_E=\Delta C-\Delta B$. (a) Original recipes; 99.7222\% patient-cluster intervals and Holm $p_H$ over 18 contrasts. Comparators: TabM-mini for MIMIC-III LOS, TabM-mini+PLE for eICU, TabM+PLE otherwise. (b) Matched TabM-mini; 99.4444\% intervals and Holm $p_H$ over nine contrasts.}
+\label{tab:evidence}
+\begin{tabular}{lrrrrrr}
+\toprule
+Task & $\Delta C$ [interval] & $p_H$ & $\Delta B$ [interval] & $p_H$ & $I_E$ [interval] & $p_H$ \\
+\midrule
+\multicolumn{7}{l}{(a) Original recipes: mean gains and interaction intervals} \\
+MIMIC-III / LOS & $+0.0112$ &  & $-0.0004$ &  & $+0.0116\ [+0.0018,+0.0208]$ & 0.0056 \\
+MIMIC-IV / LOS & $+0.0096$ &  & $-0.0001$ &  & $+0.0097\ [+0.0032,+0.0166]$ & 0.0009 \\
+eICU / LOS & $+0.0033$ &  & $-0.0020$ &  & $+0.0053\ [-0.0018,+0.0125]$ & 0.365 \\
+MIMIC-III / Mort. & $+0.0101$ &  & $-0.0027$ &  & $+0.0128\ [-0.0032,+0.0290]$ & 0.227 \\
+MIMIC-IV / Mort. & $+0.0066$ &  & $+0.0036$ &  & $+0.0029\ [-0.0063,+0.0122]$ & 1 \\
+eICU / Mort. & $-0.0009$ &  & $+0.0041$ &  & $-0.0050\ [-0.0142,+0.0039]$ & 0.978 \\
+\midrule
+\multicolumn{7}{l}{(b) Matched predictor: gain and interaction intervals} \\
+MIMIC-III / LOS & $+0.0112\ [+0.0022,+0.0199]$ & 0.0045 & $+0.0089\ [+0.0017,+0.0159]$ & 0.0044 & $+0.0023\ [-0.0053,+0.0097]$ & 0.932 \\
+MIMIC-IV / LOS & $+0.0096\ [+0.0031,+0.0163]$ & 0.00045 & $+0.0078\ [+0.0016,+0.0139]$ & 0.0044 & $+0.0019\ [-0.0033,+0.0072]$ & 0.932 \\
+eICU / Mort. & $-0.0009\ [-0.0089,+0.0073]$ & 0.932 & $+0.0074\ [-0.0002,+0.0151]$ & 0.0286 & $-0.0083\ [-0.0158,-0.0005]$ & 0.0145 \\
+\bottomrule
+\end{tabular}
+\end{table*}

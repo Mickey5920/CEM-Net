@@ -1,0 +1,8 @@
+{
+  "complete": true,
+  "files": {
+    "verified-results.json": "d5c9d4ebe5f0002f4159fbd76e27b14f47f80030efa8479c7168b80252a988cf",
+    "paired_draws.npz": "45e0f7ffb6f2cf3f23f22bd6f89f3baf1f67550e2684328b677451eb74fabad5",
+    "comparisons.csv": "a9f12eeefa6a1fbc4f69a91f78ce73dfb61e492abee1b3767327757caf53348a"
+  }
+}

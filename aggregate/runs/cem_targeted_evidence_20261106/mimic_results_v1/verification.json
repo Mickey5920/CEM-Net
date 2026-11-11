@@ -1,0 +1,99 @@
+{
+  "complete": true,
+  "source_manifest_sha256": "2eb7e33ac03fd2483e74de391def1694b5cb14bc76f04d71ca7f85559e4341a9",
+  "formal_fits": 17,
+  "reused_basic_fits": [
+    {
+      "seed": 48,
+      "endpoint": 1,
+      "fit": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimic/basic_v2/screen/jobs/CEM_basic_t1_s48",
+      "prediction": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimic/basic_v2/screen/test/test_CEM_basic_t1_s48/predictions_test.npz",
+      "prediction_sha256": "5ca892122538dc4be4f3ea4e87eb8907de5186b95f50208fad2dd137b645803e",
+      "checkpoint_sha256": "090500e89f1bcf8fbfa14002abe4a56e37653793ebe1fae4d4e73fed3feb84f1",
+      "cpu_replay_max_probability_drift": 1.1920928955078125e-07,
+      "initial_parameters_identical": true,
+      "original_epoch_budget": 52
+    },
+    {
+      "seed": 49,
+      "endpoint": 1,
+      "fit": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimic/basic_v2/screen/jobs/CEM_basic_t1_s49",
+      "prediction": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimic/basic_v2/screen/test/test_CEM_basic_t1_s49/predictions_test.npz",
+      "prediction_sha256": "0eec5801d10fe51dcdf5f0a71ad6d3764652fa6b291c2c04f9fa0575d37f11ad",
+      "checkpoint_sha256": "5c9c01fd788eeaef3739cd51fc02c3e686bde88d1b32119e8a6bfb0e0d044f7f",
+      "cpu_replay_max_probability_drift": 1.1920928955078125e-07,
+      "initial_parameters_identical": true,
+      "original_epoch_budget": 52
+    },
+    {
+      "seed": 50,
+      "endpoint": 1,
+      "fit": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimic/basic_v2/screen/jobs/CEM_basic_t1_s50",
+      "prediction": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimic/basic_v2/screen/test/test_CEM_basic_t1_s50/predictions_test.npz",
+      "prediction_sha256": "ba72e79621ba6de597298af64c54efbd2bd0a702dc79ed363610d8425a064826",
+      "checkpoint_sha256": "ee896bda1474b92f24712d24073e1cf3c2519642914b54c3e0ef540927a6c79e",
+      "cpu_replay_max_probability_drift": 1.1920928955078125e-07,
+      "initial_parameters_identical": true,
+      "original_epoch_budget": 52
+    }
+  ],
+  "original_protected": {
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimic/basic_v2/screen/jobs/CEM_basic_t1_s48/completion.json": "3d9668da9ad221a72d7746451f0f87e5536dd49b565b5ef076980cd7a47f2c2d",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimic/basic_v2/screen/jobs/CEM_basic_t1_s48/run_manifest.json": "8c241df5bda234c97cbd5f0138b0cff2aca7cc6a13c4d61a4502ffc15e42a478",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimic/basic_v2/screen/test/test_CEM_basic_t1_s48/completion.json": "35d87510efe2e196f51b5d79208a82e83699efcd89ec43bcd179ab0a8f5a154f",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimic/basic_v2/screen/jobs/CEM_basic_t1_s48/best.pt": "090500e89f1bcf8fbfa14002abe4a56e37653793ebe1fae4d4e73fed3feb84f1",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimic/basic_v2/screen/test/test_CEM_basic_t1_s48/predictions_test.npz": "5ca892122538dc4be4f3ea4e87eb8907de5186b95f50208fad2dd137b645803e",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimic/basic_v2/screen/jobs/CEM_basic_t1_s49/completion.json": "de82aff37d8153740e88104b2485c7797ebc5012fbb33e8e492e3e9c718f0567",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimic/basic_v2/screen/jobs/CEM_basic_t1_s49/run_manifest.json": "f983e44746aa14eac96260be4052885755c4de647eb6f225a613bf0ffc70f7f5",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimic/basic_v2/screen/test/test_CEM_basic_t1_s49/completion.json": "d4a0cecf61354e0dcd388807372f71198ef07a8b05d294c8b4902d8bcdad4e09",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimic/basic_v2/screen/jobs/CEM_basic_t1_s49/best.pt": "5c9c01fd788eeaef3739cd51fc02c3e686bde88d1b32119e8a6bfb0e0d044f7f",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimic/basic_v2/screen/test/test_CEM_basic_t1_s49/predictions_test.npz": "0eec5801d10fe51dcdf5f0a71ad6d3764652fa6b291c2c04f9fa0575d37f11ad",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimic/basic_v2/screen/jobs/CEM_basic_t1_s50/completion.json": "ea21c2bb7e54396f5242342c4a8763d2c689bac37beb0ce91f06d1e6bce36578",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimic/basic_v2/screen/jobs/CEM_basic_t1_s50/run_manifest.json": "23af5945eb77c9f3d594f861be6b6921937c24ee00e43c9fe4e632de9df87657",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimic/basic_v2/screen/test/test_CEM_basic_t1_s50/completion.json": "a4a0f79c7eb904fa8edd68dc7af5546501059c8cb85701a1357f0aabf4914818",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimic/basic_v2/screen/jobs/CEM_basic_t1_s50/best.pt": "ee896bda1474b92f24712d24073e1cf3c2519642914b54c3e0ef540927a6c79e",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimic/basic_v2/screen/test/test_CEM_basic_t1_s50/predictions_test.npz": "ba72e79621ba6de597298af64c54efbd2bd0a702dc79ed363610d8425a064826"
+  },
+  "new_paths": {
+    "CEM_basic:1": {
+      "parameters": 11828252,
+      "complete": true,
+      "removed_input_probability_invariance_exact": true,
+      "removed_input_gradient_exactly_zero": true,
+      "retained_input_gradient_nonzero": true,
+      "removed_columns": 6315,
+      "optimizer_updates": 0
+    },
+    "matched_basic:1": {
+      "parameters": 11789939,
+      "complete": true,
+      "removed_input_probability_invariance_exact": true,
+      "removed_input_gradient_exactly_zero": true,
+      "retained_input_gradient_nonzero": true,
+      "removed_columns": 6315,
+      "optimizer_updates": 0
+    },
+    "observation_weighted:0": {
+      "parameters": 11828252,
+      "original_parameter_count": true,
+      "other_coordinates_and_transforms_unchanged": true
+    },
+    "observation_weighted:1": {
+      "parameters": 11828252,
+      "original_parameter_count": true,
+      "other_coordinates_and_transforms_unchanged": true
+    }
+  },
+  "overlay_sha256": "3b0bb7f36e21aa241118fdb71fcc92737845273050c58308be19048b7f12de67",
+  "overlay_bytes": 144362566,
+  "unit_checks": [
+    "same_coverage",
+    "constant_path_equality",
+    "empty_and_zero_coverage",
+    "distinct_measures",
+    "same_value_insertion_discriminates",
+    "discrepancy_known_values"
+  ],
+  "new_training_updates": 0,
+  "original_results_unchanged": true
+}

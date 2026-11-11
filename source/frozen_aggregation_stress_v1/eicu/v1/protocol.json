@@ -1,0 +1,55 @@
+{
+  "run": "cem_aggregation_stress_20261106",
+  "seeds": [
+    48,
+    49,
+    50,
+    51,
+    52
+  ],
+  "databases": [
+    "mimiciii",
+    "mimic",
+    "eicu"
+  ],
+  "endpoints": [
+    0,
+    1
+  ],
+  "conditions": [
+    "lab_drop25",
+    "lab_drop50",
+    "lab_delay2h",
+    "lab_delay6h"
+  ],
+  "methods": [
+    "duration",
+    "window"
+  ],
+  "training_runs": 0,
+  "checkpoints": 60,
+  "total_stress_cases": 240,
+  "expected_reused_cases": 72,
+  "expected_new_cases": 168,
+  "primary": "difference of AP changes: (duration perturbed-clean) minus (window perturbed-clean)",
+  "secondary": "perturbed AP duration minus window",
+  "family_size": 24,
+  "families": [
+    "degradation",
+    "absolute"
+  ],
+  "bootstrap_replicates": 20000,
+  "bootstrap_rng_seed": 20261027,
+  "resampling": "whole patients with all stays",
+  "seed_aggregation": "per-seed AP/paired contrast, then average; no prediction pooling",
+  "intervals": [
+    0.95,
+    0.9979166666666667
+  ],
+  "p_values": "null-centered paired bootstrap; Holm separately in each full 24-contrast family",
+  "fixed_deletion": "reuse archived deterministic hash; nested 25/50 percent masks shared across views and models",
+  "normalization": "reuse each model original training-fitted transforms; never refit",
+  "time_rules": "original laboratory availability, 24h cutoff; unchanged specimen times and original MIMIC-III proxy",
+  "execution": "CPU FP32, four threads, batch 256; clean and changed-input numerical replay before reuse",
+  "original_model_results_and_manuscript_unchanged": true
+}

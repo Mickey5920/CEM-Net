@@ -1,0 +1,27 @@
+\begin{table}[tp]
+\centering\small
+\setlength{\tabcolsep}{3pt}
+\caption{Five-seed AP differences: CEM-Net minus baseline. References come from the three-seed comparison: unmarked, validation-selected; $\dagger$, additional observed-mean leader. Brackets show 99.9074\% patient-cluster intervals; $p_{\mathrm{adj}}$ uses Bonferroni multiplicity 54.}
+\label{tab:paired}
+\begin{tabular}{lrr}
+\toprule
+Reference & $\Delta$AP [interval] & $p_{\mathrm{adj}}$ \\
+\midrule
+\multicolumn{3}{l}{\textit{MIMIC-III / Mortality}} \\
+TabM+PLE & $+0.0098\ [-0.0108,+0.0307]$ & 1 \\
+TabM-mini+PLE$\dagger$ & $+0.0076\ [-0.0139,+0.0290]$ & 1 \\
+\multicolumn{3}{l}{\textit{MIMIC-III / LOS}} \\
+TabM-mini & $+0.0233\ [+0.0069,+0.0397]$ & 0.0027 \\
+LightGBM$\dagger$ & $+0.0179\ [+0.0006,+0.0352]$ & 0.0405 \\
+\multicolumn{3}{l}{\textit{MIMIC-IV / Mortality}} \\
+TabM+PLE & $+0.0040\ [-0.0094,+0.0169]$ & 1 \\
+\multicolumn{3}{l}{\textit{MIMIC-IV / LOS}} \\
+TabM+PLE & $+0.0081\ [-0.0010,+0.0173]$ & 0.211 \\
+\multicolumn{3}{l}{\textit{eICU / Mortality}} \\
+TabM-mini+PLE & $-0.0119\ [-0.0273,+0.0031]$ & 0.378 \\
+\multicolumn{3}{l}{\textit{eICU / LOS}} \\
+TabM-mini+PLE & $-0.0002\ [-0.0104,+0.0094]$ & 1 \\
+TabM+PLE$\dagger$ & $-0.0016\ [-0.0117,+0.0081]$ & 1 \\
+\bottomrule
+\end{tabular}
+\end{table}

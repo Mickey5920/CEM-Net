@@ -1,0 +1,173 @@
+{
+  "status": "needs_attention",
+  "groups": {
+    "eicu_controls": {
+      "phase": "probes",
+      "status": "preflight",
+      "counts": {
+        "pending": 24,
+        "running": 0,
+        "completed": 0,
+        "failed": 0
+      },
+      "probe_counts": {
+        "pending": 10,
+        "running": 0,
+        "completed": 2,
+        "failed": 0
+      },
+      "evaluation_counts": {
+        "pending": 24,
+        "running": 0,
+        "completed": 0,
+        "failed": 0
+      }
+    },
+    "eicu_sequence": {
+      "phase": "formal",
+      "status": "running",
+      "counts": {
+        "pending": 4,
+        "running": 4,
+        "completed": 0,
+        "failed": 0
+      },
+      "probe_counts": {
+        "pending": 0,
+        "running": 0,
+        "completed": 4,
+        "failed": 0
+      },
+      "evaluation_counts": {
+        "pending": 8,
+        "running": 0,
+        "completed": 0,
+        "failed": 0
+      }
+    },
+    "eicu_replacement": {
+      "phase": "probes",
+      "status": "needs_attention",
+      "counts": {
+        "pending": 8,
+        "running": 0,
+        "completed": 0,
+        "failed": 0
+      },
+      "probe_counts": {
+        "pending": 2,
+        "running": 0,
+        "completed": 1,
+        "failed": 1
+      },
+      "evaluation_counts": {
+        "pending": 8,
+        "running": 0,
+        "completed": 0,
+        "failed": 0
+      }
+    },
+    "eicu_basic": {
+      "phase": "probes",
+      "status": "preflight",
+      "counts": {
+        "pending": 6,
+        "running": 0,
+        "completed": 0,
+        "failed": 0
+      },
+      "probe_counts": {
+        "pending": 3,
+        "running": 0,
+        "completed": 0,
+        "failed": 0
+      },
+      "evaluation_counts": {
+        "pending": 6,
+        "running": 0,
+        "completed": 0,
+        "failed": 0
+      }
+    },
+    "eicu_tabular": {
+      "phase": "probes",
+      "status": "preflight",
+      "counts": {
+        "pending": 10,
+        "running": 0,
+        "completed": 0,
+        "failed": 0
+      },
+      "probe_counts": {
+        "pending": 5,
+        "running": 0,
+        "completed": 0,
+        "failed": 0
+      },
+      "evaluation_counts": {
+        "pending": 10,
+        "running": 0,
+        "completed": 0,
+        "failed": 0
+      }
+    }
+  },
+  "active": [
+    {
+      "id": "SeFT_t0_s51",
+      "database": "eicu",
+      "action": "train",
+      "progress": {
+        "status": "training",
+        "epoch": 1,
+        "step": 450,
+        "optimizer_updates": 450,
+        "best_ap": -1.0
+      }
+    },
+    {
+      "id": "SeFT_t0_s52",
+      "database": "eicu",
+      "action": "train",
+      "progress": {
+        "status": "training",
+        "epoch": 1,
+        "step": 390,
+        "optimizer_updates": 390,
+        "best_ap": -1.0
+      }
+    },
+    {
+      "id": "mTAND_Enc_t0_s51",
+      "database": "eicu",
+      "action": "train",
+      "progress": {
+        "status": "training",
+        "epoch": 1,
+        "step": 60,
+        "optimizer_updates": 60,
+        "best_ap": -1.0
+      }
+    },
+    {
+      "id": "mTAND_Enc_t0_s52",
+      "database": "eicu",
+      "action": "train",
+      "progress": {
+        "status": "training",
+        "epoch": 1,
+        "step": 30,
+        "optimizer_updates": 30,
+        "best_ap": -1.0
+      }
+    }
+  ],
+  "failed": [
+    {
+      "database": "eicu",
+      "id": "probe_STraTS_supervised_t0_s51",
+      "error": "AssertionError('Child exit 1')",
+      "log": "/home/data/lxm/TRACEHR/runs/cem_core_five_seed_20261107/eicu/replacement_v1/screen/probe_STraTS_supervised_t0_s51.log"
+    }
+  ]
+}

@@ -1,0 +1,247 @@
+{
+  "complete": true,
+  "source_manifest_sha256": "9be120d18fe4ede9d73da112ed1ab4169e7deb7e80e2aeabb11731cfca7b7c61",
+  "formal_fits": 20,
+  "old_constructor_parity": {
+    "0": {
+      "all_parameters_and_buffers_exact": true,
+      "initial_weights_sha256": "c9d82bc9c7b68c92c3722f1886c69fcfeeda79c0de345a2455ba5b78c80e67a7",
+      "loss_exact": true
+    },
+    "1": {
+      "all_parameters_and_buffers_exact": true,
+      "initial_weights_sha256": "c9d82bc9c7b68c92c3722f1886c69fcfeeda79c0de345a2455ba5b78c80e67a7",
+      "loss_exact": true
+    }
+  },
+  "original_protected": {
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_structure_20261014/mimic/g_v1/preparation/completion.json": "0da2c92ececf8878b970ebbbdbdb2f9a78f14bba514dd648b669f4d3d8e6c27b",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_structure_20261014/mimic/g_v1/preparation/preprocessing.npz": "c018db5cf907da34a9d74b3e9000757e23556f17a67fa53b86520920b86ef392",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_structure_20261014/mimic/g_v1/preparation/native_configs.json": "0b3bce090b5261ed513d3cde981fa89623703a1bfcaa7583b757c6b224692e0c",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_structure_20261014/mimic/g_v1/preparation/native_summary_scaling.npz": "673d0428b476b956f30e67d4c49fc241508fb4b35427c903286caf2f7e5e304e",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/cache/tracehr_module_scratch_20261010/mimic/61d04c91241f3447c7e8bfe0f168265a16fbcd76a178758dc56e1d32f2a25cb6/train_raw.npy": "02d5b4a271d271a8318f3b6f87e6f04852f8b4496c8ca4ebc89f65fe47b01cdf",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/cache/tracehr_module_scratch_20261010/mimic/61d04c91241f3447c7e8bfe0f168265a16fbcd76a178758dc56e1d32f2a25cb6/train_targets.npz": "f4a5d2a7c62900ce1cc784939607bf00edf002736d14ca91e5f2f5778223fb7c",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/cache/tracehr_module_scratch_20261010/mimic/61d04c91241f3447c7e8bfe0f168265a16fbcd76a178758dc56e1d32f2a25cb6/dev_raw.npy": "f0848400ba38b56af00af22f8a262fc9609e0572c2c8ee2930ec5aec5f23e6e7",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/cache/tracehr_module_scratch_20261010/mimic/61d04c91241f3447c7e8bfe0f168265a16fbcd76a178758dc56e1d32f2a25cb6/dev_targets.npz": "9f252b03f5640dec8f0297ac178f22f6ed1f3e5bf9fe266cf17a0a3bc708cb1b",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_pm_test_20261021/mimic/features/test_raw.npy": "a0652e989379b22cf95ae047ac632a9809cb59586670862104fe0631cabb9122",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_pm_test_20261021/mimic/features/test_targets.npz": "91b18b5d479cc6dfcbe147263bfacd0f19a5d682a17709f058ccb7cd6a50083e"
+  },
+  "windows_sha256": "ffcc3149ceb962be92cdf3aeecd72e8b68b56c311d21ce4b1531c1bdc65b7548",
+  "windows_bytes": 142981593,
+  "unit_checks": [
+    "closed_window_boundaries",
+    "empty_vs_observed_zero",
+    "window_major_layout",
+    "overlay_preserves_other_coordinates_and_source"
+  ],
+  "models": {
+    "matched_tabm": {
+      "parameters": 11789939,
+      "details": {
+        "config": {
+          "act": "selu",
+          "act_lr_factor": 0.1,
+          "add_front_scale": true,
+          "batch_size": 256,
+          "bias_init_mode": "he+5",
+          "bias_lr_factor": 0.1,
+          "bias_wd_factor": 0.0,
+          "block_str": "w-b-a-d",
+          "embedding_size": 8,
+          "hidden_sizes": [
+            256,
+            256,
+            256
+          ],
+          "lr": 0.04,
+          "lr_sched": "coslog4",
+          "ls_eps": 0.1,
+          "max_one_hot_cat_size": 9,
+          "n_cv": 1,
+          "n_epochs": 256,
+          "n_refit": 0,
+          "n_repeats": 1,
+          "n_threads": 4,
+          "num_emb_type": "none",
+          "opt": "adam",
+          "p_drop": 0.15,
+          "p_drop_sched": "flat_cos",
+          "plr_hidden_1": 16,
+          "plr_hidden_2": 4,
+          "plr_lr_factor": 0.1,
+          "plr_sigma": 0.1,
+          "predict_batch_size": 256,
+          "scale_lr_factor": 6.0,
+          "sq_mom": 0.95,
+          "tfms": [],
+          "use_early_stopping": false,
+          "use_ls": false,
+          "use_parametric_act": true,
+          "val_fraction": 0.2,
+          "verbosity": 2,
+          "wd": 0.02,
+          "wd_sched": "flat_cos",
+          "weight_init_mode": "std",
+          "weight_param": "ntk",
+          "allow_single_split_opt": false,
+          "init_ram_limit_gb": 1.0
+        },
+        "fixed_statistics": [],
+        "split_seed": 48,
+        "sub_split_seed": 75120128,
+        "adaptation": "typed periodic frontend; official native trunk and optimizer",
+        "initialization_rows": 1024,
+        "initialization_split": "train",
+        "initialization_indices_sha256": "2bfbd41f23eece41b0d389f1867d87dda866ea110ca1eb74a22481501add63f4",
+        "numeric_features": 9545,
+        "learned_coordinates": 3,
+        "post_encoding_scale": true,
+        "shared_weight_layers": 3,
+        "hidden_member_adapters": 0,
+        "independent_member_heads": 8,
+        "members": 8,
+        "centered_modulation": false,
+        "center_fit_split": "train",
+        "center_updates": "fixed statistic at random initialization; all learned parameters train jointly",
+        "matched_control": true,
+        "architecture": "official TabM-mini 0.0.3",
+        "native_activation": "ReLU",
+        "linear_parameterization": "CEM role-matched NTK",
+        "effective_linear_initialization": "native TabM",
+        "input_factor_initialization": "same fresh grouped normal values as CEM; independently learned coordinates",
+        "linear_mapping": [
+          {
+            "role": "hidden_0",
+            "factor": 0.004930057926795431,
+            "weight_factors": {
+              "lr": 1.0,
+              "wd": 1.0,
+              "l2": 1.0,
+              "l1": 1.0
+            },
+            "bias_factors": {
+              "lr": 0.1,
+              "wd": 0.0,
+              "l1_reg": 1.0,
+              "l2_reg": 1.0
+            }
+          },
+          {
+            "role": "hidden_1",
+            "factor": 0.0625,
+            "weight_factors": {
+              "lr": 1.0,
+              "wd": 1.0,
+              "l2": 1.0,
+              "l1": 1.0
+            },
+            "bias_factors": {
+              "lr": 0.1,
+              "wd": 0.0,
+              "l1_reg": 1.0,
+              "l2_reg": 1.0
+            }
+          },
+          {
+            "role": "hidden_2",
+            "factor": 0.0625,
+            "weight_factors": {
+              "lr": 1.0,
+              "wd": 1.0,
+              "l2": 1.0,
+              "l1": 1.0
+            },
+            "bias_factors": {
+              "lr": 0.1,
+              "wd": 0.0,
+              "l1_reg": 1.0,
+              "l2_reg": 1.0
+            }
+          }
+        ],
+        "native_forward_max_abs": 7.450580596923828e-08,
+        "front_scale": false,
+        "all_frontend_parameters_jointly_trained": true
+      },
+      "expanded_width": 41143
+    },
+    "window_summary": {
+      "parameters": 11828252,
+      "details": {
+        "config": {
+          "act": "selu",
+          "act_lr_factor": 0.1,
+          "add_front_scale": true,
+          "batch_size": 256,
+          "bias_init_mode": "he+5",
+          "bias_lr_factor": 0.1,
+          "bias_wd_factor": 0.0,
+          "block_str": "w-b-a-d",
+          "embedding_size": 8,
+          "hidden_sizes": [
+            256,
+            256,
+            256
+          ],
+          "lr": 0.04,
+          "lr_sched": "coslog4",
+          "ls_eps": 0.1,
+          "max_one_hot_cat_size": 9,
+          "n_cv": 1,
+          "n_epochs": 256,
+          "n_refit": 0,
+          "n_repeats": 1,
+          "n_threads": 4,
+          "num_emb_type": "none",
+          "opt": "adam",
+          "p_drop": 0.15,
+          "p_drop_sched": "flat_cos",
+          "plr_hidden_1": 16,
+          "plr_hidden_2": 4,
+          "plr_lr_factor": 0.1,
+          "plr_sigma": 0.1,
+          "predict_batch_size": 256,
+          "scale_lr_factor": 6.0,
+          "sq_mom": 0.95,
+          "tfms": [],
+          "use_early_stopping": false,
+          "use_ls": false,
+          "use_parametric_act": true,
+          "val_fraction": 0.2,
+          "verbosity": 2,
+          "wd": 0.02,
+          "wd_sched": "flat_cos",
+          "weight_init_mode": "std",
+          "weight_param": "ntk",
+          "allow_single_split_opt": false,
+          "init_ram_limit_gb": 1.0
+        },
+        "fixed_statistics": [],
+        "split_seed": 48,
+        "sub_split_seed": 75120128,
+        "adaptation": "typed periodic frontend; official native trunk and optimizer",
+        "initialization_rows": 1024,
+        "initialization_split": "train",
+        "initialization_indices_sha256": "2bfbd41f23eece41b0d389f1867d87dda866ea110ca1eb74a22481501add63f4",
+        "numeric_features": 9545,
+        "learned_coordinates": 3,
+        "post_encoding_scale": true,
+        "shared_weight_layers": 4,
+        "hidden_member_adapters": 0,
+        "independent_member_heads": 0,
+        "members": 8,
+        "centered_modulation": false,
+        "center_fit_split": "train",
+        "center_updates": "fixed statistic at random initialization; all learned parameters train jointly"
+      },
+      "expanded_width": 41143
+    }
+  },
+  "test_labels_used_for_fitting": false,
+  "optimizer_updates": 0,
+  "preflight_reuse": {
+    "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_matched_controls_20261105/mimic/v3/verification.json",
+    "sha256": "962d7e69eb33c6cf3bd09b9e90a64ed543c46c7e117bdf435ad3741d45227d72",
+    "reason": "only queue dependency added; scientific code and inputs identical"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "supports_six_fit_contrast": true,
+  "decision": "limited structure test; no guaranteed benefit or established causal mechanism",
+  "reviews": {
+    "review_v1": "a018d892299ea2b28f114ee9b8f5bedb46f61f116f6141cc666734be4858353f",
+    "coherence_v2": "93cbbe2bfd6254713a4cc7ced62196354c8ae5848729880ac55add11c2e91d45"
+  },
+  "authorized_matrix": [
+    {
+      "variant": "C5_noT_noA_RG",
+      "seed": 43,
+      "endpoint": 0
+    },
+    {
+      "variant": "C5_noT_noA_RG",
+      "seed": 43,
+      "endpoint": 1
+    },
+    {
+      "variant": "C5_noT_noA_RG",
+      "seed": 44,
+      "endpoint": 0
+    },
+    {
+      "variant": "C5_noT_noA_RG",
+      "seed": 44,
+      "endpoint": 1
+    },
+    {
+      "variant": "C5_noT_noA_RG",
+      "seed": 45,
+      "endpoint": 0
+    },
+    {
+      "variant": "C5_noT_noA_RG",
+      "seed": 45,
+      "endpoint": 1
+    }
+  ],
+  "no_other_fits": true,
+  "no_eicu": true,
+  "hyperparameter_changes": false
+}

@@ -1,0 +1,1402 @@
+{
+  "complete": true,
+  "database": "mimiciii",
+  "rows": [
+    {
+      "variant": "reference",
+      "endpoint": 0,
+      "seed": 48,
+      "checkpoint_sha256": "4c6e15d690c1d19ba6e70a62e30bfb6585d23bc4251ecc63189db4ff3b9ecd37",
+      "replay_max_drift": 7.450580596923828e-08,
+      "timing": {
+        "device": "NVIDIA RTX 6000 Ada Generation",
+        "precision": "FP32; TF32 disabled",
+        "threads": 4,
+        "warmup": 10,
+        "rows": [
+          {
+            "batch": 1,
+            "resident_model": {
+              "median_ms": 0.9252465097233653,
+              "p95_ms": 1.4098839485086496,
+              "records_per_second": 1080.793052976752,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 1.0170635068789124,
+              "p95_ms": 1.5776414074935017,
+              "records_per_second": 983.2227714754257,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 85.10888671875,
+            "peak_reserved_mib": 234.0
+          },
+          {
+            "batch": 8,
+            "resident_model": {
+              "median_ms": 0.7971848826855421,
+              "p95_ms": 0.8283973787911236,
+              "records_per_second": 10035.313230037358,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 1.0279695270583034,
+              "p95_ms": 1.088939874898642,
+              "records_per_second": 7782.331858506798,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 106.341796875,
+            "peak_reserved_mib": 236.0
+          },
+          {
+            "batch": 32,
+            "resident_model": {
+              "median_ms": 0.7645196747034788,
+              "p95_ms": 0.785010785330087,
+              "records_per_second": 41856.34596311899,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 1.2090783566236496,
+              "p95_ms": 1.3058009906671941,
+              "records_per_second": 26466.440181230253,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 179.39697265625,
+            "peak_reserved_mib": 236.0
+          }
+        ],
+        "parameters": 12902328,
+        "scope": "warm dense-feature inference; source-table scan and evidence extraction measured separately; no training updates"
+      }
+    },
+    {
+      "variant": "matched_tabm",
+      "endpoint": 0,
+      "seed": 48,
+      "checkpoint_sha256": "6af6cd5a16d7d944d3476ee4dc392ce8fee4ba3346253a0c2dbfd4b4c6edc4dc",
+      "replay_max_drift": 1.1920928955078125e-07,
+      "timing": {
+        "device": "NVIDIA RTX 6000 Ada Generation",
+        "precision": "FP32; TF32 disabled",
+        "threads": 4,
+        "warmup": 10,
+        "rows": [
+          {
+            "batch": 1,
+            "resident_model": {
+              "median_ms": 1.1778294574469328,
+              "p95_ms": 1.562133256811648,
+              "records_per_second": 849.0193496837849,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 1.277962583117187,
+              "p95_ms": 1.6189977875910695,
+              "records_per_second": 782.4955231168154,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 84.44287109375,
+            "peak_reserved_mib": 232.0
+          },
+          {
+            "batch": 8,
+            "resident_model": {
+              "median_ms": 1.2338614324107766,
+              "p95_ms": 1.2667952803894877,
+              "records_per_second": 6483.710236707231,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 1.4721546322107315,
+              "p95_ms": 1.5171764069236815,
+              "records_per_second": 5434.211749880117,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 105.73046875,
+            "peak_reserved_mib": 236.0
+          },
+          {
+            "batch": 32,
+            "resident_model": {
+              "median_ms": 1.242341473698616,
+              "p95_ms": 1.2934333528392017,
+              "records_per_second": 25757.81351380932,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 1.776198041625321,
+              "p95_ms": 1.8716721213422716,
+              "records_per_second": 18016.009054214588,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 178.97314453125,
+            "peak_reserved_mib": 236.0
+          }
+        ],
+        "parameters": 12860235,
+        "scope": "warm dense-feature inference; source-table scan and evidence extraction measured separately; no training updates"
+      }
+    },
+    {
+      "variant": "reference",
+      "endpoint": 0,
+      "seed": 49,
+      "checkpoint_sha256": "a2278e97e730af9335e96bdd4b910fd802de08b56003e2c80831715050594168",
+      "replay_max_drift": 2.9802322387695312e-08,
+      "timing": {
+        "device": "NVIDIA RTX 6000 Ada Generation",
+        "precision": "FP32; TF32 disabled",
+        "threads": 4,
+        "warmup": 10,
+        "rows": [
+          {
+            "batch": 1,
+            "resident_model": {
+              "median_ms": 0.9644379606470466,
+              "p95_ms": 1.5948082669638095,
+              "records_per_second": 1036.87333017159,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 1.0382570326328278,
+              "p95_ms": 1.7325366497971115,
+              "records_per_second": 963.1526380940421,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 85.10888671875,
+            "peak_reserved_mib": 234.0
+          },
+          {
+            "batch": 8,
+            "resident_model": {
+              "median_ms": 0.7733695674687624,
+              "p95_ms": 0.7817943231202662,
+              "records_per_second": 10344.342907342461,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 0.9478674037382007,
+              "p95_ms": 0.976007361896336,
+              "records_per_second": 8439.999063634417,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 106.341796875,
+            "peak_reserved_mib": 236.0
+          },
+          {
+            "batch": 32,
+            "resident_model": {
+              "median_ms": 0.7537405472248793,
+              "p95_ms": 0.7655580411665142,
+              "records_per_second": 42454.92712023726,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 1.1722194030880928,
+              "p95_ms": 1.201959524769336,
+              "records_per_second": 27298.643850885983,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 179.39697265625,
+            "peak_reserved_mib": 236.0
+          }
+        ],
+        "parameters": 12902328,
+        "scope": "warm dense-feature inference; source-table scan and evidence extraction measured separately; no training updates"
+      }
+    },
+    {
+      "variant": "matched_tabm",
+      "endpoint": 0,
+      "seed": 49,
+      "checkpoint_sha256": "ed6a34b3aed44493a445b99cbbcae3f1eb41d39a74c707b8ac2bee957e967a2d",
+      "replay_max_drift": 5.960464477539063e-08,
+      "timing": {
+        "device": "NVIDIA RTX 6000 Ada Generation",
+        "precision": "FP32; TF32 disabled",
+        "threads": 4,
+        "warmup": 10,
+        "rows": [
+          {
+            "batch": 1,
+            "resident_model": {
+              "median_ms": 0.949138542637229,
+              "p95_ms": 1.6115492908284064,
+              "records_per_second": 1053.5869686857832,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 1.016475958749652,
+              "p95_ms": 1.714925991836935,
+              "records_per_second": 983.7910984437658,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 84.44287109375,
+            "peak_reserved_mib": 232.0
+          },
+          {
+            "batch": 8,
+            "resident_model": {
+              "median_ms": 0.7166165160015225,
+              "p95_ms": 0.739094743039459,
+              "records_per_second": 11163.57189845036,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 0.8990559726953506,
+              "p95_ms": 0.9425218682736157,
+              "records_per_second": 8898.222405459552,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 105.73046875,
+            "peak_reserved_mib": 236.0
+          },
+          {
+            "batch": 32,
+            "resident_model": {
+              "median_ms": 0.7541960803791881,
+              "p95_ms": 0.7632909459061921,
+              "records_per_second": 42429.28441621087,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 1.1279339669272304,
+              "p95_ms": 1.165503927040845,
+              "records_per_second": 28370.455131496637,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 178.97314453125,
+            "peak_reserved_mib": 236.0
+          }
+        ],
+        "parameters": 12860235,
+        "scope": "warm dense-feature inference; source-table scan and evidence extraction measured separately; no training updates"
+      }
+    },
+    {
+      "variant": "reference",
+      "endpoint": 0,
+      "seed": 50,
+      "checkpoint_sha256": "a770d25f076382359647e4692bd49497a0dabfeb79ad90c526a8b3ff75a03a59",
+      "replay_max_drift": 5.960464477539063e-08,
+      "timing": {
+        "device": "NVIDIA RTX 6000 Ada Generation",
+        "precision": "FP32; TF32 disabled",
+        "threads": 4,
+        "warmup": 10,
+        "rows": [
+          {
+            "batch": 1,
+            "resident_model": {
+              "median_ms": 0.7495555328205228,
+              "p95_ms": 0.9431799291633066,
+              "records_per_second": 1334.1239657548426,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 0.846677110530436,
+              "p95_ms": 0.967354024760425,
+              "records_per_second": 1181.0877931653408,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 85.10888671875,
+            "peak_reserved_mib": 234.0
+          },
+          {
+            "batch": 8,
+            "resident_model": {
+              "median_ms": 0.7653039647266269,
+              "p95_ms": 0.787676905747503,
+              "records_per_second": 10453.362805793993,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 0.9573319694027305,
+              "p95_ms": 0.9939866256900132,
+              "records_per_second": 8356.55786674618,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 106.341796875,
+            "peak_reserved_mib": 236.0
+          },
+          {
+            "batch": 32,
+            "resident_model": {
+              "median_ms": 0.7584616541862488,
+              "p95_ms": 0.7794616278260945,
+              "records_per_second": 42190.66293382057,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 1.200839993543923,
+              "p95_ms": 1.2515982147306202,
+              "records_per_second": 26648.013200794136,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 179.39697265625,
+            "peak_reserved_mib": 236.0
+          }
+        ],
+        "parameters": 12902328,
+        "scope": "warm dense-feature inference; source-table scan and evidence extraction measured separately; no training updates"
+      }
+    },
+    {
+      "variant": "matched_tabm",
+      "endpoint": 0,
+      "seed": 50,
+      "checkpoint_sha256": "83d8c28f187d1022301bb03cb2fc43d91eb7d00559eeaedc91e06098b5099026",
+      "replay_max_drift": 8.940696716308594e-08,
+      "timing": {
+        "device": "NVIDIA RTX 6000 Ada Generation",
+        "precision": "FP32; TF32 disabled",
+        "threads": 4,
+        "warmup": 10,
+        "rows": [
+          {
+            "batch": 1,
+            "resident_model": {
+              "median_ms": 0.9439090499654412,
+              "p95_ms": 1.5508505515754216,
+              "records_per_second": 1059.4241045115655,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 1.010026433505118,
+              "p95_ms": 1.655163872055709,
+              "records_per_second": 990.0730979185139,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 84.44287109375,
+            "peak_reserved_mib": 232.0
+          },
+          {
+            "batch": 8,
+            "resident_model": {
+              "median_ms": 0.7222596323117614,
+              "p95_ms": 0.7727382471784949,
+              "records_per_second": 11076.349337694706,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 0.9113999549299479,
+              "p95_ms": 0.9811354684643447,
+              "records_per_second": 8777.70506430944,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 105.73046875,
+            "peak_reserved_mib": 236.0
+          },
+          {
+            "batch": 32,
+            "resident_model": {
+              "median_ms": 0.7595999632030725,
+              "p95_ms": 0.7771828677505255,
+              "records_per_second": 42127.43753312304,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 1.1519900290295482,
+              "p95_ms": 1.2462185113690791,
+              "records_per_second": 27778.018206422523,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 178.97314453125,
+            "peak_reserved_mib": 236.0
+          }
+        ],
+        "parameters": 12860235,
+        "scope": "warm dense-feature inference; source-table scan and evidence extraction measured separately; no training updates"
+      }
+    },
+    {
+      "variant": "reference",
+      "endpoint": 0,
+      "seed": 51,
+      "checkpoint_sha256": "bffd396e0c692b6058099cde38d29268415b99e57edcd7b1c642f987b7dd170d",
+      "replay_max_drift": 1.1920928955078125e-07,
+      "timing": {
+        "device": "NVIDIA RTX 6000 Ada Generation",
+        "precision": "FP32; TF32 disabled",
+        "threads": 4,
+        "warmup": 10,
+        "rows": [
+          {
+            "batch": 1,
+            "resident_model": {
+              "median_ms": 0.961716054007411,
+              "p95_ms": 1.6735871671698985,
+              "records_per_second": 1039.8079514562144,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 1.0445410152897239,
+              "p95_ms": 1.7490577185526486,
+              "records_per_second": 957.358289777286,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 85.10888671875,
+            "peak_reserved_mib": 234.0
+          },
+          {
+            "batch": 8,
+            "resident_model": {
+              "median_ms": 0.7580704987049103,
+              "p95_ms": 0.7683756062760949,
+              "records_per_second": 10553.108205196248,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 0.9353481000289321,
+              "p95_ms": 0.9630496148020028,
+              "records_per_second": 8552.965467885748,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 106.341796875,
+            "peak_reserved_mib": 236.0
+          },
+          {
+            "batch": 32,
+            "resident_model": {
+              "median_ms": 0.7578909862786531,
+              "p95_ms": 0.7704382296651602,
+              "records_per_second": 42222.431166683105,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 1.1772305006161332,
+              "p95_ms": 1.2075489037670195,
+              "records_per_second": 27182.4421668076,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 179.39697265625,
+            "peak_reserved_mib": 236.0
+          }
+        ],
+        "parameters": 12902328,
+        "scope": "warm dense-feature inference; source-table scan and evidence extraction measured separately; no training updates"
+      }
+    },
+    {
+      "variant": "matched_tabm",
+      "endpoint": 0,
+      "seed": 51,
+      "checkpoint_sha256": "e6eddc2ddf3719ec71016cbb9e7428bdff93de22e88cf0c513b7cf224b49788c",
+      "replay_max_drift": 2.9802322387695312e-08,
+      "timing": {
+        "device": "NVIDIA RTX 6000 Ada Generation",
+        "precision": "FP32; TF32 disabled",
+        "threads": 4,
+        "warmup": 10,
+        "rows": [
+          {
+            "batch": 1,
+            "resident_model": {
+              "median_ms": 0.9738245280459523,
+              "p95_ms": 1.6324308817274864,
+              "records_per_second": 1026.879043606111,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 1.0357409482821822,
+              "p95_ms": 1.7453219741582868,
+              "records_per_second": 965.4923865456319,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 84.44287109375,
+            "peak_reserved_mib": 232.0
+          },
+          {
+            "batch": 8,
+            "resident_model": {
+              "median_ms": 0.7226346060633659,
+              "p95_ms": 0.7415474974550307,
+              "records_per_second": 11070.60184064656,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 0.9184995433315635,
+              "p95_ms": 0.9544699103571475,
+              "records_per_second": 8709.857351678758,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 105.73046875,
+            "peak_reserved_mib": 236.0
+          },
+          {
+            "batch": 32,
+            "resident_model": {
+              "median_ms": 0.7583254482597113,
+              "p95_ms": 0.768189097288996,
+              "records_per_second": 42198.24097086168,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 1.17315084207803,
+              "p95_ms": 1.206855138298124,
+              "records_per_second": 27276.96972310708,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 178.97314453125,
+            "peak_reserved_mib": 236.0
+          }
+        ],
+        "parameters": 12860235,
+        "scope": "warm dense-feature inference; source-table scan and evidence extraction measured separately; no training updates"
+      }
+    },
+    {
+      "variant": "reference",
+      "endpoint": 0,
+      "seed": 52,
+      "checkpoint_sha256": "eec500bc829c7aa28eae606d913952510ae658d6a92951c8ae1281751e609b85",
+      "replay_max_drift": 2.9802322387695312e-08,
+      "timing": {
+        "device": "NVIDIA RTX 6000 Ada Generation",
+        "precision": "FP32; TF32 disabled",
+        "threads": 4,
+        "warmup": 10,
+        "rows": [
+          {
+            "batch": 1,
+            "resident_model": {
+              "median_ms": 1.2454378884285688,
+              "p95_ms": 1.7132394132204352,
+              "records_per_second": 802.9304466252829,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 1.3508980628103018,
+              "p95_ms": 1.7895351396873587,
+              "records_per_second": 740.2483040945954,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 85.10888671875,
+            "peak_reserved_mib": 234.0
+          },
+          {
+            "batch": 8,
+            "resident_model": {
+              "median_ms": 1.3065605890005827,
+              "p95_ms": 1.330435334239155,
+              "records_per_second": 6122.946051908223,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 1.540038618259132,
+              "p95_ms": 1.6552249318920071,
+              "records_per_second": 5194.674929024341,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 106.341796875,
+            "peak_reserved_mib": 236.0
+          },
+          {
+            "batch": 32,
+            "resident_model": {
+              "median_ms": 1.2976140715181828,
+              "p95_ms": 1.3206215924583375,
+              "records_per_second": 24660.645027192586,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 1.8375860527157784,
+              "p95_ms": 1.902153354603797,
+              "records_per_second": 17414.150457175612,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 179.39697265625,
+            "peak_reserved_mib": 236.0
+          }
+        ],
+        "parameters": 12902328,
+        "scope": "warm dense-feature inference; source-table scan and evidence extraction measured separately; no training updates"
+      }
+    },
+    {
+      "variant": "matched_tabm",
+      "endpoint": 0,
+      "seed": 52,
+      "checkpoint_sha256": "18199ef14e1dd4eecc9e437c6064508efa7398d1487f2feb8685435c1bacf802",
+      "replay_max_drift": 2.9802322387695312e-08,
+      "timing": {
+        "device": "NVIDIA RTX 6000 Ada Generation",
+        "precision": "FP32; TF32 disabled",
+        "threads": 4,
+        "warmup": 10,
+        "rows": [
+          {
+            "batch": 1,
+            "resident_model": {
+              "median_ms": 1.183553016744554,
+              "p95_ms": 1.7901025828905404,
+              "records_per_second": 844.9135660610882,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 1.289663021452725,
+              "p95_ms": 2.0126826944760974,
+              "records_per_second": 775.3963503377513,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 84.44287109375,
+            "peak_reserved_mib": 232.0
+          },
+          {
+            "batch": 8,
+            "resident_model": {
+              "median_ms": 1.2307309079915285,
+              "p95_ms": 1.2481882120482624,
+              "records_per_second": 6500.2023984718735,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 1.4676469145342708,
+              "p95_ms": 1.5299472375772893,
+              "records_per_second": 5450.902339503534,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 105.73046875,
+            "peak_reserved_mib": 236.0
+          },
+          {
+            "batch": 32,
+            "resident_model": {
+              "median_ms": 1.2351030018180609,
+              "p95_ms": 1.246449036989361,
+              "records_per_second": 25908.77032352466,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 1.7823240486904979,
+              "p95_ms": 1.8295433837920425,
+              "records_per_second": 17954.086420766704,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 178.97314453125,
+            "peak_reserved_mib": 236.0
+          }
+        ],
+        "parameters": 12860235,
+        "scope": "warm dense-feature inference; source-table scan and evidence extraction measured separately; no training updates"
+      }
+    },
+    {
+      "variant": "reference",
+      "endpoint": 1,
+      "seed": 48,
+      "checkpoint_sha256": "b6bac9f6ec7c7f871524bfa7bae4c41dccfbd7b873efc2ab09c984a278d35bbf",
+      "replay_max_drift": 5.960464477539063e-08,
+      "timing": {
+        "device": "NVIDIA RTX 6000 Ada Generation",
+        "precision": "FP32; TF32 disabled",
+        "threads": 4,
+        "warmup": 10,
+        "rows": [
+          {
+            "batch": 1,
+            "resident_model": {
+              "median_ms": 1.253247493878007,
+              "p95_ms": 1.6847686260007317,
+              "records_per_second": 797.9269895889706,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 1.3609559973701835,
+              "p95_ms": 1.7740514944307504,
+              "records_per_second": 734.7776136277222,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 85.10888671875,
+            "peak_reserved_mib": 234.0
+          },
+          {
+            "batch": 8,
+            "resident_model": {
+              "median_ms": 1.3122190721333027,
+              "p95_ms": 1.4855474000796673,
+              "records_per_second": 6096.543001005334,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 1.5473399544134736,
+              "p95_ms": 1.7508281627669928,
+              "records_per_second": 5170.163141707561,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 106.341796875,
+            "peak_reserved_mib": 236.0
+          },
+          {
+            "batch": 32,
+            "resident_model": {
+              "median_ms": 1.305818441323936,
+              "p95_ms": 1.4466451364569362,
+              "records_per_second": 24505.703846206994,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 1.8548892112448812,
+              "p95_ms": 2.048428356647491,
+              "records_per_second": 17251.70420206589,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 179.39697265625,
+            "peak_reserved_mib": 236.0
+          }
+        ],
+        "parameters": 12902328,
+        "scope": "warm dense-feature inference; source-table scan and evidence extraction measured separately; no training updates"
+      }
+    },
+    {
+      "variant": "matched_tabm",
+      "endpoint": 1,
+      "seed": 48,
+      "checkpoint_sha256": "c202e09036933277de90d10ab57700926aad1ae16099677cc79a38d45f189f75",
+      "replay_max_drift": 5.960464477539063e-08,
+      "timing": {
+        "device": "NVIDIA RTX 6000 Ada Generation",
+        "precision": "FP32; TF32 disabled",
+        "threads": 4,
+        "warmup": 10,
+        "rows": [
+          {
+            "batch": 1,
+            "resident_model": {
+              "median_ms": 1.1925984872505069,
+              "p95_ms": 1.6915295855142174,
+              "records_per_second": 838.5051722692222,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 1.2985185021534562,
+              "p95_ms": 1.7581591848284002,
+              "records_per_second": 770.1083953302208,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 84.44287109375,
+            "peak_reserved_mib": 232.0
+          },
+          {
+            "batch": 8,
+            "resident_model": {
+              "median_ms": 1.237488933838904,
+              "p95_ms": 1.270702329929918,
+              "records_per_second": 6464.704274310253,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 1.4789969427511096,
+              "p95_ms": 1.5344050130806863,
+              "records_per_second": 5409.07135691508,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 105.73046875,
+            "peak_reserved_mib": 236.0
+          },
+          {
+            "batch": 32,
+            "resident_model": {
+              "median_ms": 1.2396224774420261,
+              "p95_ms": 1.2674965080805123,
+              "records_per_second": 25814.310874736904,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 1.793463947251439,
+              "p95_ms": 1.8224426778033376,
+              "records_per_second": 17842.56664263666,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 178.97314453125,
+            "peak_reserved_mib": 236.0
+          }
+        ],
+        "parameters": 12860235,
+        "scope": "warm dense-feature inference; source-table scan and evidence extraction measured separately; no training updates"
+      }
+    },
+    {
+      "variant": "reference",
+      "endpoint": 1,
+      "seed": 49,
+      "checkpoint_sha256": "8aa23dfc2411c902a1d7c0c2fca6296e214df23705ba69591a3346e16652a254",
+      "replay_max_drift": 5.960464477539063e-08,
+      "timing": {
+        "device": "NVIDIA RTX 6000 Ada Generation",
+        "precision": "FP32; TF32 disabled",
+        "threads": 4,
+        "warmup": 10,
+        "rows": [
+          {
+            "batch": 1,
+            "resident_model": {
+              "median_ms": 1.2494790134951472,
+              "p95_ms": 1.729667035397142,
+              "records_per_second": 800.3335703916438,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 1.3568639988079667,
+              "p95_ms": 1.7710088519379492,
+              "records_per_second": 736.9935386881226,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 85.10888671875,
+            "peak_reserved_mib": 234.0
+          },
+          {
+            "batch": 8,
+            "resident_model": {
+              "median_ms": 1.3007005909457803,
+              "p95_ms": 1.3286242610774934,
+              "records_per_second": 6150.531533304639,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 1.5416834503412247,
+              "p95_ms": 1.5948949265293777,
+              "records_per_second": 5189.132696617675,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 106.341796875,
+            "peak_reserved_mib": 236.0
+          },
+          {
+            "batch": 32,
+            "resident_model": {
+              "median_ms": 1.306820078752935,
+              "p95_ms": 1.3384574209339917,
+              "records_per_second": 24486.920977321366,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 1.862146076746285,
+              "p95_ms": 1.890500949230045,
+              "records_per_second": 17184.473548881502,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 179.39697265625,
+            "peak_reserved_mib": 236.0
+          }
+        ],
+        "parameters": 12902328,
+        "scope": "warm dense-feature inference; source-table scan and evidence extraction measured separately; no training updates"
+      }
+    },
+    {
+      "variant": "matched_tabm",
+      "endpoint": 1,
+      "seed": 49,
+      "checkpoint_sha256": "c21352935f40703b0e13a397df2d23191779aaa7873041d63211d126caae1124",
+      "replay_max_drift": 5.960464477539063e-08,
+      "timing": {
+        "device": "NVIDIA RTX 6000 Ada Generation",
+        "precision": "FP32; TF32 disabled",
+        "threads": 4,
+        "warmup": 10,
+        "rows": [
+          {
+            "batch": 1,
+            "resident_model": {
+              "median_ms": 0.9466925403103232,
+              "p95_ms": 1.6677539562806485,
+              "records_per_second": 1056.3091578520336,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 1.0192824993282557,
+              "p95_ms": 1.7589865135960279,
+              "records_per_second": 981.0822815647639,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 84.44287109375,
+            "peak_reserved_mib": 232.0
+          },
+          {
+            "batch": 8,
+            "resident_model": {
+              "median_ms": 0.71880710311234,
+              "p95_ms": 0.7511612144298851,
+              "records_per_second": 11129.55056420708,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 0.902233412489295,
+              "p95_ms": 0.9558450896292925,
+              "records_per_second": 8866.885097868086,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 105.73046875,
+            "peak_reserved_mib": 236.0
+          },
+          {
+            "batch": 32,
+            "resident_model": {
+              "median_ms": 0.7575524505227804,
+              "p95_ms": 0.7653607404790819,
+              "records_per_second": 42241.299566673006,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 1.1448189616203308,
+              "p95_ms": 1.1794583755545316,
+              "records_per_second": 27952.01780612411,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 178.97314453125,
+            "peak_reserved_mib": 236.0
+          }
+        ],
+        "parameters": 12860235,
+        "scope": "warm dense-feature inference; source-table scan and evidence extraction measured separately; no training updates"
+      }
+    },
+    {
+      "variant": "reference",
+      "endpoint": 1,
+      "seed": 50,
+      "checkpoint_sha256": "6840794446d359a8602d427c8949df3b127fedfb34fcf35bad3b9123325a89f4",
+      "replay_max_drift": 1.1920928955078125e-07,
+      "timing": {
+        "device": "NVIDIA RTX 6000 Ada Generation",
+        "precision": "FP32; TF32 disabled",
+        "threads": 4,
+        "warmup": 10,
+        "rows": [
+          {
+            "batch": 1,
+            "resident_model": {
+              "median_ms": 1.2502509634941816,
+              "p95_ms": 1.7258537816815074,
+              "records_per_second": 799.8394156043806,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 1.3576974160969257,
+              "p95_ms": 1.7669392633251841,
+              "records_per_second": 736.5411380650445,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 85.10888671875,
+            "peak_reserved_mib": 234.0
+          },
+          {
+            "batch": 8,
+            "resident_model": {
+              "median_ms": 1.3085489626973867,
+              "p95_ms": 1.324525591917336,
+              "records_per_second": 6113.6420784050315,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 1.5470014186576009,
+              "p95_ms": 1.5836148988455534,
+              "records_per_second": 5171.294546673358,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 106.341796875,
+            "peak_reserved_mib": 236.0
+          },
+          {
+            "batch": 32,
+            "resident_model": {
+              "median_ms": 1.304894918575883,
+              "p95_ms": 1.3214384322054684,
+              "records_per_second": 24523.0474457849,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 1.8507593777030706,
+              "p95_ms": 1.8979357671923935,
+              "records_per_second": 17290.200112190905,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 179.39697265625,
+            "peak_reserved_mib": 236.0
+          }
+        ],
+        "parameters": 12902328,
+        "scope": "warm dense-feature inference; source-table scan and evidence extraction measured separately; no training updates"
+      }
+    },
+    {
+      "variant": "matched_tabm",
+      "endpoint": 1,
+      "seed": 50,
+      "checkpoint_sha256": "29f0d0dcad89fd4a3f61b91c979a1683103bc5361c1256673cd1f96593c93d8c",
+      "replay_max_drift": 2.9802322387695312e-08,
+      "timing": {
+        "device": "NVIDIA RTX 6000 Ada Generation",
+        "precision": "FP32; TF32 disabled",
+        "threads": 4,
+        "warmup": 10,
+        "rows": [
+          {
+            "batch": 1,
+            "resident_model": {
+              "median_ms": 1.1788500705733895,
+              "p95_ms": 1.667155558243394,
+              "records_per_second": 848.2842941287713,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 1.286785351112485,
+              "p95_ms": 1.741489209234714,
+              "records_per_second": 777.1303886351008,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 84.44287109375,
+            "peak_reserved_mib": 232.0
+          },
+          {
+            "batch": 8,
+            "resident_model": {
+              "median_ms": 1.233473070897162,
+              "p95_ms": 1.2506587780080736,
+              "records_per_second": 6485.751646107061,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 1.4769715489819646,
+              "p95_ms": 1.5498110791668294,
+              "records_per_second": 5416.488899541889,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 105.73046875,
+            "peak_reserved_mib": 236.0
+          },
+          {
+            "batch": 32,
+            "resident_model": {
+              "median_ms": 1.235748059116304,
+              "p95_ms": 1.2521310476586223,
+              "records_per_second": 25895.246012268493,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 1.7870793817564845,
+              "p95_ms": 1.8543209764175115,
+              "records_per_second": 17906.311452459286,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 178.97314453125,
+            "peak_reserved_mib": 236.0
+          }
+        ],
+        "parameters": 12860235,
+        "scope": "warm dense-feature inference; source-table scan and evidence extraction measured separately; no training updates"
+      }
+    },
+    {
+      "variant": "reference",
+      "endpoint": 1,
+      "seed": 51,
+      "checkpoint_sha256": "b0922698009a3ac483bd889e7c986c564ce18f9124ff565f9480a28eaf4b073d",
+      "replay_max_drift": 5.960464477539063e-08,
+      "timing": {
+        "device": "NVIDIA RTX 6000 Ada Generation",
+        "precision": "FP32; TF32 disabled",
+        "threads": 4,
+        "warmup": 10,
+        "rows": [
+          {
+            "batch": 1,
+            "resident_model": {
+              "median_ms": 1.251655980013311,
+              "p95_ms": 1.6679429565556345,
+              "records_per_second": 798.9415749760293,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 1.3626294676214457,
+              "p95_ms": 1.7626198939979074,
+              "records_per_second": 733.8752197584294,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 85.10888671875,
+            "peak_reserved_mib": 234.0
+          },
+          {
+            "batch": 8,
+            "resident_model": {
+              "median_ms": 1.3089260319247842,
+              "p95_ms": 1.3433631858788428,
+              "records_per_second": 6111.880889278325,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 1.5525304479524493,
+              "p95_ms": 1.635842816904187,
+              "records_per_second": 5152.87800670884,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 106.341796875,
+            "peak_reserved_mib": 236.0
+          },
+          {
+            "batch": 32,
+            "resident_model": {
+              "median_ms": 1.3114070752635598,
+              "p95_ms": 1.3588559464551508,
+              "records_per_second": 24401.271430969522,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 1.8668310949578881,
+              "p95_ms": 2.1248881006613365,
+              "records_per_second": 17141.34722012537,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 179.39697265625,
+            "peak_reserved_mib": 236.0
+          }
+        ],
+        "parameters": 12902328,
+        "scope": "warm dense-feature inference; source-table scan and evidence extraction measured separately; no training updates"
+      }
+    },
+    {
+      "variant": "matched_tabm",
+      "endpoint": 1,
+      "seed": 51,
+      "checkpoint_sha256": "b58a9858aac331a8ae4485d1818c5072e492e43f1e921bc8943b7dca38a985cb",
+      "replay_max_drift": 5.960464477539063e-08,
+      "timing": {
+        "device": "NVIDIA RTX 6000 Ada Generation",
+        "precision": "FP32; TF32 disabled",
+        "threads": 4,
+        "warmup": 10,
+        "rows": [
+          {
+            "batch": 1,
+            "resident_model": {
+              "median_ms": 0.9608778636902571,
+              "p95_ms": 1.6159719903953371,
+              "records_per_second": 1040.714993848952,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 1.037429552525282,
+              "p95_ms": 1.73283846816048,
+              "records_per_second": 963.9208730518887,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 84.44287109375,
+            "peak_reserved_mib": 232.0
+          },
+          {
+            "batch": 8,
+            "resident_model": {
+              "median_ms": 0.7194281788542867,
+              "p95_ms": 0.7537237950600684,
+              "records_per_second": 11119.942525382126,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 0.8963821455836296,
+              "p95_ms": 0.9486324968747795,
+              "records_per_second": 8924.765000524685,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 105.73046875,
+            "peak_reserved_mib": 236.0
+          },
+          {
+            "batch": 32,
+            "resident_model": {
+              "median_ms": 0.7546604610979557,
+              "p95_ms": 0.7625999394804239,
+              "records_per_second": 42403.17553332951,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 1.1359674390405416,
+              "p95_ms": 1.1919414391741154,
+              "records_per_second": 28169.821510929723,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 178.97314453125,
+            "peak_reserved_mib": 236.0
+          }
+        ],
+        "parameters": 12860235,
+        "scope": "warm dense-feature inference; source-table scan and evidence extraction measured separately; no training updates"
+      }
+    },
+    {
+      "variant": "reference",
+      "endpoint": 1,
+      "seed": 52,
+      "checkpoint_sha256": "220aff41379c468d7078ef3981f5977ff34bea14820e0e90d79e1795162edf11",
+      "replay_max_drift": 5.960464477539063e-08,
+      "timing": {
+        "device": "NVIDIA RTX 6000 Ada Generation",
+        "precision": "FP32; TF32 disabled",
+        "threads": 4,
+        "warmup": 10,
+        "rows": [
+          {
+            "batch": 1,
+            "resident_model": {
+              "median_ms": 1.2563165510073304,
+              "p95_ms": 1.7062947503291064,
+              "records_per_second": 795.9777328398543,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 1.3665304286405444,
+              "p95_ms": 1.7406393308192487,
+              "records_per_second": 731.7802655845891,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 85.10888671875,
+            "peak_reserved_mib": 234.0
+          },
+          {
+            "batch": 8,
+            "resident_model": {
+              "median_ms": 1.314166933298111,
+              "p95_ms": 1.3517767423763871,
+              "records_per_second": 6087.506691347596,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 1.5616734744980931,
+              "p95_ms": 1.6706175170838833,
+              "records_per_second": 5122.709792180547,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 106.341796875,
+            "peak_reserved_mib": 236.0
+          },
+          {
+            "batch": 32,
+            "resident_model": {
+              "median_ms": 1.313892425969243,
+              "p95_ms": 1.5404096688143907,
+              "records_per_second": 24355.11413835419,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 1.8811979098245502,
+              "p95_ms": 2.060379588510841,
+              "records_per_second": 17010.43778162845,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 179.39697265625,
+            "peak_reserved_mib": 236.0
+          }
+        ],
+        "parameters": 12902328,
+        "scope": "warm dense-feature inference; source-table scan and evidence extraction measured separately; no training updates"
+      }
+    },
+    {
+      "variant": "matched_tabm",
+      "endpoint": 1,
+      "seed": 52,
+      "checkpoint_sha256": "164d299646b1e638331587ca7bf6a69d0251b4e29f2139b72d32f34c16ff4b37",
+      "replay_max_drift": 2.9802322387695312e-08,
+      "timing": {
+        "device": "NVIDIA RTX 6000 Ada Generation",
+        "precision": "FP32; TF32 disabled",
+        "threads": 4,
+        "warmup": 10,
+        "rows": [
+          {
+            "batch": 1,
+            "resident_model": {
+              "median_ms": 1.192333409562707,
+              "p95_ms": 1.6512391739524896,
+              "records_per_second": 838.69158741996,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 1.3030220288783312,
+              "p95_ms": 1.7591827432624991,
+              "records_per_second": 767.4467336986014,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 84.44287109375,
+            "peak_reserved_mib": 232.0
+          },
+          {
+            "batch": 8,
+            "resident_model": {
+              "median_ms": 1.2392470380291343,
+              "p95_ms": 1.2902695452794433,
+              "records_per_second": 6455.532879645199,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 1.476646983064711,
+              "p95_ms": 1.5445842756889758,
+              "records_per_second": 5417.679439805158,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 105.73046875,
+            "peak_reserved_mib": 236.0
+          },
+          {
+            "batch": 32,
+            "resident_model": {
+              "median_ms": 1.2401200365275145,
+              "p95_ms": 1.2748638866469262,
+              "records_per_second": 25803.95369596951,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 1.7785124946385622,
+              "p95_ms": 1.8353516701608894,
+              "records_per_second": 17992.564064894686,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 178.97314453125,
+            "peak_reserved_mib": 236.0
+          }
+        ],
+        "parameters": 12860235,
+        "scope": "warm dense-feature inference; source-table scan and evidence extraction measured separately; no training updates"
+      }
+    }
+  ],
+  "optimizer_updates": 0,
+  "original_checkpoints_unchanged": true,
+  "initial_gpu_observation": {
+    "index": 0,
+    "used_mib": 2,
+    "free_mib": 48508,
+    "utilization": 0,
+    "processes": [],
+    "fully_idle": true
+  },
+  "source_manifest_sha256": "7ecfd0f1cdfb59c71fb22f609e1d78a9b67e643e41450f0092b67555ef7e8d24",
+  "timing_source_sha256": "f292af7539b1180d6abb6486da52aa231062dee23798403b6eebbea972f4ac8c",
+  "benchmark_source_sha256": "629faa9f41d4966a57117602c0fb8c68e8fc9c57fc4b5fa13994d331b4c9c9b2",
+  "checkpoints": {
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_ema_20261024/v2/screen/jobs/noEvidence_EMA_t0_s48/best.pt": "4c6e15d690c1d19ba6e70a62e30bfb6585d23bc4251ecc63189db4ff3b9ecd37",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_matched_controls_20261105/mimiciii/v4/screen/jobs/matched_tabm_t0_s48/best.pt": "6af6cd5a16d7d944d3476ee4dc392ce8fee4ba3346253a0c2dbfd4b4c6edc4dc",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_ema_20261024/v2/screen/jobs/noEvidence_EMA_t0_s49/best.pt": "a2278e97e730af9335e96bdd4b910fd802de08b56003e2c80831715050594168",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_matched_controls_20261105/mimiciii/v4/screen/jobs/matched_tabm_t0_s49/best.pt": "ed6a34b3aed44493a445b99cbbcae3f1eb41d39a74c707b8ac2bee957e967a2d",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_ema_20261024/v2/screen/jobs/noEvidence_EMA_t0_s50/best.pt": "a770d25f076382359647e4692bd49497a0dabfeb79ad90c526a8b3ff75a03a59",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_matched_controls_20261105/mimiciii/v4/screen/jobs/matched_tabm_t0_s50/best.pt": "83d8c28f187d1022301bb03cb2fc43d91eb7d00559eeaedc91e06098b5099026",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_five_seed_20261102/mimiciii/v3/screen/jobs/CEM_t0_s51/best.pt": "bffd396e0c692b6058099cde38d29268415b99e57edcd7b1c642f987b7dd170d",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_matched_controls_20261105/mimiciii/v4/screen/jobs/matched_tabm_t0_s51/best.pt": "e6eddc2ddf3719ec71016cbb9e7428bdff93de22e88cf0c513b7cf224b49788c",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_five_seed_20261102/mimiciii/v3/screen/jobs/CEM_t0_s52/best.pt": "eec500bc829c7aa28eae606d913952510ae658d6a92951c8ae1281751e609b85",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_matched_controls_20261105/mimiciii/v4/screen/jobs/matched_tabm_t0_s52/best.pt": "18199ef14e1dd4eecc9e437c6064508efa7398d1487f2feb8685435c1bacf802",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_ema_20261024/v2/screen/jobs/noEvidence_EMA_t1_s48/best.pt": "b6bac9f6ec7c7f871524bfa7bae4c41dccfbd7b873efc2ab09c984a278d35bbf",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_matched_controls_20261105/mimiciii/v4/screen/jobs/matched_tabm_t1_s48/best.pt": "c202e09036933277de90d10ab57700926aad1ae16099677cc79a38d45f189f75",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_ema_20261024/v2/screen/jobs/noEvidence_EMA_t1_s49/best.pt": "8aa23dfc2411c902a1d7c0c2fca6296e214df23705ba69591a3346e16652a254",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_matched_controls_20261105/mimiciii/v4/screen/jobs/matched_tabm_t1_s49/best.pt": "c21352935f40703b0e13a397df2d23191779aaa7873041d63211d126caae1124",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_ema_20261024/v2/screen/jobs/noEvidence_EMA_t1_s50/best.pt": "6840794446d359a8602d427c8949df3b127fedfb34fcf35bad3b9123325a89f4",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_matched_controls_20261105/mimiciii/v4/screen/jobs/matched_tabm_t1_s50/best.pt": "29f0d0dcad89fd4a3f61b91c979a1683103bc5361c1256673cd1f96593c93d8c",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_five_seed_20261102/mimiciii/v3/screen/jobs/CEM_t1_s51/best.pt": "b0922698009a3ac483bd889e7c986c564ce18f9124ff565f9480a28eaf4b073d",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_matched_controls_20261105/mimiciii/v4/screen/jobs/matched_tabm_t1_s51/best.pt": "b58a9858aac331a8ae4485d1818c5072e492e43f1e921bc8943b7dca38a985cb",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_five_seed_20261102/mimiciii/v3/screen/jobs/CEM_t1_s52/best.pt": "220aff41379c468d7078ef3981f5977ff34bea14820e0e90d79e1795162edf11",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_matched_controls_20261105/mimiciii/v4/screen/jobs/matched_tabm_t1_s52/best.pt": "164d299646b1e638331587ca7bf6a69d0251b4e29f2139b72d32f34c16ff4b37"
+  },
+  "protocol": "FP32; four CPU threads; batches 1/8/32; 10 warmups and 30 repeats; same GPU and rows for both methods"
+}

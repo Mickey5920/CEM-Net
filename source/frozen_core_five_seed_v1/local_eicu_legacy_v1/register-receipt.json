@@ -1,0 +1,86 @@
+{
+  "database": "eicu",
+  "stage": "legacy",
+  "stage_order": 6,
+  "source": "/home/data/lxm/TRACEHR/work/cem_core_five_seed_20261107/eicu/legacy_v1",
+  "output": "/home/data/lxm/TRACEHR/runs/cem_core_five_seed_20261107/eicu/legacy_v1/screen",
+  "source_manifest_sha256": "e08da02ba75b99254418150f9af88d52ce0113b1daf6ad3f6e79155d94c4a316",
+  "matrix": [
+    {
+      "variant": "RealMLP",
+      "seed": 51,
+      "endpoint": 0
+    },
+    {
+      "variant": "RealMLP",
+      "seed": 52,
+      "endpoint": 0
+    },
+    {
+      "variant": "TabM",
+      "seed": 51,
+      "endpoint": 0
+    },
+    {
+      "variant": "TabM",
+      "seed": 52,
+      "endpoint": 0
+    },
+    {
+      "variant": "CEM_noEMA",
+      "seed": 51,
+      "endpoint": 0
+    },
+    {
+      "variant": "CEM_noEMA",
+      "seed": 52,
+      "endpoint": 0
+    },
+    {
+      "variant": "RealMLP",
+      "seed": 51,
+      "endpoint": 1
+    },
+    {
+      "variant": "RealMLP",
+      "seed": 52,
+      "endpoint": 1
+    },
+    {
+      "variant": "TabM",
+      "seed": 51,
+      "endpoint": 1
+    },
+    {
+      "variant": "TabM",
+      "seed": 52,
+      "endpoint": 1
+    },
+    {
+      "variant": "CEM_noEMA",
+      "seed": 51,
+      "endpoint": 1
+    },
+    {
+      "variant": "CEM_noEMA",
+      "seed": 52,
+      "endpoint": 1
+    }
+  ],
+  "variants": [
+    "CEM_noEMA",
+    "RealMLP",
+    "TabM"
+  ],
+  "entries": {
+    "tree": "scripts/cem_core_five_seed_entry.py",
+    "cem": "scripts/cem_core_five_seed_entry.py",
+    "tabular": "scripts/cem_core_five_seed_entry.py"
+  },
+  "expected_gib": 20.0,
+  "retention_multiplier": 13,
+  "min_available_ram_gib": 24,
+  "cpu_min_available_ram_gib": 24,
+  "probe_gpu_mib": 24576,
+  "probe_requirement_basis": "conservative headroom above archived measurements; bounded original-path probe before formal fits"
+}

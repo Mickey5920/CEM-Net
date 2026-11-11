@@ -1,0 +1,8 @@
+{
+  "complete": true,
+  "results_sha256": "08a223240f311d098ccf7ee407b77b54be81c9a029e3a10c8adc05c101d7cfb9",
+  "report_sha256": "c01574158f10d6ec5b037a1b20e3df640580264bf1538e5eee46f18ec3de5c36",
+  "formal_fits": 18,
+  "fixed_tests": 18,
+  "main_method_changed": false
+}

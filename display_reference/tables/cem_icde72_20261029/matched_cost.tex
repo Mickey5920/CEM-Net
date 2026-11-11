@@ -1,0 +1,15 @@
+\begin{table}[tp]
+\centering\footnotesize
+\setlength{\tabcolsep}{3pt}
+\caption{CEM-Net / matched TabM-mini costs: medians over ten checkpoints per method (five seeds, two outcomes), with units and batches as in Table~\ref{tab:cost}. Both share input transformation and transfer.}
+\label{tab:matched-cost}
+\begin{tabular}{lrrrr}
+\toprule
+Database & Params & Resident & With prep. & Memory \\
+\midrule
+MIMIC-III & 12.90/12.86 & 1.25/1.08 & 1.35/1.16 & 179/179 \\
+MIMIC-IV & 11.83/11.79 & 1.27/1.21 & 1.39/1.32 & 167/167 \\
+eICU & 17.12/17.07 & 1.09/1.03 & 1.20/1.15 & 227/227 \\
+\bottomrule
+\end{tabular}
+\end{table}

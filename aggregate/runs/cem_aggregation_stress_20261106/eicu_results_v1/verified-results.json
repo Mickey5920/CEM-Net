@@ -1,0 +1,1260 @@
+{
+  "complete": true,
+  "database": "eicu",
+  "seeds": [
+    48,
+    49,
+    50,
+    51,
+    52
+  ],
+  "conditions": [
+    "lab_drop25",
+    "lab_drop50",
+    "lab_delay2h",
+    "lab_delay6h"
+  ],
+  "test_rows": 26229,
+  "patient_count": 20777,
+  "models": 20,
+  "new_inferences": 56,
+  "reused_inferences": 24,
+  "training_runs": 0,
+  "bootstrap_replicates": 20000,
+  "bootstrap_seconds": 431.55818819999695,
+  "primary_family": "24 paired AP degradation differences across six tasks and four conditions",
+  "secondary_family": "24 paired perturbed AP differences across six tasks and four conditions",
+  "confidence_scope": "patient sampling conditional on saved fits, cohort and fixed perturbation; five-seed SD reported separately",
+  "cpu_replay_max_probability_drift": 6.556510925292969e-07,
+  "cpu_replay_max_AP_drift": 1.1507868903359864e-06,
+  "rows": [
+    {
+      "database": "eicu",
+      "endpoint": 0,
+      "condition": "lab_drop25",
+      "methods": {
+        "duration": {
+          "clean": {
+            "values": [
+              0.3935388754828638,
+              0.3979448476688867,
+              0.3983095568340663,
+              0.38275817952568925,
+              0.388227778199175
+            ],
+            "mean": 0.39215584754213617,
+            "sample_SD": 0.006652806169437069
+          },
+          "perturbed": {
+            "values": [
+              0.3836202280187079,
+              0.3873116681259579,
+              0.38792794934962815,
+              0.3701824859015025,
+              0.37655290134132197
+            ],
+            "mean": 0.38111904654742373,
+            "sample_SD": 0.007606307726850933
+          },
+          "change": {
+            "values": [
+              -0.009918647464155939,
+              -0.010633179542928806,
+              -0.010381607484438171,
+              -0.012575693624186757,
+              -0.011674876857853012
+            ],
+            "mean": -0.011036800994712537,
+            "sample_SD": 0.001074451890769705
+          }
+        },
+        "window": {
+          "clean": {
+            "values": [
+              0.39020562494149197,
+              0.38504333271127356,
+              0.39035417504223635,
+              0.39550555056787373,
+              0.39134674534251973
+            ],
+            "mean": 0.39049108572107905,
+            "sample_SD": 0.003730122529288149
+          },
+          "perturbed": {
+            "values": [
+              0.37777462334004197,
+              0.37694457505739354,
+              0.3799903685957889,
+              0.3855107734293434,
+              0.3811042697375118
+            ],
+            "mean": 0.3802649220320159,
+            "sample_SD": 0.003373615740197726
+          },
+          "change": {
+            "values": [
+              -0.012431001601449998,
+              -0.008098757653880018,
+              -0.010363806446447466,
+              -0.009994777138530309,
+              -0.010242475605007906
+            ],
+            "mean": -0.01022616368906314,
+            "sample_SD": 0.001537848984902422
+          }
+        }
+      }
+    },
+    {
+      "database": "eicu",
+      "endpoint": 0,
+      "condition": "lab_drop50",
+      "methods": {
+        "duration": {
+          "clean": {
+            "values": [
+              0.3935388754828638,
+              0.3979448476688867,
+              0.3983095568340663,
+              0.38275817952568925,
+              0.388227778199175
+            ],
+            "mean": 0.39215584754213617,
+            "sample_SD": 0.006652806169437069
+          },
+          "perturbed": {
+            "values": [
+              0.3580007192258157,
+              0.3669273254487526,
+              0.36666270222202435,
+              0.3442177406669244,
+              0.35136283858271206
+            ],
+            "mean": 0.3574342652292458,
+            "sample_SD": 0.00983796034274612
+          },
+          "change": {
+            "values": [
+              -0.03553815625704809,
+              -0.031017522220134097,
+              -0.031646854612041975,
+              -0.03854043885876485,
+              -0.03686493961646292
+            ],
+            "mean": -0.03472158231289039,
+            "sample_SD": 0.003279422603909776
+          }
+        },
+        "window": {
+          "clean": {
+            "values": [
+              0.39020562494149197,
+              0.38504333271127356,
+              0.39035417504223635,
+              0.39550555056787373,
+              0.39134674534251973
+            ],
+            "mean": 0.39049108572107905,
+            "sample_SD": 0.003730122529288149
+          },
+          "perturbed": {
+            "values": [
+              0.35163997819683024,
+              0.35418500107328577,
+              0.3602173860214099,
+              0.36318615020864853,
+              0.3568264884747485
+            ],
+            "mean": 0.3572110007949846,
+            "sample_SD": 0.004611983832217922
+          },
+          "change": {
+            "values": [
+              -0.03856564674466173,
+              -0.03085833163798779,
+              -0.03013678902082645,
+              -0.0323194003592252,
+              -0.034520256867771215
+            ],
+            "mean": -0.03328008492609448,
+            "sample_SD": 0.0033964431084727935
+          }
+        }
+      }
+    },
+    {
+      "database": "eicu",
+      "endpoint": 0,
+      "condition": "lab_delay2h",
+      "methods": {
+        "duration": {
+          "clean": {
+            "values": [
+              0.3935388754828638,
+              0.3979448476688867,
+              0.3983095568340663,
+              0.38275817952568925,
+              0.388227778199175
+            ],
+            "mean": 0.39215584754213617,
+            "sample_SD": 0.006652806169437069
+          },
+          "perturbed": {
+            "values": [
+              0.39001108700866605,
+              0.3926073414461069,
+              0.39210792946319045,
+              0.377186566348586,
+              0.381606143663313
+            ],
+            "mean": 0.3867038135859725,
+            "sample_SD": 0.006920231223018595
+          },
+          "change": {
+            "values": [
+              -0.0035277884741977683,
+              -0.0053375062227797865,
+              -0.006201627370875873,
+              -0.005571613177103252,
+              -0.006621634535861953
+            ],
+            "mean": -0.0054520339561637265,
+            "sample_SD": 0.0011895369130539007
+          }
+        },
+        "window": {
+          "clean": {
+            "values": [
+              0.39020562494149197,
+              0.38504333271127356,
+              0.39035417504223635,
+              0.39550555056787373,
+              0.39134674534251973
+            ],
+            "mean": 0.39049108572107905,
+            "sample_SD": 0.003730122529288149
+          },
+          "perturbed": {
+            "values": [
+              0.38864166684022333,
+              0.38175071273318023,
+              0.38920797334480756,
+              0.39240663857752023,
+              0.38802097866205876
+            ],
+            "mean": 0.388005594031558,
+            "sample_SD": 0.0038840466806556715
+          },
+          "change": {
+            "values": [
+              -0.0015639581012686365,
+              -0.003292619978093325,
+              -0.0011462016974287947,
+              -0.0030989119903535034,
+              -0.003325766680460973
+            ],
+            "mean": -0.0024854916895210464,
+            "sample_SD": 0.0010460311225391334
+          }
+        }
+      }
+    },
+    {
+      "database": "eicu",
+      "endpoint": 0,
+      "condition": "lab_delay6h",
+      "methods": {
+        "duration": {
+          "clean": {
+            "values": [
+              0.3935388754828638,
+              0.3979448476688867,
+              0.3983095568340663,
+              0.38275817952568925,
+              0.388227778199175
+            ],
+            "mean": 0.39215584754213617,
+            "sample_SD": 0.006652806169437069
+          },
+          "perturbed": {
+            "values": [
+              0.3749382464893302,
+              0.3745792667737026,
+              0.3740247674371205,
+              0.3610451409568013,
+              0.3647025642268586
+            ],
+            "mean": 0.36985799717676265,
+            "sample_SD": 0.006513566951795759
+          },
+          "change": {
+            "values": [
+              -0.018600628993533597,
+              -0.02336558089518409,
+              -0.02428478939694584,
+              -0.021713038568887955,
+              -0.023525213972316383
+            ],
+            "mean": -0.022297850365373573,
+            "sample_SD": 0.0022696832010669164
+          }
+        },
+        "window": {
+          "clean": {
+            "values": [
+              0.39020562494149197,
+              0.38504333271127356,
+              0.39035417504223635,
+              0.39550555056787373,
+              0.39134674534251973
+            ],
+            "mean": 0.39049108572107905,
+            "sample_SD": 0.003730122529288149
+          },
+          "perturbed": {
+            "values": [
+              0.36766970864747694,
+              0.3667808366915838,
+              0.3676374265264002,
+              0.372054851749581,
+              0.36578408089825937
+            ],
+            "mean": 0.36798538090266025,
+            "sample_SD": 0.0024019764081065534
+          },
+          "change": {
+            "values": [
+              -0.022535916294015024,
+              -0.018262496019689767,
+              -0.02271674851583616,
+              -0.02345069881829276,
+              -0.025562664444260363
+            ],
+            "mean": -0.022505704818418813,
+            "sample_SD": 0.002659336801672174
+          }
+        }
+      }
+    },
+    {
+      "database": "eicu",
+      "endpoint": 1,
+      "condition": "lab_drop25",
+      "methods": {
+        "duration": {
+          "clean": {
+            "values": [
+              0.3922187567407075,
+              0.3930729541555812,
+              0.3944413493286769,
+              0.39095753143033796,
+              0.3954888270832543
+            ],
+            "mean": 0.39323588374771157,
+            "sample_SD": 0.0017875180853986468
+          },
+          "perturbed": {
+            "values": [
+              0.38734299889850193,
+              0.38742960048089803,
+              0.3890727652979969,
+              0.3866725931000434,
+              0.3910016642584466
+            ],
+            "mean": 0.38830392440717737,
+            "sample_SD": 0.0017477112615822317
+          },
+          "change": {
+            "values": [
+              -0.004875757842205564,
+              -0.00564335367468316,
+              -0.005368584030680024,
+              -0.00428493833029453,
+              -0.004487162824807656
+            ],
+            "mean": -0.0049319593405341864,
+            "sample_SD": 0.0005736640469849492
+          }
+        },
+        "window": {
+          "clean": {
+            "values": [
+              0.39202568886102745,
+              0.3930392938224992,
+              0.39224248062652944,
+              0.3893454488217305,
+              0.38948696243648306
+            ],
+            "mean": 0.3912279749136539,
+            "sample_SD": 0.0016971648789428824
+          },
+          "perturbed": {
+            "values": [
+              0.3888662310118016,
+              0.3892835440842848,
+              0.38719510502817067,
+              0.3858309829039842,
+              0.3848590923024816
+            ],
+            "mean": 0.38720699106614465,
+            "sample_SD": 0.0019020592774051466
+          },
+          "change": {
+            "values": [
+              -0.003159457849225833,
+              -0.003755749738214409,
+              -0.005047375598358772,
+              -0.00351446591774629,
+              -0.004627870134001455
+            ],
+            "mean": -0.0040209838475093514,
+            "sample_SD": 0.0007891336361110307
+          }
+        }
+      }
+    },
+    {
+      "database": "eicu",
+      "endpoint": 1,
+      "condition": "lab_drop50",
+      "methods": {
+        "duration": {
+          "clean": {
+            "values": [
+              0.3922187567407075,
+              0.3930729541555812,
+              0.3944413493286769,
+              0.39095753143033796,
+              0.3954888270832543
+            ],
+            "mean": 0.39323588374771157,
+            "sample_SD": 0.0017875180853986468
+          },
+          "perturbed": {
+            "values": [
+              0.3773467774897152,
+              0.37915152366930904,
+              0.37956521383102815,
+              0.3769649625473356,
+              0.3807157584297459
+            ],
+            "mean": 0.37874884719342683,
+            "sample_SD": 0.0015688679459567234
+          },
+          "change": {
+            "values": [
+              -0.014871979250992318,
+              -0.013921430486272146,
+              -0.014876135497648768,
+              -0.013992568883002376,
+              -0.014773068653508359
+            ],
+            "mean": -0.014487036554284793,
+            "sample_SD": 0.0004862616917303495
+          }
+        },
+        "window": {
+          "clean": {
+            "values": [
+              0.39202568886102745,
+              0.3930392938224992,
+              0.39224248062652944,
+              0.3893454488217305,
+              0.38948696243648306
+            ],
+            "mean": 0.3912279749136539,
+            "sample_SD": 0.0016971648789428824
+          },
+          "perturbed": {
+            "values": [
+              0.3797908357582036,
+              0.3825159038684279,
+              0.37968824751785457,
+              0.3778767757250383,
+              0.37654007940558687
+            ],
+            "mean": 0.3792823684550223,
+            "sample_SD": 0.002256926462860242
+          },
+          "change": {
+            "values": [
+              -0.01223485310282385,
+              -0.010523389954071316,
+              -0.012554233108674873,
+              -0.011468673096692195,
+              -0.012946883030896195
+            ],
+            "mean": -0.011945606458631686,
+            "sample_SD": 0.000962653885368439
+          }
+        }
+      }
+    },
+    {
+      "database": "eicu",
+      "endpoint": 1,
+      "condition": "lab_delay2h",
+      "methods": {
+        "duration": {
+          "clean": {
+            "values": [
+              0.3922187567407075,
+              0.3930729541555812,
+              0.3944413493286769,
+              0.39095753143033796,
+              0.3954888270832543
+            ],
+            "mean": 0.39323588374771157,
+            "sample_SD": 0.0017875180853986468
+          },
+          "perturbed": {
+            "values": [
+              0.38862409089997574,
+              0.38911060620474597,
+              0.3898027444042952,
+              0.38733895567504417,
+              0.390821634370247
+            ],
+            "mean": 0.38913960631086153,
+            "sample_SD": 0.0013017210128141612
+          },
+          "change": {
+            "values": [
+              -0.003594665840731759,
+              -0.003962347950835221,
+              -0.0046386049243817284,
+              -0.0036185757552937847,
+              -0.0046671927130073065
+            ],
+            "mean": -0.00409627743684996,
+            "sample_SD": 0.0005286335104371361
+          }
+        },
+        "window": {
+          "clean": {
+            "values": [
+              0.39202568886102745,
+              0.3930392938224992,
+              0.39224248062652944,
+              0.3893454488217305,
+              0.38948696243648306
+            ],
+            "mean": 0.3912279749136539,
+            "sample_SD": 0.0016971648789428824
+          },
+          "perturbed": {
+            "values": [
+              0.3896729884403281,
+              0.3893564555672047,
+              0.38769611793531517,
+              0.3860151338353437,
+              0.3855923096533167
+            ],
+            "mean": 0.3876666010863017,
+            "sample_SD": 0.0018649462897991546
+          },
+          "change": {
+            "values": [
+              -0.0023527004206993496,
+              -0.003682838255294474,
+              -0.0045463626912142785,
+              -0.0033303149863868065,
+              -0.0038946527831663635
+            ],
+            "mean": -0.0035613738273522545,
+            "sample_SD": 0.0008078228647906527
+          }
+        }
+      }
+    },
+    {
+      "database": "eicu",
+      "endpoint": 1,
+      "condition": "lab_delay6h",
+      "methods": {
+        "duration": {
+          "clean": {
+            "values": [
+              0.3922187567407075,
+              0.3930729541555812,
+              0.3944413493286769,
+              0.39095753143033796,
+              0.3954888270832543
+            ],
+            "mean": 0.39323588374771157,
+            "sample_SD": 0.0017875180853986468
+          },
+          "perturbed": {
+            "values": [
+              0.37809763627579146,
+              0.3805964439484534,
+              0.3789318323319079,
+              0.3785414997695716,
+              0.3816812451642293
+            ],
+            "mean": 0.3795697314979907,
+            "sample_SD": 0.0015119415163363766
+          },
+          "change": {
+            "values": [
+              -0.014121120464916037,
+              -0.012476510207127811,
+              -0.015509516996769002,
+              -0.01241603166076638,
+              -0.01380758191902498
+            ],
+            "mean": -0.013666152249720842,
+            "sample_SD": 0.0012848192183426113
+          }
+        },
+        "window": {
+          "clean": {
+            "values": [
+              0.39202568886102745,
+              0.3930392938224992,
+              0.39224248062652944,
+              0.3893454488217305,
+              0.38948696243648306
+            ],
+            "mean": 0.3912279749136539,
+            "sample_SD": 0.0016971648789428824
+          },
+          "perturbed": {
+            "values": [
+              0.38172049218924314,
+              0.3816675453388414,
+              0.37823282967271443,
+              0.37924648649430015,
+              0.37949075623816103
+            ],
+            "mean": 0.38007162198665206,
+            "sample_SD": 0.0015544416250989435
+          },
+          "change": {
+            "values": [
+              -0.010305196671784311,
+              -0.011371748483657795,
+              -0.014009650953815012,
+              -0.01009896232743035,
+              -0.009996206198322033
+            ],
+            "mean": -0.0111563529270019,
+            "sample_SD": 0.0016864301911558338
+          }
+        }
+      }
+    }
+  ],
+  "paired": [
+    {
+      "database": "eicu",
+      "endpoint": 0,
+      "condition": "lab_drop25",
+      "estimand": "degradation",
+      "values": [
+        0.0025123541372940594,
+        -0.002534421889048788,
+        -1.7801037990705648e-05,
+        -0.002580916485656448,
+        -0.0014324012528451058
+      ],
+      "mean": -0.0008106373056493976,
+      "sample_SD": 0.0021308902803965904,
+      "family_count": 24,
+      "ci95": [
+        -0.003909927151477138,
+        0.0020182312094353077
+      ],
+      "adjusted_ci": [
+        -0.005755075961474979,
+        0.00357766651259094
+      ],
+      "p_bootstrap_centered": 0.5946702664866756
+    },
+    {
+      "database": "eicu",
+      "endpoint": 0,
+      "condition": "lab_drop25",
+      "estimand": "absolute",
+      "values": [
+        0.0058456046786659055,
+        0.01036709306856437,
+        0.007937580753839268,
+        -0.015328287527840934,
+        -0.004551368396189859
+      ],
+      "mean": 0.0008541245154077504,
+      "sample_SD": 0.010684996611489084,
+      "family_count": 24,
+      "ci95": [
+        -0.0037246193087527024,
+        0.0051901397757449326
+      ],
+      "adjusted_ci": [
+        -0.006332379981801876,
+        0.007573305094472903
+      ],
+      "p_bootstrap_centered": 0.703614819259037
+    },
+    {
+      "database": "eicu",
+      "endpoint": 0,
+      "condition": "lab_drop50",
+      "estimand": "degradation",
+      "values": [
+        0.0030274904876136377,
+        -0.00015919058214630688,
+        -0.0015100655912155259,
+        -0.006221038499539644,
+        -0.0023446827486917066
+      ],
+      "mean": -0.001441497386795909,
+      "sample_SD": 0.003364543877254316,
+      "family_count": 24,
+      "ci95": [
+        -0.005339791008033108,
+        0.0023665876800874485
+      ],
+      "adjusted_ci": [
+        -0.0076088342685359175,
+        0.004460705951747459
+      ],
+      "p_bootstrap_centered": 0.46697665116744164
+    },
+    {
+      "database": "eicu",
+      "endpoint": 0,
+      "condition": "lab_drop50",
+      "estimand": "absolute",
+      "values": [
+        0.006360741028985484,
+        0.012742324375466851,
+        0.006445316200614448,
+        -0.01896840954172413,
+        -0.0054636498920364596
+      ],
+      "mean": 0.00022326443426123888,
+      "sample_SD": 0.01258740197082613,
+      "family_count": 24,
+      "ci95": [
+        -0.003840366334637597,
+        0.0042726434401573615
+      ],
+      "adjusted_ci": [
+        -0.006330251491287546,
+        0.006444649505742229
+      ],
+      "p_bootstrap_centered": 0.9130543472826359
+    },
+    {
+      "database": "eicu",
+      "endpoint": 0,
+      "condition": "lab_delay2h",
+      "estimand": "degradation",
+      "values": [
+        -0.0019638303729291318,
+        -0.0020448862446864613,
+        -0.005055425673447078,
+        -0.0024727011867497484,
+        -0.00329586785540098
+      ],
+      "mean": -0.00296654226664268,
+      "sample_SD": 0.0012816638802184387,
+      "family_count": 24,
+      "ci95": [
+        -0.005962164196597886,
+        -0.0002866009658210777
+      ],
+      "adjusted_ci": [
+        -0.007695509414294636,
+        0.0013776296009608523
+      ],
+      "p_bootstrap_centered": 0.04139793010349482
+    },
+    {
+      "database": "eicu",
+      "endpoint": 0,
+      "condition": "lab_delay2h",
+      "estimand": "absolute",
+      "values": [
+        0.0013694201684427143,
+        0.010856628712926697,
+        0.002899956118382896,
+        -0.015220072228934234,
+        -0.006414834998745733
+      ],
+      "mean": -0.001301780445585532,
+      "sample_SD": 0.009905541241764534,
+      "family_count": 24,
+      "ci95": [
+        -0.006060745760727525,
+        0.00305793182354272
+      ],
+      "adjusted_ci": [
+        -0.00891778758784362,
+        0.005790970153745149
+      ],
+      "p_bootstrap_centered": 0.5817209139543023
+    },
+    {
+      "database": "eicu",
+      "endpoint": 0,
+      "condition": "lab_delay6h",
+      "estimand": "degradation",
+      "values": [
+        0.003935287300481427,
+        -0.005103084875494324,
+        -0.001568040881109678,
+        0.0017376602494048043,
+        0.00203745047194398
+      ],
+      "mean": 0.00020785445304524197,
+      "sample_SD": 0.0035686609459429307,
+      "family_count": 24,
+      "ci95": [
+        -0.0037511150101855423,
+        0.004260820511205201
+      ],
+      "adjusted_ci": [
+        -0.006029994830731878,
+        0.006425451073745608
+      ],
+      "p_bootstrap_centered": 0.9170041497925103
+    },
+    {
+      "database": "eicu",
+      "endpoint": 0,
+      "condition": "lab_delay6h",
+      "estimand": "absolute",
+      "values": [
+        0.007268537841853273,
+        0.007798430082118835,
+        0.006387340910720296,
+        -0.011009710792779681,
+        -0.001081516671400773
+      ],
+      "mean": 0.00187261627410239,
+      "sample_SD": 0.008051323330902067,
+      "family_count": 24,
+      "ci95": [
+        -0.0025262223818846145,
+        0.006266678576891669
+      ],
+      "adjusted_ci": [
+        -0.005173863144142254,
+        0.008986611633717586
+      ],
+      "p_bootstrap_centered": 0.40942952852357384
+    },
+    {
+      "database": "eicu",
+      "endpoint": 1,
+      "condition": "lab_drop25",
+      "estimand": "degradation",
+      "values": [
+        -0.0017162999929797307,
+        -0.0018876039364687514,
+        -0.0003212084323212516,
+        -0.0007704724125482398,
+        0.00014070730919379937
+      ],
+      "mean": -0.0009109754930248348,
+      "sample_SD": 0.000876919848784381,
+      "family_count": 24,
+      "ci95": [
+        -0.002479329797172638,
+        0.0006611535719234118
+      ],
+      "adjusted_ci": [
+        -0.0033396008382683053,
+        0.0015231191916525513
+      ],
+      "p_bootstrap_centered": 0.2633868306584671
+    },
+    {
+      "database": "eicu",
+      "endpoint": 1,
+      "condition": "lab_drop25",
+      "estimand": "absolute",
+      "values": [
+        -0.0015232321132996884,
+        -0.001853943603386754,
+        0.0018776602698262201,
+        0.000841610196059217,
+        0.006142571955965015
+      ],
+      "mean": 0.0010969333410328018,
+      "sample_SD": 0.003229014370801938,
+      "family_count": 24,
+      "ci95": [
+        -0.0015186932291305112,
+        0.003829044612090394
+      ],
+      "adjusted_ci": [
+        -0.002821030209149615,
+        0.005200528925875732
+      ],
+      "p_bootstrap_centered": 0.42507874606269686
+    },
+    {
+      "database": "eicu",
+      "endpoint": 1,
+      "condition": "lab_drop50",
+      "estimand": "degradation",
+      "values": [
+        -0.002637126148168467,
+        -0.00339804053220083,
+        -0.0023219023889738954,
+        -0.002523895786310182,
+        -0.0018261856226121642
+      ],
+      "mean": -0.0025414300956531077,
+      "sample_SD": 0.0005707481267356658,
+      "family_count": 24,
+      "ci95": [
+        -0.004777256835971562,
+        -0.00031027936670030955
+      ],
+      "adjusted_ci": [
+        -0.006010866132189553,
+        0.0008212551069853337
+      ],
+      "p_bootstrap_centered": 0.025148742562871855
+    },
+    {
+      "database": "eicu",
+      "endpoint": 1,
+      "condition": "lab_drop50",
+      "estimand": "absolute",
+      "values": [
+        -0.002444058268488425,
+        -0.0033643801991188327,
+        -0.00012303368682642368,
+        -0.000911813177702725,
+        0.004175679024159051
+      ],
+      "mean": -0.000533521261595471,
+      "sample_SD": 0.002921989310942364,
+      "family_count": 24,
+      "ci95": [
+        -0.002997912239690106,
+        0.001996080084449664
+      ],
+      "adjusted_ci": [
+        -0.004395036040657643,
+        0.003479369018073937
+      ],
+      "p_bootstrap_centered": 0.6741162941852907
+    },
+    {
+      "database": "eicu",
+      "endpoint": 1,
+      "condition": "lab_delay2h",
+      "estimand": "degradation",
+      "values": [
+        -0.0012419654200324093,
+        -0.00027950969554074723,
+        -9.224223316744995e-05,
+        -0.00028826076890697827,
+        -0.000772539929840943
+      ],
+      "mean": -0.0005349036094977055,
+      "sample_SD": 0.0004686190512714993,
+      "family_count": 24,
+      "ci95": [
+        -0.0024552807358667384,
+        0.0013166574826391077
+      ],
+      "adjusted_ci": [
+        -0.003532402923787156,
+        0.0025484685383891925
+      ],
+      "p_bootstrap_centered": 0.5784210789460527
+    },
+    {
+      "database": "eicu",
+      "endpoint": 1,
+      "condition": "lab_delay2h",
+      "estimand": "absolute",
+      "values": [
+        -0.001048897540352367,
+        -0.0002458493624587499,
+        0.002106626468980022,
+        0.0013238218397004786,
+        0.0052293247169302726
+      ],
+      "mean": 0.0014730052245599313,
+      "sample_SD": 0.0024417269677140105,
+      "family_count": 24,
+      "ci95": [
+        -0.001289016446734965,
+        0.004334788983717855
+      ],
+      "adjusted_ci": [
+        -0.0029435270528624935,
+        0.00598997786090513
+      ],
+      "p_bootstrap_centered": 0.3063846807659617
+    },
+    {
+      "database": "eicu",
+      "endpoint": 1,
+      "condition": "lab_delay6h",
+      "estimand": "degradation",
+      "values": [
+        -0.003815923793131726,
+        -0.0011047617234700158,
+        -0.00149986604295399,
+        -0.0023170693333360304,
+        -0.0038113757207029475
+      ],
+      "mean": -0.002509799322718942,
+      "sample_SD": 0.0012680006886519827,
+      "family_count": 24,
+      "ci95": [
+        -0.005351386559016531,
+        0.0002272383914623755
+      ],
+      "adjusted_ci": [
+        -0.007022398099172086,
+        0.0019169207104978382
+      ],
+      "p_bootstrap_centered": 0.07824608769561522
+    },
+    {
+      "database": "eicu",
+      "endpoint": 1,
+      "condition": "lab_delay6h",
+      "estimand": "absolute",
+      "values": [
+        -0.0036228559134516836,
+        -0.0010711013903880184,
+        0.0006990026591934817,
+        -0.0007049867247285735,
+        0.002190488926068268
+      ],
+      "mean": -0.0005018904886613052,
+      "sample_SD": 0.002167759533476347,
+      "family_count": 24,
+      "ci95": [
+        -0.0034335556625409835,
+        0.002483374838422649
+      ],
+      "adjusted_ci": [
+        -0.005004114464954153,
+        0.0038435242186005882
+      ],
+      "p_bootstrap_centered": 0.7370131493425329
+    }
+  ],
+  "original_files_unchanged": true,
+  "protected": {
+    "/home/data/lxm/TRACEHR/work/cem_matched_controls_20261105/eicu/v4/work/cem_matched_controls_20261105/config.json": "d3e98ae60369c3bf360a391fcbedc933839ca5724c565651895dc93a2f6b92ce",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/host_eicu/state.json": "d9e4029cffacf38f57edc27abd878b28075a7ab436b18eca3d3dcb891d9e218d",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/host_eicu/scheduler_v4_exit.json": "d2ecd7398796cd2419c0301c07202bdb2c58ac20ac31709c3c1a5aafc22f7624",
+    "/home/data/lxm/TRACEHR/work/cem_matched_controls_20261105/eicu/v4/source_manifest.json": "4930922fbbcadd50419ae1c61ef18696b641c3ca3e51463e65970379a5ae75a3",
+    "/home/data/lxm/TRACEHR/work/cem_matched_controls_20261105/eicu/v4/scripts/cem_matched_common.py": "2e8e9224f667f3b5a10321584dff268813dba58efa7e9ce81c1d363954b993e9",
+    "/home/data/lxm/TRACEHR/work/cem_matched_controls_20261105/eicu/v4/scripts/cem_matched_windows.py": "3ff00aac5afc125f8530936cf3ae5925129e9415a2a669bb0acb96da12bd437e",
+    "/home/data/lxm/TRACEHR/work/cem_matched_controls_20261105/eicu/v4/scripts/tracehr_value_features.py": "b27267fd9cb48f4a33550584ae61b991596a729917ba54636b467b67640216a0",
+    "/home/data/lxm/TRACEHR/work/cem_matched_controls_20261105/eicu/v4/models/tracehr_centered_native.py": "76ee4b05cca2a373d7176aa25729728bd77e4f81f049a6919c4e07658aacfd64",
+    "/home/data/lxm/TRACEHR/work/cem_matched_controls_20261105/eicu/v4/models/tracehr_fte_binding.py": "e5a5cd24441bbfd3d75795a66ed2c4819cc0aa68c0052e5da8fbf6a34a403b18",
+    "/home/data/lxm/TRACEHR/work/cem_matched_controls_20261105/eicu/v4/models/cem_matched_tabm.py": "69bb8736bbd65845aca48b2f093d67914241f69017b4935afc601974f118c801",
+    "/home/data/lxm/TRACEHR/runs/tracehr_pm_test_20261021/eicu/features/test_targets.npz": "8d7fd3eb53ae25e76febaa4f3ddeab0bca388a1dfeb167cc6effb986395d1984",
+    "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu/stress_inputs_v2/completion.json": "3d4a5c80c2b12d7b1dca5066aea7b3951fbfa176555168bda0082384486219a3",
+    "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu/stress_inputs_v2/lab_drop25.npy": "41b513f79901dec5d7fb5ed9870e3370141b23a58be722d93debd8e5cbd280ef",
+    "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu/stress_inputs_v2/lab_drop50.npy": "a7cf142e2b8093396b9206f731dbccc34d52a9967117455e4c8a0e756c36baad",
+    "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu/stress_inputs_v2/lab_delay2h.npy": "43792ce85ea5ffb125e2d1d1c18388696379535d2af10717dd16ca4ee82831f6",
+    "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu/stress_inputs_v2/lab_delay6h.npy": "21627997731f5dd1862146a00ccf1f3c60c5e4442ab008427e712b332cbed756",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu/v3/windows/completion.json": "ef2a8c39ad9264bec5695e0253caca28cb8adaff04403f1ecd03b3ffea91ec42",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu/v3/windows/scaling.npz": "36d5293db85e2849b2ea2e24f57c516f7107598d1ecc0ce8a870acb4be0ad8e9",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu/v3/windows/test_windows.npy": "bd2c8c16b16b01b130b9da137f4f6511918694bab3b35cebc44c291761f440f8",
+    "/home/data/lxm/TRACEHR/runs/cem_five_seed_20261102/host_eicu/state.json": "58468c49a99ca34df08c3659f9d1ae16abe354b3e63b5c9a66b14aedba924172",
+    "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu_statistics_v1/bootstrap/random_test_CEM_Net.json": "9648a793eba9bb6cfb48bc6cb0114b7869863b0758124d8ab0d1fd6ed08960b2",
+    "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu_statistics_v1/bootstrap/random_test_CEM_Net.npz": "bcc8d8def15ed5bb61a43717bbda5f07c52e4d8f3f14db9eb0f1ec49c8801998",
+    "/home/data/lxm/TRACEHR/runs/tracehr_ema_cross_20261024/eicu/v1/screen/jobs/fullEMA_t0_s48/completion.json": "1d67bbf07b7292b8b6abff2d64bf7e80206e3079b671b58b45795e78b239f99b",
+    "/home/data/lxm/TRACEHR/runs/tracehr_ema_cross_20261024/eicu/v1/screen/jobs/fullEMA_t0_s48/best.pt": "a7c4952f742aeaac80f0b98813c7163335031db6aed5fedb3117da795bb9d79f",
+    "/home/data/lxm/TRACEHR/runs/tracehr_ema_cross_20261024/eicu/v1/screen/test/test_fullEMA_t0_s48/predictions_test.npz": "80c1ea5150e80a089a8cf9dfc4622ed13352066c2a9aece599ea30a042737ab6",
+    "/home/data/lxm/TRACEHR/runs/tracehr_ema_cross_20261024/eicu/v1/screen/jobs/fullEMA_t0_s49/completion.json": "e53bd23d1d50394a4f783b606c75762179f267ae4c2363396ff7730889f6c225",
+    "/home/data/lxm/TRACEHR/runs/tracehr_ema_cross_20261024/eicu/v1/screen/jobs/fullEMA_t0_s49/best.pt": "0b0555dbb906f3b621998e0f443919478021812f6f19bb0e483f8e446ad41af2",
+    "/home/data/lxm/TRACEHR/runs/tracehr_ema_cross_20261024/eicu/v1/screen/test/test_fullEMA_t0_s49/predictions_test.npz": "e57f66a0b991558f84839f5bf3c9d065fae1842957f2ef1aecf91e0fc5df8e0b",
+    "/home/data/lxm/TRACEHR/runs/tracehr_ema_cross_20261024/eicu/v1/screen/jobs/fullEMA_t0_s50/completion.json": "ea7105b9bf07587df5dcad4df9567d7621b9c40e85ac6ebdd3e66a2d619ed083",
+    "/home/data/lxm/TRACEHR/runs/tracehr_ema_cross_20261024/eicu/v1/screen/jobs/fullEMA_t0_s50/best.pt": "19c73b047fb15d5a75440e72a6ccfed3bf604dc61b4f0da5b9cc091c107d4df7",
+    "/home/data/lxm/TRACEHR/runs/tracehr_ema_cross_20261024/eicu/v1/screen/test/test_fullEMA_t0_s50/predictions_test.npz": "a7e5b60d9d9cd5cbb5f61f991c4a0af0b36f1634f71f14c34ccb95ee4b0df449",
+    "/home/data/lxm/TRACEHR/runs/cem_five_seed_20261102/eicu_statistics_v1/bootstrap/test_CEM-Net_s51_t0.json": "3e19238d95f76767517c1226a0b23027831fb96b9c2146fea0d3c292487be9ac",
+    "/home/data/lxm/TRACEHR/runs/cem_five_seed_20261102/eicu_statistics_v1/bootstrap/test_CEM-Net_s51_t0.npz": "967d634552feab13d8777d2538679ac93efba800f5bc1628dbc80f399088340a",
+    "/home/data/lxm/TRACEHR/runs/cem_five_seed_20261102/eicu/v3/screen/jobs/CEM_t0_s51/completion.json": "1a303233ecabb7e4fc7123d9c5fd7f7041f7b94a258868568aebe6219c21e30d",
+    "/home/data/lxm/TRACEHR/runs/cem_five_seed_20261102/eicu/v3/screen/jobs/CEM_t0_s51/best.pt": "fc26498342da760eb61d490174a09fc8e59c884f6a477ca1fa44475faa93b17e",
+    "/home/data/lxm/TRACEHR/runs/cem_five_seed_20261102/eicu/v3/screen/test/test_CEM_t0_s51/predictions_test.npz": "6b46d9f4bf64c49f3add2723795a31ba5cb906c7a63e6fde5e412fb675f7df87",
+    "/home/data/lxm/TRACEHR/runs/cem_five_seed_20261102/eicu_statistics_v1/bootstrap/test_CEM-Net_s52_t0.json": "0b3529bef80088d1dd44bfd653b2ce0c81a02eb52128671ca1c11aaabce30d30",
+    "/home/data/lxm/TRACEHR/runs/cem_five_seed_20261102/eicu_statistics_v1/bootstrap/test_CEM-Net_s52_t0.npz": "4ac231d73d122d2a7d1eb1d56d3b8861efb4483c219c90d4fa903d14384e509e",
+    "/home/data/lxm/TRACEHR/runs/cem_five_seed_20261102/eicu/v3/screen/jobs/CEM_t0_s52/completion.json": "096462953be73692c0b253b935b1eb80409f0ee82cc8bc81f39da12669049d42",
+    "/home/data/lxm/TRACEHR/runs/cem_five_seed_20261102/eicu/v3/screen/jobs/CEM_t0_s52/best.pt": "e6b858d0b5fb336899aee91e97cec2ca2d613795f9e37c9d9e2f71b396837d34",
+    "/home/data/lxm/TRACEHR/runs/cem_five_seed_20261102/eicu/v3/screen/test/test_CEM_t0_s52/predictions_test.npz": "4f2974124f0bad8954457202190e1de5b347865f9d18c7ae218fdc8407c88db7",
+    "/home/data/lxm/TRACEHR/runs/tracehr_ema_cross_20261024/eicu/v1/screen/jobs/fullEMA_t1_s48/completion.json": "8f7655fc748bf0272e1efc63797d087fad0e3362b5ba012aac747b9aaf5fbb83",
+    "/home/data/lxm/TRACEHR/runs/tracehr_ema_cross_20261024/eicu/v1/screen/jobs/fullEMA_t1_s48/best.pt": "0da8197c6932ca91892b64077a5f9f088c7b343c362eaaf3dec043743ea54228",
+    "/home/data/lxm/TRACEHR/runs/tracehr_ema_cross_20261024/eicu/v1/screen/test/test_fullEMA_t1_s48/predictions_test.npz": "4036288a974f5a995684258d3c377512a2de192707fec4ee34c6eb75271dccb2",
+    "/home/data/lxm/TRACEHR/runs/tracehr_ema_cross_20261024/eicu/v1/screen/jobs/fullEMA_t1_s49/completion.json": "8937442e2fdc6225bf428ddab6c87152ba4b50a051bf06f0527341b8ed214b26",
+    "/home/data/lxm/TRACEHR/runs/tracehr_ema_cross_20261024/eicu/v1/screen/jobs/fullEMA_t1_s49/best.pt": "6a203684fdb328f0f66a068be5f77a59d2e700025bd26090d10a4bfcc35f0b6e",
+    "/home/data/lxm/TRACEHR/runs/tracehr_ema_cross_20261024/eicu/v1/screen/test/test_fullEMA_t1_s49/predictions_test.npz": "724215f0b52e3a099bf3b79fc54b9d4131f2306c351257e8a010f3a25bc8c6ae",
+    "/home/data/lxm/TRACEHR/runs/tracehr_ema_cross_20261024/eicu/v1/screen/jobs/fullEMA_t1_s50/completion.json": "57cd22e3859d74794927c096871346aceee5792c9caf69c6818c552fd5aed85d",
+    "/home/data/lxm/TRACEHR/runs/tracehr_ema_cross_20261024/eicu/v1/screen/jobs/fullEMA_t1_s50/best.pt": "b7bc516a68796c563695fbf4185ded7f7966a7e1297e352245a0065ef03a79e6",
+    "/home/data/lxm/TRACEHR/runs/tracehr_ema_cross_20261024/eicu/v1/screen/test/test_fullEMA_t1_s50/predictions_test.npz": "74cd9e57e5f59bac6e0ad5cf8650500787c5ea2272c1ab02153d0196d378a624",
+    "/home/data/lxm/TRACEHR/runs/cem_five_seed_20261102/eicu_statistics_v1/bootstrap/test_CEM-Net_s51_t1.json": "48efef76a00709d9b9df08e87dc2b698e6c17bd313aab247ca61de735116e8ed",
+    "/home/data/lxm/TRACEHR/runs/cem_five_seed_20261102/eicu_statistics_v1/bootstrap/test_CEM-Net_s51_t1.npz": "121a3eb76a309442c660b58c32633d47f15ece36a61688122bccf2a41b713e73",
+    "/home/data/lxm/TRACEHR/runs/cem_five_seed_20261102/eicu/v3/screen/jobs/CEM_t1_s51/completion.json": "4eb39eda761b894d06e34eae891af8200968f08ac474aa39638a67f8ba659a0e",
+    "/home/data/lxm/TRACEHR/runs/cem_five_seed_20261102/eicu/v3/screen/jobs/CEM_t1_s51/best.pt": "2758a0026da26e67bd38a5a108a03de9e0455d9cdd67cce257a370cc6099b417",
+    "/home/data/lxm/TRACEHR/runs/cem_five_seed_20261102/eicu/v3/screen/test/test_CEM_t1_s51/predictions_test.npz": "765af2d15b7a44cbdafc4983e38f1eb87aad741acfad7de976977bc01e9e7605",
+    "/home/data/lxm/TRACEHR/runs/cem_five_seed_20261102/eicu_statistics_v1/bootstrap/test_CEM-Net_s52_t1.json": "5f0f79f4c3fca309d7a32aa1e608959e3ae43ffcec3f6c6499c7d69d7c02b5b2",
+    "/home/data/lxm/TRACEHR/runs/cem_five_seed_20261102/eicu_statistics_v1/bootstrap/test_CEM-Net_s52_t1.npz": "7460150e155fbe902befec21562a5db35844793041fd95f51707942da06fb305",
+    "/home/data/lxm/TRACEHR/runs/cem_five_seed_20261102/eicu/v3/screen/jobs/CEM_t1_s52/completion.json": "9d588b0422d734c3d5a99fd59059706e074c00aa632ccd84e1a1fd6f6744bdd8",
+    "/home/data/lxm/TRACEHR/runs/cem_five_seed_20261102/eicu/v3/screen/jobs/CEM_t1_s52/best.pt": "fe986445da312d27eb096bc10c91cbef032d14d671722e12f8cf78edeef16740",
+    "/home/data/lxm/TRACEHR/runs/cem_five_seed_20261102/eicu/v3/screen/test/test_CEM_t1_s52/predictions_test.npz": "df41e15fdf46a6eb477746ca60ad39c9b11f3353711dc898e830f5741a6cfe3b",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu/v4/screen/test/test_window_summary_t0_s48/completion.json": "0616d2da772cdc4b4e34e8089aad30f9bde50478d79963e5b60cefbe3f72d088",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu_statistics_v1/bootstrap/window_summary_s48_t0.json": "2b4d02e8a2fc61c35c2593e2f9cdbf35cdc90d092ab52e611978ad2c7262bf64",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu_statistics_v1/bootstrap/window_summary_s48_t0.npz": "70efd63bc625ad0c42684bc31e255035f2be49ffbc5cb6f7c80a4e2f8e92deb3",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu/v4/screen/jobs/window_summary_t0_s48/completion.json": "0d7ccfc861048b50ced02b5164b58c57c00bd041e51ba888553604126d89dc8f",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu/v4/screen/jobs/window_summary_t0_s48/best.pt": "b1a843031d6daa98912b20c35f32a46ab4921c1b7e9c777190b93c5a55aff81b",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu/v4/screen/test/test_window_summary_t0_s48/predictions_test.npz": "6e20be2dde1e865769af4516bdbb33376ec1618817c377e3bcb95f2d35ac5140",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu/v4/screen/test/test_window_summary_t0_s49/completion.json": "98272bdc2090be639ba976a20c6bfbdd4f5a429cbf42bc1dbcadb92d10e529db",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu_statistics_v1/bootstrap/window_summary_s49_t0.json": "bff135c495df3c1c10b0213a8011ba9647f81f609c8e7668299c3a15211ec293",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu_statistics_v1/bootstrap/window_summary_s49_t0.npz": "1ffd6110c031fe2ca007c770c1eb8ad63e958e27ce86d4f25fda954369b24a1b",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu/v4/screen/jobs/window_summary_t0_s49/completion.json": "b775abfae263aa8d5af63c83749ce02f5525e3822b894c29a85b7c429881b29f",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu/v4/screen/jobs/window_summary_t0_s49/best.pt": "734d510818a2160ad0cb6c8d2d45a4c53f6c9c0a81ff0041e66eb565d95a837d",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu/v4/screen/test/test_window_summary_t0_s49/predictions_test.npz": "a59425c60424428ed3613dc953f680d7270ae99898194c2554551fe899858b2e",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu/v4/screen/test/test_window_summary_t0_s50/completion.json": "de175ae5de47587b8e894ae8b578b897b5928a9e2bba104abea05e858353ea31",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu_statistics_v1/bootstrap/window_summary_s50_t0.json": "5cf367a1a5780c96fd24ad7691c78b2d49ff07dd2cdf263e9640d9173f110a70",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu_statistics_v1/bootstrap/window_summary_s50_t0.npz": "1f550beb9649957f60400fd4f4fb1a4c9a7049ae7318842583b0a29348bf083d",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu/v4/screen/jobs/window_summary_t0_s50/completion.json": "0b54acd90231b03559ca3e88487f62bea7f2f39bd72487438df0b2bcd6b2e3c8",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu/v4/screen/jobs/window_summary_t0_s50/best.pt": "d9d884118678d9cb103f1851d2020dad24fa50753ca010b9659e866aed20e209",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu/v4/screen/test/test_window_summary_t0_s50/predictions_test.npz": "d5bac2c5249f94068134009c9706eaaa479023c51cc1870a989742a88c517ce8",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu/v4/screen/test/test_window_summary_t0_s51/completion.json": "8be898fbb07cac93c8f4a14b3bfd6a01efeffff1e9ba7933f4efdc14b8a9c9f2",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu_statistics_v1/bootstrap/window_summary_s51_t0.json": "e283128ca2b24e8496cc321a0c9181b1be0e42a4439c32419b7ea24dce2debda",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu_statistics_v1/bootstrap/window_summary_s51_t0.npz": "41badce309677f2c818123289251a83d8f625e74522587fce1505283509c71b3",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu/v4/screen/jobs/window_summary_t0_s51/completion.json": "1952a33b08a8fc7bcdba071408a8f36380285446fbaa358f640d1db5566e0e48",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu/v4/screen/jobs/window_summary_t0_s51/best.pt": "e2ff6dd9f21d9a206a121838bdd7fbb0c7cea9c6e0f5b844b4f3ed0c7ff15d05",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu/v4/screen/test/test_window_summary_t0_s51/predictions_test.npz": "9365f88bd0f178ef209cffb1c067a8f7aeff0885ff57e46748687922c10a3ce6",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu/v4/screen/test/test_window_summary_t0_s52/completion.json": "ef9ca96ec46bdee25599593a9ae6a50646299ae04661c29e08f3eca2db483298",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu_statistics_v1/bootstrap/window_summary_s52_t0.json": "6b0c287676ee7bc32b7aa5b204aa25087cc1a3a0bd74546f4b2cf316092d18de",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu_statistics_v1/bootstrap/window_summary_s52_t0.npz": "b6be1e2112f5fefa69e1ff8a46b8f7c2c0bddc3b86758012334de06ae4808090",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu/v4/screen/jobs/window_summary_t0_s52/completion.json": "385a05b04beb0adf4465120c6d216ce1b24763a27bedcd3ce41c827f5912302a",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu/v4/screen/jobs/window_summary_t0_s52/best.pt": "28ddd15c6744fa8c601ee29d3ebf790598b5e16b145bd584f60755011d652720",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu/v4/screen/test/test_window_summary_t0_s52/predictions_test.npz": "b341f494febf82edb37299722d165f0cd3aff5c70504239e5e7918c9a5504028",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu/v4/screen/test/test_window_summary_t1_s48/completion.json": "6c624567c500d7968445eaeddd1f70d6199dd0de36465d3c71973aa100ad87fa",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu_statistics_v1/bootstrap/window_summary_s48_t1.json": "2daa83f46d0bee99213fe651eda1c178005eba9ea9b26908de745dd82262e4d5",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu_statistics_v1/bootstrap/window_summary_s48_t1.npz": "f04eea1370411b499c8a79cbc3de3a442d1500813e5057ea61c1fd01cf3f16d7",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu/v4/screen/jobs/window_summary_t1_s48/completion.json": "dbbe5fd13d6d02cef9900a07a2cd8baccfa22a4270a2037a362865f72f544429",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu/v4/screen/jobs/window_summary_t1_s48/best.pt": "995b0ed49fcd8d21000b399e6348261953e89be072e15c845c6bbd48e3db6e93",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu/v4/screen/test/test_window_summary_t1_s48/predictions_test.npz": "1c0e363e9e25584cc7b6fc879e170b4edcd44b496097825a9824ed8f090e1a0c",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu/v4/screen/test/test_window_summary_t1_s49/completion.json": "e8de070b06f7d284ca68edeac379260492502954d96276057d68f6c315dfe09f",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu_statistics_v1/bootstrap/window_summary_s49_t1.json": "0b6422e3bd4d3af21bfd25a085db037685f5aea8270ef62f505e45d659624262",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu_statistics_v1/bootstrap/window_summary_s49_t1.npz": "19bd18b59f69adc61e89478a0bc7c29dec72a96776403419ff1d21de7882376e",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu/v4/screen/jobs/window_summary_t1_s49/completion.json": "68d976742052130aa9a4f2e07fa3cb4a59eb550b49aa60d99f31b71811f29a52",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu/v4/screen/jobs/window_summary_t1_s49/best.pt": "1922e958edd11debb7fd74c5c0ccdede4822cd00ebc2d5b38d80493d42c4cab0",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu/v4/screen/test/test_window_summary_t1_s49/predictions_test.npz": "b2e74493974859653f34bb180ec8a718b6965791f4353e69336f5fdb8aacabe3",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu/v4/screen/test/test_window_summary_t1_s50/completion.json": "025e61ff53b0497b144c52d2905ad89be0923b4d18d8c49ff7cbe69dd7a2f122",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu_statistics_v1/bootstrap/window_summary_s50_t1.json": "ada12c7bbce55506133f4564f5dcc9e9bf9d76d61e0cfb5a5bca182c011c900d",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu_statistics_v1/bootstrap/window_summary_s50_t1.npz": "f31914e5d25dd1dffb53978359ffd7df72fe3401f185fb5d2817837aadb5c98f",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu/v4/screen/jobs/window_summary_t1_s50/completion.json": "2ddd05840456953cc20aee4a0163cea139d498b966b230d45c77b594a974f729",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu/v4/screen/jobs/window_summary_t1_s50/best.pt": "6608e6b0ccca151f31070dc12983dc259b3776825969c7837cac7a01a1b88de4",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu/v4/screen/test/test_window_summary_t1_s50/predictions_test.npz": "653fd670052ba7e7cd210b7845dcb5e08fd72aa0a332b66786bb6bc628c87a91",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu/v4/screen/test/test_window_summary_t1_s51/completion.json": "5fdfe02b9dedc46dccd7bd8da14dfcd63fcbe1138966c6c6461e2810cf4e217c",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu_statistics_v1/bootstrap/window_summary_s51_t1.json": "42497dacff215e6ea5af6e7bc79a334e1f5a9f61aafea71bb050bc1954d5688b",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu_statistics_v1/bootstrap/window_summary_s51_t1.npz": "801e9d3695c060656c3820f2b3591ffbfac23fd53338fb7915eaa0ea1f0fd039",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu/v4/screen/jobs/window_summary_t1_s51/completion.json": "7e90e079c106dc63fba1b6e65fd7b492182c31fc2e3b119d0cd95ff1c64bbc7d",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu/v4/screen/jobs/window_summary_t1_s51/best.pt": "4d9c9ae773e664ba0906069e0f2450e30a0fbec3888e6121114ed1e6a82f730b",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu/v4/screen/test/test_window_summary_t1_s51/predictions_test.npz": "ad3e81df3c913c9a93a595993e832bb3ee580abbd375749b16cb1cd3acb51768",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu/v4/screen/test/test_window_summary_t1_s52/completion.json": "e0988f6313fe2d2c31a9a3d42b73e37d2a887b4ea5aa617bfb5509724de1317c",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu_statistics_v1/bootstrap/window_summary_s52_t1.json": "bff29b1b9a313c4538951dfff985cba7a6a863a8c43d0f941030e5e6c8d28284",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu_statistics_v1/bootstrap/window_summary_s52_t1.npz": "4d8382c6c86c74a4b3289fe931f2e296c28fb9dcb9a1bebb75497de93376692a",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu/v4/screen/jobs/window_summary_t1_s52/completion.json": "757c3d88e951134d844a962521fda5cbed7412e84c53686a22515eac7d6ae91a",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu/v4/screen/jobs/window_summary_t1_s52/best.pt": "925f7fb87149950801591d520eb5833c482d6b475c0be71e17a16dd9779411d8",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu/v4/screen/test/test_window_summary_t1_s52/predictions_test.npz": "ed46999e5f106bebb1391450d488ec7da46b17a30dcdd518cec16164e4402c75",
+    "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu/frozen_inference_v2/jobs/CEM-Net_t1_s48/completion.json": "4ad31713fb0f1003c635eb99296cab71fad56af7111d575776ad87caa267e879",
+    "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu/frozen_inference_v2/jobs/CEM-Net_t1_s48/lab_drop25.npz": "16024596d29f56c8b342e0efb3f78c83ccc5aab471ff096fbcd8c5d516e8d4f5",
+    "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu/frozen_inference_v2/jobs/CEM-Net_t1_s48/lab_drop50.npz": "7c41a96467806e8ccf990c9c8c6848aa1f43968e2e75a4776745dc30c3110e02",
+    "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu/frozen_inference_v2/jobs/CEM-Net_t1_s48/lab_delay2h.npz": "d1d87a57b29d86a1d3dffeffbb731bc42c58fa62583237031316096630536a8d",
+    "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu/frozen_inference_v2/jobs/CEM-Net_t1_s48/lab_delay6h.npz": "4cac504f50562cfd6a0428e834707b9a7c121e303f7af07e5d1e43346d5579d5",
+    "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu/frozen_inference_v2/jobs/CEM-Net_t1_s49/completion.json": "648c6d53e305877c1d1b7a8dbff67d507a8e1693951029286baccf461390f4a0",
+    "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu/frozen_inference_v2/jobs/CEM-Net_t1_s49/lab_drop25.npz": "d6d01fd5889be9499c6f5eb267b21933b761dc01d74a41c8c251300dc1866c44",
+    "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu/frozen_inference_v2/jobs/CEM-Net_t1_s49/lab_drop50.npz": "b634c6f6ce7b8c2d0efad8d66395c3041cd1dec282903bc170fedfc55d8e1053",
+    "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu/frozen_inference_v2/jobs/CEM-Net_t1_s49/lab_delay2h.npz": "760f4f330cbe04bbdab65831b223c5fea870c97332e66ede6511f469af574407",
+    "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu/frozen_inference_v2/jobs/CEM-Net_t1_s49/lab_delay6h.npz": "619f68b0c141453f8cf80f50cfe48c29abf40e2c65e16ee091e17a08d12b3ce2",
+    "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu/frozen_inference_v2/jobs/CEM-Net_t1_s50/completion.json": "c2b8ebb94e51748ea3e7595ec4840c904b40449dd59a664e30a39527787de06e",
+    "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu/frozen_inference_v2/jobs/CEM-Net_t1_s50/lab_drop25.npz": "20df7ee64aaf3206b4410e8d54814f51947ad63c7207a9ca614293bc6b2d5500",
+    "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu/frozen_inference_v2/jobs/CEM-Net_t1_s50/lab_drop50.npz": "524e64e6ec0431672f8f168c202a5c2657bedbb0c5d278f17d1048fb458d61e9",
+    "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu/frozen_inference_v2/jobs/CEM-Net_t1_s50/lab_delay2h.npz": "917acce9a0910c9e4f42c36c68931c2b1e61010b126c34a9e4f8e51240a51cf2",
+    "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu/frozen_inference_v2/jobs/CEM-Net_t1_s50/lab_delay6h.npz": "96d1503fce3d2d685c6a0e082dd101b60a1e73619418c3eb755887c6a7d0e867",
+    "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu_secondary_v1/bootstrap/stress_t0_lab_drop25.json": "bee1601fd70e4ac220c4d9cb79b180ad67e1db6bca676292d4f058912cd33645",
+    "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu_secondary_v1/bootstrap/stress_t0_lab_drop25.npz": "27974745aa1396dda0a2b714ccd0f4295c9f77c45fe4df72c7001772dbc578e3",
+    "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu_secondary_v1/bootstrap/stress_t0_lab_drop50.json": "626ee252bd08bf6d2c3315cf24182b7fe33610a1b34becbe7d2d2201b8926ccb",
+    "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu_secondary_v1/bootstrap/stress_t0_lab_drop50.npz": "a4861ef27fccbe5ed0fab391c8f830f926a0d8efd0f5043f68c640aea5b26891",
+    "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu_secondary_v1/bootstrap/stress_t0_lab_delay2h.json": "d88c89e5da17330cf6d086c93e19335ef81054f692331ec7d42b10590d488cd4",
+    "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu_secondary_v1/bootstrap/stress_t0_lab_delay2h.npz": "a3748ec5a7ac05e4ce1f119a94d4f378002165e1e522c253378917d28dce8b12",
+    "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu_secondary_v1/bootstrap/stress_t0_lab_delay6h.json": "c8ad5a5fbec9777ddfe83ee6514de795331d18334cffdf4b43b33a69819fd038",
+    "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu_secondary_v1/bootstrap/stress_t0_lab_delay6h.npz": "54d4c3509b66ef3d3d3a0637bdab7f020ef24695b69b6167daecb91c207a41ed",
+    "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu_secondary_v1/bootstrap/stress_t1_lab_drop25.json": "517f1ea775d892f0e68ac26917f16cf46da1e74e0775eee58e8aa9655004568a",
+    "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu_secondary_v1/bootstrap/stress_t1_lab_drop25.npz": "30c1434ac7014ac7e64453bf7c0191201846672f776dccded756688c78082a65",
+    "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu_secondary_v1/bootstrap/stress_t1_lab_drop50.json": "46b23fcb84e18b6129e9a23593da023212dcbac4f8b2159f5c0487f7a2497b4c",
+    "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu_secondary_v1/bootstrap/stress_t1_lab_drop50.npz": "fc92f490f6f9393994821fd8c805d64cade196021df5dae373c9c684145582ae",
+    "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu_secondary_v1/bootstrap/stress_t1_lab_delay2h.json": "9f74eee7839003552551e932c93233c5c26351e1c7fd832f4d046c3b0d3fdb67",
+    "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu_secondary_v1/bootstrap/stress_t1_lab_delay2h.npz": "e7ed50633137de4321f684050cbf6c142b6e5ebb99951b9856d8c2100c55f327",
+    "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu_secondary_v1/bootstrap/stress_t1_lab_delay6h.json": "6dda25b2591415aba7d4ba749e624da70ad1b79c5122aaf7cea159c1a96932c3",
+    "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu_secondary_v1/bootstrap/stress_t1_lab_delay6h.npz": "cef103eb37b6afaf7345a65e0fe81f305df1728bce884b38a274553276884f5b"
+  },
+  "source_sha256": "19715474295e12b077cb55013aac96e893ff8c80e97b4c4c98985c1cda71d156",
+  "run_protocol": {
+    "run": "cem_aggregation_stress_20261106",
+    "seeds": [
+      48,
+      49,
+      50,
+      51,
+      52
+    ],
+    "databases": [
+      "mimiciii",
+      "mimic",
+      "eicu"
+    ],
+    "endpoints": [
+      0,
+      1
+    ],
+    "conditions": [
+      "lab_drop25",
+      "lab_drop50",
+      "lab_delay2h",
+      "lab_delay6h"
+    ],
+    "methods": [
+      "duration",
+      "window"
+    ],
+    "training_runs": 0,
+    "checkpoints": 60,
+    "total_stress_cases": 240,
+    "expected_reused_cases": 72,
+    "expected_new_cases": 168,
+    "primary": "difference of AP changes: (duration perturbed-clean) minus (window perturbed-clean)",
+    "secondary": "perturbed AP duration minus window",
+    "family_size": 24,
+    "families": [
+      "degradation",
+      "absolute"
+    ],
+    "bootstrap_replicates": 20000,
+    "bootstrap_rng_seed": 20261027,
+    "resampling": "whole patients with all stays",
+    "seed_aggregation": "per-seed AP/paired contrast, then average; no prediction pooling",
+    "intervals": [
+      0.95,
+      0.9979166666666667
+    ],
+    "p_values": "null-centered paired bootstrap; Holm separately in each full 24-contrast family",
+    "fixed_deletion": "reuse archived deterministic hash; nested 25/50 percent masks shared across views and models",
+    "normalization": "reuse each model original training-fitted transforms; never refit",
+    "time_rules": "original laboratory availability, 24h cutoff; unchanged specimen times and original MIMIC-III proxy",
+    "execution": "CPU FP32, four threads per batch, batch 256, four independent batches in parallel; exact serial/parallel replay",
+    "original_model_results_and_manuscript_unchanged": true
+  }
+}

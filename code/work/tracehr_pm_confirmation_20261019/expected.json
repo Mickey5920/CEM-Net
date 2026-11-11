@@ -1,0 +1,2174 @@
+{
+  "records": {
+    "B0_t0_s45": {
+      "variant": "B0",
+      "endpoint": 0,
+      "seed": 45,
+      "AP": 0.5280258328219694,
+      "AUROC": 0.9034885823939575,
+      "Brier": 0.05056469514966011,
+      "log_loss": 0.17819318475548404,
+      "best_epoch": 24,
+      "epochs": 52,
+      "seconds": 359.7795352935791,
+      "parameters": 14029510,
+      "source": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_not_stability_20261018/mimic/stage1_v1/screen/jobs/B0_t0_s45",
+      "checkpoint_sha256": "b75b1bb7926c82c77145862982d4cf42dd3aaa2a37fb772bc68c6ef655fc0e3b",
+      "predictions_sha256": "1cad3e7ebe44c7e56c86d5d16e8ee74aece617b455e41e68f7f7d5790ae8ce9a",
+      "initial_weights_sha256": "f8994ebdaaa7b205d60663ef0b39d9c94df772389d357a4e0e6f79fb12a3e97e",
+      "reused": true,
+      "exit_returncode": 0,
+      "peak_reserved_mib": 5994.0,
+      "checkpoint_replay": {
+        "complete": true,
+        "max_probability_drift": 0.0
+      },
+      "gpu": 4,
+      "seed_audit": {
+        "complete": true,
+        "seed": 45,
+        "initial_weights_sha256": "f8994ebdaaa7b205d60663ef0b39d9c94df772389d357a4e0e6f79fb12a3e97e",
+        "fresh_initialization_hash": "f8994ebdaaa7b205d60663ef0b39d9c94df772389d357a4e0e6f79fb12a3e97e",
+        "internal_seeds": [
+          [
+            2100288459
+          ]
+        ],
+        "initial_parameters_match_same_seed_fresh_native": true,
+        "seed42_historical_comparison": "different as required",
+        "capture_optimizer_updates": 0,
+        "rng_restored_before_fit": true
+      }
+    },
+    "B0_t1_s45": {
+      "variant": "B0",
+      "endpoint": 1,
+      "seed": 45,
+      "AP": 0.5488806983081327,
+      "AUROC": 0.8600333797356563,
+      "Brier": 0.0945858508348465,
+      "log_loss": 0.3061751971786768,
+      "best_epoch": 15,
+      "epochs": 52,
+      "seconds": 337.7107539176941,
+      "parameters": 14029510,
+      "source": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_not_stability_20261018/mimic/stage1_v1/screen/jobs/B0_t1_s45",
+      "checkpoint_sha256": "b6f450524bdf6f76c3c4f45fc404b8d87066f26f52af8db0e18297c42865e98c",
+      "predictions_sha256": "12e8a656f0aea9960fe5ae2eb3a34ca2432a122c1d7d094f8c383e6dc048a90a",
+      "initial_weights_sha256": "f8994ebdaaa7b205d60663ef0b39d9c94df772389d357a4e0e6f79fb12a3e97e",
+      "reused": true,
+      "exit_returncode": 0,
+      "peak_reserved_mib": 5994.0,
+      "checkpoint_replay": {
+        "complete": true,
+        "max_probability_drift": 0.0
+      },
+      "gpu": 1,
+      "seed_audit": {
+        "complete": true,
+        "seed": 45,
+        "initial_weights_sha256": "f8994ebdaaa7b205d60663ef0b39d9c94df772389d357a4e0e6f79fb12a3e97e",
+        "fresh_initialization_hash": "f8994ebdaaa7b205d60663ef0b39d9c94df772389d357a4e0e6f79fb12a3e97e",
+        "internal_seeds": [
+          [
+            2100288459
+          ]
+        ],
+        "initial_parameters_match_same_seed_fresh_native": true,
+        "seed42_historical_comparison": "different as required",
+        "capture_optimizer_updates": 0,
+        "rng_restored_before_fit": true
+      }
+    },
+    "B0_t0_s46": {
+      "variant": "B0",
+      "endpoint": 0,
+      "seed": 46,
+      "AP": 0.5300768075229804,
+      "AUROC": 0.9044682342458699,
+      "Brier": 0.04954905062913895,
+      "log_loss": 0.17336974327008203,
+      "best_epoch": 15,
+      "epochs": 52,
+      "seconds": 378.44338059425354,
+      "parameters": 14029510,
+      "source": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_not_stability_20261018/mimic/stage1_v1/screen/jobs/B0_t0_s46",
+      "checkpoint_sha256": "9193b7130e19c59f039716c8920c3ab8334c4c3e6e1abaa1a2dc5f773b78f7de",
+      "predictions_sha256": "1427f8480a32095f149ffe0c334a8e6285f3d6526c4ab3c7d7fe3d7636598fd7",
+      "initial_weights_sha256": "35ae030aa731de85e75de98b1356db856c7db484dcee79029614e192bfa5be50",
+      "reused": true,
+      "exit_returncode": 0,
+      "peak_reserved_mib": 5994.0,
+      "checkpoint_replay": {
+        "complete": true,
+        "max_probability_drift": 0.0
+      },
+      "gpu": 4,
+      "seed_audit": {
+        "complete": true,
+        "seed": 46,
+        "initial_weights_sha256": "35ae030aa731de85e75de98b1356db856c7db484dcee79029614e192bfa5be50",
+        "fresh_initialization_hash": "35ae030aa731de85e75de98b1356db856c7db484dcee79029614e192bfa5be50",
+        "internal_seeds": [
+          [
+            1219050685
+          ]
+        ],
+        "initial_parameters_match_same_seed_fresh_native": true,
+        "seed42_historical_comparison": "different as required",
+        "capture_optimizer_updates": 0,
+        "rng_restored_before_fit": true
+      }
+    },
+    "B0_t1_s46": {
+      "variant": "B0",
+      "endpoint": 1,
+      "seed": 46,
+      "AP": 0.5436362511152159,
+      "AUROC": 0.8588388109695758,
+      "Brier": 0.09521760046482086,
+      "log_loss": 0.308135241797641,
+      "best_epoch": 14,
+      "epochs": 52,
+      "seconds": 330.14725375175476,
+      "parameters": 14029510,
+      "source": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_not_stability_20261018/mimic/stage1_v1/screen/jobs/B0_t1_s46",
+      "checkpoint_sha256": "5ade269f955ff13d75d77bce9552e6652d66c271642ff3556c97821029d10018",
+      "predictions_sha256": "06957d1e7985d1f73a3524a4d69ede9bf7c2f492f4c9c61b6a9a2ec9877ff24a",
+      "initial_weights_sha256": "35ae030aa731de85e75de98b1356db856c7db484dcee79029614e192bfa5be50",
+      "reused": true,
+      "exit_returncode": 0,
+      "peak_reserved_mib": 5994.0,
+      "checkpoint_replay": {
+        "complete": true,
+        "max_probability_drift": 0.0
+      },
+      "gpu": 1,
+      "seed_audit": {
+        "complete": true,
+        "seed": 46,
+        "initial_weights_sha256": "35ae030aa731de85e75de98b1356db856c7db484dcee79029614e192bfa5be50",
+        "fresh_initialization_hash": "35ae030aa731de85e75de98b1356db856c7db484dcee79029614e192bfa5be50",
+        "internal_seeds": [
+          [
+            1219050685
+          ]
+        ],
+        "initial_parameters_match_same_seed_fresh_native": true,
+        "seed42_historical_comparison": "different as required",
+        "capture_optimizer_updates": 0,
+        "rng_restored_before_fit": true
+      }
+    },
+    "B0_t0_s47": {
+      "variant": "B0",
+      "endpoint": 0,
+      "seed": 47,
+      "AP": 0.5326955785506456,
+      "AUROC": 0.9065090265913531,
+      "Brier": 0.049505338072776794,
+      "log_loss": 0.17208792455287095,
+      "best_epoch": 16,
+      "epochs": 52,
+      "seconds": 321.2773883342743,
+      "parameters": 14029510,
+      "source": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_not_stability_20261018/mimic/stage1_v1/screen/jobs/B0_t0_s47",
+      "checkpoint_sha256": "9f69962284a4052a04900ed19553e089b6e44f5484f71ec14094d3bef79034fa",
+      "predictions_sha256": "d3038b4c45f3f17893b3b8d72e1ba3329dfe9d37d4c8e4bb0e470366d1d4124a",
+      "initial_weights_sha256": "c335d66f49d241e725539a746590d437fd167c047b60dd4291c651c23af94138",
+      "reused": true,
+      "exit_returncode": 0,
+      "peak_reserved_mib": 5994.0,
+      "checkpoint_replay": {
+        "complete": true,
+        "max_probability_drift": 0.0
+      },
+      "gpu": 1,
+      "seed_audit": {
+        "complete": true,
+        "seed": 47,
+        "initial_weights_sha256": "c335d66f49d241e725539a746590d437fd167c047b60dd4291c651c23af94138",
+        "fresh_initialization_hash": "c335d66f49d241e725539a746590d437fd167c047b60dd4291c651c23af94138",
+        "internal_seeds": [
+          [
+            487429255
+          ]
+        ],
+        "initial_parameters_match_same_seed_fresh_native": true,
+        "seed42_historical_comparison": "different as required",
+        "capture_optimizer_updates": 0,
+        "rng_restored_before_fit": true
+      }
+    },
+    "B0_t1_s47": {
+      "variant": "B0",
+      "endpoint": 1,
+      "seed": 47,
+      "AP": 0.5457576660632898,
+      "AUROC": 0.8592253583983493,
+      "Brier": 0.09469301253557205,
+      "log_loss": 0.3067813645489764,
+      "best_epoch": 13,
+      "epochs": 52,
+      "seconds": 342.51127099990845,
+      "parameters": 14029510,
+      "source": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_not_stability_20261018/mimic/stage1_v1/screen/jobs/B0_t1_s47",
+      "checkpoint_sha256": "d9d4d9b9d978395679ff80b610eef9a7bc423452e83facda97b6d6cfeded2c2e",
+      "predictions_sha256": "89e9a9f48e506c8899d53ce36ca87adb120599eabd247a40d6e5b4e6c8ba89ef",
+      "initial_weights_sha256": "c335d66f49d241e725539a746590d437fd167c047b60dd4291c651c23af94138",
+      "reused": true,
+      "exit_returncode": 0,
+      "peak_reserved_mib": 5994.0,
+      "checkpoint_replay": {
+        "complete": true,
+        "max_probability_drift": 0.0
+      },
+      "gpu": 0,
+      "seed_audit": {
+        "complete": true,
+        "seed": 47,
+        "initial_weights_sha256": "c335d66f49d241e725539a746590d437fd167c047b60dd4291c651c23af94138",
+        "fresh_initialization_hash": "c335d66f49d241e725539a746590d437fd167c047b60dd4291c651c23af94138",
+        "internal_seeds": [
+          [
+            487429255
+          ]
+        ],
+        "initial_parameters_match_same_seed_fresh_native": true,
+        "seed42_historical_comparison": "different as required",
+        "capture_optimizer_updates": 0,
+        "rng_restored_before_fit": true
+      }
+    },
+    "C5_noT_noA_t0_s43": {
+      "variant": "C5_noT_noA",
+      "endpoint": 0,
+      "seed": 43,
+      "AP": 0.5363289011924376,
+      "AUROC": 0.9061743867149501,
+      "Brier": 0.04921245947480202,
+      "log_loss": 0.17178526290211513,
+      "best_epoch": 17,
+      "epochs": 52,
+      "seconds": 787.5227122306824,
+      "parameters": 12156549,
+      "source": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_not_stability_20261018/mimic/stage1_v1/screen/jobs/C5_noT_noA_t0_s43",
+      "checkpoint_sha256": "29b9626a306142668ce8fa4f94fb56749aa0f75e76945267205b3e06e390b823",
+      "predictions_sha256": "f5d57633f9385e85884629ada300a1a8dd77e897b0cf0d248647a92668be8542",
+      "initial_weights_sha256": "d305a41cd2ea186ba601c616381e062b041bda795b81b86c129964b6397e8365",
+      "reused": true,
+      "exit_returncode": 0,
+      "peak_reserved_mib": 1960.0,
+      "checkpoint_replay": {
+        "complete": true,
+        "max_probability_drift": 0.0,
+        "replay_ap": 0.5363289011924376
+      },
+      "gpu": 0,
+      "connection_audit": {
+        "complete": true,
+        "reference_variant": "C5_noT",
+        "new_variant": "C5_noT_noA",
+        "parameter_count_removed": 514,
+        "retained_random_tensors_match_noT": true,
+        "retained_buffers_exact": true,
+        "removed_parameter_names": [
+          "fusion.auxiliary_head.bias",
+          "fusion.auxiliary_head.weight"
+        ],
+        "reference_random_initial_hash": "702ed5e6416526653a1a29b3e56f5a358dedd0c7555559f32f94bca17ae892a8",
+        "reference_seed": 43,
+        "seed42_reference_manifest_sha256": "62fc436ba4b7a45f158c7e1c5baeb9f242a6fa69a8cfc6c1ab3f19b1f9e61c85",
+        "seed42_reference_initial_hash": "933db0ad2ff1d02eb117a09c7123cf28258d47566751e3b40002e7e905e1763a",
+        "seed_route": {
+          "seed": 43,
+          "native_initialization_seed": 43,
+          "periodic_namespace_seed": 43,
+          "input_members_namespace_seed": 43,
+          "fusion_namespace_seed": 43,
+          "auxiliary_head_namespace_seed": 43,
+          "training_order_seed": 43,
+          "training_torch_seed": 10043,
+          "base_initial_weights_sha256": "9dfe127fb8eecee038e20b482b5d69278dcb4c33f8f3f4084b5d11f3b0b65221"
+        },
+        "protocol_differences": {
+          "ablated_component": {
+            "reference": "trajectory",
+            "current": "auxiliary_supervision"
+          },
+          "seed": {
+            "reference": 42,
+            "current": 43
+          },
+          "variant": {
+            "reference": "C5_noT",
+            "current": "C5_noT_noA"
+          },
+          "training_objective": {
+            "reference": "0.5*member_CE(z0)+0.5*CE(zA)",
+            "current": "0.5*member_CE(z0)"
+          },
+          "structure": {
+            "reference": "C5_noT",
+            "current": "C5_noT_noA"
+          },
+          "description": {
+            "reference": "C5 single-component ablation: remove added trajectory encoder/attention/trajectory combine columns; keep shared variable identity, auxiliary head and both losses",
+            "current": "remove auxiliary head and auxiliary CE; keep main CE coefficient 0.5 and summary residual"
+          },
+          "auxiliary_topology": {
+            "reference": "Linear256to2(shared fusion residual); no direct base dependency",
+            "current": "removed; no auxiliary logits or loss"
+          },
+          "ablation_implementation": {
+            "reference": "remove added trajectory encoder/attention/trajectory combine columns; keep shared variable identity, auxiliary head and both losses",
+            "current": "remove auxiliary head and auxiliary CE; keep main CE coefficient 0.5 and summary residual"
+          }
+        },
+        "learned_checkpoint_loaded": false,
+        "stop_gradient": false,
+        "original_summary_features_preserved": true,
+        "all_parameters_trainable": true,
+        "members": 8,
+        "main_view": "z0",
+        "checkpoint_selection_view": "z0",
+        "stopping_view": "z0",
+        "single_backbone_forward": true,
+        "shared_classifier": false,
+        "auxiliary_base_dependency": false,
+        "auxiliary_enabled": false,
+        "main_residual_enabled": true,
+        "main_loss_coefficient": 0.5,
+        "auxiliary_loss_coefficient": 0.0
+      },
+      "main_view": "z0",
+      "early_snapshots_verified": 8
+    },
+    "C5_noT_noA_t1_s43": {
+      "variant": "C5_noT_noA",
+      "endpoint": 1,
+      "seed": 43,
+      "AP": 0.5509356337627589,
+      "AUROC": 0.861818788117679,
+      "Brier": 0.09387825429439545,
+      "log_loss": 0.30362669809088527,
+      "best_epoch": 17,
+      "epochs": 52,
+      "seconds": 744.370404958725,
+      "parameters": 12156549,
+      "source": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_not_stability_20261018/mimic/stage1_v1/screen/jobs/C5_noT_noA_t1_s43",
+      "checkpoint_sha256": "b42f5792a702723863603860bcbb2cd95e78df6fb2fcc8067802e9bc3db1dbf3",
+      "predictions_sha256": "45aea10a150a7a802cdd196480dda0abfd933852693e1f722de214c89fa674d4",
+      "initial_weights_sha256": "d305a41cd2ea186ba601c616381e062b041bda795b81b86c129964b6397e8365",
+      "reused": true,
+      "exit_returncode": 0,
+      "peak_reserved_mib": 1960.0,
+      "checkpoint_replay": {
+        "complete": true,
+        "max_probability_drift": 0.0,
+        "replay_ap": 0.5509356337627589
+      },
+      "gpu": 1,
+      "connection_audit": {
+        "complete": true,
+        "reference_variant": "C5_noT",
+        "new_variant": "C5_noT_noA",
+        "parameter_count_removed": 514,
+        "retained_random_tensors_match_noT": true,
+        "retained_buffers_exact": true,
+        "removed_parameter_names": [
+          "fusion.auxiliary_head.bias",
+          "fusion.auxiliary_head.weight"
+        ],
+        "reference_random_initial_hash": "702ed5e6416526653a1a29b3e56f5a358dedd0c7555559f32f94bca17ae892a8",
+        "reference_seed": 43,
+        "seed42_reference_manifest_sha256": "ab9c8d17d0ba489cee27f8bfdbe65edd41c2d90224f3fc9c7056f957d6e463f3",
+        "seed42_reference_initial_hash": "933db0ad2ff1d02eb117a09c7123cf28258d47566751e3b40002e7e905e1763a",
+        "seed_route": {
+          "seed": 43,
+          "native_initialization_seed": 43,
+          "periodic_namespace_seed": 43,
+          "input_members_namespace_seed": 43,
+          "fusion_namespace_seed": 43,
+          "auxiliary_head_namespace_seed": 43,
+          "training_order_seed": 43,
+          "training_torch_seed": 10043,
+          "base_initial_weights_sha256": "9dfe127fb8eecee038e20b482b5d69278dcb4c33f8f3f4084b5d11f3b0b65221"
+        },
+        "protocol_differences": {
+          "ablation_implementation": {
+            "reference": "remove added trajectory encoder/attention/trajectory combine columns; keep shared variable identity, auxiliary head and both losses",
+            "current": "remove auxiliary head and auxiliary CE; keep main CE coefficient 0.5 and summary residual"
+          },
+          "training_objective": {
+            "reference": "0.5*member_CE(z0)+0.5*CE(zA)",
+            "current": "0.5*member_CE(z0)"
+          },
+          "variant": {
+            "reference": "C5_noT",
+            "current": "C5_noT_noA"
+          },
+          "structure": {
+            "reference": "C5_noT",
+            "current": "C5_noT_noA"
+          },
+          "ablated_component": {
+            "reference": "trajectory",
+            "current": "auxiliary_supervision"
+          },
+          "auxiliary_topology": {
+            "reference": "Linear256to2(shared fusion residual); no direct base dependency",
+            "current": "removed; no auxiliary logits or loss"
+          },
+          "description": {
+            "reference": "C5 single-component ablation: remove added trajectory encoder/attention/trajectory combine columns; keep shared variable identity, auxiliary head and both losses",
+            "current": "remove auxiliary head and auxiliary CE; keep main CE coefficient 0.5 and summary residual"
+          },
+          "seed": {
+            "reference": 42,
+            "current": 43
+          }
+        },
+        "learned_checkpoint_loaded": false,
+        "stop_gradient": false,
+        "original_summary_features_preserved": true,
+        "all_parameters_trainable": true,
+        "members": 8,
+        "main_view": "z0",
+        "checkpoint_selection_view": "z0",
+        "stopping_view": "z0",
+        "single_backbone_forward": true,
+        "shared_classifier": false,
+        "auxiliary_base_dependency": false,
+        "auxiliary_enabled": false,
+        "main_residual_enabled": true,
+        "main_loss_coefficient": 0.5,
+        "auxiliary_loss_coefficient": 0.0
+      },
+      "main_view": "z0",
+      "early_snapshots_verified": 8
+    },
+    "C5_noT_noA_t0_s44": {
+      "variant": "C5_noT_noA",
+      "endpoint": 0,
+      "seed": 44,
+      "AP": 0.5367804610018817,
+      "AUROC": 0.9088292815511759,
+      "Brier": 0.0490618497133255,
+      "log_loss": 0.16946946173770558,
+      "best_epoch": 18,
+      "epochs": 52,
+      "seconds": 806.2710580825806,
+      "parameters": 12156549,
+      "source": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_not_stability_20261018/mimic/stage1_v1/screen/jobs/C5_noT_noA_t0_s44",
+      "checkpoint_sha256": "d6ee5122e2f51986e4072846df757e7e446a237f59b7643f854331b50d51dcd8",
+      "predictions_sha256": "b5ad89dd5a1ea15ffcfe8a43519dc1e4d7ff5c7ab0423dbb70bdfa89954d8d35",
+      "initial_weights_sha256": "0584f5960e28275bf1b1d23b4df671a6646a8d23009d8e6ac6672d3cfb0db2a8",
+      "reused": true,
+      "exit_returncode": 0,
+      "peak_reserved_mib": 1960.0,
+      "checkpoint_replay": {
+        "complete": true,
+        "max_probability_drift": 0.0,
+        "replay_ap": 0.5367804610018817
+      },
+      "gpu": 4,
+      "connection_audit": {
+        "complete": true,
+        "reference_variant": "C5_noT",
+        "new_variant": "C5_noT_noA",
+        "parameter_count_removed": 514,
+        "retained_random_tensors_match_noT": true,
+        "retained_buffers_exact": true,
+        "removed_parameter_names": [
+          "fusion.auxiliary_head.bias",
+          "fusion.auxiliary_head.weight"
+        ],
+        "reference_random_initial_hash": "18f4a52c47e084b43ba5df6b7443a8b02db708e592e89073bd149eb4baa26d54",
+        "reference_seed": 44,
+        "seed42_reference_manifest_sha256": "62fc436ba4b7a45f158c7e1c5baeb9f242a6fa69a8cfc6c1ab3f19b1f9e61c85",
+        "seed42_reference_initial_hash": "933db0ad2ff1d02eb117a09c7123cf28258d47566751e3b40002e7e905e1763a",
+        "seed_route": {
+          "seed": 44,
+          "native_initialization_seed": 44,
+          "periodic_namespace_seed": 44,
+          "input_members_namespace_seed": 44,
+          "fusion_namespace_seed": 44,
+          "auxiliary_head_namespace_seed": 44,
+          "training_order_seed": 44,
+          "training_torch_seed": 10044,
+          "base_initial_weights_sha256": "36425e24c53f6875edf6d630251590affc5f4c7b190c9728168ba8cf703cd3ff"
+        },
+        "protocol_differences": {
+          "description": {
+            "reference": "C5 single-component ablation: remove added trajectory encoder/attention/trajectory combine columns; keep shared variable identity, auxiliary head and both losses",
+            "current": "remove auxiliary head and auxiliary CE; keep main CE coefficient 0.5 and summary residual"
+          },
+          "auxiliary_topology": {
+            "reference": "Linear256to2(shared fusion residual); no direct base dependency",
+            "current": "removed; no auxiliary logits or loss"
+          },
+          "ablation_implementation": {
+            "reference": "remove added trajectory encoder/attention/trajectory combine columns; keep shared variable identity, auxiliary head and both losses",
+            "current": "remove auxiliary head and auxiliary CE; keep main CE coefficient 0.5 and summary residual"
+          },
+          "variant": {
+            "reference": "C5_noT",
+            "current": "C5_noT_noA"
+          },
+          "structure": {
+            "reference": "C5_noT",
+            "current": "C5_noT_noA"
+          },
+          "training_objective": {
+            "reference": "0.5*member_CE(z0)+0.5*CE(zA)",
+            "current": "0.5*member_CE(z0)"
+          },
+          "ablated_component": {
+            "reference": "trajectory",
+            "current": "auxiliary_supervision"
+          },
+          "seed": {
+            "reference": 42,
+            "current": 44
+          }
+        },
+        "learned_checkpoint_loaded": false,
+        "stop_gradient": false,
+        "original_summary_features_preserved": true,
+        "all_parameters_trainable": true,
+        "members": 8,
+        "main_view": "z0",
+        "checkpoint_selection_view": "z0",
+        "stopping_view": "z0",
+        "single_backbone_forward": true,
+        "shared_classifier": false,
+        "auxiliary_base_dependency": false,
+        "auxiliary_enabled": false,
+        "main_residual_enabled": true,
+        "main_loss_coefficient": 0.5,
+        "auxiliary_loss_coefficient": 0.0
+      },
+      "main_view": "z0",
+      "early_snapshots_verified": 8
+    },
+    "C5_noT_noA_t1_s44": {
+      "variant": "C5_noT_noA",
+      "endpoint": 1,
+      "seed": 44,
+      "AP": 0.5542556486900705,
+      "AUROC": 0.8624761543617352,
+      "Brier": 0.09381633996963501,
+      "log_loss": 0.30274677954783097,
+      "best_epoch": 16,
+      "epochs": 52,
+      "seconds": 797.3409497737885,
+      "parameters": 12156549,
+      "source": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_not_stability_20261018/mimic/stage1_v1/screen/jobs/C5_noT_noA_t1_s44",
+      "checkpoint_sha256": "6416a8175b736e85239698e29ec623e8956f5253884f3ea8769707586ff5de73",
+      "predictions_sha256": "6f0a46d195271ce5725c8729af59e9e7ada4417b8297faacf28ee8b099b0bfa8",
+      "initial_weights_sha256": "0584f5960e28275bf1b1d23b4df671a6646a8d23009d8e6ac6672d3cfb0db2a8",
+      "reused": true,
+      "exit_returncode": 0,
+      "peak_reserved_mib": 1960.0,
+      "checkpoint_replay": {
+        "complete": true,
+        "max_probability_drift": 0.0,
+        "replay_ap": 0.5542556486900705
+      },
+      "gpu": 4,
+      "connection_audit": {
+        "complete": true,
+        "reference_variant": "C5_noT",
+        "new_variant": "C5_noT_noA",
+        "parameter_count_removed": 514,
+        "retained_random_tensors_match_noT": true,
+        "retained_buffers_exact": true,
+        "removed_parameter_names": [
+          "fusion.auxiliary_head.bias",
+          "fusion.auxiliary_head.weight"
+        ],
+        "reference_random_initial_hash": "18f4a52c47e084b43ba5df6b7443a8b02db708e592e89073bd149eb4baa26d54",
+        "reference_seed": 44,
+        "seed42_reference_manifest_sha256": "ab9c8d17d0ba489cee27f8bfdbe65edd41c2d90224f3fc9c7056f957d6e463f3",
+        "seed42_reference_initial_hash": "933db0ad2ff1d02eb117a09c7123cf28258d47566751e3b40002e7e905e1763a",
+        "seed_route": {
+          "seed": 44,
+          "native_initialization_seed": 44,
+          "periodic_namespace_seed": 44,
+          "input_members_namespace_seed": 44,
+          "fusion_namespace_seed": 44,
+          "auxiliary_head_namespace_seed": 44,
+          "training_order_seed": 44,
+          "training_torch_seed": 10044,
+          "base_initial_weights_sha256": "36425e24c53f6875edf6d630251590affc5f4c7b190c9728168ba8cf703cd3ff"
+        },
+        "protocol_differences": {
+          "seed": {
+            "reference": 42,
+            "current": 44
+          },
+          "ablated_component": {
+            "reference": "trajectory",
+            "current": "auxiliary_supervision"
+          },
+          "ablation_implementation": {
+            "reference": "remove added trajectory encoder/attention/trajectory combine columns; keep shared variable identity, auxiliary head and both losses",
+            "current": "remove auxiliary head and auxiliary CE; keep main CE coefficient 0.5 and summary residual"
+          },
+          "training_objective": {
+            "reference": "0.5*member_CE(z0)+0.5*CE(zA)",
+            "current": "0.5*member_CE(z0)"
+          },
+          "description": {
+            "reference": "C5 single-component ablation: remove added trajectory encoder/attention/trajectory combine columns; keep shared variable identity, auxiliary head and both losses",
+            "current": "remove auxiliary head and auxiliary CE; keep main CE coefficient 0.5 and summary residual"
+          },
+          "auxiliary_topology": {
+            "reference": "Linear256to2(shared fusion residual); no direct base dependency",
+            "current": "removed; no auxiliary logits or loss"
+          },
+          "variant": {
+            "reference": "C5_noT",
+            "current": "C5_noT_noA"
+          },
+          "structure": {
+            "reference": "C5_noT",
+            "current": "C5_noT_noA"
+          }
+        },
+        "learned_checkpoint_loaded": false,
+        "stop_gradient": false,
+        "original_summary_features_preserved": true,
+        "all_parameters_trainable": true,
+        "members": 8,
+        "main_view": "z0",
+        "checkpoint_selection_view": "z0",
+        "stopping_view": "z0",
+        "single_backbone_forward": true,
+        "shared_classifier": false,
+        "auxiliary_base_dependency": false,
+        "auxiliary_enabled": false,
+        "main_residual_enabled": true,
+        "main_loss_coefficient": 0.5,
+        "auxiliary_loss_coefficient": 0.0
+      },
+      "main_view": "z0",
+      "early_snapshots_verified": 8
+    },
+    "B0_t0_s43": {
+      "variant": "B0",
+      "endpoint": 0,
+      "seed": 43,
+      "AP": 0.5312592027228008,
+      "AUROC": 0.9044743650527658,
+      "Brier": 0.04947555437684059,
+      "log_loss": 0.17522008205853806,
+      "best_epoch": 15,
+      "epochs": 52,
+      "seconds": 347.42861247062683,
+      "parameters": 14029510,
+      "source": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_not_confirmation_20261017/mimic/confirm_memory_v1/screen/jobs/B0_t0_s43",
+      "checkpoint_sha256": "5faa6181320ab6c7a2266e93202c09cc1fd19fd7b5b33037f4350810d9a73807",
+      "predictions_sha256": "1aaa3935bafa7d02d8668f8e2187718b154353ded48f15a1b963fd0355dd9463",
+      "initial_weights_sha256": "2c11829493d537c156eeda068c3e5897cd9a40086d77b9be6754e0c6d1e76f09",
+      "reused": true,
+      "exit_returncode": 0,
+      "peak_reserved_mib": 5994.0,
+      "checkpoint_replay": {
+        "complete": true,
+        "max_probability_drift": 0.0
+      }
+    },
+    "B0_t1_s43": {
+      "variant": "B0",
+      "endpoint": 1,
+      "seed": 43,
+      "AP": 0.546758219816893,
+      "AUROC": 0.8586493486765912,
+      "Brier": 0.09459328651428223,
+      "log_loss": 0.30601246641056973,
+      "best_epoch": 13,
+      "epochs": 52,
+      "seconds": 368.967084646225,
+      "parameters": 14029510,
+      "source": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_not_confirmation_20261017/mimic/confirm_memory_v1/screen/jobs/B0_t1_s43",
+      "checkpoint_sha256": "c5b39787b1c82c28c347a713c51f6dfee9ef3cd3a3fc9e243798bc7b04d4b6b2",
+      "predictions_sha256": "78f9592cb8e17b8cca3d2f5767608de28d734e3c3bd7b0c09a0ccd9250c679ed",
+      "initial_weights_sha256": "2c11829493d537c156eeda068c3e5897cd9a40086d77b9be6754e0c6d1e76f09",
+      "reused": true,
+      "exit_returncode": 0,
+      "peak_reserved_mib": 5994.0,
+      "checkpoint_replay": {
+        "complete": true,
+        "max_probability_drift": 0.0
+      }
+    },
+    "B0_t0_s44": {
+      "variant": "B0",
+      "endpoint": 0,
+      "seed": 44,
+      "AP": 0.5288862793016869,
+      "AUROC": 0.9025767525933315,
+      "Brier": 0.05127999186515808,
+      "log_loss": 0.17767163088250754,
+      "best_epoch": 12,
+      "epochs": 52,
+      "seconds": 340.60224866867065,
+      "parameters": 14029510,
+      "source": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_not_confirmation_20261017/mimic/confirm_validation_v2/screen/jobs/B0_t0_s44",
+      "checkpoint_sha256": "731102776a0f10ab98b8d2cf20e88e37a6d526e77a73c930b7b93e53f9fc0914",
+      "predictions_sha256": "68bd6cf0fb0efc7b5de1809fa71750ac17dddf0b519ca91f6262f9b38692fd52",
+      "initial_weights_sha256": "853891b8d5130e61447b388533fd10c3f41ac6e5ca2332e8e24beded8fe2c2ef",
+      "reused": true,
+      "exit_returncode": 0,
+      "peak_reserved_mib": 5994.0,
+      "checkpoint_replay": {
+        "complete": true,
+        "max_probability_drift": 0.0
+      }
+    },
+    "B0_t1_s44": {
+      "variant": "B0",
+      "endpoint": 1,
+      "seed": 44,
+      "AP": 0.548822182883684,
+      "AUROC": 0.8588762321978902,
+      "Brier": 0.09465362876653671,
+      "log_loss": 0.30729856332656896,
+      "best_epoch": 15,
+      "epochs": 52,
+      "seconds": 478.4138185977936,
+      "parameters": 14029510,
+      "source": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_not_confirmation_20261017/mimic/confirm_validation_v2/screen/jobs/B0_t1_s44",
+      "checkpoint_sha256": "d9f7b186dbc7f8bf1f71888936e1fe19c539d884715c91825325425f43307003",
+      "predictions_sha256": "2830aef38c784bc8363e058f6061b8b220d86c52b7a103270b02753353190bb4",
+      "initial_weights_sha256": "853891b8d5130e61447b388533fd10c3f41ac6e5ca2332e8e24beded8fe2c2ef",
+      "reused": true,
+      "exit_returncode": 0,
+      "peak_reserved_mib": 5994.0,
+      "checkpoint_replay": {
+        "complete": true,
+        "max_probability_drift": 0.0
+      }
+    },
+    "tabm_t0_s43": {
+      "variant": "tabm",
+      "seed": 43,
+      "endpoint": 0,
+      "AP": 0.5229115604050077,
+      "AUROC": 0.9008934629249672,
+      "Brier": 0.05001141857547593,
+      "log_loss": 0.17650850601914753,
+      "source": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_expansion_confirm_20261004/mimic/round1/runs/mimic24_tabm_F2_cfg1_full_s43",
+      "reused": true
+    },
+    "tabm_t1_s43": {
+      "variant": "tabm",
+      "seed": 43,
+      "endpoint": 1,
+      "AP": 0.5490369181963428,
+      "AUROC": 0.8596243795698942,
+      "Brier": 0.09502368273967925,
+      "log_loss": 0.30640974918401115,
+      "source": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_expansion_confirm_20261004/mimic/round1/runs/mimic24_tabm_F2_cfg1_full_s43",
+      "reused": true
+    },
+    "tabm_t0_s44": {
+      "variant": "tabm",
+      "seed": 44,
+      "endpoint": 0,
+      "AP": 0.526791936271697,
+      "AUROC": 0.9038648606671952,
+      "Brier": 0.04973595774564038,
+      "log_loss": 0.17513846324624918,
+      "source": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_expansion_confirm_20261004/mimic/round1/runs/mimic24_tabm_F2_cfg1_full_s44",
+      "reused": true
+    },
+    "tabm_t1_s44": {
+      "variant": "tabm",
+      "seed": 44,
+      "endpoint": 1,
+      "AP": 0.5458109419801822,
+      "AUROC": 0.8611781228292222,
+      "Brier": 0.09437976700277476,
+      "log_loss": 0.30460052016765427,
+      "source": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_expansion_confirm_20261004/mimic/round1/runs/mimic24_tabm_F2_cfg1_full_s44",
+      "reused": true
+    },
+    "lightgbm_t0_s43": {
+      "variant": "lightgbm",
+      "seed": 43,
+      "endpoint": 0,
+      "AP": 0.53126559079394,
+      "AUROC": 0.9027544182681697,
+      "Brier": 0.05324349502133595,
+      "log_loss": 0.21208370316477326,
+      "source": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_expansion_confirm_20261004/mimic/round1/runs/mimic24_lightgbm_F2_cfg2_full_s43",
+      "reused": true
+    },
+    "lightgbm_t1_s43": {
+      "variant": "lightgbm",
+      "seed": 43,
+      "endpoint": 1,
+      "AP": 0.5403985848682046,
+      "AUROC": 0.8608775749270009,
+      "Brier": 0.09516832632460398,
+      "log_loss": 0.3066424157963133,
+      "source": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_expansion_confirm_20261004/mimic/round1/runs/mimic24_lightgbm_F2_cfg2_full_s43",
+      "reused": true
+    },
+    "lightgbm_t0_s44": {
+      "variant": "lightgbm",
+      "seed": 44,
+      "endpoint": 0,
+      "AP": 0.5339437473940668,
+      "AUROC": 0.9023789063457939,
+      "Brier": 0.05024658060242158,
+      "log_loss": 0.178861143305352,
+      "source": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_expansion_confirm_20261004/mimic/round1/runs/mimic24_lightgbm_F2_cfg2_full_s44",
+      "reused": true
+    },
+    "lightgbm_t1_s44": {
+      "variant": "lightgbm",
+      "seed": 44,
+      "endpoint": 1,
+      "AP": 0.5404312965091853,
+      "AUROC": 0.8607219303366413,
+      "Brier": 0.09553396788974212,
+      "log_loss": 0.30831312859524307,
+      "source": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_expansion_confirm_20261004/mimic/round1/runs/mimic24_lightgbm_F2_cfg2_full_s44",
+      "reused": true
+    },
+    "xgboost_t0_s43": {
+      "variant": "xgboost",
+      "seed": 43,
+      "endpoint": 0,
+      "AP": 0.526511489312085,
+      "AUROC": 0.9024108376317101,
+      "Brier": 0.050020969330500015,
+      "log_loss": 0.17480525694935037,
+      "source": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_expansion_confirm_20261004/mimic/round1/runs/mimic24_xgboost_F2_cfg2_full_s43",
+      "reused": true
+    },
+    "xgboost_t1_s43": {
+      "variant": "xgboost",
+      "seed": 43,
+      "endpoint": 1,
+      "AP": 0.5391491391421499,
+      "AUROC": 0.8609298260494991,
+      "Brier": 0.0947071985051438,
+      "log_loss": 0.30557526663520324,
+      "source": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_expansion_confirm_20261004/mimic/round1/runs/mimic24_xgboost_F2_cfg2_full_s43",
+      "reused": true
+    },
+    "xgboost_t0_s44": {
+      "variant": "xgboost",
+      "seed": 44,
+      "endpoint": 0,
+      "AP": 0.5278715989427459,
+      "AUROC": 0.9028821434118349,
+      "Brier": 0.049842653039273446,
+      "log_loss": 0.1738434561910307,
+      "source": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_expansion_confirm_20261004/mimic/round1/runs/mimic24_xgboost_F2_cfg2_full_s44",
+      "reused": true
+    },
+    "xgboost_t1_s44": {
+      "variant": "xgboost",
+      "seed": 44,
+      "endpoint": 1,
+      "AP": 0.5420718425508231,
+      "AUROC": 0.8619626519509767,
+      "Brier": 0.09451576343726922,
+      "log_loss": 0.3046257931771588,
+      "source": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_expansion_confirm_20261004/mimic/round1/runs/mimic24_xgboost_F2_cfg2_full_s44",
+      "reused": true
+    },
+    "C5_noT_noA_t0_s45": {
+      "variant": "C5_noT_noA",
+      "seed": 45,
+      "best_epoch": 38,
+      "epochs": 120,
+      "seconds": 1769.1117329597473,
+      "gpu": 1,
+      "peak_reserved_mib": 1960.0,
+      "parameters": 12156549,
+      "initial_weights_sha256": "dd7da152d6b93453e12cbfb9c418096b23ca64e0ec9f6377713b09d75aaec4de",
+      "checkpoint_sha256": "060d66bb56b829f86f785b9d9f43f98366bc283a3b21335adfd07a7296991d3e",
+      "predictions_sha256": "52f714dc4222c7c703f7cd77a5510aaaf52d0ea4733fb1c0ddd24cc4dbec92e5",
+      "checkpoint_replay": {
+        "complete": true,
+        "max_probability_drift": 0.0,
+        "replay_ap": 0.5406058669864977
+      },
+      "connection_audit": {
+        "complete": true,
+        "reference_variant": "C5_noT",
+        "new_variant": "C5_noT_noA",
+        "parameter_count_removed": 514,
+        "retained_random_tensors_match_noT": true,
+        "retained_buffers_exact": true,
+        "removed_parameter_names": [
+          "fusion.auxiliary_head.bias",
+          "fusion.auxiliary_head.weight"
+        ],
+        "reference_random_initial_hash": "94825354e4abfb15c1a1cc12cf85161308edd3bcf164ba496908d10591a22ece",
+        "reference_seed": 45,
+        "seed42_reference_manifest_sha256": "62fc436ba4b7a45f158c7e1c5baeb9f242a6fa69a8cfc6c1ab3f19b1f9e61c85",
+        "seed42_reference_initial_hash": "933db0ad2ff1d02eb117a09c7123cf28258d47566751e3b40002e7e905e1763a",
+        "seed_route": {
+          "seed": 45,
+          "native_initialization_seed": 45,
+          "periodic_namespace_seed": 45,
+          "input_members_namespace_seed": 45,
+          "fusion_namespace_seed": 45,
+          "auxiliary_head_namespace_seed": 45,
+          "training_order_seed": 45,
+          "training_torch_seed": 10045,
+          "base_initial_weights_sha256": "5fb9338598ab21e599b445593a0ddefe6a7eff05ab285f7dbc317854e44a3c1e"
+        },
+        "protocol_differences": {
+          "auxiliary_topology": {
+            "reference": "Linear256to2(shared fusion residual); no direct base dependency",
+            "current": "removed; no auxiliary logits or loss"
+          },
+          "seed": {
+            "reference": 42,
+            "current": 45
+          },
+          "ablated_component": {
+            "reference": "trajectory",
+            "current": "auxiliary_supervision"
+          },
+          "structure": {
+            "reference": "C5_noT",
+            "current": "C5_noT_noA"
+          },
+          "training_objective": {
+            "reference": "0.5*member_CE(z0)+0.5*CE(zA)",
+            "current": "0.5*member_CE(z0)"
+          },
+          "description": {
+            "reference": "C5 single-component ablation: remove added trajectory encoder/attention/trajectory combine columns; keep shared variable identity, auxiliary head and both losses",
+            "current": "remove auxiliary head and auxiliary CE; keep main CE coefficient 0.5 and summary residual"
+          },
+          "variant": {
+            "reference": "C5_noT",
+            "current": "C5_noT_noA"
+          },
+          "ablation_implementation": {
+            "reference": "remove added trajectory encoder/attention/trajectory combine columns; keep shared variable identity, auxiliary head and both losses",
+            "current": "remove auxiliary head and auxiliary CE; keep main CE coefficient 0.5 and summary residual"
+          }
+        },
+        "learned_checkpoint_loaded": false,
+        "stop_gradient": false,
+        "original_summary_features_preserved": true,
+        "all_parameters_trainable": true,
+        "members": 8,
+        "main_view": "z0",
+        "checkpoint_selection_view": "z0",
+        "stopping_view": "z0",
+        "single_backbone_forward": true,
+        "shared_classifier": false,
+        "auxiliary_base_dependency": false,
+        "auxiliary_enabled": false,
+        "main_residual_enabled": true,
+        "main_loss_coefficient": 0.5,
+        "auxiliary_loss_coefficient": 0.0
+      },
+      "main_view": "z0",
+      "early_snapshots_verified": 8,
+      "endpoint": 0,
+      "AP": 0.5406058669864977,
+      "AUROC": 0.9030790955833667,
+      "Brier": 0.04914092645049095,
+      "log_loss": 0.17296717881339813,
+      "source": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_not_stability_stage2_20261018/mimic/stage2_v1/screen/jobs/C5_noT_noA_t0_s45",
+      "reused": false
+    },
+    "C5_noT_noA_t1_s45": {
+      "variant": "C5_noT_noA",
+      "seed": 45,
+      "best_epoch": 17,
+      "epochs": 52,
+      "seconds": 798.1470391750336,
+      "gpu": 4,
+      "peak_reserved_mib": 1960.0,
+      "parameters": 12156549,
+      "initial_weights_sha256": "dd7da152d6b93453e12cbfb9c418096b23ca64e0ec9f6377713b09d75aaec4de",
+      "checkpoint_sha256": "fd820fdeebd85728291f4d3da3a36339b1f3e8e17718705aff055f40211cbeac",
+      "predictions_sha256": "e0d4632d3f0e4eadb636c935568e9429066fb54381b71c3683c8159a6bf3d9ee",
+      "checkpoint_replay": {
+        "complete": true,
+        "max_probability_drift": 0.0,
+        "replay_ap": 0.5506317011687295
+      },
+      "connection_audit": {
+        "complete": true,
+        "reference_variant": "C5_noT",
+        "new_variant": "C5_noT_noA",
+        "parameter_count_removed": 514,
+        "retained_random_tensors_match_noT": true,
+        "retained_buffers_exact": true,
+        "removed_parameter_names": [
+          "fusion.auxiliary_head.bias",
+          "fusion.auxiliary_head.weight"
+        ],
+        "reference_random_initial_hash": "94825354e4abfb15c1a1cc12cf85161308edd3bcf164ba496908d10591a22ece",
+        "reference_seed": 45,
+        "seed42_reference_manifest_sha256": "ab9c8d17d0ba489cee27f8bfdbe65edd41c2d90224f3fc9c7056f957d6e463f3",
+        "seed42_reference_initial_hash": "933db0ad2ff1d02eb117a09c7123cf28258d47566751e3b40002e7e905e1763a",
+        "seed_route": {
+          "seed": 45,
+          "native_initialization_seed": 45,
+          "periodic_namespace_seed": 45,
+          "input_members_namespace_seed": 45,
+          "fusion_namespace_seed": 45,
+          "auxiliary_head_namespace_seed": 45,
+          "training_order_seed": 45,
+          "training_torch_seed": 10045,
+          "base_initial_weights_sha256": "5fb9338598ab21e599b445593a0ddefe6a7eff05ab285f7dbc317854e44a3c1e"
+        },
+        "protocol_differences": {
+          "training_objective": {
+            "reference": "0.5*member_CE(z0)+0.5*CE(zA)",
+            "current": "0.5*member_CE(z0)"
+          },
+          "ablation_implementation": {
+            "reference": "remove added trajectory encoder/attention/trajectory combine columns; keep shared variable identity, auxiliary head and both losses",
+            "current": "remove auxiliary head and auxiliary CE; keep main CE coefficient 0.5 and summary residual"
+          },
+          "variant": {
+            "reference": "C5_noT",
+            "current": "C5_noT_noA"
+          },
+          "description": {
+            "reference": "C5 single-component ablation: remove added trajectory encoder/attention/trajectory combine columns; keep shared variable identity, auxiliary head and both losses",
+            "current": "remove auxiliary head and auxiliary CE; keep main CE coefficient 0.5 and summary residual"
+          },
+          "seed": {
+            "reference": 42,
+            "current": 45
+          },
+          "auxiliary_topology": {
+            "reference": "Linear256to2(shared fusion residual); no direct base dependency",
+            "current": "removed; no auxiliary logits or loss"
+          },
+          "ablated_component": {
+            "reference": "trajectory",
+            "current": "auxiliary_supervision"
+          },
+          "structure": {
+            "reference": "C5_noT",
+            "current": "C5_noT_noA"
+          }
+        },
+        "learned_checkpoint_loaded": false,
+        "stop_gradient": false,
+        "original_summary_features_preserved": true,
+        "all_parameters_trainable": true,
+        "members": 8,
+        "main_view": "z0",
+        "checkpoint_selection_view": "z0",
+        "stopping_view": "z0",
+        "single_backbone_forward": true,
+        "shared_classifier": false,
+        "auxiliary_base_dependency": false,
+        "auxiliary_enabled": false,
+        "main_residual_enabled": true,
+        "main_loss_coefficient": 0.5,
+        "auxiliary_loss_coefficient": 0.0
+      },
+      "main_view": "z0",
+      "early_snapshots_verified": 8,
+      "endpoint": 1,
+      "AP": 0.5506317011687295,
+      "AUROC": 0.8613752772635824,
+      "Brier": 0.09410221874713898,
+      "log_loss": 0.30404462713455466,
+      "source": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_not_stability_stage2_20261018/mimic/stage2_v1/screen/jobs/C5_noT_noA_t1_s45",
+      "reused": false
+    },
+    "C5_noT_noA_t0_s46": {
+      "variant": "C5_noT_noA",
+      "seed": 46,
+      "best_epoch": 35,
+      "epochs": 52,
+      "seconds": 850.5229179859161,
+      "gpu": 0,
+      "peak_reserved_mib": 1960.0,
+      "parameters": 12156549,
+      "initial_weights_sha256": "4e6c5da14f2b31e3d137f5e11ddec601f74c68d57a228280683e64ca1412ca38",
+      "checkpoint_sha256": "8ba9fdb6233c698f52d9032bcba8a2eda1068a77ad46a9da4fbc32d92cd36078",
+      "predictions_sha256": "edbb4be40100f9ba78a7158802a39ea3a5849ea1c084940d8c20e3592d80732b",
+      "checkpoint_replay": {
+        "complete": true,
+        "max_probability_drift": 0.0,
+        "replay_ap": 0.5394384363388075
+      },
+      "connection_audit": {
+        "complete": true,
+        "reference_variant": "C5_noT",
+        "new_variant": "C5_noT_noA",
+        "parameter_count_removed": 514,
+        "retained_random_tensors_match_noT": true,
+        "retained_buffers_exact": true,
+        "removed_parameter_names": [
+          "fusion.auxiliary_head.bias",
+          "fusion.auxiliary_head.weight"
+        ],
+        "reference_random_initial_hash": "17ac259ba59d2832aedc0e3338e1e3002d69c4f823b929a31712dcafe9cc6f49",
+        "reference_seed": 46,
+        "seed42_reference_manifest_sha256": "62fc436ba4b7a45f158c7e1c5baeb9f242a6fa69a8cfc6c1ab3f19b1f9e61c85",
+        "seed42_reference_initial_hash": "933db0ad2ff1d02eb117a09c7123cf28258d47566751e3b40002e7e905e1763a",
+        "seed_route": {
+          "seed": 46,
+          "native_initialization_seed": 46,
+          "periodic_namespace_seed": 46,
+          "input_members_namespace_seed": 46,
+          "fusion_namespace_seed": 46,
+          "auxiliary_head_namespace_seed": 46,
+          "training_order_seed": 46,
+          "training_torch_seed": 10046,
+          "base_initial_weights_sha256": "dd591832236fa5a0cd6a125dba2ccbe80b6b5f94f8f86ed91af9c61f039fd8a9"
+        },
+        "protocol_differences": {
+          "seed": {
+            "reference": 42,
+            "current": 46
+          },
+          "description": {
+            "reference": "C5 single-component ablation: remove added trajectory encoder/attention/trajectory combine columns; keep shared variable identity, auxiliary head and both losses",
+            "current": "remove auxiliary head and auxiliary CE; keep main CE coefficient 0.5 and summary residual"
+          },
+          "variant": {
+            "reference": "C5_noT",
+            "current": "C5_noT_noA"
+          },
+          "auxiliary_topology": {
+            "reference": "Linear256to2(shared fusion residual); no direct base dependency",
+            "current": "removed; no auxiliary logits or loss"
+          },
+          "ablation_implementation": {
+            "reference": "remove added trajectory encoder/attention/trajectory combine columns; keep shared variable identity, auxiliary head and both losses",
+            "current": "remove auxiliary head and auxiliary CE; keep main CE coefficient 0.5 and summary residual"
+          },
+          "ablated_component": {
+            "reference": "trajectory",
+            "current": "auxiliary_supervision"
+          },
+          "training_objective": {
+            "reference": "0.5*member_CE(z0)+0.5*CE(zA)",
+            "current": "0.5*member_CE(z0)"
+          },
+          "structure": {
+            "reference": "C5_noT",
+            "current": "C5_noT_noA"
+          }
+        },
+        "learned_checkpoint_loaded": false,
+        "stop_gradient": false,
+        "original_summary_features_preserved": true,
+        "all_parameters_trainable": true,
+        "members": 8,
+        "main_view": "z0",
+        "checkpoint_selection_view": "z0",
+        "stopping_view": "z0",
+        "single_backbone_forward": true,
+        "shared_classifier": false,
+        "auxiliary_base_dependency": false,
+        "auxiliary_enabled": false,
+        "main_residual_enabled": true,
+        "main_loss_coefficient": 0.5,
+        "auxiliary_loss_coefficient": 0.0
+      },
+      "main_view": "z0",
+      "early_snapshots_verified": 8,
+      "endpoint": 0,
+      "AP": 0.5394384363388075,
+      "AUROC": 0.9060517705770316,
+      "Brier": 0.04906696081161499,
+      "log_loss": 0.17171012199593913,
+      "source": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_not_stability_stage2_20261018/mimic/stage2_v1/screen/jobs/C5_noT_noA_t0_s46",
+      "reused": false
+    },
+    "C5_noT_noA_t1_s46": {
+      "variant": "C5_noT_noA",
+      "seed": 46,
+      "best_epoch": 16,
+      "epochs": 52,
+      "seconds": 834.8112173080444,
+      "gpu": 1,
+      "peak_reserved_mib": 1960.0,
+      "parameters": 12156549,
+      "initial_weights_sha256": "4e6c5da14f2b31e3d137f5e11ddec601f74c68d57a228280683e64ca1412ca38",
+      "checkpoint_sha256": "e8955ba898e19887659872e4769ac1e2e9be3016ff8ffea0dfd955f4765c4ee6",
+      "predictions_sha256": "50d8d0993308564cd67b2289d674ca7920c9d9f0da3b4c790935feca7958f8e2",
+      "checkpoint_replay": {
+        "complete": true,
+        "max_probability_drift": 0.0,
+        "replay_ap": 0.5505682195105418
+      },
+      "connection_audit": {
+        "complete": true,
+        "reference_variant": "C5_noT",
+        "new_variant": "C5_noT_noA",
+        "parameter_count_removed": 514,
+        "retained_random_tensors_match_noT": true,
+        "retained_buffers_exact": true,
+        "removed_parameter_names": [
+          "fusion.auxiliary_head.bias",
+          "fusion.auxiliary_head.weight"
+        ],
+        "reference_random_initial_hash": "17ac259ba59d2832aedc0e3338e1e3002d69c4f823b929a31712dcafe9cc6f49",
+        "reference_seed": 46,
+        "seed42_reference_manifest_sha256": "ab9c8d17d0ba489cee27f8bfdbe65edd41c2d90224f3fc9c7056f957d6e463f3",
+        "seed42_reference_initial_hash": "933db0ad2ff1d02eb117a09c7123cf28258d47566751e3b40002e7e905e1763a",
+        "seed_route": {
+          "seed": 46,
+          "native_initialization_seed": 46,
+          "periodic_namespace_seed": 46,
+          "input_members_namespace_seed": 46,
+          "fusion_namespace_seed": 46,
+          "auxiliary_head_namespace_seed": 46,
+          "training_order_seed": 46,
+          "training_torch_seed": 10046,
+          "base_initial_weights_sha256": "dd591832236fa5a0cd6a125dba2ccbe80b6b5f94f8f86ed91af9c61f039fd8a9"
+        },
+        "protocol_differences": {
+          "ablated_component": {
+            "reference": "trajectory",
+            "current": "auxiliary_supervision"
+          },
+          "variant": {
+            "reference": "C5_noT",
+            "current": "C5_noT_noA"
+          },
+          "auxiliary_topology": {
+            "reference": "Linear256to2(shared fusion residual); no direct base dependency",
+            "current": "removed; no auxiliary logits or loss"
+          },
+          "training_objective": {
+            "reference": "0.5*member_CE(z0)+0.5*CE(zA)",
+            "current": "0.5*member_CE(z0)"
+          },
+          "description": {
+            "reference": "C5 single-component ablation: remove added trajectory encoder/attention/trajectory combine columns; keep shared variable identity, auxiliary head and both losses",
+            "current": "remove auxiliary head and auxiliary CE; keep main CE coefficient 0.5 and summary residual"
+          },
+          "structure": {
+            "reference": "C5_noT",
+            "current": "C5_noT_noA"
+          },
+          "ablation_implementation": {
+            "reference": "remove added trajectory encoder/attention/trajectory combine columns; keep shared variable identity, auxiliary head and both losses",
+            "current": "remove auxiliary head and auxiliary CE; keep main CE coefficient 0.5 and summary residual"
+          },
+          "seed": {
+            "reference": 42,
+            "current": 46
+          }
+        },
+        "learned_checkpoint_loaded": false,
+        "stop_gradient": false,
+        "original_summary_features_preserved": true,
+        "all_parameters_trainable": true,
+        "members": 8,
+        "main_view": "z0",
+        "checkpoint_selection_view": "z0",
+        "stopping_view": "z0",
+        "single_backbone_forward": true,
+        "shared_classifier": false,
+        "auxiliary_base_dependency": false,
+        "auxiliary_enabled": false,
+        "main_residual_enabled": true,
+        "main_loss_coefficient": 0.5,
+        "auxiliary_loss_coefficient": 0.0
+      },
+      "main_view": "z0",
+      "early_snapshots_verified": 8,
+      "endpoint": 1,
+      "AP": 0.5505682195105418,
+      "AUROC": 0.8623320133341538,
+      "Brier": 0.09422354400157928,
+      "log_loss": 0.3043268068552476,
+      "source": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_not_stability_stage2_20261018/mimic/stage2_v1/screen/jobs/C5_noT_noA_t1_s46",
+      "reused": false
+    },
+    "C5_noT_noA_t0_s47": {
+      "variant": "C5_noT_noA",
+      "seed": 47,
+      "best_epoch": 17,
+      "epochs": 52,
+      "seconds": 807.085943698883,
+      "gpu": 4,
+      "peak_reserved_mib": 1960.0,
+      "parameters": 12156549,
+      "initial_weights_sha256": "7293b6d79193f3dc8677595e6a767007530a81b7c6545fa92304c4529001f2fd",
+      "checkpoint_sha256": "a229e9e43de28008e386074c0d12d7993f93dea399a805342a7d0476e742d648",
+      "predictions_sha256": "e05d920a171e13cb49c4bba0f1ed6d5ea4688ed4b46f0467d8fa0151315d37bb",
+      "checkpoint_replay": {
+        "complete": true,
+        "max_probability_drift": 0.0,
+        "replay_ap": 0.5405001679615231
+      },
+      "connection_audit": {
+        "complete": true,
+        "reference_variant": "C5_noT",
+        "new_variant": "C5_noT_noA",
+        "parameter_count_removed": 514,
+        "retained_random_tensors_match_noT": true,
+        "retained_buffers_exact": true,
+        "removed_parameter_names": [
+          "fusion.auxiliary_head.bias",
+          "fusion.auxiliary_head.weight"
+        ],
+        "reference_random_initial_hash": "4836b2c59420b6bd273c78805d0166e59552991763a447bba9e689c146fd45db",
+        "reference_seed": 47,
+        "seed42_reference_manifest_sha256": "62fc436ba4b7a45f158c7e1c5baeb9f242a6fa69a8cfc6c1ab3f19b1f9e61c85",
+        "seed42_reference_initial_hash": "933db0ad2ff1d02eb117a09c7123cf28258d47566751e3b40002e7e905e1763a",
+        "seed_route": {
+          "seed": 47,
+          "native_initialization_seed": 47,
+          "periodic_namespace_seed": 47,
+          "input_members_namespace_seed": 47,
+          "fusion_namespace_seed": 47,
+          "auxiliary_head_namespace_seed": 47,
+          "training_order_seed": 47,
+          "training_torch_seed": 10047,
+          "base_initial_weights_sha256": "22ab312c78c4b640f497204f989b433a4ae740b2ddec405b3aef0d527021b119"
+        },
+        "protocol_differences": {
+          "auxiliary_topology": {
+            "reference": "Linear256to2(shared fusion residual); no direct base dependency",
+            "current": "removed; no auxiliary logits or loss"
+          },
+          "variant": {
+            "reference": "C5_noT",
+            "current": "C5_noT_noA"
+          },
+          "description": {
+            "reference": "C5 single-component ablation: remove added trajectory encoder/attention/trajectory combine columns; keep shared variable identity, auxiliary head and both losses",
+            "current": "remove auxiliary head and auxiliary CE; keep main CE coefficient 0.5 and summary residual"
+          },
+          "ablation_implementation": {
+            "reference": "remove added trajectory encoder/attention/trajectory combine columns; keep shared variable identity, auxiliary head and both losses",
+            "current": "remove auxiliary head and auxiliary CE; keep main CE coefficient 0.5 and summary residual"
+          },
+          "ablated_component": {
+            "reference": "trajectory",
+            "current": "auxiliary_supervision"
+          },
+          "training_objective": {
+            "reference": "0.5*member_CE(z0)+0.5*CE(zA)",
+            "current": "0.5*member_CE(z0)"
+          },
+          "structure": {
+            "reference": "C5_noT",
+            "current": "C5_noT_noA"
+          },
+          "seed": {
+            "reference": 42,
+            "current": 47
+          }
+        },
+        "learned_checkpoint_loaded": false,
+        "stop_gradient": false,
+        "original_summary_features_preserved": true,
+        "all_parameters_trainable": true,
+        "members": 8,
+        "main_view": "z0",
+        "checkpoint_selection_view": "z0",
+        "stopping_view": "z0",
+        "single_backbone_forward": true,
+        "shared_classifier": false,
+        "auxiliary_base_dependency": false,
+        "auxiliary_enabled": false,
+        "main_residual_enabled": true,
+        "main_loss_coefficient": 0.5,
+        "auxiliary_loss_coefficient": 0.0
+      },
+      "main_view": "z0",
+      "early_snapshots_verified": 8,
+      "endpoint": 0,
+      "AP": 0.5405001679615231,
+      "AUROC": 0.9084798255581077,
+      "Brier": 0.048837460577487946,
+      "log_loss": 0.17012861747443064,
+      "source": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_not_stability_stage2_20261018/mimic/stage2_v1/screen/jobs/C5_noT_noA_t0_s47",
+      "reused": false
+    },
+    "C5_noT_noA_t1_s47": {
+      "variant": "C5_noT_noA",
+      "seed": 47,
+      "best_epoch": 17,
+      "epochs": 52,
+      "seconds": 841.6377906799316,
+      "gpu": 0,
+      "peak_reserved_mib": 1960.0,
+      "parameters": 12156549,
+      "initial_weights_sha256": "7293b6d79193f3dc8677595e6a767007530a81b7c6545fa92304c4529001f2fd",
+      "checkpoint_sha256": "aad96abcb022c28b84ceb77434ea72c8eee8c3af02f583d0c8bb90ac0e61fc2e",
+      "predictions_sha256": "03bbb9319f6dac30a8db879b33cbe6797edda2ad381d7f24efe86975afd2a46d",
+      "checkpoint_replay": {
+        "complete": true,
+        "max_probability_drift": 0.0,
+        "replay_ap": 0.5533169687315506
+      },
+      "connection_audit": {
+        "complete": true,
+        "reference_variant": "C5_noT",
+        "new_variant": "C5_noT_noA",
+        "parameter_count_removed": 514,
+        "retained_random_tensors_match_noT": true,
+        "retained_buffers_exact": true,
+        "removed_parameter_names": [
+          "fusion.auxiliary_head.bias",
+          "fusion.auxiliary_head.weight"
+        ],
+        "reference_random_initial_hash": "4836b2c59420b6bd273c78805d0166e59552991763a447bba9e689c146fd45db",
+        "reference_seed": 47,
+        "seed42_reference_manifest_sha256": "ab9c8d17d0ba489cee27f8bfdbe65edd41c2d90224f3fc9c7056f957d6e463f3",
+        "seed42_reference_initial_hash": "933db0ad2ff1d02eb117a09c7123cf28258d47566751e3b40002e7e905e1763a",
+        "seed_route": {
+          "seed": 47,
+          "native_initialization_seed": 47,
+          "periodic_namespace_seed": 47,
+          "input_members_namespace_seed": 47,
+          "fusion_namespace_seed": 47,
+          "auxiliary_head_namespace_seed": 47,
+          "training_order_seed": 47,
+          "training_torch_seed": 10047,
+          "base_initial_weights_sha256": "22ab312c78c4b640f497204f989b433a4ae740b2ddec405b3aef0d527021b119"
+        },
+        "protocol_differences": {
+          "variant": {
+            "reference": "C5_noT",
+            "current": "C5_noT_noA"
+          },
+          "description": {
+            "reference": "C5 single-component ablation: remove added trajectory encoder/attention/trajectory combine columns; keep shared variable identity, auxiliary head and both losses",
+            "current": "remove auxiliary head and auxiliary CE; keep main CE coefficient 0.5 and summary residual"
+          },
+          "auxiliary_topology": {
+            "reference": "Linear256to2(shared fusion residual); no direct base dependency",
+            "current": "removed; no auxiliary logits or loss"
+          },
+          "training_objective": {
+            "reference": "0.5*member_CE(z0)+0.5*CE(zA)",
+            "current": "0.5*member_CE(z0)"
+          },
+          "seed": {
+            "reference": 42,
+            "current": 47
+          },
+          "structure": {
+            "reference": "C5_noT",
+            "current": "C5_noT_noA"
+          },
+          "ablated_component": {
+            "reference": "trajectory",
+            "current": "auxiliary_supervision"
+          },
+          "ablation_implementation": {
+            "reference": "remove added trajectory encoder/attention/trajectory combine columns; keep shared variable identity, auxiliary head and both losses",
+            "current": "remove auxiliary head and auxiliary CE; keep main CE coefficient 0.5 and summary residual"
+          }
+        },
+        "learned_checkpoint_loaded": false,
+        "stop_gradient": false,
+        "original_summary_features_preserved": true,
+        "all_parameters_trainable": true,
+        "members": 8,
+        "main_view": "z0",
+        "checkpoint_selection_view": "z0",
+        "stopping_view": "z0",
+        "single_backbone_forward": true,
+        "shared_classifier": false,
+        "auxiliary_base_dependency": false,
+        "auxiliary_enabled": false,
+        "main_residual_enabled": true,
+        "main_loss_coefficient": 0.5,
+        "auxiliary_loss_coefficient": 0.0
+      },
+      "main_view": "z0",
+      "early_snapshots_verified": 8,
+      "endpoint": 1,
+      "AP": 0.5533169687315506,
+      "AUROC": 0.8619280026655003,
+      "Brier": 0.09379488974809647,
+      "log_loss": 0.30303342173616077,
+      "source": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_not_stability_stage2_20261018/mimic/stage2_v1/screen/jobs/C5_noT_noA_t1_s47",
+      "reused": false
+    },
+    "tabm_t0_s45": {
+      "variant": "tabm",
+      "seed": 45,
+      "best_epoch": 6,
+      "epochs": 22,
+      "joint_worker_seconds": 222.59606758900918,
+      "gpu": 4,
+      "peak_reserved_mib": 1048.0,
+      "predictions_sha256": "7c677397b59365a706ac355907cad6b082ef8338c69a150dad2d5436b50e4768",
+      "endpoint": 0,
+      "AP": 0.5254360448981217,
+      "AUROC": 0.9050884675435085,
+      "Brier": 0.05007219639298719,
+      "log_loss": 0.17598139654018044,
+      "source": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_not_stability_stage2_20261018/mimic/stage2_v1/screen/jobs/tabm_s45",
+      "reused": false
+    },
+    "tabm_t1_s45": {
+      "variant": "tabm",
+      "seed": 45,
+      "best_epoch": 6,
+      "epochs": 22,
+      "joint_worker_seconds": 222.59606758900918,
+      "gpu": 4,
+      "peak_reserved_mib": 1048.0,
+      "predictions_sha256": "7c677397b59365a706ac355907cad6b082ef8338c69a150dad2d5436b50e4768",
+      "endpoint": 1,
+      "AP": 0.5419241601891145,
+      "AUROC": 0.8585320261959686,
+      "Brier": 0.09500272849146163,
+      "log_loss": 0.30712284287870745,
+      "source": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_not_stability_stage2_20261018/mimic/stage2_v1/screen/jobs/tabm_s45",
+      "reused": false
+    },
+    "lightgbm_t0_s45": {
+      "variant": "lightgbm",
+      "seed": 45,
+      "best_epoch": 672,
+      "epochs": 747,
+      "joint_worker_seconds": 835.8369333840092,
+      "gpu": null,
+      "peak_reserved_mib": 0,
+      "predictions_sha256": "644328605948a1d4b3cbcc943611a22eff3729d1a63a511df515011ab2257534",
+      "endpoint": 0,
+      "AP": 0.5297547919471859,
+      "AUROC": 0.901029362477827,
+      "Brier": 0.05231338033300839,
+      "log_loss": 0.20194821037668426,
+      "source": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_not_stability_stage2_20261018/mimic/stage2_v1/screen/jobs/lightgbm_s45",
+      "reused": false
+    },
+    "lightgbm_t1_s45": {
+      "variant": "lightgbm",
+      "seed": 45,
+      "best_epoch": 532,
+      "epochs": 607,
+      "joint_worker_seconds": 835.8369333840092,
+      "gpu": null,
+      "peak_reserved_mib": 0,
+      "predictions_sha256": "644328605948a1d4b3cbcc943611a22eff3729d1a63a511df515011ab2257534",
+      "endpoint": 1,
+      "AP": 0.5416489023599655,
+      "AUROC": 0.8626812781317549,
+      "Brier": 0.09616192726289634,
+      "log_loss": 0.31176414139022096,
+      "source": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_not_stability_stage2_20261018/mimic/stage2_v1/screen/jobs/lightgbm_s45",
+      "reused": false
+    },
+    "xgboost_t0_s45": {
+      "variant": "xgboost",
+      "seed": 45,
+      "best_epoch": 543,
+      "epochs": 593,
+      "joint_worker_seconds": 1061.4691694249632,
+      "gpu": null,
+      "peak_reserved_mib": 0,
+      "predictions_sha256": "48886f845e4ddbdf5824043c7b4cac585b495231a83798c575cb6b1e4860680d",
+      "endpoint": 0,
+      "AP": 0.526531590135564,
+      "AUROC": 0.9035549994686635,
+      "Brier": 0.049839658265981114,
+      "log_loss": 0.17398567242911078,
+      "source": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_not_stability_stage2_20261018/mimic/stage2_v1/screen/jobs/xgboost_s45",
+      "reused": false
+    },
+    "xgboost_t1_s45": {
+      "variant": "xgboost",
+      "seed": 45,
+      "best_epoch": 417,
+      "epochs": 467,
+      "joint_worker_seconds": 1061.4691694249632,
+      "gpu": null,
+      "peak_reserved_mib": 0,
+      "predictions_sha256": "48886f845e4ddbdf5824043c7b4cac585b495231a83798c575cb6b1e4860680d",
+      "endpoint": 1,
+      "AP": 0.5340236276329836,
+      "AUROC": 0.8622505875132845,
+      "Brier": 0.09494052508475928,
+      "log_loss": 0.30537917061326286,
+      "source": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_not_stability_stage2_20261018/mimic/stage2_v1/screen/jobs/xgboost_s45",
+      "reused": false
+    },
+    "tabm_t0_s46": {
+      "variant": "tabm",
+      "seed": 46,
+      "best_epoch": 7,
+      "epochs": 23,
+      "joint_worker_seconds": 266.3171014380059,
+      "gpu": 1,
+      "peak_reserved_mib": 1048.0,
+      "predictions_sha256": "e8b34c6d35630a00e8bf5c5c134c397012b84870334d77f8fc0df6873b4dd4f9",
+      "endpoint": 0,
+      "AP": 0.5278794543145847,
+      "AUROC": 0.9031856183531835,
+      "Brier": 0.049335936026791635,
+      "log_loss": 0.1728698278021554,
+      "source": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_not_stability_stage2_20261018/mimic/stage2_v1/screen/jobs/tabm_s46",
+      "reused": false
+    },
+    "tabm_t1_s46": {
+      "variant": "tabm",
+      "seed": 46,
+      "best_epoch": 6,
+      "epochs": 22,
+      "joint_worker_seconds": 266.3171014380059,
+      "gpu": 1,
+      "peak_reserved_mib": 1048.0,
+      "predictions_sha256": "e8b34c6d35630a00e8bf5c5c134c397012b84870334d77f8fc0df6873b4dd4f9",
+      "endpoint": 1,
+      "AP": 0.5499317778786583,
+      "AUROC": 0.8600221533671621,
+      "Brier": 0.09412859820266334,
+      "log_loss": 0.30457731682881656,
+      "source": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_not_stability_stage2_20261018/mimic/stage2_v1/screen/jobs/tabm_s46",
+      "reused": false
+    },
+    "lightgbm_t0_s46": {
+      "variant": "lightgbm",
+      "seed": 46,
+      "best_epoch": 423,
+      "epochs": 498,
+      "joint_worker_seconds": 541.3325127310236,
+      "gpu": null,
+      "peak_reserved_mib": 0,
+      "predictions_sha256": "f2e9ac02236581694bc33d98ae6169fed1e7db057b010e67060b166a6f0886e8",
+      "endpoint": 0,
+      "AP": 0.5297553873825924,
+      "AUROC": 0.9016830597631056,
+      "Brier": 0.05112165143650411,
+      "log_loss": 0.1858212268059821,
+      "source": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_not_stability_stage2_20261018/mimic/stage2_v1/screen/jobs/lightgbm_s46",
+      "reused": false
+    },
+    "lightgbm_t1_s46": {
+      "variant": "lightgbm",
+      "seed": 46,
+      "best_epoch": 292,
+      "epochs": 367,
+      "joint_worker_seconds": 541.3325127310236,
+      "gpu": null,
+      "peak_reserved_mib": 0,
+      "predictions_sha256": "f2e9ac02236581694bc33d98ae6169fed1e7db057b010e67060b166a6f0886e8",
+      "endpoint": 1,
+      "AP": 0.5397068152677261,
+      "AUROC": 0.8614642566286855,
+      "Brier": 0.09519815686946322,
+      "log_loss": 0.3066060495124713,
+      "source": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_not_stability_stage2_20261018/mimic/stage2_v1/screen/jobs/lightgbm_s46",
+      "reused": false
+    },
+    "xgboost_t0_s46": {
+      "variant": "xgboost",
+      "seed": 46,
+      "best_epoch": 502,
+      "epochs": 552,
+      "joint_worker_seconds": 905.312323088001,
+      "gpu": null,
+      "peak_reserved_mib": 0,
+      "predictions_sha256": "1df4b4d2bd2f405b054d083d913afc262fc9abe572efc5f3847c5c00cb12ae78",
+      "endpoint": 0,
+      "AP": 0.5278837484244427,
+      "AUROC": 0.902347996861027,
+      "Brier": 0.049857684416609475,
+      "log_loss": 0.17411245194821456,
+      "source": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_not_stability_stage2_20261018/mimic/stage2_v1/screen/jobs/xgboost_s46",
+      "reused": false
+    },
+    "xgboost_t1_s46": {
+      "variant": "xgboost",
+      "seed": 46,
+      "best_epoch": 308,
+      "epochs": 358,
+      "joint_worker_seconds": 905.312323088001,
+      "gpu": null,
+      "peak_reserved_mib": 0,
+      "predictions_sha256": "1df4b4d2bd2f405b054d083d913afc262fc9abe572efc5f3847c5c00cb12ae78",
+      "endpoint": 1,
+      "AP": 0.5318991730898143,
+      "AUROC": 0.8590054047341457,
+      "Brier": 0.09554273646852132,
+      "log_loss": 0.3077802465664332,
+      "source": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_not_stability_stage2_20261018/mimic/stage2_v1/screen/jobs/xgboost_s46",
+      "reused": false
+    },
+    "tabm_t0_s47": {
+      "variant": "tabm",
+      "seed": 47,
+      "best_epoch": 8,
+      "epochs": 24,
+      "joint_worker_seconds": 228.5344634510111,
+      "gpu": 0,
+      "peak_reserved_mib": 1048.0,
+      "predictions_sha256": "7326555952196e6e704770cc8d1f9943b1d939619d5274e3e37ca6e4c767a5c3",
+      "endpoint": 0,
+      "AP": 0.5295615179059697,
+      "AUROC": 0.9024384262627418,
+      "Brier": 0.05161960649958123,
+      "log_loss": 0.193424688126792,
+      "source": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_not_stability_stage2_20261018/mimic/stage2_v1/screen/jobs/tabm_s47",
+      "reused": false
+    },
+    "tabm_t1_s47": {
+      "variant": "tabm",
+      "seed": 47,
+      "best_epoch": 6,
+      "epochs": 22,
+      "joint_worker_seconds": 228.5344634510111,
+      "gpu": 0,
+      "peak_reserved_mib": 1048.0,
+      "predictions_sha256": "7326555952196e6e704770cc8d1f9943b1d939619d5274e3e37ca6e4c767a5c3",
+      "endpoint": 1,
+      "AP": 0.5465712510839512,
+      "AUROC": 0.8607493725707385,
+      "Brier": 0.09448334196617736,
+      "log_loss": 0.304412172622214,
+      "source": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_not_stability_stage2_20261018/mimic/stage2_v1/screen/jobs/tabm_s47",
+      "reused": false
+    },
+    "lightgbm_t0_s47": {
+      "variant": "lightgbm",
+      "seed": 47,
+      "best_epoch": 319,
+      "epochs": 394,
+      "joint_worker_seconds": 513.2037614830188,
+      "gpu": null,
+      "peak_reserved_mib": 0,
+      "predictions_sha256": "0e94cf5629727348c40d03ec0c0324f7583f6c965ba6c26ef8af57a10915d550",
+      "endpoint": 0,
+      "AP": 0.5285170408934758,
+      "AUROC": 0.9010870942427636,
+      "Brier": 0.05066823726167285,
+      "log_loss": 0.18041535334195613,
+      "source": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_not_stability_stage2_20261018/mimic/stage2_v1/screen/jobs/lightgbm_s47",
+      "reused": false
+    },
+    "lightgbm_t1_s47": {
+      "variant": "lightgbm",
+      "seed": 47,
+      "best_epoch": 289,
+      "epochs": 364,
+      "joint_worker_seconds": 513.2037614830188,
+      "gpu": null,
+      "peak_reserved_mib": 0,
+      "predictions_sha256": "0e94cf5629727348c40d03ec0c0324f7583f6c965ba6c26ef8af57a10915d550",
+      "endpoint": 1,
+      "AP": 0.5376727570986449,
+      "AUROC": 0.8610903215398253,
+      "Brier": 0.0953489695840331,
+      "log_loss": 0.30696880855357334,
+      "source": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_not_stability_stage2_20261018/mimic/stage2_v1/screen/jobs/lightgbm_s47",
+      "reused": false
+    },
+    "xgboost_t0_s47": {
+      "variant": "xgboost",
+      "seed": 47,
+      "best_epoch": 590,
+      "epochs": 640,
+      "joint_worker_seconds": 967.0842852760106,
+      "gpu": null,
+      "peak_reserved_mib": 0,
+      "predictions_sha256": "5a5581dabe9c98a0a8657585efd7d1b6483b0f57d4d691eb6638bcd37226f500",
+      "endpoint": 0,
+      "AP": 0.5297831745911201,
+      "AUROC": 0.9038155587617405,
+      "Brier": 0.049867689475939746,
+      "log_loss": 0.17392446956286534,
+      "source": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_not_stability_stage2_20261018/mimic/stage2_v1/screen/jobs/xgboost_s47",
+      "reused": false
+    },
+    "xgboost_t1_s47": {
+      "variant": "xgboost",
+      "seed": 47,
+      "best_epoch": 478,
+      "epochs": 528,
+      "joint_worker_seconds": 967.0842852760106,
+      "gpu": null,
+      "peak_reserved_mib": 0,
+      "predictions_sha256": "5a5581dabe9c98a0a8657585efd7d1b6483b0f57d4d691eb6638bcd37226f500",
+      "endpoint": 1,
+      "AP": 0.5359307415824901,
+      "AUROC": 0.8620592541588845,
+      "Brier": 0.09483505468581176,
+      "log_loss": 0.30519243044062433,
+      "source": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_not_stability_stage2_20261018/mimic/stage2_v1/screen/jobs/xgboost_s47",
+      "reused": false
+    },
+    "C5_noT_noA_noR_t0_s43": {
+      "variant": "C5_noT_noA_noR",
+      "seed": 43,
+      "reused": true,
+      "reuse_kind": "verified_identical_main_update_path",
+      "original_variant": "C5_noT_noR",
+      "equivalence_proof": {
+        "complete": true,
+        "equivalent": true,
+        "continuous_exact": true,
+        "updates": 20,
+        "early_snapshots_verified": 8,
+        "best_probability_drift": 0.0,
+        "reason": null,
+        "pilot": true,
+        "source_manifest_sha256": "efdd1ab8566fd4e0bf8c32104f430fedf7621d8baabb8eed25d7f4bf8e15ff8b",
+        "seed": 43,
+        "endpoint": 0,
+        "old_source": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_not_stability_20261018/mimic/stage1_v1/screen/jobs/C5_noT_noR_t0_s43",
+        "old_initial_weights_sha256": "702ed5e6416526653a1a29b3e56f5a358dedd0c7555559f32f94bca17ae892a8",
+        "old_checkpoint_sha256": "7a7552e78a88691cf19592ab6d8600c18163e23fc181af6b144166389d400cd1",
+        "old_predictions_sha256": "e9fb9bb70439056c9e028c42f2dd37bc1279d35c61c10644a236defe2b285d20",
+        "new_initialization_is_fresh": true,
+        "diagnostic_weights_discarded": true,
+        "formal_training_started": false,
+        "test_loaded": false,
+        "patient_data_exported": false,
+        "peak_reserved_mib": 2092.0,
+        "seconds": 17.042317867279053,
+        "finished_at": 1792343767.7720423
+      },
+      "epochs": 52,
+      "best_epoch": 16,
+      "checkpoint_sha256": "7a7552e78a88691cf19592ab6d8600c18163e23fc181af6b144166389d400cd1",
+      "predictions_sha256": "e9fb9bb70439056c9e028c42f2dd37bc1279d35c61c10644a236defe2b285d20",
+      "cost_applicable_to_pruned_noR": false,
+      "source": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_not_stability_20261018/mimic/stage1_v1/screen/jobs/C5_noT_noR_t0_s43",
+      "endpoint": 0,
+      "AP": 0.5335972228917293,
+      "AUROC": 0.9064949768255498,
+      "Brier": 0.04919537529349327,
+      "log_loss": 0.17135213244244651
+    },
+    "C5_noT_noA_noR_t1_s43": {
+      "variant": "C5_noT_noA_noR",
+      "seed": 43,
+      "reused": true,
+      "reuse_kind": "verified_identical_main_update_path",
+      "original_variant": "C5_noT_noR",
+      "equivalence_proof": {
+        "complete": true,
+        "equivalent": true,
+        "continuous_exact": true,
+        "updates": 20,
+        "early_snapshots_verified": 8,
+        "best_probability_drift": 0.0,
+        "reason": null,
+        "pilot": true,
+        "source_manifest_sha256": "efdd1ab8566fd4e0bf8c32104f430fedf7621d8baabb8eed25d7f4bf8e15ff8b",
+        "seed": 43,
+        "endpoint": 1,
+        "old_source": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_not_stability_20261018/mimic/stage1_v1/screen/jobs/C5_noT_noR_t1_s43",
+        "old_initial_weights_sha256": "702ed5e6416526653a1a29b3e56f5a358dedd0c7555559f32f94bca17ae892a8",
+        "old_checkpoint_sha256": "10275ee0da62d7a84411b837c9439a0b9d0063205da37e3ea22a489df735c024",
+        "old_predictions_sha256": "4d09f4442657941838ffae5729b2eeae84977a25c212c23faaaeea939da75175",
+        "new_initialization_is_fresh": true,
+        "diagnostic_weights_discarded": true,
+        "formal_training_started": false,
+        "test_loaded": false,
+        "patient_data_exported": false,
+        "peak_reserved_mib": 2092.0,
+        "seconds": 11.388891696929932,
+        "finished_at": 1792343778.3661468
+      },
+      "epochs": 52,
+      "best_epoch": 17,
+      "checkpoint_sha256": "10275ee0da62d7a84411b837c9439a0b9d0063205da37e3ea22a489df735c024",
+      "predictions_sha256": "4d09f4442657941838ffae5729b2eeae84977a25c212c23faaaeea939da75175",
+      "cost_applicable_to_pruned_noR": false,
+      "source": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_not_stability_20261018/mimic/stage1_v1/screen/jobs/C5_noT_noR_t1_s43",
+      "endpoint": 1,
+      "AP": 0.5486484729583176,
+      "AUROC": 0.8626836342831673,
+      "Brier": 0.0939323827624321,
+      "log_loss": 0.3033208165650468
+    },
+    "C5_noT_noA_noR_t0_s44": {
+      "variant": "C5_noT_noA_noR",
+      "seed": 44,
+      "reused": true,
+      "reuse_kind": "verified_identical_main_update_path",
+      "original_variant": "C5_noT_noR",
+      "equivalence_proof": {
+        "complete": true,
+        "equivalent": true,
+        "continuous_exact": true,
+        "updates": 20,
+        "early_snapshots_verified": 8,
+        "best_probability_drift": 0.0,
+        "reason": null,
+        "pilot": true,
+        "source_manifest_sha256": "efdd1ab8566fd4e0bf8c32104f430fedf7621d8baabb8eed25d7f4bf8e15ff8b",
+        "seed": 44,
+        "endpoint": 0,
+        "old_source": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_not_stability_20261018/mimic/stage1_v1/screen/jobs/C5_noT_noR_t0_s44",
+        "old_initial_weights_sha256": "18f4a52c47e084b43ba5df6b7443a8b02db708e592e89073bd149eb4baa26d54",
+        "old_checkpoint_sha256": "05725a232e7859106d2b8a88634ad51c1f84fa3e4123640f918c36d6168657ec",
+        "old_predictions_sha256": "828aa681cbcf23a1ff29ac3f028775fcb9db2aaf8e9a14ecda8372ab2a65292c",
+        "new_initialization_is_fresh": true,
+        "diagnostic_weights_discarded": true,
+        "formal_training_started": false,
+        "test_loaded": false,
+        "patient_data_exported": false,
+        "peak_reserved_mib": 2092.0,
+        "seconds": 12.04862642288208,
+        "finished_at": 1792343788.417289
+      },
+      "epochs": 52,
+      "best_epoch": 27,
+      "checkpoint_sha256": "05725a232e7859106d2b8a88634ad51c1f84fa3e4123640f918c36d6168657ec",
+      "predictions_sha256": "828aa681cbcf23a1ff29ac3f028775fcb9db2aaf8e9a14ecda8372ab2a65292c",
+      "cost_applicable_to_pruned_noR": false,
+      "source": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_not_stability_20261018/mimic/stage1_v1/screen/jobs/C5_noT_noR_t0_s44",
+      "endpoint": 0,
+      "AP": 0.5371244064876322,
+      "AUROC": 0.906185115627018,
+      "Brier": 0.05004524439573288,
+      "log_loss": 0.17743626495858647
+    },
+    "C5_noT_noA_noR_t1_s44": {
+      "variant": "C5_noT_noA_noR",
+      "seed": 44,
+      "reused": true,
+      "reuse_kind": "verified_identical_main_update_path",
+      "original_variant": "C5_noT_noR",
+      "equivalence_proof": {
+        "complete": true,
+        "equivalent": true,
+        "continuous_exact": true,
+        "updates": 20,
+        "early_snapshots_verified": 8,
+        "best_probability_drift": 0.0,
+        "reason": null,
+        "pilot": true,
+        "source_manifest_sha256": "efdd1ab8566fd4e0bf8c32104f430fedf7621d8baabb8eed25d7f4bf8e15ff8b",
+        "seed": 44,
+        "endpoint": 1,
+        "old_source": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_not_stability_20261018/mimic/stage1_v1/screen/jobs/C5_noT_noR_t1_s44",
+        "old_initial_weights_sha256": "18f4a52c47e084b43ba5df6b7443a8b02db708e592e89073bd149eb4baa26d54",
+        "old_checkpoint_sha256": "cbb15b36646698529228b5978b9dce49da73e67c5eba0e0582e969b8ff7549d9",
+        "old_predictions_sha256": "b7bbf9376add172ab4a3b2189ced99219b7527121c4d586a7e5be2c3ea064a80",
+        "new_initialization_is_fresh": true,
+        "diagnostic_weights_discarded": true,
+        "formal_training_started": false,
+        "test_loaded": false,
+        "patient_data_exported": false,
+        "peak_reserved_mib": 2092.0,
+        "seconds": 11.088822364807129,
+        "finished_at": 1792343798.2959912
+      },
+      "epochs": 52,
+      "best_epoch": 16,
+      "checkpoint_sha256": "cbb15b36646698529228b5978b9dce49da73e67c5eba0e0582e969b8ff7549d9",
+      "predictions_sha256": "b7bbf9376add172ab4a3b2189ced99219b7527121c4d586a7e5be2c3ea064a80",
+      "cost_applicable_to_pruned_noR": false,
+      "source": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_not_stability_20261018/mimic/stage1_v1/screen/jobs/C5_noT_noR_t1_s44",
+      "endpoint": 1,
+      "AP": 0.5488689699859401,
+      "AUROC": 0.8617888511350275,
+      "Brier": 0.09412163496017456,
+      "log_loss": 0.3036754777732283
+    },
+    "C5_noT_noA_noR_t0_s45": {
+      "variant": "C5_noT_noA_noR",
+      "seed": 45,
+      "reused": false,
+      "epochs": 52,
+      "best_epoch": 17,
+      "seconds": 474.77643871307373,
+      "gpu": 1,
+      "parameters": 11599172,
+      "peak_reserved_mib": 1948.0,
+      "checkpoint_sha256": "c5ceed16e92025eb60467bbef7c1f158db8f2ab42fe5e3e00bb1458c78fb1286",
+      "predictions_sha256": "5cd0fcd241ab5b0138ab1933965cc478c7acef5a5b432c825781c82680a88989",
+      "initial_weights_sha256": "211ceaf4e8797b843189bbccb7c2adb9d439216daf9832361ef8719c0f8d52b5",
+      "connection_audit": {
+        "complete": true,
+        "reference_variant": "C5_noT_noA",
+        "reference_seed": 45,
+        "reference_random_initial_hash": "dd7da152d6b93453e12cbfb9c418096b23ca64e0ec9f6377713b09d75aaec4de",
+        "reference_manifest_sha256": "b0b64c1702492cc4d2468748112a540ed3956a6340bc7b12d29b8317ce2a8a72",
+        "retained_random_tensors_match_noA": true,
+        "retained_buffers_exact": true,
+        "parameter_count_removed": 557377,
+        "removed_parameter_names": [
+          "fusion.combine.0.bias",
+          "fusion.combine.0.weight",
+          "fusion.gate.bias",
+          "fusion.gate.weight",
+          "fusion.output.bias",
+          "fusion.output.weight",
+          "fusion.refine.0.bias",
+          "fusion.refine.0.weight",
+          "fusion.refine.2.bias",
+          "fusion.refine.2.weight",
+          "fusion.residual_scale",
+          "fusion.summary.0.bias",
+          "fusion.summary.0.weight",
+          "fusion.summary.2.bias",
+          "fusion.summary.2.weight",
+          "fusion.trajectory.variable.weight"
+        ],
+        "protocol_differences": {
+          "description": {
+            "reference": "remove auxiliary head and auxiliary CE; keep main CE coefficient 0.5 and summary residual",
+            "current": "single deletion inside noA; fixed z0; 0.5 main CE; no auxiliary loss"
+          },
+          "structure": {
+            "reference": "C5_noT_noA",
+            "current": "C5_noT_noA_noR"
+          },
+          "ablated_component": {
+            "reference": "auxiliary_supervision",
+            "current": "R"
+          },
+          "ablation_implementation": {
+            "reference": "remove auxiliary head and auxiliary CE; keep main CE coefficient 0.5 and summary residual",
+            "current": "delete summary-to-main residual; prune the now disconnected summary branch"
+          },
+          "variant": {
+            "reference": "C5_noT_noA",
+            "current": "C5_noT_noA_noR"
+          }
+        },
+        "learned_checkpoint_loaded": false,
+        "stop_gradient": false,
+        "all_parameters_trainable": true,
+        "members": 8,
+        "main_view": "z0",
+        "checkpoint_selection_view": "z0",
+        "stopping_view": "z0",
+        "auxiliary_enabled": false,
+        "main_loss_coefficient": 0.5,
+        "auxiliary_loss_coefficient": 0.0,
+        "main_residual_enabled": false
+      },
+      "checkpoint_replay": {
+        "complete": true,
+        "max_probability_drift": 0.0,
+        "replay_ap": 0.5422724609113232
+      },
+      "early_snapshots_verified": 8,
+      "source": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_noa_ablation_20261019/mimic/ablation_recovery_v4/screen/jobs/C5_noT_noA_noR_t0_s45",
+      "endpoint": 0,
+      "AP": 0.5422724609113232,
+      "AUROC": 0.9074309466783288,
+      "Brier": 0.04870215058326721,
+      "log_loss": 0.17020512922215497
+    },
+    "C5_noT_noA_noR_t1_s45": {
+      "variant": "C5_noT_noA_noR",
+      "seed": 45,
+      "reused": false,
+      "epochs": 52,
+      "best_epoch": 17,
+      "seconds": 474.9471309185028,
+      "gpu": 4,
+      "parameters": 11599172,
+      "peak_reserved_mib": 1948.0,
+      "checkpoint_sha256": "20d1fe009f6d1f6192af6a04a6eb0c73d594f1a3f143977678cd393cfd635599",
+      "predictions_sha256": "23ab27c3444f6a0d1fec210b22b2a6bd8bff2233bf8c31b51dcafcdfffd726a8",
+      "initial_weights_sha256": "211ceaf4e8797b843189bbccb7c2adb9d439216daf9832361ef8719c0f8d52b5",
+      "connection_audit": {
+        "complete": true,
+        "reference_variant": "C5_noT_noA",
+        "reference_seed": 45,
+        "reference_random_initial_hash": "dd7da152d6b93453e12cbfb9c418096b23ca64e0ec9f6377713b09d75aaec4de",
+        "reference_manifest_sha256": "499eb3f00019835b97c39308e4450d4384942b6f63af60c2237d84f8c5ee1802",
+        "retained_random_tensors_match_noA": true,
+        "retained_buffers_exact": true,
+        "parameter_count_removed": 557377,
+        "removed_parameter_names": [
+          "fusion.combine.0.bias",
+          "fusion.combine.0.weight",
+          "fusion.gate.bias",
+          "fusion.gate.weight",
+          "fusion.output.bias",
+          "fusion.output.weight",
+          "fusion.refine.0.bias",
+          "fusion.refine.0.weight",
+          "fusion.refine.2.bias",
+          "fusion.refine.2.weight",
+          "fusion.residual_scale",
+          "fusion.summary.0.bias",
+          "fusion.summary.0.weight",
+          "fusion.summary.2.bias",
+          "fusion.summary.2.weight",
+          "fusion.trajectory.variable.weight"
+        ],
+        "protocol_differences": {
+          "ablation_implementation": {
+            "reference": "remove auxiliary head and auxiliary CE; keep main CE coefficient 0.5 and summary residual",
+            "current": "delete summary-to-main residual; prune the now disconnected summary branch"
+          },
+          "structure": {
+            "reference": "C5_noT_noA",
+            "current": "C5_noT_noA_noR"
+          },
+          "description": {
+            "reference": "remove auxiliary head and auxiliary CE; keep main CE coefficient 0.5 and summary residual",
+            "current": "single deletion inside noA; fixed z0; 0.5 main CE; no auxiliary loss"
+          },
+          "ablated_component": {
+            "reference": "auxiliary_supervision",
+            "current": "R"
+          },
+          "variant": {
+            "reference": "C5_noT_noA",
+            "current": "C5_noT_noA_noR"
+          }
+        },
+        "learned_checkpoint_loaded": false,
+        "stop_gradient": false,
+        "all_parameters_trainable": true,
+        "members": 8,
+        "main_view": "z0",
+        "checkpoint_selection_view": "z0",
+        "stopping_view": "z0",
+        "auxiliary_enabled": false,
+        "main_loss_coefficient": 0.5,
+        "auxiliary_loss_coefficient": 0.0,
+        "main_residual_enabled": false
+      },
+      "checkpoint_replay": {
+        "complete": true,
+        "max_probability_drift": 0.0,
+        "replay_ap": 0.5500081969535845
+      },
+      "early_snapshots_verified": 8,
+      "source": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_noa_ablation_20261019/mimic/ablation_recovery_v4/screen/jobs/C5_noT_noA_noR_t1_s45",
+      "endpoint": 1,
+      "AP": 0.5500081969535845,
+      "AUROC": 0.8619292500397773,
+      "Brier": 0.09387941658496857,
+      "log_loss": 0.30360778810583783
+    }
+  },
+  "parent_derivation": {
+    "scripts/train_tracehr_noa_ablation.py": "2b782f0093c48403ccd2cab6960d3ed8679e6e84082a48feab499247244c934f",
+    "scripts/tracehr_noa_ablation_queue.py": "a0fbece986791c7bd163139c23259ce957d174a513060893f1567998441b9271",
+    "models/tracehr_noa_ablation.py": "94ef085007d0cda314fbfcd586b2c171717d0b71f4df895f9a9ecc88270e2cb1",
+    "scripts/tracehr_noa_ablation_common.py": "92b16e38f11831bcae01c57d9f653a6aae2e011fad5ed36a0ed9b4c177517bd0",
+    "scripts/tracehr_noa_ablation_runtime.py": "136f239550335dcf42f681984e992731442b652553f1d98eb60eca0b64a94c46"
+  },
+  "parent_source_sha256": "6f73a23c887101651f2443e6ac134c7470e421f1e5ef9e4f4a1c10404a6d2f83",
+  "local_reference_aggregate_sha256": "ebb280e5810b3c74a51b6e311254cb4962b2dfa7fbb8265667d17da935b75bc9",
+  "formal_seeds": [
+    46,
+    47
+  ],
+  "probe_seed": 43,
+  "formal_fits": 4,
+  "other_fits_authorized": false
+}

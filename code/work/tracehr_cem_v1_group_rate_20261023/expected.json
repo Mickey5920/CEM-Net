@@ -1,0 +1,1842 @@
+{
+  "controls": {
+    "B0_t0_s48": {
+      "variant": "B0",
+      "seed": 48,
+      "best_epoch": 13,
+      "epochs": 52,
+      "seconds": 352.9818751811981,
+      "gpu": 1,
+      "peak_reserved_mib": 5994.0,
+      "parameters": 14029510,
+      "initial_weights_sha256": "33e7cf7a72a32b6b1debf23c79df40d86432ea3b204542bdb3aeb59b524c7313",
+      "checkpoint_sha256": "6e1bf84cbf9cad450f5cba488d8ccca9c667726e9383f3a9590d955d6670af09",
+      "predictions_sha256": "c500b4941f904af43fd8916f60784085304e9e03777d26669cb23df9af712154",
+      "checkpoint_replay": {
+        "complete": true,
+        "max_probability_drift": 0.0
+      },
+      "seed_audit": {
+        "complete": true,
+        "seed": 48,
+        "initial_weights_sha256": "33e7cf7a72a32b6b1debf23c79df40d86432ea3b204542bdb3aeb59b524c7313",
+        "fresh_initialization_hash": "33e7cf7a72a32b6b1debf23c79df40d86432ea3b204542bdb3aeb59b524c7313",
+        "internal_seeds": [
+          [
+            75120128
+          ]
+        ],
+        "initial_parameters_match_same_seed_fresh_native": true,
+        "seed42_historical_comparison": "different as required",
+        "capture_optimizer_updates": 0,
+        "rng_restored_before_fit": true
+      },
+      "native_entry": true,
+      "endpoint": 0,
+      "AP": 0.5351628247187519,
+      "AUROC": 0.9025766248681877,
+      "Brier": 0.049816448241472244,
+      "log_loss": 0.17325075733280337,
+      "source": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_noa_main_confirmation_20261019/mimic/confirm_v2/screen/jobs/B0_t0_s48",
+      "reused": true,
+      "run_manifest_sha256": "e1e91c6cd71de64dfa3d3ea27c2573e7ffd52bb374026857b419c4f2ec60c6bc"
+    },
+    "B0_t1_s48": {
+      "variant": "B0",
+      "seed": 48,
+      "best_epoch": 13,
+      "epochs": 52,
+      "seconds": 354.7327446937561,
+      "gpu": 0,
+      "peak_reserved_mib": 5994.0,
+      "parameters": 14029510,
+      "initial_weights_sha256": "33e7cf7a72a32b6b1debf23c79df40d86432ea3b204542bdb3aeb59b524c7313",
+      "checkpoint_sha256": "0716c4e6970e0c643b626353518b2e1d2620624ae5d7bc5fb448f6ba38ab6a14",
+      "predictions_sha256": "b917d993aa3454d78e40a42e30227616abeb717f9b5755805b8567b3bcf4c7ac",
+      "checkpoint_replay": {
+        "complete": true,
+        "max_probability_drift": 0.0
+      },
+      "seed_audit": {
+        "complete": true,
+        "seed": 48,
+        "initial_weights_sha256": "33e7cf7a72a32b6b1debf23c79df40d86432ea3b204542bdb3aeb59b524c7313",
+        "fresh_initialization_hash": "33e7cf7a72a32b6b1debf23c79df40d86432ea3b204542bdb3aeb59b524c7313",
+        "internal_seeds": [
+          [
+            75120128
+          ]
+        ],
+        "initial_parameters_match_same_seed_fresh_native": true,
+        "seed42_historical_comparison": "different as required",
+        "capture_optimizer_updates": 0,
+        "rng_restored_before_fit": true
+      },
+      "native_entry": true,
+      "endpoint": 1,
+      "AP": 0.5463738993508924,
+      "AUROC": 0.8582788785162787,
+      "Brier": 0.09531945735216141,
+      "log_loss": 0.3087902625299875,
+      "source": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_noa_main_confirmation_20261019/mimic/confirm_v2/screen/jobs/B0_t1_s48",
+      "reused": true,
+      "run_manifest_sha256": "ef30226d182a6c90837a977a72c07785f64e5d2aa05ed14d7c14cd53bb3ede26"
+    },
+    "tabm_t0_s48": {
+      "variant": "tabm",
+      "seed": 48,
+      "best_epoch": 10,
+      "epochs": 26,
+      "joint_worker_seconds": 259.0988315829891,
+      "gpu": 1,
+      "peak_reserved_mib": 1048.0,
+      "predictions_sha256": "d00ceddc90efe08547b9e8e6bae32332b28ac2749323719e9c7b86ab83754ed8",
+      "checkpoint_hashes": {
+        "best_task0.pt": "aec7b212a2ba2b91cb5811790456450523c8672a458e70c59608e0121981eb20",
+        "best_task1.pt": "2b4c7caef5d4124d9c253b0f618bdfbf2f8dc41ddf9ed7ee53d7c1ee2ef27a7e"
+      },
+      "recipe": {
+        "width": 256,
+        "depth": 3,
+        "k": 32,
+        "dropout": 0.2,
+        "lr": 0.0005,
+        "wd": 0.001
+      },
+      "endpoint": 0,
+      "AP": 0.5251355064336216,
+      "AUROC": 0.9013016724841212,
+      "Brier": 0.049940766107395715,
+      "log_loss": 0.18115962787876827,
+      "source": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_noa_main_confirmation_20261019/mimic/confirm_v2/screen/jobs/tabm_s48",
+      "reused": true,
+      "initial_weights_sha256": null,
+      "run_manifest_sha256": "5e0c5a37d4fdaa7036bb526f29340f01ee38f11ddfb1446185b0a870f016a4a6"
+    },
+    "tabm_t1_s48": {
+      "variant": "tabm",
+      "seed": 48,
+      "best_epoch": 5,
+      "epochs": 21,
+      "joint_worker_seconds": 259.0988315829891,
+      "gpu": 1,
+      "peak_reserved_mib": 1048.0,
+      "predictions_sha256": "d00ceddc90efe08547b9e8e6bae32332b28ac2749323719e9c7b86ab83754ed8",
+      "checkpoint_hashes": {
+        "best_task0.pt": "aec7b212a2ba2b91cb5811790456450523c8672a458e70c59608e0121981eb20",
+        "best_task1.pt": "2b4c7caef5d4124d9c253b0f618bdfbf2f8dc41ddf9ed7ee53d7c1ee2ef27a7e"
+      },
+      "recipe": {
+        "width": 256,
+        "depth": 3,
+        "k": 32,
+        "dropout": 0.2,
+        "lr": 0.0005,
+        "wd": 0.001
+      },
+      "endpoint": 1,
+      "AP": 0.5466804477980158,
+      "AUROC": 0.8595128088706605,
+      "Brier": 0.09449279696073425,
+      "log_loss": 0.3050453062754285,
+      "source": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_noa_main_confirmation_20261019/mimic/confirm_v2/screen/jobs/tabm_s48",
+      "reused": true,
+      "initial_weights_sha256": null,
+      "run_manifest_sha256": "5e0c5a37d4fdaa7036bb526f29340f01ee38f11ddfb1446185b0a870f016a4a6"
+    },
+    "C5_noT_noA_noR_untied_t0_s48": {
+      "variant": "C5_noT_noA_noR_untied",
+      "seed": 48,
+      "best_epoch": 15,
+      "epochs": 52,
+      "seconds": 526.6591668128967,
+      "gpu": 0,
+      "peak_reserved_mib": 1946.0,
+      "parameters": 11828252,
+      "initial_weights_sha256": "c9d82bc9c7b68c92c3722f1886c69fcfeeda79c0de345a2455ba5b78c80e67a7",
+      "checkpoint_sha256": "efe37eb4b49594fac7a631f1b3878a9f88c594cf2ab50cf61955b0a6add6e084",
+      "predictions_sha256": "215041c5beaaea7d87d4c22384345e3af084b44364623f18f59df3712771b103",
+      "checkpoint_replay": {
+        "complete": true,
+        "max_probability_drift": 0.0,
+        "replay_ap": 0.5424545990115693
+      },
+      "connection_audit": {
+        "reference_PM_random_initial_hash": "efb0a2305a98d27722c4d8d69a6f9a6aca70ebd171450626b0a3feeeb4bd354e",
+        "retained_random_tensors_except_expanded_factors_match_PM": true,
+        "additional_parameters": 229080,
+        "expanded_factors_initial_values_exact": true,
+        "R_absent": true,
+        "PM_protocol_differences": [
+          "ablated_component",
+          "ablation_implementation",
+          "description",
+          "structure",
+          "variant"
+        ],
+        "binding_initial_equivalence": {
+          "complete": true,
+          "optimizer_updates": 0,
+          "fit_split": "train",
+          "max_logit_drift": 0.0,
+          "gradient_sum_max_abs_drift": 0.0,
+          "initial_coordinate_divergence": {
+            "max_abs": 0.0,
+            "mean_abs": 0.0,
+            "unequal_coordinates": 0
+          }
+        },
+        "complete": true,
+        "reference_seed": 48,
+        "learned_checkpoint_loaded": false,
+        "stop_gradient": false,
+        "all_parameters_trainable": true,
+        "members": 8,
+        "main_view": "z0",
+        "checkpoint_selection_view": "z0",
+        "stopping_view": "z0",
+        "auxiliary_enabled": false,
+        "auxiliary_base_dependency": false,
+        "main_loss_coefficient": 0.5,
+        "auxiliary_loss_coefficient": 0.0,
+        "main_residual_enabled": false
+      },
+      "main_view": "z0",
+      "early_snapshots_verified": 8,
+      "endpoint": 0,
+      "AP": 0.5424545990115693,
+      "AUROC": 0.907414853310227,
+      "Brier": 0.04874517023563385,
+      "log_loss": 0.16971358984970558,
+      "source": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_fte_binding_20261022/mimic/untied_v2/screen/jobs/C5_noT_noA_noR_untied_t0_s48",
+      "reused": false,
+      "run_manifest_sha256": "c7e0a0515f881c5bb7a7fe96aa3173743bc70b02a83fc938aecb0246e4bbf076"
+    },
+    "C5_noT_noA_noR_untied_t1_s48": {
+      "variant": "C5_noT_noA_noR_untied",
+      "seed": 48,
+      "best_epoch": 17,
+      "epochs": 52,
+      "seconds": 530.1446135044098,
+      "gpu": 1,
+      "peak_reserved_mib": 1946.0,
+      "parameters": 11828252,
+      "initial_weights_sha256": "c9d82bc9c7b68c92c3722f1886c69fcfeeda79c0de345a2455ba5b78c80e67a7",
+      "checkpoint_sha256": "ea2120ce18aef84d8c841ee598b440ace5babbe83fb414d27f37fb596a7c2c96",
+      "predictions_sha256": "3126f5718d31ef3b3eeb86e291b46bfce0e6226e405c0def384f82002cd0f577",
+      "checkpoint_replay": {
+        "complete": true,
+        "max_probability_drift": 0.0,
+        "replay_ap": 0.5527910182415388
+      },
+      "connection_audit": {
+        "reference_PM_random_initial_hash": "efb0a2305a98d27722c4d8d69a6f9a6aca70ebd171450626b0a3feeeb4bd354e",
+        "retained_random_tensors_except_expanded_factors_match_PM": true,
+        "additional_parameters": 229080,
+        "expanded_factors_initial_values_exact": true,
+        "R_absent": true,
+        "PM_protocol_differences": [
+          "ablated_component",
+          "ablation_implementation",
+          "description",
+          "structure",
+          "variant"
+        ],
+        "binding_initial_equivalence": {
+          "complete": true,
+          "optimizer_updates": 0,
+          "fit_split": "train",
+          "max_logit_drift": 0.0,
+          "gradient_sum_max_abs_drift": 0.0,
+          "initial_coordinate_divergence": {
+            "max_abs": 0.0,
+            "mean_abs": 0.0,
+            "unequal_coordinates": 0
+          }
+        },
+        "complete": true,
+        "reference_seed": 48,
+        "learned_checkpoint_loaded": false,
+        "stop_gradient": false,
+        "all_parameters_trainable": true,
+        "members": 8,
+        "main_view": "z0",
+        "checkpoint_selection_view": "z0",
+        "stopping_view": "z0",
+        "auxiliary_enabled": false,
+        "auxiliary_base_dependency": false,
+        "main_loss_coefficient": 0.5,
+        "auxiliary_loss_coefficient": 0.0,
+        "main_residual_enabled": false
+      },
+      "main_view": "z0",
+      "early_snapshots_verified": 8,
+      "endpoint": 1,
+      "AP": 0.5527910182415388,
+      "AUROC": 0.8626255620807091,
+      "Brier": 0.09366007894277573,
+      "log_loss": 0.30296452133945745,
+      "source": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_fte_binding_20261022/mimic/untied_v2/screen/jobs/C5_noT_noA_noR_untied_t1_s48",
+      "reused": false,
+      "run_manifest_sha256": "f6855a27d0e3218d60664c3dbda6861a6b7543deca3e7ba367cff398a2a5bf3d"
+    },
+    "S3_t0_s48": {
+      "variant": "S3",
+      "endpoint": 0,
+      "seed": 48,
+      "AP": 0.5439044431425232,
+      "metrics": {
+        "mean_ap": 0.5439044431425232,
+        "ap": [
+          0.5439044431425232
+        ],
+        "auroc": [
+          0.9074191959651117
+        ],
+        "brier": [
+          0.048775293699428464
+        ],
+        "log_loss": [
+          0.16971155014181338
+        ],
+        "prevalence": [
+          0.0761394128203392
+        ],
+        "mean_auroc": 0.9074191959651117,
+        "mean_brier": 0.048775293699428464,
+        "top_fraction": {
+          "0.05": [
+            {
+              "precision": 0.6193029490616622,
+              "recall": 0.40669014084507044,
+              "selected": 373
+            }
+          ],
+          "0.1": [
+            {
+              "precision": 0.46112600536193027,
+              "recall": 0.6056338028169014,
+              "selected": 746
+            }
+          ]
+        }
+      },
+      "delta_CEM": 0.0014498441309538368,
+      "delta_best_baseline": 0.008741618423771302,
+      "parameters": 12431070,
+      "added_parameters": 602818,
+      "epochs": 52,
+      "best_epoch": 15,
+      "seconds": 1091.8629925251007,
+      "peak_reserved_mib": 2622.0,
+      "checkpoint_sha256": "a7821c1ab4d87fcdb8be45b5b6dea553d7c98643c5f60dc9512c738fd758fbbf",
+      "predictions_sha256": "86205c416924b9d30c00cda1a543dad0af2a59bcf77712ffe61534aae1a2a99f",
+      "source": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_cem_structure_20261023/mimic/structure_v1/screen/jobs/S3_t0_s48",
+      "initial_weights_sha256": "e5603b342bf1f655c4c3da5f74ffe25e0e6306f64afc54efc3e743ff0da08a12",
+      "z0_replay": {
+        "complete": true,
+        "max_probability_drift": 0.0,
+        "replay_ap": 0.5439044431425232
+      },
+      "run_manifest_sha256": "3595e9ab8c1cecf8be743905a5ef231525ffbea670800040c451f4fe640c7c91"
+    },
+    "S3_t1_s48": {
+      "variant": "S3",
+      "endpoint": 1,
+      "seed": 48,
+      "AP": 0.550657612412869,
+      "metrics": {
+        "mean_ap": 0.550657612412869,
+        "ap": [
+          0.550657612412869
+        ],
+        "auroc": [
+          0.8617460246181787
+        ],
+        "brier": [
+          0.09398699616158654
+        ],
+        "log_loss": [
+          0.3040999199917861
+        ],
+        "prevalence": [
+          0.15308311581611633
+        ],
+        "mean_auroc": 0.8617460246181787,
+        "mean_brier": 0.09398699616158654,
+        "top_fraction": {
+          "0.05": [
+            {
+              "precision": 0.6890080428954424,
+              "recall": 0.22504378283712784,
+              "selected": 373
+            }
+          ],
+          "0.1": [
+            {
+              "precision": 0.5978552278820375,
+              "recall": 0.3905429071803853,
+              "selected": 746
+            }
+          ]
+        }
+      },
+      "delta_CEM": -0.002133405828669721,
+      "delta_best_baseline": 0.003977164614853201,
+      "parameters": 12431070,
+      "added_parameters": 602818,
+      "epochs": 52,
+      "best_epoch": 17,
+      "seconds": 1159.7689590454102,
+      "peak_reserved_mib": 2622.0,
+      "checkpoint_sha256": "7f25db21d191fb4fad64682ef2acb6fee770cda0a41cfd0175aea59031531b06",
+      "predictions_sha256": "3c89f234e6aad82612bac8fd62c3a7a2ef0e670e080b111dd24bc0f64b01d6fd",
+      "source": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_cem_structure_20261023/mimic/structure_v1/screen/jobs/S3_t1_s48",
+      "initial_weights_sha256": "e5603b342bf1f655c4c3da5f74ffe25e0e6306f64afc54efc3e743ff0da08a12",
+      "z0_replay": {
+        "complete": true,
+        "max_probability_drift": 0.0,
+        "replay_ap": 0.550657612412869
+      },
+      "run_manifest_sha256": "85a8c7d628bc5435e1f7b2df3b7e1061fdf4a7140956b472f94a4812ff394848"
+    },
+    "U1_t0_s48": {
+      "variant": "U1",
+      "endpoint": 0,
+      "seed": 48,
+      "AP": 0.5454013655524206,
+      "metrics": {
+        "mean_ap": 0.5454013655524206,
+        "ap": [
+          0.5454013655524206
+        ],
+        "auroc": [
+          0.9074345229823514
+        ],
+        "brier": [
+          0.04877858702854172
+        ],
+        "log_loss": [
+          0.16964803081278482
+        ],
+        "prevalence": [
+          0.0761394128203392
+        ],
+        "mean_auroc": 0.9074345229823514,
+        "mean_brier": 0.04877858702854172,
+        "top_fraction": {
+          "0.05": [
+            {
+              "precision": 0.6032171581769437,
+              "recall": 0.3961267605633803,
+              "selected": 373
+            }
+          ],
+          "0.1": [
+            {
+              "precision": 0.4544235924932976,
+              "recall": 0.596830985915493,
+              "selected": 746
+            }
+          ]
+        }
+      },
+      "delta_CEM": 0.0029467665408512422,
+      "delta_best_baseline": 0.010238540833668708,
+      "delta_S3": 0.0014969224098974054,
+      "delta_noDirect": 0.0037445451255345708,
+      "connection_audit": {
+        "complete": true,
+        "reference_seed": 48,
+        "reference_CEM_random_initial_hash": "c9d82bc9c7b68c92c3722f1886c69fcfeeda79c0de345a2455ba5b78c80e67a7",
+        "retained_CEM_tensors_exact": true,
+        "added_parameters": 603011,
+        "protocol_differences": [
+          "ablated_component",
+          "ablation_implementation",
+          "additional_channels",
+          "description",
+          "event_direct_enabled",
+          "event_direct_gate",
+          "event_slot_self_block",
+          "evidence_dropout",
+          "evidence_heads",
+          "evidence_mixer",
+          "evidence_slots",
+          "evidence_width",
+          "fusion_position",
+          "interaction_direction",
+          "interaction_event_skip_enabled",
+          "structure",
+          "variant"
+        ],
+        "learned_checkpoint_loaded": false,
+        "stop_gradient": false,
+        "all_parameters_trainable": true,
+        "members": 8,
+        "main_view": "z0",
+        "checkpoint_selection_view": "z0",
+        "stopping_view": "z0",
+        "auxiliary_enabled": false,
+        "auxiliary_base_dependency": false,
+        "main_loss_coefficient": 0.5,
+        "auxiliary_loss_coefficient": 0.0,
+        "main_residual_enabled": true,
+        "fusion_position": "before_second_weight_layer",
+        "same_original_inputs": true,
+        "time_bin_reorganization": false,
+        "event_direct_enabled": true,
+        "interaction_event_skip_enabled": true,
+        "retained_S3_tensors_exact": true,
+        "archived_S3_retained_initialization_verified": true,
+        "reference_S3_initial_weights_sha256": "e5603b342bf1f655c4c3da5f74ffe25e0e6306f64afc54efc3e743ff0da08a12",
+        "removed_S3_parameters": 0,
+        "removed_S3_parameter_names": [],
+        "new_S3_parameters": 193,
+        "new_S3_parameter_names": [
+          "fusion.gate.bias",
+          "fusion.gate.weight"
+        ]
+      },
+      "parameters": 12431263,
+      "added_parameters": 603011,
+      "epochs": 52,
+      "best_epoch": 15,
+      "seconds": 996.7821509838104,
+      "peak_reserved_mib": 2624.0,
+      "checkpoint_sha256": "5b4c7d316f7c2b57dc72205988101a3faa1cd51ffab329380b3a3bba1e1ed2c7",
+      "predictions_sha256": "8a2a24587e88a5775aae7e9fa9acbbefea52f87b6000befc3191aaf4da7b03a9",
+      "source": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_cem_refine_20261023/mimic/refine_v1/screen/jobs/U1_t0_s48",
+      "initial_weights_sha256": "13828d6faae1d97bcb850fe65d533f1e5e366116481797fd2ba10ab84f5d082a",
+      "z0_replay": {
+        "complete": true,
+        "max_probability_drift": 0.0,
+        "replay_ap": 0.5454013655524206
+      },
+      "run_manifest_sha256": "104b6b7670f5e5538b295bcc6a66383efc610937cf8e3893c7043aa2fba182d7"
+    },
+    "U1_t1_s48": {
+      "variant": "U1",
+      "endpoint": 1,
+      "seed": 48,
+      "AP": 0.5523218075287408,
+      "metrics": {
+        "mean_ap": 0.5523218075287408,
+        "ap": [
+          0.5523218075287408
+        ],
+        "auroc": [
+          0.8626316603549528
+        ],
+        "brier": [
+          0.09374228718158087
+        ],
+        "log_loss": [
+          0.3031979085338332
+        ],
+        "prevalence": [
+          0.15308311581611633
+        ],
+        "mean_auroc": 0.8626316603549528,
+        "mean_brier": 0.09374228718158087,
+        "top_fraction": {
+          "0.05": [
+            {
+              "precision": 0.6890080428954424,
+              "recall": 0.22504378283712784,
+              "selected": 373
+            }
+          ],
+          "0.1": [
+            {
+              "precision": 0.596514745308311,
+              "recall": 0.38966725043782835,
+              "selected": 746
+            }
+          ]
+        }
+      },
+      "delta_CEM": -0.0004692107127979295,
+      "delta_best_baseline": 0.005641359730724993,
+      "delta_S3": 0.0016641951158717916,
+      "delta_noDirect": -0.0014048027109910821,
+      "connection_audit": {
+        "complete": true,
+        "reference_seed": 48,
+        "reference_CEM_random_initial_hash": "c9d82bc9c7b68c92c3722f1886c69fcfeeda79c0de345a2455ba5b78c80e67a7",
+        "retained_CEM_tensors_exact": true,
+        "added_parameters": 603011,
+        "protocol_differences": [
+          "ablated_component",
+          "ablation_implementation",
+          "additional_channels",
+          "description",
+          "event_direct_enabled",
+          "event_direct_gate",
+          "event_slot_self_block",
+          "evidence_dropout",
+          "evidence_heads",
+          "evidence_mixer",
+          "evidence_slots",
+          "evidence_width",
+          "fusion_position",
+          "interaction_direction",
+          "interaction_event_skip_enabled",
+          "structure",
+          "variant"
+        ],
+        "learned_checkpoint_loaded": false,
+        "stop_gradient": false,
+        "all_parameters_trainable": true,
+        "members": 8,
+        "main_view": "z0",
+        "checkpoint_selection_view": "z0",
+        "stopping_view": "z0",
+        "auxiliary_enabled": false,
+        "auxiliary_base_dependency": false,
+        "main_loss_coefficient": 0.5,
+        "auxiliary_loss_coefficient": 0.0,
+        "main_residual_enabled": true,
+        "fusion_position": "before_second_weight_layer",
+        "same_original_inputs": true,
+        "time_bin_reorganization": false,
+        "event_direct_enabled": true,
+        "interaction_event_skip_enabled": true,
+        "retained_S3_tensors_exact": true,
+        "archived_S3_retained_initialization_verified": true,
+        "reference_S3_initial_weights_sha256": "e5603b342bf1f655c4c3da5f74ffe25e0e6306f64afc54efc3e743ff0da08a12",
+        "removed_S3_parameters": 0,
+        "removed_S3_parameter_names": [],
+        "new_S3_parameters": 193,
+        "new_S3_parameter_names": [
+          "fusion.gate.bias",
+          "fusion.gate.weight"
+        ]
+      },
+      "parameters": 12431263,
+      "added_parameters": 603011,
+      "epochs": 52,
+      "best_epoch": 17,
+      "seconds": 1072.2898309230804,
+      "peak_reserved_mib": 2624.0,
+      "checkpoint_sha256": "9208aaa51a554f0a9e946ab6ee218b4c7fb58325a979f4523da8d7a7eea5e694",
+      "predictions_sha256": "6131613a74c4c9e1328e6c86f897387738046cc8e693e3110f58b9bad7f35f37",
+      "source": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_cem_refine_20261023/mimic/refine_v1/screen/jobs/U1_t1_s48",
+      "initial_weights_sha256": "13828d6faae1d97bcb850fe65d533f1e5e366116481797fd2ba10ab84f5d082a",
+      "z0_replay": {
+        "complete": true,
+        "max_probability_drift": 0.0,
+        "replay_ap": 0.5523218075287408
+      },
+      "run_manifest_sha256": "6f18916bd77f53c7cea6177ecabb398c4b9cb63bd779961a3b0a5ddee1fcfa1b"
+    },
+    "V1_t0_s48": {
+      "variant": "V1",
+      "endpoint": 0,
+      "seed": 48,
+      "AP": 0.5433525680962396,
+      "metrics": {
+        "mean_ap": 0.5433525680962396,
+        "ap": [
+          0.5433525680962396
+        ],
+        "auroc": [
+          0.9070281015752086
+        ],
+        "brier": [
+          0.04887968386406209
+        ],
+        "log_loss": [
+          0.17001173373423958
+        ],
+        "prevalence": [
+          0.0761394128203392
+        ],
+        "mean_auroc": 0.9070281015752086,
+        "mean_brier": 0.04887968386406209,
+        "top_fraction": {
+          "0.05": [
+            {
+              "precision": 0.6005361930294906,
+              "recall": 0.39436619718309857,
+              "selected": 373
+            }
+          ],
+          "0.1": [
+            {
+              "precision": 0.4544235924932976,
+              "recall": 0.596830985915493,
+              "selected": 746
+            }
+          ]
+        }
+      },
+      "delta_CEM": 0.0008979690846702137,
+      "delta_best_baseline": 0.00818974337748768,
+      "delta_S3": -0.000551875046283623,
+      "delta_U1": -0.0020487974561810285,
+      "delta_U5": -0.00017946557715153855,
+      "delta_noDirect": 0.0016957476693535423,
+      "connection_audit": {
+        "complete": true,
+        "reference_seed": 48,
+        "reference_CEM_random_initial_hash": "c9d82bc9c7b68c92c3722f1886c69fcfeeda79c0de345a2455ba5b78c80e67a7",
+        "retained_CEM_tensors_exact": true,
+        "added_parameters": 602819,
+        "protocol_differences": [
+          "ablated_component",
+          "ablation_implementation",
+          "additional_channels",
+          "description",
+          "event_direct_enabled",
+          "event_direct_gate",
+          "event_slot_self_block",
+          "evidence_dropout",
+          "evidence_heads",
+          "evidence_mixer",
+          "evidence_slots",
+          "evidence_width",
+          "fusion_position",
+          "interaction_direction",
+          "interaction_event_skip_enabled",
+          "structure",
+          "variant"
+        ],
+        "learned_checkpoint_loaded": false,
+        "stop_gradient": false,
+        "all_parameters_trainable": true,
+        "members": 8,
+        "main_view": "z0",
+        "checkpoint_selection_view": "z0",
+        "stopping_view": "z0",
+        "auxiliary_enabled": false,
+        "auxiliary_base_dependency": false,
+        "main_loss_coefficient": 0.5,
+        "auxiliary_loss_coefficient": 0.0,
+        "main_residual_enabled": true,
+        "fusion_position": "before_second_weight_layer",
+        "same_original_inputs": true,
+        "time_bin_reorganization": false,
+        "event_direct_enabled": true,
+        "interaction_event_skip_enabled": true,
+        "retained_S3_tensors_exact": true,
+        "archived_S3_retained_initialization_verified": true,
+        "reference_S3_initial_weights_sha256": "e5603b342bf1f655c4c3da5f74ffe25e0e6306f64afc54efc3e743ff0da08a12",
+        "removed_S3_parameters": 0,
+        "removed_S3_parameter_names": [],
+        "new_S3_parameters": 1,
+        "new_S3_parameter_names": [
+          "fusion.gate.bias"
+        ]
+      },
+      "parameters": 12431071,
+      "added_parameters": 602819,
+      "epochs": 52,
+      "best_epoch": 15,
+      "seconds": 1002.1769387722015,
+      "peak_reserved_mib": 2622.0,
+      "checkpoint_sha256": "1fc6e95d73822bf32d11352102d245259fdc22aaf21cedf0fdf590d268dc99ab",
+      "predictions_sha256": "d292c2ea6b3ce3b807b76be3d88934409fa07c2a2e97ec5bf9fd65fb22f6b329",
+      "source": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_cem_gate_20261023/mimic/gate_v1/screen/jobs/V1_t0_s48",
+      "initial_weights_sha256": "51e0a5c2d8a26ef7d0efa985175b0ffb4e25b9be2538635cfad7e6f639452a31",
+      "z0_replay": {
+        "complete": true,
+        "max_probability_drift": 0.0,
+        "replay_ap": 0.5433525680962396
+      },
+      "run_manifest_sha256": "c65bd6ee189e35d56f298bbef3934776e1d3838abdc83c872f9004df45726a51"
+    },
+    "V1_t1_s48": {
+      "variant": "V1",
+      "endpoint": 1,
+      "seed": 48,
+      "AP": 0.5551855407555454,
+      "metrics": {
+        "mean_ap": 0.5551855407555454,
+        "ap": [
+          0.5551855407555454
+        ],
+        "auroc": [
+          0.8630960993774772
+        ],
+        "brier": [
+          0.09347136397207172
+        ],
+        "log_loss": [
+          0.30259240373133584
+        ],
+        "prevalence": [
+          0.15308311581611633
+        ],
+        "mean_auroc": 0.8630960993774772,
+        "mean_brier": 0.09347136397207172,
+        "top_fraction": {
+          "0.05": [
+            {
+              "precision": 0.6890080428954424,
+              "recall": 0.22504378283712784,
+              "selected": 373
+            }
+          ],
+          "0.1": [
+            {
+              "precision": 0.6005361930294906,
+              "recall": 0.3922942206654991,
+              "selected": 746
+            }
+          ]
+        }
+      },
+      "delta_CEM": 0.002394522514006625,
+      "delta_best_baseline": 0.008505092957529548,
+      "delta_S3": 0.004527928342676346,
+      "delta_U1": 0.0028637332268045546,
+      "delta_U5": 0.0022508041422346636,
+      "delta_noDirect": 0.0014589305158134724,
+      "connection_audit": {
+        "complete": true,
+        "reference_seed": 48,
+        "reference_CEM_random_initial_hash": "c9d82bc9c7b68c92c3722f1886c69fcfeeda79c0de345a2455ba5b78c80e67a7",
+        "retained_CEM_tensors_exact": true,
+        "added_parameters": 602819,
+        "protocol_differences": [
+          "ablated_component",
+          "ablation_implementation",
+          "additional_channels",
+          "description",
+          "event_direct_enabled",
+          "event_direct_gate",
+          "event_slot_self_block",
+          "evidence_dropout",
+          "evidence_heads",
+          "evidence_mixer",
+          "evidence_slots",
+          "evidence_width",
+          "fusion_position",
+          "interaction_direction",
+          "interaction_event_skip_enabled",
+          "structure",
+          "variant"
+        ],
+        "learned_checkpoint_loaded": false,
+        "stop_gradient": false,
+        "all_parameters_trainable": true,
+        "members": 8,
+        "main_view": "z0",
+        "checkpoint_selection_view": "z0",
+        "stopping_view": "z0",
+        "auxiliary_enabled": false,
+        "auxiliary_base_dependency": false,
+        "main_loss_coefficient": 0.5,
+        "auxiliary_loss_coefficient": 0.0,
+        "main_residual_enabled": true,
+        "fusion_position": "before_second_weight_layer",
+        "same_original_inputs": true,
+        "time_bin_reorganization": false,
+        "event_direct_enabled": true,
+        "interaction_event_skip_enabled": true,
+        "retained_S3_tensors_exact": true,
+        "archived_S3_retained_initialization_verified": true,
+        "reference_S3_initial_weights_sha256": "e5603b342bf1f655c4c3da5f74ffe25e0e6306f64afc54efc3e743ff0da08a12",
+        "removed_S3_parameters": 0,
+        "removed_S3_parameter_names": [],
+        "new_S3_parameters": 1,
+        "new_S3_parameter_names": [
+          "fusion.gate.bias"
+        ]
+      },
+      "parameters": 12431071,
+      "added_parameters": 602819,
+      "epochs": 52,
+      "best_epoch": 17,
+      "seconds": 1049.3874998092651,
+      "peak_reserved_mib": 2622.0,
+      "checkpoint_sha256": "e1ae199a8cc61fa200867a150a41e88521c997d99d1c21dbd1629299d0b17e45",
+      "predictions_sha256": "b3fad0dcbc21af72b92516afe0386a99f2ebf8b301a1ef0a865bf55f9b35c825",
+      "source": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_cem_gate_20261023/mimic/gate_v1/screen/jobs/V1_t1_s48",
+      "initial_weights_sha256": "51e0a5c2d8a26ef7d0efa985175b0ffb4e25b9be2538635cfad7e6f639452a31",
+      "z0_replay": {
+        "complete": true,
+        "max_probability_drift": 0.0,
+        "replay_ap": 0.5551855407555454
+      },
+      "run_manifest_sha256": "2621ba0c87fe1a6f804fba5438de51543fb901e606e1a7e3ade84e1e06f0fe57"
+    },
+    "W2_t0_s48": {
+      "variant": "W2",
+      "endpoint": 0,
+      "seed": 48,
+      "AP": 0.5444010130015341,
+      "metrics": {
+        "mean_ap": 0.5444010130015341,
+        "ap": [
+          0.5444010130015341
+        ],
+        "auroc": [
+          0.9071943997122607
+        ],
+        "brier": [
+          0.04869704428304784
+        ],
+        "log_loss": [
+          0.16969808618338103
+        ],
+        "prevalence": [
+          0.0761394128203392
+        ],
+        "mean_auroc": 0.9071943997122607,
+        "mean_brier": 0.04869704428304784,
+        "top_fraction": {
+          "0.05": [
+            {
+              "precision": 0.6085790884718498,
+              "recall": 0.3996478873239437,
+              "selected": 373
+            }
+          ],
+          "0.1": [
+            {
+              "precision": 0.4597855227882037,
+              "recall": 0.6038732394366197,
+              "selected": 746
+            }
+          ]
+        }
+      },
+      "delta_CEM": 0.001946413989964757,
+      "delta_best_baseline": 0.009238188282782223,
+      "delta_S3": 0.0004965698590109202,
+      "delta_U1": -0.0010003525508864852,
+      "delta_U5": 0.0008689793281430047,
+      "delta_V1": 0.0010484449052945433,
+      "delta_V2": 0.0021154132498989453,
+      "delta_noDirect": 0.0027441925746480855,
+      "connection_audit": {
+        "complete": true,
+        "reference_seed": 48,
+        "reference_CEM_random_initial_hash": "c9d82bc9c7b68c92c3722f1886c69fcfeeda79c0de345a2455ba5b78c80e67a7",
+        "retained_CEM_tensors_exact": true,
+        "added_parameters": 602915,
+        "protocol_differences": [
+          "ablated_component",
+          "ablation_implementation",
+          "additional_channels",
+          "description",
+          "event_direct_enabled",
+          "event_direct_gate",
+          "event_gate_input_condition",
+          "event_slot_self_block",
+          "evidence_dropout",
+          "evidence_heads",
+          "evidence_mixer",
+          "evidence_slots",
+          "evidence_width",
+          "fusion_position",
+          "interaction_direction",
+          "interaction_event_skip_enabled",
+          "structure",
+          "variant"
+        ],
+        "learned_checkpoint_loaded": false,
+        "stop_gradient": false,
+        "all_parameters_trainable": true,
+        "members": 8,
+        "main_view": "z0",
+        "checkpoint_selection_view": "z0",
+        "stopping_view": "z0",
+        "auxiliary_enabled": false,
+        "auxiliary_base_dependency": false,
+        "main_loss_coefficient": 0.5,
+        "auxiliary_loss_coefficient": 0.0,
+        "main_residual_enabled": true,
+        "fusion_position": "before_second_weight_layer",
+        "same_original_inputs": true,
+        "time_bin_reorganization": false,
+        "event_direct_enabled": true,
+        "interaction_event_skip_enabled": true,
+        "retained_S3_tensors_exact": true,
+        "archived_S3_retained_initialization_verified": true,
+        "reference_S3_initial_weights_sha256": "e5603b342bf1f655c4c3da5f74ffe25e0e6306f64afc54efc3e743ff0da08a12",
+        "removed_S3_parameters": 0,
+        "removed_S3_parameter_names": [],
+        "new_S3_parameters": 97,
+        "new_S3_parameter_names": [
+          "fusion.gate.bias",
+          "fusion.gate.weight"
+        ]
+      },
+      "parameters": 12431167,
+      "added_parameters": 602915,
+      "epochs": 52,
+      "best_epoch": 15,
+      "seconds": 1051.841607093811,
+      "peak_reserved_mib": 2624.0,
+      "checkpoint_sha256": "3c14a012556fe1b2b4f91cf94e0d0456dd0669516c4f6fd176b765da0ae1083e",
+      "predictions_sha256": "5aa97b78c49f8a95e11adc9c531edbde25b214b765f2a3d635ef44402673a6c8",
+      "source": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_cem_gate_inputs_20261023/mimic/inputs_v1/screen/jobs/W2_t0_s48",
+      "initial_weights_sha256": "f9b58812b54ce64c2d416127e33c2e715ccb7882a7b4cef1dc4d1c22221c43c0",
+      "z0_replay": {
+        "complete": true,
+        "max_probability_drift": 0.0,
+        "replay_ap": 0.5444010130015341
+      },
+      "run_manifest_sha256": "1b9b2c2602d672648d7509637e2d0f5a2411f3831059d32127318dc1eec72214"
+    },
+    "W2_t1_s48": {
+      "variant": "W2",
+      "endpoint": 1,
+      "seed": 48,
+      "AP": 0.5537333108003097,
+      "metrics": {
+        "mean_ap": 0.5537333108003097,
+        "ap": [
+          0.5537333108003097
+        ],
+        "auroc": [
+          0.8627297871314218
+        ],
+        "brier": [
+          0.09366560057294586
+        ],
+        "log_loss": [
+          0.3030041414660806
+        ],
+        "prevalence": [
+          0.15308311581611633
+        ],
+        "mean_auroc": 0.8627297871314218,
+        "mean_brier": 0.09366560057294586,
+        "top_fraction": {
+          "0.05": [
+            {
+              "precision": 0.6943699731903485,
+              "recall": 0.22679509632224168,
+              "selected": 373
+            }
+          ],
+          "0.1": [
+            {
+              "precision": 0.6005361930294906,
+              "recall": 0.3922942206654991,
+              "selected": 746
+            }
+          ]
+        }
+      },
+      "delta_CEM": 0.0009422925587709852,
+      "delta_best_baseline": 0.007052863002293908,
+      "delta_S3": 0.0030756983874407062,
+      "delta_U1": 0.0014115032715689146,
+      "delta_U5": 0.0007985741869990237,
+      "delta_V1": -0.00145222995523564,
+      "delta_V2": 0.001728753650300341,
+      "delta_noDirect": 6.700560577832526e-06,
+      "connection_audit": {
+        "complete": true,
+        "reference_seed": 48,
+        "reference_CEM_random_initial_hash": "c9d82bc9c7b68c92c3722f1886c69fcfeeda79c0de345a2455ba5b78c80e67a7",
+        "retained_CEM_tensors_exact": true,
+        "added_parameters": 602915,
+        "protocol_differences": [
+          "ablated_component",
+          "ablation_implementation",
+          "additional_channels",
+          "description",
+          "event_direct_enabled",
+          "event_direct_gate",
+          "event_gate_input_condition",
+          "event_slot_self_block",
+          "evidence_dropout",
+          "evidence_heads",
+          "evidence_mixer",
+          "evidence_slots",
+          "evidence_width",
+          "fusion_position",
+          "interaction_direction",
+          "interaction_event_skip_enabled",
+          "structure",
+          "variant"
+        ],
+        "learned_checkpoint_loaded": false,
+        "stop_gradient": false,
+        "all_parameters_trainable": true,
+        "members": 8,
+        "main_view": "z0",
+        "checkpoint_selection_view": "z0",
+        "stopping_view": "z0",
+        "auxiliary_enabled": false,
+        "auxiliary_base_dependency": false,
+        "main_loss_coefficient": 0.5,
+        "auxiliary_loss_coefficient": 0.0,
+        "main_residual_enabled": true,
+        "fusion_position": "before_second_weight_layer",
+        "same_original_inputs": true,
+        "time_bin_reorganization": false,
+        "event_direct_enabled": true,
+        "interaction_event_skip_enabled": true,
+        "retained_S3_tensors_exact": true,
+        "archived_S3_retained_initialization_verified": true,
+        "reference_S3_initial_weights_sha256": "e5603b342bf1f655c4c3da5f74ffe25e0e6306f64afc54efc3e743ff0da08a12",
+        "removed_S3_parameters": 0,
+        "removed_S3_parameter_names": [],
+        "new_S3_parameters": 97,
+        "new_S3_parameter_names": [
+          "fusion.gate.bias",
+          "fusion.gate.weight"
+        ]
+      },
+      "parameters": 12431167,
+      "added_parameters": 602915,
+      "epochs": 52,
+      "best_epoch": 17,
+      "seconds": 1074.4721801280975,
+      "peak_reserved_mib": 2624.0,
+      "checkpoint_sha256": "3d6298c97aada619a0a1a3d4891c9c39a9a9d5c30fcbefe4bb3590ae4cd33a23",
+      "predictions_sha256": "fcd08978eac937156927b9358e2959a55179a99c1a0624e10e527e1577adbceb",
+      "source": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_cem_gate_inputs_20261023/mimic/inputs_v1/screen/jobs/W2_t1_s48",
+      "initial_weights_sha256": "f9b58812b54ce64c2d416127e33c2e715ccb7882a7b4cef1dc4d1c22221c43c0",
+      "z0_replay": {
+        "complete": true,
+        "max_probability_drift": 0.0,
+        "replay_ap": 0.5537333108003097
+      },
+      "run_manifest_sha256": "9fa6ba014e02379e99eb84b43a27b3d011ed755730f4f16d478e383c800d7499"
+    },
+    "V1_lr_low_t0_s48": {
+      "variant": "V1_lr_low",
+      "endpoint": 0,
+      "seed": 48,
+      "AP": 0.5408565892303587,
+      "metrics": {
+        "mean_ap": 0.5408565892303587,
+        "ap": [
+          0.5408565892303587
+        ],
+        "auroc": [
+          0.9065598611985319
+        ],
+        "brier": [
+          0.048891043775617135
+        ],
+        "log_loss": [
+          0.17023757155075622
+        ],
+        "prevalence": [
+          0.0761394128203392
+        ],
+        "mean_auroc": 0.9065598611985319,
+        "mean_brier": 0.048891043775617135,
+        "top_fraction": {
+          "0.05": [
+            {
+              "precision": 0.6005361930294906,
+              "recall": 0.39436619718309857,
+              "selected": 373
+            }
+          ],
+          "0.1": [
+            {
+              "precision": 0.45576407506702415,
+              "recall": 0.5985915492957746,
+              "selected": 746
+            }
+          ]
+        }
+      },
+      "delta_CEM": -0.0015980097812106075,
+      "delta_best_baseline": 0.005693764511606858,
+      "delta_S3": -0.0030478539121644443,
+      "delta_U1": -0.00454477632206185,
+      "delta_V1": -0.0024959788658808213,
+      "delta_W2": -0.0035444237711753646,
+      "fusion_base_lr": 0.00015,
+      "connection_audit": {
+        "complete": true,
+        "reference_seed": 48,
+        "reference_CEM_random_initial_hash": "c9d82bc9c7b68c92c3722f1886c69fcfeeda79c0de345a2455ba5b78c80e67a7",
+        "retained_CEM_tensors_exact": true,
+        "added_parameters": 602819,
+        "protocol_differences": [
+          "ablated_component",
+          "ablation_implementation",
+          "additional_channels",
+          "description",
+          "event_direct_enabled",
+          "event_direct_gate",
+          "event_slot_self_block",
+          "evidence_dropout",
+          "evidence_heads",
+          "evidence_mixer",
+          "evidence_slots",
+          "evidence_width",
+          "fusion_lr",
+          "fusion_position",
+          "interaction_direction",
+          "interaction_event_skip_enabled",
+          "structure",
+          "tuning",
+          "variant"
+        ],
+        "learned_checkpoint_loaded": false,
+        "stop_gradient": false,
+        "all_parameters_trainable": true,
+        "members": 8,
+        "main_view": "z0",
+        "checkpoint_selection_view": "z0",
+        "stopping_view": "z0",
+        "auxiliary_enabled": false,
+        "auxiliary_base_dependency": false,
+        "main_loss_coefficient": 0.5,
+        "auxiliary_loss_coefficient": 0.0,
+        "main_residual_enabled": true,
+        "fusion_position": "before_second_weight_layer",
+        "same_original_inputs": true,
+        "time_bin_reorganization": false,
+        "event_direct_enabled": true,
+        "interaction_event_skip_enabled": true,
+        "retained_S3_tensors_exact": true,
+        "archived_S3_retained_initialization_verified": true,
+        "reference_S3_initial_weights_sha256": "e5603b342bf1f655c4c3da5f74ffe25e0e6306f64afc54efc3e743ff0da08a12",
+        "removed_S3_parameters": 0,
+        "removed_S3_parameter_names": [],
+        "new_S3_parameters": 1,
+        "new_S3_parameter_names": [
+          "fusion.gate.bias"
+        ]
+      },
+      "parameters": 12431071,
+      "added_parameters": 602819,
+      "epochs": 52,
+      "best_epoch": 15,
+      "seconds": 845.7765452861786,
+      "peak_reserved_mib": 2622.0,
+      "checkpoint_sha256": "423009b9644fd33d2772649f7b3ad60f1cd495afb557496ee9ef3aa3cdaf0980",
+      "predictions_sha256": "3a8aed73bc66bf136f4956d6144e578aa2344725a300cd90d92fe8d0b1d1dd79",
+      "source": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_cem_v1_rate_20261023/mimic/rate_v2/screen/jobs/V1_lr_low_t0_s48",
+      "initial_weights_sha256": "51e0a5c2d8a26ef7d0efa985175b0ffb4e25b9be2538635cfad7e6f639452a31",
+      "z0_replay": {
+        "complete": true,
+        "max_probability_drift": 0.0,
+        "replay_ap": 0.5408565892303587
+      }
+    },
+    "V1_lr_low_t1_s48": {
+      "variant": "V1_lr_low",
+      "endpoint": 1,
+      "seed": 48,
+      "AP": 0.5542079093401113,
+      "metrics": {
+        "mean_ap": 0.5542079093401113,
+        "ap": [
+          0.5542079093401113
+        ],
+        "auroc": [
+          0.8628526534977207
+        ],
+        "brier": [
+          0.09349413507961768
+        ],
+        "log_loss": [
+          0.30271610439428154
+        ],
+        "prevalence": [
+          0.15308311581611633
+        ],
+        "mean_auroc": 0.8628526534977207,
+        "mean_brier": 0.09349413507961768,
+        "top_fraction": {
+          "0.05": [
+            {
+              "precision": 0.6970509383378016,
+              "recall": 0.2276707530647986,
+              "selected": 373
+            }
+          ],
+          "0.1": [
+            {
+              "precision": 0.6058981233243967,
+              "recall": 0.3957968476357268,
+              "selected": 746
+            }
+          ]
+        }
+      },
+      "delta_CEM": 0.0014168910985725702,
+      "delta_best_baseline": 0.007527461542095493,
+      "delta_S3": 0.0035502969272422913,
+      "delta_U1": 0.0018861018113704997,
+      "delta_V1": -0.0009776314154340549,
+      "delta_W2": 0.00047459853980158506,
+      "fusion_base_lr": 0.00015,
+      "connection_audit": {
+        "complete": true,
+        "reference_seed": 48,
+        "reference_CEM_random_initial_hash": "c9d82bc9c7b68c92c3722f1886c69fcfeeda79c0de345a2455ba5b78c80e67a7",
+        "retained_CEM_tensors_exact": true,
+        "added_parameters": 602819,
+        "protocol_differences": [
+          "ablated_component",
+          "ablation_implementation",
+          "additional_channels",
+          "description",
+          "event_direct_enabled",
+          "event_direct_gate",
+          "event_slot_self_block",
+          "evidence_dropout",
+          "evidence_heads",
+          "evidence_mixer",
+          "evidence_slots",
+          "evidence_width",
+          "fusion_lr",
+          "fusion_position",
+          "interaction_direction",
+          "interaction_event_skip_enabled",
+          "structure",
+          "tuning",
+          "variant"
+        ],
+        "learned_checkpoint_loaded": false,
+        "stop_gradient": false,
+        "all_parameters_trainable": true,
+        "members": 8,
+        "main_view": "z0",
+        "checkpoint_selection_view": "z0",
+        "stopping_view": "z0",
+        "auxiliary_enabled": false,
+        "auxiliary_base_dependency": false,
+        "main_loss_coefficient": 0.5,
+        "auxiliary_loss_coefficient": 0.0,
+        "main_residual_enabled": true,
+        "fusion_position": "before_second_weight_layer",
+        "same_original_inputs": true,
+        "time_bin_reorganization": false,
+        "event_direct_enabled": true,
+        "interaction_event_skip_enabled": true,
+        "retained_S3_tensors_exact": true,
+        "archived_S3_retained_initialization_verified": true,
+        "reference_S3_initial_weights_sha256": "e5603b342bf1f655c4c3da5f74ffe25e0e6306f64afc54efc3e743ff0da08a12",
+        "removed_S3_parameters": 0,
+        "removed_S3_parameter_names": [],
+        "new_S3_parameters": 1,
+        "new_S3_parameter_names": [
+          "fusion.gate.bias"
+        ]
+      },
+      "parameters": 12431071,
+      "added_parameters": 602819,
+      "epochs": 52,
+      "best_epoch": 17,
+      "seconds": 724.1142365932465,
+      "peak_reserved_mib": 2622.0,
+      "checkpoint_sha256": "e810e9b97df69798e8d1c156605876a7febbc2a0859ecf1e3ce7e1ecb08bd5fa",
+      "predictions_sha256": "91bff83034deb203c829eb18bdd97864a99b652aa0deff6cb0408ca0ae5bf845",
+      "source": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_cem_v1_rate_20261023/mimic/rate_v2/screen/jobs/V1_lr_low_t1_s48",
+      "initial_weights_sha256": "51e0a5c2d8a26ef7d0efa985175b0ffb4e25b9be2538635cfad7e6f639452a31",
+      "z0_replay": {
+        "complete": true,
+        "max_probability_drift": 0.0,
+        "replay_ap": 0.5542079093401113
+      }
+    },
+    "V1_lr_high_t0_s48": {
+      "variant": "V1_lr_high",
+      "endpoint": 0,
+      "seed": 48,
+      "AP": 0.5407279393988826,
+      "metrics": {
+        "mean_ap": 0.5407279393988826,
+        "ap": [
+          0.5407279393988826
+        ],
+        "auroc": [
+          0.90563947381328
+        ],
+        "brier": [
+          0.04897962941215948
+        ],
+        "log_loss": [
+          0.17124161323401585
+        ],
+        "prevalence": [
+          0.0761394128203392
+        ],
+        "mean_auroc": 0.90563947381328,
+        "mean_brier": 0.04897962941215948,
+        "top_fraction": {
+          "0.05": [
+            {
+              "precision": 0.6112600536193029,
+              "recall": 0.4014084507042254,
+              "selected": 373
+            }
+          ],
+          "0.1": [
+            {
+              "precision": 0.44906166219839144,
+              "recall": 0.5897887323943662,
+              "selected": 746
+            }
+          ]
+        }
+      },
+      "delta_CEM": -0.0017266596126866984,
+      "delta_best_baseline": 0.005565114680130767,
+      "delta_S3": -0.0031765037436405352,
+      "delta_U1": -0.004673426153537941,
+      "delta_V1": -0.002624628697356912,
+      "delta_W2": -0.0036730736026514554,
+      "fusion_base_lr": 0.0006,
+      "connection_audit": {
+        "complete": true,
+        "reference_seed": 48,
+        "reference_CEM_random_initial_hash": "c9d82bc9c7b68c92c3722f1886c69fcfeeda79c0de345a2455ba5b78c80e67a7",
+        "retained_CEM_tensors_exact": true,
+        "added_parameters": 602819,
+        "protocol_differences": [
+          "ablated_component",
+          "ablation_implementation",
+          "additional_channels",
+          "description",
+          "event_direct_enabled",
+          "event_direct_gate",
+          "event_slot_self_block",
+          "evidence_dropout",
+          "evidence_heads",
+          "evidence_mixer",
+          "evidence_slots",
+          "evidence_width",
+          "fusion_lr",
+          "fusion_position",
+          "interaction_direction",
+          "interaction_event_skip_enabled",
+          "structure",
+          "tuning",
+          "variant"
+        ],
+        "learned_checkpoint_loaded": false,
+        "stop_gradient": false,
+        "all_parameters_trainable": true,
+        "members": 8,
+        "main_view": "z0",
+        "checkpoint_selection_view": "z0",
+        "stopping_view": "z0",
+        "auxiliary_enabled": false,
+        "auxiliary_base_dependency": false,
+        "main_loss_coefficient": 0.5,
+        "auxiliary_loss_coefficient": 0.0,
+        "main_residual_enabled": true,
+        "fusion_position": "before_second_weight_layer",
+        "same_original_inputs": true,
+        "time_bin_reorganization": false,
+        "event_direct_enabled": true,
+        "interaction_event_skip_enabled": true,
+        "retained_S3_tensors_exact": true,
+        "archived_S3_retained_initialization_verified": true,
+        "reference_S3_initial_weights_sha256": "e5603b342bf1f655c4c3da5f74ffe25e0e6306f64afc54efc3e743ff0da08a12",
+        "removed_S3_parameters": 0,
+        "removed_S3_parameter_names": [],
+        "new_S3_parameters": 1,
+        "new_S3_parameter_names": [
+          "fusion.gate.bias"
+        ]
+      },
+      "parameters": 12431071,
+      "added_parameters": 602819,
+      "epochs": 52,
+      "best_epoch": 15,
+      "seconds": 787.62353348732,
+      "peak_reserved_mib": 2622.0,
+      "checkpoint_sha256": "c1aa883a15558dc29cf56c8f27610b10e875eb0b151db9fd9449b1c4792369ac",
+      "predictions_sha256": "63bb1ab000005d65b69f6956c1af237c7b5782ab50375b2df26f00e10ee36081",
+      "source": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_cem_v1_rate_20261023/mimic/rate_v2/screen/jobs/V1_lr_high_t0_s48",
+      "initial_weights_sha256": "51e0a5c2d8a26ef7d0efa985175b0ffb4e25b9be2538635cfad7e6f639452a31",
+      "z0_replay": {
+        "complete": true,
+        "max_probability_drift": 0.0,
+        "replay_ap": 0.5407279393988826
+      }
+    },
+    "V1_lr_high_t1_s48": {
+      "variant": "V1_lr_high",
+      "endpoint": 1,
+      "seed": 48,
+      "AP": 0.5484937115952612,
+      "metrics": {
+        "mean_ap": 0.5484937115952612,
+        "ap": [
+          0.5484937115952612
+        ],
+        "auroc": [
+          0.8587587018215546
+        ],
+        "brier": [
+          0.09466596592973268
+        ],
+        "log_loss": [
+          0.3071198284268289
+        ],
+        "prevalence": [
+          0.15308311581611633
+        ],
+        "mean_auroc": 0.8587587018215546,
+        "mean_brier": 0.09466596592973268,
+        "top_fraction": {
+          "0.05": [
+            {
+              "precision": 0.6943699731903485,
+              "recall": 0.22679509632224168,
+              "selected": 373
+            }
+          ],
+          "0.1": [
+            {
+              "precision": 0.599195710455764,
+              "recall": 0.3914185639229422,
+              "selected": 746
+            }
+          ]
+        }
+      },
+      "delta_CEM": -0.004297306646277588,
+      "delta_best_baseline": 0.0018132637972453347,
+      "delta_S3": -0.0021639008176078667,
+      "delta_U1": -0.0038280959334796583,
+      "delta_V1": -0.006691829160284213,
+      "delta_W2": -0.005239599205048573,
+      "fusion_base_lr": 0.0006,
+      "connection_audit": {
+        "complete": true,
+        "reference_seed": 48,
+        "reference_CEM_random_initial_hash": "c9d82bc9c7b68c92c3722f1886c69fcfeeda79c0de345a2455ba5b78c80e67a7",
+        "retained_CEM_tensors_exact": true,
+        "added_parameters": 602819,
+        "protocol_differences": [
+          "ablated_component",
+          "ablation_implementation",
+          "additional_channels",
+          "description",
+          "event_direct_enabled",
+          "event_direct_gate",
+          "event_slot_self_block",
+          "evidence_dropout",
+          "evidence_heads",
+          "evidence_mixer",
+          "evidence_slots",
+          "evidence_width",
+          "fusion_lr",
+          "fusion_position",
+          "interaction_direction",
+          "interaction_event_skip_enabled",
+          "structure",
+          "tuning",
+          "variant"
+        ],
+        "learned_checkpoint_loaded": false,
+        "stop_gradient": false,
+        "all_parameters_trainable": true,
+        "members": 8,
+        "main_view": "z0",
+        "checkpoint_selection_view": "z0",
+        "stopping_view": "z0",
+        "auxiliary_enabled": false,
+        "auxiliary_base_dependency": false,
+        "main_loss_coefficient": 0.5,
+        "auxiliary_loss_coefficient": 0.0,
+        "main_residual_enabled": true,
+        "fusion_position": "before_second_weight_layer",
+        "same_original_inputs": true,
+        "time_bin_reorganization": false,
+        "event_direct_enabled": true,
+        "interaction_event_skip_enabled": true,
+        "retained_S3_tensors_exact": true,
+        "archived_S3_retained_initialization_verified": true,
+        "reference_S3_initial_weights_sha256": "e5603b342bf1f655c4c3da5f74ffe25e0e6306f64afc54efc3e743ff0da08a12",
+        "removed_S3_parameters": 0,
+        "removed_S3_parameter_names": [],
+        "new_S3_parameters": 1,
+        "new_S3_parameter_names": [
+          "fusion.gate.bias"
+        ]
+      },
+      "parameters": 12431071,
+      "added_parameters": 602819,
+      "epochs": 52,
+      "best_epoch": 17,
+      "seconds": 850.1618382930756,
+      "peak_reserved_mib": 2622.0,
+      "checkpoint_sha256": "b3c49b596344922099534a8fb7a0d62b1c9d9468538effe7033c78d2bd3c674b",
+      "predictions_sha256": "067a798f4cd79cafda6a91795279a163bc9526ba05aca29fb7d65451840350da",
+      "source": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/tracehr_cem_v1_rate_20261023/mimic/rate_v2/screen/jobs/V1_lr_high_t1_s48",
+      "initial_weights_sha256": "51e0a5c2d8a26ef7d0efa985175b0ffb4e25b9be2538635cfad7e6f639452a31",
+      "z0_replay": {
+        "complete": true,
+        "max_probability_drift": 0.0,
+        "replay_ap": 0.5484937115952612
+      }
+    }
+  },
+  "parent_manifest": {
+    "models/__init__.py": "b30b6970dd379505f23c8f883bdeff4a8971095bd92d54b86963fac7310dbce8",
+    "models/tracehr_unified.py": "3cc387950c89486fea53e5244c170d1fc02f782f45eb3165621731fa04689284",
+    "models/tracehr_unified_next.py": "81be7bda725d448bcd644734e86648383a9569990090b3d758d848eb82ebe3dc",
+    "models/tracehr_native_transfer.py": "88aba53b79a8a1a698b2e1a03ea919450eea3459dda08d22a031c490f7801a1d",
+    "models/tracehr_backbone_refine.py": "905f106f88ea8d24a18871a597ea143a8a9916bbaba68b9c90617c4381359a24",
+    "scripts/tracehr_unified_common.py": "be5f16364a0890d9db80feabe700547a0a482bc27eb0ff14822903d8189141d4",
+    "scripts/tracehr_unified_next_common.py": "38061b51d746e314923b391301bb87899dc3ef57ebd986bba0d85baf915dab62",
+    "scripts/tracehr_unified_next_runtime.py": "f82f019d4b930284b86614c85df1bbfa5e026005537bebb27fc06b5a6875345b",
+    "scripts/train_tracehr_unified.py": "645eb3c25a7aa432f339376d4421f0c5cb0c012807b726db5fed1082a6c4a695",
+    "scripts/tracehr_native_transfer_common.py": "42d46c4abcf60cc2b884d94961929728412c95f5c2058da17b54f5742fba9eee",
+    "scripts/tracehr_native_transfer_runtime.py": "49f2890dcb8c5aab7c72347deaaa4532c7c039144fcabe255d7fd2d4f2082de1",
+    "scripts/tracehr_backbone_refine_common.py": "252f5880c48cf27420d91c02ec818cbee282589c7173fa71b103db580f1be0a1",
+    "scripts/tracehr_backbone_refine_runtime.py": "aab6d5faf8d6930606a1a447f9b26dc4e4ca9959ba989b80a479c218f3da2306",
+    "scripts/train_tracehr_backbone_refine.py": "0d4e25fee27be59feb1220b0e35dc3f164dd519785ae0a0a84421cac68b701ab",
+    "scripts/tracehr_backbone_refine_queue.py": "1076a95d68658dd8bff28b8e55a186f315944e12f460ac1991bcc89139c9d4ba",
+    "tests/test_tracehr_backbone_refine.py": "284bf4f174ddf1304eb90204c5a5ec9a425867014bfb2f58188567ef087d8025",
+    "scripts/tracehr_recovery_queue.py": "ce1f8582d1d8c73c12d17748b3bbfb46573a7bdc7a47acae6730c289fb947216",
+    "scripts/tracehr_recovery_attempt.py": "f9a20608043af689318bf7053534f5fb9bc29960ed222b5028ced4a3a0d4dd32",
+    "scripts/tracehr_multiview_common.py": "8d59208925ab61c761ea23d0068d7575866db997a66e1a51086af9952edcf48f",
+    "scripts/tracehr_oof_common.py": "9f1db3274ffdbfe41a9b011624986f5c8e54df14e4e1a9e85224279264508ec2",
+    "models/tracehr_centered_native.py": "76ee4b05cca2a373d7176aa25729728bd77e4f81f049a6919c4e07658aacfd64",
+    "scripts/tracehr_centered_native_common.py": "b84534739c497d6c49bc3a50055fa1fea105ba60a7f33fe29ce9c86aba54fa50",
+    "scripts/train_tracehr_centered_native.py": "0609847b20eb5a927fbc979aec6944c970797348ee09aa9f96e5b367487413d8",
+    "scripts/tracehr_centered_native_queue.py": "6fa052432ad3ba58159bbd7fba85484cd9386f76bad1008fc704e415182c2d6d",
+    "scripts/tracehr_centered_diagnostics.py": "4152a2f9600862607c591a477f5bb060abf88befc40a9fcb4db98672aac479e6",
+    "tests/test_tracehr_centered_native.py": "91024bbefe5a158a57104f9fe0e8f9f066f6d9193f24e81be4ab3932fb93c930",
+    "scripts/tracehr_execution_refine_common.py": "ba4f9eb01277deae9379aff6ba390cf3fa8a8ed863660afdea582a5c5a328b5f",
+    "scripts/train_tracehr_execution_refine.py": "45fb4ed7d125b7372ba26596e4893c5a626854ea5c038a48ae01048a6b797c79",
+    "scripts/train_tracehr_native_execution.py": "24bfdfc79aa95bc6790249ad5fc02e021639e23638de7ca94d637420af8c0190",
+    "scripts/tracehr_execution_refine_queue.py": "9ab18d48de7b57e3008e6908006dc642f5cb3a98f94b8b9e9dda784086e2dcf7",
+    "scripts/train_tracehr_native_baseline.py": "02ede1c187e899972c334fec72a09fc88ea66a28ddea50aa8f8626f0388393b6",
+    "tests/test_tracehr_execution_refine.py": "68567c7b25e027c667f8d0dd2bf55c298a71f5ed629e3f74436a374e316a8d2c",
+    "scripts/tracehr_execution_eicu_common.py": "88a76ef408dd1fd809a3222bbe3b4fd1e6f1bcec47bb82c936fb25550a8449d3",
+    "scripts/train_tracehr_execution_eicu.py": "547f08920ce3ddb13aea28dd8fdd708de8b507200f4b5c6bbb274adbfc00c821",
+    "scripts/train_tracehr_execution_eicu_runtime.py": "af0fa0aeba98271f06eb4ecdab7e40f2067b5debad83290011045548ed0148f5",
+    "scripts/train_tracehr_native_execution_eicu.py": "f103482151047c0499684fc26b116b4d7ca67eb8d5a2b9b8214cff6b82541bb0",
+    "scripts/tracehr_execution_eicu_queue.py": "f63f806944f997bacb14bf041721903d6a8d4490a480cb27d090973902822041",
+    "tests/test_tracehr_execution_eicu.py": "2f2a59c360aadb8f694e96ceec7aefa5448971ec3d31eb5b0e5a9efb7ff5fccc",
+    "models/tracehr_structure.py": "eb0e724ee690c4bc43e97ef25d2f8ccb15a1695aed96c4f837b5917229d3700d",
+    "scripts/tracehr_structure_common.py": "30f64b977c91c34c9109a8c70788421175f22b430d6f0c584dee78f9451a5680",
+    "scripts/tracehr_structure_runtime.py": "300cf2fa54b2f7c4af7d1751845256817788c96f43d4e69ce72d55bbab175b2b",
+    "scripts/train_tracehr_structure.py": "7c58757663375b55452c845379d500b4b9066cf8d18db21235df0bf1e7adab1d",
+    "scripts/tracehr_structure_queue.py": "88cd6792a7e1dcd1d56ba809d434269fc73dc7703f260793fe06294f3889720e",
+    "tests/test_tracehr_structure.py": "a66d2c9e4f8955ddec133a10976e8431c038b03fdab5fb363cc092ed68accdbc",
+    "models/tracehr_context_cut.py": "a49b9048d1b440a5223ca7fcb5756b393aaf3f84d2ca140166a3c8e5881e8d8c",
+    "scripts/tracehr_context_cut_common.py": "273018b2d6e0b7b4506341981ed9ee5afdc0a1193b12c45512eda90c8f83253d",
+    "scripts/train_tracehr_context_cut.py": "1d5af0a830b2a43b008f57567b50c1a646d214ea749d594e5c6d4076596d5d7c",
+    "scripts/tracehr_context_cut_queue.py": "cade6a539b7ecf25b5e5ef4cad0e23159301dfbd89337cf1f6634ed4ac86d86b",
+    "tests/test_tracehr_context_cut.py": "12c232567873de6e42d0809e5ed98333e7307c0c6ef9b25c36506564491621db",
+    "models/tracehr_trajectory_contribution.py": "58e26ae5e0cf0629cf6271ad8688680d635600cb76ffdc101c2399c661352011",
+    "scripts/tracehr_trajectory_contribution_common.py": "f123d648a5d33a7e1ae91483fa8ef5ff58837308430c7a14a0e1dc5704340c6e",
+    "scripts/train_tracehr_trajectory_contribution.py": "5c36058a04878decdb7885ab140d04961ba3b55dfc20279cc4bf013c51998398",
+    "scripts/tracehr_trajectory_contribution_queue.py": "23919bb1a9041c1d4fba2c00a29f62cf1d1695eb0fd6e0eee55de446f8222c10",
+    "tests/test_tracehr_trajectory_contribution.py": "644f1368ebb4cda68760f37cc7c84f593ca21069900aed7bf87c836cda035c2b",
+    "models/tracehr_direct_supervision.py": "b5421939b0ff522838a2c02b700b7507d78d32850162629d3650ed000f808607",
+    "scripts/tracehr_direct_supervision_common.py": "e36ef300eee9117aafe6374eab9dd2faa2c86a942c45bdc71a384654a32fc939",
+    "scripts/train_tracehr_direct_supervision.py": "b2455c1ae60050c72655fe0d16d237b543f38a39c40f1ddcfb257ec6f831d524",
+    "scripts/tracehr_direct_supervision_runtime.py": "5b5011b448f6cd01546ab318c6517e58ffa6d189180f4f55f86ea80bf5edf58b",
+    "scripts/tracehr_direct_supervision_queue.py": "20e92f3daca3d5bbef23fff533585f747f55f0e2e9342b74246745be5b955aee",
+    "tests/test_tracehr_direct_supervision.py": "82f1d0975c9a733edd2fcae4eaded41b21ba20c689a7b0e658e9aac97f216515",
+    "models/tracehr_auxiliary_isolation.py": "7a2a95e648f4ebed4b66c55f93b8b12a7a563ad62f3cf5611ebffd8c311c53ac",
+    "scripts/tracehr_auxiliary_isolation_common.py": "90dca4977fa657ca7c986b78fec8696804da28e4f7d52b8ac15534e138382ba4",
+    "scripts/train_tracehr_auxiliary_isolation.py": "5d5949492b5f079f4d2fd586b744b8f6acce4f9624599321649a20d88e1cf61b",
+    "scripts/tracehr_auxiliary_isolation_runtime.py": "2c8f68649f5273ee762ec8b8a087a016cc6df418004a86ce2440daeec279b765",
+    "scripts/tracehr_auxiliary_isolation_queue.py": "d74450971f832884ce3321546bb04affac2ae591b2cf4a8134c0787d5c195ec1",
+    "scripts/tracehr_auxiliary_isolation_diagnostics.py": "a8007371a5b0017818ccb733748147e83711383fe60c08d128217654bf5eb30a",
+    "tests/test_tracehr_auxiliary_isolation.py": "b700ecba26ff0816831c587f0a18e910c923e3ee70fcf300ea8b805e0636e9b9",
+    "models/tracehr_c5_ablation.py": "7cf5819ab239e833e56936f59ddf2b1c00f8956ca07d880b4e914fdfd7c46c93",
+    "scripts/tracehr_c5_ablation_common.py": "e233a9addb26561a0a505393ce3a03c6f635028fb0f72297af886aa6c2775026",
+    "scripts/train_tracehr_c5_ablation.py": "ce56adb26b377db45050e88ac98e5367b5572fcfca378543bbbf3fe8adfdd49b",
+    "scripts/tracehr_c5_ablation_queue.py": "a8b00bfcd5f1ac38042021d682541a5ba4b8c8b2ab8e37e3994017f6f4e097d8",
+    "tests/test_tracehr_c5_ablation.py": "6c8fb6626bbc18d4d1f43d116fa3bc19e6cc7788bc85fb7190e6439a420f1b26",
+    "models/tracehr_not_confirmation.py": "2f4b18ea12f6485d7157c7584dc454d4c41f36f06a3207a214cfe78f527841bc",
+    "scripts/tracehr_not_confirmation_common.py": "72ce45ea2d29bdd02994de94bd3bae018eef8d08758e8f10bbf2a7cd07162de6",
+    "scripts/train_tracehr_not_confirmation.py": "f9f845ce1afa2ecd3203d595c2931107897f3660ea1fe921fb7a90c95d89f049",
+    "scripts/train_tracehr_not_native.py": "2029f77c5cfb59382a395e03108a256be0ee41f4eeda238f724e3ba51a9a69e8",
+    "scripts/tracehr_not_confirmation_queue.py": "f5ccc7a66002bdb167add28cf8f6339063774279455f4c29afb8e4594ab172ed",
+    "tests/test_tracehr_not_confirmation.py": "771cced1f63c42e01369f6712b3764ad78b0198b08b6ad96a373722e508e486c",
+    "models/tracehr_not_functional.py": "90c64b5f066afff80265ac9503963c0e987b2519f22a0206994f1c6233bf3ec4",
+    "scripts/tracehr_not_functional_common.py": "c67704c3df212c91d3bd0277e56815c8e720f4c4685693caf732e062d9aa84da",
+    "scripts/tracehr_not_functional_diagnostics.py": "33939135c0e89800651c80beba53c974290fd74d80961984286e258700e587ea",
+    "scripts/tracehr_not_functional_runtime.py": "12d828e2f8eac396f4af6f4187b685287887c809b10bf2cc99473b75df65c4b7",
+    "scripts/train_tracehr_not_functional.py": "72677a9215dce2226d679df7f552d33318bee88f624cafb5f6fe2e43d8c001ad",
+    "scripts/tracehr_not_functional_queue.py": "7a0a2ef328e4556ca7ed6dd6ce2457487014e5b0f251755de9e9f20940378e50",
+    "tests/test_tracehr_not_functional.py": "9e33f3e265f797074ca33789bf93a36f9be8599678af9a27824bf09c76921680",
+    "models/tracehr_not_stability_functional.py": "7c73bb0b3db0888df42a931c1b80a9bae85e502c0a623842d66d30fd2b2498d4",
+    "scripts/tracehr_not_stability_common.py": "38614e916e1806f60ad1a51387fadd490c3b92800a9c2e4f964d47fbe2caa460",
+    "scripts/train_tracehr_not_stability.py": "8445b383cf6052bcc61168575927ac1945baf88406646d19ec1ef619201155e4",
+    "scripts/train_tracehr_not_stability_functional.py": "bd956ed5796743850403236ddd735cb78d0cbed294d7721671f93efc458a2da2",
+    "scripts/train_tracehr_not_stability_native.py": "5d7a0cd3c7ff2137fc123d5a4f46ae168f7f8b8788aaee684f98752505e57ccf",
+    "scripts/tracehr_not_stability_queue.py": "7147989b93c6fb327cfee7ee3a0721e888fdcef8e09229d5444adb54007d4003",
+    "tests/test_tracehr_not_stability.py": "ce1acad6d7a13f7b6385929cae8fc0a6cc46af3c3640c90bed69e488afc67a91",
+    "scripts/audit_tracehr_not_stability_baselines.py": "e8b7e8801d630efe95b9392a5ae3642ae0517be93c442a3b6233693e9c0c1c80",
+    "work/tracehr_not_stability_20261018/baseline_expected.json": "c9e9da621d218708a241f2235086ab6e21b8f3d5de77a8e960c37e4cc7fe662d",
+    "scripts/tracehr_stage2_common.py": "84a8c4a5feef4a63419efc0399232799c9ecbfd1da4738a1bb24e3f1f46638fb",
+    "scripts/train_tracehr_stage2_noa.py": "2c83f1621165412e7a397e0641ef9cbb4e7450bd92550b3a2ea7ddf8dcadc9e4",
+    "scripts/audit_tracehr_stage2.py": "62a702ddd167809bd6cee5d11d65fea6436155c64a50fa138c798009cf48bfa0",
+    "scripts/tracehr_stage2_queue.py": "49670e96bb64d5986cd428a962681ea7ab37af430c994acc2dbd2200c5de4e00",
+    "tests/test_tracehr_stage2.py": "92a07ee43c52908302c2e14d3a991f2685be56fc6f509b1c4819e09c39eb588b",
+    "work/tracehr_not_stability_stage2_20261018/expected.json": "ba1e4d73cc27255176813a304e3be8a6db61a50380fdc5fc45939ad852b09610",
+    "models/tracehr_noa_ablation.py": "94ef085007d0cda314fbfcd586b2c171717d0b71f4df895f9a9ecc88270e2cb1",
+    "scripts/tracehr_noa_ablation_common.py": "92b16e38f11831bcae01c57d9f653a6aae2e011fad5ed36a0ed9b4c177517bd0",
+    "scripts/tracehr_noa_ablation_runtime.py": "136f239550335dcf42f681984e992731442b652553f1d98eb60eca0b64a94c46",
+    "scripts/train_tracehr_noa_ablation.py": "2b782f0093c48403ccd2cab6960d3ed8679e6e84082a48feab499247244c934f",
+    "scripts/audit_tracehr_noa_ablation.py": "ce0fe726d0806f69c755807bacefa62b2e73435d832db47d57006b138ebb910a",
+    "scripts/tracehr_noa_ablation_queue.py": "a0fbece986791c7bd163139c23259ce957d174a513060893f1567998441b9271",
+    "tests/test_tracehr_noa_ablation.py": "cd91c923c26183d4e1efaf34ee69d912bb0130e489b50c09cc34f63d79f1381c",
+    "scripts/audit_tracehr_noa_r_equivalence.py": "b2047ee7166058eb938311f07d3e030dcc14bbde76b6eab3b1085b3ddc46935b",
+    "work/tracehr_noa_ablation_20261019/expected.json": "35dfefc1d953f4c80b7cfc254dd60b5404f3cad8297af29f528f3cf9c68e2048",
+    "models/tracehr_r_member.py": "144a165a295c470ba244f47459c2e46600cadc4bb4ae3e7d6640009a217754c3",
+    "scripts/tracehr_r_member_common.py": "c5b92bc63204b80e294fd55bdb0ef41cf01a55c6021a287ed31f882e58ab48f4",
+    "scripts/train_tracehr_r_member.py": "36c83b9f2026c28f345678ac92d3abad9611b84fa7de6c613d57498e9d33eda5",
+    "scripts/tracehr_r_member_queue.py": "7037e3ae7e2cab70ddacb375be7d925abdaff15cfdfc62cce9311a3181a72be2",
+    "scripts/audit_tracehr_r_member.py": "37225cb41f1ce3b91e591a886cb14852e38b2f62bc0971a3fb684d6558cd2ceb",
+    "tests/test_tracehr_r_member.py": "c10ce2042e1801f43374c1a3647270d83a2f3affe1a972b76ac6f0c7a12df442",
+    "work/tracehr_r_member_20261019/expected.json": "742c0f59c36eaaad59c5b33566416115e80f5a1877f0aa261cf5b35f8c33dd08",
+    "work/tracehr_r_member_20261019/review_gate.json": "120f9ca279db5ac6f2502e4faf0bdb1b2bb664989125e8471c9ba14d5b7d6c94",
+    "models/tracehr_r_gain.py": "52b7effb7daad58af431ceb03d8ce981dd47582e629dfdc63fe35168a70ab9bf",
+    "scripts/tracehr_r_gain_common.py": "ae05bb0da0c3bb0290a66be03cda65c2b8cd6ebff31a0429ce470e730d840346",
+    "scripts/train_tracehr_r_gain.py": "75226233e37df6013c7be15c0280dc1ee71b5d7832d27101c059f1604085036e",
+    "scripts/tracehr_r_gain_queue.py": "8b24659f2790c4c3f10f248ca342709beab626fbe9a27b63b7a7469c06b3454a",
+    "scripts/audit_tracehr_r_gain.py": "749d247502e5ee96a2fc15c6d9eff330b3e8130e24816df979cdad9299b244f0",
+    "tests/test_tracehr_r_gain.py": "822e50a1601abac50d4cff4d51037bb1927094c1be637c25f01282f3aa2a05b9",
+    "work/tracehr_r_gain_20261019/expected.json": "a1a445ab2a430d092a7cfdc39512f47fe17502b25f3ada90c0c4db8715e17a77",
+    "work/tracehr_r_gain_20261019/review_gate.json": "b14fd43d778d5e951a34fbf03494e0d813407f922a74d9f17df54332dc488ae1",
+    "models/tracehr_pm_confirmation.py": "e29001126841a1a9369f841fbb5e35f203614e92bba3f4bb90c9b01a07257759",
+    "scripts/tracehr_pm_confirmation_common.py": "273bb9082ca30173fd8bf0847666d4ac6b42401df0458774584e53e9c6300a65",
+    "scripts/train_tracehr_pm_confirmation.py": "fcac0cdfce455f2bb65d998e0389ae8f4f66674d91439c591033719783f04bdc",
+    "scripts/tracehr_pm_confirmation_queue.py": "273173ef27f032e42f92de49633592959eb8ef7940df1398cd6334ea5d2d500c",
+    "scripts/audit_tracehr_pm_confirmation.py": "a46bcffa15d28764c3b45b15a6c5a5eb83f1cd53af7e9c2a4a9db7521cad9bec",
+    "tests/test_tracehr_pm_confirmation.py": "1012de540d76bbdf1a8061a0e435b8e18b1499f0927057cf7b2e7eca306ea314",
+    "work/tracehr_pm_confirmation_20261019/expected.json": "6573e8ceed7f142f2f924d16f0d2059f942a84455e69f7adf2469b42888bbd25",
+    "models/tracehr_noa_pm_completion.py": "bcc5d1a2814664717338700f8251cd99bf59ec90ef23f792fce703f77cd1bddb",
+    "scripts/tracehr_noa_pm_completion_common.py": "05604b617d5d00ec94b3d8997be62ca7c9e362db96d0a250cb834b161e3ffebe",
+    "scripts/train_tracehr_noa_pm_completion.py": "fba8413c96319c2cdd7a2a5f1b1784a0fafb04c27da0198cfc5797d42818aee7",
+    "scripts/tracehr_noa_pm_completion_queue.py": "f653bfc9336de0491316b369013ebce41b40b3fc543b99003fd0a437d8b70da9",
+    "scripts/audit_tracehr_noa_pm_completion.py": "e287c414675480018650104e88703f9d1c82d1b4b98368aa0a1741035787851a",
+    "tests/test_tracehr_noa_pm_completion.py": "c81474e1dcda4c55e9d70718e1bc56dd2e931070fbd6863b1783280495908a3a",
+    "work/tracehr_noa_pm_completion_20261019/expected.json": "6bd8c1f2d7fa25e74dfec842ada38ea5f731f60849c2e797db9e197946123cb5",
+    "models/tracehr_noa_main_confirmation.py": "641e5bd5fefdf587e2cd96d1d6af9bcafe598d03649293f7e76a8d3579abed3c",
+    "scripts/tracehr_noa_main_confirmation_common.py": "2453fb31df3099da0a2f624292b8362088c5c508da3234875cfcb472ee4e162b",
+    "scripts/train_tracehr_noa_main_confirmation.py": "c6bd2b47a210abde6c4acad1936fe99099cbcc60649e181fdc2088a95c26ff63",
+    "scripts/train_tracehr_noa_main_native.py": "76ba1b38693b64f098358a8aeea671ca3a676325698857d99a25e38c6d581e6a",
+    "scripts/tracehr_noa_main_confirmation_queue.py": "bae1ce32432e1a908829ad3e10f28c5531b7a056f7c53f07a413e2134d877f08",
+    "scripts/audit_tracehr_noa_main_confirmation.py": "12676365e31c3606001138567a505e7aa3cddb589247ef27e9b18d6ec433dcef",
+    "tests/test_tracehr_noa_main_confirmation.py": "1c0f67bc879f1610934231b3fcc16090e607a66c05d12f5c64a0b2140c6b0f4b",
+    "work/tracehr_noa_main_confirmation_20261019/expected.json": "0df0531a5941ef2db0f4f65cf5cff0311b0f878c3b4774fee7bf0a4b4181d383",
+    "models/tracehr_noa_validation.py": "b009652fabea2f39dd93731d1bd962cf1172a754a66e9085ec0ee6ab996db43f",
+    "scripts/tracehr_noa_validation_common.py": "bdaae9bcc99fa8cba3f12141abdac40ae85fa7d8f83c8467cf4b10fdb796e2eb",
+    "scripts/tracehr_noa_validation_runtime.py": "7571a22625caa1bbeac05d72515848c4ba92c46e5c30fe07660dc843e2ec772b",
+    "scripts/train_tracehr_noa_validation.py": "de6d18013b4f42fc792e1249ea4d93a193772ae573c8f5a612ec5864f0ebf513",
+    "scripts/train_tracehr_noa_validation_native.py": "c837b80265333caec6a32b07c5f701de4a76363801949c7fac34a1efd545b6a1",
+    "scripts/tracehr_noa_validation_queue.py": "397f26c83732553f3c5608e71e321468cef537a6e20b705160ab9b5474e659c6",
+    "scripts/audit_tracehr_noa_validation.py": "09522fbfb08f0fb031ae21c5e694cad40e8d80fee81b8713447a4ba00e14fc99",
+    "tests/test_tracehr_noa_validation.py": "355bea5c07114c8387ab789739b17358eee5a5d1d6315dc8df960e6848a0e131",
+    "work/tracehr_noa_validation_20261020/expected.json": "9a4d03c165873dcbd1c0db0ff2caeef25388909d5283177d53ff09e5a9d3ff0a",
+    "work/tracehr_noa_validation_20261020/memory_entry.py": "cd35b569828689b465534aaf8c551e3d32a564f516ecf0bc36639d4668e850e4",
+    "scripts/tracehr_noa_eicu_ablation_common.py": "80074c38e9cebb384cc38aa50df0aa6a3d94326d6383dae2b9e364d8f2aa50a5",
+    "scripts/train_tracehr_noa_eicu_ablation.py": "13a16a3b354fe634abb9c995749703552260616b930e6794ceca8865e8202ed9",
+    "scripts/tracehr_noa_eicu_ablation_queue.py": "e3f9c5a9b71730f735dc17bb42ef655e101700d283386524c7088df7bc4f5903",
+    "scripts/audit_tracehr_noa_eicu_ablation.py": "58abf23f4a21cfbea4e7bce899439180b16ce6e500a6f30363baa169920b63b4",
+    "tests/test_tracehr_noa_eicu_ablation.py": "6cb945aedb04f1b9f51d6ec0fdc5fa54262ef0cc493cd2186c0aea9b0942520b",
+    "work/tracehr_noa_eicu_ablation_20261020/expected.json": "51b275c743a0f28eb0630c50c36765f306eece0bc9088350470269867b4f145d",
+    "work/tracehr_noa_eicu_ablation_20261020/memory_entry.py": "cd35b569828689b465534aaf8c551e3d32a564f516ecf0bc36639d4668e850e4",
+    "models/tracehr_pm_ablation.py": "5f2d1f5c59bfea6124a05e4677eabac14643ff7a3338eaefae4dc079727bb9eb",
+    "scripts/tracehr_pm_ablation_common.py": "9744ea5907da3fabc9e29fae71129bd2d8758ad5f66b26611607bcf2d8368e47",
+    "scripts/train_tracehr_pm_ablation.py": "2da80def348a28bbe6ed10a577241b9162ad9cda3bbca3511fc3e7c48c74a08a",
+    "scripts/tracehr_pm_ablation_queue.py": "e6dc95a182e3ed5091bd53dde7a2183b2f29b5045d390231f470562b47893f77",
+    "scripts/audit_tracehr_pm_ablation.py": "a79d38676629058442ccb57bd1d8efb824da449fd5bbcb485f75407272b91b62",
+    "tests/test_tracehr_pm_ablation.py": "cf5169106888f5425d43f51c6b1f57e9056909b4513ec6e356fbd3c0e5eff580",
+    "work/tracehr_pm_ablation_20261021/expected.json": "7f9277031c9e22848dd981e9dd383e25be77ed622e85cda885219a416d88df72",
+    "work/tracehr_pm_ablation_20261021/memory_entry.py": "cd35b569828689b465534aaf8c551e3d32a564f516ecf0bc36639d4668e850e4",
+    "models/tracehr_fte_binding.py": "e5a5cd24441bbfd3d75795a66ed2c4819cc0aa68c0052e5da8fbf6a34a403b18",
+    "scripts/tracehr_fte_binding_common.py": "3b5c85d36ce62363d6ab878a3d729dab2d68f03868103b5356a54b5edd27c721",
+    "scripts/tracehr_fte_binding_runtime.py": "832a0b880ae60a26d41b65b9b928e96a101f105d7ce79c3b1c5b4413fd2566f5",
+    "scripts/train_tracehr_fte_binding.py": "6b4e0422bc67b53a9fec26808d0099ce890d1a42bd3d4174798cbd6f1f4546c7",
+    "scripts/tracehr_fte_binding_queue.py": "9380466ec669dc7bfe36c1c79d3744a62fea5c047477735857634acbe85f660e",
+    "scripts/audit_tracehr_fte_binding.py": "f955085b3ee06a0f750a7bff75e9d0194c5ae43a2786da81d5f5936f8d68dada",
+    "tests/test_tracehr_fte_binding.py": "3d8f21d09c212bfb290403809f083a5c183c898f276958e4ad5205a5c33acba5",
+    "work/tracehr_fte_binding_20261022/expected.json": "d8000776beb4dd12ad9ad406b2bd69e6d77dd085219a4ec721a529ac1ab910a5",
+    "work/tracehr_fte_binding_20261022/memory_entry.py": "cd35b569828689b465534aaf8c551e3d32a564f516ecf0bc36639d4668e850e4",
+    "models/cem_evidence_structure.py": "b8fd10bdd51d1b771cf207f357d148977eefc1d09d11ea63fce3a1d2dd9eed3e",
+    "scripts/cem_structure_common.py": "c2809252cacfda0f0b1b3fc831a7774314cc9dfa96d56e05cb7b57c02e4695c1",
+    "scripts/cem_structure_runtime.py": "8ac9059a39a6a29aceff27e814a8ffa0d654720b5be5e574300a67a16739ce29",
+    "scripts/prepare_cem_structure.py": "27f19d2392f30aa12107676c7e7928297e8f3a6e88ce4bbdace060d2e57e54f0",
+    "scripts/train_cem_structure.py": "af7881e014942c72630a82d08c3c91870f9ec067ad97160e140c3dcea4fe4362",
+    "scripts/cem_structure_queue.py": "0215a32b81a1ebed96bfd1679b1155dfd972c19a9b57e09bf174f810a1c0be71",
+    "scripts/audit_cem_structure.py": "92bff5e6ee9370387d21a8980df98fd34a8feb3f0a4b5076f040874bd4e3ddd0",
+    "tests/test_cem_structure.py": "764dbc82ae786f3badfc74ea7a1cf4d700ed7c1172bc821ba24d54188f81a2df",
+    "work/tracehr_cem_structure_20261023/expected.json": "dc2f542b59dc8391d565e9da78c43e457c806a0def0156b529625a13fde8f101",
+    "work/tracehr_cem_structure_20261023/memory_entry.py": "cd35b569828689b465534aaf8c551e3d32a564f516ecf0bc36639d4668e850e4",
+    "transformer/__init__.py": "fcdddb4f163b16601aed6e9bd0f93db7d1000982d6c144ea37a2a3b82d5d7718",
+    "transformer/mambapy/__init__.py": "8c69fa5fc39e49cb19e6283fea5098863801a66ce6020716fe2e9f702b178f2a",
+    "transformer/mambapy/mamba.py": "c001dd8710433a5c82e5ddce4b053fe7956d3ccc65205b91f8ea8e4a1720f51f",
+    "transformer/mambapy/pscan.py": "3db4286ed41bd6f255de77244faf84b0cb9cd737f7bb963c632ba48aca1b3613",
+    "models/cem_connection_ablation.py": "a0563af5fae370333f525ef1661ff6b4a6e67b8608637f565b4540de240edf73",
+    "scripts/cem_connections_common.py": "600b66156286caed1e1fbd4421894b00da51c2df0272bb07e6024fd9083aae66",
+    "scripts/train_cem_connections.py": "2f8c46e48eae4b1c9ef7f93b34b547be3d1e1cb08b99e9a13240916bf9ed7a43",
+    "scripts/cem_connections_queue.py": "9ed8769e5adff85e94c40776f416fabf8f3044f8dc3a5e185495e60d491d8f44",
+    "scripts/audit_cem_connections.py": "6ffae3785fdd12d434807a5ad73aa5fd0c0f4b7d182106dbfd4c5d6011615460",
+    "tests/test_cem_connections.py": "0ffe5ab3ab74957388b701efd115b20b585fd5b1bbb6e16e909987276b1b9c2f",
+    "work/tracehr_cem_connections_20261023/expected.json": "0c394151ff392d34718e4b0347da2346e74d684e1e13cefefe67210296033246",
+    "work/tracehr_cem_connections_20261023/memory_entry.py": "cd35b569828689b465534aaf8c551e3d32a564f516ecf0bc36639d4668e850e4",
+    "models/cem_gated_event.py": "bf3166f866ca9fd97ea51e342ab43c625682ca23dec0aafda2b3b9109d2f12cf",
+    "models/cem_refine.py": "57079bff3476476d3346945da76ce56f53d6508e8ff31fbff61a345bbd6d5c27",
+    "scripts/cem_refine_common.py": "6b3e9d17f0fc2584804f1b49a1d763fcdb633f8d1ca612f805011234b77465f9",
+    "scripts/train_cem_refine.py": "0907a9f156725ec782c0fd2c6450f998d315af9c4850634730b59f2c8e689dff",
+    "scripts/cem_refine_queue.py": "cb89b3d2114d55bc60292f345b492fc618a484379abc3361ea51e00af33af94c",
+    "scripts/audit_cem_refine.py": "7d01e12092e22e2ca8999734f40651c9c7cbaf03e612b700b03ed3f647e6cf3c",
+    "tests/test_cem_refine.py": "42228d6b6a2f4d1f52b62f5d5c9a479916c52c4d12e104420455c25fc42fcf55",
+    "work/tracehr_cem_refine_20261023/expected.json": "4f9147fa292a6a16aaf336a42e439f1edc9a8d7bb528c2942f43970973e7f97f",
+    "work/tracehr_cem_refine_20261023/memory_entry.py": "cd35b569828689b465534aaf8c551e3d32a564f516ecf0bc36639d4668e850e4",
+    "models/cem_gate_location.py": "721ec02eade6f8808202726788cfcd1f2abe7ddd99b9b463a5342b7aff7b6d16",
+    "scripts/cem_gate_common.py": "9d4ae56072e02812b88256a04c648f49b3f8be45435c6b3eb1eb7afb0e168fda",
+    "scripts/train_cem_gate.py": "34c10e5af1dcbe46bdf2ab82f28ace0267e388ac8c4034d555e7dfcc0b458e02",
+    "scripts/cem_gate_queue.py": "becf717f1b678abdc2cb893f7b1ece53df76fe6274170a41dddf6ff71fdaf2fa",
+    "scripts/audit_cem_gate.py": "ef10499000b91b01d123eabf490bf7cddac86552c555211e06cd55417873c884",
+    "tests/test_cem_gate.py": "e042d2a389dad23fbc64610812d541bd9d6963704564e1aa4f8da1a721dbe70e",
+    "work/tracehr_cem_gate_20261023/expected.json": "3e26e592a5edeccad3f4fd47629de2ae19f9dd8282cdf55ddb357a1e67c5e85c",
+    "work/tracehr_cem_gate_20261023/memory_entry.py": "cd35b569828689b465534aaf8c551e3d32a564f516ecf0bc36639d4668e850e4",
+    "models/cem_gate_inputs.py": "347c744f749df53db596d735b80f6e8c67d0a1bb738f9ffddab47aaf128bd364",
+    "scripts/cem_gate_inputs_common.py": "451ed7a799b9ae867280c9783856f099e7502c051075371b72cc19cc10c56dfa",
+    "scripts/train_cem_gate_inputs.py": "9e711ddec05559a8335e94cd6bbd5653ecc97f7f43559c2ab31d8840f60709c0",
+    "scripts/cem_gate_inputs_queue.py": "d9f824a980ef5194bd7e9072c643933ad545773bf2e48a422ecbf1b5d3f14906",
+    "scripts/audit_cem_gate_inputs.py": "4bb54fbdee058fa953bde23f6b08c58667427faa652f517049efc33dd5102a96",
+    "tests/test_cem_gate_inputs.py": "0de67f49d823b08a10db6ef660e7fff53aeadafed84db0c572176fb50b7d570e",
+    "work/tracehr_cem_gate_inputs_20261023/expected.json": "38ab33d18c5cf14ced59c251d8764177d013dc5b9d180822a1aa672cc2ee2acb",
+    "work/tracehr_cem_gate_inputs_20261023/memory_entry.py": "cd35b569828689b465534aaf8c551e3d32a564f516ecf0bc36639d4668e850e4",
+    "models/cem_gate_start.py": "2f0ccb18ad8ce73840e4803f772dda89fe6d75feb1922e115c7905e0b1f229a8",
+    "scripts/cem_gate_start_common.py": "f5bd769ddd3d08be8b623caed11547fdac2d213b732f22927eeeeb8b1dc1a287",
+    "scripts/cem_gate_start_checks.py": "f5f95e5ec74c8320f26e71d381abff0e1de8653dc9efaf530a018082c71d781c",
+    "scripts/train_cem_gate_start.py": "1b5c024d8d52ef8d791a8098fcba9aaee630616cc74d33896bf88231108e6ac7",
+    "scripts/cem_gate_start_queue.py": "f73a23d5f49fbae49dd51f5894b6b8aa7fc9bc4a669b44ed267bd8023095e751",
+    "scripts/audit_cem_gate_start.py": "54925a93212cb747182589ffa54c2c477996a78331cc60d61128c456cadf9bb1",
+    "tests/test_cem_gate_start.py": "024b5421f7d4f0912d20fa4ab5bd98a3c5cfd26e196f8568cba01465700a7748",
+    "work/tracehr_cem_gate_start_20261023/expected.json": "afccf1227af5a80706b7bf8312b37b4e0f6ecd6792a97c993e569209b7f7566f",
+    "work/tracehr_cem_gate_start_20261023/memory_entry.py": "cd35b569828689b465534aaf8c551e3d32a564f516ecf0bc36639d4668e850e4",
+    "scripts/cem_v1_rate_common.py": "3e48a627ace86a34889a020059b53dbdc3e46fc16fdb42cba32c6b119278b7de",
+    "scripts/cem_v1_rate_checks.py": "cafb6992e9ee18935b324763ac2b87f114dcfdaea1c8ecdd43a78d20585f6f10",
+    "scripts/train_cem_v1_rate.py": "d758c277dd8b8eb0cef28c41ad97f8a2852fed44164baa256da943a9278c61d8",
+    "scripts/cem_v1_rate_queue.py": "56b9cc9f13f2d33425c297bd2d6a03f74dd42e2f20f77c9b0a94a698555b1eac",
+    "scripts/audit_cem_v1_rate.py": "619b9980550df6cf603790b4231ed663f1f159e97b69c777f3079e281a049b68",
+    "tests/test_cem_v1_rate.py": "0870e6e84831a1654ddda5425bdf2b8adae0cea6056f9fc5f7072bedef28da49",
+    "work/tracehr_cem_v1_rate_20261023/expected.json": "1d3aa91b219f2592241323a44d5ee69ade66cf0390f19f39ad9b807b82798587",
+    "work/tracehr_cem_v1_rate_20261023/memory_entry.py": "cd35b569828689b465534aaf8c551e3d32a564f516ecf0bc36639d4668e850e4"
+  },
+  "reference_aggregate": "F:\\Code\\Disease-Ranking-Hawkes-Mamba-0624\\runs\\tracehr_cem_v1_rate_20261023\\results_v1\\aggregates.json",
+  "reference_aggregate_sha256": "21c737f851b785ac86584c1b409e19c15e6cf3bc7f17d5eff9954d3a8e7a2708",
+  "preparation": "runs/tracehr_cem_structure_20261023/mimic/structure_v1/preparation",
+  "formal_fits": 2,
+  "database": "mimic",
+  "seeds": [
+    48
+  ],
+  "variants": [
+    "V1_group_rate"
+  ],
+  "structural_variant": "V1",
+  "encoder_rate": 0.0003,
+  "readout_rate": 0.00015,
+  "reference_fusion_rate": 0.0003,
+  "additional_fitting_authorized": false,
+  "test_loaded": false
+}

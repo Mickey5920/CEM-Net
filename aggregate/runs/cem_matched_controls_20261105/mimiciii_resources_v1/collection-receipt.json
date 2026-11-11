@@ -1,0 +1,22 @@
+{
+  "receipt": {
+    "complete": true,
+    "files": {
+      "verified-results.json": "907f70f22486266b8d12b472916d1624fb31a06328d07fe12f6027cfb0e68529"
+    }
+  },
+  "exit": {
+    "job_id": "matched_resources_mimiciii",
+    "wrapper_pid": 2392043,
+    "child_pid": 2392044,
+    "child_identity": {
+      "start_ticks": "191786241",
+      "state": "R",
+      "boot": "b71f789a-6443-4d31-a384-079f6507be54"
+    },
+    "source_manifest_sha256": "ea256dcab16970c1671308c9139c5381508441d26cfc9cad7a4726b36ec009e8",
+    "started_at": 1793881390.0141845,
+    "returncode": 0,
+    "finished_at": 1793881497.0720136
+  }
+}

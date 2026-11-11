@@ -10,10 +10,10 @@ Event tuples are deduplicated upstream. Training data determine the event vocabu
 
 Relevant supplied sources:
 
-- source/current_analysis/scripts/extract_tracehr_asof.py: source-time selection for MIMIC-IV/eICU.
-- source/current_analysis/scripts/extract_tracehr_numeric.py: numeric extraction and identity handling.
-- source/current_analysis/scripts/prepare_mimiciii_features.py: MIMIC-III profile preparation.
-- source/current_analysis/scripts/tracehr_exact_statistics.py: EventStatistics.add, merge and features.
+- code/scripts/extract_tracehr_asof.py: source-time selection for MIMIC-IV/eICU.
+- code/scripts/extract_tracehr_numeric.py: numeric extraction and identity handling.
+- code/scripts/prepare_mimiciii_features.py: MIMIC-III profile preparation.
+- code/scripts/tracehr_exact_statistics.py: EventStatistics.add, merge and features.
 
 For each event identity, the coordinates are log-count, occurrence, latest admissibility time divided by 24, and the sum of exponential recency weights with a 12-hour scale. The array stores these as four vocabulary-wide blocks, not interleaved groups of four. Source log-counts and proportions follow, then four global coordinates.
 
@@ -48,7 +48,7 @@ $$
 
 The factor $\tau$ from each integrated interval cancels the same factor in the full-window denominator. The duration_summary function computes interval masses in float64, multiplies by the basis matrix, normalizes, and returns float32. The 15 coordinates are ordered by $\tau=1,6,24$, with the five bases in the order above.
 
-Implementation: source/current_analysis/scripts/tracehr_value_features.py (basis, duration_summary, simple_summary); laboratory selection/scaling: build_tracehr_value_features.py and prepare_mimiciii_features.py in the same directory.
+Implementation: code/scripts/tracehr_value_features.py (basis, duration_summary, simple_summary); laboratory selection/scaling: build_tracehr_value_features.py and prepare_mimiciii_features.py in the same directory.
 
 Boundary behavior:
 
@@ -128,8 +128,8 @@ The paired_draws.npz and compressed loss-difference files contain aggregate metr
 
 Relevant sources:
 
-- source/current_analysis/scripts/cem_icde72_significance.py: centered p-values and Holm correction.
-- source/current_analysis/scripts/cem_probability_intervals.py: paired probability-loss statistics.
+- code/scripts/cem_icde72_significance.py: centered p-values and Holm correction.
+- code/scripts/cem_probability_intervals.py: paired probability-loss statistics.
 - source/frozen_core_five_seed_v1/local_analysis_v5/: frozen core extension analysis.
 - source/frozen_secondary_metrics_v1/source_v2/cem_secondary_metrics.py: the 24 secondary contrasts.
 - source/report_cem_secondary_metrics.py: their manuscript table.
@@ -147,7 +147,7 @@ Aggregate reproduction uses the root reproduce.py commands in the README. Clinic
 | Paired evaluation | Frozen statistics sources and saved family specifications | Per-seed metrics and paired aggregate intervals |
 | Tables and figures | Root reproduce.py render command | Paper displays from aggregate results |
 
-Some immutable snapshots use source_bundle.json: each value is a base64-encoded file keyed by its project-relative path. The accompanying source_manifest.json contains each decoded file's SHA256. Decode into a separate licensed-data workspace, reject absolute or parent-traversing paths, and verify hashes. Each snapshot is a distinct executed source state; mixing snapshots can invalidate recipe and provenance checks.
+Executed source snapshots share readable files in `code/` and `code_variants/`. `source_bundle.json` stores file links; `source_loader.py` resolves them and verifies the original `source_manifest.json` hashes. Use `python -B source_loader.py list` and `export` to materialize a selected database/stage recipe into a new licensed-data workspace.
 
 Archived launchers include original host paths, cached-input references and assertions against earlier manifests. Map these to a licensed-data environment and reconstruct their inputs before running workers. A fresh end-to-end clinical training replay was not performed during packaging; aggregate reconstruction is the verified entry point. No patient data, predictions, feature arrays or fitted weights are distributed.
 
@@ -156,3 +156,7 @@ Archived launchers include original host paths, cached-input references and asse
 Construction groups and orders admissible records, computes fixed-size reductions and materializes profiles. The stated $O(N\log N)$ bound includes sorting; output width is independent of history length. Event statistics merge after deduplication. Equal-time medians require complete groups, and duration segments require correct boundary values and times.
 
 Construction and prediction measurements are separate. Construction trials retain their stay counts and CPU setup; duration/window comparisons use the same inputs. Prediction measurements distinguish workflow processing from resident inference and retain measured batch sizes, precision and hardware. These results describe the measured workloads rather than unmeasured deployment throughput.
+
+## Preprocessing source locations
+
+The public `code/scripts/` directory includes the MIMIC-III cohort adapter, source-time extraction, numeric extraction, event-feature construction and laboratory summaries. The adapter imports the landmark-label helper through `LABEL_CODE`; point it to `code/preprocessing_helpers/build_mimiciv_exp2_cohort_labels_v2.py` together with its `mimiciv_utils.py` dependency. Source files retain the executed path and checksum conventions; map data/preparation paths for the licensed local installation.

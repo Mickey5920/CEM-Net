@@ -1,0 +1,34 @@
+{
+  "complete": true,
+  "formal_fits": 8,
+  "test_evaluations": 8,
+  "initials": {},
+  "archived_seed48": {
+    "SeFT:0": {
+      "initial_exact": true,
+      "parameters_exact": true
+    },
+    "SeFT:1": {
+      "initial_exact": true,
+      "parameters_exact": true
+    },
+    "mTAND_Enc:0": {
+      "initial_exact": true,
+      "parameters_exact": true
+    },
+    "mTAND_Enc:1": {
+      "initial_exact": true,
+      "parameters_exact": true
+    }
+  },
+  "test_loaded": false,
+  "cpu_checks": [
+    "other_gpu_requires_900_continuous_seconds",
+    "external_activity_resets_lease",
+    "observation_gap_resets_timer",
+    "preferred_pool_not_blocked_by_waiting_idle_timer"
+  ],
+  "original_preprocessing_preserved": true,
+  "source_manifest_sha256": "1752be7f8bb2b784333b2d3c3484947d1959c68575218fe1f2a94f5233252c32",
+  "verified_at": 1794058322.0669866
+}

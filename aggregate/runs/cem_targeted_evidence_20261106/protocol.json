@@ -1,0 +1,40 @@
+{
+  "seeds": [
+    48,
+    49,
+    50,
+    51,
+    52
+  ],
+  "new_training_fits": 51,
+  "original_model_results_and_manuscript_unchanged": true,
+  "evidence_tasks": {
+    "mimiciii": 1,
+    "mimic": 1,
+    "eicu": 0
+  },
+  "evidence_estimands": [
+    "CEM full-basic",
+    "matched full-basic",
+    "difference of the two gains"
+  ],
+  "evidence_family_size": 9,
+  "aggregation_estimand": "CEM duration AP minus same-basis observation-weighted AP",
+  "aggregation_family_size": 6,
+  "subgroup_definition": "training-median split of stay-level mean absolute time-mean minus observation-mean discrepancy, eligible labs >=2 observations and positive covered duration",
+  "subgroup_interaction": "high minus low paired AP gain, separately for duration-observation and duration-window",
+  "subgroup_family_size": 12,
+  "subgroup_simple_effect_family_size": 24,
+  "ineligible_group": "retained, descriptive",
+  "bootstrap_replicates": 20000,
+  "bootstrap_rng_seed": 20261027,
+  "resampling": "whole patients, paired across methods and strata",
+  "seed_aggregation": "mean of per-seed metrics and contrasts, no prediction pooling",
+  "intervals": "nominal95 and family Bonferroni",
+  "p_values": "null-centered paired bootstrap; complete-family Holm",
+  "prior_families": "unchanged",
+  "hyperparameter_search": false,
+  "selection": "original EMA validation AP and original cell budgets",
+  "weighting": "original 5 bases, 3 exponential time scales and coverage; replace duration measure with observation-point weighted mean",
+  "cost": "same host, input, cache state, record handling and implementation style; aggregate-only and laboratory-block end-to-end timings, peak process RSS; 128/512/2048 stays, three repetitions"
+}

@@ -1,0 +1,99 @@
+{
+  "complete": true,
+  "formal_fits": 6,
+  "test_evaluations": 6,
+  "initials": {
+    "CEM_basic:51:1": {
+      "initial_weights_sha256": "1c08afefeb1450f77a88aeecc498051a7c6cc17fa4a09c230f9de85d17571b67",
+      "parameters": 17124404,
+      "tensor_hashes": {
+        "base.input_members": "72446bc98bf837389baa14a6a2f2cd39bfc5e70a3f4db4863c7652626fe59e65",
+        "base.numerical.frequency": "9ab93697b01824d1d340c561aaca732d534933f14db6cc402a9f33b7a93ad543",
+        "base.numerical.phase": "e14fd4ede197d3e7d80bdc4fcafe89453cf70af74239be49040b24e27d7aa43e",
+        "base.numerical.weight": "1e713f336c2810820a776e43ec282f0965540be35d38b71a0e4ac16f1edb8086",
+        "base.numerical.bias": "866ec67f427442ce4324df8c810598f58f4ab90ef833dcc59f4e84e79a8370db",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.0.scale": "8c4922c8e3aea68a916a585d271580d03954e2a76821c0fba750498b1cb75631",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.1.weight": "61c697bb0ad5b4caeab0c84ca023662908dad391c9ebca89d673cb3d2cf31693",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.2.bias": "bfa5917f56e2de3ac28dfcbf42a635be03aa0579b68b8449aa3826d01fd99bde",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.3.weight": "893a106828fbdb9521e1d868c985aab7ad2ae2f606edc55329265a5e7676006c",
+        "base.net.tfms.1.tfms.0.tfms.1.tfms.0.weight": "02931520410bab5f497a0b9baf587d244089f8a8a158e767398cf779606e4006",
+        "base.net.tfms.1.tfms.0.tfms.1.tfms.1.bias": "5bf058afe66a043700ec907f038bf2923f40ed8bfc05980961fa3f20ac35a9e8",
+        "base.net.tfms.1.tfms.0.tfms.1.tfms.2.weight": "893a106828fbdb9521e1d868c985aab7ad2ae2f606edc55329265a5e7676006c",
+        "base.net.tfms.1.tfms.0.tfms.2.tfms.0.weight": "a252618f748fab46834284f1142186792e1820ae4538b477ad4d37e24b407e15",
+        "base.net.tfms.1.tfms.0.tfms.2.tfms.1.bias": "6226028ab683165dd0b64d67d08e982d38559593d310ec6a7b725b556b71d1f0",
+        "base.net.tfms.1.tfms.0.tfms.2.tfms.2.weight": "893a106828fbdb9521e1d868c985aab7ad2ae2f606edc55329265a5e7676006c",
+        "base.net.tfms.1.tfms.0.tfms.3.tfms.0.weight": "8d835ffbf2670ca1d0294b8c80468ecd406697adb0dbc4986608ddec76859d1f",
+        "base.net.tfms.1.tfms.0.tfms.3.tfms.1.bias": "59929357ad6719d4fbfdecef47657bbd1d5678462933449e377cfe25f51418c1"
+      },
+      "buffer_hashes": {
+        "base.feature_map": "aa0200e4ff34e2dd591b750f74c20ed4baeb496b0ae974c2644aba7315a5197a",
+        "base.encoded_center": "b28c0c67cc0618a0546b27aba1c8d10133104fb06604b02a57c615804db542f3",
+        "base.numerical.center": "799d82a215e9f3b9e5cc91ec126b0b9a2cd8f873c7c4692c264a3fa5d4613e7e",
+        "base.numerical.factor": "2c80ece1f926a1326d60c16603411b7e53635cffd8dd784138bc91bf0c1fb038",
+        "base.numerical.binary": "d9be1f0a24898758b2aa097ddee05fb69a03bdbca56c08768ecd4b71b28e8dc3",
+        "base.numerical.numeric_indices": "3d7ec85a6ae8674b85cab66a5fb57e67a9bc0f07f34c0a86064a448091d2a269",
+        "base.numerical.passthrough": "d9be1f0a24898758b2aa097ddee05fb69a03bdbca56c08768ecd4b71b28e8dc3",
+        "base.numerical.removed_raw_columns": "c7390bcad34afbcf96a5b40f554636094b4f971330ff6a24922c061fc4b0dee9",
+        "base.numerical.removed_encoded_columns": "caac87420159aa44cc865d1e9ff8e09a5504ddf52820f073dc488e81fa4f6fab"
+      }
+    },
+    "CEM_basic:52:1": {
+      "initial_weights_sha256": "1f2a4c937b9c0258e6c5c10300808f23e7c3aa63511779f83c2084c169f31695",
+      "parameters": 17124404,
+      "tensor_hashes": {
+        "base.input_members": "c3fcae7499c11973b1a4b83beb25f02e2938b269da53b151a9ac606cfaff97aa",
+        "base.numerical.frequency": "e794770ab3676777cceb20ea0a4d0bcea7d4c0c285a27255cb3f64fb369c61bd",
+        "base.numerical.phase": "2c19910236dc3cdfaf2ca39525c7228735203d655afff367ade7daf1c2c49c4b",
+        "base.numerical.weight": "996313510b59f5da65064c29a3ef0bb2fb4d7f54f0dbbc6a90fd77b2433006fd",
+        "base.numerical.bias": "5c43f5755da2f404bc641e5042b1e6de351cf9c632b50fde4b219a9d18f83b44",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.0.scale": "8c4922c8e3aea68a916a585d271580d03954e2a76821c0fba750498b1cb75631",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.1.weight": "b540ebf6a32567fa9ca077b6685d0448780ccfccac7ec0dbc1484fb2061ced31",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.2.bias": "d7ca29de01573ff0b2ec32a0d558870794aa0fd3e234f68a4aef956f35765db0",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.3.weight": "893a106828fbdb9521e1d868c985aab7ad2ae2f606edc55329265a5e7676006c",
+        "base.net.tfms.1.tfms.0.tfms.1.tfms.0.weight": "9950411c4034b7594ecfb4ca14dafefd90d907703bcdb1a3fa1b07be2938301d",
+        "base.net.tfms.1.tfms.0.tfms.1.tfms.1.bias": "5ab40f28e1e35941e0d6978b18ae9923ecf822b61db46def3bce6eb765e6e9b0",
+        "base.net.tfms.1.tfms.0.tfms.1.tfms.2.weight": "893a106828fbdb9521e1d868c985aab7ad2ae2f606edc55329265a5e7676006c",
+        "base.net.tfms.1.tfms.0.tfms.2.tfms.0.weight": "914a8f98b44cfc1872a7aba4e9b100687a15af3a2db5db87ef255f3826ce49d2",
+        "base.net.tfms.1.tfms.0.tfms.2.tfms.1.bias": "578d8115bf38b5f77b2a07e6ecf4072e0c6778ac286b0fb65d3cab4772ca9141",
+        "base.net.tfms.1.tfms.0.tfms.2.tfms.2.weight": "893a106828fbdb9521e1d868c985aab7ad2ae2f606edc55329265a5e7676006c",
+        "base.net.tfms.1.tfms.0.tfms.3.tfms.0.weight": "70ea7ce86f47a80e22858da99f26313db68426d75ebb507da3432a5addb19751",
+        "base.net.tfms.1.tfms.0.tfms.3.tfms.1.bias": "701af71b1c873647ef16552547019418377051c5b31bbf5f971bd16c13d63de1"
+      },
+      "buffer_hashes": {
+        "base.feature_map": "aa0200e4ff34e2dd591b750f74c20ed4baeb496b0ae974c2644aba7315a5197a",
+        "base.encoded_center": "513ee9cbe198dc2cd744b3de056c50bcc28c5d24c5cdeddf0c0956b270eb7572",
+        "base.numerical.center": "799d82a215e9f3b9e5cc91ec126b0b9a2cd8f873c7c4692c264a3fa5d4613e7e",
+        "base.numerical.factor": "2c80ece1f926a1326d60c16603411b7e53635cffd8dd784138bc91bf0c1fb038",
+        "base.numerical.binary": "d9be1f0a24898758b2aa097ddee05fb69a03bdbca56c08768ecd4b71b28e8dc3",
+        "base.numerical.numeric_indices": "3d7ec85a6ae8674b85cab66a5fb57e67a9bc0f07f34c0a86064a448091d2a269",
+        "base.numerical.passthrough": "d9be1f0a24898758b2aa097ddee05fb69a03bdbca56c08768ecd4b71b28e8dc3",
+        "base.numerical.removed_raw_columns": "c7390bcad34afbcf96a5b40f554636094b4f971330ff6a24922c061fc4b0dee9",
+        "base.numerical.removed_encoded_columns": "caac87420159aa44cc865d1e9ff8e09a5504ddf52820f073dc488e81fa4f6fab"
+      }
+    }
+  },
+  "archived_seed48": {
+    "CEM_basic:1": {
+      "initial_exact": true,
+      "protocol_exact": true
+    },
+    "TabM_mini_PLE_basic:0": {
+      "initial_exact": true,
+      "parameters_exact": true
+    },
+    "TabM_mini_PLE_basic:1": {
+      "initial_exact": true,
+      "parameters_exact": true
+    }
+  },
+  "test_loaded": false,
+  "cpu_checks": [
+    "other_gpu_requires_900_continuous_seconds",
+    "external_activity_resets_lease",
+    "observation_gap_resets_timer",
+    "preferred_pool_not_blocked_by_waiting_idle_timer"
+  ],
+  "original_preprocessing_preserved": true,
+  "source_manifest_sha256": "8e922b4affdc66a31fc52bc55acd39938c25f8009ecefcbe3ac4cf6275cbb878",
+  "verified_at": 1794058193.1263134
+}

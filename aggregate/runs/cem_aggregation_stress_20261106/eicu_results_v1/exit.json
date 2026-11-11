@@ -1,0 +1,14 @@
+{
+  "job_id": "cem_aggregation_stress_20261106_eicu",
+  "wrapper_pid": 1667933,
+  "child_pid": 1667934,
+  "child_identity": {
+    "start_ticks": "64571135",
+    "state": "R",
+    "boot": "8123672c-cb85-4243-be25-70318f0e0750"
+  },
+  "source_manifest_sha256": "12a8a88c5ca4bc4ea2e4956294d890260575d5d60fc41e4a485c8cf24a6171fb",
+  "started_at": 1793904400.79661,
+  "returncode": 0,
+  "finished_at": 1793907371.0578525
+}

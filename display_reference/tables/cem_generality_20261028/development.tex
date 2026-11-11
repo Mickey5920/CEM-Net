@@ -1,0 +1,23 @@
+\begin{table*}[tp]
+\centering\footnotesize
+\setlength{\tabcolsep}{3pt}
+\caption{Validation AP (mean $\pm$ sample SD, seeds 48--50). The eight comparators form the fixed paired baseline pool. Bold and underlining mark the largest and second-largest unrounded means. ReLU-response and other internal controls are reported separately.}
+\label{tab:development}
+\begin{tabular}{lrrrrrr}
+\toprule
+& \multicolumn{2}{c}{MIMIC-III} & \multicolumn{2}{c}{MIMIC-IV} & \multicolumn{2}{c}{eICU} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}\cmidrule(lr){6-7}
+Method & Mortality & LOS & Mortality & LOS & Mortality & LOS \\
+\midrule
+RealMLP & $0.4577\,\pm\,0.0078$ & $0.5237\,\pm\,0.0036$ & $0.5292\,\pm\,0.0052$ & $0.5459\,\pm\,0.0010$ & $0.4169\,\pm\,0.0021$ & $0.3861\,\pm\,0.0010$ \\
+TabM & $0.4676\,\pm\,0.0025$ & $0.5233\,\pm\,0.0012$ & $0.5263\,\pm\,0.0015$ & $0.5451\,\pm\,0.0020$ & $0.4132\,\pm\,0.0008$ & $0.3886\,\pm\,0.0022$ \\
+TabM-mini & $0.4655\,\pm\,0.0010$ & $\underline{0.5238\,\pm\,0.0020}$ & $0.5270\,\pm\,0.0019$ & $0.5451\,\pm\,0.0017$ & $0.4131\,\pm\,0.0008$ & $0.3901\,\pm\,0.0013$ \\
+TabM-mini+PLE & $0.4725\,\pm\,0.0029$ & $0.5231\,\pm\,0.0030$ & $0.5315\,\pm\,0.0011$ & $0.5525\,\pm\,0.0012$ & $\mathbf{0.4360\,\pm\,0.0036}$ & $\mathbf{0.4003\,\pm\,0.0017}$ \\
+TabM+PLE & $\underline{0.4745\,\pm\,0.0021}$ & $0.5233\,\pm\,0.0017$ & $\underline{0.5337\,\pm\,0.0020}$ & $\underline{0.5540\,\pm\,0.0021}$ & $\underline{0.4356\,\pm\,0.0019}$ & $\underline{0.4003\,\pm\,0.0009}$ \\
+SeFT & $0.4045\,\pm\,0.0083$ & $0.4844\,\pm\,0.0030$ & $0.4660\,\pm\,0.0052$ & $0.4976\,\pm\,0.0003$ & $0.3302\,\pm\,0.0063$ & $0.3459\,\pm\,0.0056$ \\
+GRU-D & $0.1360\,\pm\,0.0292$ & $0.3012\,\pm\,0.0477$ & $0.1950\,\pm\,0.0154$ & $0.3001\,\pm\,0.0274$ & $0.0631\,\pm\,0.0148$ & $0.1252\,\pm\,0.0094$ \\
+mTAND encoder & $0.4259\,\pm\,0.0059$ & $0.4993\,\pm\,0.0004$ & $0.4802\,\pm\,0.0026$ & $0.5211\,\pm\,0.0021$ & $0.3726\,\pm\,0.0012$ & $0.3610\,\pm\,0.0029$ \\
+CEM-Net & $\mathbf{0.4895\,\pm\,0.0013}$ & $\mathbf{0.5318\,\pm\,0.0027}$ & $\mathbf{0.5432\,\pm\,0.0036}$ & $\mathbf{0.5548\,\pm\,0.0021}$ & $0.4322\,\pm\,0.0020$ & $0.3992\,\pm\,0.0018$ \\
+\bottomrule
+\end{tabular}
+\end{table*}

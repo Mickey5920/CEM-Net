@@ -1,0 +1,86 @@
+{
+  "database": "mimic",
+  "stage": "tabular",
+  "stage_order": 5,
+  "source": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/work/cem_core_five_seed_20261107/mimic/tabular_v1",
+  "output": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_core_five_seed_20261107/mimic/tabular_v1/screen",
+  "source_manifest_sha256": "109fc974626eed4c79e4c379be70ac5fc5dc6187eb0b6a7863360477f4ec5a6d",
+  "matrix": [
+    {
+      "variant": "TabM_mini_PLE",
+      "seed": 51,
+      "endpoint": 0
+    },
+    {
+      "variant": "TabM_mini_PLE",
+      "seed": 52,
+      "endpoint": 0
+    },
+    {
+      "variant": "TabM_mini",
+      "seed": 51,
+      "endpoint": 0
+    },
+    {
+      "variant": "TabM_mini",
+      "seed": 52,
+      "endpoint": 0
+    },
+    {
+      "variant": "LightGBM_full",
+      "seed": 51,
+      "endpoint": 0
+    },
+    {
+      "variant": "LightGBM_full",
+      "seed": 52,
+      "endpoint": 0
+    },
+    {
+      "variant": "TabM_mini_PLE",
+      "seed": 51,
+      "endpoint": 1
+    },
+    {
+      "variant": "TabM_mini_PLE",
+      "seed": 52,
+      "endpoint": 1
+    },
+    {
+      "variant": "TabM_mini",
+      "seed": 51,
+      "endpoint": 1
+    },
+    {
+      "variant": "TabM_mini",
+      "seed": 52,
+      "endpoint": 1
+    },
+    {
+      "variant": "LightGBM_full",
+      "seed": 51,
+      "endpoint": 1
+    },
+    {
+      "variant": "LightGBM_full",
+      "seed": 52,
+      "endpoint": 1
+    }
+  ],
+  "variants": [
+    "LightGBM_full",
+    "TabM_mini",
+    "TabM_mini_PLE"
+  ],
+  "entries": {
+    "tree": "scripts/cem_core_five_seed_entry.py",
+    "cem": "scripts/cem_core_five_seed_entry.py",
+    "tabular": "scripts/cem_core_five_seed_entry.py"
+  },
+  "expected_gib": 22.0,
+  "retention_multiplier": 3,
+  "min_available_ram_gib": 24,
+  "cpu_min_available_ram_gib": 24,
+  "probe_gpu_mib": 24576,
+  "probe_requirement_basis": "conservative headroom above archived measurements; bounded original-path probe before formal fits"
+}

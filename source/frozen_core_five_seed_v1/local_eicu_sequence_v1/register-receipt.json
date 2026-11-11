@@ -1,0 +1,65 @@
+{
+  "database": "eicu",
+  "stage": "sequence",
+  "stage_order": 2,
+  "source": "/home/data/lxm/TRACEHR/work/cem_core_five_seed_20261107/eicu/sequence_v1",
+  "output": "/home/data/lxm/TRACEHR/runs/cem_core_five_seed_20261107/eicu/sequence_v1/screen",
+  "source_manifest_sha256": "6e5ae6828423538160a4315b8da143a2cc4e2ebe7d956b3e6c0f494e4a8ea601",
+  "matrix": [
+    {
+      "variant": "SeFT",
+      "seed": 51,
+      "endpoint": 0
+    },
+    {
+      "variant": "SeFT",
+      "seed": 52,
+      "endpoint": 0
+    },
+    {
+      "variant": "mTAND_Enc",
+      "seed": 51,
+      "endpoint": 0
+    },
+    {
+      "variant": "mTAND_Enc",
+      "seed": 52,
+      "endpoint": 0
+    },
+    {
+      "variant": "SeFT",
+      "seed": 51,
+      "endpoint": 1
+    },
+    {
+      "variant": "SeFT",
+      "seed": 52,
+      "endpoint": 1
+    },
+    {
+      "variant": "mTAND_Enc",
+      "seed": 51,
+      "endpoint": 1
+    },
+    {
+      "variant": "mTAND_Enc",
+      "seed": 52,
+      "endpoint": 1
+    }
+  ],
+  "variants": [
+    "SeFT",
+    "mTAND_Enc"
+  ],
+  "entries": {
+    "tree": "scripts/cem_core_five_seed_entry.py",
+    "cem": "scripts/cem_core_five_seed_entry.py",
+    "tabular": "scripts/cem_core_five_seed_entry.py"
+  },
+  "expected_gib": 6.0,
+  "retention_multiplier": 3,
+  "min_available_ram_gib": 24,
+  "cpu_min_available_ram_gib": 24,
+  "probe_gpu_mib": 24576,
+  "probe_requirement_basis": "conservative headroom above archived measurements; bounded original-path probe before formal fits"
+}

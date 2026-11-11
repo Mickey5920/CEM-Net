@@ -1,0 +1,38 @@
+{
+  "cnn": {
+    "pid": 35120,
+    "guard_pid": 30356,
+    "task": "CEM-CNN-Continuation-20261104",
+    "worker_started_utc": "2026-11-03T16:24:21.1904739Z",
+    "old_attempt_sha256": "ff538f2d183373ef63ce660592ea89e8fcb9c221eaf55c69beb269d8f8684972",
+    "old_progress_sha256": "5c244f5be78fd28ac087eb5d96b748da4c4c4c13352bdce4a6183742d8b730cd",
+    "children_at_stop": [],
+    "stopped_local_monitor_only": true,
+    "stop_requested_utc": "2026-11-03T16:59:47.7398683+00:00",
+    "genuine_worker_exit_code": -1,
+    "genuine_guard_exit_code": null,
+    "prior_guard_stopped_by_task_scheduler": true,
+    "task_last_result": 267014,
+    "training_restarts": 0,
+    "statistics_restarts": 0,
+    "original_journal_unchanged": true
+  },
+  "medformer": {
+    "pid": 37912,
+    "guard_pid": 29296,
+    "task": "CEM-Medformer-Continuation-20261104",
+    "worker_started_utc": "2026-11-03T16:24:45.7456939Z",
+    "old_attempt_sha256": "e16331c2d60b7d42f4eb04640c5a15b8c5c7ab8371450d45baaac68a3d1f79fa",
+    "old_progress_sha256": "4f74f79c43f68e5f195dbfeffb6922b787ec6565e503b73a7b28a247c3966381",
+    "children_at_stop": [],
+    "stopped_local_monitor_only": true,
+    "stop_requested_utc": "2026-11-03T16:59:49.1437759+00:00",
+    "genuine_worker_exit_code": -1,
+    "genuine_guard_exit_code": -1,
+    "prior_guard_stopped_by_task_scheduler": false,
+    "task_last_result": 4294967295,
+    "training_restarts": 0,
+    "statistics_restarts": 0,
+    "original_journal_unchanged": true
+  }
+}

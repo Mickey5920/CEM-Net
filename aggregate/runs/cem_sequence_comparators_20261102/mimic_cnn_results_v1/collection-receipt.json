@@ -1,0 +1,23 @@
+{
+  "receipt": {
+    "complete": true,
+    "files": {
+      "verified-results.json": "1faad1656558658bf1987ddb77e034d5fecc4e6ebb144ef230828747869c0221",
+      "RESULTS.md": "68a9bd37e8b904167e0dfecf6c3d79410f857095a4290a260744f066ecb3c6d0"
+    }
+  },
+  "exit": {
+    "job_id": "sequence_cnn_statistics_mimic",
+    "wrapper_pid": 3393114,
+    "child_pid": 3393115,
+    "child_identity": {
+      "start_ticks": "178772406",
+      "state": "R",
+      "boot": "b71f789a-6443-4d31-a384-079f6507be54"
+    },
+    "source_manifest_sha256": "f903f379219962895122d46450a18c2406ea0d9c1ed159fdc8106bb431dc637d",
+    "started_at": 1793751251.6664734,
+    "returncode": 0,
+    "finished_at": 1793751613.3512363
+  }
+}

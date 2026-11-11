@@ -1,0 +1,23 @@
+{
+  "receipt": {
+    "complete": true,
+    "files": {
+      "verified-results.json": "6666017cb6612069976a642bdf23a61c0cce798dae6f73c91114e072592055cc",
+      "paired_draws.npz": "5e82757f798a38ae5816b1517d853007c0d08c3b5d40356c0a6520b23f9b9fd8"
+    }
+  },
+  "exit": {
+    "job_id": "matched_statistics_mimic",
+    "wrapper_pid": 2550020,
+    "child_pid": 2550021,
+    "child_identity": {
+      "start_ticks": "193110565",
+      "state": "R",
+      "boot": "b71f789a-6443-4d31-a384-079f6507be54"
+    },
+    "source_manifest_sha256": "99ba722796523cd90deb6d1d0dbb819062b8e09e8b7607aba4bbc273ea4779c5",
+    "started_at": 1793894633.2475471,
+    "returncode": 0,
+    "finished_at": 1793894839.4735086
+  }
+}

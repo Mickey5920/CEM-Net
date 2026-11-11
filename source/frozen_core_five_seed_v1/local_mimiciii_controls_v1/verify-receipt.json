@@ -1,0 +1,679 @@
+{
+  "complete": true,
+  "formal_fits": 20,
+  "test_evaluations": 20,
+  "initials": {
+    "EMA_noM:51:0": {
+      "initial_weights_sha256": "dd53ec0e94cb1e9734f7d07c2b085c99aa2780c54dc56f26301956df53b73f08",
+      "parameters": 12542944,
+      "tensor_hashes": {
+        "base.numerical.frequency": "2e2581e93bae008b839acbc7267ae0ab70b7965edbd190ca5c54e3d87476ac61",
+        "base.numerical.phase": "1f2e598ed75ec4a3a27ffa05a3325de57e40d7100b5e82d82a6fcbcc869f4397",
+        "base.numerical.weight": "4b79b2d88048b461f135cfe70cb7e2308885fc912421e446fad9765d1261ed29",
+        "base.numerical.bias": "48533e540d90e4ab41f6c7b64780c1ac5d062282a8ac87b8e353c474725f5f70",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.0.scale": "92fb85ffe6fd8757cac6a2d8031d470f072204a2f961447bb05066aa7131ce08",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.1.weight": "176293b6df29dc95c0f75eb2393599229b9ecd7bb62b9092454c105b04443e30",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.2.bias": "3933debc6ed9d5a9d520d9b86cafa76590793921ec98596d3d507bdec17d72cd",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.3.weight": "893a106828fbdb9521e1d868c985aab7ad2ae2f606edc55329265a5e7676006c",
+        "base.net.tfms.1.tfms.0.tfms.1.tfms.0.weight": "1f7d42e26d83ed4776435d05d4c1e05f53f21179e136ddfae0f32ddce1651013",
+        "base.net.tfms.1.tfms.0.tfms.1.tfms.1.bias": "a119f9f7dc51f38ff181b2a5e4a8d860a759194fd86b7cb9b4880badccf50cdd",
+        "base.net.tfms.1.tfms.0.tfms.1.tfms.2.weight": "893a106828fbdb9521e1d868c985aab7ad2ae2f606edc55329265a5e7676006c",
+        "base.net.tfms.1.tfms.0.tfms.2.tfms.0.weight": "04cf5cd58913861f5cf53bddea8974771afc09af8a99914897f33b6d4bb7c292",
+        "base.net.tfms.1.tfms.0.tfms.2.tfms.1.bias": "fb2ece52533596bce84424387cd08f706b4ffbee52653a02a32f3a46f4718d17",
+        "base.net.tfms.1.tfms.0.tfms.2.tfms.2.weight": "893a106828fbdb9521e1d868c985aab7ad2ae2f606edc55329265a5e7676006c",
+        "base.net.tfms.1.tfms.0.tfms.3.tfms.0.weight": "08cd39aaac87b77bf71ed1d3840ae5fd8ad064896928f4318aa6648af60859d6",
+        "base.net.tfms.1.tfms.0.tfms.3.tfms.1.bias": "d73e897a36b25a16c132b17f0e8fba76bd23db6977566a54dd152ac7a2c2baae"
+      },
+      "buffer_hashes": {
+        "base.feature_map": "4714a853e8cd3b87caa0caff4ddb93e373b6dcf586125344de78eef0523d973f",
+        "base.encoded_center": "9036914db6e0df8d8037f8676465fea4ccb5cad8b2793ec0935831a080fb63f7",
+        "base.numerical.center": "f1e76e9c6397ad5320a943b7918811a10de6f2d20188a2de1ab41a50d01adbb0",
+        "base.numerical.factor": "8b694f8cc21604dac4a2e6ec367f0b9507208814c9599f50e116d9ec082baf43",
+        "base.numerical.binary": "3ce4aeb911a9cc740f5f17ea1b135a0f41f0f65d08ed1c3822c6e1321dc328c5",
+        "base.numerical.numeric_indices": "9b75fce053bf6300f47645683e67cf27be9269f92c00dc99525d73ad3d75a821",
+        "base.numerical.passthrough": "3ce4aeb911a9cc740f5f17ea1b135a0f41f0f65d08ed1c3822c6e1321dc328c5"
+      }
+    },
+    "EMA_noM:52:0": {
+      "initial_weights_sha256": "a3627564633b087a8260df4963e42be1e5604424b8000b9486b3818e191da18a",
+      "parameters": 12542944,
+      "tensor_hashes": {
+        "base.numerical.frequency": "e4adcd242391bb0b9be99159210b206e874d453e744a9415d11a88a4a919e2d6",
+        "base.numerical.phase": "58fac4f9f7148cfdc1b3c34c4d1ff2cbe73d93bd1759fb6110227c95cc4aa716",
+        "base.numerical.weight": "1baf76e745dd4d2f56b86933c1dc7a9a38d18b4cf0ecbace7d5a37c3df3fa150",
+        "base.numerical.bias": "d7548438c6e8bb96a356fca8031d9f785edc380a1dce270c055f8a0fc53b883e",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.0.scale": "92fb85ffe6fd8757cac6a2d8031d470f072204a2f961447bb05066aa7131ce08",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.1.weight": "ce9012151911c6f44fbf4878a57b1870543f62f9e9d5d0402a7836ed3e71deb1",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.2.bias": "e2f935596c5e1e4c6bc0d2f86fc8acff31a5eedc64f041f395289e3eb8a07b7b",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.3.weight": "893a106828fbdb9521e1d868c985aab7ad2ae2f606edc55329265a5e7676006c",
+        "base.net.tfms.1.tfms.0.tfms.1.tfms.0.weight": "9cbfa5f7c71521781363e83db9eaf82578b7a9440d9fe95b62f413dc247dd8b2",
+        "base.net.tfms.1.tfms.0.tfms.1.tfms.1.bias": "d041657eb85f7b6a03beeb4b212a2fea1d1962390980762c98c9ae80055b18e3",
+        "base.net.tfms.1.tfms.0.tfms.1.tfms.2.weight": "893a106828fbdb9521e1d868c985aab7ad2ae2f606edc55329265a5e7676006c",
+        "base.net.tfms.1.tfms.0.tfms.2.tfms.0.weight": "ba958fe854aad840d9cdf50f73fe4e78cacc6d7b1f00adb511e4304e213fce9a",
+        "base.net.tfms.1.tfms.0.tfms.2.tfms.1.bias": "8d9a35ed72100b6f7ddc77a140ac8f421ecc1b657f2e38aa2da8d683cb89ecf1",
+        "base.net.tfms.1.tfms.0.tfms.2.tfms.2.weight": "893a106828fbdb9521e1d868c985aab7ad2ae2f606edc55329265a5e7676006c",
+        "base.net.tfms.1.tfms.0.tfms.3.tfms.0.weight": "3fe0bcde9701ba3b7be19d437ce8746007e317e7beadd2eb7d34dd8ac10775c6",
+        "base.net.tfms.1.tfms.0.tfms.3.tfms.1.bias": "df8e9823047d843e2525d50d0b50e9ad1268fa317bbcdc3770daf83e58109290"
+      },
+      "buffer_hashes": {
+        "base.feature_map": "4714a853e8cd3b87caa0caff4ddb93e373b6dcf586125344de78eef0523d973f",
+        "base.encoded_center": "d1cef07fa763ebfa8effa9d2a7cef7c6ccca2c06f4f09734c436e2581d8ddfd9",
+        "base.numerical.center": "f1e76e9c6397ad5320a943b7918811a10de6f2d20188a2de1ab41a50d01adbb0",
+        "base.numerical.factor": "8b694f8cc21604dac4a2e6ec367f0b9507208814c9599f50e116d9ec082baf43",
+        "base.numerical.binary": "3ce4aeb911a9cc740f5f17ea1b135a0f41f0f65d08ed1c3822c6e1321dc328c5",
+        "base.numerical.numeric_indices": "9b75fce053bf6300f47645683e67cf27be9269f92c00dc99525d73ad3d75a821",
+        "base.numerical.passthrough": "3ce4aeb911a9cc740f5f17ea1b135a0f41f0f65d08ed1c3822c6e1321dc328c5"
+      }
+    },
+    "EMA_noM:51:1": {
+      "initial_weights_sha256": "dd53ec0e94cb1e9734f7d07c2b085c99aa2780c54dc56f26301956df53b73f08",
+      "parameters": 12542944,
+      "tensor_hashes": {
+        "base.numerical.frequency": "2e2581e93bae008b839acbc7267ae0ab70b7965edbd190ca5c54e3d87476ac61",
+        "base.numerical.phase": "1f2e598ed75ec4a3a27ffa05a3325de57e40d7100b5e82d82a6fcbcc869f4397",
+        "base.numerical.weight": "4b79b2d88048b461f135cfe70cb7e2308885fc912421e446fad9765d1261ed29",
+        "base.numerical.bias": "48533e540d90e4ab41f6c7b64780c1ac5d062282a8ac87b8e353c474725f5f70",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.0.scale": "92fb85ffe6fd8757cac6a2d8031d470f072204a2f961447bb05066aa7131ce08",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.1.weight": "176293b6df29dc95c0f75eb2393599229b9ecd7bb62b9092454c105b04443e30",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.2.bias": "3933debc6ed9d5a9d520d9b86cafa76590793921ec98596d3d507bdec17d72cd",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.3.weight": "893a106828fbdb9521e1d868c985aab7ad2ae2f606edc55329265a5e7676006c",
+        "base.net.tfms.1.tfms.0.tfms.1.tfms.0.weight": "1f7d42e26d83ed4776435d05d4c1e05f53f21179e136ddfae0f32ddce1651013",
+        "base.net.tfms.1.tfms.0.tfms.1.tfms.1.bias": "a119f9f7dc51f38ff181b2a5e4a8d860a759194fd86b7cb9b4880badccf50cdd",
+        "base.net.tfms.1.tfms.0.tfms.1.tfms.2.weight": "893a106828fbdb9521e1d868c985aab7ad2ae2f606edc55329265a5e7676006c",
+        "base.net.tfms.1.tfms.0.tfms.2.tfms.0.weight": "04cf5cd58913861f5cf53bddea8974771afc09af8a99914897f33b6d4bb7c292",
+        "base.net.tfms.1.tfms.0.tfms.2.tfms.1.bias": "fb2ece52533596bce84424387cd08f706b4ffbee52653a02a32f3a46f4718d17",
+        "base.net.tfms.1.tfms.0.tfms.2.tfms.2.weight": "893a106828fbdb9521e1d868c985aab7ad2ae2f606edc55329265a5e7676006c",
+        "base.net.tfms.1.tfms.0.tfms.3.tfms.0.weight": "08cd39aaac87b77bf71ed1d3840ae5fd8ad064896928f4318aa6648af60859d6",
+        "base.net.tfms.1.tfms.0.tfms.3.tfms.1.bias": "d73e897a36b25a16c132b17f0e8fba76bd23db6977566a54dd152ac7a2c2baae"
+      },
+      "buffer_hashes": {
+        "base.feature_map": "4714a853e8cd3b87caa0caff4ddb93e373b6dcf586125344de78eef0523d973f",
+        "base.encoded_center": "9036914db6e0df8d8037f8676465fea4ccb5cad8b2793ec0935831a080fb63f7",
+        "base.numerical.center": "f1e76e9c6397ad5320a943b7918811a10de6f2d20188a2de1ab41a50d01adbb0",
+        "base.numerical.factor": "8b694f8cc21604dac4a2e6ec367f0b9507208814c9599f50e116d9ec082baf43",
+        "base.numerical.binary": "3ce4aeb911a9cc740f5f17ea1b135a0f41f0f65d08ed1c3822c6e1321dc328c5",
+        "base.numerical.numeric_indices": "9b75fce053bf6300f47645683e67cf27be9269f92c00dc99525d73ad3d75a821",
+        "base.numerical.passthrough": "3ce4aeb911a9cc740f5f17ea1b135a0f41f0f65d08ed1c3822c6e1321dc328c5"
+      }
+    },
+    "EMA_noM:52:1": {
+      "initial_weights_sha256": "a3627564633b087a8260df4963e42be1e5604424b8000b9486b3818e191da18a",
+      "parameters": 12542944,
+      "tensor_hashes": {
+        "base.numerical.frequency": "e4adcd242391bb0b9be99159210b206e874d453e744a9415d11a88a4a919e2d6",
+        "base.numerical.phase": "58fac4f9f7148cfdc1b3c34c4d1ff2cbe73d93bd1759fb6110227c95cc4aa716",
+        "base.numerical.weight": "1baf76e745dd4d2f56b86933c1dc7a9a38d18b4cf0ecbace7d5a37c3df3fa150",
+        "base.numerical.bias": "d7548438c6e8bb96a356fca8031d9f785edc380a1dce270c055f8a0fc53b883e",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.0.scale": "92fb85ffe6fd8757cac6a2d8031d470f072204a2f961447bb05066aa7131ce08",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.1.weight": "ce9012151911c6f44fbf4878a57b1870543f62f9e9d5d0402a7836ed3e71deb1",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.2.bias": "e2f935596c5e1e4c6bc0d2f86fc8acff31a5eedc64f041f395289e3eb8a07b7b",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.3.weight": "893a106828fbdb9521e1d868c985aab7ad2ae2f606edc55329265a5e7676006c",
+        "base.net.tfms.1.tfms.0.tfms.1.tfms.0.weight": "9cbfa5f7c71521781363e83db9eaf82578b7a9440d9fe95b62f413dc247dd8b2",
+        "base.net.tfms.1.tfms.0.tfms.1.tfms.1.bias": "d041657eb85f7b6a03beeb4b212a2fea1d1962390980762c98c9ae80055b18e3",
+        "base.net.tfms.1.tfms.0.tfms.1.tfms.2.weight": "893a106828fbdb9521e1d868c985aab7ad2ae2f606edc55329265a5e7676006c",
+        "base.net.tfms.1.tfms.0.tfms.2.tfms.0.weight": "ba958fe854aad840d9cdf50f73fe4e78cacc6d7b1f00adb511e4304e213fce9a",
+        "base.net.tfms.1.tfms.0.tfms.2.tfms.1.bias": "8d9a35ed72100b6f7ddc77a140ac8f421ecc1b657f2e38aa2da8d683cb89ecf1",
+        "base.net.tfms.1.tfms.0.tfms.2.tfms.2.weight": "893a106828fbdb9521e1d868c985aab7ad2ae2f606edc55329265a5e7676006c",
+        "base.net.tfms.1.tfms.0.tfms.3.tfms.0.weight": "3fe0bcde9701ba3b7be19d437ce8746007e317e7beadd2eb7d34dd8ac10775c6",
+        "base.net.tfms.1.tfms.0.tfms.3.tfms.1.bias": "df8e9823047d843e2525d50d0b50e9ad1268fa317bbcdc3770daf83e58109290"
+      },
+      "buffer_hashes": {
+        "base.feature_map": "4714a853e8cd3b87caa0caff4ddb93e373b6dcf586125344de78eef0523d973f",
+        "base.encoded_center": "d1cef07fa763ebfa8effa9d2a7cef7c6ccca2c06f4f09734c436e2581d8ddfd9",
+        "base.numerical.center": "f1e76e9c6397ad5320a943b7918811a10de6f2d20188a2de1ab41a50d01adbb0",
+        "base.numerical.factor": "8b694f8cc21604dac4a2e6ec367f0b9507208814c9599f50e116d9ec082baf43",
+        "base.numerical.binary": "3ce4aeb911a9cc740f5f17ea1b135a0f41f0f65d08ed1c3822c6e1321dc328c5",
+        "base.numerical.numeric_indices": "9b75fce053bf6300f47645683e67cf27be9269f92c00dc99525d73ad3d75a821",
+        "base.numerical.passthrough": "3ce4aeb911a9cc740f5f17ea1b135a0f41f0f65d08ed1c3822c6e1321dc328c5"
+      }
+    },
+    "EMA_noP:51:0": {
+      "initial_weights_sha256": "6b1c509b85aee4dab7613ff867040ade8e8366c468c10d687de1ec63b3101f8a",
+      "parameters": 11787709,
+      "tensor_hashes": {
+        "base.input_members": "a8bc10418813294474dea6400bfd2ead3c79c1b121f4a8009f57dd75598d7d17",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.0.scale": "92fb85ffe6fd8757cac6a2d8031d470f072204a2f961447bb05066aa7131ce08",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.1.weight": "176293b6df29dc95c0f75eb2393599229b9ecd7bb62b9092454c105b04443e30",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.2.bias": "3933debc6ed9d5a9d520d9b86cafa76590793921ec98596d3d507bdec17d72cd",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.3.weight": "893a106828fbdb9521e1d868c985aab7ad2ae2f606edc55329265a5e7676006c",
+        "base.net.tfms.1.tfms.0.tfms.1.tfms.0.weight": "1f7d42e26d83ed4776435d05d4c1e05f53f21179e136ddfae0f32ddce1651013",
+        "base.net.tfms.1.tfms.0.tfms.1.tfms.1.bias": "a119f9f7dc51f38ff181b2a5e4a8d860a759194fd86b7cb9b4880badccf50cdd",
+        "base.net.tfms.1.tfms.0.tfms.1.tfms.2.weight": "893a106828fbdb9521e1d868c985aab7ad2ae2f606edc55329265a5e7676006c",
+        "base.net.tfms.1.tfms.0.tfms.2.tfms.0.weight": "04cf5cd58913861f5cf53bddea8974771afc09af8a99914897f33b6d4bb7c292",
+        "base.net.tfms.1.tfms.0.tfms.2.tfms.1.bias": "fb2ece52533596bce84424387cd08f706b4ffbee52653a02a32f3a46f4718d17",
+        "base.net.tfms.1.tfms.0.tfms.2.tfms.2.weight": "893a106828fbdb9521e1d868c985aab7ad2ae2f606edc55329265a5e7676006c",
+        "base.net.tfms.1.tfms.0.tfms.3.tfms.0.weight": "08cd39aaac87b77bf71ed1d3840ae5fd8ad064896928f4318aa6648af60859d6",
+        "base.net.tfms.1.tfms.0.tfms.3.tfms.1.bias": "d73e897a36b25a16c132b17f0e8fba76bd23db6977566a54dd152ac7a2c2baae"
+      },
+      "buffer_hashes": {
+        "base.feature_map": "4714a853e8cd3b87caa0caff4ddb93e373b6dcf586125344de78eef0523d973f",
+        "base.encoded_center": "9036914db6e0df8d8037f8676465fea4ccb5cad8b2793ec0935831a080fb63f7",
+        "base.numerical.center": "f1e76e9c6397ad5320a943b7918811a10de6f2d20188a2de1ab41a50d01adbb0",
+        "base.numerical.factor": "8b694f8cc21604dac4a2e6ec367f0b9507208814c9599f50e116d9ec082baf43",
+        "base.numerical.binary": "3ce4aeb911a9cc740f5f17ea1b135a0f41f0f65d08ed1c3822c6e1321dc328c5",
+        "base.numerical.numeric_indices": "9b75fce053bf6300f47645683e67cf27be9269f92c00dc99525d73ad3d75a821",
+        "base.numerical.passthrough": "3ce4aeb911a9cc740f5f17ea1b135a0f41f0f65d08ed1c3822c6e1321dc328c5"
+      }
+    },
+    "EMA_noP:52:0": {
+      "initial_weights_sha256": "39e9db4683cb5276c42228b9e614b94ea18ff58d4e6a275ecd5bd55b0a8de997",
+      "parameters": 11787709,
+      "tensor_hashes": {
+        "base.input_members": "395e727e1f16daeb90f168ddaf08387b31a7dce2f2fbf3e30ae92132318869e4",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.0.scale": "92fb85ffe6fd8757cac6a2d8031d470f072204a2f961447bb05066aa7131ce08",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.1.weight": "ce9012151911c6f44fbf4878a57b1870543f62f9e9d5d0402a7836ed3e71deb1",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.2.bias": "e2f935596c5e1e4c6bc0d2f86fc8acff31a5eedc64f041f395289e3eb8a07b7b",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.3.weight": "893a106828fbdb9521e1d868c985aab7ad2ae2f606edc55329265a5e7676006c",
+        "base.net.tfms.1.tfms.0.tfms.1.tfms.0.weight": "9cbfa5f7c71521781363e83db9eaf82578b7a9440d9fe95b62f413dc247dd8b2",
+        "base.net.tfms.1.tfms.0.tfms.1.tfms.1.bias": "d041657eb85f7b6a03beeb4b212a2fea1d1962390980762c98c9ae80055b18e3",
+        "base.net.tfms.1.tfms.0.tfms.1.tfms.2.weight": "893a106828fbdb9521e1d868c985aab7ad2ae2f606edc55329265a5e7676006c",
+        "base.net.tfms.1.tfms.0.tfms.2.tfms.0.weight": "ba958fe854aad840d9cdf50f73fe4e78cacc6d7b1f00adb511e4304e213fce9a",
+        "base.net.tfms.1.tfms.0.tfms.2.tfms.1.bias": "8d9a35ed72100b6f7ddc77a140ac8f421ecc1b657f2e38aa2da8d683cb89ecf1",
+        "base.net.tfms.1.tfms.0.tfms.2.tfms.2.weight": "893a106828fbdb9521e1d868c985aab7ad2ae2f606edc55329265a5e7676006c",
+        "base.net.tfms.1.tfms.0.tfms.3.tfms.0.weight": "3fe0bcde9701ba3b7be19d437ce8746007e317e7beadd2eb7d34dd8ac10775c6",
+        "base.net.tfms.1.tfms.0.tfms.3.tfms.1.bias": "df8e9823047d843e2525d50d0b50e9ad1268fa317bbcdc3770daf83e58109290"
+      },
+      "buffer_hashes": {
+        "base.feature_map": "4714a853e8cd3b87caa0caff4ddb93e373b6dcf586125344de78eef0523d973f",
+        "base.encoded_center": "d1cef07fa763ebfa8effa9d2a7cef7c6ccca2c06f4f09734c436e2581d8ddfd9",
+        "base.numerical.center": "f1e76e9c6397ad5320a943b7918811a10de6f2d20188a2de1ab41a50d01adbb0",
+        "base.numerical.factor": "8b694f8cc21604dac4a2e6ec367f0b9507208814c9599f50e116d9ec082baf43",
+        "base.numerical.binary": "3ce4aeb911a9cc740f5f17ea1b135a0f41f0f65d08ed1c3822c6e1321dc328c5",
+        "base.numerical.numeric_indices": "9b75fce053bf6300f47645683e67cf27be9269f92c00dc99525d73ad3d75a821",
+        "base.numerical.passthrough": "3ce4aeb911a9cc740f5f17ea1b135a0f41f0f65d08ed1c3822c6e1321dc328c5"
+      }
+    },
+    "EMA_noP:51:1": {
+      "initial_weights_sha256": "6b1c509b85aee4dab7613ff867040ade8e8366c468c10d687de1ec63b3101f8a",
+      "parameters": 11787709,
+      "tensor_hashes": {
+        "base.input_members": "a8bc10418813294474dea6400bfd2ead3c79c1b121f4a8009f57dd75598d7d17",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.0.scale": "92fb85ffe6fd8757cac6a2d8031d470f072204a2f961447bb05066aa7131ce08",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.1.weight": "176293b6df29dc95c0f75eb2393599229b9ecd7bb62b9092454c105b04443e30",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.2.bias": "3933debc6ed9d5a9d520d9b86cafa76590793921ec98596d3d507bdec17d72cd",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.3.weight": "893a106828fbdb9521e1d868c985aab7ad2ae2f606edc55329265a5e7676006c",
+        "base.net.tfms.1.tfms.0.tfms.1.tfms.0.weight": "1f7d42e26d83ed4776435d05d4c1e05f53f21179e136ddfae0f32ddce1651013",
+        "base.net.tfms.1.tfms.0.tfms.1.tfms.1.bias": "a119f9f7dc51f38ff181b2a5e4a8d860a759194fd86b7cb9b4880badccf50cdd",
+        "base.net.tfms.1.tfms.0.tfms.1.tfms.2.weight": "893a106828fbdb9521e1d868c985aab7ad2ae2f606edc55329265a5e7676006c",
+        "base.net.tfms.1.tfms.0.tfms.2.tfms.0.weight": "04cf5cd58913861f5cf53bddea8974771afc09af8a99914897f33b6d4bb7c292",
+        "base.net.tfms.1.tfms.0.tfms.2.tfms.1.bias": "fb2ece52533596bce84424387cd08f706b4ffbee52653a02a32f3a46f4718d17",
+        "base.net.tfms.1.tfms.0.tfms.2.tfms.2.weight": "893a106828fbdb9521e1d868c985aab7ad2ae2f606edc55329265a5e7676006c",
+        "base.net.tfms.1.tfms.0.tfms.3.tfms.0.weight": "08cd39aaac87b77bf71ed1d3840ae5fd8ad064896928f4318aa6648af60859d6",
+        "base.net.tfms.1.tfms.0.tfms.3.tfms.1.bias": "d73e897a36b25a16c132b17f0e8fba76bd23db6977566a54dd152ac7a2c2baae"
+      },
+      "buffer_hashes": {
+        "base.feature_map": "4714a853e8cd3b87caa0caff4ddb93e373b6dcf586125344de78eef0523d973f",
+        "base.encoded_center": "9036914db6e0df8d8037f8676465fea4ccb5cad8b2793ec0935831a080fb63f7",
+        "base.numerical.center": "f1e76e9c6397ad5320a943b7918811a10de6f2d20188a2de1ab41a50d01adbb0",
+        "base.numerical.factor": "8b694f8cc21604dac4a2e6ec367f0b9507208814c9599f50e116d9ec082baf43",
+        "base.numerical.binary": "3ce4aeb911a9cc740f5f17ea1b135a0f41f0f65d08ed1c3822c6e1321dc328c5",
+        "base.numerical.numeric_indices": "9b75fce053bf6300f47645683e67cf27be9269f92c00dc99525d73ad3d75a821",
+        "base.numerical.passthrough": "3ce4aeb911a9cc740f5f17ea1b135a0f41f0f65d08ed1c3822c6e1321dc328c5"
+      }
+    },
+    "EMA_noP:52:1": {
+      "initial_weights_sha256": "39e9db4683cb5276c42228b9e614b94ea18ff58d4e6a275ecd5bd55b0a8de997",
+      "parameters": 11787709,
+      "tensor_hashes": {
+        "base.input_members": "395e727e1f16daeb90f168ddaf08387b31a7dce2f2fbf3e30ae92132318869e4",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.0.scale": "92fb85ffe6fd8757cac6a2d8031d470f072204a2f961447bb05066aa7131ce08",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.1.weight": "ce9012151911c6f44fbf4878a57b1870543f62f9e9d5d0402a7836ed3e71deb1",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.2.bias": "e2f935596c5e1e4c6bc0d2f86fc8acff31a5eedc64f041f395289e3eb8a07b7b",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.3.weight": "893a106828fbdb9521e1d868c985aab7ad2ae2f606edc55329265a5e7676006c",
+        "base.net.tfms.1.tfms.0.tfms.1.tfms.0.weight": "9cbfa5f7c71521781363e83db9eaf82578b7a9440d9fe95b62f413dc247dd8b2",
+        "base.net.tfms.1.tfms.0.tfms.1.tfms.1.bias": "d041657eb85f7b6a03beeb4b212a2fea1d1962390980762c98c9ae80055b18e3",
+        "base.net.tfms.1.tfms.0.tfms.1.tfms.2.weight": "893a106828fbdb9521e1d868c985aab7ad2ae2f606edc55329265a5e7676006c",
+        "base.net.tfms.1.tfms.0.tfms.2.tfms.0.weight": "ba958fe854aad840d9cdf50f73fe4e78cacc6d7b1f00adb511e4304e213fce9a",
+        "base.net.tfms.1.tfms.0.tfms.2.tfms.1.bias": "8d9a35ed72100b6f7ddc77a140ac8f421ecc1b657f2e38aa2da8d683cb89ecf1",
+        "base.net.tfms.1.tfms.0.tfms.2.tfms.2.weight": "893a106828fbdb9521e1d868c985aab7ad2ae2f606edc55329265a5e7676006c",
+        "base.net.tfms.1.tfms.0.tfms.3.tfms.0.weight": "3fe0bcde9701ba3b7be19d437ce8746007e317e7beadd2eb7d34dd8ac10775c6",
+        "base.net.tfms.1.tfms.0.tfms.3.tfms.1.bias": "df8e9823047d843e2525d50d0b50e9ad1268fa317bbcdc3770daf83e58109290"
+      },
+      "buffer_hashes": {
+        "base.feature_map": "4714a853e8cd3b87caa0caff4ddb93e373b6dcf586125344de78eef0523d973f",
+        "base.encoded_center": "d1cef07fa763ebfa8effa9d2a7cef7c6ccca2c06f4f09734c436e2581d8ddfd9",
+        "base.numerical.center": "f1e76e9c6397ad5320a943b7918811a10de6f2d20188a2de1ab41a50d01adbb0",
+        "base.numerical.factor": "8b694f8cc21604dac4a2e6ec367f0b9507208814c9599f50e116d9ec082baf43",
+        "base.numerical.binary": "3ce4aeb911a9cc740f5f17ea1b135a0f41f0f65d08ed1c3822c6e1321dc328c5",
+        "base.numerical.numeric_indices": "9b75fce053bf6300f47645683e67cf27be9269f92c00dc99525d73ad3d75a821",
+        "base.numerical.passthrough": "3ce4aeb911a9cc740f5f17ea1b135a0f41f0f65d08ed1c3822c6e1321dc328c5"
+      }
+    },
+    "EMA_no_NRE_CMM:51:0": {
+      "initial_weights_sha256": "6875fc04f4966d1eef1b518527a234c3bac759311c9d603e6de988017f5249d5",
+      "parameters": 11678333,
+      "tensor_hashes": {
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.0.scale": "92fb85ffe6fd8757cac6a2d8031d470f072204a2f961447bb05066aa7131ce08",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.1.weight": "176293b6df29dc95c0f75eb2393599229b9ecd7bb62b9092454c105b04443e30",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.2.bias": "3933debc6ed9d5a9d520d9b86cafa76590793921ec98596d3d507bdec17d72cd",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.3.weight": "893a106828fbdb9521e1d868c985aab7ad2ae2f606edc55329265a5e7676006c",
+        "base.net.tfms.1.tfms.0.tfms.1.tfms.0.weight": "1f7d42e26d83ed4776435d05d4c1e05f53f21179e136ddfae0f32ddce1651013",
+        "base.net.tfms.1.tfms.0.tfms.1.tfms.1.bias": "a119f9f7dc51f38ff181b2a5e4a8d860a759194fd86b7cb9b4880badccf50cdd",
+        "base.net.tfms.1.tfms.0.tfms.1.tfms.2.weight": "893a106828fbdb9521e1d868c985aab7ad2ae2f606edc55329265a5e7676006c",
+        "base.net.tfms.1.tfms.0.tfms.2.tfms.0.weight": "04cf5cd58913861f5cf53bddea8974771afc09af8a99914897f33b6d4bb7c292",
+        "base.net.tfms.1.tfms.0.tfms.2.tfms.1.bias": "fb2ece52533596bce84424387cd08f706b4ffbee52653a02a32f3a46f4718d17",
+        "base.net.tfms.1.tfms.0.tfms.2.tfms.2.weight": "893a106828fbdb9521e1d868c985aab7ad2ae2f606edc55329265a5e7676006c",
+        "base.net.tfms.1.tfms.0.tfms.3.tfms.0.weight": "08cd39aaac87b77bf71ed1d3840ae5fd8ad064896928f4318aa6648af60859d6",
+        "base.net.tfms.1.tfms.0.tfms.3.tfms.1.bias": "d73e897a36b25a16c132b17f0e8fba76bd23db6977566a54dd152ac7a2c2baae"
+      },
+      "buffer_hashes": {
+        "base.feature_map": "4714a853e8cd3b87caa0caff4ddb93e373b6dcf586125344de78eef0523d973f",
+        "base.encoded_center": "9036914db6e0df8d8037f8676465fea4ccb5cad8b2793ec0935831a080fb63f7",
+        "base.numerical.center": "f1e76e9c6397ad5320a943b7918811a10de6f2d20188a2de1ab41a50d01adbb0",
+        "base.numerical.factor": "8b694f8cc21604dac4a2e6ec367f0b9507208814c9599f50e116d9ec082baf43",
+        "base.numerical.binary": "3ce4aeb911a9cc740f5f17ea1b135a0f41f0f65d08ed1c3822c6e1321dc328c5",
+        "base.numerical.numeric_indices": "9b75fce053bf6300f47645683e67cf27be9269f92c00dc99525d73ad3d75a821",
+        "base.numerical.passthrough": "3ce4aeb911a9cc740f5f17ea1b135a0f41f0f65d08ed1c3822c6e1321dc328c5"
+      }
+    },
+    "EMA_no_NRE_CMM:52:0": {
+      "initial_weights_sha256": "8cbc8fa0b7e7dd191079a345728caef80ea29b770a5e74f45e5db6491064617a",
+      "parameters": 11678333,
+      "tensor_hashes": {
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.0.scale": "92fb85ffe6fd8757cac6a2d8031d470f072204a2f961447bb05066aa7131ce08",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.1.weight": "ce9012151911c6f44fbf4878a57b1870543f62f9e9d5d0402a7836ed3e71deb1",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.2.bias": "e2f935596c5e1e4c6bc0d2f86fc8acff31a5eedc64f041f395289e3eb8a07b7b",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.3.weight": "893a106828fbdb9521e1d868c985aab7ad2ae2f606edc55329265a5e7676006c",
+        "base.net.tfms.1.tfms.0.tfms.1.tfms.0.weight": "9cbfa5f7c71521781363e83db9eaf82578b7a9440d9fe95b62f413dc247dd8b2",
+        "base.net.tfms.1.tfms.0.tfms.1.tfms.1.bias": "d041657eb85f7b6a03beeb4b212a2fea1d1962390980762c98c9ae80055b18e3",
+        "base.net.tfms.1.tfms.0.tfms.1.tfms.2.weight": "893a106828fbdb9521e1d868c985aab7ad2ae2f606edc55329265a5e7676006c",
+        "base.net.tfms.1.tfms.0.tfms.2.tfms.0.weight": "ba958fe854aad840d9cdf50f73fe4e78cacc6d7b1f00adb511e4304e213fce9a",
+        "base.net.tfms.1.tfms.0.tfms.2.tfms.1.bias": "8d9a35ed72100b6f7ddc77a140ac8f421ecc1b657f2e38aa2da8d683cb89ecf1",
+        "base.net.tfms.1.tfms.0.tfms.2.tfms.2.weight": "893a106828fbdb9521e1d868c985aab7ad2ae2f606edc55329265a5e7676006c",
+        "base.net.tfms.1.tfms.0.tfms.3.tfms.0.weight": "3fe0bcde9701ba3b7be19d437ce8746007e317e7beadd2eb7d34dd8ac10775c6",
+        "base.net.tfms.1.tfms.0.tfms.3.tfms.1.bias": "df8e9823047d843e2525d50d0b50e9ad1268fa317bbcdc3770daf83e58109290"
+      },
+      "buffer_hashes": {
+        "base.feature_map": "4714a853e8cd3b87caa0caff4ddb93e373b6dcf586125344de78eef0523d973f",
+        "base.encoded_center": "d1cef07fa763ebfa8effa9d2a7cef7c6ccca2c06f4f09734c436e2581d8ddfd9",
+        "base.numerical.center": "f1e76e9c6397ad5320a943b7918811a10de6f2d20188a2de1ab41a50d01adbb0",
+        "base.numerical.factor": "8b694f8cc21604dac4a2e6ec367f0b9507208814c9599f50e116d9ec082baf43",
+        "base.numerical.binary": "3ce4aeb911a9cc740f5f17ea1b135a0f41f0f65d08ed1c3822c6e1321dc328c5",
+        "base.numerical.numeric_indices": "9b75fce053bf6300f47645683e67cf27be9269f92c00dc99525d73ad3d75a821",
+        "base.numerical.passthrough": "3ce4aeb911a9cc740f5f17ea1b135a0f41f0f65d08ed1c3822c6e1321dc328c5"
+      }
+    },
+    "EMA_no_NRE_CMM:51:1": {
+      "initial_weights_sha256": "6875fc04f4966d1eef1b518527a234c3bac759311c9d603e6de988017f5249d5",
+      "parameters": 11678333,
+      "tensor_hashes": {
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.0.scale": "92fb85ffe6fd8757cac6a2d8031d470f072204a2f961447bb05066aa7131ce08",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.1.weight": "176293b6df29dc95c0f75eb2393599229b9ecd7bb62b9092454c105b04443e30",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.2.bias": "3933debc6ed9d5a9d520d9b86cafa76590793921ec98596d3d507bdec17d72cd",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.3.weight": "893a106828fbdb9521e1d868c985aab7ad2ae2f606edc55329265a5e7676006c",
+        "base.net.tfms.1.tfms.0.tfms.1.tfms.0.weight": "1f7d42e26d83ed4776435d05d4c1e05f53f21179e136ddfae0f32ddce1651013",
+        "base.net.tfms.1.tfms.0.tfms.1.tfms.1.bias": "a119f9f7dc51f38ff181b2a5e4a8d860a759194fd86b7cb9b4880badccf50cdd",
+        "base.net.tfms.1.tfms.0.tfms.1.tfms.2.weight": "893a106828fbdb9521e1d868c985aab7ad2ae2f606edc55329265a5e7676006c",
+        "base.net.tfms.1.tfms.0.tfms.2.tfms.0.weight": "04cf5cd58913861f5cf53bddea8974771afc09af8a99914897f33b6d4bb7c292",
+        "base.net.tfms.1.tfms.0.tfms.2.tfms.1.bias": "fb2ece52533596bce84424387cd08f706b4ffbee52653a02a32f3a46f4718d17",
+        "base.net.tfms.1.tfms.0.tfms.2.tfms.2.weight": "893a106828fbdb9521e1d868c985aab7ad2ae2f606edc55329265a5e7676006c",
+        "base.net.tfms.1.tfms.0.tfms.3.tfms.0.weight": "08cd39aaac87b77bf71ed1d3840ae5fd8ad064896928f4318aa6648af60859d6",
+        "base.net.tfms.1.tfms.0.tfms.3.tfms.1.bias": "d73e897a36b25a16c132b17f0e8fba76bd23db6977566a54dd152ac7a2c2baae"
+      },
+      "buffer_hashes": {
+        "base.feature_map": "4714a853e8cd3b87caa0caff4ddb93e373b6dcf586125344de78eef0523d973f",
+        "base.encoded_center": "9036914db6e0df8d8037f8676465fea4ccb5cad8b2793ec0935831a080fb63f7",
+        "base.numerical.center": "f1e76e9c6397ad5320a943b7918811a10de6f2d20188a2de1ab41a50d01adbb0",
+        "base.numerical.factor": "8b694f8cc21604dac4a2e6ec367f0b9507208814c9599f50e116d9ec082baf43",
+        "base.numerical.binary": "3ce4aeb911a9cc740f5f17ea1b135a0f41f0f65d08ed1c3822c6e1321dc328c5",
+        "base.numerical.numeric_indices": "9b75fce053bf6300f47645683e67cf27be9269f92c00dc99525d73ad3d75a821",
+        "base.numerical.passthrough": "3ce4aeb911a9cc740f5f17ea1b135a0f41f0f65d08ed1c3822c6e1321dc328c5"
+      }
+    },
+    "EMA_no_NRE_CMM:52:1": {
+      "initial_weights_sha256": "8cbc8fa0b7e7dd191079a345728caef80ea29b770a5e74f45e5db6491064617a",
+      "parameters": 11678333,
+      "tensor_hashes": {
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.0.scale": "92fb85ffe6fd8757cac6a2d8031d470f072204a2f961447bb05066aa7131ce08",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.1.weight": "ce9012151911c6f44fbf4878a57b1870543f62f9e9d5d0402a7836ed3e71deb1",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.2.bias": "e2f935596c5e1e4c6bc0d2f86fc8acff31a5eedc64f041f395289e3eb8a07b7b",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.3.weight": "893a106828fbdb9521e1d868c985aab7ad2ae2f606edc55329265a5e7676006c",
+        "base.net.tfms.1.tfms.0.tfms.1.tfms.0.weight": "9cbfa5f7c71521781363e83db9eaf82578b7a9440d9fe95b62f413dc247dd8b2",
+        "base.net.tfms.1.tfms.0.tfms.1.tfms.1.bias": "d041657eb85f7b6a03beeb4b212a2fea1d1962390980762c98c9ae80055b18e3",
+        "base.net.tfms.1.tfms.0.tfms.1.tfms.2.weight": "893a106828fbdb9521e1d868c985aab7ad2ae2f606edc55329265a5e7676006c",
+        "base.net.tfms.1.tfms.0.tfms.2.tfms.0.weight": "ba958fe854aad840d9cdf50f73fe4e78cacc6d7b1f00adb511e4304e213fce9a",
+        "base.net.tfms.1.tfms.0.tfms.2.tfms.1.bias": "8d9a35ed72100b6f7ddc77a140ac8f421ecc1b657f2e38aa2da8d683cb89ecf1",
+        "base.net.tfms.1.tfms.0.tfms.2.tfms.2.weight": "893a106828fbdb9521e1d868c985aab7ad2ae2f606edc55329265a5e7676006c",
+        "base.net.tfms.1.tfms.0.tfms.3.tfms.0.weight": "3fe0bcde9701ba3b7be19d437ce8746007e317e7beadd2eb7d34dd8ac10775c6",
+        "base.net.tfms.1.tfms.0.tfms.3.tfms.1.bias": "df8e9823047d843e2525d50d0b50e9ad1268fa317bbcdc3770daf83e58109290"
+      },
+      "buffer_hashes": {
+        "base.feature_map": "4714a853e8cd3b87caa0caff4ddb93e373b6dcf586125344de78eef0523d973f",
+        "base.encoded_center": "d1cef07fa763ebfa8effa9d2a7cef7c6ccca2c06f4f09734c436e2581d8ddfd9",
+        "base.numerical.center": "f1e76e9c6397ad5320a943b7918811a10de6f2d20188a2de1ab41a50d01adbb0",
+        "base.numerical.factor": "8b694f8cc21604dac4a2e6ec367f0b9507208814c9599f50e116d9ec082baf43",
+        "base.numerical.binary": "3ce4aeb911a9cc740f5f17ea1b135a0f41f0f65d08ed1c3822c6e1321dc328c5",
+        "base.numerical.numeric_indices": "9b75fce053bf6300f47645683e67cf27be9269f92c00dc99525d73ad3d75a821",
+        "base.numerical.passthrough": "3ce4aeb911a9cc740f5f17ea1b135a0f41f0f65d08ed1c3822c6e1321dc328c5"
+      }
+    },
+    "EMA_no_duration:51:0": {
+      "initial_weights_sha256": "696914cd1d4855da83a7f80316f4fb742f94a24ceccc2897f4d17302c645a752",
+      "parameters": 12848733,
+      "tensor_hashes": {
+        "base.input_members": "d0c2fe2dc702a32e0f7019d7bfe4fc64db0fcf01a5b6e0a5e4837354164f99e8",
+        "base.numerical.frequency": "191c43dd20bd6e803733c4a3727bc67d33f2acda81897704fadcd60ab25cebf8",
+        "base.numerical.phase": "b5a21a57560ff059a0298d0a6a318f2dee6b82ae2144f7d35ce45f3274d47d9a",
+        "base.numerical.weight": "73fe183d97433730a78c0c50531d0270a92526e3a3dd2dbfb40ec31f5198dd21",
+        "base.numerical.bias": "4915b667f24cbc59ef3e09ac2d2e59aeefb4e5d38eefeba8a9cccba2c3a368b3",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.0.scale": "92fb85ffe6fd8757cac6a2d8031d470f072204a2f961447bb05066aa7131ce08",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.1.weight": "176293b6df29dc95c0f75eb2393599229b9ecd7bb62b9092454c105b04443e30",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.2.bias": "3933debc6ed9d5a9d520d9b86cafa76590793921ec98596d3d507bdec17d72cd",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.3.weight": "893a106828fbdb9521e1d868c985aab7ad2ae2f606edc55329265a5e7676006c",
+        "base.net.tfms.1.tfms.0.tfms.1.tfms.0.weight": "1f7d42e26d83ed4776435d05d4c1e05f53f21179e136ddfae0f32ddce1651013",
+        "base.net.tfms.1.tfms.0.tfms.1.tfms.1.bias": "a119f9f7dc51f38ff181b2a5e4a8d860a759194fd86b7cb9b4880badccf50cdd",
+        "base.net.tfms.1.tfms.0.tfms.1.tfms.2.weight": "893a106828fbdb9521e1d868c985aab7ad2ae2f606edc55329265a5e7676006c",
+        "base.net.tfms.1.tfms.0.tfms.2.tfms.0.weight": "04cf5cd58913861f5cf53bddea8974771afc09af8a99914897f33b6d4bb7c292",
+        "base.net.tfms.1.tfms.0.tfms.2.tfms.1.bias": "fb2ece52533596bce84424387cd08f706b4ffbee52653a02a32f3a46f4718d17",
+        "base.net.tfms.1.tfms.0.tfms.2.tfms.2.weight": "893a106828fbdb9521e1d868c985aab7ad2ae2f606edc55329265a5e7676006c",
+        "base.net.tfms.1.tfms.0.tfms.3.tfms.0.weight": "08cd39aaac87b77bf71ed1d3840ae5fd8ad064896928f4318aa6648af60859d6",
+        "base.net.tfms.1.tfms.0.tfms.3.tfms.1.bias": "d73e897a36b25a16c132b17f0e8fba76bd23db6977566a54dd152ac7a2c2baae"
+      },
+      "buffer_hashes": {
+        "base.feature_map": "4714a853e8cd3b87caa0caff4ddb93e373b6dcf586125344de78eef0523d973f",
+        "base.encoded_center": "9036914db6e0df8d8037f8676465fea4ccb5cad8b2793ec0935831a080fb63f7",
+        "base.modulation_columns": "a121890a7e7f6cda6d38c774487df253862d1137c72599ecc8cb55a8c2bd1881",
+        "base.numerical.center": "f1e76e9c6397ad5320a943b7918811a10de6f2d20188a2de1ab41a50d01adbb0",
+        "base.numerical.factor": "8b694f8cc21604dac4a2e6ec367f0b9507208814c9599f50e116d9ec082baf43",
+        "base.numerical.binary": "3ce4aeb911a9cc740f5f17ea1b135a0f41f0f65d08ed1c3822c6e1321dc328c5",
+        "base.numerical.numeric_indices": "9b75fce053bf6300f47645683e67cf27be9269f92c00dc99525d73ad3d75a821",
+        "base.numerical.passthrough": "3ce4aeb911a9cc740f5f17ea1b135a0f41f0f65d08ed1c3822c6e1321dc328c5",
+        "base.numerical.retained_response_rows": "a803f6cb1edc7c4b08bd23862683fc81ce6d86e98f59d5385bd1d71ad31c97fb",
+        "base.numerical.zero_coordinates": "15f2b13f57acc3f89bb86b993de72bd32044c76ea47aa0f298e0baa1b3a1b554"
+      }
+    },
+    "EMA_no_duration:52:0": {
+      "initial_weights_sha256": "0ef206fc31f83c69bfe6bd8371ef679c3e04b8f9bcd74d1db019503139231647",
+      "parameters": 12848733,
+      "tensor_hashes": {
+        "base.input_members": "18de8b8e6d6e580b36802cdf3720a8bfe25aba993362b766360fe9520ff4eb9c",
+        "base.numerical.frequency": "af7aacd691833766d71aad47971217f7e6abacf93be381e73ceec117fa89477e",
+        "base.numerical.phase": "423df5903b4006951e12c363b5fe8cd09b7dbe60bfcc6ce44e448d70e7f91e6e",
+        "base.numerical.weight": "8aba7d116cea7b939bd13c0dd33250e84b4eec7578c9d4180a91492c9e3eb363",
+        "base.numerical.bias": "b1243edd5a0f5927b7b9bd006e974f7ed373d9211aa6887d83c6cbf59f95ceb3",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.0.scale": "92fb85ffe6fd8757cac6a2d8031d470f072204a2f961447bb05066aa7131ce08",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.1.weight": "ce9012151911c6f44fbf4878a57b1870543f62f9e9d5d0402a7836ed3e71deb1",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.2.bias": "e2f935596c5e1e4c6bc0d2f86fc8acff31a5eedc64f041f395289e3eb8a07b7b",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.3.weight": "893a106828fbdb9521e1d868c985aab7ad2ae2f606edc55329265a5e7676006c",
+        "base.net.tfms.1.tfms.0.tfms.1.tfms.0.weight": "9cbfa5f7c71521781363e83db9eaf82578b7a9440d9fe95b62f413dc247dd8b2",
+        "base.net.tfms.1.tfms.0.tfms.1.tfms.1.bias": "d041657eb85f7b6a03beeb4b212a2fea1d1962390980762c98c9ae80055b18e3",
+        "base.net.tfms.1.tfms.0.tfms.1.tfms.2.weight": "893a106828fbdb9521e1d868c985aab7ad2ae2f606edc55329265a5e7676006c",
+        "base.net.tfms.1.tfms.0.tfms.2.tfms.0.weight": "ba958fe854aad840d9cdf50f73fe4e78cacc6d7b1f00adb511e4304e213fce9a",
+        "base.net.tfms.1.tfms.0.tfms.2.tfms.1.bias": "8d9a35ed72100b6f7ddc77a140ac8f421ecc1b657f2e38aa2da8d683cb89ecf1",
+        "base.net.tfms.1.tfms.0.tfms.2.tfms.2.weight": "893a106828fbdb9521e1d868c985aab7ad2ae2f606edc55329265a5e7676006c",
+        "base.net.tfms.1.tfms.0.tfms.3.tfms.0.weight": "3fe0bcde9701ba3b7be19d437ce8746007e317e7beadd2eb7d34dd8ac10775c6",
+        "base.net.tfms.1.tfms.0.tfms.3.tfms.1.bias": "df8e9823047d843e2525d50d0b50e9ad1268fa317bbcdc3770daf83e58109290"
+      },
+      "buffer_hashes": {
+        "base.feature_map": "4714a853e8cd3b87caa0caff4ddb93e373b6dcf586125344de78eef0523d973f",
+        "base.encoded_center": "d1cef07fa763ebfa8effa9d2a7cef7c6ccca2c06f4f09734c436e2581d8ddfd9",
+        "base.modulation_columns": "a121890a7e7f6cda6d38c774487df253862d1137c72599ecc8cb55a8c2bd1881",
+        "base.numerical.center": "f1e76e9c6397ad5320a943b7918811a10de6f2d20188a2de1ab41a50d01adbb0",
+        "base.numerical.factor": "8b694f8cc21604dac4a2e6ec367f0b9507208814c9599f50e116d9ec082baf43",
+        "base.numerical.binary": "3ce4aeb911a9cc740f5f17ea1b135a0f41f0f65d08ed1c3822c6e1321dc328c5",
+        "base.numerical.numeric_indices": "9b75fce053bf6300f47645683e67cf27be9269f92c00dc99525d73ad3d75a821",
+        "base.numerical.passthrough": "3ce4aeb911a9cc740f5f17ea1b135a0f41f0f65d08ed1c3822c6e1321dc328c5",
+        "base.numerical.retained_response_rows": "a803f6cb1edc7c4b08bd23862683fc81ce6d86e98f59d5385bd1d71ad31c97fb",
+        "base.numerical.zero_coordinates": "15f2b13f57acc3f89bb86b993de72bd32044c76ea47aa0f298e0baa1b3a1b554"
+      }
+    },
+    "EMA_no_duration:51:1": {
+      "initial_weights_sha256": "696914cd1d4855da83a7f80316f4fb742f94a24ceccc2897f4d17302c645a752",
+      "parameters": 12848733,
+      "tensor_hashes": {
+        "base.input_members": "d0c2fe2dc702a32e0f7019d7bfe4fc64db0fcf01a5b6e0a5e4837354164f99e8",
+        "base.numerical.frequency": "191c43dd20bd6e803733c4a3727bc67d33f2acda81897704fadcd60ab25cebf8",
+        "base.numerical.phase": "b5a21a57560ff059a0298d0a6a318f2dee6b82ae2144f7d35ce45f3274d47d9a",
+        "base.numerical.weight": "73fe183d97433730a78c0c50531d0270a92526e3a3dd2dbfb40ec31f5198dd21",
+        "base.numerical.bias": "4915b667f24cbc59ef3e09ac2d2e59aeefb4e5d38eefeba8a9cccba2c3a368b3",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.0.scale": "92fb85ffe6fd8757cac6a2d8031d470f072204a2f961447bb05066aa7131ce08",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.1.weight": "176293b6df29dc95c0f75eb2393599229b9ecd7bb62b9092454c105b04443e30",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.2.bias": "3933debc6ed9d5a9d520d9b86cafa76590793921ec98596d3d507bdec17d72cd",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.3.weight": "893a106828fbdb9521e1d868c985aab7ad2ae2f606edc55329265a5e7676006c",
+        "base.net.tfms.1.tfms.0.tfms.1.tfms.0.weight": "1f7d42e26d83ed4776435d05d4c1e05f53f21179e136ddfae0f32ddce1651013",
+        "base.net.tfms.1.tfms.0.tfms.1.tfms.1.bias": "a119f9f7dc51f38ff181b2a5e4a8d860a759194fd86b7cb9b4880badccf50cdd",
+        "base.net.tfms.1.tfms.0.tfms.1.tfms.2.weight": "893a106828fbdb9521e1d868c985aab7ad2ae2f606edc55329265a5e7676006c",
+        "base.net.tfms.1.tfms.0.tfms.2.tfms.0.weight": "04cf5cd58913861f5cf53bddea8974771afc09af8a99914897f33b6d4bb7c292",
+        "base.net.tfms.1.tfms.0.tfms.2.tfms.1.bias": "fb2ece52533596bce84424387cd08f706b4ffbee52653a02a32f3a46f4718d17",
+        "base.net.tfms.1.tfms.0.tfms.2.tfms.2.weight": "893a106828fbdb9521e1d868c985aab7ad2ae2f606edc55329265a5e7676006c",
+        "base.net.tfms.1.tfms.0.tfms.3.tfms.0.weight": "08cd39aaac87b77bf71ed1d3840ae5fd8ad064896928f4318aa6648af60859d6",
+        "base.net.tfms.1.tfms.0.tfms.3.tfms.1.bias": "d73e897a36b25a16c132b17f0e8fba76bd23db6977566a54dd152ac7a2c2baae"
+      },
+      "buffer_hashes": {
+        "base.feature_map": "4714a853e8cd3b87caa0caff4ddb93e373b6dcf586125344de78eef0523d973f",
+        "base.encoded_center": "9036914db6e0df8d8037f8676465fea4ccb5cad8b2793ec0935831a080fb63f7",
+        "base.modulation_columns": "a121890a7e7f6cda6d38c774487df253862d1137c72599ecc8cb55a8c2bd1881",
+        "base.numerical.center": "f1e76e9c6397ad5320a943b7918811a10de6f2d20188a2de1ab41a50d01adbb0",
+        "base.numerical.factor": "8b694f8cc21604dac4a2e6ec367f0b9507208814c9599f50e116d9ec082baf43",
+        "base.numerical.binary": "3ce4aeb911a9cc740f5f17ea1b135a0f41f0f65d08ed1c3822c6e1321dc328c5",
+        "base.numerical.numeric_indices": "9b75fce053bf6300f47645683e67cf27be9269f92c00dc99525d73ad3d75a821",
+        "base.numerical.passthrough": "3ce4aeb911a9cc740f5f17ea1b135a0f41f0f65d08ed1c3822c6e1321dc328c5",
+        "base.numerical.retained_response_rows": "a803f6cb1edc7c4b08bd23862683fc81ce6d86e98f59d5385bd1d71ad31c97fb",
+        "base.numerical.zero_coordinates": "15f2b13f57acc3f89bb86b993de72bd32044c76ea47aa0f298e0baa1b3a1b554"
+      }
+    },
+    "EMA_no_duration:52:1": {
+      "initial_weights_sha256": "0ef206fc31f83c69bfe6bd8371ef679c3e04b8f9bcd74d1db019503139231647",
+      "parameters": 12848733,
+      "tensor_hashes": {
+        "base.input_members": "18de8b8e6d6e580b36802cdf3720a8bfe25aba993362b766360fe9520ff4eb9c",
+        "base.numerical.frequency": "af7aacd691833766d71aad47971217f7e6abacf93be381e73ceec117fa89477e",
+        "base.numerical.phase": "423df5903b4006951e12c363b5fe8cd09b7dbe60bfcc6ce44e448d70e7f91e6e",
+        "base.numerical.weight": "8aba7d116cea7b939bd13c0dd33250e84b4eec7578c9d4180a91492c9e3eb363",
+        "base.numerical.bias": "b1243edd5a0f5927b7b9bd006e974f7ed373d9211aa6887d83c6cbf59f95ceb3",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.0.scale": "92fb85ffe6fd8757cac6a2d8031d470f072204a2f961447bb05066aa7131ce08",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.1.weight": "ce9012151911c6f44fbf4878a57b1870543f62f9e9d5d0402a7836ed3e71deb1",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.2.bias": "e2f935596c5e1e4c6bc0d2f86fc8acff31a5eedc64f041f395289e3eb8a07b7b",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.3.weight": "893a106828fbdb9521e1d868c985aab7ad2ae2f606edc55329265a5e7676006c",
+        "base.net.tfms.1.tfms.0.tfms.1.tfms.0.weight": "9cbfa5f7c71521781363e83db9eaf82578b7a9440d9fe95b62f413dc247dd8b2",
+        "base.net.tfms.1.tfms.0.tfms.1.tfms.1.bias": "d041657eb85f7b6a03beeb4b212a2fea1d1962390980762c98c9ae80055b18e3",
+        "base.net.tfms.1.tfms.0.tfms.1.tfms.2.weight": "893a106828fbdb9521e1d868c985aab7ad2ae2f606edc55329265a5e7676006c",
+        "base.net.tfms.1.tfms.0.tfms.2.tfms.0.weight": "ba958fe854aad840d9cdf50f73fe4e78cacc6d7b1f00adb511e4304e213fce9a",
+        "base.net.tfms.1.tfms.0.tfms.2.tfms.1.bias": "8d9a35ed72100b6f7ddc77a140ac8f421ecc1b657f2e38aa2da8d683cb89ecf1",
+        "base.net.tfms.1.tfms.0.tfms.2.tfms.2.weight": "893a106828fbdb9521e1d868c985aab7ad2ae2f606edc55329265a5e7676006c",
+        "base.net.tfms.1.tfms.0.tfms.3.tfms.0.weight": "3fe0bcde9701ba3b7be19d437ce8746007e317e7beadd2eb7d34dd8ac10775c6",
+        "base.net.tfms.1.tfms.0.tfms.3.tfms.1.bias": "df8e9823047d843e2525d50d0b50e9ad1268fa317bbcdc3770daf83e58109290"
+      },
+      "buffer_hashes": {
+        "base.feature_map": "4714a853e8cd3b87caa0caff4ddb93e373b6dcf586125344de78eef0523d973f",
+        "base.encoded_center": "d1cef07fa763ebfa8effa9d2a7cef7c6ccca2c06f4f09734c436e2581d8ddfd9",
+        "base.modulation_columns": "a121890a7e7f6cda6d38c774487df253862d1137c72599ecc8cb55a8c2bd1881",
+        "base.numerical.center": "f1e76e9c6397ad5320a943b7918811a10de6f2d20188a2de1ab41a50d01adbb0",
+        "base.numerical.factor": "8b694f8cc21604dac4a2e6ec367f0b9507208814c9599f50e116d9ec082baf43",
+        "base.numerical.binary": "3ce4aeb911a9cc740f5f17ea1b135a0f41f0f65d08ed1c3822c6e1321dc328c5",
+        "base.numerical.numeric_indices": "9b75fce053bf6300f47645683e67cf27be9269f92c00dc99525d73ad3d75a821",
+        "base.numerical.passthrough": "3ce4aeb911a9cc740f5f17ea1b135a0f41f0f65d08ed1c3822c6e1321dc328c5",
+        "base.numerical.retained_response_rows": "a803f6cb1edc7c4b08bd23862683fc81ce6d86e98f59d5385bd1d71ad31c97fb",
+        "base.numerical.zero_coordinates": "15f2b13f57acc3f89bb86b993de72bd32044c76ea47aa0f298e0baa1b3a1b554"
+      }
+    },
+    "EMA_no_numeric_direct:51:0": {
+      "initial_weights_sha256": "8bf4a6446eb892f0ad6a0b8187983d0c869e74aba68a8dc94a978a058ab4340f",
+      "parameters": 12818992,
+      "tensor_hashes": {
+        "base.input_members": "abdfbffa531ffe5b69371ea989bc2eeba5028629362c196c476cc6106d427c52",
+        "base.numerical.frequency": "2e2581e93bae008b839acbc7267ae0ab70b7965edbd190ca5c54e3d87476ac61",
+        "base.numerical.phase": "1f2e598ed75ec4a3a27ffa05a3325de57e40d7100b5e82d82a6fcbcc869f4397",
+        "base.numerical.weight": "4b79b2d88048b461f135cfe70cb7e2308885fc912421e446fad9765d1261ed29",
+        "base.numerical.bias": "48533e540d90e4ab41f6c7b64780c1ac5d062282a8ac87b8e353c474725f5f70",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.0.scale": "92fb85ffe6fd8757cac6a2d8031d470f072204a2f961447bb05066aa7131ce08",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.1.weight": "176293b6df29dc95c0f75eb2393599229b9ecd7bb62b9092454c105b04443e30",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.2.bias": "3933debc6ed9d5a9d520d9b86cafa76590793921ec98596d3d507bdec17d72cd",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.3.weight": "893a106828fbdb9521e1d868c985aab7ad2ae2f606edc55329265a5e7676006c",
+        "base.net.tfms.1.tfms.0.tfms.1.tfms.0.weight": "1f7d42e26d83ed4776435d05d4c1e05f53f21179e136ddfae0f32ddce1651013",
+        "base.net.tfms.1.tfms.0.tfms.1.tfms.1.bias": "a119f9f7dc51f38ff181b2a5e4a8d860a759194fd86b7cb9b4880badccf50cdd",
+        "base.net.tfms.1.tfms.0.tfms.1.tfms.2.weight": "893a106828fbdb9521e1d868c985aab7ad2ae2f606edc55329265a5e7676006c",
+        "base.net.tfms.1.tfms.0.tfms.2.tfms.0.weight": "04cf5cd58913861f5cf53bddea8974771afc09af8a99914897f33b6d4bb7c292",
+        "base.net.tfms.1.tfms.0.tfms.2.tfms.1.bias": "fb2ece52533596bce84424387cd08f706b4ffbee52653a02a32f3a46f4718d17",
+        "base.net.tfms.1.tfms.0.tfms.2.tfms.2.weight": "893a106828fbdb9521e1d868c985aab7ad2ae2f606edc55329265a5e7676006c",
+        "base.net.tfms.1.tfms.0.tfms.3.tfms.0.weight": "08cd39aaac87b77bf71ed1d3840ae5fd8ad064896928f4318aa6648af60859d6",
+        "base.net.tfms.1.tfms.0.tfms.3.tfms.1.bias": "d73e897a36b25a16c132b17f0e8fba76bd23db6977566a54dd152ac7a2c2baae"
+      },
+      "buffer_hashes": {
+        "base.feature_map": "4714a853e8cd3b87caa0caff4ddb93e373b6dcf586125344de78eef0523d973f",
+        "base.encoded_center": "9036914db6e0df8d8037f8676465fea4ccb5cad8b2793ec0935831a080fb63f7",
+        "base.modulation_columns": "6abbda60e9d44f6a471291abc07838f9843eb91504903343105a1e389280d8e9",
+        "base.zero_direct_columns": "042578b5b29838d97faae8d42dc1198b3a425efe3f5cabf2affb75d7f17d031f",
+        "base.numerical.center": "f1e76e9c6397ad5320a943b7918811a10de6f2d20188a2de1ab41a50d01adbb0",
+        "base.numerical.factor": "8b694f8cc21604dac4a2e6ec367f0b9507208814c9599f50e116d9ec082baf43",
+        "base.numerical.binary": "3ce4aeb911a9cc740f5f17ea1b135a0f41f0f65d08ed1c3822c6e1321dc328c5",
+        "base.numerical.numeric_indices": "9b75fce053bf6300f47645683e67cf27be9269f92c00dc99525d73ad3d75a821",
+        "base.numerical.passthrough": "3ce4aeb911a9cc740f5f17ea1b135a0f41f0f65d08ed1c3822c6e1321dc328c5"
+      }
+    },
+    "EMA_no_numeric_direct:52:0": {
+      "initial_weights_sha256": "89b0b73a8f9186848f47f88dc615057f9d602ea7c74ed65c375a122b2130c492",
+      "parameters": 12818992,
+      "tensor_hashes": {
+        "base.input_members": "ae69cddc8906cc159d553911cfc3a5727250afd94d5ee74832ee2d53f3261f31",
+        "base.numerical.frequency": "e4adcd242391bb0b9be99159210b206e874d453e744a9415d11a88a4a919e2d6",
+        "base.numerical.phase": "58fac4f9f7148cfdc1b3c34c4d1ff2cbe73d93bd1759fb6110227c95cc4aa716",
+        "base.numerical.weight": "1baf76e745dd4d2f56b86933c1dc7a9a38d18b4cf0ecbace7d5a37c3df3fa150",
+        "base.numerical.bias": "d7548438c6e8bb96a356fca8031d9f785edc380a1dce270c055f8a0fc53b883e",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.0.scale": "92fb85ffe6fd8757cac6a2d8031d470f072204a2f961447bb05066aa7131ce08",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.1.weight": "ce9012151911c6f44fbf4878a57b1870543f62f9e9d5d0402a7836ed3e71deb1",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.2.bias": "e2f935596c5e1e4c6bc0d2f86fc8acff31a5eedc64f041f395289e3eb8a07b7b",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.3.weight": "893a106828fbdb9521e1d868c985aab7ad2ae2f606edc55329265a5e7676006c",
+        "base.net.tfms.1.tfms.0.tfms.1.tfms.0.weight": "9cbfa5f7c71521781363e83db9eaf82578b7a9440d9fe95b62f413dc247dd8b2",
+        "base.net.tfms.1.tfms.0.tfms.1.tfms.1.bias": "d041657eb85f7b6a03beeb4b212a2fea1d1962390980762c98c9ae80055b18e3",
+        "base.net.tfms.1.tfms.0.tfms.1.tfms.2.weight": "893a106828fbdb9521e1d868c985aab7ad2ae2f606edc55329265a5e7676006c",
+        "base.net.tfms.1.tfms.0.tfms.2.tfms.0.weight": "ba958fe854aad840d9cdf50f73fe4e78cacc6d7b1f00adb511e4304e213fce9a",
+        "base.net.tfms.1.tfms.0.tfms.2.tfms.1.bias": "8d9a35ed72100b6f7ddc77a140ac8f421ecc1b657f2e38aa2da8d683cb89ecf1",
+        "base.net.tfms.1.tfms.0.tfms.2.tfms.2.weight": "893a106828fbdb9521e1d868c985aab7ad2ae2f606edc55329265a5e7676006c",
+        "base.net.tfms.1.tfms.0.tfms.3.tfms.0.weight": "3fe0bcde9701ba3b7be19d437ce8746007e317e7beadd2eb7d34dd8ac10775c6",
+        "base.net.tfms.1.tfms.0.tfms.3.tfms.1.bias": "df8e9823047d843e2525d50d0b50e9ad1268fa317bbcdc3770daf83e58109290"
+      },
+      "buffer_hashes": {
+        "base.feature_map": "4714a853e8cd3b87caa0caff4ddb93e373b6dcf586125344de78eef0523d973f",
+        "base.encoded_center": "d1cef07fa763ebfa8effa9d2a7cef7c6ccca2c06f4f09734c436e2581d8ddfd9",
+        "base.modulation_columns": "6abbda60e9d44f6a471291abc07838f9843eb91504903343105a1e389280d8e9",
+        "base.zero_direct_columns": "042578b5b29838d97faae8d42dc1198b3a425efe3f5cabf2affb75d7f17d031f",
+        "base.numerical.center": "f1e76e9c6397ad5320a943b7918811a10de6f2d20188a2de1ab41a50d01adbb0",
+        "base.numerical.factor": "8b694f8cc21604dac4a2e6ec367f0b9507208814c9599f50e116d9ec082baf43",
+        "base.numerical.binary": "3ce4aeb911a9cc740f5f17ea1b135a0f41f0f65d08ed1c3822c6e1321dc328c5",
+        "base.numerical.numeric_indices": "9b75fce053bf6300f47645683e67cf27be9269f92c00dc99525d73ad3d75a821",
+        "base.numerical.passthrough": "3ce4aeb911a9cc740f5f17ea1b135a0f41f0f65d08ed1c3822c6e1321dc328c5"
+      }
+    },
+    "EMA_no_numeric_direct:51:1": {
+      "initial_weights_sha256": "8bf4a6446eb892f0ad6a0b8187983d0c869e74aba68a8dc94a978a058ab4340f",
+      "parameters": 12818992,
+      "tensor_hashes": {
+        "base.input_members": "abdfbffa531ffe5b69371ea989bc2eeba5028629362c196c476cc6106d427c52",
+        "base.numerical.frequency": "2e2581e93bae008b839acbc7267ae0ab70b7965edbd190ca5c54e3d87476ac61",
+        "base.numerical.phase": "1f2e598ed75ec4a3a27ffa05a3325de57e40d7100b5e82d82a6fcbcc869f4397",
+        "base.numerical.weight": "4b79b2d88048b461f135cfe70cb7e2308885fc912421e446fad9765d1261ed29",
+        "base.numerical.bias": "48533e540d90e4ab41f6c7b64780c1ac5d062282a8ac87b8e353c474725f5f70",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.0.scale": "92fb85ffe6fd8757cac6a2d8031d470f072204a2f961447bb05066aa7131ce08",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.1.weight": "176293b6df29dc95c0f75eb2393599229b9ecd7bb62b9092454c105b04443e30",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.2.bias": "3933debc6ed9d5a9d520d9b86cafa76590793921ec98596d3d507bdec17d72cd",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.3.weight": "893a106828fbdb9521e1d868c985aab7ad2ae2f606edc55329265a5e7676006c",
+        "base.net.tfms.1.tfms.0.tfms.1.tfms.0.weight": "1f7d42e26d83ed4776435d05d4c1e05f53f21179e136ddfae0f32ddce1651013",
+        "base.net.tfms.1.tfms.0.tfms.1.tfms.1.bias": "a119f9f7dc51f38ff181b2a5e4a8d860a759194fd86b7cb9b4880badccf50cdd",
+        "base.net.tfms.1.tfms.0.tfms.1.tfms.2.weight": "893a106828fbdb9521e1d868c985aab7ad2ae2f606edc55329265a5e7676006c",
+        "base.net.tfms.1.tfms.0.tfms.2.tfms.0.weight": "04cf5cd58913861f5cf53bddea8974771afc09af8a99914897f33b6d4bb7c292",
+        "base.net.tfms.1.tfms.0.tfms.2.tfms.1.bias": "fb2ece52533596bce84424387cd08f706b4ffbee52653a02a32f3a46f4718d17",
+        "base.net.tfms.1.tfms.0.tfms.2.tfms.2.weight": "893a106828fbdb9521e1d868c985aab7ad2ae2f606edc55329265a5e7676006c",
+        "base.net.tfms.1.tfms.0.tfms.3.tfms.0.weight": "08cd39aaac87b77bf71ed1d3840ae5fd8ad064896928f4318aa6648af60859d6",
+        "base.net.tfms.1.tfms.0.tfms.3.tfms.1.bias": "d73e897a36b25a16c132b17f0e8fba76bd23db6977566a54dd152ac7a2c2baae"
+      },
+      "buffer_hashes": {
+        "base.feature_map": "4714a853e8cd3b87caa0caff4ddb93e373b6dcf586125344de78eef0523d973f",
+        "base.encoded_center": "9036914db6e0df8d8037f8676465fea4ccb5cad8b2793ec0935831a080fb63f7",
+        "base.modulation_columns": "6abbda60e9d44f6a471291abc07838f9843eb91504903343105a1e389280d8e9",
+        "base.zero_direct_columns": "042578b5b29838d97faae8d42dc1198b3a425efe3f5cabf2affb75d7f17d031f",
+        "base.numerical.center": "f1e76e9c6397ad5320a943b7918811a10de6f2d20188a2de1ab41a50d01adbb0",
+        "base.numerical.factor": "8b694f8cc21604dac4a2e6ec367f0b9507208814c9599f50e116d9ec082baf43",
+        "base.numerical.binary": "3ce4aeb911a9cc740f5f17ea1b135a0f41f0f65d08ed1c3822c6e1321dc328c5",
+        "base.numerical.numeric_indices": "9b75fce053bf6300f47645683e67cf27be9269f92c00dc99525d73ad3d75a821",
+        "base.numerical.passthrough": "3ce4aeb911a9cc740f5f17ea1b135a0f41f0f65d08ed1c3822c6e1321dc328c5"
+      }
+    },
+    "EMA_no_numeric_direct:52:1": {
+      "initial_weights_sha256": "89b0b73a8f9186848f47f88dc615057f9d602ea7c74ed65c375a122b2130c492",
+      "parameters": 12818992,
+      "tensor_hashes": {
+        "base.input_members": "ae69cddc8906cc159d553911cfc3a5727250afd94d5ee74832ee2d53f3261f31",
+        "base.numerical.frequency": "e4adcd242391bb0b9be99159210b206e874d453e744a9415d11a88a4a919e2d6",
+        "base.numerical.phase": "58fac4f9f7148cfdc1b3c34c4d1ff2cbe73d93bd1759fb6110227c95cc4aa716",
+        "base.numerical.weight": "1baf76e745dd4d2f56b86933c1dc7a9a38d18b4cf0ecbace7d5a37c3df3fa150",
+        "base.numerical.bias": "d7548438c6e8bb96a356fca8031d9f785edc380a1dce270c055f8a0fc53b883e",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.0.scale": "92fb85ffe6fd8757cac6a2d8031d470f072204a2f961447bb05066aa7131ce08",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.1.weight": "ce9012151911c6f44fbf4878a57b1870543f62f9e9d5d0402a7836ed3e71deb1",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.2.bias": "e2f935596c5e1e4c6bc0d2f86fc8acff31a5eedc64f041f395289e3eb8a07b7b",
+        "base.net.tfms.1.tfms.0.tfms.0.tfms.3.weight": "893a106828fbdb9521e1d868c985aab7ad2ae2f606edc55329265a5e7676006c",
+        "base.net.tfms.1.tfms.0.tfms.1.tfms.0.weight": "9cbfa5f7c71521781363e83db9eaf82578b7a9440d9fe95b62f413dc247dd8b2",
+        "base.net.tfms.1.tfms.0.tfms.1.tfms.1.bias": "d041657eb85f7b6a03beeb4b212a2fea1d1962390980762c98c9ae80055b18e3",
+        "base.net.tfms.1.tfms.0.tfms.1.tfms.2.weight": "893a106828fbdb9521e1d868c985aab7ad2ae2f606edc55329265a5e7676006c",
+        "base.net.tfms.1.tfms.0.tfms.2.tfms.0.weight": "ba958fe854aad840d9cdf50f73fe4e78cacc6d7b1f00adb511e4304e213fce9a",
+        "base.net.tfms.1.tfms.0.tfms.2.tfms.1.bias": "8d9a35ed72100b6f7ddc77a140ac8f421ecc1b657f2e38aa2da8d683cb89ecf1",
+        "base.net.tfms.1.tfms.0.tfms.2.tfms.2.weight": "893a106828fbdb9521e1d868c985aab7ad2ae2f606edc55329265a5e7676006c",
+        "base.net.tfms.1.tfms.0.tfms.3.tfms.0.weight": "3fe0bcde9701ba3b7be19d437ce8746007e317e7beadd2eb7d34dd8ac10775c6",
+        "base.net.tfms.1.tfms.0.tfms.3.tfms.1.bias": "df8e9823047d843e2525d50d0b50e9ad1268fa317bbcdc3770daf83e58109290"
+      },
+      "buffer_hashes": {
+        "base.feature_map": "4714a853e8cd3b87caa0caff4ddb93e373b6dcf586125344de78eef0523d973f",
+        "base.encoded_center": "d1cef07fa763ebfa8effa9d2a7cef7c6ccca2c06f4f09734c436e2581d8ddfd9",
+        "base.modulation_columns": "6abbda60e9d44f6a471291abc07838f9843eb91504903343105a1e389280d8e9",
+        "base.zero_direct_columns": "042578b5b29838d97faae8d42dc1198b3a425efe3f5cabf2affb75d7f17d031f",
+        "base.numerical.center": "f1e76e9c6397ad5320a943b7918811a10de6f2d20188a2de1ab41a50d01adbb0",
+        "base.numerical.factor": "8b694f8cc21604dac4a2e6ec367f0b9507208814c9599f50e116d9ec082baf43",
+        "base.numerical.binary": "3ce4aeb911a9cc740f5f17ea1b135a0f41f0f65d08ed1c3822c6e1321dc328c5",
+        "base.numerical.numeric_indices": "9b75fce053bf6300f47645683e67cf27be9269f92c00dc99525d73ad3d75a821",
+        "base.numerical.passthrough": "3ce4aeb911a9cc740f5f17ea1b135a0f41f0f65d08ed1c3822c6e1321dc328c5"
+      }
+    }
+  },
+  "archived_seed48": {
+    "EMA_noM:0": {
+      "initial_exact": true,
+      "protocol_exact": true
+    },
+    "EMA_noM:1": {
+      "initial_exact": true,
+      "protocol_exact": true
+    },
+    "EMA_noP:0": {
+      "initial_exact": true,
+      "protocol_exact": true
+    },
+    "EMA_noP:1": {
+      "initial_exact": true,
+      "protocol_exact": true
+    },
+    "EMA_no_NRE_CMM:0": {
+      "initial_exact": true,
+      "protocol_exact": true
+    },
+    "EMA_no_NRE_CMM:1": {
+      "initial_exact": true,
+      "protocol_exact": true
+    },
+    "EMA_no_duration:0": {
+      "initial_exact": true,
+      "protocol_exact": true
+    },
+    "EMA_no_duration:1": {
+      "initial_exact": true,
+      "protocol_exact": true
+    },
+    "EMA_no_numeric_direct:0": {
+      "initial_exact": true,
+      "protocol_exact": true
+    },
+    "EMA_no_numeric_direct:1": {
+      "initial_exact": true,
+      "protocol_exact": true
+    }
+  },
+  "test_loaded": false,
+  "cpu_checks": [
+    "other_gpu_requires_900_continuous_seconds",
+    "external_activity_resets_lease",
+    "observation_gap_resets_timer",
+    "preferred_pool_not_blocked_by_waiting_idle_timer"
+  ],
+  "original_preprocessing_preserved": true,
+  "source_manifest_sha256": "115e37d3dff15f82eff3ccb36dd8ab0e845f36d82c07891be8df32e53619e892",
+  "verified_at": 1794057844.9847891
+}

@@ -1,0 +1,107 @@
+{
+  "database": "mimic",
+  "stage": "controls",
+  "stage_order": 3,
+  "source": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/work/cem_core_five_seed_20261107/mimic/controls_v1",
+  "output": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_core_five_seed_20261107/mimic/controls_v1/screen",
+  "source_manifest_sha256": "7f3879bcc573d7545308abd1bcf8b03a8db788b4762a446e29511661b1e96d56",
+  "matrix": [
+    {
+      "variant": "EMA_noP",
+      "seed": 51,
+      "endpoint": 0
+    },
+    {
+      "variant": "EMA_noP",
+      "seed": 52,
+      "endpoint": 0
+    },
+    {
+      "variant": "EMA_noM",
+      "seed": 51,
+      "endpoint": 0
+    },
+    {
+      "variant": "EMA_noM",
+      "seed": 52,
+      "endpoint": 0
+    },
+    {
+      "variant": "EMA_no_duration",
+      "seed": 51,
+      "endpoint": 0
+    },
+    {
+      "variant": "EMA_no_duration",
+      "seed": 52,
+      "endpoint": 0
+    },
+    {
+      "variant": "EMA_no_NRE_CMM",
+      "seed": 51,
+      "endpoint": 0
+    },
+    {
+      "variant": "EMA_no_NRE_CMM",
+      "seed": 52,
+      "endpoint": 0
+    },
+    {
+      "variant": "EMA_noP",
+      "seed": 51,
+      "endpoint": 1
+    },
+    {
+      "variant": "EMA_noP",
+      "seed": 52,
+      "endpoint": 1
+    },
+    {
+      "variant": "EMA_noM",
+      "seed": 51,
+      "endpoint": 1
+    },
+    {
+      "variant": "EMA_noM",
+      "seed": 52,
+      "endpoint": 1
+    },
+    {
+      "variant": "EMA_no_duration",
+      "seed": 51,
+      "endpoint": 1
+    },
+    {
+      "variant": "EMA_no_duration",
+      "seed": 52,
+      "endpoint": 1
+    },
+    {
+      "variant": "EMA_no_NRE_CMM",
+      "seed": 51,
+      "endpoint": 1
+    },
+    {
+      "variant": "EMA_no_NRE_CMM",
+      "seed": 52,
+      "endpoint": 1
+    }
+  ],
+  "variants": [
+    "EMA_noM",
+    "EMA_noP",
+    "EMA_no_NRE_CMM",
+    "EMA_no_duration"
+  ],
+  "entries": {
+    "tree": "scripts/cem_core_five_seed_entry.py",
+    "cem": "scripts/cem_core_five_seed_entry.py",
+    "tabular": "scripts/cem_core_five_seed_entry.py"
+  },
+  "expected_gib": 32.0,
+  "retention_multiplier": 13,
+  "min_available_ram_gib": 24,
+  "cpu_min_available_ram_gib": 24,
+  "probe_gpu_mib": 24576,
+  "probe_requirement_basis": "conservative headroom above archived measurements; bounded original-path probe before formal fits"
+}

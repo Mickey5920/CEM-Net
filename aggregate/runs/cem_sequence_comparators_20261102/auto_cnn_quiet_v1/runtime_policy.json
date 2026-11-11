@@ -1,0 +1,30 @@
+{
+  "poll_seconds": 600,
+  "prior_poll_seconds": 60,
+  "changed_poll_sites": 2,
+  "attempt_metadata_updated": true,
+  "all_other_control_flow_unchanged": true,
+  "pipeline": "cnn",
+  "wrapper_sha256": "ee345cc2c7a20487007a6e0abffe441f5db9ce784d77ade9bdb2594b92e799bd",
+  "hook_sha256": "8399be34c6f0cd563f8e07bed0d1a8c483a7cb946cd0382b7f9d51be9dea5d49",
+  "handoff_sha256": "ee8ea965d71047d8ad1390aff298546fca9e07f6ea2c557022257aa0580b3bae",
+  "frozen_source_hashes": {
+    "continue_cem_cnn_delivery.py": "b115725a8157e242320172614fbab3577078af63113b98da9584559203db74f5",
+    "cem_sequence_cnn_runtime.py": "d3c45bf71e984d79bcb3d8a48d760214971f18d384732e6a7b91316d3600e49d",
+    "collect_cem_sequence_partitions.py": "5b19bfbb1617e420ef741dae096e950d10d700698312712a6560bc49082dc641",
+    "continue_cem_sequence_partitions.py": "d4e30e7771829199a51ff5a1d9bcd934390ca1ad765591cf19bfb9b9cc3b843e",
+    "cem_sequence_partition_statistics.py": "098c1a11622e6086c30fad94235ac26c515b027b3bd9d7e7ed33446e4710fd61",
+    "cem_sequence_partition_runtime.py": "e2e982bb723744690bae5d574cb1046d4c4b0ad54069040f4aa6d1e633c5e388",
+    "collect_cem_replacements.py": "b1a3a3a3c79852317744306e33d12e8044af8b2902d6112fb669f004c83a705b",
+    "cem_replacement_statistics.py": "cd51cf7bc83ff85ac8604d3acc753c4bf4b6db02853d75d11284c0797293b12d",
+    "cem_icde72_statistics.py": "dbf2650ba02d43591b84744c8d50dbd58048be175c237be1e394dd889580148e",
+    "cem_icde72_significance.py": "c59cdc26825de406baf42d5b8fc0f8d636176efccc48f3b108c8ead05ec5e34c",
+    "launch_ema_cross.py": "27f1797c685447c9b9d90a284c9f52b779ecc34d08c2f387093aebd990dacdcd"
+  },
+  "creationflags": "CREATE_NO_WINDOW",
+  "startupinfo": "SW_HIDE",
+  "inherited_by_local_python_children": true,
+  "old_journal_locks_held": true,
+  "training_restarts": 0,
+  "statistics_restarts": 0
+}

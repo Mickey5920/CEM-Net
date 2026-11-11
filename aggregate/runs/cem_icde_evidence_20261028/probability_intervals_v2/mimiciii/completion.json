@@ -1,0 +1,9 @@
+{
+  "complete": true,
+  "source_sha256": "e7e7a00c42db5ee65b9717aa43b5c84577363d2680a78b661aab883824b32cbe",
+  "files": {
+    "verified-results.json": "34821f83fe92cb2ea939cb7cf5becc3bc475a9f390360fa8376a98743e8c646a",
+    "dev_loss_differences.npz": "e01027f246786eaba49049a99aa54ffe2d3fcbf386d84c35a1a3f8133ea4dc50",
+    "test_loss_differences.npz": "9b9f0e7bd835dc4bad72e246f1200bc61d5d84d2eece7758b9c26a6bd1ca87af"
+  }
+}

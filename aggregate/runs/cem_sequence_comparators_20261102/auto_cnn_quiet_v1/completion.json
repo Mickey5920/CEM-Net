@@ -1,0 +1,12 @@
+{
+  "complete": true,
+  "statistics_complete": true,
+  "paper_update_pending": true,
+  "verified_fits": 90,
+  "verified_tests": 90,
+  "retired_methods": [
+    "FTTransformer"
+  ],
+  "aggregate_sha256": "1d3048af9b51191d0ebae7dd14c942f25350ea4855fa35beb97ef0d59bc2f1dc",
+  "finished_at": 1793751860.7006838
+}

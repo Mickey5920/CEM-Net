@@ -1,0 +1,37 @@
+\begin{table*}[tp]
+\centering\footnotesize
+\setlength{\tabcolsep}{3pt}
+\caption{Test AP (mean $\pm$ sample SD, three fits). Bold and underlining mark the largest and second-largest unrounded means across methods. The contemporary comparisons use seeds 48--50. Historical adapters use 48--50 in MIMIC-III and 42--44 in MIMIC-IV/eICU; their inputs and objectives differ.}
+\label{tab:primary}
+\begin{tabular}{lrrrrrr}
+\toprule
+& \multicolumn{2}{c}{MIMIC-III} & \multicolumn{2}{c}{MIMIC-IV} & \multicolumn{2}{c}{eICU} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}\cmidrule(lr){6-7}
+Method & Mortality & LOS & Mortality & LOS & Mortality & LOS \\
+\midrule
+\multicolumn{7}{l}{\textit{Historical event-input adapters: supervised clinical heads}} \\
+MHP & $0.3232\,\pm\,0.0094$ & $0.4179\,\pm\,0.0042$ & $0.3872\,\pm\,0.0060$ & $0.3976\,\pm\,0.0081$ & $0.2205\,\pm\,0.0043$ & $0.2713\,\pm\,0.0077$ \\
+A-MHP & $0.3448\,\pm\,0.0144$ & $0.4423\,\pm\,0.0050$ & $0.3945\,\pm\,0.0060$ & $0.4188\,\pm\,0.0068$ & $0.2624\,\pm\,0.0084$ & $0.2886\,\pm\,0.0031$ \\
+S2P2 & $0.2685\,\pm\,0.0111$ & $0.4278\,\pm\,0.0062$ & $0.3628\,\pm\,0.0104$ & $0.4185\,\pm\,0.0037$ & $0.2490\,\pm\,0.0043$ & $0.2907\,\pm\,0.0040$ \\
+Dec-ODE & $0.3147\,\pm\,0.0174$ & $0.4547\,\pm\,0.0069$ & $0.4042\,\pm\,0.0074$ & $0.4360\,\pm\,0.0048$ & $0.2695\,\pm\,0.0070$ & $0.3072\,\pm\,0.0025$ \\
+EHRMamba & $0.3555\,\pm\,0.0262$ & $0.4573\,\pm\,0.0026$ & $0.4217\,\pm\,0.0073$ & $0.4569\,\pm\,0.0028$ & $0.2790\,\pm\,0.0023$ & $0.3080\,\pm\,0.0053$ \\
+HyMaTE & $0.3488\,\pm\,0.0068$ & $0.4641\,\pm\,0.0041$ & $0.4242\,\pm\,0.0112$ & $0.4558\,\pm\,0.0056$ & $0.2864\,\pm\,0.0067$ & $0.3320\,\pm\,0.0080$ \\
+XTSFormer & $0.3561\,\pm\,0.0220$ & $0.4707\,\pm\,0.0048$ & $0.4202\,\pm\,0.0049$ & $0.4724\,\pm\,0.0005$ & $0.2908\,\pm\,0.0045$ & $0.3296\,\pm\,0.0035$ \\
+CORE-BEHRT & $0.3759\,\pm\,0.0097$ & $0.4759\,\pm\,0.0047$ & $0.4335\,\pm\,0.0175$ & $0.4786\,\pm\,0.0026$ & $0.2943\,\pm\,0.0022$ & $0.3356\,\pm\,0.0073$ \\
+ResMLP & $0.3841\,\pm\,0.0187$ & $0.4791\,\pm\,0.0055$ & $0.4445\,\pm\,0.0032$ & $0.4717\,\pm\,0.0065$ & $0.3093\,\pm\,0.0039$ & $0.3408\,\pm\,0.0059$ \\
+\midrule
+\multicolumn{7}{l}{\textit{Observation-level comparators: values, times and masks}} \\
+SeFT & $0.3926\,\pm\,0.0121$ & $0.4946\,\pm\,0.0044$ & $0.4560\,\pm\,0.0041$ & $0.4925\,\pm\,0.0008$ & $0.3098\,\pm\,0.0034$ & $0.3292\,\pm\,0.0059$ \\
+GRU-D & $0.1345\,\pm\,0.0335$ & $0.2988\,\pm\,0.0264$ & $0.1958\,\pm\,0.0133$ & $0.2890\,\pm\,0.0268$ & $0.0619\,\pm\,0.0149$ & $0.1201\,\pm\,0.0103$ \\
+mTAND encoder & $0.4442\,\pm\,0.0151$ & $0.4949\,\pm\,0.0066$ & $0.4842\,\pm\,0.0020$ & $0.4950\,\pm\,0.0015$ & $0.3433\,\pm\,0.0020$ & $0.3510\,\pm\,0.0020$ \\
+\midrule
+\multicolumn{7}{l}{\textit{Common clinical evidence profile: model-specific preprocessing and training}} \\
+RealMLP & $0.4396\,\pm\,0.0188$ & $0.5220\,\pm\,0.0033$ & $0.5255\,\pm\,0.0064$ & $0.5267\,\pm\,0.0064$ & $0.3760\,\pm\,0.0046$ & $0.3699\,\pm\,0.0029$ \\
+TabM & $0.4670\,\pm\,0.0116$ & $0.5254\,\pm\,0.0122$ & $0.5259\,\pm\,0.0018$ & $0.5267\,\pm\,0.0035$ & $0.3904\,\pm\,0.0043$ & $0.3787\,\pm\,0.0025$ \\
+TabM-mini & $0.4693\,\pm\,0.0072$ & $0.5235\,\pm\,0.0118$ & $0.5259\,\pm\,0.0006$ & $0.5286\,\pm\,0.0031$ & $0.3902\,\pm\,0.0032$ & $0.3792\,\pm\,0.0029$ \\
+TabM-mini+PLE & $\underline{0.4799\,\pm\,0.0040}$ & $\underline{0.5338\,\pm\,0.0065}$ & $0.5342\,\pm\,0.0047$ & $0.5343\,\pm\,0.0006$ & $\mathbf{0.4047\,\pm\,0.0009}$ & $0.3917\,\pm\,0.0012$ \\
+TabM+PLE & $0.4768\,\pm\,0.0078$ & $0.5249\,\pm\,0.0136$ & $\underline{0.5389\,\pm\,0.0018}$ & $\underline{0.5348\,\pm\,0.0006}$ & $\underline{0.4039\,\pm\,0.0001}$ & $\mathbf{0.3935\,\pm\,0.0012}$ \\
+CEM-Net & $\mathbf{0.4863\,\pm\,0.0048}$ & $\mathbf{0.5491\,\pm\,0.0022}$ & $\mathbf{0.5448\,\pm\,0.0021}$ & $\mathbf{0.5408\,\pm\,0.0006}$ & $0.3966\,\pm\,0.0027$ & $\underline{0.3932\,\pm\,0.0011}$ \\
+\bottomrule
+\end{tabular}
+\end{table*}

@@ -1,0 +1,12 @@
+{
+  "complete": true,
+  "wrapper_pid": 2055984,
+  "cnn_workers_stopped": 0,
+  "training_restarts": 0,
+  "cancelled_running": 0,
+  "cancelled_pending": 40,
+  "adopted_workers": 5,
+  "runtime_sha256": "d3c45bf71e984d79bcb3d8a48d760214971f18d384732e6a7b91316d3600e49d",
+  "handoff_sha256": "dc97bcebf04f0a9937bc1a4468c331d52a42bd95164dd7b8547baaa843b3f6f1",
+  "active_scheduler_receipt": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_sequence_comparators_20261102/host_mimic_v3/ft_retirement_v1/exit.json"
+}

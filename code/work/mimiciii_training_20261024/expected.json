@@ -1,0 +1,157 @@
+{
+  "parent_manifest_sha256": "8769eb5ab18c917653d74a4d43bcaf43ec353064fcb8828da92957423150826c",
+  "parent_file_count": 273,
+  "acceptance_sha256": "3afe33de2c60934af2c03f4278fe5fcd30279852b55afd786682e1b01ffb0907",
+  "inputs": {
+    "completion.json": {
+      "bytes": 12089,
+      "sha256": "84632c686e6454606abb5f799a1e4b4ee6a02528df03425a96c60272295bdbb3"
+    },
+    "preprocessing.npz": {
+      "bytes": 39786,
+      "sha256": "f839b3ecf4911fbebf16eefa27f30da3ad97ea9a387f00a5e0974ae1ec52ad97"
+    },
+    "token_to_id.json": {
+      "bytes": 82857,
+      "sha256": "eda3b58ebe115a252409f1c812b52298757d0d6c326086cb1ac55f50b78b543a"
+    },
+    "normalization.json": {
+      "bytes": 6209,
+      "sha256": "df1a71bbd64a57b70f1b4b14078eb281908fc3747c446916ac831e3046dee1f2"
+    },
+    "train_raw.npy": {
+      "bytes": 1719992416,
+      "sha256": "2ddecc132775ebf44b44cda5b8e5c521cf001fc69b3de1b96177a4914b805c68"
+    },
+    "train_targets.npz": {
+      "bytes": 298478,
+      "sha256": "1e9600d80a5d27428c373089f09d13b6b1ea9c652ed3486d88a8cc95b8a44ee4"
+    },
+    "train_event_lengths.npy": {
+      "bytes": 251736,
+      "sha256": "aa73e3135badd745ba940a4daf15221727a0987efb664f1bb44e1b90acf3fa87"
+    },
+    "dev_raw.npy": {
+      "bytes": 247244576,
+      "sha256": "a2a8e78499ee72ec4361f657dc57c50df19a85e6a565238d54ab9887430909ce"
+    },
+    "dev_targets.npz": {
+      "bytes": 45252,
+      "sha256": "7167594ac4dfbd776c6ad708a20e8f8e96a9a548a09ffbfe8cc4d25e3d0b52b2"
+    },
+    "dev_event_lengths.npy": {
+      "bytes": 36296,
+      "sha256": "18722eef1165c120b8a69758c2e3005e657c5db71a54c6db07e76b21b0602b44"
+    },
+    "native_summary_scaling.npz": {
+      "bytes": 27232,
+      "sha256": "a348a2659bb9977d1f32709c91f5c971904f6096929b9bb3324440400c3ae885"
+    },
+    "native_configs.json": {
+      "bytes": 2763,
+      "sha256": "01579b74a4fa2620dca8b3c29b97b80103f7996f709b343dbcbc2253e9dc2f8d"
+    },
+    "fixed_recipe.json": {
+      "bytes": 2752,
+      "sha256": "8432e759c30ab903f261c3e640b2a50dc0b584d76aca1e4bdf0cd5341aff08d4"
+    }
+  },
+  "preparation": "runs/mimiciii_adaptation_20261024/v1/preparation",
+  "recipe": {
+    "native": true,
+    "effective_batch": 256,
+    "min_epochs": 52,
+    "max_epochs": 256,
+    "extension_epochs": 256,
+    "patience": null,
+    "min_delta": 0.0001,
+    "lr": 0.04,
+    "weight_decay": 0.02,
+    "members": 8,
+    "schedule_reference_epochs": 256,
+    "selection": "exact endpoint development AP",
+    "precision": "float32",
+    "independent_endpoints": true,
+    "from_scratch": true,
+    "test_loaded": false,
+    "loss": "mean memberwise cross entropy",
+    "description": "input-independent learned scalar event gate",
+    "beta2": 0.95,
+    "adapter_lr_multiplier": 1.0,
+    "adapter_weight_decay": 0.001,
+    "microbatch_policy": "fixed 128, effective batch 256; FP32",
+    "variant": "V1_group_rate",
+    "structure": "V1_group_rate",
+    "dropout": 0.15,
+    "adapter_lr": 0.0003,
+    "adapter_beta2": 0.999,
+    "initialization_rows": 1024,
+    "early_stop_boundaries": [
+      52,
+      120,
+      256
+    ],
+    "early_stop_rule": "only 52/120 boundaries; stop when no significant best-AP gain in last 17 epochs; cap 256",
+    "input_transform": "existing robust typed transform",
+    "centered": false,
+    "native_summary_scaling": true,
+    "full_native_frontend": false,
+    "training_microbatch": 128,
+    "evaluation_microbatch": 256,
+    "significant_gain_patience": 17,
+    "database": "mimiciii",
+    "width": 64,
+    "temporal_bins": 8,
+    "fusion_lr": 0.0003,
+    "fusion_weight_decay": 0.001,
+    "fusion_beta2": 0.999,
+    "fusion_schedule": "same native clock as input adapter",
+    "fusion_residual_initial": 0.1,
+    "tuning": false,
+    "seed": 48,
+    "hidden_mean_context": false,
+    "training_objective": "0.5*member_CE(z0)",
+    "main_view": "z0",
+    "checkpoint_selection_view": "z0",
+    "stopping_view": "z0",
+    "auxiliary_topology": "removed; no auxiliary logits or loss",
+    "ablated_component": null,
+    "ablation_implementation": "one prespecified structural change",
+    "lab_observation_bias": null,
+    "evidence_mixer": "latent_relations",
+    "event_slot_self_block": true,
+    "event_direct_enabled": true,
+    "time_encoder": null,
+    "event_gate_backbone_condition": null,
+    "interaction_direction": "events_query_labs",
+    "interaction_event_skip_enabled": true,
+    "evidence_heads": 4,
+    "additional_channels": 2,
+    "evidence_dropout": 0.15,
+    "fusion_position": "before_second_weight_layer",
+    "temporal_source": null,
+    "evidence_slots": 32,
+    "member_query_conditioning": null,
+    "evidence_width": 96,
+    "event_direct_gate": "sigmoid_scalar_fresh_U1_bias",
+    "fusion_readout_lr": 0.00015,
+    "fusion_readout_parameter_names": [
+      "extra_output.bias",
+      "extra_output.weight",
+      "extra_scale",
+      "output.bias",
+      "output.weight",
+      "output_norm.bias",
+      "output_norm.weight",
+      "residual_scale"
+    ]
+  },
+  "task_scope": "six fresh full-model fits, seeds 48/49/50, mortality and LOS; no additional experiments",
+  "authorized_gpus": [
+    0,
+    1,
+    4
+  ],
+  "max_workers_per_gpu": 2,
+  "test_uploaded": false
+}

@@ -1,0 +1,8 @@
+{
+  "complete": true,
+  "results_sha256": "3ba4d3f7f9a9602395819356ac971addfeb0f06f6da1ab8a41af5f2b1b47f070",
+  "source_sha256": "ea5317c23b352d6960a2478961cad44b1a0b2b4bd32a57d1eefda203f1038569",
+  "inputs_unchanged": true,
+  "paired_leaveouts": 140,
+  "per_seed_paired_leaveouts": 420
+}

@@ -1,0 +1,14 @@
+{
+  "job_id": "cem_aggregation_stress_20261106_mimiciii",
+  "wrapper_pid": 2820467,
+  "child_pid": 2820470,
+  "child_identity": {
+    "start_ticks": "194086888",
+    "state": "R",
+    "boot": "b71f789a-6443-4d31-a384-079f6507be54"
+  },
+  "source_manifest_sha256": "12a8a88c5ca4bc4ea2e4956294d890260575d5d60fc41e4a485c8cf24a6171fb",
+  "started_at": 1793904396.481166,
+  "returncode": 0,
+  "finished_at": 1793905084.2372618
+}

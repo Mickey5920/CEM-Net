@@ -1,0 +1,27 @@
+{
+  "complete": true,
+  "five_seed": {
+    "complete": true,
+    "five_seed_summary": true,
+    "seed_test_minimum_p": 0.0625,
+    "zero_and_extreme_bootstrap": true
+  },
+  "shared_original_statistical_tests": {
+    "complete": true,
+    "checks": [
+      "weighted_AP_ties_zero_weights",
+      "centered_p_symmetry_zero_extreme_tail",
+      "three_seed_exact_signed_ranks",
+      "full_family_Holm"
+    ],
+    "training_launched": false,
+    "resampling_launched": false,
+    "calibration_fits": 0
+  },
+  "source_files": 5,
+  "training_manifests": {
+    "mimiciii": "40e59909398406e80f6eb7c73eee6d62995e180bfa312f9a8cfb03824a24b32e",
+    "mimic": "bd36e31a9454e3117b757b474d01894ff2a1d170558ab58a56c6b539cf063e13",
+    "eicu": "65f330effa8981dc0ede59cd72c858a42c16b04bb60606987114974d612225e7"
+  }
+}

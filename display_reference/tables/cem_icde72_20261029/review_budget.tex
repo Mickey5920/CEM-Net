@@ -1,0 +1,27 @@
+\begin{table}[tp]
+\centering\footnotesize
+\setlength{\tabcolsep}{3pt}
+\caption{Retrieval under fixed review budgets. Recall (\%) is for CEM-Net; $\Delta$TP is CEM-Net minus the validation-selected baseline in positives retrieved per 1,000 stays. Brackets show 99.5833\% patient-cluster intervals (12 contrasts).}
+\label{tab:review-budget}
+\begin{tabular}{lrr}
+\toprule
+Database / endpoint & Recall & $\Delta$TP [interval] \\
+\midrule
+\multicolumn{3}{l}{\textit{5\% review budget}} \\
+MIMIC-III / Mort. & 36.5 & $+0.52\ [-1.03,+2.34]$ \\
+MIMIC-III / LOS & 21.3 & $+1.92\ [+0.07,+4.09]$ \\
+MIMIC-IV / Mort. & 40.6 & $-0.02\ [-1.12,+1.12]$ \\
+MIMIC-IV / LOS & 22.9 & $+0.11\ [-1.14,+1.40]$ \\
+eICU / Mort. & 41.0 & $-0.28\ [-1.05,+0.57]$ \\
+eICU / LOS & 23.4 & $+0.20\ [-0.87,+1.39]$ \\
+\midrule
+\multicolumn{3}{l}{\textit{10\% review budget}} \\
+MIMIC-III / Mort. & 55.4 & $+0.44\ [-1.52,+2.39]$ \\
+MIMIC-III / LOS & 37.4 & $+1.51\ [-0.97,+3.94]$ \\
+MIMIC-IV / Mort. & 60.4 & $+0.38\ [-1.01,+1.54]$ \\
+MIMIC-IV / LOS & 39.3 & $+0.36\ [-1.32,+1.86]$ \\
+eICU / Mort. & 57.4 & $-0.33\ [-1.23,+0.63]$ \\
+eICU / LOS & 38.8 & $+0.27\ [-1.07,+1.50]$ \\
+\bottomrule
+\end{tabular}
+\end{table}

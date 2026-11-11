@@ -1,0 +1,679 @@
+{
+  "complete": true,
+  "database": "eicu",
+  "rows": [
+    {
+      "split": "dev",
+      "endpoint": 0,
+      "baseline": "TabM_mini_PLE",
+      "form": "raw",
+      "metric": "Brier",
+      "seed_differences": [
+        0.002454618729087584,
+        0.0004233413668242354,
+        0.00024837668298901275
+      ],
+      "mean": 0.0010421122596336108,
+      "sample_SD": 0.0012263906615896853,
+      "method_values": {
+        "CEM-Net": [
+          0.04031374902907988,
+          0.03873520243961936,
+          0.038471825650916586
+        ],
+        "TabM_mini_PLE": [
+          0.0378591302999923,
+          0.03831186107279513,
+          0.03822344896792758
+        ]
+      },
+      "ci95": [
+        0.00037474881951171375,
+        0.0017119820418434893
+      ],
+      "adjusted_ci": [
+        -2.10957939430399e-05,
+        0.0021029163434438955
+      ],
+      "family": 24,
+      "negative_favors_CEM": true,
+      "validation_resubstitution": true
+    },
+    {
+      "split": "dev",
+      "endpoint": 0,
+      "baseline": "TabM_mini_PLE",
+      "form": "raw",
+      "metric": "log_loss",
+      "seed_differences": [
+        0.024999306879223495,
+        0.0016954784043672518,
+        0.0010331469143086735
+      ],
+      "mean": 0.009242644065966473,
+      "sample_SD": 0.013649688201885357,
+      "method_values": {
+        "CEM-Net": [
+          0.16616985225954453,
+          0.14400070771950974,
+          0.14309449462569485
+        ],
+        "TabM_mini_PLE": [
+          0.14117054538032103,
+          0.1423052293151425,
+          0.14206134771138615
+        ]
+      },
+      "ci95": [
+        0.006046355044801089,
+        0.012493030052992253
+      ],
+      "adjusted_ci": [
+        0.0042360340372374974,
+        0.014439871431771984
+      ],
+      "family": 24,
+      "negative_favors_CEM": true,
+      "validation_resubstitution": true
+    },
+    {
+      "split": "dev",
+      "endpoint": 0,
+      "baseline": "TabM_mini_PLE",
+      "form": "Platt",
+      "metric": "Brier",
+      "seed_differences": [
+        0.0004777913290054425,
+        4.054632383760738e-05,
+        3.1862007609707726e-05
+      ],
+      "mean": 0.00018339988681758586,
+      "sample_SD": 0.0002549874413812789,
+      "method_values": {
+        "CEM-Net": [
+          0.03836652981364991,
+          0.03818832520391615,
+          0.03812553497294336
+        ],
+        "TabM_mini_PLE": [
+          0.03788873848464446,
+          0.03814777888007854,
+          0.03809367296533366
+        ]
+      },
+      "ci95": [
+        -0.0002293981643535596,
+        0.0005897787084067222
+      ],
+      "adjusted_ci": [
+        -0.0004925267824239551,
+        0.0008391306692746142
+      ],
+      "family": 24,
+      "negative_favors_CEM": true,
+      "validation_resubstitution": true
+    },
+    {
+      "split": "dev",
+      "endpoint": 0,
+      "baseline": "TabM_mini_PLE",
+      "form": "Platt",
+      "metric": "log_loss",
+      "seed_differences": [
+        0.0006492184898936719,
+        -0.00011552664351730771,
+        -2.4740644569749523e-06
+      ],
+      "mean": 0.00017707259397312973,
+      "sample_SD": 0.0004127790349375883,
+      "method_values": {
+        "CEM-Net": [
+          0.1415941617308261,
+          0.14140579531925826,
+          0.1414097644336497
+        ],
+        "TabM_mini_PLE": [
+          0.1409449432409324,
+          0.14152132196277556,
+          0.14141223849810666
+        ]
+      },
+      "ci95": [
+        -0.001666696322212663,
+        0.0019856327524193627
+      ],
+      "adjusted_ci": [
+        -0.0026982381622558094,
+        0.003103351932924307
+      ],
+      "family": 24,
+      "negative_favors_CEM": true,
+      "validation_resubstitution": true
+    },
+    {
+      "split": "dev",
+      "endpoint": 1,
+      "baseline": "TabM_mini_PLE",
+      "form": "raw",
+      "metric": "Brier",
+      "seed_differences": [
+        0.0027641086549146424,
+        0.00040005228625546527,
+        0.0015829754960502592
+      ],
+      "mean": 0.001582378812406789,
+      "sample_SD": 0.0011820282972810048,
+      "method_values": {
+        "CEM-Net": [
+          0.0867134970608901,
+          0.08433232606199675,
+          0.08553667137259155
+        ],
+        "TabM_mini_PLE": [
+          0.08394938840597545,
+          0.08393227377574128,
+          0.08395369587654129
+        ]
+      },
+      "ci95": [
+        0.0008964811084643731,
+        0.0022933221211067062
+      ],
+      "adjusted_ci": [
+        0.0005012900335394628,
+        0.0027038553348350046
+      ],
+      "family": 24,
+      "negative_favors_CEM": true,
+      "validation_resubstitution": true
+    },
+    {
+      "split": "dev",
+      "endpoint": 1,
+      "baseline": "TabM_mini_PLE",
+      "form": "raw",
+      "metric": "log_loss",
+      "seed_differences": [
+        0.014928046367484779,
+        0.002454826182755788,
+        0.009295627723558549
+      ],
+      "mean": 0.008892833424599705,
+      "sample_SD": 0.006246357969219982,
+      "method_values": {
+        "CEM-Net": [
+          0.29846916652051075,
+          0.28523372996086455,
+          0.292384313493291
+        ],
+        "TabM_mini_PLE": [
+          0.283541120153026,
+          0.2827789037781087,
+          0.2830886857697325
+        ]
+      },
+      "ci95": [
+        0.0058432959386393755,
+        0.01196347501315468
+      ],
+      "adjusted_ci": [
+        0.004164165939298171,
+        0.013676642756748425
+      ],
+      "family": 24,
+      "negative_favors_CEM": true,
+      "validation_resubstitution": true
+    },
+    {
+      "split": "dev",
+      "endpoint": 1,
+      "baseline": "TabM_mini_PLE",
+      "form": "Platt",
+      "metric": "Brier",
+      "seed_differences": [
+        0.00046070380435334567,
+        0.00021877524845351096,
+        0.0002571434359387123
+      ],
+      "mean": 0.000312207496248523,
+      "sample_SD": 0.00013002459226352803,
+      "method_values": {
+        "CEM-Net": [
+          0.0843441233855383,
+          0.0840673263661997,
+          0.08421339088104941
+        ],
+        "TabM_mini_PLE": [
+          0.08388341958118496,
+          0.08384855111774618,
+          0.08395624744511071
+        ]
+      },
+      "ci95": [
+        -0.00021030105290649305,
+        0.0008461103758061152
+      ],
+      "adjusted_ci": [
+        -0.0005247027992141304,
+        0.001170391195061785
+      ],
+      "family": 24,
+      "negative_favors_CEM": true,
+      "validation_resubstitution": true
+    },
+    {
+      "split": "dev",
+      "endpoint": 1,
+      "baseline": "TabM_mini_PLE",
+      "form": "Platt",
+      "metric": "log_loss",
+      "seed_differences": [
+        0.00216527429785947,
+        0.001281938485472788,
+        0.0012962314738931549
+      ],
+      "mean": 0.0015811480857418044,
+      "sample_SD": 0.0005059186161248619,
+      "method_values": {
+        "CEM-Net": [
+          0.2851175583395403,
+          0.28379232252552317,
+          0.2843129134478968
+        ],
+        "TabM_mini_PLE": [
+          0.28295228404168077,
+          0.28251038404005036,
+          0.28301668197400365
+        ]
+      },
+      "ci95": [
+        -0.0002370152529682539,
+        0.0033955879351528937
+      ],
+      "adjusted_ci": [
+        -0.0012006539741624494,
+        0.004511872895255838
+      ],
+      "family": 24,
+      "negative_favors_CEM": true,
+      "validation_resubstitution": true
+    },
+    {
+      "split": "test",
+      "endpoint": 0,
+      "baseline": "TabM_mini_PLE",
+      "form": "raw",
+      "metric": "Brier",
+      "seed_differences": [
+        0.0021496415193157834,
+        0.00028430841644026643,
+        0.00024246356592389564
+      ],
+      "mean": 0.0008921378338933151,
+      "sample_SD": 0.0010892310989946083,
+      "method_values": {
+        "CEM-Net": [
+          0.04056108514868051,
+          0.038952201347990226,
+          0.03878130288573077
+        ],
+        "TabM_mini_PLE": [
+          0.03841144362936473,
+          0.038667892931549964,
+          0.038538839319806874
+        ]
+      },
+      "ci95": [
+        0.0004250852363101562,
+        0.0013763588532327968
+      ],
+      "adjusted_ci": [
+        0.0001504641445573385,
+        0.001663515138107703
+      ],
+      "family": 24,
+      "negative_favors_CEM": true,
+      "validation_resubstitution": false
+    },
+    {
+      "split": "test",
+      "endpoint": 0,
+      "baseline": "TabM_mini_PLE",
+      "form": "raw",
+      "metric": "log_loss",
+      "seed_differences": [
+        0.029346940342979345,
+        0.0018826440492486724,
+        0.0013607563539452647
+      ],
+      "mean": 0.010863446915391095,
+      "sample_SD": 0.01600930162928417,
+      "method_values": {
+        "CEM-Net": [
+          0.17268539626451573,
+          0.14552454819822758,
+          0.1446221546758685
+        ],
+        "TabM_mini_PLE": [
+          0.14333845592153638,
+          0.14364190414897893,
+          0.14326139832192322
+        ]
+      },
+      "ci95": [
+        0.008580652895588506,
+        0.013173642305918656
+      ],
+      "adjusted_ci": [
+        0.007237433081615756,
+        0.014489604479748256
+      ],
+      "family": 24,
+      "negative_favors_CEM": true,
+      "validation_resubstitution": false
+    },
+    {
+      "split": "test",
+      "endpoint": 0,
+      "baseline": "TabM_mini_PLE",
+      "form": "Platt",
+      "metric": "Brier",
+      "seed_differences": [
+        0.00037667998800864396,
+        0.000166849494928311,
+        0.0002220658391437448
+      ],
+      "mean": 0.0002551984406935666,
+      "sample_SD": 0.00010876826706663278,
+      "method_values": {
+        "CEM-Net": [
+          0.038727366367429024,
+          0.0385029056738128,
+          0.03851819344725127
+        ],
+        "TabM_mini_PLE": [
+          0.03835068637942038,
+          0.03833605617888449,
+          0.03829612760810752
+        ]
+      },
+      "ci95": [
+        -3.6924033239096636e-05,
+        0.0005456306622633897
+      ],
+      "adjusted_ci": [
+        -0.0002093967299373881,
+        0.0007355518518335917
+      ],
+      "family": 24,
+      "negative_favors_CEM": true,
+      "validation_resubstitution": false
+    },
+    {
+      "split": "test",
+      "endpoint": 0,
+      "baseline": "TabM_mini_PLE",
+      "form": "Platt",
+      "metric": "log_loss",
+      "seed_differences": [
+        0.00238384083303342,
+        0.00024396654855361584,
+        0.00031198950683521175
+      ],
+      "mean": 0.000979932296140749,
+      "sample_SD": 0.0012162960847110521,
+      "method_values": {
+        "CEM-Net": [
+          0.14509740009165617,
+          0.14277094959916692,
+          0.1427472791808532
+        ],
+        "TabM_mini_PLE": [
+          0.14271355925862272,
+          0.14252698305061332,
+          0.142435289674018
+        ]
+      },
+      "ci95": [
+        -0.000247626026823262,
+        0.0022019575721709123
+      ],
+      "adjusted_ci": [
+        -0.0009751098032802704,
+        0.002870386976331823
+      ],
+      "family": 24,
+      "negative_favors_CEM": true,
+      "validation_resubstitution": false
+    },
+    {
+      "split": "test",
+      "endpoint": 1,
+      "baseline": "TabM_mini_PLE",
+      "form": "raw",
+      "metric": "Brier",
+      "seed_differences": [
+        0.0023948760499415927,
+        0.00014521708876401171,
+        0.0009717236164788329
+      ],
+      "mean": 0.0011706055850614792,
+      "sample_SD": 0.0011379397560820738,
+      "method_values": {
+        "CEM-Net": [
+          0.08399751562670088,
+          0.08174250010622207,
+          0.0826183478222263
+        ],
+        "TabM_mini_PLE": [
+          0.0816026395767593,
+          0.0815972830174581,
+          0.08164662420574746
+        ]
+      },
+      "ci95": [
+        0.0006655221352673662,
+        0.0016719233324692167
+      ],
+      "adjusted_ci": [
+        0.0003930082671714785,
+        0.001967467824740033
+      ],
+      "family": 24,
+      "negative_favors_CEM": true,
+      "validation_resubstitution": false
+    },
+    {
+      "split": "test",
+      "endpoint": 1,
+      "baseline": "TabM_mini_PLE",
+      "form": "raw",
+      "metric": "log_loss",
+      "seed_differences": [
+        0.013531555011915187,
+        0.0014983120783238354,
+        0.007902287856779195
+      ],
+      "mean": 0.007644051649006073,
+      "sample_SD": 0.006020776389217618,
+      "method_values": {
+        "CEM-Net": [
+          0.29102426989111024,
+          0.2784049915049171,
+          0.28499862522323516
+        ],
+        "TabM_mini_PLE": [
+          0.2774927148791951,
+          0.27690667942659325,
+          0.27709633736645595
+        ]
+      },
+      "ci95": [
+        0.0054022611644760415,
+        0.009904302623615897
+      ],
+      "adjusted_ci": [
+        0.004041615117320117,
+        0.011209463781221462
+      ],
+      "family": 24,
+      "negative_favors_CEM": true,
+      "validation_resubstitution": false
+    },
+    {
+      "split": "test",
+      "endpoint": 1,
+      "baseline": "TabM_mini_PLE",
+      "form": "Platt",
+      "metric": "Brier",
+      "seed_differences": [
+        0.00020528206283539695,
+        3.392943504136759e-05,
+        -0.00015550700148956318
+      ],
+      "mean": 2.790149879573378e-05,
+      "sample_SD": 0.00018047005082743263,
+      "method_values": {
+        "CEM-Net": [
+          0.08169142651197564,
+          0.08155091380492,
+          0.08147475536855553
+        ],
+        "TabM_mini_PLE": [
+          0.08148614444914024,
+          0.08151698436987861,
+          0.08163026237004509
+        ]
+      },
+      "ci95": [
+        -0.0003683428338475977,
+        0.00042668964687151974
+      ],
+      "adjusted_ci": [
+        -0.0005818823188687593,
+        0.000646581195846846
+      ],
+      "family": 24,
+      "negative_favors_CEM": true,
+      "validation_resubstitution": false
+    },
+    {
+      "split": "test",
+      "endpoint": 1,
+      "baseline": "TabM_mini_PLE",
+      "form": "Platt",
+      "metric": "log_loss",
+      "seed_differences": [
+        0.001847908804440248,
+        0.0005743512944346798,
+        0.0007293539632217595
+      ],
+      "mean": 0.0010505380206988959,
+      "sample_SD": 0.0006948788253400755,
+      "method_values": {
+        "CEM-Net": [
+          0.27852726012125006,
+          0.27727434333534323,
+          0.2776690245678748
+        ],
+        "TabM_mini_PLE": [
+          0.2766793513168098,
+          0.2766999920409086,
+          0.27693967060465297
+        ]
+      },
+      "ci95": [
+        -0.0003438046059295123,
+        0.002439682323346797
+      ],
+      "adjusted_ci": [
+        -0.001077775472040173,
+        0.003237505546577719
+      ],
+      "family": 24,
+      "negative_favors_CEM": true,
+      "validation_resubstitution": false
+    }
+  ],
+  "replicates": 20000,
+  "source_sha256": "e7e7a00c42db5ee65b9717aa43b5c84577363d2680a78b661aab883824b32cbe",
+  "primary_sha256": "9d2a99ad4c57a4e2842b30d3222265fd6e736f84edf68edbae51978bd946ba2d",
+  "secondary_sha256": "feec517c76a36b8a6a6201a8cd08ad618a7cd3194e98c2a84fe7fa46c87bc9fe",
+  "split_info": {
+    "dev": {
+      "patients": 10403,
+      "stays": 13140,
+      "rng_seed": 20261026,
+      "cluster_ids_sha256": "56f95cea806592a6c73671967b293c1de3111b055baad0749122d0fc28f762ac"
+    },
+    "test": {
+      "patients": 20777,
+      "stays": 26229,
+      "rng_seed": 20261027,
+      "cluster_ids_sha256": "0f5e493128553fb18a7c64a90da995e3e7ae8bc3bcaaa66b313a7c86b60250b1"
+    }
+  },
+  "protected": {
+    "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/probability_intervals_v1/eicu/analysis.log": "6ca24a24cd8c2eb53665c349ebe065b54e9ca7ac73c27c6dce5802757bda8af5",
+    "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/probability_intervals_v1/eicu/attempt.json": "efac58ee7840ddbb091cfb8af91b889e23cc5090c750dadae471534ba7b40da3",
+    "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/probability_intervals_v1/eicu/exit.json": "d8fdc5291700b00b8d5b68380da3b1caf9ecdc6e61bec87fd2ef46128efcece8",
+    "/home/data/lxm/TRACEHR/work/cem_icde_evidence_20261028/probability_intervals_v1/loss_intervals.py": "bba5aa1247f3e666c1535666f7fc179117bb41a64424c53b9fbb71d5039f1fcd",
+    "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu_statistics_v1/verified-results.json": "9d2a99ad4c57a4e2842b30d3222265fd6e736f84edf68edbae51978bd946ba2d",
+    "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu_secondary_v1/verified-results.json": "feec517c76a36b8a6a6201a8cd08ad618a7cd3194e98c2a84fe7fa46c87bc9fe",
+    "/home/data/lxm/TRACEHR/work/cem_icde_evidence_20261028/eicu/basic_v2/work/cem_icde_evidence_20261028/config.json": "286d6bb5cd9273493ecb7a82d8d7fdbc1555206677b1d8deaa5793f2b346c1fe",
+    "/home/data/lxm/TRACEHR/cache/tracehr_module_scratch_20261010/eicu/d3339549c979809df7d6fee3938bcf1e1cdb4f408b5241778c0fc78bebcd040a/dev_targets.npz": "e570c4b23def9239c4d590173175100df4acfec4081d5c97b4bd9b33886e2beb",
+    "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu_statistics_v1/bootstrap/random_dev_CEM_Net.json": "3b19bf10774642945cadb65149084ed6415efba92cbe0a3c0f38ac67722a8feb",
+    "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu_statistics_v1/bootstrap/random_dev_CEM_Net.npz": "7a8fc9aabb46121559ca12ea60e9e521a561410b9d26bd657cf27a15fa5648ea",
+    "/home/data/lxm/TRACEHR/runs/tracehr_ema_cross_20261024/eicu/v1/screen/jobs/fullEMA_t0_s48/predictions_dev.npz": "8b87c014daa0e08c2b2ba5f13e1cb4c9105e8cd0fc388a8eeee247393caa1ce5",
+    "/home/data/lxm/TRACEHR/runs/tracehr_ema_cross_20261024/eicu/v1/screen/jobs/fullEMA_t0_s49/predictions_dev.npz": "8bafa96fd6eec1db8e7c369647646e04cfb2157b42e98ca3cf50e2e88bf5ad60",
+    "/home/data/lxm/TRACEHR/runs/tracehr_ema_cross_20261024/eicu/v1/screen/jobs/fullEMA_t0_s50/predictions_dev.npz": "02771d57a9fbecdd93caa8b4d702f7a24558c55ddf1d6921150ba51d72c3fbc2",
+    "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu_statistics_v1/bootstrap/random_dev_TabM_mini_PLE.json": "440b29439bda8e59fe603a996cd5b68a7d378eef166985bb5f2809e0bd1ed92d",
+    "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu_statistics_v1/bootstrap/random_dev_TabM_mini_PLE.npz": "8bdef5faa70ad6a1d22e912913ce1627efc580543514fc6286ef901f4882673f",
+    "/home/data/lxm/TRACEHR/runs/cem_evidence_completion_20261025/eicu/tabular_v1/screen/jobs/TabM_mini_PLE_t0_s48/predictions_dev.npz": "6f10985eb7e9f2a73822275058f10794aa1f3c55ad693127ba92720586b6c7d5",
+    "/home/data/lxm/TRACEHR/runs/cem_evidence_completion_20261025/eicu/tabular_v1/screen/jobs/TabM_mini_PLE_t0_s49/predictions_dev.npz": "68d3d4e8735ba766f6a54748a082f65fe6a10637897536b646725a46a1f09023",
+    "/home/data/lxm/TRACEHR/runs/cem_evidence_completion_20261025/eicu/tabular_v1/screen/jobs/TabM_mini_PLE_t0_s50/predictions_dev.npz": "2820418f5b47788e15b9d0ee8deb79505aefc61e3d88baa007ca4f6fb2202a5f",
+    "/home/data/lxm/TRACEHR/runs/tracehr_ema_cross_20261024/eicu/v1/screen/jobs/fullEMA_t1_s48/predictions_dev.npz": "046113ef81669f4ef18bef37d20d56888a6fa1a3713ac362f06244bcc0521fda",
+    "/home/data/lxm/TRACEHR/runs/tracehr_ema_cross_20261024/eicu/v1/screen/jobs/fullEMA_t1_s49/predictions_dev.npz": "43ee1666bdd96af236405920536200b43705ad3b3123dfc7c11ede328d3dd4c5",
+    "/home/data/lxm/TRACEHR/runs/tracehr_ema_cross_20261024/eicu/v1/screen/jobs/fullEMA_t1_s50/predictions_dev.npz": "f53b1b2211c38ab4ff3a5360fcaac9b93ee09f61700be53716a30878d193742d",
+    "/home/data/lxm/TRACEHR/runs/cem_evidence_completion_20261025/eicu/tabular_v1/screen/jobs/TabM_mini_PLE_t1_s48/predictions_dev.npz": "5fc256f8e752fcce1f6f16b2adba87e22b5a1ae0d5bca2f12c35f7fe8ec72024",
+    "/home/data/lxm/TRACEHR/runs/cem_evidence_completion_20261025/eicu/tabular_v1/screen/jobs/TabM_mini_PLE_t1_s49/predictions_dev.npz": "303ece662dce73ede2ce8a5a2dfb75204cc3513aa5c6208b6f8c166f46b803ae",
+    "/home/data/lxm/TRACEHR/runs/cem_evidence_completion_20261025/eicu/tabular_v1/screen/jobs/TabM_mini_PLE_t1_s50/predictions_dev.npz": "61aab895bf0f3b70611b43d530f98f28e2796dc6e4e5e7a04ba8e42ef6562d3e",
+    "/home/data/lxm/TRACEHR/runs/tracehr_pm_test_20261021/eicu/features/test_targets.npz": "8d7fd3eb53ae25e76febaa4f3ddeab0bca388a1dfeb167cc6effb986395d1984",
+    "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu_statistics_v1/bootstrap/random_test_CEM_Net.json": "9648a793eba9bb6cfb48bc6cb0114b7869863b0758124d8ab0d1fd6ed08960b2",
+    "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu_statistics_v1/bootstrap/random_test_CEM_Net.npz": "bcc8d8def15ed5bb61a43717bbda5f07c52e4d8f3f14db9eb0f1ec49c8801998",
+    "/home/data/lxm/TRACEHR/runs/tracehr_ema_cross_20261024/eicu/v1/screen/test/test_fullEMA_t0_s48/predictions_test.npz": "80c1ea5150e80a089a8cf9dfc4622ed13352066c2a9aece599ea30a042737ab6",
+    "/home/data/lxm/TRACEHR/runs/tracehr_ema_cross_20261024/eicu/v1/screen/test/test_fullEMA_t0_s49/predictions_test.npz": "e57f66a0b991558f84839f5bf3c9d065fae1842957f2ef1aecf91e0fc5df8e0b",
+    "/home/data/lxm/TRACEHR/runs/tracehr_ema_cross_20261024/eicu/v1/screen/test/test_fullEMA_t0_s50/predictions_test.npz": "a7e5b60d9d9cd5cbb5f61f991c4a0af0b36f1634f71f14c34ccb95ee4b0df449",
+    "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu_statistics_v1/bootstrap/random_test_TabM_mini_PLE.json": "c3fe0784015ce38dae60452f9cedaa85f8e5b13ce87b116e4e485bc6df451666",
+    "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu_statistics_v1/bootstrap/random_test_TabM_mini_PLE.npz": "427b9d884d70e6c36df5fb4e129d1eba140a129e765525b6ef9ccad7bb3801c4",
+    "/home/data/lxm/TRACEHR/runs/cem_evidence_completion_20261025/eicu/tabular_v1/screen/test/test_TabM_mini_PLE_t0_s48/predictions_test.npz": "d4a021fc517e34ca9682600f6b70a5742bbfdda3ce137b5bdfeb2ad7c7eec7e1",
+    "/home/data/lxm/TRACEHR/runs/cem_evidence_completion_20261025/eicu/tabular_v1/screen/test/test_TabM_mini_PLE_t0_s49/predictions_test.npz": "f6e6ea0a0aa05b3077ddb4fb373b0dc8ce2ad84732650ddcf72ab48d138a8f32",
+    "/home/data/lxm/TRACEHR/runs/cem_evidence_completion_20261025/eicu/tabular_v1/screen/test/test_TabM_mini_PLE_t0_s50/predictions_test.npz": "5d0155931b368d96592fbda488059b24bb09cb844a23236938612de223a4a8a4",
+    "/home/data/lxm/TRACEHR/runs/tracehr_ema_cross_20261024/eicu/v1/screen/test/test_fullEMA_t1_s48/predictions_test.npz": "4036288a974f5a995684258d3c377512a2de192707fec4ee34c6eb75271dccb2",
+    "/home/data/lxm/TRACEHR/runs/tracehr_ema_cross_20261024/eicu/v1/screen/test/test_fullEMA_t1_s49/predictions_test.npz": "724215f0b52e3a099bf3b79fc54b9d4131f2306c351257e8a010f3a25bc8c6ae",
+    "/home/data/lxm/TRACEHR/runs/tracehr_ema_cross_20261024/eicu/v1/screen/test/test_fullEMA_t1_s50/predictions_test.npz": "74cd9e57e5f59bac6e0ad5cf8650500787c5ea2272c1ab02153d0196d378a624",
+    "/home/data/lxm/TRACEHR/runs/cem_evidence_completion_20261025/eicu/tabular_v1/screen/test/test_TabM_mini_PLE_t1_s48/predictions_test.npz": "2e174ea7bbb0b89e75325112d28eec8201e4a380a0ee3db0db8431925ea9ee2f",
+    "/home/data/lxm/TRACEHR/runs/cem_evidence_completion_20261025/eicu/tabular_v1/screen/test/test_TabM_mini_PLE_t1_s49/predictions_test.npz": "1d8009b20879d68caf3b1411638372d10b3298281beb4c8ff98641a04b2227fa",
+    "/home/data/lxm/TRACEHR/runs/cem_evidence_completion_20261025/eicu/tabular_v1/screen/test/test_TabM_mini_PLE_t1_s50/predictions_test.npz": "6343a5167778e0ea5a2c72d78d8b073a63de11a703cc8a2109370fd243bb00fb"
+  },
+  "bootstrap_files": {
+    "dev_loss_differences.npz": "f90f2a70e1385b1e85bc1443fa991bd0a96edc876bb01dcb5707e7dbb546998d",
+    "test_loss_differences.npz": "4fcefa6c3de9e1c3cb29b76f0ad1cc6d440bf44078503c955c1b1fc5a2072b1f"
+  },
+  "family_definition": "24 CEM-minus-validation-selected-baseline contrasts: 3 databases x 2 endpoints x 2 losses x raw/fixed Platt; Validation and Test separate",
+  "interpretation": "Percentile patient-cluster intervals conditional on fixed models and fixed overall Validation calibrators; Validation is fitting-set description. Lower differences favor CEM.",
+  "interval_level": 0.9979166666666667,
+  "calibration_refits": 0,
+  "training_runs": 0,
+  "AP_recomputations": 0,
+  "seed_probability_pooling": false,
+  "original_AP_caches_unchanged": true,
+  "checks": [
+    "float32_and_float64_loss_parity_including_extreme_probabilities",
+    "unequal_stay_count_patient_multiplicity_matches_sklearn",
+    "sign_swap_and_identical_predictions",
+    "unchanged_draw_stream"
+  ],
+  "numpy_version": "2.2.5",
+  "sklearn_version": "1.7.1"
+}

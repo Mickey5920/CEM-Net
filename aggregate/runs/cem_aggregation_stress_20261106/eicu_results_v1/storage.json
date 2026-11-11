@@ -1,0 +1,28 @@
+{
+  "complete": true,
+  "project": "/home/data/lxm/TRACEHR",
+  "source": "/home/data/lxm/TRACEHR/work/cem_aggregation_stress_20261106/eicu/v2",
+  "output": "/home/data/lxm/TRACEHR/runs/cem_aggregation_stress_20261106/eicu/v2",
+  "cache": "/home/data/lxm/TRACEHR/cache/cem_aggregation_stress_20261106/eicu",
+  "temp": "/home/data/lxm/TRACEHR/work/cem_aggregation_stress_20261106/tmp/eicu",
+  "input_paths": [
+    "/home/data/lxm/TRACEHR/work/cem_matched_controls_20261105/eicu/v4",
+    "/home/data/lxm/TRACEHR/runs/tracehr_structure_20261014/eicu/g_v1/preparation",
+    "/home/data/lxm/TRACEHR/cache/tracehr_module_scratch_20261010/eicu/d3339549c979809df7d6fee3938bcf1e1cdb4f408b5241778c0fc78bebcd040a",
+    "/home/data/lxm/TRACEHR/runs/tracehr_pm_test_20261021/eicu/features",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu/v3/windows",
+    "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu/stress_inputs_v2",
+    "/home/data/lxm/TRACEHR/cache/cem_evidence_completion_20261025/native_observations/eicu"
+  ],
+  "expected_gib": 2,
+  "free_gib": 13074.961250305176,
+  "available_memory_gib": 444.82966232299805,
+  "cpus": 64,
+  "load_average": [
+    23.65478515625,
+    20.78759765625,
+    19.63134765625
+  ],
+  "source_manifest_sha256": "12a8a88c5ca4bc4ea2e4956294d890260575d5d60fc41e4a485c8cf24a6171fb",
+  "scope": "resolved declared paths; fcntl writer lock; no arbitrary-write sandbox"
+}

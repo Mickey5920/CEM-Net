@@ -1,0 +1,65 @@
+{
+  "database": "mimiciii",
+  "stage": "replacement",
+  "stage_order": 1,
+  "source": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/work/cem_core_five_seed_20261107/mimiciii/replacement_v1",
+  "output": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_core_five_seed_20261107/mimiciii/replacement_v1/screen",
+  "source_manifest_sha256": "bea82e773e508fdf882fd7cb8cfbb617a60593b75a97b96f846d78064110cfdb",
+  "matrix": [
+    {
+      "variant": "XGBoost_TD",
+      "seed": 51,
+      "endpoint": 0
+    },
+    {
+      "variant": "XGBoost_TD",
+      "seed": 52,
+      "endpoint": 0
+    },
+    {
+      "variant": "STraTS_supervised",
+      "seed": 51,
+      "endpoint": 0
+    },
+    {
+      "variant": "STraTS_supervised",
+      "seed": 52,
+      "endpoint": 0
+    },
+    {
+      "variant": "XGBoost_TD",
+      "seed": 51,
+      "endpoint": 1
+    },
+    {
+      "variant": "XGBoost_TD",
+      "seed": 52,
+      "endpoint": 1
+    },
+    {
+      "variant": "STraTS_supervised",
+      "seed": 51,
+      "endpoint": 1
+    },
+    {
+      "variant": "STraTS_supervised",
+      "seed": 52,
+      "endpoint": 1
+    }
+  ],
+  "variants": [
+    "STraTS_supervised",
+    "XGBoost_TD"
+  ],
+  "entries": {
+    "tree": "scripts/cem_core_five_seed_entry.py",
+    "cem": "scripts/cem_core_five_seed_entry.py",
+    "tabular": "scripts/cem_core_five_seed_entry.py"
+  },
+  "expected_gib": 6.0,
+  "retention_multiplier": 3,
+  "min_available_ram_gib": 24,
+  "cpu_min_available_ram_gib": 24,
+  "probe_gpu_mib": 24576,
+  "probe_requirement_basis": "conservative headroom above archived measurements; bounded original-path probe before formal fits"
+}

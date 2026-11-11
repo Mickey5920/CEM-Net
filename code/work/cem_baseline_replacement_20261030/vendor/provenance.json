@@ -1,0 +1,23 @@
+{
+  "strats": {
+    "repository": "https://github.com/sindhura97/STraTS",
+    "commit": "e936cda2cff365f15febd8a71d1ca71242868091",
+    "files": {
+      "LICENSE": "7d34b7cee550edd92dbf7697486908e73d8aaa187a5bd7b9f4a6a4825b46d0fc",
+      "README.md": "0a6c2c0e7cfe0b8a693310a34cb35c337e16c0b1edd918d4c617aa32e9204088",
+      "run_main.sh": "d7d31538a2ef7591ac182bfb3aede1a1e34a35e53250e2c1a59c89ae894f2a3a",
+      "src/evaluator.py": "58d7b37d660d5f1dd8c7168c118b1f0ed2b38f5c16b2b92181c9594f0702110a",
+      "src/main.py": "0be09687d73d8f30edad2405e8fe2fd0bd0febb72e32ab136b59e0732664cca1",
+      "src/modeling_strats.py": "a631202bbd4b8a1fbe647df7bc3cf36917caad570d1f1b499347a37753f2928d",
+      "src/models.py": "9501e1965c094be3ec646967e393382a5d3e8856bc1da901bb0288d2928cd5e0"
+    }
+  },
+  "pytabkit": {
+    "repository": "https://github.com/dholzmueller/pytabkit",
+    "commit": "c126ea51187c5080b91f28d352481dbd3b2194b0",
+    "files": {
+      "LICENSE.txt": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+      "pytabkit/models/sklearn/default_params.py": "2ef2e46ac5909121e506c0cefbbbb7f711cc83e89676515605d8d7105b43a8bf"
+    }
+  }
+}

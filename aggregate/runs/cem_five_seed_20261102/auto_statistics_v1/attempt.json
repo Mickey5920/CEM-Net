@@ -1,0 +1,19 @@
+{
+  "pid": 57108,
+  "parent_pid": 15104,
+  "started_at": 1793614437.575229,
+  "interval_seconds": 60,
+  "max_hours": 48,
+  "source_hashes": {
+    "scripts/continue_cem_five_seed_statistics.py": "7186a70800d68c34e52a230b028b517b5853f6b70fec477ef16f381099fa34bb",
+    "scripts/collect_cem_five_seed.py": "56b4d5f58e4bf12521a308e3dd8be4642d7c7632505154279bcb73c9f2a76b1d",
+    "scripts/cem_five_seed_statistics.py": "07631e3be5eaa0ea39680a3d1590597faef3ac0f4688a4a8d32f5297a1d63195",
+    "scripts/collect_cem_replacements.py": "b1a3a3a3c79852317744306e33d12e8044af8b2902d6112fb669f004c83a705b",
+    "scripts/cem_replacement_statistics.py": "cd51cf7bc83ff85ac8604d3acc753c4bf4b6db02853d75d11284c0797293b12d",
+    "scripts/cem_icde72_statistics.py": "dbf2650ba02d43591b84744c8d50dbd58048be175c237be1e394dd889580148e",
+    "scripts/cem_icde72_significance.py": "c59cdc26825de406baf42d5b8fc0f8d636176efccc48f3b108c8ead05ec5e34c",
+    "scripts/launch_ema_cross.py": "27f1797c685447c9b9d90a284c9f52b779ecc34d08c2f387093aebd990dacdcd"
+  },
+  "training_commands_exposed": false,
+  "repeated_statistical_launches_allowed": false
+}

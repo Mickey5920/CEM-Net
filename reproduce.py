@@ -17,7 +17,7 @@ RUN='cem_icde_evidence_20261028'
 
 
 def sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
-def read(p):return json.loads(Path(p).read_text(encoding='utf8'))
+from source_loader import read
 
 
 def load(name,path):
@@ -316,9 +316,6 @@ def verify():
                 assert r['p_holm_full_family']==hp and 1/20001<=r['p_bootstrap_centered']<=1
                 assert r['wilcoxon']==namespace['exact_signed_rank'](d)
     five_seed_checks=verify_five_seed(namespace['exact_signed_rank'])
-    manuscript=(BUNDLE/'paper_seed/TRACEHR_manuscript.tex').read_text(encoding='utf8')
-    author_state='blank' if r'\author{}' in manuscript else 'present'
-    assert manifest['author_information_in_manuscript']==author_state
     index=read(BUNDLE/'recipes/run_index.json')
     traced=0
     for host in ('mimic','eicu'):
@@ -563,7 +560,7 @@ def render(output):
     checks['synthetic_interface']=synthetic_interface()
     shutil.copytree(BUNDLE/'aggregate/runs',output/'runs')
     paper=output/'paper/ICDE2027'
-    shutil.copytree(BUNDLE/'paper_seed',paper)
+    shutil.copytree(BUNDLE/'display_reference',paper)
     renderer=load('cem_repro_renderer',BUNDLE/'source/paper_integration.py')
     renderer.ROOT=output;renderer.PAPER=paper;renderer.TABLES=paper/'tables/cem_icde72_20261029'
     renderer.primary();renderer.secondary();renderer.response_and_influence()
@@ -580,7 +577,7 @@ def check_render(output,checks=None):
     paper=output/'paper/ICDE2027'
     names=[]
     for p in (paper/'tables/cem_icde72_20261029').glob('*.tex'):
-        original=BUNDLE/'paper_seed/tables/cem_icde72_20261029'/p.name
+        original=BUNDLE/'display_reference/tables/cem_icde72_20261029'/p.name
         assert p.read_bytes()==original.read_bytes(),p.name
         names.append(p.name)
     assert set(names)=={'calibration.tex','cost.tex','development.tex','evidence.tex','hospital.tex',
@@ -588,11 +585,11 @@ def check_render(output,checks=None):
                         'matched_controls.tex','matched_cost.tex','aggregation_stress.tex','targeted_aggregation.tex','secondary_metrics.tex'}
     for filename in ('interaction.tex','context.tex','ablation.tex'):
         relative=Path('tables/cem_generality_20261028')/filename
-        assert (paper/relative).read_bytes()==(BUNDLE/'paper_seed'/relative).read_bytes()
+        assert (paper/relative).read_bytes()==(BUNDLE/'display_reference'/relative).read_bytes()
         names.append('cem_generality_20261028/'+filename)
     supplied=[]
     for relative in (Path('tables/cem_review_20261025/cohort.tex'),):
-        assert (paper/relative).read_bytes()==(BUNDLE/'paper_seed'/relative).read_bytes()
+        assert (paper/relative).read_bytes()==(BUNDLE/'display_reference'/relative).read_bytes()
         supplied.append(relative.as_posix())
     import numpy as np
     from PIL import Image
@@ -601,7 +598,7 @@ def check_render(output,checks=None):
     for name in figure_names:
         np.testing.assert_array_equal(
             np.array(Image.open(paper/f'figures/cem_icde72_20261029/{name}.png')),
-            np.array(Image.open(BUNDLE/f'paper_seed/figures/cem_icde72_20261029/{name}.png')))
+            np.array(Image.open(BUNDLE/f'display_reference/figures/cem_icde72_20261029/{name}.png')))
     parameter_renderer=load('cem_parameter_counts',BUNDLE/'source/paper_integration.py')
     parameter_renderer.ROOT=output
     composition=parameter_renderer.parameter_composition()

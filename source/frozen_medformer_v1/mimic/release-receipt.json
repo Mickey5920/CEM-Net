@@ -1,0 +1,188 @@
+{
+  "complete": true,
+  "source_manifest_sha256": "1e2532a63abeaa1ef8d38982b39af51d7d08b4ff095380863449376805bf2f3e",
+  "audit_sha256": {
+    "probe_Medformer_t0_s48": "4156143e009c63f8d10af57f071ffff21ab44e7379a1dcc497f0cfa2e8f0e7b4",
+    "probe_Medformer_t1_s48": "35f7e5097e3d831a83f4168296ed82d276d15600e927b3843f2142858ba5ff42"
+  },
+  "projected_artifact_gib": 2.700223326683044,
+  "reports": [
+    {
+      "id": "probe_Medformer_t0_s48",
+      "audit": {
+        "complete": true,
+        "continuous_updates": 20,
+        "resume_exact": true,
+        "resume_raw_optimizer_swa_rng_exact": true,
+        "swa_arithmetic_average_verified": true,
+        "effective_batch": 128,
+        "physical_batch": 128,
+        "evaluation_preserves_state": true,
+        "test_loaded": false,
+        "median_step_seconds": 0.1472013248130679,
+        "estimated_epoch_training_seconds": 60.05814052373171,
+        "checkpoint_bytes": 50711136
+      },
+      "resources": {
+        "complete": true,
+        "pilot": true,
+        "identity": {
+          "database": "mimic",
+          "variant": "Medformer",
+          "seed": 48,
+          "endpoint": 0,
+          "source_manifest_sha256": "1e2532a63abeaa1ef8d38982b39af51d7d08b4ff095380863449376805bf2f3e",
+          "protocol": {
+            "batch": 128,
+            "micro": 128,
+            "eval_batch": 128,
+            "epochs": 100,
+            "patience": 10,
+            "min_delta": 1e-05,
+            "optimizer": "Adam",
+            "lr": 0.0001,
+            "epsilon": 1e-08,
+            "weight_decay": 0.0,
+            "clip": 4.0,
+            "loss": "unweighted two-class cross entropy",
+            "precision": "float32",
+            "swa": "arithmetic parameter average after every epoch, starting at epoch 1",
+            "selection": "development AP of SWA model",
+            "pretraining": false,
+            "hpo": false,
+            "augmentations": "none",
+            "seeds": [
+              48,
+              49,
+              50,
+              51,
+              52
+            ],
+            "model": {
+              "task_name": "classification",
+              "pred_len": 0,
+              "output_attention": false,
+              "enc_in": 224,
+              "single_channel": false,
+              "seq_len": 24,
+              "patch_len_list": "2,4,8",
+              "augmentations": "none",
+              "d_model": 128,
+              "d_ff": 256,
+              "e_layers": 6,
+              "n_heads": 8,
+              "dropout": 0.1,
+              "activation": "gelu",
+              "no_inter_attn": false,
+              "num_class": 2
+            }
+          },
+          "initial_weights_sha256": "c31dc471b308fe452fe2512292ffc079b86c211c2cbe5cd7330071bad00fca86",
+          "parameters": 2759810,
+          "shared_hourly_cache_sha256": {
+            "train": "883e6c6124df65511d147ed044055e2ab42607fea39289418bdd308e5094f021",
+            "dev": "8e5a891e0ee602737498995a627a8261a293a7b04c4d2ce58b600c56807f84cb"
+          },
+          "source_normalization_unchanged": true,
+          "clinical_adapter": "trainable 128D event sum + 32 lab values/masks/gaps",
+          "selected_weights": "epoch-end SWA; development AP only"
+        },
+        "from_scratch": true,
+        "test_loaded": false,
+        "checkpoint_bytes": 50711136,
+        "seconds": 7.99747371673584,
+        "peak_reserved_mib": 304.0,
+        "peak_rss_gib": 1.89990234375
+      }
+    },
+    {
+      "id": "probe_Medformer_t1_s48",
+      "audit": {
+        "complete": true,
+        "continuous_updates": 20,
+        "resume_exact": true,
+        "resume_raw_optimizer_swa_rng_exact": true,
+        "swa_arithmetic_average_verified": true,
+        "effective_batch": 128,
+        "physical_batch": 128,
+        "evaluation_preserves_state": true,
+        "test_loaded": false,
+        "median_step_seconds": 0.13454179489053786,
+        "estimated_epoch_training_seconds": 54.893052315339446,
+        "checkpoint_bytes": 50711136
+      },
+      "resources": {
+        "complete": true,
+        "pilot": true,
+        "identity": {
+          "database": "mimic",
+          "variant": "Medformer",
+          "seed": 48,
+          "endpoint": 1,
+          "source_manifest_sha256": "1e2532a63abeaa1ef8d38982b39af51d7d08b4ff095380863449376805bf2f3e",
+          "protocol": {
+            "batch": 128,
+            "micro": 128,
+            "eval_batch": 128,
+            "epochs": 100,
+            "patience": 10,
+            "min_delta": 1e-05,
+            "optimizer": "Adam",
+            "lr": 0.0001,
+            "epsilon": 1e-08,
+            "weight_decay": 0.0,
+            "clip": 4.0,
+            "loss": "unweighted two-class cross entropy",
+            "precision": "float32",
+            "swa": "arithmetic parameter average after every epoch, starting at epoch 1",
+            "selection": "development AP of SWA model",
+            "pretraining": false,
+            "hpo": false,
+            "augmentations": "none",
+            "seeds": [
+              48,
+              49,
+              50,
+              51,
+              52
+            ],
+            "model": {
+              "task_name": "classification",
+              "pred_len": 0,
+              "output_attention": false,
+              "enc_in": 224,
+              "single_channel": false,
+              "seq_len": 24,
+              "patch_len_list": "2,4,8",
+              "augmentations": "none",
+              "d_model": 128,
+              "d_ff": 256,
+              "e_layers": 6,
+              "n_heads": 8,
+              "dropout": 0.1,
+              "activation": "gelu",
+              "no_inter_attn": false,
+              "num_class": 2
+            }
+          },
+          "initial_weights_sha256": "c31dc471b308fe452fe2512292ffc079b86c211c2cbe5cd7330071bad00fca86",
+          "parameters": 2759810,
+          "shared_hourly_cache_sha256": {
+            "train": "883e6c6124df65511d147ed044055e2ab42607fea39289418bdd308e5094f021",
+            "dev": "8e5a891e0ee602737498995a627a8261a293a7b04c4d2ce58b600c56807f84cb"
+          },
+          "source_normalization_unchanged": true,
+          "clinical_adapter": "trainable 128D event sum + 32 lab values/masks/gaps",
+          "selected_weights": "epoch-end SWA; development AP only"
+        },
+        "from_scratch": true,
+        "test_loaded": false,
+        "checkpoint_bytes": 50711136,
+        "seconds": 7.071523666381836,
+        "peak_reserved_mib": 304.0,
+        "peak_rss_gib": 1.9305343627929688
+      }
+    }
+  ],
+  "released_at": 1793751142.1415074
+}

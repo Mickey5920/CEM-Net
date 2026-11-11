@@ -1,0 +1,12 @@
+{
+  "complete": true,
+  "scope": "TCN and ModernTCN only; other ongoing methods are excluded",
+  "verified_new_fits": 60,
+  "verified_fixed_tests": 60,
+  "pending_paired_databases": [
+    "mimic"
+  ],
+  "files": {
+    "verified-results.json": "41a9a6db5dbabedddbb3a8bb8856380ee5ff301b154c41d36c2e76717638d605"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "receipt": {
+    "complete": true,
+    "database": "eicu",
+    "verified_new_fits": 12,
+    "verified_fixed_tests": 12,
+    "files": {
+      "verified-results.json": "9c60979187972942b07519195c3ca63e93c33ab96f8dcd82fda8a8a2c07a6527",
+      "RESULTS.md": "3da21753a18ad2fb58a147fd6eb799d263865902fafd8684e61fafcf721fceb9"
+    }
+  },
+  "exit": {
+    "job_id": "replacement_statistics_eicu",
+    "wrapper_pid": 1783980,
+    "child_pid": 1783981,
+    "child_identity": {
+      "start_ticks": "19505033",
+      "state": "R",
+      "boot": "8123672c-cb85-4243-be25-70318f0e0750"
+    },
+    "source_manifest_sha256": "99b9ce948e1e409b2ca4c0b1938eb4f92bc576b952c051374bc3af65217ddf86",
+    "started_at": 1793453739.7720559,
+    "returncode": 0,
+    "finished_at": 1793453899.9520602
+  }
+}

@@ -1,0 +1,29 @@
+\begin{table}[!t]
+\centering\footnotesize
+\setlength{\tabcolsep}{2pt}
+\caption{Cohorts and patient-disjoint partitions at the 24-hour landmark. Outcome counts refer to stays; both endpoints use the same cohort within each database.}
+\label{tab:cohort}
+\begin{tabular}{@{}lrrr@{}}
+\toprule
+Measure & Train & Validation & Test \\
+\midrule
+\multicolumn{4}{l}{\textit{MIMIC-III}} \\
+Stays & 31,451 & 4,521 & 9,042 \\
+Patients & 23,366 & 3,338 & 6,676 \\
+Deaths & 2,327 (7.40\%) & 361 (7.98\%) & 697 (7.71\%) \\
+LOS $>7$d & 5,197 (16.52\%) & 754 (16.68\%) & 1,490 (16.48\%) \\
+\midrule
+\multicolumn{4}{l}{\textit{MIMIC-IV}} \\
+Stays & 52,106 & 7,460 & 14,884 \\
+Patients & 37,996 & 5,428 & 10,856 \\
+Deaths & 3,689 (7.08\%) & 568 (7.61\%) & 1,126 (7.57\%) \\
+LOS $>7$d & 7,771 (14.91\%) & 1,142 (15.31\%) & 2,219 (14.91\%) \\
+\midrule
+\multicolumn{4}{l}{\textit{eICU}} \\
+Stays & 92,565 & 13,140 & 26,229 \\
+Patients & 72,974 & 10,403 & 20,777 \\
+Deaths & 4,833 (5.22\%) & 696 (5.30\%) & 1,358 (5.18\%) \\
+LOS $>7$d & 10,488 (11.33\%) & 1,514 (11.52\%) & 2,914 (11.11\%) \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,128 @@
+{
+  "database": "mimiciii",
+  "stage": "controls",
+  "stage_order": 3,
+  "source": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/work/cem_core_five_seed_20261107/mimiciii/controls_v1",
+  "output": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_core_five_seed_20261107/mimiciii/controls_v1/screen",
+  "source_manifest_sha256": "115e37d3dff15f82eff3ccb36dd8ab0e845f36d82c07891be8df32e53619e892",
+  "matrix": [
+    {
+      "variant": "EMA_noP",
+      "seed": 51,
+      "endpoint": 0
+    },
+    {
+      "variant": "EMA_noP",
+      "seed": 52,
+      "endpoint": 0
+    },
+    {
+      "variant": "EMA_noM",
+      "seed": 51,
+      "endpoint": 0
+    },
+    {
+      "variant": "EMA_noM",
+      "seed": 52,
+      "endpoint": 0
+    },
+    {
+      "variant": "EMA_no_duration",
+      "seed": 51,
+      "endpoint": 0
+    },
+    {
+      "variant": "EMA_no_duration",
+      "seed": 52,
+      "endpoint": 0
+    },
+    {
+      "variant": "EMA_no_NRE_CMM",
+      "seed": 51,
+      "endpoint": 0
+    },
+    {
+      "variant": "EMA_no_NRE_CMM",
+      "seed": 52,
+      "endpoint": 0
+    },
+    {
+      "variant": "EMA_no_numeric_direct",
+      "seed": 51,
+      "endpoint": 0
+    },
+    {
+      "variant": "EMA_no_numeric_direct",
+      "seed": 52,
+      "endpoint": 0
+    },
+    {
+      "variant": "EMA_noP",
+      "seed": 51,
+      "endpoint": 1
+    },
+    {
+      "variant": "EMA_noP",
+      "seed": 52,
+      "endpoint": 1
+    },
+    {
+      "variant": "EMA_noM",
+      "seed": 51,
+      "endpoint": 1
+    },
+    {
+      "variant": "EMA_noM",
+      "seed": 52,
+      "endpoint": 1
+    },
+    {
+      "variant": "EMA_no_duration",
+      "seed": 51,
+      "endpoint": 1
+    },
+    {
+      "variant": "EMA_no_duration",
+      "seed": 52,
+      "endpoint": 1
+    },
+    {
+      "variant": "EMA_no_NRE_CMM",
+      "seed": 51,
+      "endpoint": 1
+    },
+    {
+      "variant": "EMA_no_NRE_CMM",
+      "seed": 52,
+      "endpoint": 1
+    },
+    {
+      "variant": "EMA_no_numeric_direct",
+      "seed": 51,
+      "endpoint": 1
+    },
+    {
+      "variant": "EMA_no_numeric_direct",
+      "seed": 52,
+      "endpoint": 1
+    }
+  ],
+  "variants": [
+    "EMA_noM",
+    "EMA_noP",
+    "EMA_no_NRE_CMM",
+    "EMA_no_duration",
+    "EMA_no_numeric_direct"
+  ],
+  "entries": {
+    "tree": "scripts/cem_core_five_seed_entry.py",
+    "cem": "scripts/cem_core_five_seed_entry.py",
+    "tabular": "scripts/cem_core_five_seed_entry.py"
+  },
+  "expected_gib": 22.0,
+  "retention_multiplier": 13,
+  "min_available_ram_gib": 24,
+  "cpu_min_available_ram_gib": 24,
+  "probe_gpu_mib": 24576,
+  "probe_requirement_basis": "conservative headroom above archived measurements; bounded original-path probe before formal fits"
+}

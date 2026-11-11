@@ -1,0 +1,1590 @@
+{
+  "complete": true,
+  "database": "mimiciii",
+  "formal_fits": 0,
+  "fixed_stress_cases": 48,
+  "zero_updates": true,
+  "selection": {
+    "complete": true,
+    "database": "mimiciii",
+    "selection": "maximum unrounded three-seed Validation AP mean across nine fixed baselines",
+    "test_used_for_selection": false,
+    "pool": [
+      "RealMLP",
+      "TabM",
+      "TabM-mini",
+      "TabM_mini_PLE",
+      "TabM_PLE",
+      "SeFT",
+      "GRU_D",
+      "mTAND_Enc",
+      "LightGBM_full"
+    ],
+    "selected": {
+      "0": {
+        "method": "TabM_PLE",
+        "means": {
+          "RealMLP": 0.45767148505414684,
+          "TabM": 0.4675557688342629,
+          "TabM-mini": 0.4654517823789086,
+          "TabM_mini_PLE": 0.4724544300792342,
+          "TabM_PLE": 0.4745060838266697,
+          "SeFT": 0.40448252564653675,
+          "GRU_D": 0.13599241667596892,
+          "mTAND_Enc": 0.4258916071198658,
+          "LightGBM_full": 0.4673047076523626
+        }
+      },
+      "1": {
+        "method": "TabM-mini",
+        "means": {
+          "RealMLP": 0.5236686639364698,
+          "TabM": 0.5233072423860816,
+          "TabM-mini": 0.5237739745789946,
+          "TabM_mini_PLE": 0.5230503400266373,
+          "TabM_PLE": 0.5233237696473587,
+          "SeFT": 0.4844166257831763,
+          "GRU_D": 0.30117624442434093,
+          "mTAND_Enc": 0.4992809719766676,
+          "LightGBM_full": 0.5219917791812473
+        }
+      }
+    },
+    "jobs": [
+      {
+        "method": "CEM-Net",
+        "seed": 48,
+        "endpoint": 0,
+        "fit": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_ema_20261024/v2/screen/jobs/noEvidence_EMA_t0_s48",
+        "checkpoint": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_ema_20261024/v2/screen/jobs/noEvidence_EMA_t0_s48/best.pt",
+        "checkpoint_sha256": "4c6e15d690c1d19ba6e70a62e30bfb6585d23bc4251ecc63189db4ff3b9ecd37",
+        "fit_completion_sha256": "3eecc04b67fe436e4dae44a1c06366aa66e77186cc17e5279afefe4c75781616"
+      },
+      {
+        "method": "CEM-Net",
+        "seed": 49,
+        "endpoint": 0,
+        "fit": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_ema_20261024/v2/screen/jobs/noEvidence_EMA_t0_s49",
+        "checkpoint": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_ema_20261024/v2/screen/jobs/noEvidence_EMA_t0_s49/best.pt",
+        "checkpoint_sha256": "a2278e97e730af9335e96bdd4b910fd802de08b56003e2c80831715050594168",
+        "fit_completion_sha256": "4f0dbcb9abcdb6c41df7de536b49801b8bf10c5ded9edd2c71fd2a86e77a71c6"
+      },
+      {
+        "method": "CEM-Net",
+        "seed": 50,
+        "endpoint": 0,
+        "fit": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_ema_20261024/v2/screen/jobs/noEvidence_EMA_t0_s50",
+        "checkpoint": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_ema_20261024/v2/screen/jobs/noEvidence_EMA_t0_s50/best.pt",
+        "checkpoint_sha256": "a770d25f076382359647e4692bd49497a0dabfeb79ad90c526a8b3ff75a03a59",
+        "fit_completion_sha256": "7b8ff30d3e709fc3cddc94886f6a5c2baecee6e999f7976f058b35e2b36beeaf"
+      },
+      {
+        "method": "TabM_PLE",
+        "seed": 48,
+        "endpoint": 0,
+        "fit": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_evidence_completion_20261025/mimiciii/tabular_v1/screen/jobs/TabM_PLE_t0_s48",
+        "checkpoint": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_evidence_completion_20261025/mimiciii/tabular_v1/screen/jobs/TabM_PLE_t0_s48/best.pt",
+        "checkpoint_sha256": "c410bd037cc235b1982cca4f74c980e077e4036b4ff0493a5671d72ec4009b86",
+        "fit_completion_sha256": "3e4f2aef23e270017712193a7cd6aa8b88ee7cd73683a5cf7c00c4998af53933"
+      },
+      {
+        "method": "TabM_PLE",
+        "seed": 49,
+        "endpoint": 0,
+        "fit": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_evidence_completion_20261025/mimiciii/tabular_v1/screen/jobs/TabM_PLE_t0_s49",
+        "checkpoint": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_evidence_completion_20261025/mimiciii/tabular_v1/screen/jobs/TabM_PLE_t0_s49/best.pt",
+        "checkpoint_sha256": "cbb9b703295a436aef0d3b82f3b8fd038b3bdfc5895b0de7b9e3a9211f199c2b",
+        "fit_completion_sha256": "21b20188d805a4a206a1a566b2a06ab35ebe81fc68ddcef4ad3d34bf43d05a80"
+      },
+      {
+        "method": "TabM_PLE",
+        "seed": 50,
+        "endpoint": 0,
+        "fit": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_evidence_completion_20261025/mimiciii/tabular_v1/screen/jobs/TabM_PLE_t0_s50",
+        "checkpoint": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_evidence_completion_20261025/mimiciii/tabular_v1/screen/jobs/TabM_PLE_t0_s50/best.pt",
+        "checkpoint_sha256": "33565d8d3e95ea1341acdeb02d224ad0cd75d494fa5331e30882b017927839ed",
+        "fit_completion_sha256": "ec0a871eedfd0b8d661662372a672aa72cbef4e5fe10580e9958d59a1349e705"
+      },
+      {
+        "method": "CEM-Net",
+        "seed": 48,
+        "endpoint": 1,
+        "fit": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_ema_20261024/v2/screen/jobs/noEvidence_EMA_t1_s48",
+        "checkpoint": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_ema_20261024/v2/screen/jobs/noEvidence_EMA_t1_s48/best.pt",
+        "checkpoint_sha256": "b6bac9f6ec7c7f871524bfa7bae4c41dccfbd7b873efc2ab09c984a278d35bbf",
+        "fit_completion_sha256": "711d2f95b8b3e0d36cc1367e3040565dd0366b2b34bccc3f34ed45d5b411616e"
+      },
+      {
+        "method": "CEM-Net",
+        "seed": 49,
+        "endpoint": 1,
+        "fit": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_ema_20261024/v2/screen/jobs/noEvidence_EMA_t1_s49",
+        "checkpoint": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_ema_20261024/v2/screen/jobs/noEvidence_EMA_t1_s49/best.pt",
+        "checkpoint_sha256": "8aa23dfc2411c902a1d7c0c2fca6296e214df23705ba69591a3346e16652a254",
+        "fit_completion_sha256": "6ef8d9a2bda08bc48ca5d41a808af9d103ea8d9d1ccbff5f117dc4263dc0fa05"
+      },
+      {
+        "method": "CEM-Net",
+        "seed": 50,
+        "endpoint": 1,
+        "fit": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_ema_20261024/v2/screen/jobs/noEvidence_EMA_t1_s50",
+        "checkpoint": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_ema_20261024/v2/screen/jobs/noEvidence_EMA_t1_s50/best.pt",
+        "checkpoint_sha256": "6840794446d359a8602d427c8949df3b127fedfb34fcf35bad3b9123325a89f4",
+        "fit_completion_sha256": "45bfbe249e6f4114b79aad6afbf248d2af1a742fba003f7366019c841f8c6d4a"
+      },
+      {
+        "method": "TabM-mini",
+        "seed": 48,
+        "endpoint": 1,
+        "fit": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_pm_mini_20261024/v1/screen/jobs/TabM-mini_t1_s48",
+        "checkpoint": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_pm_mini_20261024/v1/screen/jobs/TabM-mini_t1_s48/best.pt",
+        "checkpoint_sha256": "2a6f5fb4c6936f82d6310f9c923360a106d76ad6fe23f30d05a65a0fc3cb3f28",
+        "fit_completion_sha256": "7f41a9b365f4a8f69ee197fe9c2ca67c4a904b11973f3166a501cbba26d8cec7"
+      },
+      {
+        "method": "TabM-mini",
+        "seed": 49,
+        "endpoint": 1,
+        "fit": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_pm_mini_20261024/v1/screen/jobs/TabM-mini_t1_s49",
+        "checkpoint": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_pm_mini_20261024/v1/screen/jobs/TabM-mini_t1_s49/best.pt",
+        "checkpoint_sha256": "5bf209e4c67cd05de82338e06bc493f804907a93ee2776cf1c8d7affe7b80a81",
+        "fit_completion_sha256": "bfda117aeafd8f20e7a254f79e8b7a5664f661c08371305c95ba4d61a76bd2cd"
+      },
+      {
+        "method": "TabM-mini",
+        "seed": 50,
+        "endpoint": 1,
+        "fit": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_pm_mini_20261024/v1/screen/jobs/TabM-mini_t1_s50",
+        "checkpoint": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_pm_mini_20261024/v1/screen/jobs/TabM-mini_t1_s50/best.pt",
+        "checkpoint_sha256": "821b8dcbcbb42be0c62a7104af8cdbad4fe335273fb090a965add3ea528f2314",
+        "fit_completion_sha256": "760fbc7f38fbc721d173a7af369f2f806134e0a6da6156c740e6ede9e6527b22"
+      }
+    ],
+    "formal_training_launched": false
+  },
+  "records": [
+    {
+      "complete": true,
+      "job": {
+        "method": "CEM-Net",
+        "seed": 48,
+        "endpoint": 0,
+        "fit": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_ema_20261024/v2/screen/jobs/noEvidence_EMA_t0_s48",
+        "checkpoint": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_ema_20261024/v2/screen/jobs/noEvidence_EMA_t0_s48/best.pt",
+        "checkpoint_sha256": "4c6e15d690c1d19ba6e70a62e30bfb6585d23bc4251ecc63189db4ff3b9ecd37",
+        "fit_completion_sha256": "3eecc04b67fe436e4dae44a1c06366aa66e77186cc17e5279afefe4c75781616"
+      },
+      "probe": false,
+      "optimizer_updates": 0,
+      "parameters_updated": false,
+      "dev_replay_max_drift": 0.0,
+      "clean_test_replay_max_drift": 0.0,
+      "results": [
+        {
+          "condition": "lab_drop25",
+          "AP": 0.4789385414039241,
+          "AUROC": 0.8791375861455368,
+          "seconds": 0.33596526784822345,
+          "rows": 9042
+        },
+        {
+          "condition": "lab_drop50",
+          "AP": 0.4632501087893186,
+          "AUROC": 0.8706790120803616,
+          "seconds": 0.3223051771055907,
+          "rows": 9042
+        },
+        {
+          "condition": "lab_delay2h",
+          "AP": 0.4849793592048882,
+          "AUROC": 0.8857217399227882,
+          "seconds": 0.3128276919014752,
+          "rows": 9042
+        },
+        {
+          "condition": "lab_delay6h",
+          "AP": 0.4706918126501618,
+          "AUROC": 0.8812111823934297,
+          "seconds": 0.3611200940795243,
+          "rows": 9042
+        }
+      ],
+      "timing": {
+        "device": "NVIDIA RTX 6000 Ada Generation",
+        "precision": "FP32; TF32 disabled",
+        "threads": 4,
+        "warmup": 10,
+        "rows": [
+          {
+            "batch": 1,
+            "resident_model": {
+              "median_ms": 1.2627494288608432,
+              "p95_ms": 1.3665715930983422,
+              "records_per_second": 791.922749790609,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 1.4484724961221218,
+              "p95_ms": 1.5400969539768994,
+              "records_per_second": 690.3824564686033,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 85.10888671875,
+            "peak_reserved_mib": 1144.0
+          },
+          {
+            "batch": 8,
+            "resident_model": {
+              "median_ms": 1.328466460108757,
+              "p95_ms": 2.012729167472571,
+              "records_per_second": 6021.981164165083,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 1.680765999481082,
+              "p95_ms": 2.3015426006168127,
+              "records_per_second": 4759.734551073684,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 106.341796875,
+            "peak_reserved_mib": 1146.0
+          },
+          {
+            "batch": 32,
+            "resident_model": {
+              "median_ms": 1.029240433126688,
+              "p95_ms": 1.4318641857244074,
+              "records_per_second": 31090.888941069377,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 1.6259074909612536,
+              "p95_ms": 2.0342934178188443,
+              "records_per_second": 19681.316543465375,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 180.01123046875,
+            "peak_reserved_mib": 1146.0
+          }
+        ],
+        "parameters": 12902328,
+        "scope": "warm dense-feature inference; source-table scan and evidence extraction measured separately; no training updates"
+      },
+      "artifacts": {
+        "lab_drop25.npz": "567ec959f385d4a9220210417c270e517b76f4e161fcba4d8703fa7cf99c734f",
+        "lab_drop50.npz": "5b89fe88831323d4cbc6ddf8f76a8ceb7126b132bd80c5f7d983221faf1e6762",
+        "lab_delay2h.npz": "00ed91e7162d87ef26c2f6ad065cc966ad20bc49fd77adc8d59f2c8628558079",
+        "lab_delay6h.npz": "55a859859c8c62f992954f98254f9d6618d92896d39d2a0b0cad0c8ba42578fc"
+      },
+      "source_sha256": "f292af7539b1180d6abb6486da52aa231062dee23798403b6eebbea972f4ac8c",
+      "checkpoint_hash_unchanged": true,
+      "test_loaded": true
+    },
+    {
+      "complete": true,
+      "job": {
+        "method": "CEM-Net",
+        "seed": 49,
+        "endpoint": 0,
+        "fit": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_ema_20261024/v2/screen/jobs/noEvidence_EMA_t0_s49",
+        "checkpoint": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_ema_20261024/v2/screen/jobs/noEvidence_EMA_t0_s49/best.pt",
+        "checkpoint_sha256": "a2278e97e730af9335e96bdd4b910fd802de08b56003e2c80831715050594168",
+        "fit_completion_sha256": "4f0dbcb9abcdb6c41df7de536b49801b8bf10c5ded9edd2c71fd2a86e77a71c6"
+      },
+      "probe": false,
+      "optimizer_updates": 0,
+      "parameters_updated": false,
+      "dev_replay_max_drift": 0.0,
+      "clean_test_replay_max_drift": 0.0,
+      "results": [
+        {
+          "condition": "lab_drop25",
+          "AP": 0.4722935030972441,
+          "AUROC": 0.8804339061612165,
+          "seconds": 0.31626702402718365,
+          "rows": 9042
+        },
+        {
+          "condition": "lab_drop50",
+          "AP": 0.46139459453007414,
+          "AUROC": 0.873346439804933,
+          "seconds": 0.3173518399707973,
+          "rows": 9042
+        },
+        {
+          "condition": "lab_delay2h",
+          "AP": 0.47680512696246685,
+          "AUROC": 0.8855848870404962,
+          "seconds": 0.31735135498456657,
+          "rows": 9042
+        },
+        {
+          "condition": "lab_delay6h",
+          "AP": 0.4656619453532795,
+          "AUROC": 0.8814475802742732,
+          "seconds": 0.3129596649669111,
+          "rows": 9042
+        }
+      ],
+      "timing": {
+        "device": "NVIDIA RTX 6000 Ada Generation",
+        "precision": "FP32; TF32 disabled",
+        "threads": 4,
+        "warmup": 10,
+        "rows": [
+          {
+            "batch": 1,
+            "resident_model": {
+              "median_ms": 0.721138552762568,
+              "p95_ms": 0.9016904397867618,
+              "records_per_second": 1386.6960741027613,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 0.7961459923535585,
+              "p95_ms": 1.0869567282497878,
+              "records_per_second": 1256.0510378803897,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 85.10888671875,
+            "peak_reserved_mib": 1144.0
+          },
+          {
+            "batch": 8,
+            "resident_model": {
+              "median_ms": 0.8239359594881535,
+              "p95_ms": 0.8669664501212537,
+              "records_per_second": 9709.492476781534,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 1.0449039982631803,
+              "p95_ms": 1.1805978952907026,
+              "records_per_second": 7656.205750286581,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 106.341796875,
+            "peak_reserved_mib": 1146.0
+          },
+          {
+            "batch": 32,
+            "resident_model": {
+              "median_ms": 0.8392554009333253,
+              "p95_ms": 1.045199669897556,
+              "records_per_second": 38129.0367204229,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 1.306798541918397,
+              "p95_ms": 1.5466216136701403,
+              "records_per_second": 24487.32453666775,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 180.01123046875,
+            "peak_reserved_mib": 1146.0
+          }
+        ],
+        "parameters": 12902328,
+        "scope": "warm dense-feature inference; source-table scan and evidence extraction measured separately; no training updates"
+      },
+      "artifacts": {
+        "lab_drop25.npz": "4852b752eab33705962e9a9e89d89b74909ffcdc4855c96652281bb3bdd56b8f",
+        "lab_drop50.npz": "d550ce0e3cfa8a5965c0834b5b9adddd0a35aa88a66e666b0b64e209be7ceab8",
+        "lab_delay2h.npz": "285f1c2507dd6e63acf6dc02cdad011e01a12a785a9bf6a36ff2aea77c127063",
+        "lab_delay6h.npz": "fe5b1d5fd69142b451e82a81e9ad647827337b7dfb77c32c38b41f998de32097"
+      },
+      "source_sha256": "f292af7539b1180d6abb6486da52aa231062dee23798403b6eebbea972f4ac8c",
+      "checkpoint_hash_unchanged": true,
+      "test_loaded": true
+    },
+    {
+      "complete": true,
+      "job": {
+        "method": "CEM-Net",
+        "seed": 50,
+        "endpoint": 0,
+        "fit": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_ema_20261024/v2/screen/jobs/noEvidence_EMA_t0_s50",
+        "checkpoint": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_ema_20261024/v2/screen/jobs/noEvidence_EMA_t0_s50/best.pt",
+        "checkpoint_sha256": "a770d25f076382359647e4692bd49497a0dabfeb79ad90c526a8b3ff75a03a59",
+        "fit_completion_sha256": "7b8ff30d3e709fc3cddc94886f6a5c2baecee6e999f7976f058b35e2b36beeaf"
+      },
+      "probe": false,
+      "optimizer_updates": 0,
+      "parameters_updated": false,
+      "dev_replay_max_drift": 0.0,
+      "clean_test_replay_max_drift": 0.0,
+      "results": [
+        {
+          "condition": "lab_drop25",
+          "AP": 0.4774355356756279,
+          "AUROC": 0.8818622651387054,
+          "seconds": 0.27540767402388155,
+          "rows": 9042
+        },
+        {
+          "condition": "lab_drop50",
+          "AP": 0.4602912382214207,
+          "AUROC": 0.8726826345555247,
+          "seconds": 0.2847421900369227,
+          "rows": 9042
+        },
+        {
+          "condition": "lab_delay2h",
+          "AP": 0.4806573183586138,
+          "AUROC": 0.8859544414004039,
+          "seconds": 0.30342639004811645,
+          "rows": 9042
+        },
+        {
+          "condition": "lab_delay6h",
+          "AP": 0.4679882947181102,
+          "AUROC": 0.8810320357811832,
+          "seconds": 0.3227957230992615,
+          "rows": 9042
+        }
+      ],
+      "timing": {
+        "device": "NVIDIA RTX 6000 Ada Generation",
+        "precision": "FP32; TF32 disabled",
+        "threads": 4,
+        "warmup": 10,
+        "rows": [
+          {
+            "batch": 1,
+            "resident_model": {
+              "median_ms": 0.7446125382557511,
+              "p95_ms": 0.8352455915883183,
+              "records_per_second": 1342.9803402753491,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 0.9099885355681181,
+              "p95_ms": 1.1046821018680928,
+              "records_per_second": 1098.9149433357272,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 85.10888671875,
+            "peak_reserved_mib": 1144.0
+          },
+          {
+            "batch": 8,
+            "resident_model": {
+              "median_ms": 0.7882970385253429,
+              "p95_ms": 0.8782995399087667,
+              "records_per_second": 10148.458777627146,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 0.9734780760481954,
+              "p95_ms": 1.149397774133831,
+              "records_per_second": 8217.956004182197,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 106.341796875,
+            "peak_reserved_mib": 1146.0
+          },
+          {
+            "batch": 32,
+            "resident_model": {
+              "median_ms": 0.8252994157373905,
+              "p95_ms": 1.0137211997061963,
+              "records_per_second": 38773.806681310394,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 1.2461929582059383,
+              "p95_ms": 1.4251835062168536,
+              "records_per_second": 25678.2064039812,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 180.01123046875,
+            "peak_reserved_mib": 1146.0
+          }
+        ],
+        "parameters": 12902328,
+        "scope": "warm dense-feature inference; source-table scan and evidence extraction measured separately; no training updates"
+      },
+      "artifacts": {
+        "lab_drop25.npz": "5451c39a959ec03b90b58d05d91f23d8070048d585ce2b8fcf7f409df57e21df",
+        "lab_drop50.npz": "b81385a5b901c8166a5aeda8f82f030b90b36720738ca11bb21f9d972015a7f1",
+        "lab_delay2h.npz": "ccd6f8b91dbf805f6e28f66faafddcb7b1e728a024fe582dc11027025e0d1cc7",
+        "lab_delay6h.npz": "dd8fc5db96ee05d9cf40236323f798b16a3f4b9b274f67e03cbca659765010d4"
+      },
+      "source_sha256": "f292af7539b1180d6abb6486da52aa231062dee23798403b6eebbea972f4ac8c",
+      "checkpoint_hash_unchanged": true,
+      "test_loaded": true
+    },
+    {
+      "complete": true,
+      "job": {
+        "method": "TabM_PLE",
+        "seed": 48,
+        "endpoint": 0,
+        "fit": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_evidence_completion_20261025/mimiciii/tabular_v1/screen/jobs/TabM_PLE_t0_s48",
+        "checkpoint": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_evidence_completion_20261025/mimiciii/tabular_v1/screen/jobs/TabM_PLE_t0_s48/best.pt",
+        "checkpoint_sha256": "c410bd037cc235b1982cca4f74c980e077e4036b4ff0493a5671d72ec4009b86",
+        "fit_completion_sha256": "3e4f2aef23e270017712193a7cd6aa8b88ee7cd73683a5cf7c00c4998af53933"
+      },
+      "probe": false,
+      "optimizer_updates": 0,
+      "parameters_updated": false,
+      "dev_replay_max_drift": 0.0,
+      "clean_test_replay_max_drift": 0.0,
+      "results": [
+        {
+          "condition": "lab_drop25",
+          "AP": 0.4699008812513039,
+          "AUROC": 0.873146662104904,
+          "seconds": 41.701845850097016,
+          "rows": 9042
+        },
+        {
+          "condition": "lab_drop50",
+          "AP": 0.45125686270149523,
+          "AUROC": 0.8663158808657836,
+          "seconds": 38.91068638977595,
+          "rows": 9042
+        },
+        {
+          "condition": "lab_delay2h",
+          "AP": 0.483323850856621,
+          "AUROC": 0.8799133150461663,
+          "seconds": 38.92939843190834,
+          "rows": 9042
+        },
+        {
+          "condition": "lab_delay6h",
+          "AP": 0.4699519343420556,
+          "AUROC": 0.8767497096604209,
+          "seconds": 38.95415781112388,
+          "rows": 9042
+        }
+      ],
+      "timing": {
+        "device": "NVIDIA RTX 6000 Ada Generation",
+        "precision": "FP32; TF32 disabled",
+        "threads": 4,
+        "warmup": 10,
+        "rows": [
+          {
+            "batch": 1,
+            "resident_model": {
+              "median_ms": 0.7686150493100286,
+              "p95_ms": 0.9770901757292448,
+              "records_per_second": 1301.0414002401872,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 117.97073658090085,
+              "p95_ms": 118.9140404923819,
+              "records_per_second": 8.476678445711235,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 349.3623046875,
+            "peak_reserved_mib": 1438.0
+          },
+          {
+            "batch": 8,
+            "resident_model": {
+              "median_ms": 2.1986799547448754,
+              "p95_ms": 2.4131036130711436,
+              "records_per_second": 3638.546839313993,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 126.90562603529543,
+              "p95_ms": 127.86997063085437,
+              "records_per_second": 63.038970374528645,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 548.916015625,
+            "peak_reserved_mib": 1438.0
+          },
+          {
+            "batch": 32,
+            "resident_model": {
+              "median_ms": 7.94981443323195,
+              "p95_ms": 8.969392965082076,
+              "records_per_second": 4025.251189038206,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 136.7706189630553,
+              "p95_ms": 137.96585289528593,
+              "records_per_second": 233.9683789004705,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 1233.375,
+            "peak_reserved_mib": 1438.0
+          }
+        ],
+        "parameters": 74143008,
+        "scope": "warm dense-feature inference; source-table scan and evidence extraction measured separately; no training updates"
+      },
+      "artifacts": {
+        "lab_drop25.npz": "0d0eb3afb37f1d685c61a3450de4ac1792ad73352efed54d007ca1d39a8f8848",
+        "lab_drop50.npz": "3a81214aefcce0b529db4d4e8785f1e36656acc6d4f220c7af7e8ca19fe0b901",
+        "lab_delay2h.npz": "880c834169a12016a25e66597484d28cf2c7b87e258257627e1a822b15bc099b",
+        "lab_delay6h.npz": "895a39f5ff8e075c3e326a8422340ec286a094d13c9e8b6b536cfa6de106e2e2"
+      },
+      "source_sha256": "f292af7539b1180d6abb6486da52aa231062dee23798403b6eebbea972f4ac8c",
+      "checkpoint_hash_unchanged": true,
+      "test_loaded": true
+    },
+    {
+      "complete": true,
+      "job": {
+        "method": "TabM_PLE",
+        "seed": 49,
+        "endpoint": 0,
+        "fit": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_evidence_completion_20261025/mimiciii/tabular_v1/screen/jobs/TabM_PLE_t0_s49",
+        "checkpoint": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_evidence_completion_20261025/mimiciii/tabular_v1/screen/jobs/TabM_PLE_t0_s49/best.pt",
+        "checkpoint_sha256": "cbb9b703295a436aef0d3b82f3b8fd038b3bdfc5895b0de7b9e3a9211f199c2b",
+        "fit_completion_sha256": "21b20188d805a4a206a1a566b2a06ab35ebe81fc68ddcef4ad3d34bf43d05a80"
+      },
+      "probe": false,
+      "optimizer_updates": 0,
+      "parameters_updated": false,
+      "dev_replay_max_drift": 0.0,
+      "clean_test_replay_max_drift": 0.0,
+      "results": [
+        {
+          "condition": "lab_drop25",
+          "AP": 0.45679775805572603,
+          "AUROC": 0.8687101186029659,
+          "seconds": 38.623478600988165,
+          "rows": 9042
+        },
+        {
+          "condition": "lab_drop50",
+          "AP": 0.4369942709529727,
+          "AUROC": 0.8609332300632775,
+          "seconds": 38.32735654106364,
+          "rows": 9042
+        },
+        {
+          "condition": "lab_delay2h",
+          "AP": 0.4717903800516955,
+          "AUROC": 0.8765222519176167,
+          "seconds": 38.478383992100134,
+          "rows": 9042
+        },
+        {
+          "condition": "lab_delay6h",
+          "AP": 0.4616022018276087,
+          "AUROC": 0.87273404034925,
+          "seconds": 38.44921064702794,
+          "rows": 9042
+        }
+      ],
+      "timing": {
+        "device": "NVIDIA RTX 6000 Ada Generation",
+        "precision": "FP32; TF32 disabled",
+        "threads": 4,
+        "warmup": 10,
+        "rows": [
+          {
+            "batch": 1,
+            "resident_model": {
+              "median_ms": 0.7101783994585276,
+              "p95_ms": 0.7789733703248203,
+              "records_per_second": 1408.0968961636197,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 115.84478954318911,
+              "p95_ms": 118.14598354976624,
+              "records_per_second": 8.632239774816814,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 349.3623046875,
+            "peak_reserved_mib": 1438.0
+          },
+          {
+            "batch": 8,
+            "resident_model": {
+              "median_ms": 2.0818624179810286,
+              "p95_ms": 2.512819343246519,
+              "records_per_second": 3842.7131067375376,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 124.55963145475835,
+              "p95_ms": 125.00275145284832,
+              "records_per_second": 64.22626581795646,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 548.916015625,
+            "peak_reserved_mib": 1438.0
+          },
+          {
+            "batch": 32,
+            "resident_model": {
+              "median_ms": 7.285295519977808,
+              "p95_ms": 13.725714513566338,
+              "records_per_second": 4392.4093281115765,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 134.9268719786778,
+              "p95_ms": 137.33219885034487,
+              "records_per_second": 237.16550699446208,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 1233.375,
+            "peak_reserved_mib": 1438.0
+          }
+        ],
+        "parameters": 74143008,
+        "scope": "warm dense-feature inference; source-table scan and evidence extraction measured separately; no training updates"
+      },
+      "artifacts": {
+        "lab_drop25.npz": "4cfa8ce9c679ef825c2a6100a41619ec40ff124d858dc139ed4fde2ce0752626",
+        "lab_drop50.npz": "cb910c4c67efee996de0555493437337f4099a5f3fb500619e2843cc789af9c0",
+        "lab_delay2h.npz": "197720a98d2dcb3aa058670bc4e7f34a0444ebda22bc06dc04d6991e1d72fbe1",
+        "lab_delay6h.npz": "b42a9980dd4adae0c153e4d105b818795e195193d0bbcd26778a06e99d8b7ec7"
+      },
+      "source_sha256": "f292af7539b1180d6abb6486da52aa231062dee23798403b6eebbea972f4ac8c",
+      "checkpoint_hash_unchanged": true,
+      "test_loaded": true
+    },
+    {
+      "complete": true,
+      "job": {
+        "method": "TabM_PLE",
+        "seed": 50,
+        "endpoint": 0,
+        "fit": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_evidence_completion_20261025/mimiciii/tabular_v1/screen/jobs/TabM_PLE_t0_s50",
+        "checkpoint": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_evidence_completion_20261025/mimiciii/tabular_v1/screen/jobs/TabM_PLE_t0_s50/best.pt",
+        "checkpoint_sha256": "33565d8d3e95ea1341acdeb02d224ad0cd75d494fa5331e30882b017927839ed",
+        "fit_completion_sha256": "ec0a871eedfd0b8d661662372a672aa72cbef4e5fe10580e9958d59a1349e705"
+      },
+      "probe": false,
+      "optimizer_updates": 0,
+      "parameters_updated": false,
+      "dev_replay_max_drift": 0.0,
+      "clean_test_replay_max_drift": 0.0,
+      "results": [
+        {
+          "condition": "lab_drop25",
+          "AP": 0.45760585352370964,
+          "AUROC": 0.868954940844654,
+          "seconds": 39.04266307502985,
+          "rows": 9042
+        },
+        {
+          "condition": "lab_drop50",
+          "AP": 0.4358773016337393,
+          "AUROC": 0.861604428119141,
+          "seconds": 38.59869943303056,
+          "rows": 9042
+        },
+        {
+          "condition": "lab_delay2h",
+          "AP": 0.4682003046974186,
+          "AUROC": 0.87714316169701,
+          "seconds": 38.483515789033845,
+          "rows": 9042
+        },
+        {
+          "condition": "lab_delay6h",
+          "AP": 0.4564219102152054,
+          "AUROC": 0.873104884152144,
+          "seconds": 38.49031717889011,
+          "rows": 9042
+        }
+      ],
+      "timing": {
+        "device": "NVIDIA RTX 6000 Ada Generation",
+        "precision": "FP32; TF32 disabled",
+        "threads": 4,
+        "warmup": 10,
+        "rows": [
+          {
+            "batch": 1,
+            "resident_model": {
+              "median_ms": 0.729276449419558,
+              "p95_ms": 0.8860555710271,
+              "records_per_second": 1371.2221213175262,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 115.97122845705599,
+              "p95_ms": 116.8735892046243,
+              "records_per_second": 8.622828379974425,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 349.3623046875,
+            "peak_reserved_mib": 1438.0
+          },
+          {
+            "batch": 8,
+            "resident_model": {
+              "median_ms": 2.107437001541257,
+              "p95_ms": 2.801270573399959,
+              "records_per_second": 3796.080259646796,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 126.5653510345146,
+              "p95_ms": 127.99196195555851,
+              "records_per_second": 63.20845266583573,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 548.916015625,
+            "peak_reserved_mib": 1438.0
+          },
+          {
+            "batch": 32,
+            "resident_model": {
+              "median_ms": 7.308901869691908,
+              "p95_ms": 15.19654176663607,
+              "records_per_second": 4378.222689333889,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 135.51264454144984,
+              "p95_ms": 138.8321608887054,
+              "records_per_second": 236.1403255635825,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 1233.375,
+            "peak_reserved_mib": 1438.0
+          }
+        ],
+        "parameters": 74143008,
+        "scope": "warm dense-feature inference; source-table scan and evidence extraction measured separately; no training updates"
+      },
+      "artifacts": {
+        "lab_drop25.npz": "7b98adeb525543f34d6579a0dbf3a74ca3e60d0b3d9ccf533248a4b60e72d8ba",
+        "lab_drop50.npz": "cb80cbe5feb4b4aac92adcb9aa343044e8304e92b0226bf20f4bb3d2fc8d7bee",
+        "lab_delay2h.npz": "de7c041a786bec7a0b91ab0dc4b03f1a0c48d4f492ca597be1444dbe43734d2d",
+        "lab_delay6h.npz": "11980c78d49f75758a39b06444e08dae3bc1971f889b951eeab6c8097f81cfd7"
+      },
+      "source_sha256": "f292af7539b1180d6abb6486da52aa231062dee23798403b6eebbea972f4ac8c",
+      "checkpoint_hash_unchanged": true,
+      "test_loaded": true
+    },
+    {
+      "complete": true,
+      "job": {
+        "method": "CEM-Net",
+        "seed": 48,
+        "endpoint": 1,
+        "fit": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_ema_20261024/v2/screen/jobs/noEvidence_EMA_t1_s48",
+        "checkpoint": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_ema_20261024/v2/screen/jobs/noEvidence_EMA_t1_s48/best.pt",
+        "checkpoint_sha256": "b6bac9f6ec7c7f871524bfa7bae4c41dccfbd7b873efc2ab09c984a278d35bbf",
+        "fit_completion_sha256": "711d2f95b8b3e0d36cc1367e3040565dd0366b2b34bccc3f34ed45d5b411616e"
+      },
+      "probe": false,
+      "optimizer_updates": 0,
+      "parameters_updated": false,
+      "dev_replay_max_drift": 0.0,
+      "clean_test_replay_max_drift": 0.0,
+      "results": [
+        {
+          "condition": "lab_drop25",
+          "AP": 0.5455781681521321,
+          "AUROC": 0.8527573477135708,
+          "seconds": 0.28549939999356866,
+          "rows": 9042
+        },
+        {
+          "condition": "lab_drop50",
+          "AP": 0.5434286467973555,
+          "AUROC": 0.8515552127175521,
+          "seconds": 0.302074828883633,
+          "rows": 9042
+        },
+        {
+          "condition": "lab_delay2h",
+          "AP": 0.5420047228817446,
+          "AUROC": 0.85180262484359,
+          "seconds": 0.30776163609698415,
+          "rows": 9042
+        },
+        {
+          "condition": "lab_delay6h",
+          "AP": 0.5389718582914562,
+          "AUROC": 0.8480669150267319,
+          "seconds": 0.30828635091893375,
+          "rows": 9042
+        }
+      ],
+      "timing": {
+        "device": "NVIDIA RTX 6000 Ada Generation",
+        "precision": "FP32; TF32 disabled",
+        "threads": 4,
+        "warmup": 10,
+        "rows": [
+          {
+            "batch": 1,
+            "resident_model": {
+              "median_ms": 0.7135329069569707,
+              "p95_ms": 0.7300440687686205,
+              "records_per_second": 1401.4770590815997,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 0.7776526035740972,
+              "p95_ms": 0.8131996961310506,
+              "records_per_second": 1285.9212396435023,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 85.10888671875,
+            "peak_reserved_mib": 1144.0
+          },
+          {
+            "batch": 8,
+            "resident_model": {
+              "median_ms": 0.7476225728169084,
+              "p95_ms": 0.759009167086333,
+              "records_per_second": 10700.586486918699,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 0.9226009715348482,
+              "p95_ms": 0.9577937191352247,
+              "records_per_second": 8671.137628102775,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 106.341796875,
+            "peak_reserved_mib": 1146.0
+          },
+          {
+            "batch": 32,
+            "resident_model": {
+              "median_ms": 0.8605909533798695,
+              "p95_ms": 0.9639285504817958,
+              "records_per_second": 37183.751321488766,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 1.2957300059497356,
+              "p95_ms": 1.6558585688471792,
+              "records_per_second": 24696.503016108552,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 180.01123046875,
+            "peak_reserved_mib": 1146.0
+          }
+        ],
+        "parameters": 12902328,
+        "scope": "warm dense-feature inference; source-table scan and evidence extraction measured separately; no training updates"
+      },
+      "artifacts": {
+        "lab_drop25.npz": "2d8368222a8e52ef3311c93fcb6a6f10beb7e13b79fd26877503d6152788e4bb",
+        "lab_drop50.npz": "c971832b66c4e990e94a589a82fd6ae073b3a24eb6de5fb74b21e63388a0490a",
+        "lab_delay2h.npz": "828b03f29d054c278efd5fd7ccc5063a4fdef177751ed9914daef72c4cf16e04",
+        "lab_delay6h.npz": "906fcd6256d00b2e828a6bcd4d09d27cd49273123577adfac46bfa996c41aa39"
+      },
+      "source_sha256": "f292af7539b1180d6abb6486da52aa231062dee23798403b6eebbea972f4ac8c",
+      "checkpoint_hash_unchanged": true,
+      "test_loaded": true
+    },
+    {
+      "complete": true,
+      "job": {
+        "method": "CEM-Net",
+        "seed": 49,
+        "endpoint": 1,
+        "fit": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_ema_20261024/v2/screen/jobs/noEvidence_EMA_t1_s49",
+        "checkpoint": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_ema_20261024/v2/screen/jobs/noEvidence_EMA_t1_s49/best.pt",
+        "checkpoint_sha256": "8aa23dfc2411c902a1d7c0c2fca6296e214df23705ba69591a3346e16652a254",
+        "fit_completion_sha256": "6ef8d9a2bda08bc48ca5d41a808af9d103ea8d9d1ccbff5f117dc4263dc0fa05"
+      },
+      "probe": false,
+      "optimizer_updates": 0,
+      "parameters_updated": false,
+      "dev_replay_max_drift": 0.0,
+      "clean_test_replay_max_drift": 0.0,
+      "results": [
+        {
+          "condition": "lab_drop25",
+          "AP": 0.5508598979771895,
+          "AUROC": 0.8552768811853031,
+          "seconds": 0.29480481380596757,
+          "rows": 9042
+        },
+        {
+          "condition": "lab_drop50",
+          "AP": 0.5479442369015041,
+          "AUROC": 0.8536736790467523,
+          "seconds": 0.29940883279778063,
+          "rows": 9042
+        },
+        {
+          "condition": "lab_delay2h",
+          "AP": 0.5437201405183488,
+          "AUROC": 0.8541435310260493,
+          "seconds": 0.3060025761369616,
+          "rows": 9042
+        },
+        {
+          "condition": "lab_delay6h",
+          "AP": 0.5393693574047885,
+          "AUROC": 0.8501007777840974,
+          "seconds": 0.33087323093786836,
+          "rows": 9042
+        }
+      ],
+      "timing": {
+        "device": "NVIDIA RTX 6000 Ada Generation",
+        "precision": "FP32; TF32 disabled",
+        "threads": 4,
+        "warmup": 10,
+        "rows": [
+          {
+            "batch": 1,
+            "resident_model": {
+              "median_ms": 0.8423405233770609,
+              "p95_ms": 0.9270014823414384,
+              "records_per_second": 1187.1683389882041,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 1.0546391131356359,
+              "p95_ms": 1.0692665353417397,
+              "records_per_second": 948.1916492048321,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 85.10888671875,
+            "peak_reserved_mib": 1144.0
+          },
+          {
+            "batch": 8,
+            "resident_model": {
+              "median_ms": 0.7848790846765041,
+              "p95_ms": 1.0012100334279233,
+              "records_per_second": 10192.652799886087,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 0.973020913079381,
+              "p95_ms": 2.214774792082602,
+              "records_per_second": 8221.817118690587,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 106.341796875,
+            "peak_reserved_mib": 1146.0
+          },
+          {
+            "batch": 32,
+            "resident_model": {
+              "median_ms": 0.7773515535518527,
+              "p95_ms": 0.7862194790504873,
+              "records_per_second": 41165.41589681851,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 1.1984860757365823,
+              "p95_ms": 1.2205960811115801,
+              "records_per_second": 26700.351925518196,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 180.01123046875,
+            "peak_reserved_mib": 1146.0
+          }
+        ],
+        "parameters": 12902328,
+        "scope": "warm dense-feature inference; source-table scan and evidence extraction measured separately; no training updates"
+      },
+      "artifacts": {
+        "lab_drop25.npz": "ba971d8ce02629ab8cc9183596771c42015d5cd9c5d0f26fe40007d381c07d3f",
+        "lab_drop50.npz": "abf34661e2cc8452c9013d372e9b1564ce867a1cdcc63875450996307c7d8741",
+        "lab_delay2h.npz": "16c6589e92b20acb4e86c2f3ddcacaf37dbcc665044a7f74523a97376cace3f3",
+        "lab_delay6h.npz": "0a8eed746a4544ba82a8dbc38237972c67dcc48b49c0d3b24acccef3e1967799"
+      },
+      "source_sha256": "f292af7539b1180d6abb6486da52aa231062dee23798403b6eebbea972f4ac8c",
+      "checkpoint_hash_unchanged": true,
+      "test_loaded": true
+    },
+    {
+      "complete": true,
+      "job": {
+        "method": "CEM-Net",
+        "seed": 50,
+        "endpoint": 1,
+        "fit": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_ema_20261024/v2/screen/jobs/noEvidence_EMA_t1_s50",
+        "checkpoint": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_ema_20261024/v2/screen/jobs/noEvidence_EMA_t1_s50/best.pt",
+        "checkpoint_sha256": "6840794446d359a8602d427c8949df3b127fedfb34fcf35bad3b9123325a89f4",
+        "fit_completion_sha256": "45bfbe249e6f4114b79aad6afbf248d2af1a742fba003f7366019c841f8c6d4a"
+      },
+      "probe": false,
+      "optimizer_updates": 0,
+      "parameters_updated": false,
+      "dev_replay_max_drift": 0.0,
+      "clean_test_replay_max_drift": 0.0,
+      "results": [
+        {
+          "condition": "lab_drop25",
+          "AP": 0.551831854527853,
+          "AUROC": 0.8553722379422137,
+          "seconds": 0.31742479908280075,
+          "rows": 9042
+        },
+        {
+          "condition": "lab_drop50",
+          "AP": 0.5480420972357742,
+          "AUROC": 0.8540363546524855,
+          "seconds": 0.3133892270270735,
+          "rows": 9042
+        },
+        {
+          "condition": "lab_delay2h",
+          "AP": 0.5453736822935537,
+          "AUROC": 0.8545210478045728,
+          "seconds": 0.31784515106119215,
+          "rows": 9042
+        },
+        {
+          "condition": "lab_delay6h",
+          "AP": 0.5410320022933475,
+          "AUROC": 0.8506788725685361,
+          "seconds": 0.3135917440522462,
+          "rows": 9042
+        }
+      ],
+      "timing": {
+        "device": "NVIDIA RTX 6000 Ada Generation",
+        "precision": "FP32; TF32 disabled",
+        "threads": 4,
+        "warmup": 10,
+        "rows": [
+          {
+            "batch": 1,
+            "resident_model": {
+              "median_ms": 0.756601570174098,
+              "p95_ms": 0.7891572895459831,
+              "records_per_second": 1321.6996097032877,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 0.8425089763477445,
+              "p95_ms": 0.8935892372392118,
+              "records_per_second": 1186.9309741184898,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 85.10888671875,
+            "peak_reserved_mib": 1144.0
+          },
+          {
+            "batch": 8,
+            "resident_model": {
+              "median_ms": 0.8087094174697995,
+              "p95_ms": 0.906721211504191,
+              "records_per_second": 9892.304735401145,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 1.0127164423465729,
+              "p95_ms": 1.2281740782782433,
+              "records_per_second": 7899.545880249698,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 106.341796875,
+            "peak_reserved_mib": 1146.0
+          },
+          {
+            "batch": 32,
+            "resident_model": {
+              "median_ms": 0.850652577355504,
+              "p95_ms": 0.8586213225498796,
+              "records_per_second": 37618.17791639581,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 1.3220015680417418,
+              "p95_ms": 1.3509142678231,
+              "records_per_second": 24205.720154629656,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 180.01123046875,
+            "peak_reserved_mib": 1146.0
+          }
+        ],
+        "parameters": 12902328,
+        "scope": "warm dense-feature inference; source-table scan and evidence extraction measured separately; no training updates"
+      },
+      "artifacts": {
+        "lab_drop25.npz": "a977590f3d0b6247f34935f08e23f57703ff3e820402b80f60be7315feb82947",
+        "lab_drop50.npz": "971bb252fb6547cc3a179c55b71a8067b0cb1e0298daaf8229355036dfc7cab1",
+        "lab_delay2h.npz": "f6981ad1a54f218ce9e29f5164cec0db9d5ebb16df86c63c394221a2bedcb123",
+        "lab_delay6h.npz": "06a0bda5b50a78997a01bd1d670cd14aaa0a5b81374021460b0cd400e4c86a2b"
+      },
+      "source_sha256": "f292af7539b1180d6abb6486da52aa231062dee23798403b6eebbea972f4ac8c",
+      "checkpoint_hash_unchanged": true,
+      "test_loaded": true
+    },
+    {
+      "complete": true,
+      "job": {
+        "method": "TabM-mini",
+        "seed": 48,
+        "endpoint": 1,
+        "fit": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_pm_mini_20261024/v1/screen/jobs/TabM-mini_t1_s48",
+        "checkpoint": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_pm_mini_20261024/v1/screen/jobs/TabM-mini_t1_s48/best.pt",
+        "checkpoint_sha256": "2a6f5fb4c6936f82d6310f9c923360a106d76ad6fe23f30d05a65a0fc3cb3f28",
+        "fit_completion_sha256": "7f41a9b365f4a8f69ee197fe9c2ca67c4a904b11973f3166a501cbba26d8cec7"
+      },
+      "probe": false,
+      "optimizer_updates": 0,
+      "parameters_updated": false,
+      "dev_replay_max_drift": 1.1920928955078125e-07,
+      "clean_test_replay_max_drift": 1.1920928955078125e-07,
+      "results": [
+        {
+          "condition": "lab_drop25",
+          "AP": 0.529025382121634,
+          "AUROC": 0.8433430674837902,
+          "seconds": 36.61067995801568,
+          "rows": 9042
+        },
+        {
+          "condition": "lab_drop50",
+          "AP": 0.5230074789970027,
+          "AUROC": 0.8400977384541007,
+          "seconds": 36.39902843395248,
+          "rows": 9042
+        },
+        {
+          "condition": "lab_delay2h",
+          "AP": 0.5295263500469884,
+          "AUROC": 0.8436301153168012,
+          "seconds": 36.496393773006275,
+          "rows": 9042
+        },
+        {
+          "condition": "lab_delay6h",
+          "AP": 0.5275087019915481,
+          "AUROC": 0.8408493949778181,
+          "seconds": 36.45163154997863,
+          "rows": 9042
+        }
+      ],
+      "timing": {
+        "device": "NVIDIA RTX 6000 Ada Generation",
+        "precision": "FP32; TF32 disabled",
+        "threads": 4,
+        "warmup": 10,
+        "rows": [
+          {
+            "batch": 1,
+            "resident_model": {
+              "median_ms": 0.4644149448722601,
+              "p95_ms": 1.6777299344539598,
+              "records_per_second": 2153.2468130952493,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 117.51654860563576,
+              "p95_ms": 126.04081771569322,
+              "records_per_second": 8.509439835199881,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 51.060546875,
+            "peak_reserved_mib": 126.0
+          },
+          {
+            "batch": 8,
+            "resident_model": {
+              "median_ms": 0.476079061627388,
+              "p95_ms": 0.4887660732492804,
+              "records_per_second": 16803.9316256705,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 124.10805048421025,
+              "p95_ms": 124.80741876643151,
+              "records_per_second": 64.45996024260978,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 64.0576171875,
+            "peak_reserved_mib": 126.0
+          },
+          {
+            "batch": 32,
+            "resident_model": {
+              "median_ms": 0.47167250886559486,
+              "p95_ms": 0.6073593860492109,
+              "records_per_second": 67843.68263684103,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 128.51011857856065,
+              "p95_ms": 129.19509256025776,
+              "records_per_second": 249.007629546601,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 109.21044921875,
+            "peak_reserved_mib": 126.0
+          }
+        ],
+        "parameters": 4077600,
+        "scope": "warm dense-feature inference; source-table scan and evidence extraction measured separately; no training updates"
+      },
+      "artifacts": {
+        "lab_drop25.npz": "888d91b58a77ddce0f9b6b63e74c3634b13da97589bb4096f838a7d62a15d23a",
+        "lab_drop50.npz": "0c69031336c1ab5d3cf9dd8601b834b8a468491b4a9ba23028bbe0944a701c6a",
+        "lab_delay2h.npz": "9af360a9ca2139c54cbb4eb764c25ba63bb021ece80b363bba45c86aa3287576",
+        "lab_delay6h.npz": "f58559b5d4370022103567a04da4c2bc6ff9d7ad12a0fbcc381274e18e759213"
+      },
+      "source_sha256": "f292af7539b1180d6abb6486da52aa231062dee23798403b6eebbea972f4ac8c",
+      "checkpoint_hash_unchanged": true,
+      "test_loaded": true
+    },
+    {
+      "complete": true,
+      "job": {
+        "method": "TabM-mini",
+        "seed": 49,
+        "endpoint": 1,
+        "fit": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_pm_mini_20261024/v1/screen/jobs/TabM-mini_t1_s49",
+        "checkpoint": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_pm_mini_20261024/v1/screen/jobs/TabM-mini_t1_s49/best.pt",
+        "checkpoint_sha256": "5bf209e4c67cd05de82338e06bc493f804907a93ee2776cf1c8d7affe7b80a81",
+        "fit_completion_sha256": "bfda117aeafd8f20e7a254f79e8b7a5664f661c08371305c95ba4d61a76bd2cd"
+      },
+      "probe": false,
+      "optimizer_updates": 0,
+      "parameters_updated": false,
+      "dev_replay_max_drift": 1.1920928955078125e-07,
+      "clean_test_replay_max_drift": 1.1920928955078125e-07,
+      "results": [
+        {
+          "condition": "lab_drop25",
+          "AP": 0.5075171278923997,
+          "AUROC": 0.8360866226822886,
+          "seconds": 37.637988668866456,
+          "rows": 9042
+        },
+        {
+          "condition": "lab_drop50",
+          "AP": 0.5037904535051116,
+          "AUROC": 0.8329287410419748,
+          "seconds": 36.39709632308222,
+          "rows": 9042
+        },
+        {
+          "condition": "lab_delay2h",
+          "AP": 0.5080028890223018,
+          "AUROC": 0.8354116603628712,
+          "seconds": 36.63654454681091,
+          "rows": 9042
+        },
+        {
+          "condition": "lab_delay6h",
+          "AP": 0.5068443420004547,
+          "AUROC": 0.8306254265726312,
+          "seconds": 36.676816175924614,
+          "rows": 9042
+        }
+      ],
+      "timing": {
+        "device": "NVIDIA RTX 6000 Ada Generation",
+        "precision": "FP32; TF32 disabled",
+        "threads": 4,
+        "warmup": 10,
+        "rows": [
+          {
+            "batch": 1,
+            "resident_model": {
+              "median_ms": 0.46410446520894766,
+              "p95_ms": 0.47678612172603607,
+              "records_per_second": 2154.6873063369108,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 116.05943087488413,
+              "p95_ms": 117.37614372977987,
+              "records_per_second": 8.61627523469448,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 51.060546875,
+            "peak_reserved_mib": 126.0
+          },
+          {
+            "batch": 8,
+            "resident_model": {
+              "median_ms": 0.4795839777216315,
+              "p95_ms": 1.5218399232253386,
+              "records_per_second": 16681.124415385493,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 123.8715440267697,
+              "p95_ms": 125.75710449600591,
+              "records_per_second": 64.58303287372547,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 64.0576171875,
+            "peak_reserved_mib": 126.0
+          },
+          {
+            "batch": 32,
+            "resident_model": {
+              "median_ms": 0.4778490401804447,
+              "p95_ms": 1.6411107615567693,
+              "records_per_second": 66966.75583551702,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 129.34039894025773,
+              "p95_ms": 131.75699776038527,
+              "records_per_second": 247.40916420692955,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 109.21044921875,
+            "peak_reserved_mib": 126.0
+          }
+        ],
+        "parameters": 4077600,
+        "scope": "warm dense-feature inference; source-table scan and evidence extraction measured separately; no training updates"
+      },
+      "artifacts": {
+        "lab_drop25.npz": "d0de4584ecef04739416a453429391347598dc9766f2822656156b4616ebbc73",
+        "lab_drop50.npz": "9eb240e9aa57ed741b9b67ee379c072e6800e01c8a20e78f057fed5563922243",
+        "lab_delay2h.npz": "985632a72417685892bc840bd9462d19619908e54655ec407e572c0716ee6f58",
+        "lab_delay6h.npz": "832d3fcf03748d44e197194f2daa5c489748c64417b05b13e3d20e61a48a89fd"
+      },
+      "source_sha256": "f292af7539b1180d6abb6486da52aa231062dee23798403b6eebbea972f4ac8c",
+      "checkpoint_hash_unchanged": true,
+      "test_loaded": true
+    },
+    {
+      "complete": true,
+      "job": {
+        "method": "TabM-mini",
+        "seed": 50,
+        "endpoint": 1,
+        "fit": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_pm_mini_20261024/v1/screen/jobs/TabM-mini_t1_s50",
+        "checkpoint": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_pm_mini_20261024/v1/screen/jobs/TabM-mini_t1_s50/best.pt",
+        "checkpoint_sha256": "821b8dcbcbb42be0c62a7104af8cdbad4fe335273fb090a965add3ea528f2314",
+        "fit_completion_sha256": "760fbc7f38fbc721d173a7af369f2f806134e0a6da6156c740e6ede9e6527b22"
+      },
+      "probe": false,
+      "optimizer_updates": 0,
+      "parameters_updated": false,
+      "dev_replay_max_drift": 1.1920928955078125e-07,
+      "clean_test_replay_max_drift": 1.1920928955078125e-07,
+      "results": [
+        {
+          "condition": "lab_drop25",
+          "AP": 0.5254994955500899,
+          "AUROC": 0.842642066460016,
+          "seconds": 37.42373069305904,
+          "rows": 9042
+        },
+        {
+          "condition": "lab_drop50",
+          "AP": 0.5197658393030651,
+          "AUROC": 0.839837084802639,
+          "seconds": 37.60024923412129,
+          "rows": 9042
+        },
+        {
+          "condition": "lab_delay2h",
+          "AP": 0.5234123939531796,
+          "AUROC": 0.8415200915709248,
+          "seconds": 38.40804307209328,
+          "rows": 9042
+        },
+        {
+          "condition": "lab_delay6h",
+          "AP": 0.5206536545047251,
+          "AUROC": 0.8375349256341713,
+          "seconds": 37.346193727105856,
+          "rows": 9042
+        }
+      ],
+      "timing": {
+        "device": "NVIDIA RTX 6000 Ada Generation",
+        "precision": "FP32; TF32 disabled",
+        "threads": 4,
+        "warmup": 10,
+        "rows": [
+          {
+            "batch": 1,
+            "resident_model": {
+              "median_ms": 0.4608655581250787,
+              "p95_ms": 0.6872036843560626,
+              "records_per_second": 2169.8301866346033,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 115.96116295550019,
+              "p95_ms": 117.59746320312843,
+              "records_per_second": 8.623576846877153,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 51.060546875,
+            "peak_reserved_mib": 126.0
+          },
+          {
+            "batch": 8,
+            "resident_model": {
+              "median_ms": 0.46618259511888027,
+              "p95_ms": 0.8694584947079406,
+              "records_per_second": 17160.657827562045,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 123.0953874764964,
+              "p95_ms": 124.39073910936713,
+              "records_per_second": 64.99024995170923,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 64.0576171875,
+            "peak_reserved_mib": 126.0
+          },
+          {
+            "batch": 32,
+            "resident_model": {
+              "median_ms": 0.46761648263782263,
+              "p95_ms": 1.153815956786272,
+              "records_per_second": 68432.14725770173,
+              "repeats": 30
+            },
+            "dense_transform_transfer_model": {
+              "median_ms": 127.91615596506745,
+              "p95_ms": 129.61673281388357,
+              "records_per_second": 250.1638652176107,
+              "repeats": 30
+            },
+            "peak_allocated_mib": 109.21044921875,
+            "peak_reserved_mib": 126.0
+          }
+        ],
+        "parameters": 4077600,
+        "scope": "warm dense-feature inference; source-table scan and evidence extraction measured separately; no training updates"
+      },
+      "artifacts": {
+        "lab_drop25.npz": "9076e2320d452a21144b169427584cb5e469c779336d8e3df44d390795eef4c3",
+        "lab_drop50.npz": "73e8a6d5886ec89749b301afafeb62ab7045b96d1ee2370411eea89d2c16ef28",
+        "lab_delay2h.npz": "dd30b51380d66a54d4725897b96db8aff2b2ac04887c26ff021136b0870b7292",
+        "lab_delay6h.npz": "b93a4141186c1d3fe67ea0a148aed6302c794148392a56ce99cbf98c2f263ec2"
+      },
+      "source_sha256": "f292af7539b1180d6abb6486da52aa231062dee23798403b6eebbea972f4ac8c",
+      "checkpoint_hash_unchanged": true,
+      "test_loaded": true
+    }
+  ],
+  "gpu_lease": {
+    "gpu": 1,
+    "policy": {
+      "preferred": true,
+      "lease": null,
+      "observed": {
+        "index": 1,
+        "used_mib": 4,
+        "free_mib": 48505,
+        "utilization": 0,
+        "processes": [],
+        "fully_idle": true
+      },
+      "time": 1793201376.6270823
+    },
+    "main_groups_complete": true,
+    "same_gpu_for_all_twelve_checkpoints": true
+  },
+  "paired_statistics_pending": true
+}

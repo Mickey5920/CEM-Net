@@ -1,0 +1,1245 @@
+{
+  "complete": true,
+  "database": "mimiciii",
+  "seeds": [
+    48,
+    49,
+    50,
+    51,
+    52
+  ],
+  "conditions": [
+    "lab_drop25",
+    "lab_drop50",
+    "lab_delay2h",
+    "lab_delay6h"
+  ],
+  "test_rows": 9042,
+  "patient_count": 6676,
+  "models": 20,
+  "new_inferences": 56,
+  "reused_inferences": 24,
+  "training_runs": 0,
+  "bootstrap_replicates": 20000,
+  "bootstrap_seconds": 189.20304656028748,
+  "primary_family": "24 paired AP degradation differences across six tasks and four conditions",
+  "secondary_family": "24 paired perturbed AP differences across six tasks and four conditions",
+  "confidence_scope": "patient sampling conditional on saved fits, cohort and fixed perturbation; five-seed SD reported separately",
+  "cpu_replay_max_probability_drift": 3.5762786865234375e-07,
+  "cpu_replay_max_AP_drift": 4.4330851134422034e-07,
+  "rows": [
+    {
+      "database": "mimiciii",
+      "endpoint": 0,
+      "condition": "lab_drop25",
+      "methods": {
+        "duration": {
+          "clean": {
+            "values": [
+              0.49044997661499473,
+              0.4810901777845332,
+              0.4873562345910792,
+              0.4790506803459712,
+              0.48936565686674527
+            ],
+            "mean": 0.4854625452406647,
+            "sample_SD": 0.005097166370504561
+          },
+          "perturbed": {
+            "values": [
+              0.4789385414039241,
+              0.4722935030972441,
+              0.4774355356756279,
+              0.4739093730032909,
+              0.4778733530204534
+            ],
+            "mean": 0.47609006124010805,
+            "sample_SD": 0.002840489622955771
+          },
+          "change": {
+            "values": [
+              -0.01151143521107062,
+              -0.008796674687289119,
+              -0.009920698915451276,
+              -0.005141307342680312,
+              -0.011492303846291851
+            ],
+            "mean": -0.009372484000556635,
+            "sample_SD": 0.002626961187743745
+          }
+        },
+        "window": {
+          "clean": {
+            "values": [
+              0.46863119184213897,
+              0.4793966737634538,
+              0.4798138438435947,
+              0.483100069296016,
+              0.4695360838083213
+            ],
+            "mean": 0.4760955725107049,
+            "sample_SD": 0.006567527259236978
+          },
+          "perturbed": {
+            "values": [
+              0.4590465461357898,
+              0.46584329458106866,
+              0.4699164479652653,
+              0.47148275647090676,
+              0.4606522267184736
+            ],
+            "mean": 0.4653882543743008,
+            "sample_SD": 0.005488665045612639
+          },
+          "change": {
+            "values": [
+              -0.009584645706349149,
+              -0.013553379182385139,
+              -0.009897395878329385,
+              -0.01161731282510925,
+              -0.00888385708984768
+            ],
+            "mean": -0.010707318136404121,
+            "sample_SD": 0.001882121904165697
+          }
+        }
+      }
+    },
+    {
+      "database": "mimiciii",
+      "endpoint": 0,
+      "condition": "lab_drop50",
+      "methods": {
+        "duration": {
+          "clean": {
+            "values": [
+              0.49044997661499473,
+              0.4810901777845332,
+              0.4873562345910792,
+              0.4790506803459712,
+              0.48936565686674527
+            ],
+            "mean": 0.4854625452406647,
+            "sample_SD": 0.005097166370504561
+          },
+          "perturbed": {
+            "values": [
+              0.4632501087893186,
+              0.46139459453007414,
+              0.4602912382214207,
+              0.45217844000361435,
+              0.4610993170860604
+            ],
+            "mean": 0.45964273972609765,
+            "sample_SD": 0.004311033665594476
+          },
+          "change": {
+            "values": [
+              -0.027199867825676127,
+              -0.01969558325445908,
+              -0.02706499636965848,
+              -0.026872240342356857,
+              -0.02826633978068488
+            ],
+            "mean": -0.025819805514567085,
+            "sample_SD": 0.0034660611478082247
+          }
+        },
+        "window": {
+          "clean": {
+            "values": [
+              0.46863119184213897,
+              0.4793966737634538,
+              0.4798138438435947,
+              0.483100069296016,
+              0.4695360838083213
+            ],
+            "mean": 0.4760955725107049,
+            "sample_SD": 0.006567527259236978
+          },
+          "perturbed": {
+            "values": [
+              0.44721977876470365,
+              0.45727187974123934,
+              0.45435646791181533,
+              0.45674705124692766,
+              0.443946006065156
+            ],
+            "mean": 0.4519082367459684,
+            "sample_SD": 0.00599072999419504
+          },
+          "change": {
+            "values": [
+              -0.021411413077435326,
+              -0.022124794022214456,
+              -0.02545737593177938,
+              -0.02635301804908835,
+              -0.025590077743165296
+            ],
+            "mean": -0.024187335764736563,
+            "sample_SD": 0.0022489270800885993
+          }
+        }
+      }
+    },
+    {
+      "database": "mimiciii",
+      "endpoint": 0,
+      "condition": "lab_delay2h",
+      "methods": {
+        "duration": {
+          "clean": {
+            "values": [
+              0.49044997661499473,
+              0.4810901777845332,
+              0.4873562345910792,
+              0.4790506803459712,
+              0.48936565686674527
+            ],
+            "mean": 0.4854625452406647,
+            "sample_SD": 0.005097166370504561
+          },
+          "perturbed": {
+            "values": [
+              0.4849793592048882,
+              0.47680512696246685,
+              0.4806573183586138,
+              0.4752879262624791,
+              0.48599365892534174
+            ],
+            "mean": 0.4807446779427579,
+            "sample_SD": 0.004764141036714901
+          },
+          "change": {
+            "values": [
+              -0.005470617410106515,
+              -0.004285050822066372,
+              -0.0066989162324653795,
+              -0.0037627540834920814,
+              -0.003371997941403526
+            ],
+            "mean": -0.0047178672979067745,
+            "sample_SD": 0.0013603421712399648
+          }
+        },
+        "window": {
+          "clean": {
+            "values": [
+              0.46863119184213897,
+              0.4793966737634538,
+              0.4798138438435947,
+              0.483100069296016,
+              0.4695360838083213
+            ],
+            "mean": 0.4760955725107049,
+            "sample_SD": 0.006567527259236978
+          },
+          "perturbed": {
+            "values": [
+              0.4676977014730693,
+              0.4747325718839698,
+              0.4754891005840884,
+              0.48100365275013646,
+              0.4668105443734283
+            ],
+            "mean": 0.4731467142129384,
+            "sample_SD": 0.005907029492820383
+          },
+          "change": {
+            "values": [
+              -0.000933490369069645,
+              -0.004664101879484017,
+              -0.004324743259506325,
+              -0.0020964165458795536,
+              -0.0027255394348930095
+            ],
+            "mean": -0.00294885829776651,
+            "sample_SD": 0.001555100970633417
+          }
+        }
+      }
+    },
+    {
+      "database": "mimiciii",
+      "endpoint": 0,
+      "condition": "lab_delay6h",
+      "methods": {
+        "duration": {
+          "clean": {
+            "values": [
+              0.49044997661499473,
+              0.4810901777845332,
+              0.4873562345910792,
+              0.4790506803459712,
+              0.48936565686674527
+            ],
+            "mean": 0.4854625452406647,
+            "sample_SD": 0.005097166370504561
+          },
+          "perturbed": {
+            "values": [
+              0.4706918126501618,
+              0.4656619453532795,
+              0.4679882947181102,
+              0.4637743616003655,
+              0.4721581662072905
+            ],
+            "mean": 0.46805491610584155,
+            "sample_SD": 0.00345845988435463
+          },
+          "change": {
+            "values": [
+              -0.01975816396483293,
+              -0.015428232431253741,
+              -0.019367939872968976,
+              -0.0152763187456057,
+              -0.01720749065945476
+            ],
+            "mean": -0.017407629134823223,
+            "sample_SD": 0.0021135505004487953
+          }
+        },
+        "window": {
+          "clean": {
+            "values": [
+              0.46863119184213897,
+              0.4793966737634538,
+              0.4798138438435947,
+              0.483100069296016,
+              0.4695360838083213
+            ],
+            "mean": 0.4760955725107049,
+            "sample_SD": 0.006567527259236978
+          },
+          "perturbed": {
+            "values": [
+              0.4592240069966115,
+              0.46695082740118526,
+              0.4651642755854211,
+              0.4677610162955955,
+              0.45844172667406313
+            ],
+            "mean": 0.4635083705905753,
+            "sample_SD": 0.004379046063907913
+          },
+          "change": {
+            "values": [
+              -0.009407184845527494,
+              -0.012445846362268531,
+              -0.014649568258173595,
+              -0.015339053000420488,
+              -0.01109435713425816
+            ],
+            "mean": -0.012587201920129654,
+            "sample_SD": 0.0024590198669184144
+          }
+        }
+      }
+    },
+    {
+      "database": "mimiciii",
+      "endpoint": 1,
+      "condition": "lab_drop25",
+      "methods": {
+        "duration": {
+          "clean": {
+            "values": [
+              0.5465509463417983,
+              0.5500209844930679,
+              0.5506028724175384,
+              0.5508797388530158,
+              0.5515675992870688
+            ],
+            "mean": 0.5499244282784979,
+            "sample_SD": 0.0019661268516300073
+          },
+          "perturbed": {
+            "values": [
+              0.5455781681521321,
+              0.5508598979771895,
+              0.551831854527853,
+              0.5506328722855983,
+              0.5513764872894427
+            ],
+            "mean": 0.550055856046443,
+            "sample_SD": 0.0025459456755527587
+          },
+          "change": {
+            "values": [
+              -0.0009727781896662346,
+              0.0008389134841215728,
+              0.0012289821103146359,
+              -0.0002468665674174586,
+              -0.00019111199762611442
+            ],
+            "mean": 0.00013142776794528022,
+            "sample_SD": 0.0008904452361620085
+          }
+        },
+        "window": {
+          "clean": {
+            "values": [
+              0.5531942047947298,
+              0.5530880658448858,
+              0.550822909822676,
+              0.5508130326924209,
+              0.5531737252351131
+            ],
+            "mean": 0.552218387677965,
+            "sample_SD": 0.001279024050544326
+          },
+          "perturbed": {
+            "values": [
+              0.554300515516766,
+              0.5527487568228207,
+              0.5493537564620099,
+              0.5507903913866334,
+              0.5519595190635842
+            ],
+            "mean": 0.5518305878503629,
+            "sample_SD": 0.0018826113915566866
+          },
+          "change": {
+            "values": [
+              0.0011063107220361523,
+              -0.00033930902206513736,
+              -0.001469153360666109,
+              -2.2641305787440835e-05,
+              -0.0012142061715288976
+            ],
+            "mean": -0.0003877998276022865,
+            "sample_SD": 0.0010271722527853207
+          }
+        }
+      }
+    },
+    {
+      "database": "mimiciii",
+      "endpoint": 1,
+      "condition": "lab_drop50",
+      "methods": {
+        "duration": {
+          "clean": {
+            "values": [
+              0.5465509463417983,
+              0.5500209844930679,
+              0.5506028724175384,
+              0.5508797388530158,
+              0.5515675992870688
+            ],
+            "mean": 0.5499244282784979,
+            "sample_SD": 0.0019661268516300073
+          },
+          "perturbed": {
+            "values": [
+              0.5434286467973555,
+              0.5479442369015041,
+              0.5480420972357742,
+              0.5446804289151185,
+              0.5493099754858403
+            ],
+            "mean": 0.5466810770671185,
+            "sample_SD": 0.0024969957574264294
+          },
+          "change": {
+            "values": [
+              -0.0031222995444428747,
+              -0.0020767475915638434,
+              -0.002560775181764119,
+              -0.0061993099378973016,
+              -0.0022576238012285144
+            ],
+            "mean": -0.0032433512113793305,
+            "sample_SD": 0.001699329137339228
+          }
+        },
+        "window": {
+          "clean": {
+            "values": [
+              0.5531942047947298,
+              0.5530880658448858,
+              0.550822909822676,
+              0.5508130326924209,
+              0.5531737252351131
+            ],
+            "mean": 0.552218387677965,
+            "sample_SD": 0.001279024050544326
+          },
+          "perturbed": {
+            "values": [
+              0.5517074570571896,
+              0.5506894603592636,
+              0.5461431796865253,
+              0.5470798220521805,
+              0.5491729458849197
+            ],
+            "mean": 0.5489585730080158,
+            "sample_SD": 0.002348107481441663
+          },
+          "change": {
+            "values": [
+              -0.001486747737540206,
+              -0.002398605485622207,
+              -0.00467973013615075,
+              -0.0037332106402403475,
+              -0.004000779350193384
+            ],
+            "mean": -0.003259814669949379,
+            "sample_SD": 0.001291775903474267
+          }
+        }
+      }
+    },
+    {
+      "database": "mimiciii",
+      "endpoint": 1,
+      "condition": "lab_delay2h",
+      "methods": {
+        "duration": {
+          "clean": {
+            "values": [
+              0.5465509463417983,
+              0.5500209844930679,
+              0.5506028724175384,
+              0.5508797388530158,
+              0.5515675992870688
+            ],
+            "mean": 0.5499244282784979,
+            "sample_SD": 0.0019661268516300073
+          },
+          "perturbed": {
+            "values": [
+              0.5420047228817446,
+              0.5437201405183488,
+              0.5453736822935537,
+              0.5451975663619997,
+              0.54697799737802
+            ],
+            "mean": 0.5446548218867335,
+            "sample_SD": 0.0018778398633728308
+          },
+          "change": {
+            "values": [
+              -0.004546223460053733,
+              -0.006300843974719084,
+              -0.005229190123984706,
+              -0.005682172491016102,
+              -0.004589601909048779
+            ],
+            "mean": -0.005269606391764481,
+            "sample_SD": 0.0007451483368858312
+          }
+        },
+        "window": {
+          "clean": {
+            "values": [
+              0.5531942047947298,
+              0.5530880658448858,
+              0.550822909822676,
+              0.5508130326924209,
+              0.5531737252351131
+            ],
+            "mean": 0.552218387677965,
+            "sample_SD": 0.001279024050544326
+          },
+          "perturbed": {
+            "values": [
+              0.5492970617277644,
+              0.5474294784878917,
+              0.5472175712887744,
+              0.5471425406361868,
+              0.5510763761789501
+            ],
+            "mean": 0.5484326056639135,
+            "sample_SD": 0.001723633318190978
+          },
+          "change": {
+            "values": [
+              -0.003897143066965425,
+              -0.005658587356994094,
+              -0.0036053385339016586,
+              -0.0036704920562340426,
+              -0.0020973490561629893
+            ],
+            "mean": -0.003785782014051642,
+            "sample_SD": 0.0012665364793252806
+          }
+        }
+      }
+    },
+    {
+      "database": "mimiciii",
+      "endpoint": 1,
+      "condition": "lab_delay6h",
+      "methods": {
+        "duration": {
+          "clean": {
+            "values": [
+              0.5465509463417983,
+              0.5500209844930679,
+              0.5506028724175384,
+              0.5508797388530158,
+              0.5515675992870688
+            ],
+            "mean": 0.5499244282784979,
+            "sample_SD": 0.0019661268516300073
+          },
+          "perturbed": {
+            "values": [
+              0.5389718582914562,
+              0.5393693574047885,
+              0.5410320022933475,
+              0.5403776774711502,
+              0.5415534029827038
+            ],
+            "mean": 0.5402608596886893,
+            "sample_SD": 0.001088034512571764
+          },
+          "change": {
+            "values": [
+              -0.007579088050342131,
+              -0.01065162708827938,
+              -0.009570870124190889,
+              -0.010502061381865602,
+              -0.010014196304364953
+            ],
+            "mean": -0.009663568589808592,
+            "sample_SD": 0.0012405564958809
+          }
+        },
+        "window": {
+          "clean": {
+            "values": [
+              0.5531942047947298,
+              0.5530880658448858,
+              0.550822909822676,
+              0.5508130326924209,
+              0.5531737252351131
+            ],
+            "mean": 0.552218387677965,
+            "sample_SD": 0.001279024050544326
+          },
+          "perturbed": {
+            "values": [
+              0.5428113466743479,
+              0.5406418881996997,
+              0.542621219375917,
+              0.5415044024369033,
+              0.5423178779987671
+            ],
+            "mean": 0.541979346937127,
+            "sample_SD": 0.0008990543952846209
+          },
+          "change": {
+            "values": [
+              -0.010382858120381866,
+              -0.012446177645186074,
+              -0.008201690446759002,
+              -0.009308630255517536,
+              -0.010855847236346028
+            ],
+            "mean": -0.0102390407408381,
+            "sample_SD": 0.0016038272115531178
+          }
+        }
+      }
+    }
+  ],
+  "paired": [
+    {
+      "database": "mimiciii",
+      "endpoint": 0,
+      "condition": "lab_drop25",
+      "estimand": "degradation",
+      "values": [
+        -0.0019267895047214711,
+        0.00475670449509602,
+        -2.330303712189119e-05,
+        0.006476005482428937,
+        -0.0026084467564441716
+      ],
+      "mean": 0.0013348341358474848,
+      "sample_SD": 0.004067340320136915,
+      "family_count": 24,
+      "ci95": [
+        -0.0031033278481803084,
+        0.005579534709987102
+      ],
+      "adjusted_ci": [
+        -0.005463822898521075,
+        0.008357848523829274
+      ],
+      "p_bootstrap_centered": 0.5477226138693065
+    },
+    {
+      "database": "mimiciii",
+      "endpoint": 0,
+      "condition": "lab_drop25",
+      "estimand": "absolute",
+      "values": [
+        0.019891995268134288,
+        0.0064502085161754485,
+        0.007519087710362582,
+        0.0024266165323841293,
+        0.017221126301979806
+      ],
+      "mean": 0.01070180686580725,
+      "sample_SD": 0.00747739348945422,
+      "family_count": 24,
+      "ci95": [
+        0.0032982241502634803,
+        0.01816832501543678
+      ],
+      "adjusted_ci": [
+        -0.0010318940770244324,
+        0.022444288733953086
+      ],
+      "p_bootstrap_centered": 0.004599770011499425
+    },
+    {
+      "database": "mimiciii",
+      "endpoint": 0,
+      "condition": "lab_drop50",
+      "estimand": "degradation",
+      "values": [
+        -0.005788454748240801,
+        0.0024292107677553743,
+        -0.0016076204378790981,
+        -0.0005192222932685064,
+        -0.0026762620375195834
+      ],
+      "mean": -0.0016324697498305229,
+      "sample_SD": 0.0030041179929237776,
+      "family_count": 24,
+      "ci95": [
+        -0.0074671660245523835,
+        0.004304711551062867
+      ],
+      "adjusted_ci": [
+        -0.010991127660389356,
+        0.007633643244863368
+      ],
+      "p_bootstrap_centered": 0.5837208139593021
+    },
+    {
+      "database": "mimiciii",
+      "endpoint": 0,
+      "condition": "lab_drop50",
+      "estimand": "absolute",
+      "values": [
+        0.016030330024614958,
+        0.004122714788834803,
+        0.005934770309605375,
+        -0.004568611243313314,
+        0.017153311020904394
+      ],
+      "mean": 0.007734502980129243,
+      "sample_SD": 0.009016448337347011,
+      "family_count": 24,
+      "ci95": [
+        0.0002459639842992373,
+        0.015417293514988186
+      ],
+      "adjusted_ci": [
+        -0.004369921668761733,
+        0.019866942618506623
+      ],
+      "p_bootstrap_centered": 0.04594770261486926
+    },
+    {
+      "database": "mimiciii",
+      "endpoint": 0,
+      "condition": "lab_delay2h",
+      "estimand": "degradation",
+      "values": [
+        -0.00453712704103687,
+        0.00037905105741764533,
+        -0.0023741729729590544,
+        -0.0016663375376125278,
+        -0.0006464585065105166
+      ],
+      "mean": -0.0017690090001402647,
+      "sample_SD": 0.0018650418207896001,
+      "family_count": 24,
+      "ci95": [
+        -0.006912585097765572,
+        0.0031897316825224213
+      ],
+      "adjusted_ci": [
+        -0.009419670598405266,
+        0.006160288797664997
+      ],
+      "p_bootstrap_centered": 0.4948252587370631
+    },
+    {
+      "database": "mimiciii",
+      "endpoint": 0,
+      "condition": "lab_delay2h",
+      "estimand": "absolute",
+      "values": [
+        0.01728165773181889,
+        0.0020725550784970737,
+        0.005168217774525419,
+        -0.0057157264876573355,
+        0.01918311455191346
+      ],
+      "mean": 0.007597963729819501,
+      "sample_SD": 0.010508065978967519,
+      "family_count": 24,
+      "ci95": [
+        0.0011280281227504115,
+        0.014153521890548948
+      ],
+      "adjusted_ci": [
+        -0.0030364087111601004,
+        0.017946996344306465
+      ],
+      "p_bootstrap_centered": 0.023098845057747112
+    },
+    {
+      "database": "mimiciii",
+      "endpoint": 0,
+      "condition": "lab_delay6h",
+      "estimand": "degradation",
+      "values": [
+        -0.010350979119305437,
+        -0.00298238606898521,
+        -0.00471837161479538,
+        6.273425481478911e-05,
+        -0.006113133525196601
+      ],
+      "mean": -0.004820427214693568,
+      "sample_SD": 0.003856558391587596,
+      "family_count": 24,
+      "ci95": [
+        -0.011467614962362802,
+        0.0017399435066962085
+      ],
+      "adjusted_ci": [
+        -0.015079661861114516,
+        0.005691563729364262
+      ],
+      "p_bootstrap_centered": 0.151892405379731
+    },
+    {
+      "database": "mimiciii",
+      "endpoint": 0,
+      "condition": "lab_delay6h",
+      "estimand": "absolute",
+      "values": [
+        0.011467805653550323,
+        -0.0012888820479057816,
+        0.002824019132689093,
+        -0.003986654695230019,
+        0.013716439533227376
+      ],
+      "mean": 0.0045465455152661986,
+      "sample_SD": 0.007775371631288035,
+      "family_count": 24,
+      "ci95": [
+        -0.0017772764510664803,
+        0.01102761702916954
+      ],
+      "adjusted_ci": [
+        -0.00531591833227878,
+        0.014858086602098586
+      ],
+      "p_bootstrap_centered": 0.16264186790660468
+    },
+    {
+      "database": "mimiciii",
+      "endpoint": 1,
+      "condition": "lab_drop25",
+      "estimand": "degradation",
+      "values": [
+        -0.002079088911702387,
+        0.0011782225061867102,
+        0.002698135470980745,
+        -0.00022422526163001777,
+        0.0010230941739027832
+      ],
+      "mean": 0.0005192275955475667,
+      "sample_SD": 0.0017846404521184038,
+      "family_count": 24,
+      "ci95": [
+        -0.0012130974767325024,
+        0.0022079377814366056
+      ],
+      "adjusted_ci": [
+        -0.002248676095755766,
+        0.0031696730539113645
+      ],
+      "p_bootstrap_centered": 0.5559222038898055
+    },
+    {
+      "database": "mimiciii",
+      "endpoint": 1,
+      "condition": "lab_drop25",
+      "estimand": "absolute",
+      "values": [
+        -0.008722347364633842,
+        -0.0018888588456311695,
+        0.002478098065843093,
+        -0.00015751910103511957,
+        -0.0005830317741415403
+      ],
+      "mean": -0.0017747318039197158,
+      "sample_SD": 0.00419536871888569,
+      "family_count": 24,
+      "ci95": [
+        -0.0047661321727922035,
+        0.0012017503115286303
+      ],
+      "adjusted_ci": [
+        -0.006597095630278076,
+        0.0026831899074039075
+      ],
+      "p_bootstrap_centered": 0.24048797560121993
+    },
+    {
+      "database": "mimiciii",
+      "endpoint": 1,
+      "condition": "lab_drop50",
+      "estimand": "degradation",
+      "values": [
+        -0.0016355518069026687,
+        0.00032185789405836385,
+        0.0021189549543866315,
+        -0.002466099297656954,
+        0.0017431555489648698
+      ],
+      "mean": 1.6463458570048495e-05,
+      "sample_SD": 0.002024072262926933,
+      "family_count": 24,
+      "ci95": [
+        -0.002486915970969375,
+        0.002622046694769882
+      ],
+      "adjusted_ci": [
+        -0.0038336853940599287,
+        0.004102484426977203
+      ],
+      "p_bootstrap_centered": 0.9883505824708765
+    },
+    {
+      "database": "mimiciii",
+      "endpoint": 1,
+      "condition": "lab_drop50",
+      "estimand": "absolute",
+      "values": [
+        -0.008278810259834124,
+        -0.002745223457759516,
+        0.0018989175492489796,
+        -0.002399393137062056,
+        0.00013702960092054628
+      ],
+      "mean": -0.002277495940897234,
+      "sample_SD": 0.0038575174900415446,
+      "family_count": 24,
+      "ci95": [
+        -0.005153738706773291,
+        0.0007108459574928398
+      ],
+      "adjusted_ci": [
+        -0.006848156282377007,
+        0.0023103937574746347
+      ],
+      "p_bootstrap_centered": 0.12744362781860907
+    },
+    {
+      "database": "mimiciii",
+      "endpoint": 1,
+      "condition": "lab_delay2h",
+      "estimand": "degradation",
+      "values": [
+        -0.0006490803930883082,
+        -0.00064225661772499,
+        -0.0016238515900830475,
+        -0.0020116804347820594,
+        -0.00249225285288579
+      ],
+      "mean": -0.001483824377712839,
+      "sample_SD": 0.0008246516599823048,
+      "family_count": 24,
+      "ci95": [
+        -0.003637004741482292,
+        0.0006391264888515345
+      ],
+      "adjusted_ci": [
+        -0.004979210914888047,
+        0.0018418855404376529
+      ],
+      "p_bootstrap_centered": 0.17149142542872856
+    },
+    {
+      "database": "mimiciii",
+      "endpoint": 1,
+      "condition": "lab_delay2h",
+      "estimand": "absolute",
+      "values": [
+        -0.0072923388460197636,
+        -0.0037093379695428697,
+        -0.0018438889952206994,
+        -0.0019449742741871612,
+        -0.004098378800930114
+      ],
+      "mean": -0.0037777837771801213,
+      "sample_SD": 0.002211261123866536,
+      "family_count": 24,
+      "ci95": [
+        -0.006812725705598399,
+        -0.0007682216385422432
+      ],
+      "adjusted_ci": [
+        -0.008487510441125974,
+        0.0008037624104390675
+      ],
+      "p_bootstrap_centered": 0.01504924753762312
+    },
+    {
+      "database": "mimiciii",
+      "endpoint": 1,
+      "condition": "lab_delay6h",
+      "estimand": "degradation",
+      "values": [
+        0.002803770070039735,
+        0.0017945505569066933,
+        -0.0013691796774318865,
+        -0.0011934311263480657,
+        0.000841650931981075
+      ],
+      "mean": 0.0005754721510295102,
+      "sample_SD": 0.001832553168234526,
+      "family_count": 24,
+      "ci95": [
+        -0.0024681789266700685,
+        0.003529826847299565
+      ],
+      "adjusted_ci": [
+        -0.004160754164777333,
+        0.005246793240614828
+      ],
+      "p_bootstrap_centered": 0.7052647367631618
+    },
+    {
+      "database": "mimiciii",
+      "endpoint": 1,
+      "condition": "lab_delay6h",
+      "estimand": "absolute",
+      "values": [
+        -0.0038394883828917203,
+        -0.0012725307949111864,
+        -0.0015892170825695384,
+        -0.0011267249657531675,
+        -0.0007644750160632485
+      ],
+      "mean": -0.0017184872484377722,
+      "sample_SD": 0.0012221452128643368,
+      "family_count": 24,
+      "ci95": [
+        -0.005088917179486704,
+        0.0016052464145169352
+      ],
+      "adjusted_ci": [
+        -0.0070885243465452245,
+        0.0034924488728609363
+      ],
+      "p_bootstrap_centered": 0.3079846007699615
+    }
+  ],
+  "original_files_unchanged": true,
+  "protected": {
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/work/cem_matched_controls_20261105/mimiciii/v4/work/cem_matched_controls_20261105/config.json": "ea05be5de509dc4636fe1c3350415258ea7ec6f17f5d18513c984b39bd418150",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_matched_controls_20261105/host_mimic/state.json": "8fc07e4e15b02b7f3c567b4a17eddef5d1d44ff96d17c7008f8b3d25784689b7",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_matched_controls_20261105/host_mimic/scheduler_v4_exit.json": "d85d1931ad5858e20302daf644038ef108f6f4b8c06703dc357279b9573ac432",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/work/cem_matched_controls_20261105/mimiciii/v4/source_manifest.json": "7ecfd0f1cdfb59c71fb22f609e1d78a9b67e643e41450f0092b67555ef7e8d24",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/work/cem_matched_controls_20261105/mimiciii/v4/scripts/cem_matched_common.py": "2e8e9224f667f3b5a10321584dff268813dba58efa7e9ce81c1d363954b993e9",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/work/cem_matched_controls_20261105/mimiciii/v4/scripts/cem_matched_windows.py": "3ff00aac5afc125f8530936cf3ae5925129e9415a2a669bb0acb96da12bd437e",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/work/cem_matched_controls_20261105/mimiciii/v4/scripts/tracehr_value_features.py": "b27267fd9cb48f4a33550584ae61b991596a729917ba54636b467b67640216a0",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/work/cem_matched_controls_20261105/mimiciii/v4/models/tracehr_centered_native.py": "76ee4b05cca2a373d7176aa25729728bd77e4f81f049a6919c4e07658aacfd64",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/work/cem_matched_controls_20261105/mimiciii/v4/models/tracehr_fte_binding.py": "e5a5cd24441bbfd3d75795a66ed2c4819cc0aa68c0052e5da8fbf6a34a403b18",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/work/cem_matched_controls_20261105/mimiciii/v4/models/cem_matched_tabm.py": "69bb8736bbd65845aca48b2f093d67914241f69017b4935afc601974f118c801",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_test_20261024/v1/inputs/test_targets.npz": "cf0dea5273ade6a69338334591ec77204960a5e971abb247626c6e232efbc302",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimiciii/stress_inputs_v2/completion.json": "a78dccc4d4dbbea18a69456f894bfbcbf0aa5eeeb3a561676a964c19b3cf2818",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimiciii/stress_inputs_v2/lab_drop25.npy": "7b0fbe0f4ff829d6805f5427fb66b3aa8c719dd1588d42e49281e64cbe22d805",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimiciii/stress_inputs_v2/lab_drop50.npy": "fd0d7a0438b7d52d630eaf454415dc0b48e32ae8e3ff34b4fde90c9e41468aef",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimiciii/stress_inputs_v2/lab_delay2h.npy": "f084176fac2649588612e16e6acb55f8d1a59d2bd41f9ff8d56bcb5a87d416d6",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimiciii/stress_inputs_v2/lab_delay6h.npy": "ef63c60bd63dc16cea447a6c66746f5567374721208615b06ede272113d861be",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_matched_controls_20261105/mimiciii/v3/windows/completion.json": "cb571be6a55a3d61cd0a7b57d05713eea90d58ddcb27093db462c8fd30ec3837",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_matched_controls_20261105/mimiciii/v3/windows/scaling.npz": "d9cf81d47d138ec04004bb9b278664ceaafbadae698905e6ba584167abbbc23b",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_matched_controls_20261105/mimiciii/v3/windows/test_windows.npy": "de3acb985a505f1a67107fd7194c1784683caece5726cecc8a03f4630e1d5987",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_five_seed_20261102/host_mimic/state.json": "f5c8272a102c7a0fef5226aacb5220e5b3c480d466408abb4df45a7685b7e459",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimiciii_statistics_v1/bootstrap/random_test_CEM_Net.json": "20b6e6fef1f5682f0a80bfd4477b62616e8e1e95434b757d52298af80172336d",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimiciii_statistics_v1/bootstrap/random_test_CEM_Net.npz": "194363beca1f475748bf7168d3faa4af15efee64262e0f8f6e6a93cf3e9cbd7c",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_ema_20261024/v2/screen/jobs/noEvidence_EMA_t0_s48/completion.json": "3eecc04b67fe436e4dae44a1c06366aa66e77186cc17e5279afefe4c75781616",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_ema_20261024/v2/screen/jobs/noEvidence_EMA_t0_s48/best.pt": "4c6e15d690c1d19ba6e70a62e30bfb6585d23bc4251ecc63189db4ff3b9ecd37",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_ema_20261024/v2/screen/test/test_noEvidence_EMA_t0_s48/predictions_test.npz": "4b277ebc85a0bd1ab85665683590e7f26bc21685eb7f2d2e80e4aa72833c715b",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_ema_20261024/v2/screen/jobs/noEvidence_EMA_t0_s49/completion.json": "4f0dbcb9abcdb6c41df7de536b49801b8bf10c5ded9edd2c71fd2a86e77a71c6",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_ema_20261024/v2/screen/jobs/noEvidence_EMA_t0_s49/best.pt": "a2278e97e730af9335e96bdd4b910fd802de08b56003e2c80831715050594168",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_ema_20261024/v2/screen/test/test_noEvidence_EMA_t0_s49/predictions_test.npz": "616de554096111d2d9a4b55d592f288c0192929483b80ea2887f59947107322c",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_ema_20261024/v2/screen/jobs/noEvidence_EMA_t0_s50/completion.json": "7b8ff30d3e709fc3cddc94886f6a5c2baecee6e999f7976f058b35e2b36beeaf",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_ema_20261024/v2/screen/jobs/noEvidence_EMA_t0_s50/best.pt": "a770d25f076382359647e4692bd49497a0dabfeb79ad90c526a8b3ff75a03a59",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_ema_20261024/v2/screen/test/test_noEvidence_EMA_t0_s50/predictions_test.npz": "edac1eafada41f9445b4cbd04478f3da83fc845035da3a449b3424430e2c1188",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_five_seed_20261102/mimiciii_statistics_v1/bootstrap/test_CEM-Net_s51_t0.json": "09e8919219f10b813cd7db3a26a7081e3b693088bb4da672b571d01162895ae4",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_five_seed_20261102/mimiciii_statistics_v1/bootstrap/test_CEM-Net_s51_t0.npz": "053fd2d21ccb0e7f85f544946fb9919b3c3a8acec233f705064af0c5c15044aa",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_five_seed_20261102/mimiciii/v3/screen/jobs/CEM_t0_s51/completion.json": "0dadb97fb370fdb765baf49ac7cee29e29c8125aa512c7eb20b38240a9647d7f",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_five_seed_20261102/mimiciii/v3/screen/jobs/CEM_t0_s51/best.pt": "bffd396e0c692b6058099cde38d29268415b99e57edcd7b1c642f987b7dd170d",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_five_seed_20261102/mimiciii/v3/screen/test/test_CEM_t0_s51/predictions_test.npz": "f2c7f613050936ebb91d05ab0a2191332ffb4cdfafdb8b9c985f37da8989fa0b",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_five_seed_20261102/mimiciii_statistics_v1/bootstrap/test_CEM-Net_s52_t0.json": "95d391546557aaf586be0f107ccde932c3a27c5b5f7b340581999644db309cab",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_five_seed_20261102/mimiciii_statistics_v1/bootstrap/test_CEM-Net_s52_t0.npz": "75e2c7da343642a8545e140939862391eeee9a8e73d10bc23689e2bc044f20cf",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_five_seed_20261102/mimiciii/v3/screen/jobs/CEM_t0_s52/completion.json": "c149724555676b2109a350453ade58cdc98b2330378e1e9bddd738d7b4f832be",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_five_seed_20261102/mimiciii/v3/screen/jobs/CEM_t0_s52/best.pt": "eec500bc829c7aa28eae606d913952510ae658d6a92951c8ae1281751e609b85",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_five_seed_20261102/mimiciii/v3/screen/test/test_CEM_t0_s52/predictions_test.npz": "c23e96840dd377868a624e02dcb5482c4b35a3be9ac52c0df36a27b334e5b767",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_ema_20261024/v2/screen/jobs/noEvidence_EMA_t1_s48/completion.json": "711d2f95b8b3e0d36cc1367e3040565dd0366b2b34bccc3f34ed45d5b411616e",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_ema_20261024/v2/screen/jobs/noEvidence_EMA_t1_s48/best.pt": "b6bac9f6ec7c7f871524bfa7bae4c41dccfbd7b873efc2ab09c984a278d35bbf",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_ema_20261024/v2/screen/test/test_noEvidence_EMA_t1_s48/predictions_test.npz": "472515428a8ed1b6dd97428e9f554279884b30c3bbbf537ecdbb58feb9db9ca8",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_ema_20261024/v2/screen/jobs/noEvidence_EMA_t1_s49/completion.json": "6ef8d9a2bda08bc48ca5d41a808af9d103ea8d9d1ccbff5f117dc4263dc0fa05",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_ema_20261024/v2/screen/jobs/noEvidence_EMA_t1_s49/best.pt": "8aa23dfc2411c902a1d7c0c2fca6296e214df23705ba69591a3346e16652a254",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_ema_20261024/v2/screen/test/test_noEvidence_EMA_t1_s49/predictions_test.npz": "a6afefaf478a54d1f45f0e3f217cab98a2db4c7979bc0dcb0dd69e963d59a2b2",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_ema_20261024/v2/screen/jobs/noEvidence_EMA_t1_s50/completion.json": "45bfbe249e6f4114b79aad6afbf248d2af1a742fba003f7366019c841f8c6d4a",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_ema_20261024/v2/screen/jobs/noEvidence_EMA_t1_s50/best.pt": "6840794446d359a8602d427c8949df3b127fedfb34fcf35bad3b9123325a89f4",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_ema_20261024/v2/screen/test/test_noEvidence_EMA_t1_s50/predictions_test.npz": "5ac8821fc02ededa7599a49b39f20c658e44bf3c80e7e1b2d82c2ef2333342cc",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_five_seed_20261102/mimiciii_statistics_v1/bootstrap/test_CEM-Net_s51_t1.json": "c4def520d17e0822f3548a18126bcfbdb747dd8ead3fbd205816faaa2f279d90",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_five_seed_20261102/mimiciii_statistics_v1/bootstrap/test_CEM-Net_s51_t1.npz": "48f60223a495fc71ba638a55a4159001caf58e1496e9acbb1e3afffeeeabf86e",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_five_seed_20261102/mimiciii/v3/screen/jobs/CEM_t1_s51/completion.json": "01faa843cb7b7bcef6fcce190a88b7c065494215f29358eb5e9768e21a9400db",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_five_seed_20261102/mimiciii/v3/screen/jobs/CEM_t1_s51/best.pt": "b0922698009a3ac483bd889e7c986c564ce18f9124ff565f9480a28eaf4b073d",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_five_seed_20261102/mimiciii/v3/screen/test/test_CEM_t1_s51/predictions_test.npz": "3618457d9bcc1d5b389d9a16ed0a070ec298a79da2e4f0643e2f2933560e741b",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_five_seed_20261102/mimiciii_statistics_v1/bootstrap/test_CEM-Net_s52_t1.json": "64705eb9e2bb9a93dd40a85b91a5b880b166f7ecac87c7cc151cace1c2152849",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_five_seed_20261102/mimiciii_statistics_v1/bootstrap/test_CEM-Net_s52_t1.npz": "4b24aa5e2b20917c7f92b7b9a3fc4618153bdae96568f70172cb1b079bb10766",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_five_seed_20261102/mimiciii/v3/screen/jobs/CEM_t1_s52/completion.json": "d99f54b94b2e7850bea1234aee4927a74dcddfd14f85962421c138606f381be8",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_five_seed_20261102/mimiciii/v3/screen/jobs/CEM_t1_s52/best.pt": "220aff41379c468d7078ef3981f5977ff34bea14820e0e90d79e1795162edf11",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_five_seed_20261102/mimiciii/v3/screen/test/test_CEM_t1_s52/predictions_test.npz": "9f2809d3f8282180d1911bfa5e550f0b648a38209e6b0ec6dc4155abe97e50e0",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_matched_controls_20261105/mimiciii/v4/screen/test/test_window_summary_t0_s48/completion.json": "2b9a416b82662096b6d12aa1c8f67bc8ffc2bc77866f38754bbff755e7ca183f",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_matched_controls_20261105/mimiciii_statistics_v1/bootstrap/window_summary_s48_t0.json": "0dc614ad20b5c2445c7c40cae18590f343bec2b1577378dcfd9b851e45c5ecd8",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_matched_controls_20261105/mimiciii_statistics_v1/bootstrap/window_summary_s48_t0.npz": "80e2f370a4f21da19ab3af16bbd00e49d0552cecab5667355effa188a0f531fa",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_matched_controls_20261105/mimiciii/v4/screen/jobs/window_summary_t0_s48/completion.json": "848572e639e65974cb7600c1c52e67c790a5116dab33e331f62c8d4772cf9778",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_matched_controls_20261105/mimiciii/v4/screen/jobs/window_summary_t0_s48/best.pt": "f303fe664bcbf8d524e73c0b7bf4294f34017269ab699fb68409ed3a97c67be0",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_matched_controls_20261105/mimiciii/v4/screen/test/test_window_summary_t0_s48/predictions_test.npz": "52dd18e8bd8778197facf791f52245981784f77cbb4bec57c31c6ce0142af05d",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_matched_controls_20261105/mimiciii/v4/screen/test/test_window_summary_t0_s49/completion.json": "f18c68085ae4b6b7a57ff9eb3bf9efa80199adaaff9787282a5401adb6b11029",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_matched_controls_20261105/mimiciii_statistics_v1/bootstrap/window_summary_s49_t0.json": "cd9e64b4ba5a033ef82bc64ebc2b19412ace4e3e36ab7826f2464c6fd532534c",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_matched_controls_20261105/mimiciii_statistics_v1/bootstrap/window_summary_s49_t0.npz": "81aa4bbe9168e2d72019da3eb49bd75143e96d4a7ce6155c08f714a38aed179c",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_matched_controls_20261105/mimiciii/v4/screen/jobs/window_summary_t0_s49/completion.json": "3721533ce0fb98f8defb60491d0dc7cae529f3b57d993ebcc6318dfdcc1e0f60",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_matched_controls_20261105/mimiciii/v4/screen/jobs/window_summary_t0_s49/best.pt": "a4a571a35cc2cf8fba0ab1b5b58ebcd8cfefc9a14924b5ff989796540b552b7e",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_matched_controls_20261105/mimiciii/v4/screen/test/test_window_summary_t0_s49/predictions_test.npz": "dda16c3af7489e2baf198575a88576282966863d9bc6798786b6c12ee5629c09",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_matched_controls_20261105/mimiciii/v4/screen/test/test_window_summary_t0_s50/completion.json": "fcac596b6cb59dee07bef8ce3ff2c24ce338036d05abf5b6538c749be3136458",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_matched_controls_20261105/mimiciii_statistics_v1/bootstrap/window_summary_s50_t0.json": "12f3c9df69eb5e7bd545a2cdec4a9b3ee76da1b255e501ba95b24c9486779f39",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_matched_controls_20261105/mimiciii_statistics_v1/bootstrap/window_summary_s50_t0.npz": "194491355bd41595d90abcaf0cae72181616bdc2a325f4d5451420dfdf79964f",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_matched_controls_20261105/mimiciii/v4/screen/jobs/window_summary_t0_s50/completion.json": "960f1c6d2d7b8f50dd13e884ab336e1b6927a656c64de91318e07392a3384bc4",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_matched_controls_20261105/mimiciii/v4/screen/jobs/window_summary_t0_s50/best.pt": "9e808cd8d79d8dac272502ccf7d02ea8538c9fa73fac9cc831aa15e71245fed1",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_matched_controls_20261105/mimiciii/v4/screen/test/test_window_summary_t0_s50/predictions_test.npz": "2073b2e55513cbfd8b440fd77d2c4e000e973c4ab6adc8b4d2cb1601c9c7f11b",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_matched_controls_20261105/mimiciii/v4/screen/test/test_window_summary_t0_s51/completion.json": "7e536ac7ae2f9361a93a33413c03894ef974c806eab1d90acedbb5256202bd2a",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_matched_controls_20261105/mimiciii_statistics_v1/bootstrap/window_summary_s51_t0.json": "45bf7da4b2ccd7d25f7e0495130ac6c38015ab51384424ae542bde3be7d9cf50",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_matched_controls_20261105/mimiciii_statistics_v1/bootstrap/window_summary_s51_t0.npz": "4113763051897539766acaa9e3861e9f9b2235353fb2e964abad45863199e50b",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_matched_controls_20261105/mimiciii/v4/screen/jobs/window_summary_t0_s51/completion.json": "4f36cdc297712c6a34f8e6e6767e99795fccf2b69f5ba1b5b059310c5faa7c2b",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_matched_controls_20261105/mimiciii/v4/screen/jobs/window_summary_t0_s51/best.pt": "dc7f855404fc0b5ac7048eae161d01cd78368b3c7ff4d0de01cb600b34905e41",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_matched_controls_20261105/mimiciii/v4/screen/test/test_window_summary_t0_s51/predictions_test.npz": "c35c17ba900e36e731ab2f1ca2c0964084bd9dded5c3221367ce507d214bc263",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_matched_controls_20261105/mimiciii/v4/screen/test/test_window_summary_t0_s52/completion.json": "442e2f71fdc4181b3209eff05834aef7c7972ef8d51aea5d401e3e2915800414",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_matched_controls_20261105/mimiciii_statistics_v1/bootstrap/window_summary_s52_t0.json": "5ee8707cfc63cc025985ed8a3fbdcd3a27134b88ca7793d637ab7a99ac21038d",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_matched_controls_20261105/mimiciii_statistics_v1/bootstrap/window_summary_s52_t0.npz": "46a5598805cd1536a65d995b823d6ded2b09c18d7a300488895ebcd19d29ac61",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_matched_controls_20261105/mimiciii/v4/screen/jobs/window_summary_t0_s52/completion.json": "acffc6e477e379ac328946b03b1c05dc8a43d11e2b7648aa100f8e975ce9556f",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_matched_controls_20261105/mimiciii/v4/screen/jobs/window_summary_t0_s52/best.pt": "91e9d4cfc2553a5df13b27c41183c08fef10cdc3415fac99f39ab17bdfe35720",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_matched_controls_20261105/mimiciii/v4/screen/test/test_window_summary_t0_s52/predictions_test.npz": "9739ec00a0f1ddc86dd8b1d0a5a2db2a71318eec73a23cc4173ccd8d412888d4",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_matched_controls_20261105/mimiciii/v4/screen/test/test_window_summary_t1_s48/completion.json": "4642ce350b0521f29d4f618cba5a04f71c4579a9d3bb1a4a54121b6c887e2b28",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_matched_controls_20261105/mimiciii_statistics_v1/bootstrap/window_summary_s48_t1.json": "497353f697ffbc4d25c7babc5aa1d42f6a823e1ea5d9a962925b44924bb9cd6b",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_matched_controls_20261105/mimiciii_statistics_v1/bootstrap/window_summary_s48_t1.npz": "73b3d76cdc82b4fc5e53bce377c5ef20dc34faa7bd8396f1eae9828d33ed865d",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_matched_controls_20261105/mimiciii/v4/screen/jobs/window_summary_t1_s48/completion.json": "dbcbc676723720ec55538875322950019d2d255127763326f3e9fab45244c568",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_matched_controls_20261105/mimiciii/v4/screen/jobs/window_summary_t1_s48/best.pt": "14541169755a2a9b4ee743fa484cebb672ce43067daec8a341293f705dbf7c06",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_matched_controls_20261105/mimiciii/v4/screen/test/test_window_summary_t1_s48/predictions_test.npz": "48ff0bfeb99f8c1bbc3d335aa3f16673ad01806cc0594840e1a7934c711bf75b",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_matched_controls_20261105/mimiciii/v4/screen/test/test_window_summary_t1_s49/completion.json": "83c8d603171207d7da7b78227813022c016ac8ef35374e86307b5675d033ac17",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_matched_controls_20261105/mimiciii_statistics_v1/bootstrap/window_summary_s49_t1.json": "79d28f0f70fa40407d7c5b153a1f42055ead8a66e049d4cc902d481d45634629",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_matched_controls_20261105/mimiciii_statistics_v1/bootstrap/window_summary_s49_t1.npz": "fba60998bc42076776e6a956754b23300c9a9d611482866d876068f41299b235",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_matched_controls_20261105/mimiciii/v4/screen/jobs/window_summary_t1_s49/completion.json": "64c12d09562f21f582f9f13e12d0580ba2c6487ecdfb331f59726b8fa6f04736",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_matched_controls_20261105/mimiciii/v4/screen/jobs/window_summary_t1_s49/best.pt": "9979c399f2e59316a262f2906bc722302797332ec1a64c3a2a0fabfd727f3c8c",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_matched_controls_20261105/mimiciii/v4/screen/test/test_window_summary_t1_s49/predictions_test.npz": "ec70ac34b28f3ee4bcf54597cfbba3a72107a9f70ee89318a196d791b81cf6a3",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_matched_controls_20261105/mimiciii/v4/screen/test/test_window_summary_t1_s50/completion.json": "8aca48b9d0d9a3c3be2885983034d5b146693be67a091b18fb41aefc5177d911",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_matched_controls_20261105/mimiciii_statistics_v1/bootstrap/window_summary_s50_t1.json": "9518901f5fd546a02f1dc000d243e55145e472253596f1c562ad1b708ee0990c",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_matched_controls_20261105/mimiciii_statistics_v1/bootstrap/window_summary_s50_t1.npz": "cea42ba60af15d4340e96dbce99b363f6c0b9bd499a4289f33ce411afcbe355f",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_matched_controls_20261105/mimiciii/v4/screen/jobs/window_summary_t1_s50/completion.json": "11c3681e11d739632c83e26f570a690dbaf1f223d38a9920a49fc2c3767ef6d2",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_matched_controls_20261105/mimiciii/v4/screen/jobs/window_summary_t1_s50/best.pt": "f40130107edb7c95f52fb55e47858bd9c75507ef55e9eeeb9595ed4189375ee3",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_matched_controls_20261105/mimiciii/v4/screen/test/test_window_summary_t1_s50/predictions_test.npz": "33b77b8811c520f9562a0d81947151580269a7991ffb44eee5603e83138c646e",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_matched_controls_20261105/mimiciii/v4/screen/test/test_window_summary_t1_s51/completion.json": "fd4c286d26cf9ef15a3b282e8354a6437d65b59958e73aa93a372b88e937f36b",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_matched_controls_20261105/mimiciii_statistics_v1/bootstrap/window_summary_s51_t1.json": "2b12877012321541973a1967cd8d467551f495719b11d1dfc891b4b03eb1cdf8",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_matched_controls_20261105/mimiciii_statistics_v1/bootstrap/window_summary_s51_t1.npz": "3500e8c636911fe3cecb9431cbd665d387dae13695312395e0ced9c969bbb2ff",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_matched_controls_20261105/mimiciii/v4/screen/jobs/window_summary_t1_s51/completion.json": "6675ba403b423779c8ed5997aa511cf666d8db4d17b8c90681c58c75e881e08b",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_matched_controls_20261105/mimiciii/v4/screen/jobs/window_summary_t1_s51/best.pt": "f51af4a770cc86e5028d2bfdd73c39a5910c343122f2f3f59230a5458d08e8d1",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_matched_controls_20261105/mimiciii/v4/screen/test/test_window_summary_t1_s51/predictions_test.npz": "176335076f06a7b24a2f93f403dcca85a0ed568d293989b7350411da94db54b6",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_matched_controls_20261105/mimiciii/v4/screen/test/test_window_summary_t1_s52/completion.json": "da6d4f9b31644b49820076b2480c24fde192bd3095f15e2226bd33017a75ff05",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_matched_controls_20261105/mimiciii_statistics_v1/bootstrap/window_summary_s52_t1.json": "eb97be8f9f03a1ec7e5142d4f0febb7ae9573630d68e893182b281171df80f6a",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_matched_controls_20261105/mimiciii_statistics_v1/bootstrap/window_summary_s52_t1.npz": "88a2d9392348fab8b8d3491045ab709fd5fad611e93de8915150a43db13381d6",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_matched_controls_20261105/mimiciii/v4/screen/jobs/window_summary_t1_s52/completion.json": "0de2b3479d16645db93886878bf456f49cf62279d13532947e3375d8cd954f4a",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_matched_controls_20261105/mimiciii/v4/screen/jobs/window_summary_t1_s52/best.pt": "8850f9bc219aa3818ac463405e13bf05ff4e35e7055e4aee7ad7208771446872",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_matched_controls_20261105/mimiciii/v4/screen/test/test_window_summary_t1_s52/predictions_test.npz": "795bba06b1f5e1e150000bcd4150963b31be1a0227a0c596a5760a09f63c5511",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimiciii_secondary_v1/bootstrap/stress_t0_lab_drop25.json": "bea9aa4e66809b75c1573be95e7e583b827afbba21f1cf33c91a4f56fda48926",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimiciii_secondary_v1/bootstrap/stress_t0_lab_drop25.npz": "40909c413e009286460ca6f37bd57d91f6d76d905cc63669a008d29e291facb3",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimiciii_secondary_v1/bootstrap/stress_t0_lab_drop50.json": "98f4798db7f56e666764c30b7a485903ed8d1a12c7fef390b62e78d34c5bd7b6",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimiciii_secondary_v1/bootstrap/stress_t0_lab_drop50.npz": "3c803433db50fe136e659ce9fbe0e4fd228df0df7cf59d7ce8662f1b6b78a42e",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimiciii_secondary_v1/bootstrap/stress_t0_lab_delay2h.json": "f8d1fa1e0bb57104a0f9a0cd8f832a27fcaacaa294b171edad89453d6e48e88e",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimiciii_secondary_v1/bootstrap/stress_t0_lab_delay2h.npz": "49d82d07e82dc3bc52a4f7ed5cb0e26031c45b99bc7438d8718c267a0854f0cc",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimiciii_secondary_v1/bootstrap/stress_t0_lab_delay6h.json": "d7ddcedeef9ab19533d1d372c78a026756295b6e3b509fb4edad93bd418333aa",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimiciii_secondary_v1/bootstrap/stress_t0_lab_delay6h.npz": "6b313ef4c6a3ef800c97f7e3e6a3a42653df30fd1b2a612157f651e0b3b3e3b7",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimiciii_secondary_v1/bootstrap/stress_t1_lab_drop25.json": "94510ba55a3d49b298076a6c6525506194994de004ca6e49f2f003c1f0ce213c",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimiciii_secondary_v1/bootstrap/stress_t1_lab_drop25.npz": "7b28f56b742853ebb9d0d5a2a685bf5d2581de0682fb140bf0437771b75a994e",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimiciii_secondary_v1/bootstrap/stress_t1_lab_drop50.json": "f450dd394a254fcc293f39a172e4cd3d34c6386300771964a7e2f3df5ccb13c8",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimiciii_secondary_v1/bootstrap/stress_t1_lab_drop50.npz": "0709b33a0a0076d4b23943ae410a9d63546fffa88429b0ca760b5c064290f796",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimiciii_secondary_v1/bootstrap/stress_t1_lab_delay2h.json": "cd98e50fd97a73d3ce6453262afef23f6851b17f2e0143d95d5a5d5d669d3774",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimiciii_secondary_v1/bootstrap/stress_t1_lab_delay2h.npz": "da7f92d531791c0c6d458b1f9f6bddff6f7ce8e43d92ec69c28f840afd514b41",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimiciii_secondary_v1/bootstrap/stress_t1_lab_delay6h.json": "fb3d8f8cd7103fcf29d3efdc36e1c2ba30af320daf1bca816c2670729892a784",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimiciii_secondary_v1/bootstrap/stress_t1_lab_delay6h.npz": "99ef95136b1c707d7ce1c16672b5dbc53af9360146ea79bb2764a3bef56d6f8a"
+  },
+  "source_sha256": "19715474295e12b077cb55013aac96e893ff8c80e97b4c4c98985c1cda71d156",
+  "run_protocol": {
+    "run": "cem_aggregation_stress_20261106",
+    "seeds": [
+      48,
+      49,
+      50,
+      51,
+      52
+    ],
+    "databases": [
+      "mimiciii",
+      "mimic",
+      "eicu"
+    ],
+    "endpoints": [
+      0,
+      1
+    ],
+    "conditions": [
+      "lab_drop25",
+      "lab_drop50",
+      "lab_delay2h",
+      "lab_delay6h"
+    ],
+    "methods": [
+      "duration",
+      "window"
+    ],
+    "training_runs": 0,
+    "checkpoints": 60,
+    "total_stress_cases": 240,
+    "expected_reused_cases": 72,
+    "expected_new_cases": 168,
+    "primary": "difference of AP changes: (duration perturbed-clean) minus (window perturbed-clean)",
+    "secondary": "perturbed AP duration minus window",
+    "family_size": 24,
+    "families": [
+      "degradation",
+      "absolute"
+    ],
+    "bootstrap_replicates": 20000,
+    "bootstrap_rng_seed": 20261027,
+    "resampling": "whole patients with all stays",
+    "seed_aggregation": "per-seed AP/paired contrast, then average; no prediction pooling",
+    "intervals": [
+      0.95,
+      0.9979166666666667
+    ],
+    "p_values": "null-centered paired bootstrap; Holm separately in each full 24-contrast family",
+    "fixed_deletion": "reuse archived deterministic hash; nested 25/50 percent masks shared across views and models",
+    "normalization": "reuse each model original training-fitted transforms; never refit",
+    "time_rules": "original laboratory availability, 24h cutoff; unchanged specimen times and original MIMIC-III proxy",
+    "execution": "CPU FP32, four threads per batch, batch 256, four independent batches in parallel; exact serial/parallel replay",
+    "original_model_results_and_manuscript_unchanged": true
+  }
+}

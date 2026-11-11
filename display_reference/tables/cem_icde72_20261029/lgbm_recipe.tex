@@ -1,0 +1,19 @@
+\begin{table*}[tp]
+\centering\small
+\setlength{\tabcolsep}{3pt}
+\caption{Baseline architectures and training recipes. Checkpoints maximize validation AP; patience is in epochs or boosting rounds.}
+\label{tab:lgbm-recipe}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{.12\textwidth}>{\raggedright\arraybackslash}p{.42\textwidth}>{\raggedright\arraybackslash}p{.40\textwidth}@{}}
+\toprule
+Methods & Architecture and input transformation & Optimization, budget and stopping \\
+\midrule
+RealMLP & Pre-tuned full classifier; complete evidence profile. & Batch 256; 256 epochs, no early stopping. \\
+TabM / mini; with / without PLE & Three width-256 layers, 32 members, dropout 0.2; training-quantile transform. PLE: version B, dimension 16, no activation, up to 48 bins; merge duplicate edges; unit interval for constants. & AdamW, learning rate $5\times10^{-4}$, decay $10^{-3}$; effective batch 256 (PLE microbatch 32); cap 256, patience 16. \\
+SeFT & Input/output: three width-32 layers. Attention embedding: two width-64 layers; four heads, latent/dot-product width 128. Time embedding 4, maximum scale 100, attention dropout 0.1. & Adam $10^{-3}$, no decay; batch/microbatch 64/4; cap 300, patience 30. Halve rate after 15 stale epochs; cooldown 15, floor $10^{-5}$; unweighted BCE. \\
+mTAND encoder & Supervised: hidden 256, learned time embedding 128, one head, 128 reference queries. Sparse and reference dense implementations match in outputs and gradients. & Adam $10^{-4}$, no decay; batch/microbatch 256/4; cap/patience 200; two-class cross-entropy. \\
+STraTS (ss$^{-}$) & Author supervised variant: hidden 64, two layers, 16 heads; dropout/attention dropout 0.2. Full observations; extra demographic coordinate zero; no pretraining. & Author AdamW $5\times10^{-4}$, $\epsilon=10^{-6}$, no decay, clip 0.3; batch/microbatch 16/1; cap 50, patience 10; train-ratio-weighted BCE. \\
+LightGBM & 4.6.0, LGBM-TD: 50 leaves, unlimited depth, 255 bins, minimum leaf rows 40, Hessian $10^{-7}$, split gain 0. Zero is observed. & BCE; rate 0.04, row fraction 0.75, feature fraction 1, $L_1/L_2=0$, no class weights; cap 1,000, patience 300; four threads, deterministic column-wise layout. \\
+XGBoost-TD & 3.2.0, CPU histogram trees: depth 6, 256 bins, minimum child weight $5\times10^{-6}$. Zero is observed. & BCE; rate 0.08, row fraction 0.65, column fraction per level 0.9, $L_1/L_2=0$; cap 1,000, patience 300; four threads. \\
+\bottomrule
+\end{tabular}
+\end{table*}

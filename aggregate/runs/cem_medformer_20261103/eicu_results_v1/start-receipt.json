@@ -1,0 +1,99 @@
+{
+  "started": true,
+  "wrapper_pid": 3169025,
+  "source_manifest_sha256": "830069468d1c2d8a479ed48297286dc3faeea31d8d210a89f6d52f24486e472e",
+  "training_launched": false,
+  "global_readiness": {
+    "mimic": {
+      "ready": false,
+      "groups": {
+        "mimic": {
+          "status": "preflight",
+          "train": {
+            "pending": 10,
+            "running": 0,
+            "completed": 0,
+            "failed": 0
+          },
+          "evaluate": {
+            "pending": 10,
+            "running": 0,
+            "completed": 0,
+            "failed": 0
+          },
+          "probe": {
+            "pending": 2,
+            "running": 0,
+            "completed": 0,
+            "failed": 0
+          }
+        },
+        "mimiciii": {
+          "status": "preflight",
+          "train": {
+            "pending": 10,
+            "running": 0,
+            "completed": 0,
+            "failed": 0
+          },
+          "evaluate": {
+            "pending": 10,
+            "running": 0,
+            "completed": 0,
+            "failed": 0
+          },
+          "probe": {
+            "pending": 2,
+            "running": 0,
+            "completed": 0,
+            "failed": 0
+          }
+        }
+      },
+      "alive": true,
+      "identity": {
+        "pid": 2115190,
+        "ticks": "173590473",
+        "boot": "b71f789a-6443-4d31-a384-079f6507be54"
+      },
+      "exit_path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_medformer_20261103/host_mimic/start_exit.json",
+      "returncode": null,
+      "exit_sha256": null,
+      "observed_at": 1793726007.7802372,
+      "statistics_slot_ready": false
+    },
+    "eicu": {
+      "ready": true,
+      "groups": {
+        "eicu": {
+          "status": "complete",
+          "train": {
+            "pending": 0,
+            "running": 0,
+            "completed": 10,
+            "failed": 0
+          },
+          "evaluate": {
+            "pending": 0,
+            "running": 0,
+            "completed": 10,
+            "failed": 0
+          },
+          "probe": {
+            "pending": 0,
+            "running": 0,
+            "completed": 2,
+            "failed": 0
+          }
+        }
+      },
+      "alive": false,
+      "identity": null,
+      "exit_path": "/home/data/lxm/TRACEHR/runs/cem_medformer_20261103/host_eicu/start_exit.json",
+      "returncode": 0,
+      "exit_sha256": "3cb4d442e586eacdd004f2a460b28e5337f9b94e6656a6db97070cbc5ea494fc",
+      "observed_at": 1793726008.8458676,
+      "statistics_slot_ready": true
+    }
+  }
+}

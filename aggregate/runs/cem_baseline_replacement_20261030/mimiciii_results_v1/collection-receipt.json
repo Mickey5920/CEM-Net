@@ -1,0 +1,26 @@
+{
+  "receipt": {
+    "complete": true,
+    "database": "mimiciii",
+    "verified_new_fits": 12,
+    "verified_fixed_tests": 12,
+    "files": {
+      "verified-results.json": "a53aca1fd9b03063c697bc4066eaf032faf47067a463659b0e06f5a591be8b7b",
+      "RESULTS.md": "25fea942265337ea18751a00a69219f28b40c3f1199bbef75411f220633a2e17"
+    }
+  },
+  "exit": {
+    "job_id": "replacement_statistics_mimiciii",
+    "wrapper_pid": 1033049,
+    "child_pid": 1033055,
+    "child_identity": {
+      "start_ticks": "149020895",
+      "state": "R",
+      "boot": "b71f789a-6443-4d31-a384-079f6507be54"
+    },
+    "source_manifest_sha256": "99b9ce948e1e409b2ca4c0b1938eb4f92bc576b952c051374bc3af65217ddf86",
+    "started_at": 1793453736.5548425,
+    "returncode": 0,
+    "finished_at": 1793453789.5674098
+  }
+}

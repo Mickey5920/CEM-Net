@@ -1,0 +1,683 @@
+{
+  "complete": true,
+  "database": "mimiciii",
+  "rows": [
+    {
+      "split": "dev",
+      "endpoint": 0,
+      "baseline": "TabM_PLE",
+      "form": "raw",
+      "metric": "Brier",
+      "seed_differences": [
+        -0.00033398161830958334,
+        -0.00030925703315261917,
+        -0.0006921883903276992
+      ],
+      "mean": -0.00044514234726330057,
+      "sample_SD": 0.0002143050088615022,
+      "method_values": {
+        "CEM-Net": [
+          0.05513020174301189,
+          0.0553768645497867,
+          0.05483690377178764
+        ],
+        "TabM_PLE": [
+          0.05546418336132147,
+          0.05568612158293933,
+          0.05552909216211535
+        ]
+      },
+      "ci95": [
+        -0.0021072405670721148,
+        0.0012161357921539361
+      ],
+      "adjusted_ci": [
+        -0.0030208476816331984,
+        0.0020719971594876188
+      ],
+      "family": 24,
+      "negative_favors_CEM": true,
+      "validation_resubstitution": true
+    },
+    {
+      "split": "dev",
+      "endpoint": 0,
+      "baseline": "TabM_PLE",
+      "form": "raw",
+      "metric": "log_loss",
+      "seed_differences": [
+        -0.005035534700729486,
+        0.00953765657957911,
+        -0.01021412937513757
+      ],
+      "mean": -0.0019040024987626483,
+      "sample_SD": 0.010241490738618193,
+      "method_values": {
+        "CEM-Net": [
+          0.20509855011390846,
+          0.21199452468061272,
+          0.2019339331463047
+        ],
+        "TabM_PLE": [
+          0.21013408481463794,
+          0.2024568681010336,
+          0.21214806252144225
+        ]
+      },
+      "ci95": [
+        -0.008619193591070051,
+        0.004761484292422007
+      ],
+      "adjusted_ci": [
+        -0.012406491043431498,
+        0.008764376795733374
+      ],
+      "family": 24,
+      "negative_favors_CEM": true,
+      "validation_resubstitution": true
+    },
+    {
+      "split": "dev",
+      "endpoint": 0,
+      "baseline": "TabM_PLE",
+      "form": "Platt",
+      "metric": "Brier",
+      "seed_differences": [
+        -0.0007240242977536209,
+        -0.0012465779547369755,
+        -0.0010437299225939246
+      ],
+      "mean": -0.0010047773916948403,
+      "sample_SD": 0.00026344554627902224,
+      "method_values": {
+        "CEM-Net": [
+          0.054049318525614745,
+          0.05385006293153385,
+          0.053926620851079125
+        ],
+        "TabM_PLE": [
+          0.05477334282336837,
+          0.05509664088627082,
+          0.05497035077367305
+        ]
+      },
+      "ci95": [
+        -0.0019947407126622483,
+        -2.2342002399100203e-05
+      ],
+      "adjusted_ci": [
+        -0.002518645803212994,
+        0.0005380920318129123
+      ],
+      "family": 24,
+      "negative_favors_CEM": true,
+      "validation_resubstitution": true
+    },
+    {
+      "split": "dev",
+      "endpoint": 0,
+      "baseline": "TabM_PLE",
+      "form": "Platt",
+      "metric": "log_loss",
+      "seed_differences": [
+        -0.0041719268028169365,
+        -0.004562622101868445,
+        -0.004562489300675625
+      ],
+      "mean": -0.004432346068453669,
+      "sample_SD": 0.00022552970945115066,
+      "method_values": {
+        "CEM-Net": [
+          0.19134918410301777,
+          0.19186032773981618,
+          0.19118571975204574
+        ],
+        "TabM_PLE": [
+          0.19552111090583468,
+          0.19642294984168462,
+          0.19574820905272136
+        ]
+      },
+      "ci95": [
+        -0.008052900605072688,
+        -0.0008951197509191887
+      ],
+      "adjusted_ci": [
+        -0.010254788390633688,
+        0.001135673561403372
+      ],
+      "family": 24,
+      "negative_favors_CEM": true,
+      "validation_resubstitution": true
+    },
+    {
+      "split": "dev",
+      "endpoint": 1,
+      "baseline": "TabM-mini",
+      "form": "raw",
+      "metric": "Brier",
+      "seed_differences": [
+        -0.0022185404764905638,
+        -0.00226950733508138,
+        -0.0013972695123245626
+      ],
+      "mean": -0.0019617724412988352,
+      "sample_SD": 0.0004895376112047509,
+      "method_values": {
+        "CEM-Net": [
+          0.10254366062291034,
+          0.1029061050935588,
+          0.10270353287904162
+        ],
+        "TabM-mini": [
+          0.10476220109940092,
+          0.10517561242864017,
+          0.10410080239136618
+        ]
+      },
+      "ci95": [
+        -0.0033972859944606084,
+        -0.0005342224750669031
+      ],
+      "adjusted_ci": [
+        -0.0042026917145484505,
+        0.0003572830663139887
+      ],
+      "family": 24,
+      "negative_favors_CEM": true,
+      "validation_resubstitution": true
+    },
+    {
+      "split": "dev",
+      "endpoint": 1,
+      "baseline": "TabM-mini",
+      "form": "raw",
+      "metric": "log_loss",
+      "seed_differences": [
+        -0.008238259715252216,
+        -0.010424638346953575,
+        -0.007871460679588927
+      ],
+      "mean": -0.008844786247264907,
+      "sample_SD": 0.0013804292360743821,
+      "method_values": {
+        "CEM-Net": [
+          0.3283210003691222,
+          0.32859736594637184,
+          0.32756794016897184
+        ],
+        "TabM-mini": [
+          0.3365592600843744,
+          0.33902200429332535,
+          0.3354394008485608
+        ]
+      },
+      "ci95": [
+        -0.01333764927709537,
+        -0.004426049640818704
+      ],
+      "adjusted_ci": [
+        -0.015715062269430553,
+        -0.0019697845443771714
+      ],
+      "family": 24,
+      "negative_favors_CEM": true,
+      "validation_resubstitution": true
+    },
+    {
+      "split": "dev",
+      "endpoint": 1,
+      "baseline": "TabM-mini",
+      "form": "Platt",
+      "metric": "Brier",
+      "seed_differences": [
+        -0.0008506618668748057,
+        -0.001479743583354728,
+        -0.0010356466641868417
+      ],
+      "mean": -0.001122017371472125,
+      "sample_SD": 0.00032331235022815233,
+      "method_values": {
+        "CEM-Net": [
+          0.10246094212866452,
+          0.10281779230472746,
+          0.10260967654798596
+        ],
+        "TabM-mini": [
+          0.10331160399553932,
+          0.1042975358880822,
+          0.10364532321217279
+        ]
+      },
+      "ci95": [
+        -0.0024086874961023598,
+        0.0001833952860188548
+      ],
+      "adjusted_ci": [
+        -0.0030889656768800346,
+        0.0009376482022911242
+      ],
+      "family": 24,
+      "negative_favors_CEM": true,
+      "validation_resubstitution": true
+    },
+    {
+      "split": "dev",
+      "endpoint": 1,
+      "baseline": "TabM-mini",
+      "form": "Platt",
+      "metric": "log_loss",
+      "seed_differences": [
+        -0.0037380067185964266,
+        -0.008036514082467718,
+        -0.0060862453670212525
+      ],
+      "mean": -0.005953588722695133,
+      "sample_SD": 0.0021523219388086046,
+      "method_values": {
+        "CEM-Net": [
+          0.3280636808920875,
+          0.3283592228004503,
+          0.3272617394868366
+        ],
+        "TabM-mini": [
+          0.3318016876106839,
+          0.3363957368829181,
+          0.3333479848538579
+        ]
+      },
+      "ci95": [
+        -0.0097916978620734,
+        -0.002066377811021613
+      ],
+      "adjusted_ci": [
+        -0.011921923569324358,
+        -4.063521353845657e-06
+      ],
+      "family": 24,
+      "negative_favors_CEM": true,
+      "validation_resubstitution": true
+    },
+    {
+      "split": "test",
+      "endpoint": 0,
+      "baseline": "TabM_PLE",
+      "form": "raw",
+      "metric": "Brier",
+      "seed_differences": [
+        -0.00023812617307156504,
+        0.0004250511515254947,
+        -0.0008800702272455397
+      ],
+      "mean": -0.00023104841626387003,
+      "sample_SD": 0.0006525894760968592,
+      "method_values": {
+        "CEM-Net": [
+          0.05335103664997399,
+          0.05446345933184452,
+          0.05343377729469055
+        ],
+        "TabM_PLE": [
+          0.05358916282304555,
+          0.05403840818031903,
+          0.0543138475219361
+        ]
+      },
+      "ci95": [
+        -0.0013905810525298473,
+        0.0009204519983857742
+      ],
+      "adjusted_ci": [
+        -0.001990049718292973,
+        0.001568754326793364
+      ],
+      "family": 24,
+      "negative_favors_CEM": true,
+      "validation_resubstitution": false
+    },
+    {
+      "split": "test",
+      "endpoint": 0,
+      "baseline": "TabM_PLE",
+      "form": "raw",
+      "metric": "log_loss",
+      "seed_differences": [
+        -0.0031443916018440185,
+        0.007094989672035545,
+        -0.011266531151281749
+      ],
+      "mean": -0.0024386443603634077,
+      "sample_SD": 0.009201082605482996,
+      "method_values": {
+        "CEM-Net": [
+          0.19636697637397627,
+          0.20265226382414084,
+          0.1935391806419849
+        ],
+        "TabM_PLE": [
+          0.1995113679758203,
+          0.1955572741521053,
+          0.20480571179326662
+        ]
+      },
+      "ci95": [
+        -0.007281151521988932,
+        0.002326472583707801
+      ],
+      "adjusted_ci": [
+        -0.01018673760975546,
+        0.005106676442583489
+      ],
+      "family": 24,
+      "negative_favors_CEM": true,
+      "validation_resubstitution": false
+    },
+    {
+      "split": "test",
+      "endpoint": 0,
+      "baseline": "TabM_PLE",
+      "form": "Platt",
+      "metric": "Brier",
+      "seed_differences": [
+        -0.00044799721609360205,
+        -0.0007491454367908971,
+        -0.0010514005413488723
+      ],
+      "mean": -0.0007495143980777904,
+      "sample_SD": 0.00030170183183335624,
+      "method_values": {
+        "CEM-Net": [
+          0.05221641619338986,
+          0.05260730590744688,
+          0.05239159066356705
+        ],
+        "TabM_PLE": [
+          0.05266441340948346,
+          0.05335645134423777,
+          0.05344299120491593
+        ]
+      },
+      "ci95": [
+        -0.0014244014090937617,
+        -9.230469427129225e-05
+      ],
+      "adjusted_ci": [
+        -0.0018135652154714899,
+        0.0002883364286084843
+      ],
+      "family": 24,
+      "negative_favors_CEM": true,
+      "validation_resubstitution": false
+    },
+    {
+      "split": "test",
+      "endpoint": 0,
+      "baseline": "TabM_PLE",
+      "form": "Platt",
+      "metric": "log_loss",
+      "seed_differences": [
+        -0.0037727085834467476,
+        -0.005982528638878768,
+        -0.00626002552790589
+      ],
+      "mean": -0.005338420916743802,
+      "sample_SD": 0.001363026949048995,
+      "method_values": {
+        "CEM-Net": [
+          0.1838465206127443,
+          0.1845570972626476,
+          0.18381023026169632
+        ],
+        "TabM_PLE": [
+          0.18761922919619103,
+          0.19053962590152637,
+          0.1900702557896022
+        ]
+      },
+      "ci95": [
+        -0.008071939108535875,
+        -0.0027152211195610914
+      ],
+      "adjusted_ci": [
+        -0.009471515213375508,
+        -0.0012644084972582915
+      ],
+      "family": 24,
+      "negative_favors_CEM": true,
+      "validation_resubstitution": false
+    },
+    {
+      "split": "test",
+      "endpoint": 1,
+      "baseline": "TabM-mini",
+      "form": "raw",
+      "metric": "Brier",
+      "seed_differences": [
+        -0.0023471020607933697,
+        -0.004706533000139457,
+        -0.002973259048994796
+      ],
+      "mean": -0.0033422980366425406,
+      "sample_SD": 0.0012222401237845795,
+      "method_values": {
+        "CEM-Net": [
+          0.10058808397146732,
+          0.09993777255882104,
+          0.09971094633843848
+        ],
+        "TabM-mini": [
+          0.10293518603226069,
+          0.10464430555896048,
+          0.10268420538743327
+        ]
+      },
+      "ci95": [
+        -0.004322969021942163,
+        -0.0023775936758016554
+      ],
+      "adjusted_ci": [
+        -0.004842248615247606,
+        -0.0018601154543001984
+      ],
+      "family": 24,
+      "negative_favors_CEM": true,
+      "validation_resubstitution": false
+    },
+    {
+      "split": "test",
+      "endpoint": 1,
+      "baseline": "TabM-mini",
+      "form": "raw",
+      "metric": "log_loss",
+      "seed_differences": [
+        -0.009720841369877713,
+        -0.01673594957542331,
+        -0.011678519427715703
+      ],
+      "mean": -0.01271177012433891,
+      "sample_SD": 0.003619895169121966,
+      "method_values": {
+        "CEM-Net": [
+          0.3239091882712831,
+          0.32121676055740983,
+          0.32095856354725055
+        ],
+        "TabM-mini": [
+          0.3336300296411608,
+          0.3379527101328331,
+          0.33263708297496625
+        ]
+      },
+      "ci95": [
+        -0.01588363394388404,
+        -0.009581483208862786
+      ],
+      "adjusted_ci": [
+        -0.017669390948562493,
+        -0.0078132952013179
+      ],
+      "family": 24,
+      "negative_favors_CEM": true,
+      "validation_resubstitution": false
+    },
+    {
+      "split": "test",
+      "endpoint": 1,
+      "baseline": "TabM-mini",
+      "form": "Platt",
+      "metric": "Brier",
+      "seed_differences": [
+        -0.0012103357608448365,
+        -0.0038351632520802763,
+        -0.002607709781471788
+      ],
+      "mean": -0.0025510695981323,
+      "sample_SD": 0.0013133300889201015,
+      "method_values": {
+        "CEM-Net": [
+          0.10044565363025379,
+          0.09983868738387375,
+          0.09965968942209177
+        ],
+        "TabM-mini": [
+          0.10165598939109863,
+          0.10367385063595402,
+          0.10226739920356356
+        ]
+      },
+      "ci95": [
+        -0.0034413898820604325,
+        -0.0016705716502707904
+      ],
+      "adjusted_ci": [
+        -0.003919879412867798,
+        -0.0011421281673084519
+      ],
+      "family": 24,
+      "negative_favors_CEM": true,
+      "validation_resubstitution": false
+    },
+    {
+      "split": "test",
+      "endpoint": 1,
+      "baseline": "TabM-mini",
+      "form": "Platt",
+      "metric": "log_loss",
+      "seed_differences": [
+        -0.005447698592515288,
+        -0.014100955749870966,
+        -0.009746859188673962
+      ],
+      "mean": -0.009765171177020072,
+      "sample_SD": 0.004326657642397849,
+      "method_values": {
+        "CEM-Net": [
+          0.3235144719460421,
+          0.3209909620191105,
+          0.3207751126332179
+        ],
+        "TabM-mini": [
+          0.3289621705385574,
+          0.33509191776898145,
+          0.3305219718218919
+        ]
+      },
+      "ci95": [
+        -0.012439515007270502,
+        -0.007093913602996573
+      ],
+      "adjusted_ci": [
+        -0.01391648933444058,
+        -0.00555401702611745
+      ],
+      "family": 24,
+      "negative_favors_CEM": true,
+      "validation_resubstitution": false
+    }
+  ],
+  "replicates": 20000,
+  "source_sha256": "e7e7a00c42db5ee65b9717aa43b5c84577363d2680a78b661aab883824b32cbe",
+  "primary_sha256": "3868b55d69cadafb5593a461ac24a90e7775623db2767d73da969fc7d083a308",
+  "secondary_sha256": "f17817b18395bcbc741b51ccddfea22a8da46bbb1fb12b5239095826f38dd6b9",
+  "split_info": {
+    "dev": {
+      "patients": 3338,
+      "stays": 4521,
+      "rng_seed": 20261026,
+      "cluster_ids_sha256": "520c3f54f2de9014aabe98d4ac07746f6afb7ce57891ecf973c88ba8fb365e2c"
+    },
+    "test": {
+      "patients": 6676,
+      "stays": 9042,
+      "rng_seed": 20261027,
+      "cluster_ids_sha256": "e95e73f840867b290953606f0362fb528a6f81fc5c3164afed5f075bcd070b82"
+    }
+  },
+  "protected": {
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/probability_intervals_v1/mimiciii/analysis.log": "9120d5d4b9e89b678e9d0ceb2691f173499736d4e9e8a8dce350d6d49aba6564",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/probability_intervals_v1/mimiciii/attempt.json": "ad3ae2378a5389b13e0200cb92943821d6f37684174b8581d9dae4bd66400e8a",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/probability_intervals_v1/mimiciii/exit.json": "29e2cc164f525d41ba79d0b1f436ee513c7601b130ed13b6aa1b18c001dc2e40",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/work/cem_icde_evidence_20261028/probability_intervals_v1/loss_intervals.py": "bba5aa1247f3e666c1535666f7fc179117bb41a64424c53b9fbb71d5039f1fcd",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimiciii_statistics_v1/verified-results.json": "3868b55d69cadafb5593a461ac24a90e7775623db2767d73da969fc7d083a308",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimiciii_secondary_v1/verified-results.json": "f17817b18395bcbc741b51ccddfea22a8da46bbb1fb12b5239095826f38dd6b9",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/work/cem_icde_evidence_20261028/mimiciii/basic_v2/work/cem_icde_evidence_20261028/config.json": "9bce8c9b5e1cabfe5b83398e0833a7407b6fcf8cde82c046eb3075e05b817b4c",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_adaptation_20261024/v1/preparation/dev_targets.npz": "7167594ac4dfbd776c6ad708a20e8f8e96a9a548a09ffbfe8cc4d25e3d0b52b2",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimiciii_statistics_v1/bootstrap/random_dev_CEM_Net.json": "8a22e93e59b96fb8c2395b363cca1369d8a19e2326671510b018e133b89febcb",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimiciii_statistics_v1/bootstrap/random_dev_CEM_Net.npz": "ae4a91a5e91131e6d7194aac2b04a59d97ce3abb638fa7ccd8b79965f21eee55",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_ema_20261024/v2/screen/jobs/noEvidence_EMA_t0_s48/predictions_dev.npz": "fc326f3553c64c390689aa7ad543583fe28519187fdc54aafc3293ea1748daf5",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_ema_20261024/v2/screen/jobs/noEvidence_EMA_t0_s49/predictions_dev.npz": "d9df2187bc215a26951ac7246afd3278c4b3448f2bae2eea05a0fbbcbd9f7e97",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_ema_20261024/v2/screen/jobs/noEvidence_EMA_t0_s50/predictions_dev.npz": "ee6f51f80ed4d4d4a930fd1fd75f81bdf437fb1f9d332f8a0c69c922b60f5868",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimiciii_statistics_v1/bootstrap/random_dev_TabM_PLE.json": "e6c5e341fbfd7579211f377e475ceb964a51451fde102f6103b17fa1faa54833",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimiciii_statistics_v1/bootstrap/random_dev_TabM_PLE.npz": "9c7e18a1e62b37374ee71488fc0b8a06cbb725013b8b5ff475214a22af558cd9",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_evidence_completion_20261025/mimiciii/tabular_v1/screen/jobs/TabM_PLE_t0_s48/predictions_dev.npz": "8bd723053835c96254e5f2dde02da983c29ae8713930537cd774f37689b19404",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_evidence_completion_20261025/mimiciii/tabular_v1/screen/jobs/TabM_PLE_t0_s49/predictions_dev.npz": "1642f413e6ca440d8b5814623d52d02bf1a6d41426dda78b21b180e473e0bc57",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_evidence_completion_20261025/mimiciii/tabular_v1/screen/jobs/TabM_PLE_t0_s50/predictions_dev.npz": "ee410a8b5de14d8c4dc880dba3363db4a769b45d5c9bee6d3864ba808de9a593",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_ema_20261024/v2/screen/jobs/noEvidence_EMA_t1_s48/predictions_dev.npz": "b8698d5b121450bc1bb3240cc58f46b68590c00f5aaf548dc01cd6c6595ebde9",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_ema_20261024/v2/screen/jobs/noEvidence_EMA_t1_s49/predictions_dev.npz": "7b29a70c72e09f3c35ec74dc773860ed6f914cb6cd6ff41ff98de2a2d84c1a85",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_ema_20261024/v2/screen/jobs/noEvidence_EMA_t1_s50/predictions_dev.npz": "7688b2769537e5b58847f7b815a84d801220a007b3bd3aa499c8febf6ce5800a",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimiciii_statistics_v1/bootstrap/random_dev_TabM_mini.json": "a2de0959945ab80c5ee2f2eba895c08a9661c721b14aeac8d946dddd86ffb576",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimiciii_statistics_v1/bootstrap/random_dev_TabM_mini.npz": "ccc4c8eedd2f2cbd1c6d30363290e4b75d6d61aa4f4dfb49e6a989ea73ab4ec1",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_pm_mini_20261024/v1/screen/jobs/TabM-mini_t1_s48/predictions_dev.npz": "caca8ea153373405908b452e82c9001d0161e37b2dcfcf726549c121806586e0",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_pm_mini_20261024/v1/screen/jobs/TabM-mini_t1_s49/predictions_dev.npz": "c186b4b5708c3a5d9a6d0cbeeb594fea55fc0e1ac2c0f99a636528eca97a7fe8",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_pm_mini_20261024/v1/screen/jobs/TabM-mini_t1_s50/predictions_dev.npz": "fca9d0aa5572a9f811fb3a413215995e50368e44864faa7ac9222f827e63f4a5",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_test_20261024/v3/inputs/test_targets.npz": "cf0dea5273ade6a69338334591ec77204960a5e971abb247626c6e232efbc302",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimiciii_statistics_v1/bootstrap/random_test_CEM_Net.json": "20b6e6fef1f5682f0a80bfd4477b62616e8e1e95434b757d52298af80172336d",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimiciii_statistics_v1/bootstrap/random_test_CEM_Net.npz": "194363beca1f475748bf7168d3faa4af15efee64262e0f8f6e6a93cf3e9cbd7c",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_ema_20261024/v2/screen/test/test_noEvidence_EMA_t0_s48/predictions_test.npz": "4b277ebc85a0bd1ab85665683590e7f26bc21685eb7f2d2e80e4aa72833c715b",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_ema_20261024/v2/screen/test/test_noEvidence_EMA_t0_s49/predictions_test.npz": "616de554096111d2d9a4b55d592f288c0192929483b80ea2887f59947107322c",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_ema_20261024/v2/screen/test/test_noEvidence_EMA_t0_s50/predictions_test.npz": "edac1eafada41f9445b4cbd04478f3da83fc845035da3a449b3424430e2c1188",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimiciii_statistics_v1/bootstrap/random_test_TabM_PLE.json": "315c7a7bb28a69f474881ebce911dab0f32cf429042a8ea45e229e730fc22217",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimiciii_statistics_v1/bootstrap/random_test_TabM_PLE.npz": "77c7cfc3a148af7121a559c79e59b6a3e7c380a14f18fa786f3d3b135296dcf7",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_evidence_completion_20261025/mimiciii/tabular_v1/screen/test/test_TabM_PLE_t0_s48/predictions_test.npz": "00c773f8eed11dd785e5410b6d541f7698bc81bf655beb7f2d17d646f083fa3f",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_evidence_completion_20261025/mimiciii/tabular_v1/screen/test/test_TabM_PLE_t0_s49/predictions_test.npz": "db917baea83034c7bd41ac6e56153cd6c143bf91228d496a25cd1e16c47ba34d",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_evidence_completion_20261025/mimiciii/tabular_v1/screen/test/test_TabM_PLE_t0_s50/predictions_test.npz": "5f937e2d4a3a6718918608c62b27b38f8a7ca61055e4107682834c7ccf280df6",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_ema_20261024/v2/screen/test/test_noEvidence_EMA_t1_s48/predictions_test.npz": "472515428a8ed1b6dd97428e9f554279884b30c3bbbf537ecdbb58feb9db9ca8",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_ema_20261024/v2/screen/test/test_noEvidence_EMA_t1_s49/predictions_test.npz": "a6afefaf478a54d1f45f0e3f217cab98a2db4c7979bc0dcb0dd69e963d59a2b2",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_ema_20261024/v2/screen/test/test_noEvidence_EMA_t1_s50/predictions_test.npz": "5ac8821fc02ededa7599a49b39f20c658e44bf3c80e7e1b2d82c2ef2333342cc",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimiciii_statistics_v1/bootstrap/random_test_TabM_mini.json": "986a883b7f414c650662fa2577d7890efd500d974f079b4ba5119832b740d093",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_icde_evidence_20261028/mimiciii_statistics_v1/bootstrap/random_test_TabM_mini.npz": "e83bb3f6f1efb1b28ce0f38111d24710ff8186d01ece490e547a9778b5969794",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_pm_mini_20261024/v1/screen/test/test_TabM-mini_t1_s48/predictions_test.npz": "84b2de5428fff3a5f258c4a920b2c9c6aa98792181e4f2d35d96d7951b357033",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_pm_mini_20261024/v1/screen/test/test_TabM-mini_t1_s49/predictions_test.npz": "37b96546170d39ba764332803b63873d3d6fb7c053d550d713255cbdf7fda059",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_pm_mini_20261024/v1/screen/test/test_TabM-mini_t1_s50/predictions_test.npz": "63b081ea84392193c60a39edb641e98b802ea96bf0d0d4f1cc07c5d63b17078d"
+  },
+  "bootstrap_files": {
+    "dev_loss_differences.npz": "e01027f246786eaba49049a99aa54ffe2d3fcbf386d84c35a1a3f8133ea4dc50",
+    "test_loss_differences.npz": "9b9f0e7bd835dc4bad72e246f1200bc61d5d84d2eece7758b9c26a6bd1ca87af"
+  },
+  "family_definition": "24 CEM-minus-validation-selected-baseline contrasts: 3 databases x 2 endpoints x 2 losses x raw/fixed Platt; Validation and Test separate",
+  "interpretation": "Percentile patient-cluster intervals conditional on fixed models and fixed overall Validation calibrators; Validation is fitting-set description. Lower differences favor CEM.",
+  "interval_level": 0.9979166666666667,
+  "calibration_refits": 0,
+  "training_runs": 0,
+  "AP_recomputations": 0,
+  "seed_probability_pooling": false,
+  "original_AP_caches_unchanged": true,
+  "checks": [
+    "float32_and_float64_loss_parity_including_extreme_probabilities",
+    "unequal_stay_count_patient_multiplicity_matches_sklearn",
+    "sign_swap_and_identical_predictions",
+    "unchanged_draw_stream"
+  ],
+  "numpy_version": "2.2.5",
+  "sklearn_version": "1.7.1"
+}

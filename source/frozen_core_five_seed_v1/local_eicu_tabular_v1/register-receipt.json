@@ -1,0 +1,76 @@
+{
+  "database": "eicu",
+  "stage": "tabular",
+  "stage_order": 5,
+  "source": "/home/data/lxm/TRACEHR/work/cem_core_five_seed_20261107/eicu/tabular_v1",
+  "output": "/home/data/lxm/TRACEHR/runs/cem_core_five_seed_20261107/eicu/tabular_v1/screen",
+  "source_manifest_sha256": "127a3f717ff84ee0ceb424d4100f63d92b990371729fbd800a6d64831fb8a537",
+  "matrix": [
+    {
+      "variant": "TabM_PLE",
+      "seed": 51,
+      "endpoint": 0
+    },
+    {
+      "variant": "TabM_PLE",
+      "seed": 52,
+      "endpoint": 0
+    },
+    {
+      "variant": "TabM_mini",
+      "seed": 51,
+      "endpoint": 0
+    },
+    {
+      "variant": "TabM_mini",
+      "seed": 52,
+      "endpoint": 0
+    },
+    {
+      "variant": "LightGBM_full",
+      "seed": 51,
+      "endpoint": 0
+    },
+    {
+      "variant": "LightGBM_full",
+      "seed": 52,
+      "endpoint": 0
+    },
+    {
+      "variant": "TabM_mini",
+      "seed": 51,
+      "endpoint": 1
+    },
+    {
+      "variant": "TabM_mini",
+      "seed": 52,
+      "endpoint": 1
+    },
+    {
+      "variant": "LightGBM_full",
+      "seed": 51,
+      "endpoint": 1
+    },
+    {
+      "variant": "LightGBM_full",
+      "seed": 52,
+      "endpoint": 1
+    }
+  ],
+  "variants": [
+    "LightGBM_full",
+    "TabM_PLE",
+    "TabM_mini"
+  ],
+  "entries": {
+    "tree": "scripts/cem_core_five_seed_entry.py",
+    "cem": "scripts/cem_core_five_seed_entry.py",
+    "tabular": "scripts/cem_core_five_seed_entry.py"
+  },
+  "expected_gib": 22.0,
+  "retention_multiplier": 3,
+  "min_available_ram_gib": 24,
+  "cpu_min_available_ram_gib": 24,
+  "probe_gpu_mib": 24576,
+  "probe_requirement_basis": "conservative headroom above archived measurements; bounded original-path probe before formal fits"
+}

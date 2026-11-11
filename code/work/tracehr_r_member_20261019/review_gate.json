@@ -1,0 +1,52 @@
+{
+  "supports_six_fit_contrast": true,
+  "review_completion_sha256": "17894dbc43d35759a69962d6823a27ea1990e1c4474ac292b5747dfc03dd635c",
+  "decision": "limited hypothesis test, not established cause or guaranteed benefit",
+  "evidence": [
+    "108 checkpoint replays verified, sources and weights unchanged",
+    "mortality seeds44/45 lose 3/6 positives in predefined top5 percent against independently trained noR",
+    "18 introduced top5 percent false positives recur in at least two death seeds",
+    "noncommon member gradient magnitude exists; no opposite binary-label gradient signs claimed"
+  ],
+  "counterevidence": [
+    "R repairs more pair rankings than it breaks at every selected checkpoint",
+    "mortality seed43 improves; top10 percent is mixed",
+    "same common margin does not shrink member margin variance at fixed weights",
+    "most observed per-member gradient energy is common; RM may fail"
+  ],
+  "authorized_matrix": [
+    {
+      "variant": "C5_noT_noA_RM",
+      "seed": 43,
+      "endpoint": 0
+    },
+    {
+      "variant": "C5_noT_noA_RM",
+      "seed": 43,
+      "endpoint": 1
+    },
+    {
+      "variant": "C5_noT_noA_RM",
+      "seed": 44,
+      "endpoint": 0
+    },
+    {
+      "variant": "C5_noT_noA_RM",
+      "seed": 44,
+      "endpoint": 1
+    },
+    {
+      "variant": "C5_noT_noA_RM",
+      "seed": 45,
+      "endpoint": 0
+    },
+    {
+      "variant": "C5_noT_noA_RM",
+      "seed": 45,
+      "endpoint": 1
+    }
+  ],
+  "no_other_fits": true,
+  "no_eicu": true,
+  "hyperparameter_changes": false
+}

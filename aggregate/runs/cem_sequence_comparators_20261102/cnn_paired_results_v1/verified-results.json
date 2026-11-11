@@ -1,0 +1,7283 @@
+{
+  "complete": true,
+  "partition": "cnn",
+  "verified_new_fits": 90,
+  "verified_fixed_tests": 90,
+  "seeds": [
+    48,
+    49,
+    50,
+    51,
+    52
+  ],
+  "replicates": 20000,
+  "family_count": 30,
+  "active_comparisons_per_split": 18,
+  "holm_status": "pending complete four-method family; do not substitute reduced-family Holm",
+  "deferred_methods": [
+    "TVNet"
+  ],
+  "pending_family_methods": [
+    "FTTransformer"
+  ],
+  "inference": "Five paired fixed fits; 20000 common patient-cluster draws. The original 30-comparison allowance is retained separately by split, including all pending FT and deferred TVNet contrasts. Bonferroni inference is valid before FT finishes; full-family Holm is computed only after all four active methods are complete. Centered Bootstrap p is approximate, never zero; exact five-seed signed-rank is supplemental (minimum two-sided p=.0625). Intervals condition on fitted models and do not cover training-population or historical selection uncertainty. No new calibration or reselection of prior secondary baselines.",
+  "paired": [
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "candidate": "CEM-Net",
+      "baseline": "TCN",
+      "endpoint": 0,
+      "values": [
+        0.10145814858697699,
+        0.1261217962260499,
+        0.11116723425661457,
+        0.09029237422641595,
+        0.10141644544946488
+      ],
+      "mean": 0.10609119974910446,
+      "sample_SD": 0.013415590746151436,
+      "family_count": 30,
+      "ci95": [
+        0.07388321101675945,
+        0.13815850472104071
+      ],
+      "adjusted_ci": [
+        0.0548569315714787,
+        0.1603170437683843
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.0014999250037498126,
+      "wilcoxon": {
+        "p_two_sided": 0.0625,
+        "nonzero_pairs": 5,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm": null
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "candidate": "CEM-Net",
+      "baseline": "ModernTCN",
+      "endpoint": 0,
+      "values": [
+        0.16213335280759178,
+        0.1585428926415971,
+        0.1565771774244447,
+        0.1716477256787191,
+        0.15727436175399168
+      ],
+      "mean": 0.16123510206126887,
+      "sample_SD": 0.006202042048094831,
+      "family_count": 30,
+      "ci95": [
+        0.12411944852480736,
+        0.1965371429956624
+      ],
+      "adjusted_ci": [
+        0.10366952053320665,
+        0.21920807693453048
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.0014999250037498126,
+      "wilcoxon": {
+        "p_two_sided": 0.0625,
+        "nonzero_pairs": 5,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm": null
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "candidate": "CEM-Net",
+      "baseline": "LITEMV",
+      "endpoint": 0,
+      "values": [
+        0.07980901183461286,
+        0.0847887257259885,
+        0.0883307849381278,
+        0.08154129377477709,
+        0.08502631369341235
+      ],
+      "mean": 0.08389922599338372,
+      "sample_SD": 0.0033162458952388377,
+      "family_count": 30,
+      "ci95": [
+        0.053905501458894674,
+        0.1141153097929214
+      ],
+      "adjusted_ci": [
+        0.03840527832249177,
+        0.13412454560234346
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.0014999250037498126,
+      "wilcoxon": {
+        "p_two_sided": 0.0625,
+        "nonzero_pairs": 5,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm": null
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "candidate": "CEM-Net",
+      "baseline": "TCN",
+      "endpoint": 1,
+      "values": [
+        0.04709426551228635,
+        0.028351078385441597,
+        0.04290068751160725,
+        0.03706809842854414,
+        0.050556546740374186
+      ],
+      "mean": 0.04119413531565071,
+      "sample_SD": 0.008765655938475524,
+      "family_count": 30,
+      "ci95": [
+        0.020044936126083383,
+        0.06133132957683997
+      ],
+      "adjusted_ci": [
+        0.007228483246786343,
+        0.07417200433203819
+      ],
+      "p_bootstrap_centered": 0.00014999250037498125,
+      "p_bonferroni": 0.004499775011249437,
+      "wilcoxon": {
+        "p_two_sided": 0.0625,
+        "nonzero_pairs": 5,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm": null
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "candidate": "CEM-Net",
+      "baseline": "ModernTCN",
+      "endpoint": 1,
+      "values": [
+        0.05410486707656498,
+        0.05823973764104057,
+        0.06591303567537432,
+        0.052083211237644256,
+        0.06565734675439455
+      ],
+      "mean": 0.059199639677003736,
+      "sample_SD": 0.006408848181024297,
+      "family_count": 30,
+      "ci95": [
+        0.037793610761788665,
+        0.07961631778835077
+      ],
+      "adjusted_ci": [
+        0.02454223400765425,
+        0.09230333127769479
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.0014999250037498126,
+      "wilcoxon": {
+        "p_two_sided": 0.0625,
+        "nonzero_pairs": 5,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm": null
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "candidate": "CEM-Net",
+      "baseline": "LITEMV",
+      "endpoint": 1,
+      "values": [
+        0.04336259678460097,
+        0.044381867008104536,
+        0.05066781182267077,
+        0.04042768568319238,
+        0.034979675468764904
+      ],
+      "mean": 0.042763927353466714,
+      "sample_SD": 0.005733675218887951,
+      "family_count": 30,
+      "ci95": [
+        0.024182776089651407,
+        0.06077761844898721
+      ],
+      "adjusted_ci": [
+        0.012727491457137361,
+        0.07163872305110748
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.0014999250037498126,
+      "wilcoxon": {
+        "p_two_sided": 0.0625,
+        "nonzero_pairs": 5,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm": null
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "candidate": "CEM-Net",
+      "baseline": "TCN",
+      "endpoint": 0,
+      "values": [
+        0.08915096077256573,
+        0.07408758685727851,
+        0.07572955339733545,
+        0.06165848430707477,
+        0.07909591539584071
+      ],
+      "mean": 0.07594450014601903,
+      "sample_SD": 0.009898568052685375,
+      "family_count": 30,
+      "ci95": [
+        0.05096684781130083,
+        0.09972320241551799
+      ],
+      "adjusted_ci": [
+        0.038250933404557874,
+        0.11325569637505103
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.0014999250037498126,
+      "wilcoxon": {
+        "p_two_sided": 0.0625,
+        "nonzero_pairs": 5,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm": null
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "candidate": "CEM-Net",
+      "baseline": "ModernTCN",
+      "endpoint": 0,
+      "values": [
+        0.11704037786790927,
+        0.13160701585374102,
+        0.11975689687394858,
+        0.13757669220526797,
+        0.11613892576993717
+      ],
+      "mean": 0.1244239817141608,
+      "sample_SD": 0.009611597309712493,
+      "family_count": 30,
+      "ci95": [
+        0.09806383606583431,
+        0.1503937880370598
+      ],
+      "adjusted_ci": [
+        0.08354545429009555,
+        0.1679122353936968
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.0014999250037498126,
+      "wilcoxon": {
+        "p_two_sided": 0.0625,
+        "nonzero_pairs": 5,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm": null
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "candidate": "CEM-Net",
+      "baseline": "LITEMV",
+      "endpoint": 0,
+      "values": [
+        0.06274022450900152,
+        0.05688431812142869,
+        0.06446474317335321,
+        0.07614015800783297,
+        0.08216145476779957
+      ],
+      "mean": 0.06847817971588319,
+      "sample_SD": 0.010360831976742618,
+      "family_count": 30,
+      "ci95": [
+        0.045740360202381494,
+        0.09061350902152987
+      ],
+      "adjusted_ci": [
+        0.03281696824130571,
+        0.1040502790913204
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.0014999250037498126,
+      "wilcoxon": {
+        "p_two_sided": 0.0625,
+        "nonzero_pairs": 5,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm": null
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "candidate": "CEM-Net",
+      "baseline": "TCN",
+      "endpoint": 1,
+      "values": [
+        0.06035433123056483,
+        0.06054079437373744,
+        0.05718547735436974,
+        0.03484188363425078,
+        0.060382877435894045
+      ],
+      "mean": 0.054661072805763364,
+      "sample_SD": 0.011167992693128468,
+      "family_count": 30,
+      "ci95": [
+        0.03989238814897901,
+        0.06904391446761908
+      ],
+      "adjusted_ci": [
+        0.030896268372637644,
+        0.07704772348545422
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.0014999250037498126,
+      "wilcoxon": {
+        "p_two_sided": 0.0625,
+        "nonzero_pairs": 5,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm": null
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "candidate": "CEM-Net",
+      "baseline": "ModernTCN",
+      "endpoint": 1,
+      "values": [
+        0.06665606418814363,
+        0.0926383011406735,
+        0.06982947698507325,
+        0.0718433410152598,
+        0.06186416627823388
+      ],
+      "mean": 0.07256626992147681,
+      "sample_SD": 0.011836011292298151,
+      "family_count": 30,
+      "ci95": [
+        0.05842594814356874,
+        0.08649856241526536
+      ],
+      "adjusted_ci": [
+        0.049434257615557094,
+        0.09500635062487528
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.0014999250037498126,
+      "wilcoxon": {
+        "p_two_sided": 0.0625,
+        "nonzero_pairs": 5,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm": null
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "candidate": "CEM-Net",
+      "baseline": "LITEMV",
+      "endpoint": 1,
+      "values": [
+        0.03770831306335387,
+        0.07191492271388594,
+        0.0566177399527002,
+        0.038548985376140266,
+        0.03995593812254872
+      ],
+      "mean": 0.0489491798457258,
+      "sample_SD": 0.015013591236913064,
+      "family_count": 30,
+      "ci95": [
+        0.03635396283212648,
+        0.06094654681957702
+      ],
+      "adjusted_ci": [
+        0.02909589394559441,
+        0.0679025303403006
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.0014999250037498126,
+      "wilcoxon": {
+        "p_two_sided": 0.0625,
+        "nonzero_pairs": 5,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm": null
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "candidate": "CEM-Net",
+      "baseline": "TCN",
+      "endpoint": 0,
+      "values": [
+        0.11217625711504836,
+        0.09142156533751239,
+        0.09118191617123955,
+        0.10994972237187833,
+        0.10588803443948896
+      ],
+      "mean": 0.10212349908703353,
+      "sample_SD": 0.010133225843435602,
+      "family_count": 30,
+      "ci95": [
+        0.08055107417430729,
+        0.12392668010769008
+      ],
+      "adjusted_ci": [
+        0.066257784408723,
+        0.13711658030345894
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.0014999250037498126,
+      "wilcoxon": {
+        "p_two_sided": 0.0625,
+        "nonzero_pairs": 5,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm": null
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "candidate": "CEM-Net",
+      "baseline": "ModernTCN",
+      "endpoint": 0,
+      "values": [
+        0.12957298567356101,
+        0.11906963809689775,
+        0.10046754889454473,
+        0.10634158370073238,
+        0.14142340355221578
+      ],
+      "mean": 0.11937503198359031,
+      "sample_SD": 0.01671515707839344,
+      "family_count": 30,
+      "ci95": [
+        0.09660803388644694,
+        0.14180737131937615
+      ],
+      "adjusted_ci": [
+        0.08271554294436091,
+        0.1557515836052925
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.0014999250037498126,
+      "wilcoxon": {
+        "p_two_sided": 0.0625,
+        "nonzero_pairs": 5,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm": null
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "candidate": "CEM-Net",
+      "baseline": "LITEMV",
+      "endpoint": 0,
+      "values": [
+        0.07693072817160684,
+        0.08484422701109634,
+        0.06210267857335211,
+        0.06200760114651371,
+        0.0496828542040475
+      ],
+      "mean": 0.0671136178213233,
+      "sample_SD": 0.01383620790337571,
+      "family_count": 30,
+      "ci95": [
+        0.04856387671703588,
+        0.08586300755303053
+      ],
+      "adjusted_ci": [
+        0.03718464156987104,
+        0.09620645333091861
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.0014999250037498126,
+      "wilcoxon": {
+        "p_two_sided": 0.0625,
+        "nonzero_pairs": 5,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm": null
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "candidate": "CEM-Net",
+      "baseline": "TCN",
+      "endpoint": 1,
+      "values": [
+        0.06672503498179594,
+        0.05785496838601456,
+        0.051070530235301836,
+        0.06784122377873686,
+        0.06251677026183489
+      ],
+      "mean": 0.06120170552873681,
+      "sample_SD": 0.0068949461277833125,
+      "family_count": 30,
+      "ci95": [
+        0.04575075826216257,
+        0.07652153756170446
+      ],
+      "adjusted_ci": [
+        0.03691484676226153,
+        0.08504506582818652
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.0014999250037498126,
+      "wilcoxon": {
+        "p_two_sided": 0.0625,
+        "nonzero_pairs": 5,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm": null
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "candidate": "CEM-Net",
+      "baseline": "ModernTCN",
+      "endpoint": 1,
+      "values": [
+        0.06420652850657493,
+        0.06008695045578816,
+        0.07295318133959144,
+        0.07904788880530639,
+        0.08638883028200578
+      ],
+      "mean": 0.07253667587785334,
+      "sample_SD": 0.010710258756617436,
+      "family_count": 30,
+      "ci95": [
+        0.056790696047932125,
+        0.08749088482704531
+      ],
+      "adjusted_ci": [
+        0.047499734263904754,
+        0.09765069751125702
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.0014999250037498126,
+      "wilcoxon": {
+        "p_two_sided": 0.0625,
+        "nonzero_pairs": 5,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm": null
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "candidate": "CEM-Net",
+      "baseline": "LITEMV",
+      "endpoint": 1,
+      "values": [
+        0.047873325377490006,
+        0.03886457241244601,
+        0.053058422386910276,
+        0.05703562478512014,
+        0.05897901018881446
+      ],
+      "mean": 0.05116219103015618,
+      "sample_SD": 0.008081516567751901,
+      "family_count": 30,
+      "ci95": [
+        0.03711748348467211,
+        0.06479246274567557
+      ],
+      "adjusted_ci": [
+        0.02810323383190354,
+        0.07307009321061676
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.0014999250037498126,
+      "wilcoxon": {
+        "p_two_sided": 0.0625,
+        "nonzero_pairs": 5,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm": null
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "candidate": "CEM-Net",
+      "baseline": "TCN",
+      "endpoint": 0,
+      "values": [
+        0.10001428498227877,
+        0.09926790613036574,
+        0.0773311164012051,
+        0.09483374130111771,
+        0.09440882469683842
+      ],
+      "mean": 0.09317117470236115,
+      "sample_SD": 0.009208713870520767,
+      "family_count": 30,
+      "ci95": [
+        0.0757432947608812,
+        0.10965962280901753
+      ],
+      "adjusted_ci": [
+        0.06542240381705808,
+        0.11970546241961924
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.0014999250037498126,
+      "wilcoxon": {
+        "p_two_sided": 0.0625,
+        "nonzero_pairs": 5,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm": null
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "candidate": "CEM-Net",
+      "baseline": "ModernTCN",
+      "endpoint": 0,
+      "values": [
+        0.12983243011846313,
+        0.11468373330310455,
+        0.11219365015140981,
+        0.10222568134796423,
+        0.14866711929407384
+      ],
+      "mean": 0.1215205228430031,
+      "sample_SD": 0.018111106089702667,
+      "family_count": 30,
+      "ci95": [
+        0.10459833616973688,
+        0.1377958774684491
+      ],
+      "adjusted_ci": [
+        0.0948902743293002,
+        0.14718542879121105
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.0014999250037498126,
+      "wilcoxon": {
+        "p_two_sided": 0.0625,
+        "nonzero_pairs": 5,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm": null
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "candidate": "CEM-Net",
+      "baseline": "LITEMV",
+      "endpoint": 0,
+      "values": [
+        0.08997662818073443,
+        0.08674747291016477,
+        0.07571423656416126,
+        0.08264741101556489,
+        0.0734660611095545
+      ],
+      "mean": 0.08171036195603597,
+      "sample_SD": 0.0070445674310801116,
+      "family_count": 30,
+      "ci95": [
+        0.06655093822120794,
+        0.09602148010891207
+      ],
+      "adjusted_ci": [
+        0.05777430375314162,
+        0.1064190533338167
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.0014999250037498126,
+      "wilcoxon": {
+        "p_two_sided": 0.0625,
+        "nonzero_pairs": 5,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm": null
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "candidate": "CEM-Net",
+      "baseline": "TCN",
+      "endpoint": 1,
+      "values": [
+        0.0685473170538548,
+        0.07098179857156967,
+        0.06603941819035053,
+        0.06434575615211241,
+        0.06565787610970342
+      ],
+      "mean": 0.06711443321551816,
+      "sample_SD": 0.002643504278397257,
+      "family_count": 30,
+      "ci95": [
+        0.05523393887454807,
+        0.07836021976124083
+      ],
+      "adjusted_ci": [
+        0.047557683332282524,
+        0.08497348653787876
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.0014999250037498126,
+      "wilcoxon": {
+        "p_two_sided": 0.0625,
+        "nonzero_pairs": 5,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm": null
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "candidate": "CEM-Net",
+      "baseline": "ModernTCN",
+      "endpoint": 1,
+      "values": [
+        0.0719709902038933,
+        0.08331175529736201,
+        0.08334394536133,
+        0.10684504305015669,
+        0.0997709256887539
+      ],
+      "mean": 0.08904853192029918,
+      "sample_SD": 0.01404262156282412,
+      "family_count": 30,
+      "ci95": [
+        0.07714044367715574,
+        0.10031651448664547
+      ],
+      "adjusted_ci": [
+        0.07036613377870647,
+        0.10753400944613767
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.0014999250037498126,
+      "wilcoxon": {
+        "p_two_sided": 0.0625,
+        "nonzero_pairs": 5,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm": null
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "candidate": "CEM-Net",
+      "baseline": "LITEMV",
+      "endpoint": 1,
+      "values": [
+        0.05303486904265592,
+        0.049383852266699946,
+        0.07062510958169443,
+        0.05988279036371846,
+        0.055432284136302246
+      ],
+      "mean": 0.057671781078214204,
+      "sample_SD": 0.008183571120585528,
+      "family_count": 30,
+      "ci95": [
+        0.0471700809778821,
+        0.0678853961443705
+      ],
+      "adjusted_ci": [
+        0.04063879257257951,
+        0.07480652234327985
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.0014999250037498126,
+      "wilcoxon": {
+        "p_two_sided": 0.0625,
+        "nonzero_pairs": 5,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm": null
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "candidate": "CEM-Net",
+      "baseline": "TCN",
+      "endpoint": 0,
+      "values": [
+        0.10165461083345839,
+        0.09877915476122356,
+        0.0913800911212228,
+        0.10421991502299244,
+        0.09215577919939388
+      ],
+      "mean": 0.09763791018765822,
+      "sample_SD": 0.005700288820484397,
+      "family_count": 30,
+      "ci95": [
+        0.07516500483586988,
+        0.11992618873925524
+      ],
+      "adjusted_ci": [
+        0.06135070248905513,
+        0.1345447273576399
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.0014999250037498126,
+      "wilcoxon": {
+        "p_two_sided": 0.0625,
+        "nonzero_pairs": 5,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm": null
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "candidate": "CEM-Net",
+      "baseline": "ModernTCN",
+      "endpoint": 0,
+      "values": [
+        0.11051790737779232,
+        0.11463776302197448,
+        0.10016719038816502,
+        0.13693874165958242,
+        0.13201772783385668
+      ],
+      "mean": 0.11885586605627418,
+      "sample_SD": 0.015303639615273895,
+      "family_count": 30,
+      "ci95": [
+        0.09423423149613298,
+        0.14129453124749258
+      ],
+      "adjusted_ci": [
+        0.0802214668994001,
+        0.15588948370769867
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.0014999250037498126,
+      "wilcoxon": {
+        "p_two_sided": 0.0625,
+        "nonzero_pairs": 5,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm": null
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "candidate": "CEM-Net",
+      "baseline": "LITEMV",
+      "endpoint": 0,
+      "values": [
+        0.08587869509673174,
+        0.07101719126418948,
+        0.07418012997623546,
+        0.09376018463022523,
+        0.09549283294385058
+      ],
+      "mean": 0.0840658067822465,
+      "sample_SD": 0.011133703625132394,
+      "family_count": 30,
+      "ci95": [
+        0.061529391540138034,
+        0.10570802348891836
+      ],
+      "adjusted_ci": [
+        0.048367312630554674,
+        0.11858631580231423
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.0014999250037498126,
+      "wilcoxon": {
+        "p_two_sided": 0.0625,
+        "nonzero_pairs": 5,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm": null
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "candidate": "CEM-Net",
+      "baseline": "TCN",
+      "endpoint": 1,
+      "values": [
+        0.059628827268467854,
+        0.06272164252859036,
+        0.0613125234619778,
+        0.0696824228832853,
+        0.06079048701919004
+      ],
+      "mean": 0.06282718063230228,
+      "sample_SD": 0.003989901504682051,
+      "family_count": 30,
+      "ci95": [
+        0.047652279333379316,
+        0.07765390187723434
+      ],
+      "adjusted_ci": [
+        0.03777091006432555,
+        0.0864381051476582
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.0014999250037498126,
+      "wilcoxon": {
+        "p_two_sided": 0.0625,
+        "nonzero_pairs": 5,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm": null
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "candidate": "CEM-Net",
+      "baseline": "ModernTCN",
+      "endpoint": 1,
+      "values": [
+        0.07634246882153872,
+        0.05841129898367858,
+        0.0724566563837642,
+        0.06720897191602232,
+        0.06307125414513742
+      ],
+      "mean": 0.06749813005002825,
+      "sample_SD": 0.00715996950481876,
+      "family_count": 30,
+      "ci95": [
+        0.05198807011310986,
+        0.08267188652788912
+      ],
+      "adjusted_ci": [
+        0.042983452596807095,
+        0.09161107783767566
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.0014999250037498126,
+      "wilcoxon": {
+        "p_two_sided": 0.0625,
+        "nonzero_pairs": 5,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm": null
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "candidate": "CEM-Net",
+      "baseline": "LITEMV",
+      "endpoint": 1,
+      "values": [
+        0.054179129610465226,
+        0.05231850320794973,
+        0.04433626767832749,
+        0.05602749948903063,
+        0.050273067513590675
+      ],
+      "mean": 0.05142689349987275,
+      "sample_SD": 0.004503988118746704,
+      "family_count": 30,
+      "ci95": [
+        0.03747419763471655,
+        0.06471690241874249
+      ],
+      "adjusted_ci": [
+        0.02929956235257005,
+        0.07379778393051312
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.0014999250037498126,
+      "wilcoxon": {
+        "p_two_sided": 0.0625,
+        "nonzero_pairs": 5,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm": null
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "candidate": "CEM-Net",
+      "baseline": "TCN",
+      "endpoint": 0,
+      "values": [
+        0.09200817091627655,
+        0.09568460176886057,
+        0.08339294874994857,
+        0.07909673114126736,
+        0.09295005443843019
+      ],
+      "mean": 0.08862650140295665,
+      "sample_SD": 0.0070383267708921445,
+      "family_count": 30,
+      "ci95": [
+        0.07139723622118714,
+        0.10545988013878006
+      ],
+      "adjusted_ci": [
+        0.060312092727151066,
+        0.11615228455944639
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.0014999250037498126,
+      "wilcoxon": {
+        "p_two_sided": 0.0625,
+        "nonzero_pairs": 5,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm": null
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "candidate": "CEM-Net",
+      "baseline": "ModernTCN",
+      "endpoint": 0,
+      "values": [
+        0.10086486837993663,
+        0.1284435826792874,
+        0.1010716122561498,
+        0.10651813273355354,
+        0.11116997761629738
+      ],
+      "mean": 0.10961363473304495,
+      "sample_SD": 0.01135867879810817,
+      "family_count": 30,
+      "ci95": [
+        0.09286091662565014,
+        0.12560612503445734
+      ],
+      "adjusted_ci": [
+        0.08278460233801113,
+        0.1353781152661987
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.0014999250037498126,
+      "wilcoxon": {
+        "p_two_sided": 0.0625,
+        "nonzero_pairs": 5,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm": null
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "candidate": "CEM-Net",
+      "baseline": "LITEMV",
+      "endpoint": 0,
+      "values": [
+        0.07047784449264088,
+        0.07098888276427712,
+        0.08337099422175903,
+        0.06779966245900387,
+        0.07712324008358051
+      ],
+      "mean": 0.07395212480425228,
+      "sample_SD": 0.006274458008458962,
+      "family_count": 30,
+      "ci95": [
+        0.05808823531372324,
+        0.08994127526223578
+      ],
+      "adjusted_ci": [
+        0.048635730890707905,
+        0.09877829929318
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.0014999250037498126,
+      "wilcoxon": {
+        "p_two_sided": 0.0625,
+        "nonzero_pairs": 5,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm": null
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "candidate": "CEM-Net",
+      "baseline": "TCN",
+      "endpoint": 1,
+      "values": [
+        0.056270034143605985,
+        0.0576404681108702,
+        0.05584884456180439,
+        0.061748720840939186,
+        0.06120422728743252
+      ],
+      "mean": 0.05854245898893046,
+      "sample_SD": 0.002765781374328536,
+      "family_count": 30,
+      "ci95": [
+        0.04704570066416059,
+        0.0703056144290503
+      ],
+      "adjusted_ci": [
+        0.04044716338771582,
+        0.07727061719508117
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.0014999250037498126,
+      "wilcoxon": {
+        "p_two_sided": 0.0625,
+        "nonzero_pairs": 5,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm": null
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "candidate": "CEM-Net",
+      "baseline": "ModernTCN",
+      "endpoint": 1,
+      "values": [
+        0.07348842549516443,
+        0.06365426903062155,
+        0.07902995771091303,
+        0.07233809795264157,
+        0.07978756845910717
+      ],
+      "mean": 0.07365966372968955,
+      "sample_SD": 0.006486043777560977,
+      "family_count": 30,
+      "ci95": [
+        0.06225559168636136,
+        0.0850160642633607
+      ],
+      "adjusted_ci": [
+        0.05586881518616036,
+        0.09246573302622801
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.0014999250037498126,
+      "wilcoxon": {
+        "p_two_sided": 0.0625,
+        "nonzero_pairs": 5,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm": null
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "candidate": "CEM-Net",
+      "baseline": "LITEMV",
+      "endpoint": 1,
+      "values": [
+        0.04994656721804697,
+        0.04736550887341473,
+        0.04772582002465875,
+        0.051412455792223866,
+        0.05167234072332505
+      ],
+      "mean": 0.049624538526333875,
+      "sample_SD": 0.0020125972887867615,
+      "family_count": 30,
+      "ci95": [
+        0.03890162230813824,
+        0.06045526201531069
+      ],
+      "adjusted_ci": [
+        0.03291175242605972,
+        0.06670051351679072
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.0014999250037498126,
+      "wilcoxon": {
+        "p_two_sided": 0.0625,
+        "nonzero_pairs": 5,
+        "zero_rule": "wilcox",
+        "ties": "average ranks; all sign assignments"
+      },
+      "p_holm": null
+    }
+  ],
+  "rows": [
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "method": "CEM-Net",
+      "seed": 48,
+      "endpoint": 0,
+      "AP": 0.4908907691428215,
+      "AUROC": 0.8796578681014275,
+      "Brier": 0.05513020174301189,
+      "log_loss": 0.20509855011390846
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "method": "CEM-Net",
+      "seed": 49,
+      "endpoint": 0,
+      "AP": 0.48941037710790913,
+      "AUROC": 0.877852652887279,
+      "Brier": 0.0553768645497867,
+      "log_loss": 0.21199452468061272
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "method": "CEM-Net",
+      "seed": 50,
+      "endpoint": 0,
+      "AP": 0.48820737365733163,
+      "AUROC": 0.8803703654378863,
+      "Brier": 0.05483690377178764,
+      "log_loss": 0.2019339331463047
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "method": "CEM-Net",
+      "seed": 51,
+      "endpoint": 0,
+      "AP": 0.48216791533093734,
+      "AUROC": 0.877123508416791,
+      "Brier": 0.05705796543317172,
+      "log_loss": 0.2294865439282036
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "method": "CEM-Net",
+      "seed": 52,
+      "endpoint": 0,
+      "AP": 0.4783973326003329,
+      "AUROC": 0.8789580225868313,
+      "Brier": 0.05550031294438987,
+      "log_loss": 0.204061102559912
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "method": "CEM-Net",
+      "seed": 48,
+      "endpoint": 1,
+      "AP": 0.5342937847174059,
+      "AUROC": 0.8519450991051002,
+      "Brier": 0.10254366062291034,
+      "log_loss": 0.3283210003691222
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "method": "CEM-Net",
+      "seed": 49,
+      "endpoint": 1,
+      "AP": 0.528870313281435,
+      "AUROC": 0.8514916287542452,
+      "Brier": 0.1029061050935588,
+      "log_loss": 0.32859736594637184
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "method": "CEM-Net",
+      "seed": 50,
+      "endpoint": 1,
+      "AP": 0.5322880718795656,
+      "AUROC": 0.8530580026602654,
+      "Brier": 0.10270353287904162,
+      "log_loss": 0.32756794016897184
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "method": "CEM-Net",
+      "seed": 51,
+      "endpoint": 1,
+      "AP": 0.5320825922134945,
+      "AUROC": 0.853104476329763,
+      "Brier": 0.10267166437134656,
+      "log_loss": 0.32723938158479277
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "method": "CEM-Net",
+      "seed": 52,
+      "endpoint": 1,
+      "AP": 0.5345851646655235,
+      "AUROC": 0.852559466932928,
+      "Brier": 0.10242603091340033,
+      "log_loss": 0.3274558317665157
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "method": "CEM-Net",
+      "seed": 48,
+      "endpoint": 0,
+      "AP": 0.49044997661499473,
+      "AUROC": 0.8865149192851672,
+      "Brier": 0.05335103664997399,
+      "log_loss": 0.19636697637397627
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "method": "CEM-Net",
+      "seed": 49,
+      "endpoint": 0,
+      "AP": 0.4810901777845332,
+      "AUROC": 0.8864574960908387,
+      "Brier": 0.05446345933184452,
+      "log_loss": 0.20265226382414084
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "method": "CEM-Net",
+      "seed": 50,
+      "endpoint": 0,
+      "AP": 0.4873562345910792,
+      "AUROC": 0.8874403954979527,
+      "Brier": 0.05343377729469055,
+      "log_loss": 0.1935391806419849
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "method": "CEM-Net",
+      "seed": 51,
+      "endpoint": 0,
+      "AP": 0.4790506803459712,
+      "AUROC": 0.8820764846001824,
+      "Brier": 0.05506901908145453,
+      "log_loss": 0.219456637521776
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "method": "CEM-Net",
+      "seed": 52,
+      "endpoint": 0,
+      "AP": 0.48936565686674527,
+      "AUROC": 0.8869058783986493,
+      "Brier": 0.053378829024126294,
+      "log_loss": 0.1940782482957785
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "method": "CEM-Net",
+      "seed": 48,
+      "endpoint": 1,
+      "AP": 0.5465509463417983,
+      "AUROC": 0.8540247572090774,
+      "Brier": 0.10058808397146732,
+      "log_loss": 0.3239091882712831
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "method": "CEM-Net",
+      "seed": 49,
+      "endpoint": 1,
+      "AP": 0.5500209844930679,
+      "AUROC": 0.8566939910135366,
+      "Brier": 0.09993777255882104,
+      "log_loss": 0.32121676055740983
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "method": "CEM-Net",
+      "seed": 50,
+      "endpoint": 1,
+      "AP": 0.5506028724175384,
+      "AUROC": 0.8568641757194858,
+      "Brier": 0.09971094633843848,
+      "log_loss": 0.32095856354725055
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "method": "CEM-Net",
+      "seed": 51,
+      "endpoint": 1,
+      "AP": 0.5508797388530158,
+      "AUROC": 0.8562803044306677,
+      "Brier": 0.09988248217897258,
+      "log_loss": 0.3212509744530074
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "method": "CEM-Net",
+      "seed": 52,
+      "endpoint": 1,
+      "AP": 0.5515675992870688,
+      "AUROC": 0.8563769053577522,
+      "Brier": 0.09993133829602784,
+      "log_loss": 0.3214542027047078
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "method": "TCN",
+      "seed": 48,
+      "endpoint": 0,
+      "AP": 0.3894326205558445,
+      "AUROC": 0.8386233486043041,
+      "Brier": 0.06351905241893337,
+      "log_loss": 0.24503775274881825
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "method": "TCN",
+      "seed": 48,
+      "endpoint": 0,
+      "AP": 0.401299015842429,
+      "AUROC": 0.8477927744772813,
+      "Brier": 0.059093740218220676,
+      "log_loss": 0.23103395094797116
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "method": "TCN",
+      "seed": 48,
+      "endpoint": 1,
+      "AP": 0.4871995192051195,
+      "AUROC": 0.8233155583283281,
+      "Brier": 0.10905936114713066,
+      "log_loss": 0.3598265610340395
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "method": "TCN",
+      "seed": 48,
+      "endpoint": 1,
+      "AP": 0.4861966151112335,
+      "AUROC": 0.8250768719428961,
+      "Brier": 0.10745101287140581,
+      "log_loss": 0.3536177539657244
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "method": "TCN",
+      "seed": 49,
+      "endpoint": 0,
+      "AP": 0.3632885808818592,
+      "AUROC": 0.827134828467931,
+      "Brier": 0.06371397377784845,
+      "log_loss": 0.2507705895988059
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "method": "TCN",
+      "seed": 49,
+      "endpoint": 0,
+      "AP": 0.4070025909272547,
+      "AUROC": 0.8539370562704323,
+      "Brier": 0.057957180694447295,
+      "log_loss": 0.22334355843904277
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "method": "TCN",
+      "seed": 49,
+      "endpoint": 1,
+      "AP": 0.5005192348959934,
+      "AUROC": 0.827086438912826,
+      "Brier": 0.10681908709468396,
+      "log_loss": 0.3469347377633544
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "method": "TCN",
+      "seed": 49,
+      "endpoint": 1,
+      "AP": 0.48948019011933047,
+      "AUROC": 0.8250138636105108,
+      "Brier": 0.10650422142127093,
+      "log_loss": 0.3458471824324621
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "method": "TCN",
+      "seed": 50,
+      "endpoint": 0,
+      "AP": 0.37704013940071707,
+      "AUROC": 0.8319145535904539,
+      "Brier": 0.06604648946404137,
+      "log_loss": 0.24298869243848892
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "method": "TCN",
+      "seed": 50,
+      "endpoint": 0,
+      "AP": 0.41162668119374374,
+      "AUROC": 0.8489071111061444,
+      "Brier": 0.060105930473133964,
+      "log_loss": 0.22218577269958814
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "method": "TCN",
+      "seed": 50,
+      "endpoint": 1,
+      "AP": 0.48938738436795837,
+      "AUROC": 0.8249903707965094,
+      "Brier": 0.10761489897795651,
+      "log_loss": 0.3531034748709738
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "method": "TCN",
+      "seed": 50,
+      "endpoint": 1,
+      "AP": 0.4934173950631686,
+      "AUROC": 0.8259387263963143,
+      "Brier": 0.10673160950066289,
+      "log_loss": 0.3500714385728256
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "method": "TCN",
+      "seed": 51,
+      "endpoint": 0,
+      "AP": 0.3918755411045214,
+      "AUROC": 0.8371071276369059,
+      "Brier": 0.06261812345801439,
+      "log_loss": 0.2621816030784853
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "method": "TCN",
+      "seed": 51,
+      "endpoint": 0,
+      "AP": 0.41739219603889643,
+      "AUROC": 0.8539690344564954,
+      "Brier": 0.05886234007644516,
+      "log_loss": 0.24372843870543573
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "method": "TCN",
+      "seed": 51,
+      "endpoint": 1,
+      "AP": 0.4950144937849504,
+      "AUROC": 0.8259522349258076,
+      "Brier": 0.11096337174521699,
+      "log_loss": 0.3924522048434986
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "method": "TCN",
+      "seed": 51,
+      "endpoint": 1,
+      "AP": 0.516037855218765,
+      "AUROC": 0.8300985205039245,
+      "Brier": 0.10801234539730038,
+      "log_loss": 0.3826385876029941
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "method": "TCN",
+      "seed": 52,
+      "endpoint": 0,
+      "AP": 0.376980887150868,
+      "AUROC": 0.8296265714894525,
+      "Brier": 0.06442001172652435,
+      "log_loss": 0.2721760648105905
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "method": "TCN",
+      "seed": 52,
+      "endpoint": 0,
+      "AP": 0.41026974147090456,
+      "AUROC": 0.8475807040874483,
+      "Brier": 0.05948088045112206,
+      "log_loss": 0.24936335603998136
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "method": "TCN",
+      "seed": 52,
+      "endpoint": 1,
+      "AP": 0.48402861792514934,
+      "AUROC": 0.8254734153006812,
+      "Brier": 0.10809797305098345,
+      "log_loss": 0.3492804746223168
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "method": "TCN",
+      "seed": 52,
+      "endpoint": 1,
+      "AP": 0.49118472185117473,
+      "AUROC": 0.82833828631555,
+      "Brier": 0.10660846821502595,
+      "log_loss": 0.34457216855445266
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "method": "ModernTCN",
+      "seed": 48,
+      "endpoint": 0,
+      "AP": 0.3287574163352297,
+      "AUROC": 0.8312713083315576,
+      "Brier": 0.06523485700873673,
+      "log_loss": 0.24425930507450605
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "method": "ModernTCN",
+      "seed": 48,
+      "endpoint": 0,
+      "AP": 0.37340959874708546,
+      "AUROC": 0.8365828729305516,
+      "Brier": 0.06031234531622849,
+      "log_loss": 0.22828810771201638
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "method": "ModernTCN",
+      "seed": 48,
+      "endpoint": 1,
+      "AP": 0.4801889176408409,
+      "AUROC": 0.8097075749968842,
+      "Brier": 0.14335913600186306,
+      "log_loss": 0.45930942586709017
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "method": "ModernTCN",
+      "seed": 48,
+      "endpoint": 1,
+      "AP": 0.4798948821536547,
+      "AUROC": 0.8179030755886703,
+      "Brier": 0.1399753071922087,
+      "log_loss": 0.4473000250258858
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "method": "ModernTCN",
+      "seed": 49,
+      "endpoint": 0,
+      "AP": 0.33086748446631203,
+      "AUROC": 0.8246956903899425,
+      "Brier": 0.0763752866662438,
+      "log_loss": 0.2720790751467557
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "method": "ModernTCN",
+      "seed": 49,
+      "endpoint": 0,
+      "AP": 0.3494831619307922,
+      "AUROC": 0.8329649537992577,
+      "Brier": 0.07358544416241797,
+      "log_loss": 0.2583673436354783
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "method": "ModernTCN",
+      "seed": 49,
+      "endpoint": 1,
+      "AP": 0.4706305756403944,
+      "AUROC": 0.8075828129103853,
+      "Brier": 0.11585013020499679,
+      "log_loss": 0.37703320692099723
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "method": "ModernTCN",
+      "seed": 49,
+      "endpoint": 1,
+      "AP": 0.4573826833523944,
+      "AUROC": 0.8056237380559664,
+      "Brier": 0.11653358230969353,
+      "log_loss": 0.37625091708473857
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "method": "ModernTCN",
+      "seed": 50,
+      "endpoint": 0,
+      "AP": 0.3316301962328869,
+      "AUROC": 0.8250592637971447,
+      "Brier": 0.064847915984582,
+      "log_loss": 0.23772435285252627
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "method": "ModernTCN",
+      "seed": 50,
+      "endpoint": 0,
+      "AP": 0.3675993377171306,
+      "AUROC": 0.8368780694115755,
+      "Brier": 0.059835049657650095,
+      "log_loss": 0.22025463335761458
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "method": "ModernTCN",
+      "seed": 50,
+      "endpoint": 1,
+      "AP": 0.4663750362041913,
+      "AUROC": 0.8087791578266941,
+      "Brier": 0.11570255477186474,
+      "log_loss": 0.377706944375498
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "method": "ModernTCN",
+      "seed": 50,
+      "endpoint": 1,
+      "AP": 0.4807733954324651,
+      "AUROC": 0.8166414870321921,
+      "Brier": 0.11248525749588191,
+      "log_loss": 0.36644861148900937
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "method": "ModernTCN",
+      "seed": 51,
+      "endpoint": 0,
+      "AP": 0.3105201896522182,
+      "AUROC": 0.8085845940762838,
+      "Brier": 0.06605933816403824,
+      "log_loss": 0.23722677348511037
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "method": "ModernTCN",
+      "seed": 51,
+      "endpoint": 0,
+      "AP": 0.34147398814070323,
+      "AUROC": 0.8168276607870931,
+      "Brier": 0.062385086593446465,
+      "log_loss": 0.22675456353538465
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "method": "ModernTCN",
+      "seed": 51,
+      "endpoint": 1,
+      "AP": 0.47999938097585026,
+      "AUROC": 0.8196339283136608,
+      "Brier": 0.11162910740905511,
+      "log_loss": 0.36599258810571306
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "method": "ModernTCN",
+      "seed": 51,
+      "endpoint": 1,
+      "AP": 0.479036397837756,
+      "AUROC": 0.8150475717352974,
+      "Brier": 0.11073082052177328,
+      "log_loss": 0.3630675250608046
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "method": "ModernTCN",
+      "seed": 52,
+      "endpoint": 0,
+      "AP": 0.3211229708463412,
+      "AUROC": 0.807292776475602,
+      "Brier": 0.06696668432795874,
+      "log_loss": 0.2631291485857576
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "method": "ModernTCN",
+      "seed": 52,
+      "endpoint": 0,
+      "AP": 0.3732267310968081,
+      "AUROC": 0.8337839220213652,
+      "Brier": 0.06197569672853537,
+      "log_loss": 0.2393546029414604
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "method": "ModernTCN",
+      "seed": 52,
+      "endpoint": 1,
+      "AP": 0.468927817911129,
+      "AUROC": 0.8131071943352823,
+      "Brier": 0.1126908298985374,
+      "log_loss": 0.36561817497438587
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "method": "ModernTCN",
+      "seed": 52,
+      "endpoint": 1,
+      "AP": 0.4897034330088349,
+      "AUROC": 0.8168422427767035,
+      "Brier": 0.10912695497537864,
+      "log_loss": 0.35493536282049304
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "method": "LITEMV",
+      "seed": 48,
+      "endpoint": 0,
+      "AP": 0.4110817573082086,
+      "AUROC": 0.8597565523119539,
+      "Brier": 0.05861334557412253,
+      "log_loss": 0.20839040590437505
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "method": "LITEMV",
+      "seed": 48,
+      "endpoint": 0,
+      "AP": 0.4277097521059932,
+      "AUROC": 0.8598695255623475,
+      "Brier": 0.05596433097282822,
+      "log_loss": 0.20199025666093326
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "method": "LITEMV",
+      "seed": 48,
+      "endpoint": 1,
+      "AP": 0.4909311879328049,
+      "AUROC": 0.8277411191282102,
+      "Brier": 0.10815943806241972,
+      "log_loss": 0.3487958923645777
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "method": "LITEMV",
+      "seed": 48,
+      "endpoint": 1,
+      "AP": 0.5088426332784445,
+      "AUROC": 0.8341570924809464,
+      "Brier": 0.1051506664643645,
+      "log_loss": 0.3395619010196523
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "method": "LITEMV",
+      "seed": 49,
+      "endpoint": 0,
+      "AP": 0.40462165138192063,
+      "AUROC": 0.8397000852333262,
+      "Brier": 0.059805940134541,
+      "log_loss": 0.22227584305040676
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "method": "LITEMV",
+      "seed": 49,
+      "endpoint": 0,
+      "AP": 0.42420585966310453,
+      "AUROC": 0.8640544557562024,
+      "Brier": 0.05588700853293313,
+      "log_loss": 0.20220107729837228
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "method": "LITEMV",
+      "seed": 49,
+      "endpoint": 1,
+      "AP": 0.48448844627333043,
+      "AUROC": 0.8215534316932118,
+      "Brier": 0.11120332082232025,
+      "log_loss": 0.3692660163418275
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "method": "LITEMV",
+      "seed": 49,
+      "endpoint": 1,
+      "AP": 0.47810606177918197,
+      "AUROC": 0.814356213030372,
+      "Brier": 0.11197060783279729,
+      "log_loss": 0.3724995853766276
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "method": "LITEMV",
+      "seed": 50,
+      "endpoint": 0,
+      "AP": 0.39987658871920384,
+      "AUROC": 0.8493820583848284,
+      "Brier": 0.06059424688310318,
+      "log_loss": 0.2204898641916428
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "method": "LITEMV",
+      "seed": 50,
+      "endpoint": 0,
+      "AP": 0.422891491417726,
+      "AUROC": 0.8686606899551532,
+      "Brier": 0.05632949764542354,
+      "log_loss": 0.2020062834993116
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "method": "LITEMV",
+      "seed": 50,
+      "endpoint": 1,
+      "AP": 0.48162026005689484,
+      "AUROC": 0.8286779860564909,
+      "Brier": 0.1082548784738345,
+      "log_loss": 0.3471850026186762
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "method": "LITEMV",
+      "seed": 50,
+      "endpoint": 1,
+      "AP": 0.49398513246483816,
+      "AUROC": 0.8318064106756912,
+      "Brier": 0.10628803707356754,
+      "log_loss": 0.34263778064651373
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "method": "LITEMV",
+      "seed": 51,
+      "endpoint": 0,
+      "AP": 0.40062662155616025,
+      "AUROC": 0.848810062859578,
+      "Brier": 0.061068860841277654,
+      "log_loss": 0.22936458519322475
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "method": "LITEMV",
+      "seed": 51,
+      "endpoint": 0,
+      "AP": 0.40291052233813823,
+      "AUROC": 0.8583005313364733,
+      "Brier": 0.05784593938842056,
+      "log_loss": 0.2167887828324417
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "method": "LITEMV",
+      "seed": 51,
+      "endpoint": 1,
+      "AP": 0.49165490653030214,
+      "AUROC": 0.8291032905470445,
+      "Brier": 0.1083688125363933,
+      "log_loss": 0.35253744375377877
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "method": "LITEMV",
+      "seed": 51,
+      "endpoint": 1,
+      "AP": 0.5123307534768755,
+      "AUROC": 0.8372824035234899,
+      "Brier": 0.10562516756469251,
+      "log_loss": 0.34550137421128163
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "method": "LITEMV",
+      "seed": 52,
+      "endpoint": 0,
+      "AP": 0.39337101890692056,
+      "AUROC": 0.8479177764756021,
+      "Brier": 0.05996452790230806,
+      "log_loss": 0.21109958395140757
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "method": "LITEMV",
+      "seed": 52,
+      "endpoint": 0,
+      "AP": 0.4072042020989457,
+      "AUROC": 0.8610874474444528,
+      "Brier": 0.05646757724900383,
+      "log_loss": 0.1998453726146895
+    },
+    {
+      "database": "mimiciii",
+      "split": "dev",
+      "method": "LITEMV",
+      "seed": 52,
+      "endpoint": 1,
+      "AP": 0.4996054891967586,
+      "AUROC": 0.8311196140713821,
+      "Brier": 0.10769758227677699,
+      "log_loss": 0.3461098557182945
+    },
+    {
+      "database": "mimiciii",
+      "split": "test",
+      "method": "LITEMV",
+      "seed": 52,
+      "endpoint": 1,
+      "AP": 0.5116116611645201,
+      "AUROC": 0.8335169669264021,
+      "Brier": 0.10622860051445591,
+      "log_loss": 0.3425292313320724
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "method": "CEM-Net",
+      "seed": 48,
+      "endpoint": 0,
+      "AP": 0.5474081407189633,
+      "AUROC": 0.9099177552254909,
+      "Brier": 0.04963210105227735,
+      "log_loss": 0.17612074189296187
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "method": "CEM-Net",
+      "seed": 49,
+      "endpoint": 0,
+      "AP": 0.5412670553145409,
+      "AUROC": 0.9086846966885469,
+      "Brier": 0.04911610862869149,
+      "log_loss": 0.17131540720039162
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "method": "CEM-Net",
+      "seed": 50,
+      "endpoint": 0,
+      "AP": 0.5409574181514573,
+      "AUROC": 0.9094643309654794,
+      "Brier": 0.049625268731652294,
+      "log_loss": 0.17468851090562698
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "method": "CEM-Net",
+      "seed": 51,
+      "endpoint": 0,
+      "AP": 0.5444619965702041,
+      "AUROC": 0.9103635159768827,
+      "Brier": 0.049277554352869186,
+      "log_loss": 0.17282799295505116
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "method": "CEM-Net",
+      "seed": 52,
+      "endpoint": 0,
+      "AP": 0.5454621464887415,
+      "AUROC": 0.9097197812528098,
+      "Brier": 0.04949589247189664,
+      "log_loss": 0.1757222347494692
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "method": "CEM-Net",
+      "seed": 48,
+      "endpoint": 1,
+      "AP": 0.5571081009028568,
+      "AUROC": 0.8641808992071689,
+      "Brier": 0.09511584212727642,
+      "log_loss": 0.3120155238683421
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "method": "CEM-Net",
+      "seed": 49,
+      "endpoint": 1,
+      "AP": 0.5544622988495091,
+      "AUROC": 0.8629139827330137,
+      "Brier": 0.09447409603691091,
+      "log_loss": 0.3059005439319476
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "method": "CEM-Net",
+      "seed": 50,
+      "endpoint": 1,
+      "AP": 0.5529449691956088,
+      "AUROC": 0.8632402404050583,
+      "Brier": 0.09455073851343458,
+      "log_loss": 0.3056666444412341
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "method": "CEM-Net",
+      "seed": 51,
+      "endpoint": 1,
+      "AP": 0.5584950989179001,
+      "AUROC": 0.8649271062191864,
+      "Brier": 0.09378835663290168,
+      "log_loss": 0.304008908863459
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "method": "CEM-Net",
+      "seed": 52,
+      "endpoint": 1,
+      "AP": 0.5570482799334299,
+      "AUROC": 0.8645206008019786,
+      "Brier": 0.09483698656932044,
+      "log_loss": 0.31033147692212965
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "method": "CEM-Net",
+      "seed": 48,
+      "endpoint": 0,
+      "AP": 0.5470954117470451,
+      "AUROC": 0.9138215595279684,
+      "Brier": 0.049278686409937995,
+      "log_loss": 0.17400431784066972
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "method": "CEM-Net",
+      "seed": 49,
+      "endpoint": 0,
+      "AP": 0.544330171984472,
+      "AUROC": 0.915093159426442,
+      "Brier": 0.048316940185532765,
+      "log_loss": 0.16725076971990532
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "method": "CEM-Net",
+      "seed": 50,
+      "endpoint": 0,
+      "AP": 0.5428731503131702,
+      "AUROC": 0.9145149071349284,
+      "Brier": 0.04897605906538933,
+      "log_loss": 0.17171633834855404
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "method": "CEM-Net",
+      "seed": 51,
+      "endpoint": 0,
+      "AP": 0.5434731251471175,
+      "AUROC": 0.914426052002168,
+      "Brier": 0.04876505372058927,
+      "log_loss": 0.17049826117824854
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "method": "CEM-Net",
+      "seed": 52,
+      "endpoint": 0,
+      "AP": 0.5418594476190164,
+      "AUROC": 0.9141077808564537,
+      "Brier": 0.049233348757179156,
+      "log_loss": 0.17356048776568717
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "method": "CEM-Net",
+      "seed": 48,
+      "endpoint": 1,
+      "AP": 0.5411550678000061,
+      "AUROC": 0.8567858214782536,
+      "Brier": 0.09457910835988573,
+      "log_loss": 0.3139598217411478
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "method": "CEM-Net",
+      "seed": 49,
+      "endpoint": 1,
+      "AP": 0.5411683322897266,
+      "AUROC": 0.8580655491718421,
+      "Brier": 0.09353158434777824,
+      "log_loss": 0.30495740068229416
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "method": "CEM-Net",
+      "seed": 50,
+      "endpoint": 1,
+      "AP": 0.5401992708244943,
+      "AUROC": 0.8574017560361853,
+      "Brier": 0.09359374273489969,
+      "log_loss": 0.3054114679640488
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "method": "CEM-Net",
+      "seed": 51,
+      "endpoint": 1,
+      "AP": 0.541605825850046,
+      "AUROC": 0.8578599529918459,
+      "Brier": 0.09334784830347577,
+      "log_loss": 0.3053996221033056
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "method": "CEM-Net",
+      "seed": 52,
+      "endpoint": 1,
+      "AP": 0.542081486229978,
+      "AUROC": 0.8577713523535302,
+      "Brier": 0.09420437894170432,
+      "log_loss": 0.31175156621865385
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "method": "TCN",
+      "seed": 48,
+      "endpoint": 0,
+      "AP": 0.4352318836039149,
+      "AUROC": 0.8689838902830797,
+      "Brier": 0.05883477894225633,
+      "log_loss": 0.24976477108137513
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "method": "TCN",
+      "seed": 48,
+      "endpoint": 0,
+      "AP": 0.44708112676476636,
+      "AUROC": 0.8811579866853505,
+      "Brier": 0.05683782509852898,
+      "log_loss": 0.23832008809934846
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "method": "TCN",
+      "seed": 48,
+      "endpoint": 1,
+      "AP": 0.49038306592106085,
+      "AUROC": 0.8345622741906065,
+      "Brier": 0.10225352225444913,
+      "log_loss": 0.3367059997054221
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "method": "TCN",
+      "seed": 48,
+      "endpoint": 1,
+      "AP": 0.4726077507461513,
+      "AUROC": 0.8303336561266897,
+      "Brier": 0.10200498850583031,
+      "log_loss": 0.3361082624721355
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "method": "TCN",
+      "seed": 49,
+      "endpoint": 0,
+      "AP": 0.4498454899770285,
+      "AUROC": 0.8740351642647527,
+      "Brier": 0.057074627344013744,
+      "log_loss": 0.24672034477884824
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "method": "TCN",
+      "seed": 49,
+      "endpoint": 0,
+      "AP": 0.44506226585410624,
+      "AUROC": 0.8865404194349575,
+      "Brier": 0.05637872518719227,
+      "log_loss": 0.23636957588429777
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "method": "TCN",
+      "seed": 49,
+      "endpoint": 1,
+      "AP": 0.4966073304634946,
+      "AUROC": 0.8368986062117021,
+      "Brier": 0.10053903437415224,
+      "log_loss": 0.32857056739895496
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "method": "TCN",
+      "seed": 49,
+      "endpoint": 1,
+      "AP": 0.47018653371815694,
+      "AUROC": 0.8299921344694379,
+      "Brier": 0.10098682890081334,
+      "log_loss": 0.3320957622780389
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "method": "TCN",
+      "seed": 50,
+      "endpoint": 0,
+      "AP": 0.4497755019802177,
+      "AUROC": 0.8768979956348655,
+      "Brier": 0.05611253480951309,
+      "log_loss": 0.21493032539565274
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "method": "TCN",
+      "seed": 50,
+      "endpoint": 0,
+      "AP": 0.4655420339119651,
+      "AUROC": 0.888123222090451,
+      "Brier": 0.05459431710561556,
+      "log_loss": 0.207281668447837
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "method": "TCN",
+      "seed": 50,
+      "endpoint": 1,
+      "AP": 0.5018744389603069,
+      "AUROC": 0.838236207228229,
+      "Brier": 0.10066870465830402,
+      "log_loss": 0.3508481239661505
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "method": "TCN",
+      "seed": 50,
+      "endpoint": 1,
+      "AP": 0.47415985263414373,
+      "AUROC": 0.8287033332165039,
+      "Brier": 0.10164596682586127,
+      "log_loss": 0.35880950430721265
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "method": "TCN",
+      "seed": 51,
+      "endpoint": 0,
+      "AP": 0.4345122741983258,
+      "AUROC": 0.8720199169480025,
+      "Brier": 0.057282113043915395,
+      "log_loss": 0.21985347464818522
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "method": "TCN",
+      "seed": 51,
+      "endpoint": 0,
+      "AP": 0.44863938384599983,
+      "AUROC": 0.889529734613312,
+      "Brier": 0.05547669559351914,
+      "log_loss": 0.20643427123412936
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "method": "TCN",
+      "seed": 51,
+      "endpoint": 1,
+      "AP": 0.4906538751391632,
+      "AUROC": 0.8340731648768231,
+      "Brier": 0.10242996551275288,
+      "log_loss": 0.35408770154486613
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "method": "TCN",
+      "seed": 51,
+      "endpoint": 1,
+      "AP": 0.4772600696979336,
+      "AUROC": 0.8301175986665069,
+      "Brier": 0.10181453349179904,
+      "log_loss": 0.3539439872778302
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "method": "TCN",
+      "seed": 52,
+      "endpoint": 0,
+      "AP": 0.4395741120492525,
+      "AUROC": 0.8728376133177476,
+      "Brier": 0.0556016139641854,
+      "log_loss": 0.21329953141052954
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "method": "TCN",
+      "seed": 52,
+      "endpoint": 0,
+      "AP": 0.44745062292217797,
+      "AUROC": 0.8864497891360866,
+      "Brier": 0.05458940603504505,
+      "log_loss": 0.20374641087836917
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "method": "TCN",
+      "seed": 52,
+      "endpoint": 1,
+      "AP": 0.494531509671595,
+      "AUROC": 0.8393059692680241,
+      "Brier": 0.10001194409739507,
+      "log_loss": 0.3245659831269816
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "method": "TCN",
+      "seed": 52,
+      "endpoint": 1,
+      "AP": 0.47642361012027457,
+      "AUROC": 0.8309769536930008,
+      "Brier": 0.09961021701009558,
+      "log_loss": 0.3272544024526924
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "method": "ModernTCN",
+      "seed": 48,
+      "endpoint": 0,
+      "AP": 0.41783515504540225,
+      "AUROC": 0.8614391660467738,
+      "Brier": 0.05771518835806889,
+      "log_loss": 0.2035943285992154
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "method": "ModernTCN",
+      "seed": 48,
+      "endpoint": 0,
+      "AP": 0.417262981628582,
+      "AUROC": 0.8723144318810022,
+      "Brier": 0.05688511047804577,
+      "log_loss": 0.19900865938379464
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "method": "ModernTCN",
+      "seed": 48,
+      "endpoint": 1,
+      "AP": 0.49290157239628185,
+      "AUROC": 0.8403979068505243,
+      "Brier": 0.10776998861528128,
+      "log_loss": 0.378337796338942
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "method": "ModernTCN",
+      "seed": 48,
+      "endpoint": 1,
+      "AP": 0.4691840775961128,
+      "AUROC": 0.8288306477080278,
+      "Brier": 0.10741112448077764,
+      "log_loss": 0.38363410993218444
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "method": "ModernTCN",
+      "seed": 49,
+      "endpoint": 0,
+      "AP": 0.42219741721764315,
+      "AUROC": 0.8711332490006785,
+      "Brier": 0.06229919898409002,
+      "log_loss": 0.21670171271660385
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "method": "ModernTCN",
+      "seed": 49,
+      "endpoint": 0,
+      "AP": 0.4296464386813674,
+      "AUROC": 0.8838563682760904,
+      "Brier": 0.060986615572341606,
+      "log_loss": 0.21105057796209073
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "method": "ModernTCN",
+      "seed": 49,
+      "endpoint": 1,
+      "AP": 0.494375348393721,
+      "AUROC": 0.8373655399827806,
+      "Brier": 0.11856642691466521,
+      "log_loss": 0.36820888487510695
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "method": "ModernTCN",
+      "seed": 49,
+      "endpoint": 1,
+      "AP": 0.4578565769923646,
+      "AUROC": 0.8273565323489293,
+      "Brier": 0.12092329687720632,
+      "log_loss": 0.37751433233847653
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "method": "ModernTCN",
+      "seed": 50,
+      "endpoint": 0,
+      "AP": 0.4404898692569125,
+      "AUROC": 0.8725489544930639,
+      "Brier": 0.055738369498910915,
+      "log_loss": 0.2019729190313096
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "method": "ModernTCN",
+      "seed": 50,
+      "endpoint": 0,
+      "AP": 0.4306795001617604,
+      "AUROC": 0.8871513347829018,
+      "Brier": 0.05559380869424845,
+      "log_loss": 0.19598768726209156
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "method": "ModernTCN",
+      "seed": 50,
+      "endpoint": 1,
+      "AP": 0.4799917878560173,
+      "AUROC": 0.8343780785890146,
+      "Brier": 0.10299703444921429,
+      "log_loss": 0.33639060848387553
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "method": "ModernTCN",
+      "seed": 50,
+      "endpoint": 1,
+      "AP": 0.45685532546316426,
+      "AUROC": 0.826585617839116,
+      "Brier": 0.10230529594798778,
+      "log_loss": 0.33795281996625137
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "method": "ModernTCN",
+      "seed": 51,
+      "endpoint": 0,
+      "AP": 0.43812041286947173,
+      "AUROC": 0.8797194440584307,
+      "Brier": 0.05578671763790772,
+      "log_loss": 0.20108715274729574
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "method": "ModernTCN",
+      "seed": 51,
+      "endpoint": 0,
+      "AP": 0.4412474437991533,
+      "AUROC": 0.8890312034180274,
+      "Brier": 0.0546998256521487,
+      "log_loss": 0.1950186469629404
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "method": "ModernTCN",
+      "seed": 51,
+      "endpoint": 1,
+      "AP": 0.47944721011259367,
+      "AUROC": 0.8378710037593089,
+      "Brier": 0.10561521433488642,
+      "log_loss": 0.33926808548571896
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "method": "ModernTCN",
+      "seed": 51,
+      "endpoint": 1,
+      "AP": 0.43476078279988933,
+      "AUROC": 0.8205530530125373,
+      "Brier": 0.10630453137223414,
+      "log_loss": 0.3462180866388297
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "method": "ModernTCN",
+      "seed": 52,
+      "endpoint": 0,
+      "AP": 0.4040387429365257,
+      "AUROC": 0.8649516074975679,
+      "Brier": 0.05693592361134419,
+      "log_loss": 0.20248976869293703
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "method": "ModernTCN",
+      "seed": 52,
+      "endpoint": 0,
+      "AP": 0.39319232832494255,
+      "AUROC": 0.8764516017420642,
+      "Brier": 0.05704801785637901,
+      "log_loss": 0.19849757072448554
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "method": "ModernTCN",
+      "seed": 52,
+      "endpoint": 1,
+      "AP": 0.4706594496514241,
+      "AUROC": 0.8317244977100979,
+      "Brier": 0.10319258589821388,
+      "log_loss": 0.3332556441846073
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "method": "ModernTCN",
+      "seed": 52,
+      "endpoint": 1,
+      "AP": 0.4423105605412241,
+      "AUROC": 0.8216875325914246,
+      "Brier": 0.10292967762294543,
+      "log_loss": 0.3355026479232245
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "method": "LITEMV",
+      "seed": 48,
+      "endpoint": 0,
+      "AP": 0.4704774125473564,
+      "AUROC": 0.8796195629960842,
+      "Brier": 0.05405771632054694,
+      "log_loss": 0.1945321377380439
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "method": "LITEMV",
+      "seed": 48,
+      "endpoint": 0,
+      "AP": 0.4571187835663107,
+      "AUROC": 0.8895325103275937,
+      "Brier": 0.05406161550593113,
+      "log_loss": 0.19128038548259127
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "method": "LITEMV",
+      "seed": 48,
+      "endpoint": 1,
+      "AP": 0.5092347755253668,
+      "AUROC": 0.8436938854821712,
+      "Brier": 0.09990713223187705,
+      "log_loss": 0.32127690386607916
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "method": "LITEMV",
+      "seed": 48,
+      "endpoint": 1,
+      "AP": 0.4881201987573502,
+      "AUROC": 0.8376899465140363,
+      "Brier": 0.09923716788261801,
+      "log_loss": 0.3215810271335888
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "method": "LITEMV",
+      "seed": 49,
+      "endpoint": 0,
+      "AP": 0.45642282830344455,
+      "AUROC": 0.8840475382766709,
+      "Brier": 0.05476968976940955,
+      "log_loss": 0.18966656585952302
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "method": "LITEMV",
+      "seed": 49,
+      "endpoint": 0,
+      "AP": 0.4575826990743072,
+      "AUROC": 0.8925118200242355,
+      "Brier": 0.05388036619127474,
+      "log_loss": 0.1852142910645744
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "method": "LITEMV",
+      "seed": 49,
+      "endpoint": 1,
+      "AP": 0.5155977264370631,
+      "AUROC": 0.8465645094853111,
+      "Brier": 0.10004408131627274,
+      "log_loss": 0.3206994517454822
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "method": "LITEMV",
+      "seed": 49,
+      "endpoint": 1,
+      "AP": 0.49178448002302666,
+      "AUROC": 0.8403361522450744,
+      "Brier": 0.09997680764888106,
+      "log_loss": 0.32288111303427547
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "method": "LITEMV",
+      "seed": 50,
+      "endpoint": 0,
+      "AP": 0.47885473957810515,
+      "AUROC": 0.8855317044460611,
+      "Brier": 0.05619357333392319,
+      "log_loss": 0.19193781560946063
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "method": "LITEMV",
+      "seed": 50,
+      "endpoint": 0,
+      "AP": 0.4671589137490089,
+      "AUROC": 0.8932970566842169,
+      "Brier": 0.05538770913147362,
+      "log_loss": 0.18814202042462355
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "method": "LITEMV",
+      "seed": 50,
+      "endpoint": 1,
+      "AP": 0.4998865468086985,
+      "AUROC": 0.8442853487852515,
+      "Brier": 0.09929186095413708,
+      "log_loss": 0.3215449340659224
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "method": "LITEMV",
+      "seed": 50,
+      "endpoint": 1,
+      "AP": 0.4695741612427998,
+      "AUROC": 0.8342762066188234,
+      "Brier": 0.0997025789531688,
+      "log_loss": 0.32570183879375464
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "method": "LITEMV",
+      "seed": 51,
+      "endpoint": 0,
+      "AP": 0.4824543954236904,
+      "AUROC": 0.8854383373660418,
+      "Brier": 0.05300017102018571,
+      "log_loss": 0.19005516403870787
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "method": "LITEMV",
+      "seed": 51,
+      "endpoint": 0,
+      "AP": 0.46082571413155266,
+      "AUROC": 0.8909692329500782,
+      "Brier": 0.05355714588995721,
+      "log_loss": 0.18901362640289923
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "method": "LITEMV",
+      "seed": 51,
+      "endpoint": 1,
+      "AP": 0.5014594741327799,
+      "AUROC": 0.8427208642474258,
+      "Brier": 0.10088940263489915,
+      "log_loss": 0.32945147873822694
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "method": "LITEMV",
+      "seed": 51,
+      "endpoint": 1,
+      "AP": 0.48172303548632756,
+      "AUROC": 0.8349504254520813,
+      "Brier": 0.10028018124744034,
+      "log_loss": 0.32953783994968355
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "method": "LITEMV",
+      "seed": 52,
+      "endpoint": 0,
+      "AP": 0.495779292284694,
+      "AUROC": 0.8896245289496701,
+      "Brier": 0.05565709564377825,
+      "log_loss": 0.20094628700505465
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "method": "LITEMV",
+      "seed": 52,
+      "endpoint": 0,
+      "AP": 0.4683933865094619,
+      "AUROC": 0.895126413774566,
+      "Brier": 0.055849218249167665,
+      "log_loss": 0.19896256078226077
+    },
+    {
+      "database": "mimic",
+      "split": "dev",
+      "method": "LITEMV",
+      "seed": 52,
+      "endpoint": 1,
+      "AP": 0.4980692697446154,
+      "AUROC": 0.8428173971567627,
+      "Brier": 0.10117329303517006,
+      "log_loss": 0.32757138690658616
+    },
+    {
+      "database": "mimic",
+      "split": "test",
+      "method": "LITEMV",
+      "seed": 52,
+      "endpoint": 1,
+      "AP": 0.48664920209367574,
+      "AUROC": 0.8385935129032241,
+      "Brier": 0.09910236967641302,
+      "log_loss": 0.32505844359632674
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "CEM-Net",
+      "seed": 48,
+      "endpoint": 0,
+      "AP": 0.4345274169276406,
+      "AUROC": 0.8889426931503712,
+      "Brier": 0.04031374902907988,
+      "log_loss": 0.16616985225954453
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "CEM-Net",
+      "seed": 49,
+      "endpoint": 0,
+      "AP": 0.43163453498355875,
+      "AUROC": 0.8879562047166708,
+      "Brier": 0.03873520243961936,
+      "log_loss": 0.14400070771950974
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "CEM-Net",
+      "seed": 50,
+      "endpoint": 0,
+      "AP": 0.4305670626944776,
+      "AUROC": 0.8879652105801809,
+      "Brier": 0.038471825650916586,
+      "log_loss": 0.14309449462569485
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "CEM-Net",
+      "seed": 51,
+      "endpoint": 0,
+      "AP": 0.43838050277473917,
+      "AUROC": 0.8806309738894617,
+      "Brier": 0.04111318818929556,
+      "log_loss": 0.18157591555830638
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "CEM-Net",
+      "seed": 52,
+      "endpoint": 0,
+      "AP": 0.4320873701231281,
+      "AUROC": 0.8838165094566185,
+      "Brier": 0.04084625580448633,
+      "log_loss": 0.16630012156102986
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "CEM-Net",
+      "seed": 48,
+      "endpoint": 1,
+      "AP": 0.4011181455739765,
+      "AUROC": 0.8151534130329209,
+      "Brier": 0.0867134970608901,
+      "log_loss": 0.29846916652051075
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "CEM-Net",
+      "seed": 49,
+      "endpoint": 1,
+      "AP": 0.3976992920114517,
+      "AUROC": 0.8180437483424957,
+      "Brier": 0.08433232606199675,
+      "log_loss": 0.28523372996086455
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "CEM-Net",
+      "seed": 50,
+      "endpoint": 1,
+      "AP": 0.3987553796528904,
+      "AUROC": 0.817579107412189,
+      "Brier": 0.08553667137259155,
+      "log_loss": 0.292384313493291
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "CEM-Net",
+      "seed": 51,
+      "endpoint": 1,
+      "AP": 0.4026621849099469,
+      "AUROC": 0.8161123510120918,
+      "Brier": 0.08583157230753978,
+      "log_loss": 0.29443844278660913
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "CEM-Net",
+      "seed": 52,
+      "endpoint": 1,
+      "AP": 0.4013674113319516,
+      "AUROC": 0.8133567181107529,
+      "Brier": 0.08615298621075104,
+      "log_loss": 0.29502523057799396
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "CEM-Net",
+      "seed": 48,
+      "endpoint": 0,
+      "AP": 0.3935388754828638,
+      "AUROC": 0.8751738647414767,
+      "Brier": 0.04056108514868051,
+      "log_loss": 0.17268539626451573
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "CEM-Net",
+      "seed": 49,
+      "endpoint": 0,
+      "AP": 0.3979448476688867,
+      "AUROC": 0.8827160075296336,
+      "Brier": 0.038952201347990226,
+      "log_loss": 0.14552454819822758
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "CEM-Net",
+      "seed": 50,
+      "endpoint": 0,
+      "AP": 0.3983095568340663,
+      "AUROC": 0.8829265934164322,
+      "Brier": 0.03878130288573077,
+      "log_loss": 0.1446221546758685
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "CEM-Net",
+      "seed": 51,
+      "endpoint": 0,
+      "AP": 0.38275817952568925,
+      "AUROC": 0.868939130922926,
+      "Brier": 0.041992711069267497,
+      "log_loss": 0.1899478412726604
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "CEM-Net",
+      "seed": 52,
+      "endpoint": 0,
+      "AP": 0.388227778199175,
+      "AUROC": 0.8753998023024137,
+      "Brier": 0.04129917333237491,
+      "log_loss": 0.1704759462624306
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "CEM-Net",
+      "seed": 48,
+      "endpoint": 1,
+      "AP": 0.3922187567407075,
+      "AUROC": 0.8142066275919412,
+      "Brier": 0.08399751562670088,
+      "log_loss": 0.29102426989111024
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "CEM-Net",
+      "seed": 49,
+      "endpoint": 1,
+      "AP": 0.3930729541555812,
+      "AUROC": 0.8177370414532489,
+      "Brier": 0.08174250010622207,
+      "log_loss": 0.2784049915049171
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "CEM-Net",
+      "seed": 50,
+      "endpoint": 1,
+      "AP": 0.3944413493286769,
+      "AUROC": 0.8161091838361281,
+      "Brier": 0.0826183478222263,
+      "log_loss": 0.28499862522323516
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "CEM-Net",
+      "seed": 51,
+      "endpoint": 1,
+      "AP": 0.39095753143033796,
+      "AUROC": 0.8161957677011936,
+      "Brier": 0.08342039863003545,
+      "log_loss": 0.2874279717863657
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "CEM-Net",
+      "seed": 52,
+      "endpoint": 1,
+      "AP": 0.3954888270832543,
+      "AUROC": 0.8136070904421275,
+      "Brier": 0.08336804555214196,
+      "log_loss": 0.28737602370430215
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "TCN",
+      "seed": 48,
+      "endpoint": 0,
+      "AP": 0.3328728060941822,
+      "AUROC": 0.828287856031804,
+      "Brier": 0.04275463882073493,
+      "log_loss": 0.16721494135208634
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "TCN",
+      "seed": 48,
+      "endpoint": 0,
+      "AP": 0.30153070456658726,
+      "AUROC": 0.823966423742091,
+      "Brier": 0.04285042028724096,
+      "log_loss": 0.16684404515759216
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "TCN",
+      "seed": 48,
+      "endpoint": 1,
+      "AP": 0.34148931830550866,
+      "AUROC": 0.7862763925252038,
+      "Brier": 0.0890988283063353,
+      "log_loss": 0.3082707890167907
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "TCN",
+      "seed": 48,
+      "endpoint": 1,
+      "AP": 0.3359487225971015,
+      "AUROC": 0.7855356373006677,
+      "Brier": 0.08673462596412192,
+      "log_loss": 0.3023369664294382
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "TCN",
+      "seed": 49,
+      "endpoint": 0,
+      "AP": 0.3328553802223352,
+      "AUROC": 0.8321237765880801,
+      "Brier": 0.04275747370203672,
+      "log_loss": 0.18009443289721971
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "TCN",
+      "seed": 49,
+      "endpoint": 0,
+      "AP": 0.30226024590002615,
+      "AUROC": 0.8259594026531838,
+      "Brier": 0.042726753029528546,
+      "log_loss": 0.1804534775474751
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "TCN",
+      "seed": 49,
+      "endpoint": 1,
+      "AP": 0.33497764948286135,
+      "AUROC": 0.7809723218650131,
+      "Brier": 0.09021299523027983,
+      "log_loss": 0.3103251148294521
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "TCN",
+      "seed": 49,
+      "endpoint": 1,
+      "AP": 0.335432486044711,
+      "AUROC": 0.7810521974491871,
+      "Brier": 0.08735161081997597,
+      "log_loss": 0.30291936982435663
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "TCN",
+      "seed": 50,
+      "endpoint": 0,
+      "AP": 0.3391869715732548,
+      "AUROC": 0.8419244652826271,
+      "Brier": 0.04257639722890811,
+      "log_loss": 0.16889617930491668
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "TCN",
+      "seed": 50,
+      "endpoint": 0,
+      "AP": 0.31491660808411776,
+      "AUROC": 0.834300543085088,
+      "Brier": 0.0427194041367936,
+      "log_loss": 0.16994808831917066
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "TCN",
+      "seed": 50,
+      "endpoint": 1,
+      "AP": 0.3374428561909126,
+      "AUROC": 0.7877868377283096,
+      "Brier": 0.08918976776347545,
+      "log_loss": 0.3091130098237766
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "TCN",
+      "seed": 50,
+      "endpoint": 1,
+      "AP": 0.3385925047668725,
+      "AUROC": 0.7874755353664731,
+      "Brier": 0.08618888976724881,
+      "log_loss": 0.3029397338216514
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "TCN",
+      "seed": 51,
+      "endpoint": 0,
+      "AP": 0.33416058775174673,
+      "AUROC": 0.8393320466494494,
+      "Brier": 0.04240452209265356,
+      "log_loss": 0.17324511631311248
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "TCN",
+      "seed": 51,
+      "endpoint": 0,
+      "AP": 0.3036614483844219,
+      "AUROC": 0.8326017330426474,
+      "Brier": 0.04249592450409373,
+      "log_loss": 0.17403492024860343
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "TCN",
+      "seed": 51,
+      "endpoint": 1,
+      "AP": 0.3329797620266616,
+      "AUROC": 0.7807472023826703,
+      "Brier": 0.08994641387807012,
+      "log_loss": 0.31774622214367
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "TCN",
+      "seed": 51,
+      "endpoint": 1,
+      "AP": 0.32920881058939877,
+      "AUROC": 0.7790170387331982,
+      "Brier": 0.08734660886066636,
+      "log_loss": 0.31168904833934236
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "TCN",
+      "seed": 52,
+      "endpoint": 0,
+      "AP": 0.3399315909237342,
+      "AUROC": 0.8419346257440228,
+      "Brier": 0.04350459184862123,
+      "log_loss": 0.17346868931540826
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "TCN",
+      "seed": 52,
+      "endpoint": 0,
+      "AP": 0.2952777237607448,
+      "AUROC": 0.8324868397514386,
+      "Brier": 0.04344694551648986,
+      "log_loss": 0.174989773261136
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "TCN",
+      "seed": 52,
+      "endpoint": 1,
+      "AP": 0.34057692431276154,
+      "AUROC": 0.7904678190208664,
+      "Brier": 0.08808293531298962,
+      "log_loss": 0.3002180408049073
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "TCN",
+      "seed": 52,
+      "endpoint": 1,
+      "AP": 0.33428459979582176,
+      "AUROC": 0.7881227028413785,
+      "Brier": 0.0858986782001839,
+      "log_loss": 0.2953855736457906
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "ModernTCN",
+      "seed": 48,
+      "endpoint": 0,
+      "AP": 0.32400950954984825,
+      "AUROC": 0.853324502968702,
+      "Brier": 0.043574975416811705,
+      "log_loss": 0.16731342157063697
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "ModernTCN",
+      "seed": 48,
+      "endpoint": 0,
+      "AP": 0.2926740071029272,
+      "AUROC": 0.8514087033718436,
+      "Brier": 0.04395841787545651,
+      "log_loss": 0.16843944168746938
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "ModernTCN",
+      "seed": 48,
+      "endpoint": 1,
+      "AP": 0.3247756767524378,
+      "AUROC": 0.7862382997522293,
+      "Brier": 0.09215064604450966,
+      "log_loss": 0.3247258543693239
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "ModernTCN",
+      "seed": 48,
+      "endpoint": 1,
+      "AP": 0.31873033124554306,
+      "AUROC": 0.7827267654608314,
+      "Brier": 0.08920901251858292,
+      "log_loss": 0.31590355033885853
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "ModernTCN",
+      "seed": 49,
+      "endpoint": 0,
+      "AP": 0.31699677196158427,
+      "AUROC": 0.8240104172439656,
+      "Brier": 0.04449434309042214,
+      "log_loss": 0.19667138242053628
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "ModernTCN",
+      "seed": 49,
+      "endpoint": 0,
+      "AP": 0.2695012649895993,
+      "AUROC": 0.8243327617635128,
+      "Brier": 0.04647365357279136,
+      "log_loss": 0.19969599560326134
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "ModernTCN",
+      "seed": 49,
+      "endpoint": 1,
+      "AP": 0.3392879930277731,
+      "AUROC": 0.7808525327347872,
+      "Brier": 0.09194854563146442,
+      "log_loss": 0.32612121284328277
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "ModernTCN",
+      "seed": 49,
+      "endpoint": 1,
+      "AP": 0.32941868512495964,
+      "AUROC": 0.7851879992187214,
+      "Brier": 0.08916426220697066,
+      "log_loss": 0.31418746815892584
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "ModernTCN",
+      "seed": 50,
+      "endpoint": 0,
+      "AP": 0.33039987230631257,
+      "AUROC": 0.8529601118759168,
+      "Brier": 0.042774109124442156,
+      "log_loss": 0.16543375483170145
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "ModernTCN",
+      "seed": 50,
+      "endpoint": 0,
+      "AP": 0.2972379445779165,
+      "AUROC": 0.8438753985291645,
+      "Brier": 0.04316776797327618,
+      "log_loss": 0.16827263150560234
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "ModernTCN",
+      "seed": 50,
+      "endpoint": 1,
+      "AP": 0.3262987232691262,
+      "AUROC": 0.7758744805350192,
+      "Brier": 0.09577355625941304,
+      "log_loss": 0.3230520304454708
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "ModernTCN",
+      "seed": 50,
+      "endpoint": 1,
+      "AP": 0.3154113916177639,
+      "AUROC": 0.7758997546508377,
+      "Brier": 0.09359120238459102,
+      "log_loss": 0.3164573690604825
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "ModernTCN",
+      "seed": 51,
+      "endpoint": 0,
+      "AP": 0.30144176111515675,
+      "AUROC": 0.8372569455990423,
+      "Brier": 0.044062821799367796,
+      "log_loss": 0.17634111257778295
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "ModernTCN",
+      "seed": 51,
+      "endpoint": 0,
+      "AP": 0.2762400467921357,
+      "AUROC": 0.8307157421247985,
+      "Brier": 0.04390812181773726,
+      "log_loss": 0.17694706671696905
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "ModernTCN",
+      "seed": 51,
+      "endpoint": 1,
+      "AP": 0.33545321299392455,
+      "AUROC": 0.7768057508327006,
+      "Brier": 0.09946235830583518,
+      "log_loss": 0.3324429191328976
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "ModernTCN",
+      "seed": 51,
+      "endpoint": 1,
+      "AP": 0.3186194334776964,
+      "AUROC": 0.7759491365237311,
+      "Brier": 0.09780042758937804,
+      "log_loss": 0.32858022845306434
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "ModernTCN",
+      "seed": 52,
+      "endpoint": 0,
+      "AP": 0.3000696422892714,
+      "AUROC": 0.8451072298148579,
+      "Brier": 0.05268636255533055,
+      "log_loss": 0.18958744059118468
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "ModernTCN",
+      "seed": 52,
+      "endpoint": 0,
+      "AP": 0.2770578005828776,
+      "AUROC": 0.8364617242349018,
+      "Brier": 0.05311900913756614,
+      "log_loss": 0.1916481598162406
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "ModernTCN",
+      "seed": 52,
+      "endpoint": 1,
+      "AP": 0.33829615718681416,
+      "AUROC": 0.7775551359511467,
+      "Brier": 0.09087076707575763,
+      "log_loss": 0.30790100496153294
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "ModernTCN",
+      "seed": 52,
+      "endpoint": 1,
+      "AP": 0.3157012586241471,
+      "AUROC": 0.7735506125928044,
+      "Brier": 0.09008771493292564,
+      "log_loss": 0.30562227098835326
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "LITEMV",
+      "seed": 48,
+      "endpoint": 0,
+      "AP": 0.34864872183090884,
+      "AUROC": 0.8611581032450668,
+      "Brier": 0.04117490831752377,
+      "log_loss": 0.154616723258202
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "LITEMV",
+      "seed": 48,
+      "endpoint": 0,
+      "AP": 0.32306103099022293,
+      "AUROC": 0.8580595756282091,
+      "Brier": 0.04123682487036929,
+      "log_loss": 0.15457666053157415
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "LITEMV",
+      "seed": 48,
+      "endpoint": 1,
+      "AP": 0.3469390159635113,
+      "AUROC": 0.8013323266918019,
+      "Brier": 0.08757905948137333,
+      "log_loss": 0.2949490235704835
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "LITEMV",
+      "seed": 48,
+      "endpoint": 1,
+      "AP": 0.34227218952266053,
+      "AUROC": 0.7972923131632057,
+      "Brier": 0.08497301542274024,
+      "log_loss": 0.2891267638824034
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "LITEMV",
+      "seed": 49,
+      "endpoint": 0,
+      "AP": 0.36061734371936927,
+      "AUROC": 0.8671821022548835,
+      "Brier": 0.04101100547864271,
+      "log_loss": 0.15259758740034618
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "LITEMV",
+      "seed": 49,
+      "endpoint": 0,
+      "AP": 0.3269559649046096,
+      "AUROC": 0.8605771317553808,
+      "Brier": 0.04101451876082551,
+      "log_loss": 0.153143867369365
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "LITEMV",
+      "seed": 49,
+      "endpoint": 1,
+      "AP": 0.345380788803502,
+      "AUROC": 0.7855904953617148,
+      "Brier": 0.08967408571334183,
+      "log_loss": 0.3113500782407163
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "LITEMV",
+      "seed": 49,
+      "endpoint": 1,
+      "AP": 0.34570744528216646,
+      "AUROC": 0.7837137700064661,
+      "Brier": 0.08656547277178259,
+      "log_loss": 0.30347091346468175
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "LITEMV",
+      "seed": 50,
+      "endpoint": 0,
+      "AP": 0.3563869327182421,
+      "AUROC": 0.8566982957211526,
+      "Brier": 0.045921548429993804,
+      "log_loss": 0.1689649887400421
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "LITEMV",
+      "seed": 50,
+      "endpoint": 0,
+      "AP": 0.3149385626123073,
+      "AUROC": 0.849015692697441,
+      "Brier": 0.04680749430374821,
+      "log_loss": 0.17104726597891648
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "LITEMV",
+      "seed": 50,
+      "endpoint": 1,
+      "AP": 0.3544191119745629,
+      "AUROC": 0.7926519751088584,
+      "Brier": 0.08821554360261788,
+      "log_loss": 0.3011613721989553
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "LITEMV",
+      "seed": 50,
+      "endpoint": 1,
+      "AP": 0.34671552930401817,
+      "AUROC": 0.79372575706974,
+      "Brier": 0.08577149274652504,
+      "log_loss": 0.2944491857778933
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "LITEMV",
+      "seed": 51,
+      "endpoint": 0,
+      "AP": 0.34462031814451394,
+      "AUROC": 0.843056663969526,
+      "Brier": 0.04213093829626303,
+      "log_loss": 0.16291661203669436
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "LITEMV",
+      "seed": 51,
+      "endpoint": 0,
+      "AP": 0.3149585170666854,
+      "AUROC": 0.848212416718278,
+      "Brier": 0.04254481204390082,
+      "log_loss": 0.16127776333011823
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "LITEMV",
+      "seed": 51,
+      "endpoint": 1,
+      "AP": 0.34663468542091624,
+      "AUROC": 0.7973259952809275,
+      "Brier": 0.08809565001938713,
+      "log_loss": 0.2979388325636159
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "LITEMV",
+      "seed": 51,
+      "endpoint": 1,
+      "AP": 0.3395450756381141,
+      "AUROC": 0.7946026643249895,
+      "Brier": 0.08560333632006252,
+      "log_loss": 0.292392268432035
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "LITEMV",
+      "seed": 52,
+      "endpoint": 0,
+      "AP": 0.3365945371792775,
+      "AUROC": 0.8548406054526578,
+      "Brier": 0.04160122844790204,
+      "log_loss": 0.15665503279159282
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "LITEMV",
+      "seed": 52,
+      "endpoint": 0,
+      "AP": 0.31110453811559446,
+      "AUROC": 0.8500285627001749,
+      "Brier": 0.041487781536919524,
+      "log_loss": 0.15644644873857252
+    },
+    {
+      "database": "eicu",
+      "split": "dev",
+      "method": "LITEMV",
+      "seed": 52,
+      "endpoint": 1,
+      "AP": 0.3510943438183609,
+      "AUROC": 0.795897615716243,
+      "Brier": 0.08751646393528058,
+      "log_loss": 0.2980071320722457
+    },
+    {
+      "database": "eicu",
+      "split": "test",
+      "method": "LITEMV",
+      "seed": 52,
+      "endpoint": 1,
+      "AP": 0.34381648635992923,
+      "AUROC": 0.7961065005826473,
+      "Brier": 0.08530395436467558,
+      "log_loss": 0.2919929157062267
+    }
+  ],
+  "fit_audits": [
+    {
+      "database": "mimiciii",
+      "id": "TCN_t0_s48",
+      "epochs": 14,
+      "best_epoch": 4,
+      "fit_seconds": 2908.7290856838226,
+      "parameters": 1014913,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "721f27c0aec54f8ed610fd08ed72a547ffadc4dba0cb268eaa7c5ffd30102ed1",
+      "peak_reserved_mib": 100.0
+    },
+    {
+      "database": "mimiciii",
+      "id": "TCN_t1_s48",
+      "epochs": 11,
+      "best_epoch": 1,
+      "fit_seconds": 2393.7901928424835,
+      "parameters": 1014913,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "fcc0a8b44338f033333952386607e39b3f9a7c6a026a993d3fd7afb4835ad61a",
+      "peak_reserved_mib": 100.0
+    },
+    {
+      "database": "mimiciii",
+      "id": "TCN_t0_s49",
+      "epochs": 12,
+      "best_epoch": 2,
+      "fit_seconds": 2801.3386018276215,
+      "parameters": 1014913,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "f32a7c2ef6a57172809500b15d94e9a5ea1d5d735b4a7aae985f1e3e6f72ee30",
+      "peak_reserved_mib": 100.0
+    },
+    {
+      "database": "mimiciii",
+      "id": "TCN_t1_s49",
+      "epochs": 11,
+      "best_epoch": 1,
+      "fit_seconds": 2294.164745092392,
+      "parameters": 1014913,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "2a17c8c0ea79ce9080b3260ba51745ecdaa14f6e52cee84fdb478e15f47ad49f",
+      "peak_reserved_mib": 100.0
+    },
+    {
+      "database": "mimiciii",
+      "id": "TCN_t0_s50",
+      "epochs": 14,
+      "best_epoch": 4,
+      "fit_seconds": 3230.7426714897156,
+      "parameters": 1014913,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "86522f465db1f1dc38baca5d4fa4b86c899178d314aa3d8de064f157c7452c8b",
+      "peak_reserved_mib": 100.0
+    },
+    {
+      "database": "mimiciii",
+      "id": "TCN_t1_s50",
+      "epochs": 11,
+      "best_epoch": 1,
+      "fit_seconds": 2296.82368850708,
+      "parameters": 1014913,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "852ec82f0347cba0984db5b249f74b706cb4b0a613587d6f7f5b32821b31ab7a",
+      "peak_reserved_mib": 100.0
+    },
+    {
+      "database": "mimiciii",
+      "id": "TCN_t0_s51",
+      "epochs": 13,
+      "best_epoch": 3,
+      "fit_seconds": 3071.4891583919525,
+      "parameters": 1014913,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "ccc46e065d84b61b9118a83ae9ade476274044b7ea6af3684d81cdf7e69fcd95",
+      "peak_reserved_mib": 100.0
+    },
+    {
+      "database": "mimiciii",
+      "id": "TCN_t1_s51",
+      "epochs": 13,
+      "best_epoch": 3,
+      "fit_seconds": 2814.875814676285,
+      "parameters": 1014913,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "170be46f40f0264d87ea070002d1f337f6013cd6d31ae149f8ac6bd66f7e0f74",
+      "peak_reserved_mib": 100.0
+    },
+    {
+      "database": "mimiciii",
+      "id": "TCN_t0_s52",
+      "epochs": 13,
+      "best_epoch": 3,
+      "fit_seconds": 2711.7090950012207,
+      "parameters": 1014913,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "bb618026aaee73cedffcb58bb67783d88a4ff744eb159ec2deb6831817c2aafd",
+      "peak_reserved_mib": 100.0
+    },
+    {
+      "database": "mimiciii",
+      "id": "TCN_t1_s52",
+      "epochs": 12,
+      "best_epoch": 2,
+      "fit_seconds": 2832.278759241104,
+      "parameters": 1014913,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "b44021b39fd1d4ee78568b7ab126267d27b917c27ba3abac7bb4dc61d0d608a2",
+      "peak_reserved_mib": 100.0
+    },
+    {
+      "database": "mimiciii",
+      "id": "ModernTCN_t0_s48",
+      "epochs": 12,
+      "best_epoch": 2,
+      "fit_seconds": 386.2904407978058,
+      "parameters": 12988579,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "1bb397b20e58ca944463d44426cfecdb2c16953ee4139fa0e112c97d0b5f08e9",
+      "peak_reserved_mib": 544.0
+    },
+    {
+      "database": "mimiciii",
+      "id": "ModernTCN_t1_s48",
+      "epochs": 12,
+      "best_epoch": 2,
+      "fit_seconds": 379.61670899391174,
+      "parameters": 12988579,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "813579c324cf52208379d06ad89ceea2c2c44df1302bf085bad098b8a77884c1",
+      "peak_reserved_mib": 544.0
+    },
+    {
+      "database": "mimiciii",
+      "id": "ModernTCN_t0_s49",
+      "epochs": 13,
+      "best_epoch": 3,
+      "fit_seconds": 422.75395607948303,
+      "parameters": 12988579,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "3f25a727cb4b3dcc07887daa82d647d2c320102cbe9f01209b1f2581b8f4ad54",
+      "peak_reserved_mib": 544.0
+    },
+    {
+      "database": "mimiciii",
+      "id": "ModernTCN_t1_s49",
+      "epochs": 11,
+      "best_epoch": 1,
+      "fit_seconds": 350.2450997829437,
+      "parameters": 12988579,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "013c31c42a74d49caf1637d0961eaa3d401e6e1bd3c10e5ac0c8c3b32168b82f",
+      "peak_reserved_mib": 544.0
+    },
+    {
+      "database": "mimiciii",
+      "id": "ModernTCN_t0_s50",
+      "epochs": 12,
+      "best_epoch": 2,
+      "fit_seconds": 265.190313577652,
+      "parameters": 12988579,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "8a1db46f63a814166fd9a9de45760573f72e8cb9d9c1914eda5d6719ee6342eb",
+      "peak_reserved_mib": 544.0
+    },
+    {
+      "database": "mimiciii",
+      "id": "ModernTCN_t1_s50",
+      "epochs": 12,
+      "best_epoch": 2,
+      "fit_seconds": 269.9221181869507,
+      "parameters": 12988579,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "70918f558d2d1c52fd1466fe5673f69b3f4e3d143f6c84a8b3630b6da34d4d13",
+      "peak_reserved_mib": 544.0
+    },
+    {
+      "database": "mimiciii",
+      "id": "ModernTCN_t0_s51",
+      "epochs": 12,
+      "best_epoch": 2,
+      "fit_seconds": 279.52117919921875,
+      "parameters": 12988579,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "69f84adff3014b0cb1d738b22aec139845edf4bea81754f8dc2c179b16301e88",
+      "peak_reserved_mib": 544.0
+    },
+    {
+      "database": "mimiciii",
+      "id": "ModernTCN_t1_s51",
+      "epochs": 11,
+      "best_epoch": 1,
+      "fit_seconds": 247.38143229484558,
+      "parameters": 12988579,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "45da735b8acbe6c140fbec2c6da3064fc96c4402691d6a6db7f2c1430d03a9a7",
+      "peak_reserved_mib": 544.0
+    },
+    {
+      "database": "mimiciii",
+      "id": "ModernTCN_t0_s52",
+      "epochs": 11,
+      "best_epoch": 1,
+      "fit_seconds": 244.68409752845764,
+      "parameters": 12988579,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "c70254f585d7afe0358f01ea575ba8342d9fa5665ba7e8c505ba57a372a08a4e",
+      "peak_reserved_mib": 544.0
+    },
+    {
+      "database": "mimiciii",
+      "id": "ModernTCN_t1_s52",
+      "epochs": 11,
+      "best_epoch": 1,
+      "fit_seconds": 241.36578583717346,
+      "parameters": 12988579,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "abb7f15542a460da74e056604446ed7b620cabcfcd1370674f2d4c5c65be1196",
+      "peak_reserved_mib": 544.0
+    },
+    {
+      "database": "mimiciii",
+      "id": "LITEMV_t0_s48",
+      "epochs": 1500,
+      "best_epoch": 2,
+      "fit_seconds": 20926.956625699997,
+      "parameters": 660034,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "501726e765661e5127e1dca289a49b5a27cebd940d0863f9a016f60b2143e7fa",
+      "peak_reserved_mib": 486.0
+    },
+    {
+      "database": "mimiciii",
+      "id": "LITEMV_t1_s48",
+      "epochs": 1500,
+      "best_epoch": 2,
+      "fit_seconds": 21233.863908290863,
+      "parameters": 660034,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "cfbc31aed18bb9945a6b4fc37d4dcf2300dd43dec64ac772d5b42a4fdf61c2be",
+      "peak_reserved_mib": 486.0
+    },
+    {
+      "database": "mimiciii",
+      "id": "LITEMV_t0_s49",
+      "epochs": 1500,
+      "best_epoch": 2,
+      "fit_seconds": 21111.982989788055,
+      "parameters": 660034,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "0a52052d69310947501b56b4748496dac69785adffaa9b1e25c5ad2ba93db353",
+      "peak_reserved_mib": 486.0
+    },
+    {
+      "database": "mimiciii",
+      "id": "LITEMV_t1_s49",
+      "epochs": 1500,
+      "best_epoch": 3,
+      "fit_seconds": 18021.533286571503,
+      "parameters": 660034,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "3d1d5743b39aeca0af13028e302abb753bdd42be52e0617663dfa9cfb7bc5e67",
+      "peak_reserved_mib": 486.0
+    },
+    {
+      "database": "mimiciii",
+      "id": "LITEMV_t0_s50",
+      "epochs": 1500,
+      "best_epoch": 2,
+      "fit_seconds": 20650.986805438995,
+      "parameters": 660034,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "3400e85ae79ce69f9c69f4786c98c5d67e02ff32545a5dda19d21e230199e9bb",
+      "peak_reserved_mib": 486.0
+    },
+    {
+      "database": "mimiciii",
+      "id": "LITEMV_t1_s50",
+      "epochs": 1500,
+      "best_epoch": 1,
+      "fit_seconds": 16947.413358926773,
+      "parameters": 660034,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "74088982ed012ae4febd9bffc17bd18cb113d8cd4e5556c3e977c7d1665dac54",
+      "peak_reserved_mib": 486.0
+    },
+    {
+      "database": "mimiciii",
+      "id": "LITEMV_t0_s51",
+      "epochs": 1500,
+      "best_epoch": 3,
+      "fit_seconds": 21095.83481669426,
+      "parameters": 660034,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "c9b36a06353c372ba77d2aa4bb86df22cf8c8484b78a2a0287fe335114fdb9b0",
+      "peak_reserved_mib": 486.0
+    },
+    {
+      "database": "mimiciii",
+      "id": "LITEMV_t1_s51",
+      "epochs": 1500,
+      "best_epoch": 1,
+      "fit_seconds": 19934.276059389114,
+      "parameters": 660034,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "49fbc66c191e29f2f44b9ad3ee1c686bcef93d47f00e5ee6aca377a013353deb",
+      "peak_reserved_mib": 486.0
+    },
+    {
+      "database": "mimiciii",
+      "id": "LITEMV_t0_s52",
+      "epochs": 1500,
+      "best_epoch": 2,
+      "fit_seconds": 17492.136048555374,
+      "parameters": 660034,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "886f05e9b212dc7af40255ef3d3531abee65163ca1aafa753a6372a210960d4c",
+      "peak_reserved_mib": 486.0
+    },
+    {
+      "database": "mimiciii",
+      "id": "LITEMV_t1_s52",
+      "epochs": 1500,
+      "best_epoch": 1,
+      "fit_seconds": 17827.92312645912,
+      "parameters": 660034,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "d1a754e1ebdb9d8e0b46f3204aef408576e8b4f589c1c287fa88a621191600ce",
+      "peak_reserved_mib": 486.0
+    },
+    {
+      "database": "mimic",
+      "id": "TCN_t0_s48",
+      "epochs": 14,
+      "best_epoch": 4,
+      "fit_seconds": 5563.515955686569,
+      "parameters": 977665,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "53c0903ad48dc49f752893e03c3bbefb7f42c202cd259d73d9ceee08ead3b436",
+      "peak_reserved_mib": 100.0
+    },
+    {
+      "database": "mimic",
+      "id": "TCN_t1_s48",
+      "epochs": 13,
+      "best_epoch": 3,
+      "fit_seconds": 5436.55046415329,
+      "parameters": 977665,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "678564023caa3fa8bd884b3d9a1133e6efb795885dbf9a6c8cb6280bbb19c7f9",
+      "peak_reserved_mib": 100.0
+    },
+    {
+      "database": "mimic",
+      "id": "TCN_t0_s49",
+      "epochs": 14,
+      "best_epoch": 4,
+      "fit_seconds": 5366.266026735306,
+      "parameters": 977665,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "a3bc5f954a6130db0dedb634db13d79a414dafed41a1810a6452f8ce8b456906",
+      "peak_reserved_mib": 100.0
+    },
+    {
+      "database": "mimic",
+      "id": "TCN_t1_s49",
+      "epochs": 12,
+      "best_epoch": 2,
+      "fit_seconds": 4239.236288547516,
+      "parameters": 977665,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "821ddd42593a260b93d33fb58ec1a7c5e88e90b9fc6d1e0450d8dc9213be703b",
+      "peak_reserved_mib": 100.0
+    },
+    {
+      "database": "mimic",
+      "id": "TCN_t0_s50",
+      "epochs": 14,
+      "best_epoch": 4,
+      "fit_seconds": 5795.196385145187,
+      "parameters": 977665,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "0e4f6934e6d5342dc8b430dc5b9e6b3d1c30026c0868d4b3ee12cab1d3956d44",
+      "peak_reserved_mib": 100.0
+    },
+    {
+      "database": "mimic",
+      "id": "TCN_t1_s50",
+      "epochs": 13,
+      "best_epoch": 3,
+      "fit_seconds": 4876.001150369644,
+      "parameters": 977665,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "3458f2fa59feeeca61cff59224130d8ff0688b838cd1d43ce3bff96f9a66d982",
+      "peak_reserved_mib": 100.0
+    },
+    {
+      "database": "mimic",
+      "id": "TCN_t0_s51",
+      "epochs": 14,
+      "best_epoch": 4,
+      "fit_seconds": 5798.614273309708,
+      "parameters": 977665,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "c66431dba3af9e4c2568ef2f8e6543e54d3620f7e0247975ba05ef017713cbd5",
+      "peak_reserved_mib": 100.0
+    },
+    {
+      "database": "mimic",
+      "id": "TCN_t1_s51",
+      "epochs": 14,
+      "best_epoch": 4,
+      "fit_seconds": 4795.688732147217,
+      "parameters": 977665,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "b3cc0c813166d72b2309379082cd5658b03c399d9e37b4519f6ed4e27f20c501",
+      "peak_reserved_mib": 100.0
+    },
+    {
+      "database": "mimic",
+      "id": "TCN_t0_s52",
+      "epochs": 13,
+      "best_epoch": 3,
+      "fit_seconds": 4615.814752817154,
+      "parameters": 977665,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "256416dc2557fbf5fd93da051df75ee44a5b12ec1e97f3bdc3e3eac9028cf6ad",
+      "peak_reserved_mib": 100.0
+    },
+    {
+      "database": "mimic",
+      "id": "TCN_t1_s52",
+      "epochs": 12,
+      "best_epoch": 2,
+      "fit_seconds": 4519.093305826187,
+      "parameters": 977665,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "17cb268c4bf5d2a88cd83212d15c7656a7b000436719f640e97944750c224e8a",
+      "peak_reserved_mib": 100.0
+    },
+    {
+      "database": "mimic",
+      "id": "ModernTCN_t0_s48",
+      "epochs": 11,
+      "best_epoch": 1,
+      "fit_seconds": 479.92692708969116,
+      "parameters": 12951331,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "33a22b8d76cab1c6863d7bad61e540c17f69407c2fdc15910d360aa1adfc6019",
+      "peak_reserved_mib": 544.0
+    },
+    {
+      "database": "mimic",
+      "id": "ModernTCN_t1_s48",
+      "epochs": 12,
+      "best_epoch": 2,
+      "fit_seconds": 626.985434293747,
+      "parameters": 12951331,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "73cb21062b8bbfba68e7693d9f17ca98df5eb8df440d7c22e645edba17916651",
+      "peak_reserved_mib": 544.0
+    },
+    {
+      "database": "mimic",
+      "id": "ModernTCN_t0_s49",
+      "epochs": 12,
+      "best_epoch": 2,
+      "fit_seconds": 618.5586395263672,
+      "parameters": 12951331,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "4591873a866001e67572ea91a7551f1b9720a7c3f6aa3c1294d058f91fcf48a5",
+      "peak_reserved_mib": 544.0
+    },
+    {
+      "database": "mimic",
+      "id": "ModernTCN_t1_s49",
+      "epochs": 12,
+      "best_epoch": 2,
+      "fit_seconds": 475.47439646720886,
+      "parameters": 12951331,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "3106d35442a25ade7b574513d4d37a5c63cbeb9ed51ae1c18561bdc56c0e2b5d",
+      "peak_reserved_mib": 544.0
+    },
+    {
+      "database": "mimic",
+      "id": "ModernTCN_t0_s50",
+      "epochs": 12,
+      "best_epoch": 2,
+      "fit_seconds": 629.7030372619629,
+      "parameters": 12951331,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "95dcd46947be2c47d294a6ffcc8f207180ef39be2a32766880e53826e8589f4c",
+      "peak_reserved_mib": 544.0
+    },
+    {
+      "database": "mimic",
+      "id": "ModernTCN_t1_s50",
+      "epochs": 12,
+      "best_epoch": 2,
+      "fit_seconds": 628.0780775547028,
+      "parameters": 12951331,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "c4f366c3335c7091ee197b5d4cd6bbca410dc3755e9b5d8397f8ab424ae18207",
+      "peak_reserved_mib": 544.0
+    },
+    {
+      "database": "mimic",
+      "id": "ModernTCN_t0_s51",
+      "epochs": 12,
+      "best_epoch": 2,
+      "fit_seconds": 627.5630753040314,
+      "parameters": 12951331,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "1a0955d065280e29e0153227d89c0b9e6fb2f537821fce18c455f343aba9c75a",
+      "peak_reserved_mib": 544.0
+    },
+    {
+      "database": "mimic",
+      "id": "ModernTCN_t1_s51",
+      "epochs": 12,
+      "best_epoch": 2,
+      "fit_seconds": 630.9968905448914,
+      "parameters": 12951331,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "67a9a2339f2fd3f5d8bef61c5eae1d3e0e9f075334f68664ef4389f27d62ad62",
+      "peak_reserved_mib": 544.0
+    },
+    {
+      "database": "mimic",
+      "id": "ModernTCN_t0_s52",
+      "epochs": 12,
+      "best_epoch": 2,
+      "fit_seconds": 767.5995290279388,
+      "parameters": 12951331,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "883a5345c06bd307ea7942c0433b939051b40ae1cfe8d5943a2574d843f0016d",
+      "peak_reserved_mib": 544.0
+    },
+    {
+      "database": "mimic",
+      "id": "ModernTCN_t1_s52",
+      "epochs": 12,
+      "best_epoch": 2,
+      "fit_seconds": 767.767725944519,
+      "parameters": 12951331,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "e5bab4d94c411fe46d0c9224900707485597c3d03ad863d19fb4517176f99343",
+      "peak_reserved_mib": 544.0
+    },
+    {
+      "database": "mimic",
+      "id": "LITEMV_t0_s48",
+      "epochs": 1500,
+      "best_epoch": 1,
+      "fit_seconds": 29719.26636862755,
+      "parameters": 622786,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "8a5e4828920c6862769b715e5123115146dbf1cf3a1d87b80a6d686b64fe554e",
+      "peak_reserved_mib": 482.0
+    },
+    {
+      "database": "mimic",
+      "id": "LITEMV_t1_s48",
+      "epochs": 1500,
+      "best_epoch": 2,
+      "fit_seconds": 34643.348985910416,
+      "parameters": 622786,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "d82d1156fedcef3b166c0cfc30dbc06a15529052b6d88a3e7c76b091a5ded8d2",
+      "peak_reserved_mib": 482.0
+    },
+    {
+      "database": "mimic",
+      "id": "LITEMV_t0_s49",
+      "epochs": 1500,
+      "best_epoch": 2,
+      "fit_seconds": 34239.550544023514,
+      "parameters": 622786,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "21c060a2ee7ca3b0bdb31760ecc8aeb2e9e40eb05b6540ef092c0bc486abdaf0",
+      "peak_reserved_mib": 482.0
+    },
+    {
+      "database": "mimic",
+      "id": "LITEMV_t1_s49",
+      "epochs": 1500,
+      "best_epoch": 2,
+      "fit_seconds": 30198.32715344429,
+      "parameters": 622786,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "66f7e227048f5098287ca55e809e486152b007f64c5e6fda62bda32281846ceb",
+      "peak_reserved_mib": 482.0
+    },
+    {
+      "database": "mimic",
+      "id": "LITEMV_t0_s50",
+      "epochs": 1500,
+      "best_epoch": 2,
+      "fit_seconds": 34309.18369221687,
+      "parameters": 622786,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "bc06fc1620364b6d32e2d0d5930bdde24a3bfdd2a3efc477dd7ff00f0c2c23ce",
+      "peak_reserved_mib": 482.0
+    },
+    {
+      "database": "mimic",
+      "id": "LITEMV_t1_s50",
+      "epochs": 1500,
+      "best_epoch": 2,
+      "fit_seconds": 28225.391049146652,
+      "parameters": 622786,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "92e8599c91f2f38b008939ebc380964200d21ff5470408ca4688b927ffef5580",
+      "peak_reserved_mib": 482.0
+    },
+    {
+      "database": "mimic",
+      "id": "LITEMV_t0_s51",
+      "epochs": 1500,
+      "best_epoch": 2,
+      "fit_seconds": 32656.158006191254,
+      "parameters": 622786,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "129af6904b6c8cf91a19350bf22968c2349be22b5329585a5f4cab5ef63157af",
+      "peak_reserved_mib": 482.0
+    },
+    {
+      "database": "mimic",
+      "id": "LITEMV_t1_s51",
+      "epochs": 1500,
+      "best_epoch": 2,
+      "fit_seconds": 34700.47990441322,
+      "parameters": 622786,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "e8d67604db01168a75ded5be23da554868473defdb1d4e87fa4513ac86fb2b84",
+      "peak_reserved_mib": 482.0
+    },
+    {
+      "database": "mimic",
+      "id": "LITEMV_t0_s52",
+      "epochs": 1500,
+      "best_epoch": 2,
+      "fit_seconds": 29643.139755249023,
+      "parameters": 622786,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "0f7167596d28e02e743a4fba94c2114efeaf94798d7980893c61e6034a242d72",
+      "peak_reserved_mib": 482.0
+    },
+    {
+      "database": "mimic",
+      "id": "LITEMV_t1_s52",
+      "epochs": 1500,
+      "best_epoch": 2,
+      "fit_seconds": 30081.720390558243,
+      "parameters": 622786,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "3aee9a82b1ffb51af50a09bc1d466e61bec30d71f4d23ca5ef9102677c1f9966",
+      "peak_reserved_mib": 482.0
+    },
+    {
+      "database": "eicu",
+      "id": "TCN_t0_s48",
+      "epochs": 12,
+      "best_epoch": 2,
+      "fit_seconds": 7276.054573297501,
+      "parameters": 1161345,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "ae2b608d75a2f0ef09e01f2f92f3180e87bf06146166d3fdb48b5724f6882edd",
+      "peak_reserved_mib": 98.0
+    },
+    {
+      "database": "eicu",
+      "id": "TCN_t1_s48",
+      "epochs": 13,
+      "best_epoch": 3,
+      "fit_seconds": 8730.669315338135,
+      "parameters": 1161345,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "22223b0f5eb7f3a3b1cf017494cc36db7ff290b07f79da2542d516390fbb2994",
+      "peak_reserved_mib": 98.0
+    },
+    {
+      "database": "eicu",
+      "id": "TCN_t0_s49",
+      "epochs": 12,
+      "best_epoch": 2,
+      "fit_seconds": 7911.931205511093,
+      "parameters": 1161345,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "697e39802a617bb4579fdfc419f1dc9f10d7175d3a4981fb790f6353429ac5db",
+      "peak_reserved_mib": 98.0
+    },
+    {
+      "database": "eicu",
+      "id": "TCN_t1_s49",
+      "epochs": 13,
+      "best_epoch": 3,
+      "fit_seconds": 8887.294229269028,
+      "parameters": 1161345,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "8cdbae92ad695a6d6d7623389bdc77ade8900de02499cfadbab190686ddeb578",
+      "peak_reserved_mib": 98.0
+    },
+    {
+      "database": "eicu",
+      "id": "TCN_t0_s50",
+      "epochs": 12,
+      "best_epoch": 2,
+      "fit_seconds": 7498.705476284027,
+      "parameters": 1161345,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "81b3ccca1fb7388fe27f550900cff80084f0cc9eae745a06e3d8a13f15cac18e",
+      "peak_reserved_mib": 98.0
+    },
+    {
+      "database": "eicu",
+      "id": "TCN_t1_s50",
+      "epochs": 13,
+      "best_epoch": 3,
+      "fit_seconds": 8616.375504255295,
+      "parameters": 1161345,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "8ff0d16d320b53f3b82bf252ea40bb9274ffdb108dd1a8c535117376960f4431",
+      "peak_reserved_mib": 98.0
+    },
+    {
+      "database": "eicu",
+      "id": "TCN_t0_s51",
+      "epochs": 12,
+      "best_epoch": 2,
+      "fit_seconds": 7970.218003988266,
+      "parameters": 1161345,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "9e8f710b461ecb0bf82d4ad22dfca78a48c93aab418d0c22b0566c6ca6aeb221",
+      "peak_reserved_mib": 100.0
+    },
+    {
+      "database": "eicu",
+      "id": "TCN_t1_s51",
+      "epochs": 13,
+      "best_epoch": 3,
+      "fit_seconds": 8610.27413225174,
+      "parameters": 1161345,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "844b2ed19225dcb63f0cf26dc8334ec0c98a48ba743592ce10bfad52c3c4be7c",
+      "peak_reserved_mib": 100.0
+    },
+    {
+      "database": "eicu",
+      "id": "TCN_t0_s52",
+      "epochs": 11,
+      "best_epoch": 1,
+      "fit_seconds": 6568.873913049698,
+      "parameters": 1161345,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "21d0b70bbc5e10b171a0d0cba44535686b99351d58b5f8327621113af0ffe4ae",
+      "peak_reserved_mib": 98.0
+    },
+    {
+      "database": "eicu",
+      "id": "TCN_t1_s52",
+      "epochs": 12,
+      "best_epoch": 2,
+      "fit_seconds": 7711.713962316513,
+      "parameters": 1161345,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "1dc28b836d6db64d1468f5812f7ccc4d268ad9b71c6c8ad5ee493c130138ac2d",
+      "peak_reserved_mib": 98.0
+    },
+    {
+      "database": "eicu",
+      "id": "ModernTCN_t0_s48",
+      "epochs": 11,
+      "best_epoch": 1,
+      "fit_seconds": 822.1911923885345,
+      "parameters": 13135011,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "fb52b9a2ad09aa93f709775dac1edb313fd2b95f67a2ce24efd06b94df95c439",
+      "peak_reserved_mib": 544.0
+    },
+    {
+      "database": "eicu",
+      "id": "ModernTCN_t1_s48",
+      "epochs": 12,
+      "best_epoch": 2,
+      "fit_seconds": 1049.3490934371948,
+      "parameters": 13135011,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "b50f7fa6d9e3b97a29ab38de1c1b52ce211ac284912eae60a5f2d635f7628abf",
+      "peak_reserved_mib": 544.0
+    },
+    {
+      "database": "eicu",
+      "id": "ModernTCN_t0_s49",
+      "epochs": 13,
+      "best_epoch": 3,
+      "fit_seconds": 1167.8877942562103,
+      "parameters": 13135011,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "d259af1219c008bc09139977b925ef4359bc34b9a33aaa251cc084f9a90e7621",
+      "peak_reserved_mib": 544.0
+    },
+    {
+      "database": "eicu",
+      "id": "ModernTCN_t1_s49",
+      "epochs": 12,
+      "best_epoch": 2,
+      "fit_seconds": 1035.667445898056,
+      "parameters": 13135011,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "56bdbb56031e16729e3e47d6fb8519b27a5112ee0ac131cd2df25bbfa6a0bcac",
+      "peak_reserved_mib": 544.0
+    },
+    {
+      "database": "eicu",
+      "id": "ModernTCN_t0_s50",
+      "epochs": 12,
+      "best_epoch": 2,
+      "fit_seconds": 1431.7792630195618,
+      "parameters": 13135011,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "48f1dd38156534d8104e625c0f3da2f91a11535125224687bc062100722a25ed",
+      "peak_reserved_mib": 544.0
+    },
+    {
+      "database": "eicu",
+      "id": "ModernTCN_t1_s50",
+      "epochs": 12,
+      "best_epoch": 2,
+      "fit_seconds": 1257.9659609794617,
+      "parameters": 13135011,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "069b0f89014ee6c7eea44a527c57d5b94a91106ddd38fbb5e0f8a77354d553ff",
+      "peak_reserved_mib": 544.0
+    },
+    {
+      "database": "eicu",
+      "id": "ModernTCN_t0_s51",
+      "epochs": 12,
+      "best_epoch": 2,
+      "fit_seconds": 1483.2979328632355,
+      "parameters": 13135011,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "9cdcb244cce7cd87efa1c00050eaed7408cb7df314ee4f67f6b458b34fac276b",
+      "peak_reserved_mib": 544.0
+    },
+    {
+      "database": "eicu",
+      "id": "ModernTCN_t1_s51",
+      "epochs": 12,
+      "best_epoch": 2,
+      "fit_seconds": 1441.649740934372,
+      "parameters": 13135011,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "354c596ee48396c18a4e5eea1a161ff785c076fcaa55124f3a53b31c7fa64c18",
+      "peak_reserved_mib": 544.0
+    },
+    {
+      "database": "eicu",
+      "id": "ModernTCN_t0_s52",
+      "epochs": 12,
+      "best_epoch": 2,
+      "fit_seconds": 1464.8333628177643,
+      "parameters": 13135011,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "fdb0be3900bc820830c37630756e2ee7b95927bb5d0da2ecf9c9b7728db92bd4",
+      "peak_reserved_mib": 544.0
+    },
+    {
+      "database": "eicu",
+      "id": "ModernTCN_t1_s52",
+      "epochs": 12,
+      "best_epoch": 2,
+      "fit_seconds": 1357.6498882770538,
+      "parameters": 13135011,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "be8f773df011a78a52d24dd31a745790b6fb72969924c75203913ea941919883",
+      "peak_reserved_mib": 544.0
+    },
+    {
+      "database": "eicu",
+      "id": "LITEMV_t0_s48",
+      "epochs": 1500,
+      "best_epoch": 1,
+      "fit_seconds": 46212.38101267815,
+      "parameters": 806466,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "48018d271219a3a938ad55df37f2b776d9d0c7ca0b72f82b2e381b84738d40a4",
+      "peak_reserved_mib": 484.0
+    },
+    {
+      "database": "eicu",
+      "id": "LITEMV_t1_s48",
+      "epochs": 1500,
+      "best_epoch": 1,
+      "fit_seconds": 44419.07485318184,
+      "parameters": 806466,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "d41d24e6f85825f51b1e8c28969811be44738e9a958bcf6a5908a55700082c88",
+      "peak_reserved_mib": 484.0
+    },
+    {
+      "database": "eicu",
+      "id": "LITEMV_t0_s49",
+      "epochs": 1500,
+      "best_epoch": 1,
+      "fit_seconds": 45279.525841236115,
+      "parameters": 806466,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "bbca1c1a795c57cfec0ca86a99260b0ff69e77d67066563a85ccd4402dc1b559",
+      "peak_reserved_mib": 484.0
+    },
+    {
+      "database": "eicu",
+      "id": "LITEMV_t1_s49",
+      "epochs": 1500,
+      "best_epoch": 2,
+      "fit_seconds": 48760.688121795654,
+      "parameters": 806466,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "a62f4c0d5c9c36adcb79a5723761952c165bfbc55d23cfaf5abd40d9aa2cf58b",
+      "peak_reserved_mib": 484.0
+    },
+    {
+      "database": "eicu",
+      "id": "LITEMV_t0_s50",
+      "epochs": 1500,
+      "best_epoch": 2,
+      "fit_seconds": 48529.72003817558,
+      "parameters": 806466,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "e0517292c845cb1367a619fdfd9fd1dae5ab42383a3489040f170c3ec241651c",
+      "peak_reserved_mib": 484.0
+    },
+    {
+      "database": "eicu",
+      "id": "LITEMV_t1_s50",
+      "epochs": 1500,
+      "best_epoch": 1,
+      "fit_seconds": 45435.64920759201,
+      "parameters": 806466,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "8594fb22f35cb28ce91e837ddefbd6de7811fb5637cbe4e5de9788e4852ab2d3",
+      "peak_reserved_mib": 484.0
+    },
+    {
+      "database": "eicu",
+      "id": "LITEMV_t0_s51",
+      "epochs": 1500,
+      "best_epoch": 2,
+      "fit_seconds": 44302.022094249725,
+      "parameters": 806466,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "ad0172e5d75e014f18dd2ae4571d70df880046ff3ea35a4f87604eaf6c9d6759",
+      "peak_reserved_mib": 484.0
+    },
+    {
+      "database": "eicu",
+      "id": "LITEMV_t1_s51",
+      "epochs": 1500,
+      "best_epoch": 1,
+      "fit_seconds": 45267.85274553299,
+      "parameters": 806466,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "0902409729af9648e87e1687ecb16ed836d97e8afb99de1516e53756aebdd24d",
+      "peak_reserved_mib": 484.0
+    },
+    {
+      "database": "eicu",
+      "id": "LITEMV_t0_s52",
+      "epochs": 1500,
+      "best_epoch": 1,
+      "fit_seconds": 30585.14497113228,
+      "parameters": 806466,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "2c4b8f0859f0c0f4118ee39e385162139eb8e766177616ba322e4c777333cf61",
+      "peak_reserved_mib": 484.0
+    },
+    {
+      "database": "eicu",
+      "id": "LITEMV_t1_s52",
+      "epochs": 1500,
+      "best_epoch": 1,
+      "fit_seconds": 30727.159531116486,
+      "parameters": 806466,
+      "fit_exit": 0,
+      "test_exit": 0,
+      "test_updates": 0,
+      "checkpoint_sha256": "0cc1c95614f9ff00872320f8374dd4feefe4c608a7059c5a5f04d60b05313cf1",
+      "peak_reserved_mib": 484.0
+    }
+  ],
+  "summaries": {
+    "mimiciii:dev:CEM-Net:0": {
+      "AP": {
+        "values": [
+          0.4908907691428215,
+          0.48941037710790913,
+          0.48820737365733163,
+          0.48216791533093734,
+          0.4783973326003329
+        ],
+        "mean": 0.48581475356786646,
+        "sample_SD": 0.005308875506812673
+      },
+      "AUROC": {
+        "values": [
+          0.8796578681014275,
+          0.877852652887279,
+          0.8803703654378863,
+          0.877123508416791,
+          0.8789580225868313
+        ],
+        "mean": 0.878792483486043,
+        "sample_SD": 0.0013166970529078317
+      },
+      "Brier": {
+        "values": [
+          0.05513020174301189,
+          0.0553768645497867,
+          0.05483690377178764,
+          0.05705796543317172,
+          0.05550031294438987
+        ],
+        "mean": 0.05558044968842957,
+        "sample_SD": 0.0008640754198694417
+      },
+      "log_loss": {
+        "values": [
+          0.20509855011390846,
+          0.21199452468061272,
+          0.2019339331463047,
+          0.2294865439282036,
+          0.204061102559912
+        ],
+        "mean": 0.21051493088578827,
+        "sample_SD": 0.011255375406441597
+      }
+    },
+    "mimiciii:dev:TCN:0": {
+      "AP": {
+        "values": [
+          0.3894326205558445,
+          0.3632885808818592,
+          0.37704013940071707,
+          0.3918755411045214,
+          0.376980887150868
+        ],
+        "mean": 0.37972355381876205,
+        "sample_SD": 0.011475713929046573
+      },
+      "AUROC": {
+        "values": [
+          0.8386233486043041,
+          0.827134828467931,
+          0.8319145535904539,
+          0.8371071276369059,
+          0.8296265714894525
+        ],
+        "mean": 0.8328812859578095,
+        "sample_SD": 0.00488309668030091
+      },
+      "Brier": {
+        "values": [
+          0.06351905241893337,
+          0.06371397377784845,
+          0.06604648946404137,
+          0.06261812345801439,
+          0.06442001172652435
+        ],
+        "mean": 0.06406353016907237,
+        "sample_SD": 0.0012813130879805238
+      },
+      "log_loss": {
+        "values": [
+          0.24503775274881825,
+          0.2507705895988059,
+          0.24298869243848892,
+          0.2621816030784853,
+          0.2721760648105905
+        ],
+        "mean": 0.25463094053503776,
+        "sample_SD": 0.012321905216764815
+      }
+    },
+    "mimiciii:dev:ModernTCN:0": {
+      "AP": {
+        "values": [
+          0.3287574163352297,
+          0.33086748446631203,
+          0.3316301962328869,
+          0.3105201896522182,
+          0.3211229708463412
+        ],
+        "mean": 0.3245796515065976,
+        "sample_SD": 0.008892663437516511
+      },
+      "AUROC": {
+        "values": [
+          0.8312713083315576,
+          0.8246956903899425,
+          0.8250592637971447,
+          0.8085845940762838,
+          0.807292776475602
+        ],
+        "mean": 0.8193807266141061,
+        "sample_SD": 0.010776775658588497
+      },
+      "Brier": {
+        "values": [
+          0.06523485700873673,
+          0.0763752866662438,
+          0.064847915984582,
+          0.06605933816403824,
+          0.06696668432795874
+        ],
+        "mean": 0.06789681643031191,
+        "sample_SD": 0.004809047502846168
+      },
+      "log_loss": {
+        "values": [
+          0.24425930507450605,
+          0.2720790751467557,
+          0.23772435285252627,
+          0.23722677348511037,
+          0.2631291485857576
+        ],
+        "mean": 0.2508837310289312,
+        "sample_SD": 0.01583317408152152
+      }
+    },
+    "mimiciii:dev:LITEMV:0": {
+      "AP": {
+        "values": [
+          0.4110817573082086,
+          0.40462165138192063,
+          0.39987658871920384,
+          0.40062662155616025,
+          0.39337101890692056
+        ],
+        "mean": 0.40191552757448273,
+        "sample_SD": 0.006522462195028458
+      },
+      "AUROC": {
+        "values": [
+          0.8597565523119539,
+          0.8397000852333262,
+          0.8493820583848284,
+          0.848810062859578,
+          0.8479177764756021
+        ],
+        "mean": 0.8491133070530577,
+        "sample_SD": 0.007132336439577941
+      },
+      "Brier": {
+        "values": [
+          0.05861334557412253,
+          0.059805940134541,
+          0.06059424688310318,
+          0.061068860841277654,
+          0.05996452790230806
+        ],
+        "mean": 0.06000938426707049,
+        "sample_SD": 0.0009296344082023011
+      },
+      "log_loss": {
+        "values": [
+          0.20839040590437505,
+          0.22227584305040676,
+          0.2204898641916428,
+          0.22936458519322475,
+          0.21109958395140757
+        ],
+        "mean": 0.21832405645821135,
+        "sample_SD": 0.008559658747350847
+      }
+    },
+    "mimiciii:dev:CEM-Net:1": {
+      "AP": {
+        "values": [
+          0.5342937847174059,
+          0.528870313281435,
+          0.5322880718795656,
+          0.5320825922134945,
+          0.5345851646655235
+        ],
+        "mean": 0.5324239853514848,
+        "sample_SD": 0.0022874905805377595
+      },
+      "AUROC": {
+        "values": [
+          0.8519450991051002,
+          0.8514916287542452,
+          0.8530580026602654,
+          0.853104476329763,
+          0.852559466932928
+        ],
+        "mean": 0.8524317347564605,
+        "sample_SD": 0.0007038682002454356
+      },
+      "Brier": {
+        "values": [
+          0.10254366062291034,
+          0.1029061050935588,
+          0.10270353287904162,
+          0.10267166437134656,
+          0.10242603091340033
+        ],
+        "mean": 0.10265019877605153,
+        "sample_SD": 0.00018055120491400798
+      },
+      "log_loss": {
+        "values": [
+          0.3283210003691222,
+          0.32859736594637184,
+          0.32756794016897184,
+          0.32723938158479277,
+          0.3274558317665157
+        ],
+        "mean": 0.3278363039671549,
+        "sample_SD": 0.0005889058694921064
+      }
+    },
+    "mimiciii:dev:TCN:1": {
+      "AP": {
+        "values": [
+          0.4871995192051195,
+          0.5005192348959934,
+          0.48938738436795837,
+          0.4950144937849504,
+          0.48402861792514934
+        ],
+        "mean": 0.4912298500358342,
+        "sample_SD": 0.006559576770687037
+      },
+      "AUROC": {
+        "values": [
+          0.8233155583283281,
+          0.827086438912826,
+          0.8249903707965094,
+          0.8259522349258076,
+          0.8254734153006812
+        ],
+        "mean": 0.8253636036528306,
+        "sample_SD": 0.001383880334681031
+      },
+      "Brier": {
+        "values": [
+          0.10905936114713066,
+          0.10681908709468396,
+          0.10761489897795651,
+          0.11096337174521699,
+          0.10809797305098345
+        ],
+        "mean": 0.10851093840319433,
+        "sample_SD": 0.0015930304993114943
+      },
+      "log_loss": {
+        "values": [
+          0.3598265610340395,
+          0.3469347377633544,
+          0.3531034748709738,
+          0.3924522048434986,
+          0.3492804746223168
+        ],
+        "mean": 0.36031949062683666,
+        "sample_SD": 0.018613413640883588
+      }
+    },
+    "mimiciii:dev:ModernTCN:1": {
+      "AP": {
+        "values": [
+          0.4801889176408409,
+          0.4706305756403944,
+          0.4663750362041913,
+          0.47999938097585026,
+          0.468927817911129
+        ],
+        "mean": 0.47322434567448113,
+        "sample_SD": 0.006451883446718992
+      },
+      "AUROC": {
+        "values": [
+          0.8097075749968842,
+          0.8075828129103853,
+          0.8087791578266941,
+          0.8196339283136608,
+          0.8131071943352823
+        ],
+        "mean": 0.8117621336765813,
+        "sample_SD": 0.0048569645186068945
+      },
+      "Brier": {
+        "values": [
+          0.14335913600186306,
+          0.11585013020499679,
+          0.11570255477186474,
+          0.11162910740905511,
+          0.1126908298985374
+        ],
+        "mean": 0.11984635165726343,
+        "sample_SD": 0.013273248103167512
+      },
+      "log_loss": {
+        "values": [
+          0.45930942586709017,
+          0.37703320692099723,
+          0.377706944375498,
+          0.36599258810571306,
+          0.36561817497438587
+        ],
+        "mean": 0.3891320680487369,
+        "sample_SD": 0.03965512621795554
+      }
+    },
+    "mimiciii:dev:LITEMV:1": {
+      "AP": {
+        "values": [
+          0.4909311879328049,
+          0.48448844627333043,
+          0.48162026005689484,
+          0.49165490653030214,
+          0.4996054891967586
+        ],
+        "mean": 0.48966005799801826,
+        "sample_SD": 0.006998048164877205
+      },
+      "AUROC": {
+        "values": [
+          0.8277411191282102,
+          0.8215534316932118,
+          0.8286779860564909,
+          0.8291032905470445,
+          0.8311196140713821
+        ],
+        "mean": 0.8276390882992679,
+        "sample_SD": 0.0036188010113709247
+      },
+      "Brier": {
+        "values": [
+          0.10815943806241972,
+          0.11120332082232025,
+          0.1082548784738345,
+          0.1083688125363933,
+          0.10769758227677699
+        ],
+        "mean": 0.10873680643434895,
+        "sample_SD": 0.0014022043699754504
+      },
+      "log_loss": {
+        "values": [
+          0.3487958923645777,
+          0.3692660163418275,
+          0.3471850026186762,
+          0.35253744375377877,
+          0.3461098557182945
+        ],
+        "mean": 0.3527788421594309,
+        "sample_SD": 0.00953304116925744
+      }
+    },
+    "mimiciii:test:CEM-Net:0": {
+      "AP": {
+        "values": [
+          0.49044997661499473,
+          0.4810901777845332,
+          0.4873562345910792,
+          0.4790506803459712,
+          0.48936565686674527
+        ],
+        "mean": 0.4854625452406647,
+        "sample_SD": 0.005097166370504561
+      },
+      "AUROC": {
+        "values": [
+          0.8865149192851672,
+          0.8864574960908387,
+          0.8874403954979527,
+          0.8820764846001824,
+          0.8869058783986493
+        ],
+        "mean": 0.8858790347745581,
+        "sample_SD": 0.0021616318818664837
+      },
+      "Brier": {
+        "values": [
+          0.05335103664997399,
+          0.05446345933184452,
+          0.05343377729469055,
+          0.05506901908145453,
+          0.053378829024126294
+        ],
+        "mean": 0.05393922427641797,
+        "sample_SD": 0.0007852933956261008
+      },
+      "log_loss": {
+        "values": [
+          0.19636697637397627,
+          0.20265226382414084,
+          0.1935391806419849,
+          0.219456637521776,
+          0.1940782482957785
+        ],
+        "mean": 0.2012186613315313,
+        "sample_SD": 0.010818707877241849
+      }
+    },
+    "mimiciii:test:TCN:0": {
+      "AP": {
+        "values": [
+          0.401299015842429,
+          0.4070025909272547,
+          0.41162668119374374,
+          0.41739219603889643,
+          0.41026974147090456
+        ],
+        "mean": 0.40951804509464573,
+        "sample_SD": 0.00593493045979444
+      },
+      "AUROC": {
+        "values": [
+          0.8477927744772813,
+          0.8539370562704323,
+          0.8489071111061444,
+          0.8539690344564954,
+          0.8475807040874483
+        ],
+        "mean": 0.8504373360795604,
+        "sample_SD": 0.003248714196259606
+      },
+      "Brier": {
+        "values": [
+          0.059093740218220676,
+          0.057957180694447295,
+          0.060105930473133964,
+          0.05886234007644516,
+          0.05948088045112206
+        ],
+        "mean": 0.059100014382673836,
+        "sample_SD": 0.0007936503359584975
+      },
+      "log_loss": {
+        "values": [
+          0.23103395094797116,
+          0.22334355843904277,
+          0.22218577269958814,
+          0.24372843870543573,
+          0.24936335603998136
+        ],
+        "mean": 0.23393101536640382,
+        "sample_SD": 0.012171530249779856
+      }
+    },
+    "mimiciii:test:ModernTCN:0": {
+      "AP": {
+        "values": [
+          0.37340959874708546,
+          0.3494831619307922,
+          0.3675993377171306,
+          0.34147398814070323,
+          0.3732267310968081
+        ],
+        "mean": 0.36103856352650393,
+        "sample_SD": 0.01467086922438418
+      },
+      "AUROC": {
+        "values": [
+          0.8365828729305516,
+          0.8329649537992577,
+          0.8368780694115755,
+          0.8168276607870931,
+          0.8337839220213652
+        ],
+        "mean": 0.8314074957899686,
+        "sample_SD": 0.0083270098188325
+      },
+      "Brier": {
+        "values": [
+          0.06031234531622849,
+          0.07358544416241797,
+          0.059835049657650095,
+          0.062385086593446465,
+          0.06197569672853537
+        ],
+        "mean": 0.06361872449165568,
+        "sample_SD": 0.005674619859317183
+      },
+      "log_loss": {
+        "values": [
+          0.22828810771201638,
+          0.2583673436354783,
+          0.22025463335761458,
+          0.22675456353538465,
+          0.2393546029414604
+        ],
+        "mean": 0.23460385023639088,
+        "sample_SD": 0.014955544123970729
+      }
+    },
+    "mimiciii:test:LITEMV:0": {
+      "AP": {
+        "values": [
+          0.4277097521059932,
+          0.42420585966310453,
+          0.422891491417726,
+          0.40291052233813823,
+          0.4072042020989457
+        ],
+        "mean": 0.4169843655247815,
+        "sample_SD": 0.011133313634085392
+      },
+      "AUROC": {
+        "values": [
+          0.8598695255623475,
+          0.8640544557562024,
+          0.8686606899551532,
+          0.8583005313364733,
+          0.8610874474444528
+        ],
+        "mean": 0.8623945300109259,
+        "sample_SD": 0.004088552658759846
+      },
+      "Brier": {
+        "values": [
+          0.05596433097282822,
+          0.05588700853293313,
+          0.05632949764542354,
+          0.05784593938842056,
+          0.05646757724900383
+        ],
+        "mean": 0.05649887075772185,
+        "sample_SD": 0.0007912598489793861
+      },
+      "log_loss": {
+        "values": [
+          0.20199025666093326,
+          0.20220107729837228,
+          0.2020062834993116,
+          0.2167887828324417,
+          0.1998453726146895
+        ],
+        "mean": 0.20456635458114966,
+        "sample_SD": 0.006900366007478403
+      }
+    },
+    "mimiciii:test:CEM-Net:1": {
+      "AP": {
+        "values": [
+          0.5465509463417983,
+          0.5500209844930679,
+          0.5506028724175384,
+          0.5508797388530158,
+          0.5515675992870688
+        ],
+        "mean": 0.5499244282784979,
+        "sample_SD": 0.0019661268516300073
+      },
+      "AUROC": {
+        "values": [
+          0.8540247572090774,
+          0.8566939910135366,
+          0.8568641757194858,
+          0.8562803044306677,
+          0.8563769053577522
+        ],
+        "mean": 0.856048026746104,
+        "sample_SD": 0.0011553249180379437
+      },
+      "Brier": {
+        "values": [
+          0.10058808397146732,
+          0.09993777255882104,
+          0.09971094633843848,
+          0.09988248217897258,
+          0.09993133829602784
+        ],
+        "mean": 0.10001012466874545,
+        "sample_SD": 0.00033588664548473194
+      },
+      "log_loss": {
+        "values": [
+          0.3239091882712831,
+          0.32121676055740983,
+          0.32095856354725055,
+          0.3212509744530074,
+          0.3214542027047078
+        ],
+        "mean": 0.32175793790673174,
+        "sample_SD": 0.001215423530848213
+      }
+    },
+    "mimiciii:test:TCN:1": {
+      "AP": {
+        "values": [
+          0.4861966151112335,
+          0.48948019011933047,
+          0.4934173950631686,
+          0.516037855218765,
+          0.49118472185117473
+        ],
+        "mean": 0.4952633554727345,
+        "sample_SD": 0.011908751446290531
+      },
+      "AUROC": {
+        "values": [
+          0.8250768719428961,
+          0.8250138636105108,
+          0.8259387263963143,
+          0.8300985205039245,
+          0.82833828631555
+        ],
+        "mean": 0.826893253753839,
+        "sample_SD": 0.002241892432401432
+      },
+      "Brier": {
+        "values": [
+          0.10745101287140581,
+          0.10650422142127093,
+          0.10673160950066289,
+          0.10801234539730038,
+          0.10660846821502595
+        ],
+        "mean": 0.10706153148113318,
+        "sample_SD": 0.0006481612831045141
+      },
+      "log_loss": {
+        "values": [
+          0.3536177539657244,
+          0.3458471824324621,
+          0.3500714385728256,
+          0.3826385876029941,
+          0.34457216855445266
+        ],
+        "mean": 0.35534942622569177,
+        "sample_SD": 0.015668408432052458
+      }
+    },
+    "mimiciii:test:ModernTCN:1": {
+      "AP": {
+        "values": [
+          0.4798948821536547,
+          0.4573826833523944,
+          0.4807733954324651,
+          0.479036397837756,
+          0.4897034330088349
+        ],
+        "mean": 0.477358158357021,
+        "sample_SD": 0.01196182163746156
+      },
+      "AUROC": {
+        "values": [
+          0.8179030755886703,
+          0.8056237380559664,
+          0.8166414870321921,
+          0.8150475717352974,
+          0.8168422427767035
+        ],
+        "mean": 0.8144116230377658,
+        "sample_SD": 0.005017514321439364
+      },
+      "Brier": {
+        "values": [
+          0.1399753071922087,
+          0.11653358230969353,
+          0.11248525749588191,
+          0.11073082052177328,
+          0.10912695497537864
+        ],
+        "mean": 0.1177703844989872,
+        "sample_SD": 0.012715985744577697
+      },
+      "log_loss": {
+        "values": [
+          0.4473000250258858,
+          0.37625091708473857,
+          0.36644861148900937,
+          0.3630675250608046,
+          0.35493536282049304
+        ],
+        "mean": 0.38160048829618626,
+        "sample_SD": 0.03751375098661097
+      }
+    },
+    "mimiciii:test:LITEMV:1": {
+      "AP": {
+        "values": [
+          0.5088426332784445,
+          0.47810606177918197,
+          0.49398513246483816,
+          0.5123307534768755,
+          0.5116116611645201
+        ],
+        "mean": 0.500975248432772,
+        "sample_SD": 0.01479727960098218
+      },
+      "AUROC": {
+        "values": [
+          0.8341570924809464,
+          0.814356213030372,
+          0.8318064106756912,
+          0.8372824035234899,
+          0.8335169669264021
+        ],
+        "mean": 0.8302238173273804,
+        "sample_SD": 0.009088792475291502
+      },
+      "Brier": {
+        "values": [
+          0.1051506664643645,
+          0.11197060783279729,
+          0.10628803707356754,
+          0.10562516756469251,
+          0.10622860051445591
+        ],
+        "mean": 0.10705261588997554,
+        "sample_SD": 0.0027886039156801994
+      },
+      "log_loss": {
+        "values": [
+          0.3395619010196523,
+          0.3724995853766276,
+          0.34263778064651373,
+          0.34550137421128163,
+          0.3425292313320724
+        ],
+        "mean": 0.3485459745172295,
+        "sample_SD": 0.01355421146919306
+      }
+    },
+    "mimic:dev:CEM-Net:0": {
+      "AP": {
+        "values": [
+          0.5474081407189633,
+          0.5412670553145409,
+          0.5409574181514573,
+          0.5444619965702041,
+          0.5454621464887415
+        ],
+        "mean": 0.5439113514487814,
+        "sample_SD": 0.0027682907396248137
+      },
+      "AUROC": {
+        "values": [
+          0.9099177552254909,
+          0.9086846966885469,
+          0.9094643309654794,
+          0.9103635159768827,
+          0.9097197812528098
+        ],
+        "mean": 0.9096300160218419,
+        "sample_SD": 0.0006224857447876387
+      },
+      "Brier": {
+        "values": [
+          0.04963210105227735,
+          0.04911610862869149,
+          0.049625268731652294,
+          0.049277554352869186,
+          0.04949589247189664
+        ],
+        "mean": 0.04942938504747739,
+        "sample_SD": 0.00022642996059675838
+      },
+      "log_loss": {
+        "values": [
+          0.17612074189296187,
+          0.17131540720039162,
+          0.17468851090562698,
+          0.17282799295505116,
+          0.1757222347494692
+        ],
+        "mean": 0.17413497754070018,
+        "sample_SD": 0.0020265259871675456
+      }
+    },
+    "mimic:dev:TCN:0": {
+      "AP": {
+        "values": [
+          0.4352318836039149,
+          0.4498454899770285,
+          0.4497755019802177,
+          0.4345122741983258,
+          0.4395741120492525
+        ],
+        "mean": 0.4417878523617479,
+        "sample_SD": 0.007575346205018291
+      },
+      "AUROC": {
+        "values": [
+          0.8689838902830797,
+          0.8740351642647527,
+          0.8768979956348655,
+          0.8720199169480025,
+          0.8728376133177476
+        ],
+        "mean": 0.8729549160896897,
+        "sample_SD": 0.002888418326322151
+      },
+      "Brier": {
+        "values": [
+          0.05883477894225633,
+          0.057074627344013744,
+          0.05611253480951309,
+          0.057282113043915395,
+          0.0556016139641854
+        ],
+        "mean": 0.056981133620776794,
+        "sample_SD": 0.001244273788714857
+      },
+      "log_loss": {
+        "values": [
+          0.24976477108137513,
+          0.24672034477884824,
+          0.21493032539565274,
+          0.21985347464818522,
+          0.21329953141052954
+        ],
+        "mean": 0.22891368946291815,
+        "sample_SD": 0.017841443838796114
+      }
+    },
+    "mimic:dev:ModernTCN:0": {
+      "AP": {
+        "values": [
+          0.41783515504540225,
+          0.42219741721764315,
+          0.4404898692569125,
+          0.43812041286947173,
+          0.4040387429365257
+        ],
+        "mean": 0.4245363194651911,
+        "sample_SD": 0.015079539585364328
+      },
+      "AUROC": {
+        "values": [
+          0.8614391660467738,
+          0.8711332490006785,
+          0.8725489544930639,
+          0.8797194440584307,
+          0.8649516074975679
+        ],
+        "mean": 0.869958484219303,
+        "sample_SD": 0.007088979865666521
+      },
+      "Brier": {
+        "values": [
+          0.05771518835806889,
+          0.06229919898409002,
+          0.055738369498910915,
+          0.05578671763790772,
+          0.05693592361134419
+        ],
+        "mean": 0.057695079618064346,
+        "sample_SD": 0.0027039414415941615
+      },
+      "log_loss": {
+        "values": [
+          0.2035943285992154,
+          0.21670171271660385,
+          0.2019729190313096,
+          0.20108715274729574,
+          0.20248976869293703
+        ],
+        "mean": 0.20516917635747228,
+        "sample_SD": 0.006510333006425938
+      }
+    },
+    "mimic:dev:LITEMV:0": {
+      "AP": {
+        "values": [
+          0.4704774125473564,
+          0.45642282830344455,
+          0.47885473957810515,
+          0.4824543954236904,
+          0.495779292284694
+        ],
+        "mean": 0.4767977336274581,
+        "sample_SD": 0.014591195039596062
+      },
+      "AUROC": {
+        "values": [
+          0.8796195629960842,
+          0.8840475382766709,
+          0.8855317044460611,
+          0.8854383373660418,
+          0.8896245289496701
+        ],
+        "mean": 0.8848523344069056,
+        "sample_SD": 0.0035919485422734126
+      },
+      "Brier": {
+        "values": [
+          0.05405771632054694,
+          0.05476968976940955,
+          0.05619357333392319,
+          0.05300017102018571,
+          0.05565709564377825
+        ],
+        "mean": 0.054735649217568724,
+        "sample_SD": 0.0012695710487255155
+      },
+      "log_loss": {
+        "values": [
+          0.1945321377380439,
+          0.18966656585952302,
+          0.19193781560946063,
+          0.19005516403870787,
+          0.20094628700505465
+        ],
+        "mean": 0.19342759405015802,
+        "sample_SD": 0.004623008153348543
+      }
+    },
+    "mimic:dev:CEM-Net:1": {
+      "AP": {
+        "values": [
+          0.5571081009028568,
+          0.5544622988495091,
+          0.5529449691956088,
+          0.5584950989179001,
+          0.5570482799334299
+        ],
+        "mean": 0.5560117495598609,
+        "sample_SD": 0.002249963600986993
+      },
+      "AUROC": {
+        "values": [
+          0.8641808992071689,
+          0.8629139827330137,
+          0.8632402404050583,
+          0.8649271062191864,
+          0.8645206008019786
+        ],
+        "mean": 0.8639565658732813,
+        "sample_SD": 0.000853011018291752
+      },
+      "Brier": {
+        "values": [
+          0.09511584212727642,
+          0.09447409603691091,
+          0.09455073851343458,
+          0.09378835663290168,
+          0.09483698656932044
+        ],
+        "mean": 0.09455320397596881,
+        "sample_SD": 0.0004970789304327238
+      },
+      "log_loss": {
+        "values": [
+          0.3120155238683421,
+          0.3059005439319476,
+          0.3056666444412341,
+          0.304008908863459,
+          0.31033147692212965
+        ],
+        "mean": 0.3075846196054225,
+        "sample_SD": 0.0034087602079103923
+      }
+    },
+    "mimic:dev:TCN:1": {
+      "AP": {
+        "values": [
+          0.49038306592106085,
+          0.4966073304634946,
+          0.5018744389603069,
+          0.4906538751391632,
+          0.494531509671595
+        ],
+        "mean": 0.4948100440311241,
+        "sample_SD": 0.004745665671704236
+      },
+      "AUROC": {
+        "values": [
+          0.8345622741906065,
+          0.8368986062117021,
+          0.838236207228229,
+          0.8340731648768231,
+          0.8393059692680241
+        ],
+        "mean": 0.8366152443550771,
+        "sample_SD": 0.002270719583361581
+      },
+      "Brier": {
+        "values": [
+          0.10225352225444913,
+          0.10053903437415224,
+          0.10066870465830402,
+          0.10242996551275288,
+          0.10001194409739507
+        ],
+        "mean": 0.10118063417941067,
+        "sample_SD": 0.0010898940607371118
+      },
+      "log_loss": {
+        "values": [
+          0.3367059997054221,
+          0.32857056739895496,
+          0.3508481239661505,
+          0.35408770154486613,
+          0.3245659831269816
+        ],
+        "mean": 0.338955675148475,
+        "sample_SD": 0.013137573032944069
+      }
+    },
+    "mimic:dev:ModernTCN:1": {
+      "AP": {
+        "values": [
+          0.49290157239628185,
+          0.494375348393721,
+          0.4799917878560173,
+          0.47944721011259367,
+          0.4706594496514241
+        ],
+        "mean": 0.4834750736820076,
+        "sample_SD": 0.010003400061649775
+      },
+      "AUROC": {
+        "values": [
+          0.8403979068505243,
+          0.8373655399827806,
+          0.8343780785890146,
+          0.8378710037593089,
+          0.8317244977100979
+        ],
+        "mean": 0.8363474053783453,
+        "sample_SD": 0.0033546250009376492
+      },
+      "Brier": {
+        "values": [
+          0.10776998861528128,
+          0.11856642691466521,
+          0.10299703444921429,
+          0.10561521433488642,
+          0.10319258589821388
+        ],
+        "mean": 0.10762825004245222,
+        "sample_SD": 0.006419489663172405
+      },
+      "log_loss": {
+        "values": [
+          0.378337796338942,
+          0.36820888487510695,
+          0.33639060848387553,
+          0.33926808548571896,
+          0.3332556441846073
+        ],
+        "mean": 0.3510922038736501,
+        "sample_SD": 0.02067240081296584
+      }
+    },
+    "mimic:dev:LITEMV:1": {
+      "AP": {
+        "values": [
+          0.5092347755253668,
+          0.5155977264370631,
+          0.4998865468086985,
+          0.5014594741327799,
+          0.4980692697446154
+        ],
+        "mean": 0.5048495585297047,
+        "sample_SD": 0.007362908987522172
+      },
+      "AUROC": {
+        "values": [
+          0.8436938854821712,
+          0.8465645094853111,
+          0.8442853487852515,
+          0.8427208642474258,
+          0.8428173971567627
+        ],
+        "mean": 0.8440164010313845,
+        "sample_SD": 0.0015640677508275563
+      },
+      "Brier": {
+        "values": [
+          0.09990713223187705,
+          0.10004408131627274,
+          0.09929186095413708,
+          0.10088940263489915,
+          0.10117329303517006
+        ],
+        "mean": 0.10026115403447122,
+        "sample_SD": 0.0007646363413115522
+      },
+      "log_loss": {
+        "values": [
+          0.32127690386607916,
+          0.3206994517454822,
+          0.3215449340659224,
+          0.32945147873822694,
+          0.32757138690658616
+        ],
+        "mean": 0.3241088310644594,
+        "sample_SD": 0.004085046632003184
+      }
+    },
+    "mimic:test:CEM-Net:0": {
+      "AP": {
+        "values": [
+          0.5470954117470451,
+          0.544330171984472,
+          0.5428731503131702,
+          0.5434731251471175,
+          0.5418594476190164
+        ],
+        "mean": 0.5439262613621642,
+        "sample_SD": 0.001987004800734558
+      },
+      "AUROC": {
+        "values": [
+          0.9138215595279684,
+          0.915093159426442,
+          0.9145149071349284,
+          0.914426052002168,
+          0.9141077808564537
+        ],
+        "mean": 0.9143926917895921,
+        "sample_SD": 0.0004780352248480324
+      },
+      "Brier": {
+        "values": [
+          0.049278686409937995,
+          0.048316940185532765,
+          0.04897605906538933,
+          0.04876505372058927,
+          0.049233348757179156
+        ],
+        "mean": 0.0489140176277257,
+        "sample_SD": 0.00039290474308367534
+      },
+      "log_loss": {
+        "values": [
+          0.17400431784066972,
+          0.16725076971990532,
+          0.17171633834855404,
+          0.17049826117824854,
+          0.17356048776568717
+        ],
+        "mean": 0.17140603497061296,
+        "sample_SD": 0.00271934327858939
+      }
+    },
+    "mimic:test:TCN:0": {
+      "AP": {
+        "values": [
+          0.44708112676476636,
+          0.44506226585410624,
+          0.4655420339119651,
+          0.44863938384599983,
+          0.44745062292217797
+        ],
+        "mean": 0.4507550866598031,
+        "sample_SD": 0.008365938053559037
+      },
+      "AUROC": {
+        "values": [
+          0.8811579866853505,
+          0.8865404194349575,
+          0.888123222090451,
+          0.889529734613312,
+          0.8864497891360866
+        ],
+        "mean": 0.8863602303920315,
+        "sample_SD": 0.0031724487852816583
+      },
+      "Brier": {
+        "values": [
+          0.05683782509852898,
+          0.05637872518719227,
+          0.05459431710561556,
+          0.05547669559351914,
+          0.05458940603504505
+        ],
+        "mean": 0.0555753938039802,
+        "sample_SD": 0.001022680154058628
+      },
+      "log_loss": {
+        "values": [
+          0.23832008809934846,
+          0.23636957588429777,
+          0.207281668447837,
+          0.20643427123412936,
+          0.20374641087836917
+        ],
+        "mean": 0.21843040290879637,
+        "sample_SD": 0.01732941560765112
+      }
+    },
+    "mimic:test:ModernTCN:0": {
+      "AP": {
+        "values": [
+          0.417262981628582,
+          0.4296464386813674,
+          0.4306795001617604,
+          0.4412474437991533,
+          0.39319232832494255
+        ],
+        "mean": 0.42240573851916113,
+        "sample_SD": 0.018410350431393743
+      },
+      "AUROC": {
+        "values": [
+          0.8723144318810022,
+          0.8838563682760904,
+          0.8871513347829018,
+          0.8890312034180274,
+          0.8764516017420642
+        ],
+        "mean": 0.8817609880200171,
+        "sample_SD": 0.007136692057795828
+      },
+      "Brier": {
+        "values": [
+          0.05688511047804577,
+          0.060986615572341606,
+          0.05559380869424845,
+          0.0546998256521487,
+          0.05704801785637901
+        ],
+        "mean": 0.057042675650632715,
+        "sample_SD": 0.002406640760558297
+      },
+      "log_loss": {
+        "values": [
+          0.19900865938379464,
+          0.21105057796209073,
+          0.19598768726209156,
+          0.1950186469629404,
+          0.19849757072448554
+        ],
+        "mean": 0.1999126284590806,
+        "sample_SD": 0.006446504593523892
+      }
+    },
+    "mimic:test:LITEMV:0": {
+      "AP": {
+        "values": [
+          0.4571187835663107,
+          0.4575826990743072,
+          0.4671589137490089,
+          0.46082571413155266,
+          0.4683933865094619
+        ],
+        "mean": 0.4622158994061283,
+        "sample_SD": 0.00529089992351797
+      },
+      "AUROC": {
+        "values": [
+          0.8895325103275937,
+          0.8925118200242355,
+          0.8932970566842169,
+          0.8909692329500782,
+          0.895126413774566
+        ],
+        "mean": 0.892287406752138,
+        "sample_SD": 0.0021480660870792337
+      },
+      "Brier": {
+        "values": [
+          0.05406161550593113,
+          0.05388036619127474,
+          0.05538770913147362,
+          0.05355714588995721,
+          0.055849218249167665
+        ],
+        "mean": 0.05454721099356088,
+        "sample_SD": 0.0010077665764952279
+      },
+      "log_loss": {
+        "values": [
+          0.19128038548259127,
+          0.1852142910645744,
+          0.18814202042462355,
+          0.18901362640289923,
+          0.19896256078226077
+        ],
+        "mean": 0.19052257683138984,
+        "sample_SD": 0.005194455722845463
+      }
+    },
+    "mimic:test:CEM-Net:1": {
+      "AP": {
+        "values": [
+          0.5411550678000061,
+          0.5411683322897266,
+          0.5401992708244943,
+          0.541605825850046,
+          0.542081486229978
+        ],
+        "mean": 0.5412419965988502,
+        "sample_SD": 0.0006959480317901077
+      },
+      "AUROC": {
+        "values": [
+          0.8567858214782536,
+          0.8580655491718421,
+          0.8574017560361853,
+          0.8578599529918459,
+          0.8577713523535302
+        ],
+        "mean": 0.8575768864063313,
+        "sample_SD": 0.0005032865391190298
+      },
+      "Brier": {
+        "values": [
+          0.09457910835988573,
+          0.09353158434777824,
+          0.09359374273489969,
+          0.09334784830347577,
+          0.09420437894170432
+        ],
+        "mean": 0.09385133253754874,
+        "sample_SD": 0.0005187454087304766
+      },
+      "log_loss": {
+        "values": [
+          0.3139598217411478,
+          0.30495740068229416,
+          0.3054114679640488,
+          0.3053996221033056,
+          0.31175156621865385
+        ],
+        "mean": 0.30829597574189005,
+        "sample_SD": 0.004238973637424874
+      }
+    },
+    "mimic:test:TCN:1": {
+      "AP": {
+        "values": [
+          0.4726077507461513,
+          0.47018653371815694,
+          0.47415985263414373,
+          0.4772600696979336,
+          0.47642361012027457
+        ],
+        "mean": 0.474127563383332,
+        "sample_SD": 0.0028691032701388397
+      },
+      "AUROC": {
+        "values": [
+          0.8303336561266897,
+          0.8299921344694379,
+          0.8287033332165039,
+          0.8301175986665069,
+          0.8309769536930008
+        ],
+        "mean": 0.8300247352344279,
+        "sample_SD": 0.0008303526103999281
+      },
+      "Brier": {
+        "values": [
+          0.10200498850583031,
+          0.10098682890081334,
+          0.10164596682586127,
+          0.10181453349179904,
+          0.09961021701009558
+        ],
+        "mean": 0.10121250694687992,
+        "sample_SD": 0.0009742451014435526
+      },
+      "log_loss": {
+        "values": [
+          0.3361082624721355,
+          0.3320957622780389,
+          0.35880950430721265,
+          0.3539439872778302,
+          0.3272544024526924
+        ],
+        "mean": 0.34164238375758194,
+        "sample_SD": 0.013917776072710875
+      }
+    },
+    "mimic:test:ModernTCN:1": {
+      "AP": {
+        "values": [
+          0.4691840775961128,
+          0.4578565769923646,
+          0.45685532546316426,
+          0.43476078279988933,
+          0.4423105605412241
+        ],
+        "mean": 0.45219346467855104,
+        "sample_SD": 0.013638684925961634
+      },
+      "AUROC": {
+        "values": [
+          0.8288306477080278,
+          0.8273565323489293,
+          0.826585617839116,
+          0.8205530530125373,
+          0.8216875325914246
+        ],
+        "mean": 0.8250026767000069,
+        "sample_SD": 0.0036568098297852054
+      },
+      "Brier": {
+        "values": [
+          0.10741112448077764,
+          0.12092329687720632,
+          0.10230529594798778,
+          0.10630453137223414,
+          0.10292967762294543
+        ],
+        "mean": 0.10797478526023027,
+        "sample_SD": 0.007555918785181667
+      },
+      "log_loss": {
+        "values": [
+          0.38363410993218444,
+          0.37751433233847653,
+          0.33795281996625137,
+          0.3462180866388297,
+          0.3355026479232245
+        ],
+        "mean": 0.35616439935979327,
+        "sample_SD": 0.022737102774442484
+      }
+    },
+    "mimic:test:LITEMV:1": {
+      "AP": {
+        "values": [
+          0.4881201987573502,
+          0.49178448002302666,
+          0.4695741612427998,
+          0.48172303548632756,
+          0.48664920209367574
+        ],
+        "mean": 0.483570215520636,
+        "sample_SD": 0.008616238397843028
+      },
+      "AUROC": {
+        "values": [
+          0.8376899465140363,
+          0.8403361522450744,
+          0.8342762066188234,
+          0.8349504254520813,
+          0.8385935129032241
+        ],
+        "mean": 0.8371692487466479,
+        "sample_SD": 0.002530899142937929
+      },
+      "Brier": {
+        "values": [
+          0.09923716788261801,
+          0.09997680764888106,
+          0.0997025789531688,
+          0.10028018124744034,
+          0.09910236967641302
+        ],
+        "mean": 0.09965982108170425,
+        "sample_SD": 0.0004941010146047649
+      },
+      "log_loss": {
+        "values": [
+          0.3215810271335888,
+          0.32288111303427547,
+          0.32570183879375464,
+          0.32953783994968355,
+          0.32505844359632674
+        ],
+        "mean": 0.3249520525015258,
+        "sample_SD": 0.0030518661248913797
+      }
+    },
+    "eicu:dev:CEM-Net:0": {
+      "AP": {
+        "values": [
+          0.4345274169276406,
+          0.43163453498355875,
+          0.4305670626944776,
+          0.43838050277473917,
+          0.4320873701231281
+        ],
+        "mean": 0.4334393775007088,
+        "sample_SD": 0.003119860636913929
+      },
+      "AUROC": {
+        "values": [
+          0.8889426931503712,
+          0.8879562047166708,
+          0.8879652105801809,
+          0.8806309738894617,
+          0.8838165094566185
+        ],
+        "mean": 0.8858623183586605,
+        "sample_SD": 0.003530138936787439
+      },
+      "Brier": {
+        "values": [
+          0.04031374902907988,
+          0.03873520243961936,
+          0.038471825650916586,
+          0.04111318818929556,
+          0.04084625580448633
+        ],
+        "mean": 0.03989604422267955,
+        "sample_SD": 0.0012180692690085752
+      },
+      "log_loss": {
+        "values": [
+          0.16616985225954453,
+          0.14400070771950974,
+          0.14309449462569485,
+          0.18157591555830638,
+          0.16630012156102986
+        ],
+        "mean": 0.16022821834481707,
+        "sample_SD": 0.01646808874869962
+      }
+    },
+    "eicu:dev:TCN:0": {
+      "AP": {
+        "values": [
+          0.3328728060941822,
+          0.3328553802223352,
+          0.3391869715732548,
+          0.33416058775174673,
+          0.3399315909237342
+        ],
+        "mean": 0.3358014673130506,
+        "sample_SD": 0.003480967234515268
+      },
+      "AUROC": {
+        "values": [
+          0.828287856031804,
+          0.8321237765880801,
+          0.8419244652826271,
+          0.8393320466494494,
+          0.8419346257440228
+        ],
+        "mean": 0.8367205540591967,
+        "sample_SD": 0.006191281940053942
+      },
+      "Brier": {
+        "values": [
+          0.04275463882073493,
+          0.04275747370203672,
+          0.04257639722890811,
+          0.04240452209265356,
+          0.04350459184862123
+        ],
+        "mean": 0.04279952473859091,
+        "sample_SD": 0.0004203319048140176
+      },
+      "log_loss": {
+        "values": [
+          0.16721494135208634,
+          0.18009443289721971,
+          0.16889617930491668,
+          0.17324511631311248,
+          0.17346868931540826
+        ],
+        "mean": 0.1725838718365487,
+        "sample_SD": 0.005001328934133233
+      }
+    },
+    "eicu:dev:ModernTCN:0": {
+      "AP": {
+        "values": [
+          0.32400950954984825,
+          0.31699677196158427,
+          0.33039987230631257,
+          0.30144176111515675,
+          0.3000696422892714
+        ],
+        "mean": 0.3145835114444347,
+        "sample_SD": 0.013492484362510045
+      },
+      "AUROC": {
+        "values": [
+          0.853324502968702,
+          0.8240104172439656,
+          0.8529601118759168,
+          0.8372569455990423,
+          0.8451072298148579
+        ],
+        "mean": 0.842531841500497,
+        "sample_SD": 0.012275286888923351
+      },
+      "Brier": {
+        "values": [
+          0.043574975416811705,
+          0.04449434309042214,
+          0.042774109124442156,
+          0.044062821799367796,
+          0.05268636255533055
+        ],
+        "mean": 0.04551852239727487,
+        "sample_SD": 0.004057558351155776
+      },
+      "log_loss": {
+        "values": [
+          0.16731342157063697,
+          0.19667138242053628,
+          0.16543375483170145,
+          0.17634111257778295,
+          0.18958744059118468
+        ],
+        "mean": 0.17906942239836848,
+        "sample_SD": 0.01371164070465118
+      }
+    },
+    "eicu:dev:LITEMV:0": {
+      "AP": {
+        "values": [
+          0.34864872183090884,
+          0.36061734371936927,
+          0.3563869327182421,
+          0.34462031814451394,
+          0.3365945371792775
+        ],
+        "mean": 0.3493735707184623,
+        "sample_SD": 0.009513571778951164
+      },
+      "AUROC": {
+        "values": [
+          0.8611581032450668,
+          0.8671821022548835,
+          0.8566982957211526,
+          0.843056663969526,
+          0.8548406054526578
+        ],
+        "mean": 0.8565871541286574,
+        "sample_SD": 0.008934252211290452
+      },
+      "Brier": {
+        "values": [
+          0.04117490831752377,
+          0.04101100547864271,
+          0.045921548429993804,
+          0.04213093829626303,
+          0.04160122844790204
+        ],
+        "mean": 0.04236792579406507,
+        "sample_SD": 0.0020332698526666277
+      },
+      "log_loss": {
+        "values": [
+          0.154616723258202,
+          0.15259758740034618,
+          0.1689649887400421,
+          0.16291661203669436,
+          0.15665503279159282
+        ],
+        "mean": 0.15915018884537552,
+        "sample_SD": 0.0067125058712947695
+      }
+    },
+    "eicu:dev:CEM-Net:1": {
+      "AP": {
+        "values": [
+          0.4011181455739765,
+          0.3976992920114517,
+          0.3987553796528904,
+          0.4026621849099469,
+          0.4013674113319516
+        ],
+        "mean": 0.4003204826960435,
+        "sample_SD": 0.0020332291456445985
+      },
+      "AUROC": {
+        "values": [
+          0.8151534130329209,
+          0.8180437483424957,
+          0.817579107412189,
+          0.8161123510120918,
+          0.8133567181107529
+        ],
+        "mean": 0.8160490675820901,
+        "sample_SD": 0.001895700448211102
+      },
+      "Brier": {
+        "values": [
+          0.0867134970608901,
+          0.08433232606199675,
+          0.08553667137259155,
+          0.08583157230753978,
+          0.08615298621075104
+        ],
+        "mean": 0.08571341060275386,
+        "sample_SD": 0.0008868473785787675
+      },
+      "log_loss": {
+        "values": [
+          0.29846916652051075,
+          0.28523372996086455,
+          0.292384313493291,
+          0.29443844278660913,
+          0.29502523057799396
+        ],
+        "mean": 0.2931101766678539,
+        "sample_SD": 0.004917209185048082
+      }
+    },
+    "eicu:dev:TCN:1": {
+      "AP": {
+        "values": [
+          0.34148931830550866,
+          0.33497764948286135,
+          0.3374428561909126,
+          0.3329797620266616,
+          0.34057692431276154
+        ],
+        "mean": 0.3374933020637411,
+        "sample_SD": 0.0036117851659261324
+      },
+      "AUROC": {
+        "values": [
+          0.7862763925252038,
+          0.7809723218650131,
+          0.7877868377283096,
+          0.7807472023826703,
+          0.7904678190208664
+        ],
+        "mean": 0.7852501147044125,
+        "sample_SD": 0.004280431612392439
+      },
+      "Brier": {
+        "values": [
+          0.0890988283063353,
+          0.09021299523027983,
+          0.08918976776347545,
+          0.08994641387807012,
+          0.08808293531298962
+        ],
+        "mean": 0.08930618809823006,
+        "sample_SD": 0.000834429053027524
+      },
+      "log_loss": {
+        "values": [
+          0.3082707890167907,
+          0.3103251148294521,
+          0.3091130098237766,
+          0.31774622214367,
+          0.3002180408049073
+        ],
+        "mean": 0.3091346353237193,
+        "sample_SD": 0.006241574819872542
+      }
+    },
+    "eicu:dev:ModernTCN:1": {
+      "AP": {
+        "values": [
+          0.3247756767524378,
+          0.3392879930277731,
+          0.3262987232691262,
+          0.33545321299392455,
+          0.33829615718681416
+        ],
+        "mean": 0.3328223526460151,
+        "sample_SD": 0.006819002878914576
+      },
+      "AUROC": {
+        "values": [
+          0.7862382997522293,
+          0.7808525327347872,
+          0.7758744805350192,
+          0.7768057508327006,
+          0.7775551359511467
+        ],
+        "mean": 0.7794652399611767,
+        "sample_SD": 0.0042253358796384135
+      },
+      "Brier": {
+        "values": [
+          0.09215064604450966,
+          0.09194854563146442,
+          0.09577355625941304,
+          0.09946235830583518,
+          0.09087076707575763
+        ],
+        "mean": 0.09404117466339598,
+        "sample_SD": 0.00354947380167592
+      },
+      "log_loss": {
+        "values": [
+          0.3247258543693239,
+          0.32612121284328277,
+          0.3230520304454708,
+          0.3324429191328976,
+          0.30790100496153294
+        ],
+        "mean": 0.3228486043505016,
+        "sample_SD": 0.009079606541490447
+      }
+    },
+    "eicu:dev:LITEMV:1": {
+      "AP": {
+        "values": [
+          0.3469390159635113,
+          0.345380788803502,
+          0.3544191119745629,
+          0.34663468542091624,
+          0.3510943438183609
+        ],
+        "mean": 0.34889358919617064,
+        "sample_SD": 0.0037628942407422063
+      },
+      "AUROC": {
+        "values": [
+          0.8013323266918019,
+          0.7855904953617148,
+          0.7926519751088584,
+          0.7973259952809275,
+          0.795897615716243
+        ],
+        "mean": 0.7945596816319092,
+        "sample_SD": 0.00590332377677166
+      },
+      "Brier": {
+        "values": [
+          0.08757905948137333,
+          0.08967408571334183,
+          0.08821554360261788,
+          0.08809565001938713,
+          0.08751646393528058
+        ],
+        "mean": 0.08821616055040014,
+        "sample_SD": 0.000871140355340779
+      },
+      "log_loss": {
+        "values": [
+          0.2949490235704835,
+          0.3113500782407163,
+          0.3011613721989553,
+          0.2979388325636159,
+          0.2980071320722457
+        ],
+        "mean": 0.30068128772920333,
+        "sample_SD": 0.006355796434650923
+      }
+    },
+    "eicu:test:CEM-Net:0": {
+      "AP": {
+        "values": [
+          0.3935388754828638,
+          0.3979448476688867,
+          0.3983095568340663,
+          0.38275817952568925,
+          0.388227778199175
+        ],
+        "mean": 0.39215584754213617,
+        "sample_SD": 0.006652806169437069
+      },
+      "AUROC": {
+        "values": [
+          0.8751738647414767,
+          0.8827160075296336,
+          0.8829265934164322,
+          0.868939130922926,
+          0.8753998023024137
+        ],
+        "mean": 0.8770310797825764,
+        "sample_SD": 0.005887814424079871
+      },
+      "Brier": {
+        "values": [
+          0.04056108514868051,
+          0.038952201347990226,
+          0.03878130288573077,
+          0.041992711069267497,
+          0.04129917333237491
+        ],
+        "mean": 0.04031729475680878,
+        "sample_SD": 0.0014189159731283498
+      },
+      "log_loss": {
+        "values": [
+          0.17268539626451573,
+          0.14552454819822758,
+          0.1446221546758685,
+          0.1899478412726604,
+          0.1704759462624306
+        ],
+        "mean": 0.16465117733474055,
+        "sample_SD": 0.019399661749988792
+      }
+    },
+    "eicu:test:TCN:0": {
+      "AP": {
+        "values": [
+          0.30153070456658726,
+          0.30226024590002615,
+          0.31491660808411776,
+          0.3036614483844219,
+          0.2952777237607448
+        ],
+        "mean": 0.30352934613917953,
+        "sample_SD": 0.007130596767361667
+      },
+      "AUROC": {
+        "values": [
+          0.823966423742091,
+          0.8259594026531838,
+          0.834300543085088,
+          0.8326017330426474,
+          0.8324868397514386
+        ],
+        "mean": 0.8298629884548898,
+        "sample_SD": 0.004584884572234927
+      },
+      "Brier": {
+        "values": [
+          0.04285042028724096,
+          0.042726753029528546,
+          0.0427194041367936,
+          0.04249592450409373,
+          0.04344694551648986
+        ],
+        "mean": 0.04284788949482934,
+        "sample_SD": 0.0003584467907363029
+      },
+      "log_loss": {
+        "values": [
+          0.16684404515759216,
+          0.1804534775474751,
+          0.16994808831917066,
+          0.17403492024860343,
+          0.174989773261136
+        ],
+        "mean": 0.17325406090679546,
+        "sample_SD": 0.005183430218252073
+      }
+    },
+    "eicu:test:ModernTCN:0": {
+      "AP": {
+        "values": [
+          0.2926740071029272,
+          0.2695012649895993,
+          0.2972379445779165,
+          0.2762400467921357,
+          0.2770578005828776
+        ],
+        "mean": 0.28254221280909125,
+        "sample_SD": 0.011816092647708139
+      },
+      "AUROC": {
+        "values": [
+          0.8514087033718436,
+          0.8243327617635128,
+          0.8438753985291645,
+          0.8307157421247985,
+          0.8364617242349018
+        ],
+        "mean": 0.8373588660048442,
+        "sample_SD": 0.010659250397268775
+      },
+      "Brier": {
+        "values": [
+          0.04395841787545651,
+          0.04647365357279136,
+          0.04316776797327618,
+          0.04390812181773726,
+          0.05311900913756614
+        ],
+        "mean": 0.04612539407536549,
+        "sample_SD": 0.0041046184533695355
+      },
+      "log_loss": {
+        "values": [
+          0.16843944168746938,
+          0.19969599560326134,
+          0.16827263150560234,
+          0.17694706671696905,
+          0.1916481598162406
+        ],
+        "mean": 0.18100065906590854,
+        "sample_SD": 0.01413420814026114
+      }
+    },
+    "eicu:test:LITEMV:0": {
+      "AP": {
+        "values": [
+          0.32306103099022293,
+          0.3269559649046096,
+          0.3149385626123073,
+          0.3149585170666854,
+          0.31110453811559446
+        ],
+        "mean": 0.31820372273788394,
+        "sample_SD": 0.006553362480411057
+      },
+      "AUROC": {
+        "values": [
+          0.8580595756282091,
+          0.8605771317553808,
+          0.849015692697441,
+          0.848212416718278,
+          0.8500285627001749
+        ],
+        "mean": 0.8531786758998969,
+        "sample_SD": 0.005711341868978524
+      },
+      "Brier": {
+        "values": [
+          0.04123682487036929,
+          0.04101451876082551,
+          0.04680749430374821,
+          0.04254481204390082,
+          0.041487781536919524
+        ],
+        "mean": 0.04261828630315266,
+        "sample_SD": 0.0024141980648650285
+      },
+      "log_loss": {
+        "values": [
+          0.15457666053157415,
+          0.153143867369365,
+          0.17104726597891648,
+          0.16127776333011823,
+          0.15644644873857252
+        ],
+        "mean": 0.15929840118970928,
+        "sample_SD": 0.007250180213104186
+      }
+    },
+    "eicu:test:CEM-Net:1": {
+      "AP": {
+        "values": [
+          0.3922187567407075,
+          0.3930729541555812,
+          0.3944413493286769,
+          0.39095753143033796,
+          0.3954888270832543
+        ],
+        "mean": 0.39323588374771157,
+        "sample_SD": 0.0017875180853986468
+      },
+      "AUROC": {
+        "values": [
+          0.8142066275919412,
+          0.8177370414532489,
+          0.8161091838361281,
+          0.8161957677011936,
+          0.8136070904421275
+        ],
+        "mean": 0.8155711422049279,
+        "sample_SD": 0.0016650949535522482
+      },
+      "Brier": {
+        "values": [
+          0.08399751562670088,
+          0.08174250010622207,
+          0.0826183478222263,
+          0.08342039863003545,
+          0.08336804555214196
+        ],
+        "mean": 0.08302936154746533,
+        "sample_SD": 0.0008703280742631966
+      },
+      "log_loss": {
+        "values": [
+          0.29102426989111024,
+          0.2784049915049171,
+          0.28499862522323516,
+          0.2874279717863657,
+          0.28737602370430215
+        ],
+        "mean": 0.28584637642198607,
+        "sample_SD": 0.004683608039254781
+      }
+    },
+    "eicu:test:TCN:1": {
+      "AP": {
+        "values": [
+          0.3359487225971015,
+          0.335432486044711,
+          0.3385925047668725,
+          0.32920881058939877,
+          0.33428459979582176
+        ],
+        "mean": 0.33469342475878106,
+        "sample_SD": 0.003448656970259531
+      },
+      "AUROC": {
+        "values": [
+          0.7855356373006677,
+          0.7810521974491871,
+          0.7874755353664731,
+          0.7790170387331982,
+          0.7881227028413785
+        ],
+        "mean": 0.7842406223381808,
+        "sample_SD": 0.004020701245988874
+      },
+      "Brier": {
+        "values": [
+          0.08673462596412192,
+          0.08735161081997597,
+          0.08618888976724881,
+          0.08734660886066636,
+          0.0858986782001839
+        ],
+        "mean": 0.08670408272243939,
+        "sample_SD": 0.0006609019576617022
+      },
+      "log_loss": {
+        "values": [
+          0.3023369664294382,
+          0.30291936982435663,
+          0.3029397338216514,
+          0.31168904833934236,
+          0.2953855736457906
+        ],
+        "mean": 0.3030541384121158,
+        "sample_SD": 0.005786063896595501
+      }
+    },
+    "eicu:test:ModernTCN:1": {
+      "AP": {
+        "values": [
+          0.31873033124554306,
+          0.32941868512495964,
+          0.3154113916177639,
+          0.3186194334776964,
+          0.3157012586241471
+        ],
+        "mean": 0.319576220018022,
+        "sample_SD": 0.005719838483035527
+      },
+      "AUROC": {
+        "values": [
+          0.7827267654608314,
+          0.7851879992187214,
+          0.7758997546508377,
+          0.7759491365237311,
+          0.7735506125928044
+        ],
+        "mean": 0.7786628536893853,
+        "sample_SD": 0.0050056690173909905
+      },
+      "Brier": {
+        "values": [
+          0.08920901251858292,
+          0.08916426220697066,
+          0.09359120238459102,
+          0.09780042758937804,
+          0.09008771493292564
+        ],
+        "mean": 0.09197052392648966,
+        "sample_SD": 0.0037302947331208152
+      },
+      "log_loss": {
+        "values": [
+          0.31590355033885853,
+          0.31418746815892584,
+          0.3164573690604825,
+          0.32858022845306434,
+          0.30562227098835326
+        ],
+        "mean": 0.3161501773999369,
+        "sample_SD": 0.008205949088660213
+      }
+    },
+    "eicu:test:LITEMV:1": {
+      "AP": {
+        "values": [
+          0.34227218952266053,
+          0.34570744528216646,
+          0.34671552930401817,
+          0.3395450756381141,
+          0.34381648635992923
+        ],
+        "mean": 0.3436113452213777,
+        "sample_SD": 0.002846030721885516
+      },
+      "AUROC": {
+        "values": [
+          0.7972923131632057,
+          0.7837137700064661,
+          0.79372575706974,
+          0.7946026643249895,
+          0.7961065005826473
+        ],
+        "mean": 0.7930882010294098,
+        "sample_SD": 0.005416750059047213
+      },
+      "Brier": {
+        "values": [
+          0.08497301542274024,
+          0.08656547277178259,
+          0.08577149274652504,
+          0.08560333632006252,
+          0.08530395436467558
+        ],
+        "mean": 0.08564345432515719,
+        "sample_SD": 0.0005985127092714298
+      },
+      "log_loss": {
+        "values": [
+          0.2891267638824034,
+          0.30347091346468175,
+          0.2944491857778933,
+          0.292392268432035,
+          0.2919929157062267
+        ],
+        "mean": 0.294286409452648,
+        "sample_SD": 0.0054738340370464236
+      }
+    }
+  },
+  "old_results_unchanged": true,
+  "existing_AP_caches_recomputed": false,
+  "calibration_fits": 0,
+  "overall_paper_task_complete": false,
+  "inputs": {
+    "F:\\Code\\Disease-Ranking-Hawkes-Mamba-0624\\runs\\cem_sequence_comparators_20261102\\mimiciii_cnn_results_v1\\verified-results.json": "477d3585cd9459ad042a10279c0322e686ab6f2f14459e518bd55ce3ce09a44f",
+    "F:\\Code\\Disease-Ranking-Hawkes-Mamba-0624\\runs\\cem_sequence_comparators_20261102\\mimic_cnn_results_v1\\verified-results.json": "1faad1656558658bf1987ddb77e034d5fecc4e6ebb144ef230828747869c0221",
+    "F:\\Code\\Disease-Ranking-Hawkes-Mamba-0624\\runs\\cem_sequence_comparators_20261102\\eicu_cnn_results_v1\\verified-results.json": "ae83360d4c8eb42dbc8b00937720ffac59696de20aabd25f4d2b6fc98e95c280"
+  }
+}

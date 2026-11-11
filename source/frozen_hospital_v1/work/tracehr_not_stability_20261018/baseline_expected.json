@@ -1,0 +1,129 @@
+{
+  "provenance": {
+    "file": "F:\\Code\\Disease-Ranking-Hawkes-Mamba-0624\\runs\\tracehr_expansion_finish_20261004\\confirmation_analysis\\per_seed.csv",
+    "sha256": "71dca620f8a9db58514acb8b164a36218af9488a9cce1077f4e34abbc900570c",
+    "scope": "previously published local development summaries"
+  },
+  "rows": [
+    {
+      "family": "lightgbm",
+      "seed": 42,
+      "config": 2,
+      "endpoint_ap": [
+        0.5323660486240116,
+        0.5419902500082361
+      ],
+      "predictions_sha256": "249d2f3d84e00389621fb9a597aadeb9d056beb2060b41535f5b302494968e9b"
+    },
+    {
+      "family": "lightgbm",
+      "seed": 43,
+      "config": 2,
+      "endpoint_ap": [
+        0.53126559079394,
+        0.5403985848682046
+      ],
+      "predictions_sha256": "f12f7ba797f160de26d0fff22e84d449406c748a361f35682486c3450892c4eb"
+    },
+    {
+      "family": "lightgbm",
+      "seed": 44,
+      "config": 2,
+      "endpoint_ap": [
+        0.5339437473940668,
+        0.5404312965091853
+      ],
+      "predictions_sha256": "e2e9bb767d764c3cbc0a3113143ceb6d0bc0a32d99e150c6c0bc6696dd545e82"
+    },
+    {
+      "family": "xgboost",
+      "seed": 42,
+      "config": 2,
+      "endpoint_ap": [
+        0.5278629126367973,
+        0.5404998114524496
+      ],
+      "predictions_sha256": "aabcf4cd7905b81cc4f33d4ff7ab846614a88525b22bc5119ee39447905b32ba"
+    },
+    {
+      "family": "xgboost",
+      "seed": 43,
+      "config": 2,
+      "endpoint_ap": [
+        0.526511489312085,
+        0.5391491391421499
+      ],
+      "predictions_sha256": "a4c18056dc9a974d1056f966e3c5a7885ff2278393c9f42f098639ee53a370da"
+    },
+    {
+      "family": "xgboost",
+      "seed": 44,
+      "config": 2,
+      "endpoint_ap": [
+        0.5278715989427459,
+        0.5420718425508231
+      ],
+      "predictions_sha256": "0d7bd04abb4aec56a2d627b1364ea57ef2c70d53e47df943bf188679b16d8278"
+    },
+    {
+      "family": "tabm",
+      "seed": 42,
+      "config": 1,
+      "endpoint_ap": [
+        0.5316528403470181,
+        0.5423184628758707
+      ],
+      "predictions_sha256": "792622dc33d968cbd6b242c289d8a185517cb7410599b1a4715983bbd4a28aaa"
+    },
+    {
+      "family": "tabm",
+      "seed": 43,
+      "config": 1,
+      "endpoint_ap": [
+        0.5229115604050077,
+        0.5490369181963428
+      ],
+      "predictions_sha256": "b2e0a92bb3972b554c966044a4dc28d3d4ff306efd96233e6894fe700ac244ac"
+    },
+    {
+      "family": "tabm",
+      "seed": 44,
+      "config": 1,
+      "endpoint_ap": [
+        0.526791936271697,
+        0.5458109419801822
+      ],
+      "predictions_sha256": "09293005c3531ec6b0ba3c413d0a459f7e52c2767a7776a2590f52b8769bbba1"
+    },
+    {
+      "family": "realmlp",
+      "seed": 42,
+      "config": 0,
+      "endpoint_ap": [
+        0.540301595100345,
+        0.5489574506806235
+      ],
+      "predictions_sha256": "17f627204a1bfe5087a2ed4e038c4002c87373532b9b642d8828467e4eb8b712"
+    },
+    {
+      "family": "realmlp",
+      "seed": 43,
+      "config": 0,
+      "endpoint_ap": [
+        0.5312592027228008,
+        0.546758219816893
+      ],
+      "predictions_sha256": "73ff702c43b2f86a9a32d8120cb193df628f0c1f5453a0ce9345dad1ba872bbc"
+    },
+    {
+      "family": "realmlp",
+      "seed": 44,
+      "config": 0,
+      "endpoint_ap": [
+        0.5288862793016869,
+        0.548822182883684
+      ],
+      "predictions_sha256": "a958e5c9a89922823096c44aabd9e7b7105ac3247bc2f0e51389feb9ac414b75"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "complete": true,
+  "weighted_AP_ties_and_zero_weights": true,
+  "hospital_connectivity": true,
+  "unchanged_family_counts": {
+    "response_modulation_interaction": 6,
+    "response_modulation_simple": 24,
+    "duration_joint_deletion": 12,
+    "evidence_original_recipe": 18,
+    "replacement_baselines": 12,
+    "coordinate_paths": 6,
+    "legacy_III_EMA_and_baselines": 8,
+    "legacy_IV_eICU_EMA": 4,
+    "legacy_IV_eICU_baselines": 12,
+    "raw_encoded_interaction": 2,
+    "hospital": 4
+  },
+  "five_seed_summary": true,
+  "tabm_manifest_schema_equivalence": true,
+  "tabm_setting_changes_detected": true,
+  "nested_tree_seed_change_only": true,
+  "inconsistent_tree_seeds_rejected": true
+}

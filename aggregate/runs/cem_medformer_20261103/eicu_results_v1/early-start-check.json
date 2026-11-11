@@ -1,0 +1,11 @@
+{
+  "complete": true,
+  "checks": 6,
+  "only_cross_host_start_gate_changed": true,
+  "unchanged_analysis": true,
+  "family_count": 6,
+  "replicates": 20000,
+  "no_training_entry": true,
+  "no_console": true,
+  "script_sha256": "024ac0451a1a4336312181f6f85b54ed75c0d98174aeb895dfed77c9b1207045"
+}

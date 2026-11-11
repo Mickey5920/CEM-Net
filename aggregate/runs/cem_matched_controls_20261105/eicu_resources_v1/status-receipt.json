@@ -1,0 +1,38 @@
+{
+  "launch.json": {
+    "checked": true,
+    "source_manifest_sha256": "ea256dcab16970c1671308c9139c5381508441d26cfc9cad7a4726b36ec009e8",
+    "training_launched": false,
+    "execution": "v2",
+    "started": true,
+    "wrapper_pid": 1541935,
+    "gpu": 2
+  },
+  "exit.json": {
+    "job_id": "matched_resources_eicu",
+    "wrapper_pid": 1541935,
+    "child_pid": 1541936,
+    "child_identity": {
+      "start_ticks": "63584839",
+      "state": "R",
+      "boot": "8123672c-cb85-4243-be25-70318f0e0750"
+    },
+    "source_manifest_sha256": "ea256dcab16970c1671308c9139c5381508441d26cfc9cad7a4726b36ec009e8",
+    "started_at": 1793894537.8338604,
+    "returncode": 0,
+    "finished_at": 1793894688.876832
+  },
+  "progress.json": {
+    "completed": 20,
+    "total": 20,
+    "variant": "matched_tabm",
+    "endpoint": 1,
+    "seed": 52
+  },
+  "completion.json": {
+    "complete": true,
+    "files": {
+      "verified-results.json": "b5d6159e6668eea307f6473bcdd49cac86f7804e43a3b1720da7a856effbf31f"
+    }
+  }
+}

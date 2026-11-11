@@ -1,0 +1,1036 @@
+{
+  "complete": true,
+  "pilot": false,
+  "database": "eicu",
+  "seeds": [
+    48,
+    49,
+    50,
+    51,
+    52
+  ],
+  "replicates": 20000,
+  "family_count": 24,
+  "rng_seed": 20261110,
+  "selected_baselines": {
+    "0": "TabM_mini_PLE",
+    "1": "TabM_mini_PLE"
+  },
+  "rows": [
+    {
+      "database": "eicu",
+      "method": "CEM-Net",
+      "seed": 48,
+      "endpoint": 0,
+      "split": "test",
+      "AP": 0.3935388754828638,
+      "AUROC": 0.8751738647414767,
+      "Brier": 0.04056108514868051,
+      "log_loss": 0.17268539626451573
+    },
+    {
+      "database": "eicu",
+      "method": "CEM-Net",
+      "seed": 48,
+      "endpoint": 1,
+      "split": "test",
+      "AP": 0.3922187567407075,
+      "AUROC": 0.8142066275919412,
+      "Brier": 0.08399751562670088,
+      "log_loss": 0.29102426989111024
+    },
+    {
+      "database": "eicu",
+      "method": "CEM-Net",
+      "seed": 49,
+      "endpoint": 0,
+      "split": "test",
+      "AP": 0.3979448476688867,
+      "AUROC": 0.8827160075296336,
+      "Brier": 0.038952201347990226,
+      "log_loss": 0.14552454819822758
+    },
+    {
+      "database": "eicu",
+      "method": "CEM-Net",
+      "seed": 49,
+      "endpoint": 1,
+      "split": "test",
+      "AP": 0.3930729541555812,
+      "AUROC": 0.8177370414532489,
+      "Brier": 0.08174250010622207,
+      "log_loss": 0.2784049915049171
+    },
+    {
+      "database": "eicu",
+      "method": "CEM-Net",
+      "seed": 50,
+      "endpoint": 0,
+      "split": "test",
+      "AP": 0.3983095568340663,
+      "AUROC": 0.8829265934164322,
+      "Brier": 0.03878130288573077,
+      "log_loss": 0.1446221546758685
+    },
+    {
+      "database": "eicu",
+      "method": "CEM-Net",
+      "seed": 50,
+      "endpoint": 1,
+      "split": "test",
+      "AP": 0.3944413493286769,
+      "AUROC": 0.8161091838361281,
+      "Brier": 0.0826183478222263,
+      "log_loss": 0.28499862522323516
+    },
+    {
+      "database": "eicu",
+      "method": "CEM-Net",
+      "seed": 51,
+      "endpoint": 0,
+      "split": "test",
+      "AP": 0.38275817952568925,
+      "AUROC": 0.868939130922926,
+      "Brier": 0.041992711069267497,
+      "log_loss": 0.1899478412726604
+    },
+    {
+      "database": "eicu",
+      "method": "CEM-Net",
+      "seed": 51,
+      "endpoint": 1,
+      "split": "test",
+      "AP": 0.39095753143033796,
+      "AUROC": 0.8161957677011936,
+      "Brier": 0.08342039863003545,
+      "log_loss": 0.2874279717863657
+    },
+    {
+      "database": "eicu",
+      "method": "CEM-Net",
+      "seed": 52,
+      "endpoint": 0,
+      "split": "test",
+      "AP": 0.388227778199175,
+      "AUROC": 0.8753998023024137,
+      "Brier": 0.04129917333237491,
+      "log_loss": 0.1704759462624306
+    },
+    {
+      "database": "eicu",
+      "method": "CEM-Net",
+      "seed": 52,
+      "endpoint": 1,
+      "split": "test",
+      "AP": 0.3954888270832543,
+      "AUROC": 0.8136070904421275,
+      "Brier": 0.08336804555214196,
+      "log_loss": 0.28737602370430215
+    },
+    {
+      "database": "eicu",
+      "method": "TabM_mini_PLE",
+      "seed": 48,
+      "endpoint": 0,
+      "split": "test",
+      "AP": 0.4043460903626183,
+      "AUROC": 0.8825847262892725,
+      "Brier": 0.03841144362936473,
+      "log_loss": 0.14333845592153638
+    },
+    {
+      "database": "eicu",
+      "method": "TabM_mini_PLE",
+      "seed": 48,
+      "endpoint": 1,
+      "split": "test",
+      "AP": 0.3924462138554801,
+      "AUROC": 0.8188875360594384,
+      "Brier": 0.0816026395767593,
+      "log_loss": 0.2774927148791951
+    },
+    {
+      "database": "eicu",
+      "method": "TabM_mini_PLE",
+      "seed": 49,
+      "endpoint": 0,
+      "split": "test",
+      "AP": 0.40411589110949403,
+      "AUROC": 0.8832004660987367,
+      "Brier": 0.038667892931549964,
+      "log_loss": 0.14364190414897893
+    },
+    {
+      "database": "eicu",
+      "method": "TabM_mini_PLE",
+      "seed": 49,
+      "endpoint": 1,
+      "split": "test",
+      "AP": 0.39241452485209083,
+      "AUROC": 0.8188668265824903,
+      "Brier": 0.0815972830174581,
+      "log_loss": 0.27690667942659325
+    },
+    {
+      "database": "eicu",
+      "method": "TabM_mini_PLE",
+      "seed": 50,
+      "endpoint": 0,
+      "split": "test",
+      "AP": 0.4057291812864695,
+      "AUROC": 0.8833466252875145,
+      "Brier": 0.038538839319806874,
+      "log_loss": 0.14326139832192322
+    },
+    {
+      "database": "eicu",
+      "method": "TabM_mini_PLE",
+      "seed": 50,
+      "endpoint": 1,
+      "split": "test",
+      "AP": 0.3902878786780444,
+      "AUROC": 0.8189054489474596,
+      "Brier": 0.08164662420574746,
+      "log_loss": 0.27709633736645595
+    },
+    {
+      "database": "eicu",
+      "method": "TabM_mini_PLE",
+      "seed": 51,
+      "endpoint": 0,
+      "split": "test",
+      "AP": 0.40238881656862047,
+      "AUROC": 0.8838387818995797,
+      "Brier": 0.03852375255831764,
+      "log_loss": 0.1428202592089449
+    },
+    {
+      "database": "eicu",
+      "method": "TabM_mini_PLE",
+      "seed": 51,
+      "endpoint": 1,
+      "split": "test",
+      "AP": 0.39364213787309266,
+      "AUROC": 0.8191413191451092,
+      "Brier": 0.08145667537660711,
+      "log_loss": 0.27671451621154697
+    },
+    {
+      "database": "eicu",
+      "method": "TabM_mini_PLE",
+      "seed": 52,
+      "endpoint": 0,
+      "split": "test",
+      "AP": 0.40382242058222323,
+      "AUROC": 0.8832321168984539,
+      "Brier": 0.03991011813122541,
+      "log_loss": 0.1496293076110379
+    },
+    {
+      "database": "eicu",
+      "method": "TabM_mini_PLE",
+      "seed": 52,
+      "endpoint": 1,
+      "split": "test",
+      "AP": 0.39819303052871746,
+      "AUROC": 0.8194689027406719,
+      "Brier": 0.08130472101942608,
+      "log_loss": 0.27646971921315994
+    },
+    {
+      "database": "eicu",
+      "method": "matched_tabm",
+      "seed": 48,
+      "endpoint": 0,
+      "split": "test",
+      "AP": 0.4082098715789303,
+      "AUROC": 0.8840047043332697,
+      "Brier": 0.03816938258467744,
+      "log_loss": 0.1420590825367473
+    },
+    {
+      "database": "eicu",
+      "method": "matched_tabm",
+      "seed": 48,
+      "endpoint": 1,
+      "split": "test",
+      "AP": 0.3925862766183864,
+      "AUROC": 0.8174407281375557,
+      "Brier": 0.0816533590790749,
+      "log_loss": 0.27760248530279896
+    },
+    {
+      "database": "eicu",
+      "method": "matched_tabm",
+      "seed": 49,
+      "endpoint": 0,
+      "split": "test",
+      "AP": 0.4106280385657274,
+      "AUROC": 0.8847351449828686,
+      "Brier": 0.038099893683316226,
+      "log_loss": 0.14174972472645675
+    },
+    {
+      "database": "eicu",
+      "method": "matched_tabm",
+      "seed": 49,
+      "endpoint": 1,
+      "split": "test",
+      "AP": 0.3965924307992764,
+      "AUROC": 0.8157902770256834,
+      "Brier": 0.08163956666998803,
+      "log_loss": 0.27825976493738597
+    },
+    {
+      "database": "eicu",
+      "method": "matched_tabm",
+      "seed": 50,
+      "endpoint": 0,
+      "split": "test",
+      "AP": 0.4075139735222024,
+      "AUROC": 0.8846703333826995,
+      "Brier": 0.03818462144359288,
+      "log_loss": 0.14202773352750167
+    },
+    {
+      "database": "eicu",
+      "method": "matched_tabm",
+      "seed": 50,
+      "endpoint": 1,
+      "split": "test",
+      "AP": 0.3915849066577157,
+      "AUROC": 0.8153860742529686,
+      "Brier": 0.08196157033883684,
+      "log_loss": 0.2788460318822716
+    },
+    {
+      "database": "eicu",
+      "method": "matched_tabm",
+      "seed": 51,
+      "endpoint": 0,
+      "split": "test",
+      "AP": 0.4089155579939041,
+      "AUROC": 0.8842387840550318,
+      "Brier": 0.03811771438073916,
+      "log_loss": 0.1418820645164731
+    },
+    {
+      "database": "eicu",
+      "method": "matched_tabm",
+      "seed": 51,
+      "endpoint": 1,
+      "split": "test",
+      "AP": 0.39405382621004936,
+      "AUROC": 0.8171146532281248,
+      "Brier": 0.08166190855953609,
+      "log_loss": 0.2777632373024118
+    },
+    {
+      "database": "eicu",
+      "method": "matched_tabm",
+      "seed": 52,
+      "endpoint": 0,
+      "split": "test",
+      "AP": 0.4078899948207616,
+      "AUROC": 0.8843279185101753,
+      "Brier": 0.03820311358072318,
+      "log_loss": 0.1420176460448536
+    },
+    {
+      "database": "eicu",
+      "method": "matched_tabm",
+      "seed": 52,
+      "endpoint": 1,
+      "split": "test",
+      "AP": 0.39174093181270464,
+      "AUROC": 0.8169853772252568,
+      "Brier": 0.08176088600067816,
+      "log_loss": 0.27803899396376847
+    }
+  ],
+  "summaries": {
+    "CEM-Net:0": {
+      "AP": {
+        "values": [
+          0.3935388754828638,
+          0.3979448476688867,
+          0.3983095568340663,
+          0.38275817952568925,
+          0.388227778199175
+        ],
+        "mean": 0.39215584754213617,
+        "sample_SD": 0.006652806169437069
+      },
+      "AUROC": {
+        "values": [
+          0.8751738647414767,
+          0.8827160075296336,
+          0.8829265934164322,
+          0.868939130922926,
+          0.8753998023024137
+        ],
+        "mean": 0.8770310797825764,
+        "sample_SD": 0.005887814424079871
+      },
+      "Brier": {
+        "values": [
+          0.04056108514868051,
+          0.038952201347990226,
+          0.03878130288573077,
+          0.041992711069267497,
+          0.04129917333237491
+        ],
+        "mean": 0.04031729475680878,
+        "sample_SD": 0.0014189159731283498
+      },
+      "log_loss": {
+        "values": [
+          0.17268539626451573,
+          0.14552454819822758,
+          0.1446221546758685,
+          0.1899478412726604,
+          0.1704759462624306
+        ],
+        "mean": 0.16465117733474055,
+        "sample_SD": 0.019399661749988792
+      }
+    },
+    "TabM_mini_PLE:0": {
+      "AP": {
+        "values": [
+          0.4043460903626183,
+          0.40411589110949403,
+          0.4057291812864695,
+          0.40238881656862047,
+          0.40382242058222323
+        ],
+        "mean": 0.40408047998188507,
+        "sample_SD": 0.0011956523921673584
+      },
+      "AUROC": {
+        "values": [
+          0.8825847262892725,
+          0.8832004660987367,
+          0.8833466252875145,
+          0.8838387818995797,
+          0.8832321168984539
+        ],
+        "mean": 0.8832405432947115,
+        "sample_SD": 0.00044746953750106566
+      },
+      "Brier": {
+        "values": [
+          0.03841144362936473,
+          0.038667892931549964,
+          0.038538839319806874,
+          0.03852375255831764,
+          0.03991011813122541
+        ],
+        "mean": 0.03881040931405293,
+        "sample_SD": 0.0006214431544378839
+      },
+      "log_loss": {
+        "values": [
+          0.14333845592153638,
+          0.14364190414897893,
+          0.14326139832192322,
+          0.1428202592089449,
+          0.1496293076110379
+        ],
+        "mean": 0.14453826504248427,
+        "sample_SD": 0.0028611034531755525
+      }
+    },
+    "matched_tabm:0": {
+      "AP": {
+        "values": [
+          0.4082098715789303,
+          0.4106280385657274,
+          0.4075139735222024,
+          0.4089155579939041,
+          0.4078899948207616
+        ],
+        "mean": 0.40863148729630516,
+        "sample_SD": 0.0012291583576171565
+      },
+      "AUROC": {
+        "values": [
+          0.8840047043332697,
+          0.8847351449828686,
+          0.8846703333826995,
+          0.8842387840550318,
+          0.8843279185101753
+        ],
+        "mean": 0.884395377052809,
+        "sample_SD": 0.0003052623565734966
+      },
+      "Brier": {
+        "values": [
+          0.03816938258467744,
+          0.038099893683316226,
+          0.03818462144359288,
+          0.03811771438073916,
+          0.03820311358072318
+        ],
+        "mean": 0.03815494513460978,
+        "sample_SD": 4.423266271545712e-05
+      },
+      "log_loss": {
+        "values": [
+          0.1420590825367473,
+          0.14174972472645675,
+          0.14202773352750167,
+          0.1418820645164731,
+          0.1420176460448536
+        ],
+        "mean": 0.14194725027040647,
+        "sample_SD": 0.0001296197309016669
+      }
+    },
+    "CEM-Net:1": {
+      "AP": {
+        "values": [
+          0.3922187567407075,
+          0.3930729541555812,
+          0.3944413493286769,
+          0.39095753143033796,
+          0.3954888270832543
+        ],
+        "mean": 0.39323588374771157,
+        "sample_SD": 0.0017875180853986468
+      },
+      "AUROC": {
+        "values": [
+          0.8142066275919412,
+          0.8177370414532489,
+          0.8161091838361281,
+          0.8161957677011936,
+          0.8136070904421275
+        ],
+        "mean": 0.8155711422049279,
+        "sample_SD": 0.0016650949535522482
+      },
+      "Brier": {
+        "values": [
+          0.08399751562670088,
+          0.08174250010622207,
+          0.0826183478222263,
+          0.08342039863003545,
+          0.08336804555214196
+        ],
+        "mean": 0.08302936154746533,
+        "sample_SD": 0.0008703280742631966
+      },
+      "log_loss": {
+        "values": [
+          0.29102426989111024,
+          0.2784049915049171,
+          0.28499862522323516,
+          0.2874279717863657,
+          0.28737602370430215
+        ],
+        "mean": 0.28584637642198607,
+        "sample_SD": 0.004683608039254781
+      }
+    },
+    "TabM_mini_PLE:1": {
+      "AP": {
+        "values": [
+          0.3924462138554801,
+          0.39241452485209083,
+          0.3902878786780444,
+          0.39364213787309266,
+          0.39819303052871746
+        ],
+        "mean": 0.39339675715748507,
+        "sample_SD": 0.0029409984791674525
+      },
+      "AUROC": {
+        "values": [
+          0.8188875360594384,
+          0.8188668265824903,
+          0.8189054489474596,
+          0.8191413191451092,
+          0.8194689027406719
+        ],
+        "mean": 0.8190540066950339,
+        "sample_SD": 0.0002571869281456064
+      },
+      "Brier": {
+        "values": [
+          0.0816026395767593,
+          0.0815972830174581,
+          0.08164662420574746,
+          0.08145667537660711,
+          0.08130472101942608
+        ],
+        "mean": 0.08152158863919962,
+        "sample_SD": 0.00014069300128988603
+      },
+      "log_loss": {
+        "values": [
+          0.2774927148791951,
+          0.27690667942659325,
+          0.27709633736645595,
+          0.27671451621154697,
+          0.27646971921315994
+        ],
+        "mean": 0.27693599341939024,
+        "sample_SD": 0.0003882563793201905
+      }
+    },
+    "matched_tabm:1": {
+      "AP": {
+        "values": [
+          0.3925862766183864,
+          0.3965924307992764,
+          0.3915849066577157,
+          0.39405382621004936,
+          0.39174093181270464
+        ],
+        "mean": 0.39331167441962656,
+        "sample_SD": 0.002079020978336888
+      },
+      "AUROC": {
+        "values": [
+          0.8174407281375557,
+          0.8157902770256834,
+          0.8153860742529686,
+          0.8171146532281248,
+          0.8169853772252568
+        ],
+        "mean": 0.8165434219739179,
+        "sample_SD": 0.000899092459303957
+      },
+      "Brier": {
+        "values": [
+          0.0816533590790749,
+          0.08163956666998803,
+          0.08196157033883684,
+          0.08166190855953609,
+          0.08176088600067816
+        ],
+        "mean": 0.08173545812962281,
+        "sample_SD": 0.00013520195373381016
+      },
+      "log_loss": {
+        "values": [
+          0.27760248530279896,
+          0.27825976493738597,
+          0.2788460318822716,
+          0.2777632373024118,
+          0.27803899396376847
+        ],
+        "mean": 0.27810210267772734,
+        "sample_SD": 0.0004864971796398447
+      }
+    }
+  },
+  "paired": [
+    {
+      "database": "eicu",
+      "endpoint": 0,
+      "baseline": "TabM_mini_PLE",
+      "metric": "AUROC",
+      "values": [
+        -0.0074108615477957995,
+        -0.0004844585691030634,
+        -0.0004200318710823048,
+        -0.014899650976653689,
+        -0.00783231459604028
+      ],
+      "mean": -0.006209463512135027,
+      "sample_SD": 0.006039237563079923,
+      "ci95": [
+        -0.009469795349784094,
+        -0.0030081667416296137
+      ],
+      "adjusted_ci": [
+        -0.011233256516644939,
+        -0.0011738272428491803
+      ],
+      "p_bootstrap_centered": 0.00034998250087495624,
+      "p_bonferroni": 0.00839958002099895
+    },
+    {
+      "database": "eicu",
+      "endpoint": 0,
+      "baseline": "TabM_mini_PLE",
+      "metric": "Brier",
+      "values": [
+        0.0021496415193157786,
+        0.0002843084164402612,
+        0.00024246356592389634,
+        0.00346895851094986,
+        0.0013890552011495
+      ],
+      "mean": 0.0015068854427558592,
+      "sample_SD": 0.0013574062889026527,
+      "ci95": [
+        0.0009203068656861788,
+        0.0021015687719269844
+      ],
+      "adjusted_ci": [
+        0.0005859998482941604,
+        0.002417005257383269
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.00119994000299985
+    },
+    {
+      "database": "eicu",
+      "endpoint": 0,
+      "baseline": "matched_tabm",
+      "metric": "AUROC",
+      "values": [
+        -0.008830839591792983,
+        -0.0020191374532350093,
+        -0.0017437399662673103,
+        -0.015299653132105795,
+        -0.008928116207761683
+      ],
+      "mean": -0.007364297270232556,
+      "sample_SD": 0.005650830615521732,
+      "ci95": [
+        -0.0101062499548647,
+        -0.004665218472780375
+      ],
+      "adjusted_ci": [
+        -0.011837284912805833,
+        -0.0030964979097509522
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.00119994000299985
+    },
+    {
+      "database": "eicu",
+      "endpoint": 0,
+      "baseline": "matched_tabm",
+      "metric": "Brier",
+      "values": [
+        0.002391702564003069,
+        0.0008523076646739999,
+        0.0005966814421378905,
+        0.003874996688528337,
+        0.003096059751651725
+      ],
+      "mean": 0.002162349622199004,
+      "sample_SD": 0.0014164307371078097,
+      "ci95": [
+        0.0017743642008767597,
+        0.002564599807737603
+      ],
+      "adjusted_ci": [
+        0.0015517520305774214,
+        0.0027966329729187775
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.00119994000299985
+    },
+    {
+      "database": "eicu",
+      "endpoint": 1,
+      "baseline": "TabM_mini_PLE",
+      "metric": "AUROC",
+      "values": [
+        -0.004680908467497247,
+        -0.0011297851292414451,
+        -0.002796265111331575,
+        -0.002945551443915617,
+        -0.005861812298544322
+      ],
+      "mean": -0.0034828644901060413,
+      "sample_SD": 0.0018297410023076688,
+      "ci95": [
+        -0.00637456134354373,
+        -0.0006466723829087065
+      ],
+      "adjusted_ci": [
+        -0.008143644276658243,
+        0.0009562129221301863
+      ],
+      "p_bootstrap_centered": 0.01879906004699765,
+      "p_bonferroni": 0.45117744112794367
+    },
+    {
+      "database": "eicu",
+      "endpoint": 1,
+      "baseline": "TabM_mini_PLE",
+      "metric": "Brier",
+      "values": [
+        0.0023948760499415828,
+        0.00014521708876397144,
+        0.000971723616478834,
+        0.0019637232534283344,
+        0.0020633245327158767
+      ],
+      "mean": 0.00150777290826572,
+      "sample_SD": 0.0009283570855465052,
+      "ci95": [
+        0.001002417955341521,
+        0.00202036275242955
+      ],
+      "adjusted_ci": [
+        0.0007007233160100596,
+        0.00230002282641037
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.00119994000299985
+    },
+    {
+      "database": "eicu",
+      "endpoint": 1,
+      "baseline": "matched_tabm",
+      "metric": "AUROC",
+      "values": [
+        -0.003234100545614571,
+        0.0019467644275654727,
+        0.0007231095831594647,
+        -0.0009188855269312013,
+        -0.0033782867831292362
+      ],
+      "mean": -0.0009722797689900142,
+      "sample_SD": 0.0023612876783425172,
+      "ci95": [
+        -0.0032471557443588418,
+        0.0012945043036537583
+      ],
+      "adjusted_ci": [
+        -0.004542291071118359,
+        0.0027080858592068626
+      ],
+      "p_bootstrap_centered": 0.4032798360081996,
+      "p_bonferroni": 1.0
+    },
+    {
+      "database": "eicu",
+      "endpoint": 1,
+      "baseline": "matched_tabm",
+      "metric": "Brier",
+      "values": [
+        0.0023441565476259862,
+        0.0001029334362340345,
+        0.0006567774833894507,
+        0.0017584900704993578,
+        0.001607159551463802
+      ],
+      "mean": 0.0012939034178425263,
+      "sample_SD": 0.0009001861964537419,
+      "ci95": [
+        0.0008556894508498674,
+        0.0017266961089038534
+      ],
+      "adjusted_ci": [
+        0.0006184565489585665,
+        0.001965352583682389
+      ],
+      "p_bootstrap_centered": 4.999750012499375e-05,
+      "p_bonferroni": 0.00119994000299985
+    }
+  ],
+  "protected": {
+    "/home/data/lxm/TRACEHR/runs/cem_core_five_seed_20261107/eicu/statistics_v1/verified-results.json": "d6b0d7ff491b8f84f9d7372695384914387da7ae29f71e775420bbd6f908b883",
+    "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu_statistics_v1/verified-results.json": "9d2a99ad4c57a4e2842b30d3222265fd6e736f84edf68edbae51978bd946ba2d",
+    "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu_statistics_v1/bootstrap/random_test_CEM_Net.json": "9648a793eba9bb6cfb48bc6cb0114b7869863b0758124d8ab0d1fd6ed08960b2",
+    "/home/data/lxm/TRACEHR/runs/cem_icde_evidence_20261028/eicu_statistics_v1/bootstrap/random_test_TabM_mini_PLE.json": "c3fe0784015ce38dae60452f9cedaa85f8e5b13ce87b116e4e485bc6df451666",
+    "/home/data/lxm/TRACEHR/runs/cem_five_seed_20261102/eicu_statistics_v1/bootstrap/test_CEM-Net_s51_t0.json": "3e19238d95f76767517c1226a0b23027831fb96b9c2146fea0d3c292487be9ac",
+    "/home/data/lxm/TRACEHR/runs/cem_five_seed_20261102/eicu_statistics_v1/bootstrap/test_CEM-Net_s51_t1.json": "48efef76a00709d9b9df08e87dc2b698e6c17bd313aab247ca61de735116e8ed",
+    "/home/data/lxm/TRACEHR/runs/cem_five_seed_20261102/eicu_statistics_v1/bootstrap/test_CEM-Net_s52_t0.json": "0b3529bef80088d1dd44bfd653b2ce0c81a02eb52128671ca1c11aaabce30d30",
+    "/home/data/lxm/TRACEHR/runs/cem_five_seed_20261102/eicu_statistics_v1/bootstrap/test_CEM-Net_s52_t1.json": "5f0f79f4c3fca309d7a32aa1e608959e3ae43ffcec3f6c6499c7d69d7c02b5b2",
+    "/home/data/lxm/TRACEHR/runs/cem_five_seed_20261102/eicu_statistics_v1/bootstrap/test_TabM_mini_PLE_s51_t0.json": "3143c0fc1c883831b1d1dc591a6a838e08835f593910c732d7126296c27610f2",
+    "/home/data/lxm/TRACEHR/runs/cem_five_seed_20261102/eicu_statistics_v1/bootstrap/test_TabM_mini_PLE_s51_t1.json": "78f7cf4f4876e2faae34b4abce8772d970dc934510128311149ad45450ef3bbd",
+    "/home/data/lxm/TRACEHR/runs/cem_five_seed_20261102/eicu_statistics_v1/bootstrap/test_TabM_mini_PLE_s52_t0.json": "845f6a6d5f4da2d9f7a98e322e24cf15c338993f58e366a9a57451f2681dee8b",
+    "/home/data/lxm/TRACEHR/runs/cem_five_seed_20261102/eicu_statistics_v1/bootstrap/test_TabM_mini_PLE_s52_t1.json": "414b960d93fe52bacad26b2de9bf8e7752a4b62b1d3e17feee3ee3114f4144c8",
+    "/home/data/lxm/TRACEHR/runs/cem_core_five_seed_20261107/eicu/statistics_v1/bootstrap/random_test_CEM-Net_s51_t0_r20261025_b4000.json": "2ae24b0688f2f49028e0a764b3721ca0eac51c262da4a7a686ab442277cf69d8",
+    "/home/data/lxm/TRACEHR/runs/cem_core_five_seed_20261107/eicu/statistics_v1/bootstrap/random_test_CEM-Net_s51_t0_r20261026_b4000.json": "fd93da3e885fc0cfad0dca996dda3cbaed3763b3443ac539132b8c82c3a5e626",
+    "/home/data/lxm/TRACEHR/runs/cem_core_five_seed_20261107/eicu/statistics_v1/bootstrap/random_test_CEM-Net_s51_t1_r20261025_b4000.json": "21ffb1925ad4679b18ee1e5dbb23f69e349e2acc55ffb7c3418d8341860c628a",
+    "/home/data/lxm/TRACEHR/runs/cem_core_five_seed_20261107/eicu/statistics_v1/bootstrap/random_test_CEM-Net_s51_t1_r20261026_b4000.json": "ee625f4c04918f7411e8cf6fddfee0426614cf73613b6dfbe712fe605c7e1004",
+    "/home/data/lxm/TRACEHR/runs/cem_core_five_seed_20261107/eicu/statistics_v1/bootstrap/random_test_CEM-Net_s52_t0_r20261025_b4000.json": "ec46c37450985fe0ff36a26ca4f2af0374789e33c3656f80b60adfa1b651db96",
+    "/home/data/lxm/TRACEHR/runs/cem_core_five_seed_20261107/eicu/statistics_v1/bootstrap/random_test_CEM-Net_s52_t0_r20261026_b4000.json": "7ccaceda226102cbb8252a9b3e48fd2341b42494d5356e4ebad20edbfa9afc63",
+    "/home/data/lxm/TRACEHR/runs/cem_core_five_seed_20261107/eicu/statistics_v1/bootstrap/random_test_CEM-Net_s52_t1_r20261025_b4000.json": "45e776d5e84e67d10562218d5b9dbe0a0dcd053506f850f196860082baadf6b1",
+    "/home/data/lxm/TRACEHR/runs/cem_core_five_seed_20261107/eicu/statistics_v1/bootstrap/random_test_CEM-Net_s52_t1_r20261026_b4000.json": "e7c3cd641b6678fb8e86accb1181ece01728f456e70cd2efb1e5cef0d5b39007",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/host_eicu/state.json": "d9e4029cffacf38f57edc27abd878b28075a7ab436b18eca3d3dcb891d9e218d",
+    "/home/data/lxm/TRACEHR/work/cem_matched_controls_20261105/eicu/v4/work/cem_matched_controls_20261105/config.json": "d3e98ae60369c3bf360a391fcbedc933839ca5724c565651895dc93a2f6b92ce",
+    "/home/data/lxm/TRACEHR/runs/tracehr_pm_test_20261021/eicu/features/test_targets.npz": "8d7fd3eb53ae25e76febaa4f3ddeab0bca388a1dfeb167cc6effb986395d1984",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu_statistics_v1/verified-results.json": "67e8e26a7441cd142bac1a191091366309846a170dad0d70c9de7de17e2c7378",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu/v4/screen/test/test_matched_tabm_t0_s48/completion.json": "d871772b468f491503890f47dd223a5456faf2267d523b4a1b0af04a7392c8bd",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu/v4/screen/test/test_matched_tabm_t1_s48/completion.json": "dfb98baa1efa49977a6d8f1321a6981642a381e0229df9735eab83f0f84080ff",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu/v4/screen/test/test_matched_tabm_t0_s49/completion.json": "0dc022022e44fc966074722ab4bdc8d33b40decc68412e1aef0b54d9b8ba8e29",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu/v4/screen/test/test_matched_tabm_t1_s49/completion.json": "d0a838321cc9771327a526b7d2fe4a6cae304fa0f7f4e02c3f78fbfa5d49ba81",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu/v4/screen/test/test_matched_tabm_t0_s50/completion.json": "efd093049193dd0615d8c2c2a403b11b645b3f0adb81ff411682b41c2949440b",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu/v4/screen/test/test_matched_tabm_t1_s50/completion.json": "60bb363fb8235648b386e6c695375508c70c2e08db9f093e9b338803757710df",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu/v4/screen/test/test_matched_tabm_t0_s51/completion.json": "530eaa6544e081d1f4979d0f9820e06643f653b224f11361b34a556c64bbe36c",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu/v4/screen/test/test_matched_tabm_t1_s51/completion.json": "fb493b614ffe9d1865c950d7699eb950c4d1625bc8bb4638a6d9877b827a3348",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu/v4/screen/test/test_matched_tabm_t0_s52/completion.json": "ddedcf702437f64ee07164152ea212009caa20b1c0b294cb1257e27ba493f3ad",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu/v4/screen/test/test_matched_tabm_t1_s52/completion.json": "dda0ec4828532dcc276f04f2dcded103c0bd75660faed75fb3260d7a45f07bef",
+    "/home/data/lxm/TRACEHR/runs/tracehr_ema_cross_20261024/eicu/v1/screen/test/test_fullEMA_t0_s48/predictions_test.npz": "80c1ea5150e80a089a8cf9dfc4622ed13352066c2a9aece599ea30a042737ab6",
+    "/home/data/lxm/TRACEHR/runs/tracehr_ema_cross_20261024/eicu/v1/screen/test/test_fullEMA_t1_s48/predictions_test.npz": "4036288a974f5a995684258d3c377512a2de192707fec4ee34c6eb75271dccb2",
+    "/home/data/lxm/TRACEHR/runs/tracehr_ema_cross_20261024/eicu/v1/screen/test/test_fullEMA_t0_s49/predictions_test.npz": "e57f66a0b991558f84839f5bf3c9d065fae1842957f2ef1aecf91e0fc5df8e0b",
+    "/home/data/lxm/TRACEHR/runs/tracehr_ema_cross_20261024/eicu/v1/screen/test/test_fullEMA_t1_s49/predictions_test.npz": "724215f0b52e3a099bf3b79fc54b9d4131f2306c351257e8a010f3a25bc8c6ae",
+    "/home/data/lxm/TRACEHR/runs/tracehr_ema_cross_20261024/eicu/v1/screen/test/test_fullEMA_t0_s50/predictions_test.npz": "a7e5b60d9d9cd5cbb5f61f991c4a0af0b36f1634f71f14c34ccb95ee4b0df449",
+    "/home/data/lxm/TRACEHR/runs/tracehr_ema_cross_20261024/eicu/v1/screen/test/test_fullEMA_t1_s50/predictions_test.npz": "74cd9e57e5f59bac6e0ad5cf8650500787c5ea2272c1ab02153d0196d378a624",
+    "/home/data/lxm/TRACEHR/runs/cem_five_seed_20261102/eicu/v3/screen/test/test_CEM_t0_s51/predictions_test.npz": "6b46d9f4bf64c49f3add2723795a31ba5cb906c7a63e6fde5e412fb675f7df87",
+    "/home/data/lxm/TRACEHR/runs/cem_five_seed_20261102/eicu/v3/screen/test/test_CEM_t1_s51/predictions_test.npz": "765af2d15b7a44cbdafc4983e38f1eb87aad741acfad7de976977bc01e9e7605",
+    "/home/data/lxm/TRACEHR/runs/cem_five_seed_20261102/eicu/v3/screen/test/test_CEM_t0_s52/predictions_test.npz": "4f2974124f0bad8954457202190e1de5b347865f9d18c7ae218fdc8407c88db7",
+    "/home/data/lxm/TRACEHR/runs/cem_five_seed_20261102/eicu/v3/screen/test/test_CEM_t1_s52/predictions_test.npz": "df41e15fdf46a6eb477746ca60ad39c9b11f3353711dc898e830f5741a6cfe3b",
+    "/home/data/lxm/TRACEHR/runs/cem_evidence_completion_20261025/eicu/tabular_v1/screen/test/test_TabM_mini_PLE_t0_s48/predictions_test.npz": "d4a021fc517e34ca9682600f6b70a5742bbfdda3ce137b5bdfeb2ad7c7eec7e1",
+    "/home/data/lxm/TRACEHR/runs/cem_evidence_completion_20261025/eicu/tabular_v1/screen/test/test_TabM_mini_PLE_t1_s48/predictions_test.npz": "2e174ea7bbb0b89e75325112d28eec8201e4a380a0ee3db0db8431925ea9ee2f",
+    "/home/data/lxm/TRACEHR/runs/cem_evidence_completion_20261025/eicu/tabular_v1/screen/test/test_TabM_mini_PLE_t0_s49/predictions_test.npz": "f6e6ea0a0aa05b3077ddb4fb373b0dc8ce2ad84732650ddcf72ab48d138a8f32",
+    "/home/data/lxm/TRACEHR/runs/cem_evidence_completion_20261025/eicu/tabular_v1/screen/test/test_TabM_mini_PLE_t1_s49/predictions_test.npz": "1d8009b20879d68caf3b1411638372d10b3298281beb4c8ff98641a04b2227fa",
+    "/home/data/lxm/TRACEHR/runs/cem_evidence_completion_20261025/eicu/tabular_v1/screen/test/test_TabM_mini_PLE_t0_s50/predictions_test.npz": "5d0155931b368d96592fbda488059b24bb09cb844a23236938612de223a4a8a4",
+    "/home/data/lxm/TRACEHR/runs/cem_evidence_completion_20261025/eicu/tabular_v1/screen/test/test_TabM_mini_PLE_t1_s50/predictions_test.npz": "6343a5167778e0ea5a2c72d78d8b073a63de11a703cc8a2109370fd243bb00fb",
+    "/home/data/lxm/TRACEHR/runs/cem_five_seed_20261102/eicu/v3/screen/test/test_TabM_mini_PLE_t0_s51/predictions_test.npz": "5ecdb2c00366bd3e50aa8503ad815d853f5dbd072607bc2a4fe8ee8d6432fcf7",
+    "/home/data/lxm/TRACEHR/runs/cem_five_seed_20261102/eicu/v3/screen/test/test_TabM_mini_PLE_t1_s51/predictions_test.npz": "a004801d73a6d9b210ef6437add41eb29b7b1603d6a033b9b774d8925408fd41",
+    "/home/data/lxm/TRACEHR/runs/cem_five_seed_20261102/eicu/v3/screen/test/test_TabM_mini_PLE_t0_s52/predictions_test.npz": "f9022e2d94e86920adaa24f62009c0e037de391cea67c29db5524d1231744997",
+    "/home/data/lxm/TRACEHR/runs/cem_five_seed_20261102/eicu/v3/screen/test/test_TabM_mini_PLE_t1_s52/predictions_test.npz": "f2ea10bf0c280832635501cbf1336972e934407d2c542b65b3e8dce257b95223",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu/v4/screen/test/test_matched_tabm_t0_s48/predictions_test.npz": "d44cf2ead9b2c5fd6b1691fe4cfc258e49c21dbc566cae63ac154a80ed1c110b",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu/v4/screen/test/test_matched_tabm_t1_s48/predictions_test.npz": "02e25dac0cba64d66a6cc261f8c5b26e1e33ade9b55e2ca256186d8cf7363974",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu/v4/screen/test/test_matched_tabm_t0_s49/predictions_test.npz": "cde8d7209e66f2e84d264519075606181047dad7db14f99fe5287ebf38449d6f",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu/v4/screen/test/test_matched_tabm_t1_s49/predictions_test.npz": "4812c51599751ea5d2c0d96d7dd988ed801330b799eda29460542ec7cd362523",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu/v4/screen/test/test_matched_tabm_t0_s50/predictions_test.npz": "da0ebd5541466a7babb716adfe69afa7fa361db4c5c100c0a3360d8275c1d495",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu/v4/screen/test/test_matched_tabm_t1_s50/predictions_test.npz": "4c3cd30c256856bf380aa1224c877ee3850f128255c961030dda279bbcaf53de",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu/v4/screen/test/test_matched_tabm_t0_s51/predictions_test.npz": "47511bf1d6bb199ebc0a475a6b70f1922fb9b5b7d2bf4bab7106b86a78ecd059",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu/v4/screen/test/test_matched_tabm_t1_s51/predictions_test.npz": "2a87d18a539053ac7f27b72430de3b8437c7dff387ffc1afae8adaf8ebd76fc9",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu/v4/screen/test/test_matched_tabm_t0_s52/predictions_test.npz": "bebe7c63f6b4d5ea539edf743f90f410e27638dc7fcb685b2c0371e1aedd1cbf",
+    "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu/v4/screen/test/test_matched_tabm_t1_s52/predictions_test.npz": "e7df9835c82424b3a578279009d325e4959d50dfe6f505864724975accf00523"
+  },
+  "prediction_refs": {
+    "CEM-Net:48:0": {
+      "path": "/home/data/lxm/TRACEHR/runs/tracehr_ema_cross_20261024/eicu/v1/screen/test/test_fullEMA_t0_s48/predictions_test.npz",
+      "sha256": "80c1ea5150e80a089a8cf9dfc4622ed13352066c2a9aece599ea30a042737ab6"
+    },
+    "CEM-Net:48:1": {
+      "path": "/home/data/lxm/TRACEHR/runs/tracehr_ema_cross_20261024/eicu/v1/screen/test/test_fullEMA_t1_s48/predictions_test.npz",
+      "sha256": "4036288a974f5a995684258d3c377512a2de192707fec4ee34c6eb75271dccb2"
+    },
+    "CEM-Net:49:0": {
+      "path": "/home/data/lxm/TRACEHR/runs/tracehr_ema_cross_20261024/eicu/v1/screen/test/test_fullEMA_t0_s49/predictions_test.npz",
+      "sha256": "e57f66a0b991558f84839f5bf3c9d065fae1842957f2ef1aecf91e0fc5df8e0b"
+    },
+    "CEM-Net:49:1": {
+      "path": "/home/data/lxm/TRACEHR/runs/tracehr_ema_cross_20261024/eicu/v1/screen/test/test_fullEMA_t1_s49/predictions_test.npz",
+      "sha256": "724215f0b52e3a099bf3b79fc54b9d4131f2306c351257e8a010f3a25bc8c6ae"
+    },
+    "CEM-Net:50:0": {
+      "path": "/home/data/lxm/TRACEHR/runs/tracehr_ema_cross_20261024/eicu/v1/screen/test/test_fullEMA_t0_s50/predictions_test.npz",
+      "sha256": "a7e5b60d9d9cd5cbb5f61f991c4a0af0b36f1634f71f14c34ccb95ee4b0df449"
+    },
+    "CEM-Net:50:1": {
+      "path": "/home/data/lxm/TRACEHR/runs/tracehr_ema_cross_20261024/eicu/v1/screen/test/test_fullEMA_t1_s50/predictions_test.npz",
+      "sha256": "74cd9e57e5f59bac6e0ad5cf8650500787c5ea2272c1ab02153d0196d378a624"
+    },
+    "TabM_mini_PLE:48:0": {
+      "path": "/home/data/lxm/TRACEHR/runs/cem_evidence_completion_20261025/eicu/tabular_v1/screen/test/test_TabM_mini_PLE_t0_s48/predictions_test.npz",
+      "sha256": "d4a021fc517e34ca9682600f6b70a5742bbfdda3ce137b5bdfeb2ad7c7eec7e1"
+    },
+    "TabM_mini_PLE:48:1": {
+      "path": "/home/data/lxm/TRACEHR/runs/cem_evidence_completion_20261025/eicu/tabular_v1/screen/test/test_TabM_mini_PLE_t1_s48/predictions_test.npz",
+      "sha256": "2e174ea7bbb0b89e75325112d28eec8201e4a380a0ee3db0db8431925ea9ee2f"
+    },
+    "TabM_mini_PLE:49:0": {
+      "path": "/home/data/lxm/TRACEHR/runs/cem_evidence_completion_20261025/eicu/tabular_v1/screen/test/test_TabM_mini_PLE_t0_s49/predictions_test.npz",
+      "sha256": "f6e6ea0a0aa05b3077ddb4fb373b0dc8ce2ad84732650ddcf72ab48d138a8f32"
+    },
+    "TabM_mini_PLE:49:1": {
+      "path": "/home/data/lxm/TRACEHR/runs/cem_evidence_completion_20261025/eicu/tabular_v1/screen/test/test_TabM_mini_PLE_t1_s49/predictions_test.npz",
+      "sha256": "1d8009b20879d68caf3b1411638372d10b3298281beb4c8ff98641a04b2227fa"
+    },
+    "TabM_mini_PLE:50:0": {
+      "path": "/home/data/lxm/TRACEHR/runs/cem_evidence_completion_20261025/eicu/tabular_v1/screen/test/test_TabM_mini_PLE_t0_s50/predictions_test.npz",
+      "sha256": "5d0155931b368d96592fbda488059b24bb09cb844a23236938612de223a4a8a4"
+    },
+    "TabM_mini_PLE:50:1": {
+      "path": "/home/data/lxm/TRACEHR/runs/cem_evidence_completion_20261025/eicu/tabular_v1/screen/test/test_TabM_mini_PLE_t1_s50/predictions_test.npz",
+      "sha256": "6343a5167778e0ea5a2c72d78d8b073a63de11a703cc8a2109370fd243bb00fb"
+    },
+    "CEM-Net:51:0": {
+      "path": "/home/data/lxm/TRACEHR/runs/cem_five_seed_20261102/eicu/v3/screen/test/test_CEM_t0_s51/predictions_test.npz",
+      "sha256": "6b46d9f4bf64c49f3add2723795a31ba5cb906c7a63e6fde5e412fb675f7df87"
+    },
+    "CEM-Net:51:1": {
+      "path": "/home/data/lxm/TRACEHR/runs/cem_five_seed_20261102/eicu/v3/screen/test/test_CEM_t1_s51/predictions_test.npz",
+      "sha256": "765af2d15b7a44cbdafc4983e38f1eb87aad741acfad7de976977bc01e9e7605"
+    },
+    "CEM-Net:52:0": {
+      "path": "/home/data/lxm/TRACEHR/runs/cem_five_seed_20261102/eicu/v3/screen/test/test_CEM_t0_s52/predictions_test.npz",
+      "sha256": "4f2974124f0bad8954457202190e1de5b347865f9d18c7ae218fdc8407c88db7"
+    },
+    "CEM-Net:52:1": {
+      "path": "/home/data/lxm/TRACEHR/runs/cem_five_seed_20261102/eicu/v3/screen/test/test_CEM_t1_s52/predictions_test.npz",
+      "sha256": "df41e15fdf46a6eb477746ca60ad39c9b11f3353711dc898e830f5741a6cfe3b"
+    },
+    "TabM_mini_PLE:51:0": {
+      "path": "/home/data/lxm/TRACEHR/runs/cem_five_seed_20261102/eicu/v3/screen/test/test_TabM_mini_PLE_t0_s51/predictions_test.npz",
+      "sha256": "5ecdb2c00366bd3e50aa8503ad815d853f5dbd072607bc2a4fe8ee8d6432fcf7"
+    },
+    "TabM_mini_PLE:51:1": {
+      "path": "/home/data/lxm/TRACEHR/runs/cem_five_seed_20261102/eicu/v3/screen/test/test_TabM_mini_PLE_t1_s51/predictions_test.npz",
+      "sha256": "a004801d73a6d9b210ef6437add41eb29b7b1603d6a033b9b774d8925408fd41"
+    },
+    "TabM_mini_PLE:52:0": {
+      "path": "/home/data/lxm/TRACEHR/runs/cem_five_seed_20261102/eicu/v3/screen/test/test_TabM_mini_PLE_t0_s52/predictions_test.npz",
+      "sha256": "f9022e2d94e86920adaa24f62009c0e037de391cea67c29db5524d1231744997"
+    },
+    "TabM_mini_PLE:52:1": {
+      "path": "/home/data/lxm/TRACEHR/runs/cem_five_seed_20261102/eicu/v3/screen/test/test_TabM_mini_PLE_t1_s52/predictions_test.npz",
+      "sha256": "f2ea10bf0c280832635501cbf1336972e934407d2c542b65b3e8dce257b95223"
+    },
+    "matched_tabm:48:0": {
+      "path": "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu/v4/screen/test/test_matched_tabm_t0_s48/predictions_test.npz",
+      "sha256": "d44cf2ead9b2c5fd6b1691fe4cfc258e49c21dbc566cae63ac154a80ed1c110b"
+    },
+    "matched_tabm:48:1": {
+      "path": "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu/v4/screen/test/test_matched_tabm_t1_s48/predictions_test.npz",
+      "sha256": "02e25dac0cba64d66a6cc261f8c5b26e1e33ade9b55e2ca256186d8cf7363974"
+    },
+    "matched_tabm:49:0": {
+      "path": "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu/v4/screen/test/test_matched_tabm_t0_s49/predictions_test.npz",
+      "sha256": "cde8d7209e66f2e84d264519075606181047dad7db14f99fe5287ebf38449d6f"
+    },
+    "matched_tabm:49:1": {
+      "path": "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu/v4/screen/test/test_matched_tabm_t1_s49/predictions_test.npz",
+      "sha256": "4812c51599751ea5d2c0d96d7dd988ed801330b799eda29460542ec7cd362523"
+    },
+    "matched_tabm:50:0": {
+      "path": "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu/v4/screen/test/test_matched_tabm_t0_s50/predictions_test.npz",
+      "sha256": "da0ebd5541466a7babb716adfe69afa7fa361db4c5c100c0a3360d8275c1d495"
+    },
+    "matched_tabm:50:1": {
+      "path": "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu/v4/screen/test/test_matched_tabm_t1_s50/predictions_test.npz",
+      "sha256": "4c3cd30c256856bf380aa1224c877ee3850f128255c961030dda279bbcaf53de"
+    },
+    "matched_tabm:51:0": {
+      "path": "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu/v4/screen/test/test_matched_tabm_t0_s51/predictions_test.npz",
+      "sha256": "47511bf1d6bb199ebc0a475a6b70f1922fb9b5b7d2bf4bab7106b86a78ecd059"
+    },
+    "matched_tabm:51:1": {
+      "path": "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu/v4/screen/test/test_matched_tabm_t1_s51/predictions_test.npz",
+      "sha256": "2a87d18a539053ac7f27b72430de3b8437c7dff387ffc1afae8adaf8ebd76fc9"
+    },
+    "matched_tabm:52:0": {
+      "path": "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu/v4/screen/test/test_matched_tabm_t0_s52/predictions_test.npz",
+      "sha256": "bebe7c63f6b4d5ea539edf743f90f410e27638dc7fcb685b2c0371e1aedd1cbf"
+    },
+    "matched_tabm:52:1": {
+      "path": "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu/v4/screen/test/test_matched_tabm_t1_s52/predictions_test.npz",
+      "sha256": "e7df9835c82424b3a578279009d325e4959d50dfe6f505864724975accf00523"
+    }
+  },
+  "samples": 26229,
+  "patients": 20777,
+  "seconds": 379.2558419704437,
+  "self_test": {
+    "complete": true,
+    "weighted_AUC_ties_zero_weights": true,
+    "integer_replication": true,
+    "patient_cluster_batch_invariance": true
+  },
+  "original_results_unchanged": true,
+  "model_fits": 0,
+  "model_inference": 0,
+  "calibrator_fits": 0,
+  "patient_records_exported": false,
+  "source_sha256": "29fc20c5c0febebd8c8317374a2b90884158d1fde9e97ab0ba5b034db419acd0",
+  "inference": "Test-only, within-seed contrasts averaged across five fits; patient-cluster percentile intervals; one 24-contrast family across 3 databases, 2 endpoints, 2 fixed references and 2 raw metrics.",
+  "paired_draws_sha256": "1621f5287f96287b1fdee29a02f68303d10ca186dbf3a23e51e7520a4fb30f05"
+}

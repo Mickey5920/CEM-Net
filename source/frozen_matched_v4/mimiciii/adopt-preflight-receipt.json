@@ -1,0 +1,247 @@
+{
+  "complete": true,
+  "source_manifest_sha256": "7ecfd0f1cdfb59c71fb22f609e1d78a9b67e643e41450f0092b67555ef7e8d24",
+  "formal_fits": 20,
+  "old_constructor_parity": {
+    "0": {
+      "all_parameters_and_buffers_exact": true,
+      "initial_weights_sha256": "9e91e3791f40c299f782d8cc8fc5429c3d647be189dc5ff31eaf392c3b991c20",
+      "loss_exact": true
+    },
+    "1": {
+      "all_parameters_and_buffers_exact": true,
+      "initial_weights_sha256": "9e91e3791f40c299f782d8cc8fc5429c3d647be189dc5ff31eaf392c3b991c20",
+      "loss_exact": true
+    }
+  },
+  "original_protected": {
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_adaptation_20261024/v1/preparation/completion.json": "84632c686e6454606abb5f799a1e4b4ee6a02528df03425a96c60272295bdbb3",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_adaptation_20261024/v1/preparation/preprocessing.npz": "f839b3ecf4911fbebf16eefa27f30da3ad97ea9a387f00a5e0974ae1ec52ad97",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_adaptation_20261024/v1/preparation/native_configs.json": "01579b74a4fa2620dca8b3c29b97b80103f7996f709b343dbcbc2253e9dc2f8d",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_adaptation_20261024/v1/preparation/native_summary_scaling.npz": "a348a2659bb9977d1f32709c91f5c971904f6096929b9bb3324440400c3ae885",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_adaptation_20261024/v1/preparation/train_raw.npy": "2ddecc132775ebf44b44cda5b8e5c521cf001fc69b3de1b96177a4914b805c68",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_adaptation_20261024/v1/preparation/train_targets.npz": "1e9600d80a5d27428c373089f09d13b6b1ea9c652ed3486d88a8cc95b8a44ee4",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_adaptation_20261024/v1/preparation/dev_raw.npy": "a2a8e78499ee72ec4361f657dc57c50df19a85e6a565238d54ab9887430909ce",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_adaptation_20261024/v1/preparation/dev_targets.npz": "7167594ac4dfbd776c6ad708a20e8f8e96a9a548a09ffbfe8cc4d25e3d0b52b2",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_test_20261024/v3/inputs/test_raw.npy": "286675065fa407f68ba5341c0305268563e5091f9cce51b7c12351b65817d469",
+    "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/mimiciii_test_20261024/v3/inputs/test_targets.npz": "cf0dea5273ade6a69338334591ec77204960a5e971abb247626c6e232efbc302"
+  },
+  "windows_sha256": "cb571be6a55a3d61cd0a7b57d05713eea90d58ddcb27093db462c8fd30ec3837",
+  "windows_bytes": 86467670,
+  "unit_checks": [
+    "closed_window_boundaries",
+    "empty_vs_observed_zero",
+    "window_major_layout",
+    "overlay_preserves_other_coordinates_and_source"
+  ],
+  "models": {
+    "matched_tabm": {
+      "parameters": 12860235,
+      "details": {
+        "config": {
+          "act": "selu",
+          "act_lr_factor": 0.1,
+          "add_front_scale": true,
+          "batch_size": 256,
+          "bias_init_mode": "he+5",
+          "bias_lr_factor": 0.1,
+          "bias_wd_factor": 0.0,
+          "block_str": "w-b-a-d",
+          "embedding_size": 8,
+          "hidden_sizes": [
+            256,
+            256,
+            256
+          ],
+          "lr": 0.04,
+          "lr_sched": "coslog4",
+          "ls_eps": 0.1,
+          "max_one_hot_cat_size": 9,
+          "n_cv": 1,
+          "n_epochs": 256,
+          "n_refit": 0,
+          "n_repeats": 1,
+          "n_threads": 4,
+          "num_emb_type": "none",
+          "opt": "adam",
+          "p_drop": 0.15,
+          "p_drop_sched": "flat_cos",
+          "plr_hidden_1": 16,
+          "plr_hidden_2": 4,
+          "plr_lr_factor": 0.1,
+          "plr_sigma": 0.1,
+          "predict_batch_size": 256,
+          "scale_lr_factor": 6.0,
+          "sq_mom": 0.95,
+          "tfms": [],
+          "use_early_stopping": false,
+          "use_ls": false,
+          "use_parametric_act": true,
+          "val_fraction": 0.2,
+          "verbosity": 0,
+          "wd": 0.02,
+          "wd_sched": "flat_cos",
+          "weight_init_mode": "std",
+          "weight_param": "ntk",
+          "allow_single_split_opt": false,
+          "init_ram_limit_gb": 1.0
+        },
+        "fixed_statistics": [],
+        "split_seed": 48,
+        "sub_split_seed": 75120128,
+        "adaptation": "typed periodic frontend; official native trunk and optimizer",
+        "initialization_rows": 1024,
+        "initialization_split": "train",
+        "initialization_indices_sha256": "9543c8022654c63f7ecf0b8236f89750443840491aa884ded63eb185d3869148",
+        "numeric_features": 10417,
+        "learned_coordinates": 3,
+        "post_encoding_scale": true,
+        "shared_weight_layers": 3,
+        "hidden_member_adapters": 0,
+        "independent_member_heads": 8,
+        "members": 8,
+        "centered_modulation": false,
+        "center_fit_split": "train",
+        "center_updates": "fixed statistic at random initialization; all learned parameters train jointly",
+        "matched_control": true,
+        "architecture": "official TabM-mini 0.0.3",
+        "native_activation": "ReLU",
+        "linear_parameterization": "CEM role-matched NTK",
+        "effective_linear_initialization": "native TabM",
+        "input_factor_initialization": "same fresh grouped normal values as CEM; independently learned coordinates",
+        "linear_mapping": [
+          {
+            "role": "hidden_0",
+            "factor": 0.00471808351871557,
+            "weight_factors": {
+              "lr": 1.0,
+              "wd": 1.0,
+              "l2": 1.0,
+              "l1": 1.0
+            },
+            "bias_factors": {
+              "lr": 0.1,
+              "wd": 0.0,
+              "l1_reg": 1.0,
+              "l2_reg": 1.0
+            }
+          },
+          {
+            "role": "hidden_1",
+            "factor": 0.0625,
+            "weight_factors": {
+              "lr": 1.0,
+              "wd": 1.0,
+              "l2": 1.0,
+              "l1": 1.0
+            },
+            "bias_factors": {
+              "lr": 0.1,
+              "wd": 0.0,
+              "l1_reg": 1.0,
+              "l2_reg": 1.0
+            }
+          },
+          {
+            "role": "hidden_2",
+            "factor": 0.0625,
+            "weight_factors": {
+              "lr": 1.0,
+              "wd": 1.0,
+              "l2": 1.0,
+              "l1": 1.0
+            },
+            "bias_factors": {
+              "lr": 0.1,
+              "wd": 0.0,
+              "l1_reg": 1.0,
+              "l2_reg": 1.0
+            }
+          }
+        ],
+        "native_forward_max_abs": 8.195638656616211e-08,
+        "front_scale": false,
+        "all_frontend_parameters_jointly_trained": true
+      },
+      "expanded_width": 44923
+    },
+    "window_summary": {
+      "parameters": 12902328,
+      "details": {
+        "config": {
+          "act": "selu",
+          "act_lr_factor": 0.1,
+          "add_front_scale": true,
+          "batch_size": 256,
+          "bias_init_mode": "he+5",
+          "bias_lr_factor": 0.1,
+          "bias_wd_factor": 0.0,
+          "block_str": "w-b-a-d",
+          "embedding_size": 8,
+          "hidden_sizes": [
+            256,
+            256,
+            256
+          ],
+          "lr": 0.04,
+          "lr_sched": "coslog4",
+          "ls_eps": 0.1,
+          "max_one_hot_cat_size": 9,
+          "n_cv": 1,
+          "n_epochs": 256,
+          "n_refit": 0,
+          "n_repeats": 1,
+          "n_threads": 4,
+          "num_emb_type": "none",
+          "opt": "adam",
+          "p_drop": 0.15,
+          "p_drop_sched": "flat_cos",
+          "plr_hidden_1": 16,
+          "plr_hidden_2": 4,
+          "plr_lr_factor": 0.1,
+          "plr_sigma": 0.1,
+          "predict_batch_size": 256,
+          "scale_lr_factor": 6.0,
+          "sq_mom": 0.95,
+          "tfms": [],
+          "use_early_stopping": false,
+          "use_ls": false,
+          "use_parametric_act": true,
+          "val_fraction": 0.2,
+          "verbosity": 0,
+          "wd": 0.02,
+          "wd_sched": "flat_cos",
+          "weight_init_mode": "std",
+          "weight_param": "ntk",
+          "allow_single_split_opt": false,
+          "init_ram_limit_gb": 1.0
+        },
+        "fixed_statistics": [],
+        "split_seed": 48,
+        "sub_split_seed": 75120128,
+        "adaptation": "typed periodic frontend; official native trunk and optimizer",
+        "initialization_rows": 1024,
+        "initialization_split": "train",
+        "initialization_indices_sha256": "9543c8022654c63f7ecf0b8236f89750443840491aa884ded63eb185d3869148",
+        "numeric_features": 10417,
+        "learned_coordinates": 3,
+        "post_encoding_scale": true,
+        "shared_weight_layers": 4,
+        "hidden_member_adapters": 0,
+        "independent_member_heads": 0,
+        "members": 8,
+        "centered_modulation": false,
+        "center_fit_split": "train",
+        "center_updates": "fixed statistic at random initialization; all learned parameters train jointly"
+      },
+      "expanded_width": 44923
+    }
+  },
+  "test_labels_used_for_fitting": false,
+  "optimizer_updates": 0,
+  "preflight_reuse": {
+    "path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_matched_controls_20261105/mimiciii/v3/verification.json",
+    "sha256": "916c6d734d4a37a89bbe20a253427b147d6ac107ce167a03aa312ce03d4ac05b",
+    "reason": "only queue dependency added; scientific code and inputs identical"
+  }
+}

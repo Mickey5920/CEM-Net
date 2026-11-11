@@ -1,0 +1,149 @@
+{
+  "database": "eicu",
+  "stage": "controls",
+  "stage_order": 3,
+  "source": "/home/data/lxm/TRACEHR/work/cem_core_five_seed_20261107/eicu/controls_v1",
+  "output": "/home/data/lxm/TRACEHR/runs/cem_core_five_seed_20261107/eicu/controls_v1/screen",
+  "source_manifest_sha256": "a8aa51434a8640c3caecae5ab1cc57a9c964e8b5d16f610862cd7bbed55f89ce",
+  "matrix": [
+    {
+      "variant": "EMA_noP",
+      "seed": 51,
+      "endpoint": 0
+    },
+    {
+      "variant": "EMA_noP",
+      "seed": 52,
+      "endpoint": 0
+    },
+    {
+      "variant": "EMA_noM",
+      "seed": 51,
+      "endpoint": 0
+    },
+    {
+      "variant": "EMA_noM",
+      "seed": 52,
+      "endpoint": 0
+    },
+    {
+      "variant": "EMA_no_duration",
+      "seed": 51,
+      "endpoint": 0
+    },
+    {
+      "variant": "EMA_no_duration",
+      "seed": 52,
+      "endpoint": 0
+    },
+    {
+      "variant": "EMA_no_NRE_CMM",
+      "seed": 51,
+      "endpoint": 0
+    },
+    {
+      "variant": "EMA_no_NRE_CMM",
+      "seed": 52,
+      "endpoint": 0
+    },
+    {
+      "variant": "EMA_M_raw",
+      "seed": 51,
+      "endpoint": 0
+    },
+    {
+      "variant": "EMA_M_raw",
+      "seed": 52,
+      "endpoint": 0
+    },
+    {
+      "variant": "EMA_M_periodic",
+      "seed": 51,
+      "endpoint": 0
+    },
+    {
+      "variant": "EMA_M_periodic",
+      "seed": 52,
+      "endpoint": 0
+    },
+    {
+      "variant": "EMA_noP",
+      "seed": 51,
+      "endpoint": 1
+    },
+    {
+      "variant": "EMA_noP",
+      "seed": 52,
+      "endpoint": 1
+    },
+    {
+      "variant": "EMA_noM",
+      "seed": 51,
+      "endpoint": 1
+    },
+    {
+      "variant": "EMA_noM",
+      "seed": 52,
+      "endpoint": 1
+    },
+    {
+      "variant": "EMA_no_duration",
+      "seed": 51,
+      "endpoint": 1
+    },
+    {
+      "variant": "EMA_no_duration",
+      "seed": 52,
+      "endpoint": 1
+    },
+    {
+      "variant": "EMA_no_NRE_CMM",
+      "seed": 51,
+      "endpoint": 1
+    },
+    {
+      "variant": "EMA_no_NRE_CMM",
+      "seed": 52,
+      "endpoint": 1
+    },
+    {
+      "variant": "EMA_M_raw",
+      "seed": 51,
+      "endpoint": 1
+    },
+    {
+      "variant": "EMA_M_raw",
+      "seed": 52,
+      "endpoint": 1
+    },
+    {
+      "variant": "EMA_M_periodic",
+      "seed": 51,
+      "endpoint": 1
+    },
+    {
+      "variant": "EMA_M_periodic",
+      "seed": 52,
+      "endpoint": 1
+    }
+  ],
+  "variants": [
+    "EMA_M_periodic",
+    "EMA_M_raw",
+    "EMA_noM",
+    "EMA_noP",
+    "EMA_no_NRE_CMM",
+    "EMA_no_duration"
+  ],
+  "entries": {
+    "tree": "scripts/cem_core_five_seed_entry.py",
+    "cem": "scripts/cem_core_five_seed_entry.py",
+    "tabular": "scripts/cem_core_five_seed_entry.py"
+  },
+  "expected_gib": 32.0,
+  "retention_multiplier": 13,
+  "min_available_ram_gib": 24,
+  "cpu_min_available_ram_gib": 24,
+  "probe_gpu_mib": 24576,
+  "probe_requirement_basis": "conservative headroom above archived measurements; bounded original-path probe before formal fits"
+}

@@ -1,0 +1,18 @@
+\begin{table*}[tp]
+\centering\footnotesize
+\setlength{\tabcolsep}{3pt}
+\caption{Test probability quality: descriptive means. C/B denote CEM-Net / validation-selected baseline; arrows show raw $\to$ validation-fitted Platt calibration. Lower Brier, log loss and ECE are better; AUROC is raw.}
+\label{tab:calibration}
+\begin{tabular}{lrrrrr}
+\toprule
+Database / endpoint & AUROC C/B & C: Brier & C: log loss & C: ECE15 & B: ECE15 \\
+\midrule
+MIMIC-III / Mort. & 0.8868/0.8781 & 0.0537$\to$0.0524 & 0.1975$\to$0.1841 & 0.0279$\to$0.0068 & 0.0192$\to$0.0090 \\
+MIMIC-III / LOS & 0.8559/0.8428 & 0.1001$\to$0.1000 & 0.3220$\to$0.3218 & 0.0104$\to$0.0101 & 0.0241$\to$0.0079 \\
+MIMIC-IV / Mort. & 0.9145/0.9105 & 0.0489$\to$0.0478 & 0.1710$\to$0.1647 & 0.0208$\to$0.0038 & 0.0132$\to$0.0047 \\
+MIMIC-IV / LOS & 0.8574/0.8572 & 0.0939$\to$0.0928 & 0.3081$\to$0.3018 & 0.0283$\to$0.0082 & 0.0225$\to$0.0080 \\
+eICU / Mort. & 0.8803/0.8830 & 0.0394$\to$0.0386 & 0.1543$\to$0.1435 & 0.0177$\to$0.0036 & 0.0069$\to$0.0036 \\
+eICU / LOS & 0.8160/0.8189 & 0.0828$\to$0.0816 & 0.2848$\to$0.2778 & 0.0267$\to$0.0042 & 0.0076$\to$0.0047 \\
+\bottomrule
+\end{tabular}
+\end{table*}

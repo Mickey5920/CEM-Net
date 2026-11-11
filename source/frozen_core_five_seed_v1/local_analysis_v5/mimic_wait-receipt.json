@@ -1,0 +1,6 @@
+{
+  "started": true,
+  "wrapper_pid": 3212858,
+  "output": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_core_five_seed_20261107/mimic/statistics_v1",
+  "receipt": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_core_five_seed_20261107/mimic/statistics_v1/wait_v5_exit.json"
+}

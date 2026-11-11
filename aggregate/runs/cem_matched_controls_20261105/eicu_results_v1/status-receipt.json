@@ -1,0 +1,72 @@
+{
+  "progress.json": {
+    "stage": "control_AP",
+    "variant": "window_summary",
+    "seed": 52,
+    "endpoint": 1,
+    "completed": 19856,
+    "total": 20000,
+    "time": 1793895095.311596
+  },
+  "completion.json": {
+    "complete": true,
+    "files": {
+      "verified-results.json": "67e8e26a7441cd142bac1a191091366309846a170dad0d70c9de7de17e2c7378",
+      "paired_draws.npz": "9acd95399295cf08c9e7ce2c16dc6e2b6a7f6aab489f1807e0c6911c57663742"
+    }
+  },
+  "launch.json": {
+    "started": true,
+    "wrapper_pid": 1543873,
+    "source_manifest_sha256": "99ba722796523cd90deb6d1d0dbb819062b8e09e8b7607aba4bbc273ea4779c5",
+    "training_launched": false,
+    "global_readiness": {
+      "mimic": {
+        "ready": true,
+        "groups": {
+          "mimic": {
+            "status": "complete",
+            "train": 20,
+            "evaluate": 20
+          },
+          "mimiciii": {
+            "status": "complete",
+            "train": 20,
+            "evaluate": 20
+          }
+        },
+        "exit_path": "/data/Luoxm/Disease-Ranking-Hawkes-Mamba-0624/runs/cem_matched_controls_20261105/host_mimic/scheduler_v4_exit.json",
+        "returncode": 0,
+        "exit_sha256": "d85d1931ad5858e20302daf644038ef108f6f4b8c06703dc357279b9573ac432"
+      },
+      "eicu": {
+        "ready": true,
+        "groups": {
+          "eicu": {
+            "status": "complete",
+            "train": 20,
+            "evaluate": 20
+          }
+        },
+        "exit_path": "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/host_eicu/scheduler_v4_exit.json",
+        "returncode": 0,
+        "exit_sha256": "d2ecd7398796cd2419c0301c07202bdb2c58ac20ac31709c3c1a5aafc22f7624"
+      }
+    }
+  },
+  "exit.json": {
+    "job_id": "matched_statistics_eicu",
+    "wrapper_pid": 1543873,
+    "child_pid": 1543874,
+    "child_identity": {
+      "start_ticks": "63602274",
+      "state": "R",
+      "boot": "8123672c-cb85-4243-be25-70318f0e0750"
+    },
+    "source_manifest_sha256": "99ba722796523cd90deb6d1d0dbb819062b8e09e8b7607aba4bbc273ea4779c5",
+    "started_at": 1793894712.1858027,
+    "returncode": 0,
+    "finished_at": 1793895098.2579684
+  },
+  "attempt_exists": true
+}

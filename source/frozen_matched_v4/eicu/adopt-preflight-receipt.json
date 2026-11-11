@@ -1,0 +1,247 @@
+{
+  "complete": true,
+  "source_manifest_sha256": "4930922fbbcadd50419ae1c61ef18696b641c3ca3e51463e65970379a5ae75a3",
+  "formal_fits": 20,
+  "old_constructor_parity": {
+    "0": {
+      "all_parameters_and_buffers_exact": true,
+      "initial_weights_sha256": "90dd2679c001153ee2cb44f4e395093c5a7fa1314c2345ceae05380e8165318e",
+      "loss_exact": true
+    },
+    "1": {
+      "all_parameters_and_buffers_exact": true,
+      "initial_weights_sha256": "90dd2679c001153ee2cb44f4e395093c5a7fa1314c2345ceae05380e8165318e",
+      "loss_exact": true
+    }
+  },
+  "original_protected": {
+    "/home/data/lxm/TRACEHR/runs/tracehr_structure_20261014/eicu/g_v1/preparation/completion.json": "942e741b6be9373e28926ec0e6464b665b736410d66f4c79c9f22149ee521d3f",
+    "/home/data/lxm/TRACEHR/runs/tracehr_structure_20261014/eicu/g_v1/preparation/preprocessing.npz": "dee84d2a375ff8f5945dd0fe932b95865b0de1a914f16171f3485e67ddce60f4",
+    "/home/data/lxm/TRACEHR/runs/tracehr_structure_20261014/eicu/g_v1/preparation/native_configs.json": "924508005ac524f94782bfe4d926557e6d79426dd6f1ea86e1e30e9d3c0dae04",
+    "/home/data/lxm/TRACEHR/runs/tracehr_structure_20261014/eicu/g_v1/preparation/native_summary_scaling.npz": "59ee5b5e7ae06daad0c32d21b37f5b9870e3becd2d993ffd3240915c337428a7",
+    "/home/data/lxm/TRACEHR/cache/tracehr_module_scratch_20261010/eicu/d3339549c979809df7d6fee3938bcf1e1cdb4f408b5241778c0fc78bebcd040a/train_raw.npy": "f0893794846d203017f75e130f04f7735b826bd4cb0b8e116ca37872f686d633",
+    "/home/data/lxm/TRACEHR/cache/tracehr_module_scratch_20261010/eicu/d3339549c979809df7d6fee3938bcf1e1cdb4f408b5241778c0fc78bebcd040a/train_targets.npz": "c74f2e477fa5a2625d076833a366cc93de8c4080ba5675aab33a631fc98c4f56",
+    "/home/data/lxm/TRACEHR/cache/tracehr_module_scratch_20261010/eicu/d3339549c979809df7d6fee3938bcf1e1cdb4f408b5241778c0fc78bebcd040a/dev_raw.npy": "21203f846e9e98ab65a2d41a3455d1ff5e7be7c4ebede8d04743eb375f822dab",
+    "/home/data/lxm/TRACEHR/cache/tracehr_module_scratch_20261010/eicu/d3339549c979809df7d6fee3938bcf1e1cdb4f408b5241778c0fc78bebcd040a/dev_targets.npz": "e570c4b23def9239c4d590173175100df4acfec4081d5c97b4bd9b33886e2beb",
+    "/home/data/lxm/TRACEHR/runs/tracehr_pm_test_20261021/eicu/features/test_raw.npy": "5ee80498a494046a43f3c6436dcca0329e5f3da5a08619a543763bd6cf14d071",
+    "/home/data/lxm/TRACEHR/runs/tracehr_pm_test_20261021/eicu/features/test_targets.npz": "8d7fd3eb53ae25e76febaa4f3ddeab0bca388a1dfeb167cc6effb986395d1984"
+  },
+  "windows_sha256": "ef2a8c39ad9264bec5695e0253caca28cb8adaff04403f1ecd03b3ffea91ec42",
+  "windows_bytes": 253363012,
+  "unit_checks": [
+    "closed_window_boundaries",
+    "empty_vs_observed_zero",
+    "window_major_layout",
+    "overlay_preserves_other_coordinates_and_source"
+  ],
+  "models": {
+    "matched_tabm": {
+      "parameters": 17067452,
+      "details": {
+        "config": {
+          "act": "selu",
+          "act_lr_factor": 0.1,
+          "add_front_scale": true,
+          "batch_size": 256,
+          "bias_init_mode": "he+5",
+          "bias_lr_factor": 0.1,
+          "bias_wd_factor": 0.0,
+          "block_str": "w-b-a-d",
+          "embedding_size": 8,
+          "hidden_sizes": [
+            256,
+            256,
+            256
+          ],
+          "lr": 0.04,
+          "lr_sched": "coslog4",
+          "ls_eps": 0.1,
+          "max_one_hot_cat_size": 9,
+          "n_cv": 1,
+          "n_epochs": 256,
+          "n_refit": 0,
+          "n_repeats": 1,
+          "n_threads": 4,
+          "num_emb_type": "none",
+          "opt": "adam",
+          "p_drop": 0.15,
+          "p_drop_sched": "flat_cos",
+          "plr_hidden_1": 16,
+          "plr_hidden_2": 4,
+          "plr_lr_factor": 0.1,
+          "plr_sigma": 0.1,
+          "predict_batch_size": 256,
+          "scale_lr_factor": 6.0,
+          "sq_mom": 0.95,
+          "tfms": [],
+          "use_early_stopping": false,
+          "use_ls": false,
+          "use_parametric_act": true,
+          "val_fraction": 0.2,
+          "verbosity": 2,
+          "wd": 0.02,
+          "wd_sched": "flat_cos",
+          "weight_init_mode": "std",
+          "weight_param": "ntk",
+          "allow_single_split_opt": false,
+          "init_ram_limit_gb": 1.0
+        },
+        "fixed_statistics": [],
+        "split_seed": 48,
+        "sub_split_seed": 75120128,
+        "adaptation": "typed periodic frontend; official native trunk and optimizer",
+        "initialization_rows": 1024,
+        "initialization_split": "train",
+        "initialization_indices_sha256": "232d866968a1c183c8d43cdac348c0a06733e18391ca14760aec2515a4d69578",
+        "numeric_features": 13844,
+        "learned_coordinates": 3,
+        "post_encoding_scale": true,
+        "shared_weight_layers": 3,
+        "hidden_member_adapters": 0,
+        "independent_member_heads": 8,
+        "members": 8,
+        "centered_modulation": false,
+        "center_fit_split": "train",
+        "center_updates": "fixed statistic at random initialization; all learned parameters train jointly",
+        "matched_control": true,
+        "architecture": "official TabM-mini 0.0.3",
+        "native_activation": "ReLU",
+        "linear_parameterization": "CEM role-matched NTK",
+        "effective_linear_initialization": "native TabM",
+        "input_factor_initialization": "same fresh grouped normal values as CEM; independently learned coordinates",
+        "linear_mapping": [
+          {
+            "role": "hidden_0",
+            "factor": 0.004089919686626675,
+            "weight_factors": {
+              "lr": 1.0,
+              "wd": 1.0,
+              "l2": 1.0,
+              "l1": 1.0
+            },
+            "bias_factors": {
+              "lr": 0.1,
+              "wd": 0.0,
+              "l1_reg": 1.0,
+              "l2_reg": 1.0
+            }
+          },
+          {
+            "role": "hidden_1",
+            "factor": 0.0625,
+            "weight_factors": {
+              "lr": 1.0,
+              "wd": 1.0,
+              "l2": 1.0,
+              "l1": 1.0
+            },
+            "bias_factors": {
+              "lr": 0.1,
+              "wd": 0.0,
+              "l1_reg": 1.0,
+              "l2_reg": 1.0
+            }
+          },
+          {
+            "role": "hidden_2",
+            "factor": 0.0625,
+            "weight_factors": {
+              "lr": 1.0,
+              "wd": 1.0,
+              "l2": 1.0,
+              "l1": 1.0
+            },
+            "bias_factors": {
+              "lr": 0.1,
+              "wd": 0.0,
+              "l1_reg": 1.0,
+              "l2_reg": 1.0
+            }
+          }
+        ],
+        "native_forward_max_abs": 6.705522537231445e-08,
+        "front_scale": false,
+        "all_frontend_parameters_jointly_trained": true
+      },
+      "expanded_width": 59782
+    },
+    "window_summary": {
+      "parameters": 17124404,
+      "details": {
+        "config": {
+          "act": "selu",
+          "act_lr_factor": 0.1,
+          "add_front_scale": true,
+          "batch_size": 256,
+          "bias_init_mode": "he+5",
+          "bias_lr_factor": 0.1,
+          "bias_wd_factor": 0.0,
+          "block_str": "w-b-a-d",
+          "embedding_size": 8,
+          "hidden_sizes": [
+            256,
+            256,
+            256
+          ],
+          "lr": 0.04,
+          "lr_sched": "coslog4",
+          "ls_eps": 0.1,
+          "max_one_hot_cat_size": 9,
+          "n_cv": 1,
+          "n_epochs": 256,
+          "n_refit": 0,
+          "n_repeats": 1,
+          "n_threads": 4,
+          "num_emb_type": "none",
+          "opt": "adam",
+          "p_drop": 0.15,
+          "p_drop_sched": "flat_cos",
+          "plr_hidden_1": 16,
+          "plr_hidden_2": 4,
+          "plr_lr_factor": 0.1,
+          "plr_sigma": 0.1,
+          "predict_batch_size": 256,
+          "scale_lr_factor": 6.0,
+          "sq_mom": 0.95,
+          "tfms": [],
+          "use_early_stopping": false,
+          "use_ls": false,
+          "use_parametric_act": true,
+          "val_fraction": 0.2,
+          "verbosity": 2,
+          "wd": 0.02,
+          "wd_sched": "flat_cos",
+          "weight_init_mode": "std",
+          "weight_param": "ntk",
+          "allow_single_split_opt": false,
+          "init_ram_limit_gb": 1.0
+        },
+        "fixed_statistics": [],
+        "split_seed": 48,
+        "sub_split_seed": 75120128,
+        "adaptation": "typed periodic frontend; official native trunk and optimizer",
+        "initialization_rows": 1024,
+        "initialization_split": "train",
+        "initialization_indices_sha256": "232d866968a1c183c8d43cdac348c0a06733e18391ca14760aec2515a4d69578",
+        "numeric_features": 13844,
+        "learned_coordinates": 3,
+        "post_encoding_scale": true,
+        "shared_weight_layers": 4,
+        "hidden_member_adapters": 0,
+        "independent_member_heads": 0,
+        "members": 8,
+        "centered_modulation": false,
+        "center_fit_split": "train",
+        "center_updates": "fixed statistic at random initialization; all learned parameters train jointly"
+      },
+      "expanded_width": 59782
+    }
+  },
+  "test_labels_used_for_fitting": false,
+  "optimizer_updates": 0,
+  "preflight_reuse": {
+    "path": "/home/data/lxm/TRACEHR/runs/cem_matched_controls_20261105/eicu/v3/verification.json",
+    "sha256": "40914e945ab7b8c58ef8d9fe4fbc989e2480e354351214c6eb303d5c465cb6e5",
+    "reason": "only queue dependency added; scientific code and inputs identical"
+  }
+}

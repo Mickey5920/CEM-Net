@@ -1,0 +1,38 @@
+{
+  "complete": true,
+  "source_manifest_sha256": "551338378c93e658e2399e9c6d32c8ae6cffddf7b55d6faf164577be4032aee6",
+  "formal_fits": 10,
+  "test_evaluations": 10,
+  "train_rows": 31451,
+  "dev_rows": 4521,
+  "input_dim": 13672,
+  "num_types": 3207,
+  "parameters": 2797058,
+  "initialization_hashes": {
+    "48": "d2cecf423a874619c9620f228a648ddd230fbbb8b8f383050d960bf6a8a43617",
+    "49": "a38c781d2451047da77488cc31671a77a6dea4434399d18d424e7c15b7f0d3ce",
+    "50": "77ee570829a2c8fac9b68880d6b84d13bea458447f896debc551c292ff62cb31",
+    "51": "a57797a11810e36477aae8642848dd72175a11fa322a2df2de48e8840a92d3c0",
+    "52": "74f4d0de075f4d21d40b4e6c05fdc7dfae34f6a87ebd36287097b8cc45dfe595"
+  },
+  "cpu_checks": [
+    "within_hour_mean",
+    "event_multiplicity",
+    "24h_boundary",
+    "missing_vs_zero",
+    "empty_histories",
+    "elapsed_time",
+    "other_gpu_requires_900_continuous_seconds",
+    "external_activity_resets_lease",
+    "observation_gap_resets_timer",
+    "preferred_pool_not_blocked_by_waiting_idle_timer",
+    "author_graph_forward",
+    "all_trainable_gradients",
+    "empty_history_finite",
+    "all_five_seeds_rebuild_exact",
+    "shared_inputs_hashes"
+  ],
+  "existing_CNN_files_unchanged": true,
+  "test_loaded": false,
+  "verified_at": 1793699384.744105
+}
