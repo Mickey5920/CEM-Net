@@ -3,21 +3,23 @@
 \setlength{\tabcolsep}{4pt}
 \caption{Temporal aggregation comparisons.}
 \label{tab:targeted-aggregation}
-\begin{tabular}{@{}lrrrrrr@{}}
+\begin{tabular}{@{}lrrr@{}}
 \toprule
-& \multicolumn{3}{c}{Window summaries ($W$)} & \multicolumn{3}{c}{Observation-point summaries ($O$)} \\
-\cmidrule(lr){2-4}\cmidrule(lr){5-7}
-Database & AP & $D-W$ [interval] & $p_H$ & AP & $D-O$ [interval] & $p_H$ \\
+\textit{(a) Window summaries ($W$)} & Control AP & CEM-Net $-$ control [interval] & $p_H$ \\
+MIMIC-III / LOS & $0.5522\pm0.0013$ & $-0.0023\ [-0.0067,+0.0020]$ & 1 \\
+MIMIC-IV / LOS & $0.5419\pm0.0018$ & $-0.0006\ [-0.0035,+0.0023]$ & 1 \\
+eICU / LOS & $0.3912\pm0.0017$ & $+0.0020\ [-0.0019,+0.0060]$ & 1 \\
+MIMIC-III / Mortality & $0.4761\pm0.0066$ & $+0.0094\ [-0.0012,+0.0201]$ & 0.113 \\
+MIMIC-IV / Mortality & $0.5414\pm0.0021$ & $+0.0025\ [-0.0023,+0.0073]$ & 1 \\
+eICU / Mortality & $0.3905\pm0.0037$ & $+0.0017\ [-0.0049,+0.0080]$ & 1 \\
 \midrule
-\multicolumn{7}{l}{\textit{Prolonged LOS}} \\
-MIMIC-III & $0.5522\pm0.0013$ & \shortstack[r]{$-0.0023$\\$[-0.0067,+0.0020]$} & 1 & $0.5504\pm0.0021$ & \shortstack[r]{$-0.0004$\\$[-0.0035,+0.0027]$} & 1 \\
-MIMIC-IV & $0.5419\pm0.0018$ & \shortstack[r]{$-0.0006$\\$[-0.0035,+0.0023]$} & 1 & $0.5418\pm0.0011$ & \shortstack[r]{$-0.0006$\\$[-0.0026,+0.0014]$} & 1 \\
-eICU & $0.3912\pm0.0017$ & \shortstack[r]{$+0.0020$\\$[-0.0019,+0.0060]$} & 1 & $0.3914\pm0.0010$ & \shortstack[r]{$+0.0018$\\$[-0.0014,+0.0048]$} & 0.782 \\
-\midrule
-\multicolumn{7}{l}{\textit{Mortality}} \\
-MIMIC-III & $0.4761\pm0.0066$ & \shortstack[r]{$+0.0094$\\$[-0.0012,+0.0201]$} & 0.113 & $0.4844\pm0.0050$ & \shortstack[r]{$+0.0010$\\$[-0.0039,+0.0059]$} & 1 \\
-MIMIC-IV & $0.5414\pm0.0021$ & \shortstack[r]{$+0.0025$\\$[-0.0023,+0.0073]$} & 1 & $0.5443\pm0.0014$ & \shortstack[r]{$-0.0004$\\$[-0.0035,+0.0025]$} & 1 \\
-eICU & $0.3905\pm0.0037$ & \shortstack[r]{$+0.0017$\\$[-0.0049,+0.0080]$} & 1 & $0.3945\pm0.0026$ & \shortstack[r]{$-0.0023$\\$[-0.0068,+0.0019]$} & 0.788 \\
+\textit{(b) Observation-point summaries ($O$)} & Control AP & CEM-Net $-$ control [interval] & $p_H$ \\
+MIMIC-III / LOS & $0.5504\pm0.0021$ & $-0.0004\ [-0.0035,+0.0027]$ & 1 \\
+MIMIC-IV / LOS & $0.5418\pm0.0011$ & $-0.0006\ [-0.0026,+0.0014]$ & 1 \\
+eICU / LOS & $0.3914\pm0.0010$ & $+0.0018\ [-0.0014,+0.0048]$ & 0.782 \\
+MIMIC-III / Mortality & $0.4844\pm0.0050$ & $+0.0010\ [-0.0039,+0.0059]$ & 1 \\
+MIMIC-IV / Mortality & $0.5443\pm0.0014$ & $-0.0004\ [-0.0035,+0.0025]$ & 1 \\
+eICU / Mortality & $0.3945\pm0.0026$ & $-0.0023\ [-0.0068,+0.0019]$ & 0.788 \\
 \bottomrule
 \end{tabular}
 \par\smallskip{\footnotesize\raggedright AP mean $\pm$ sample SD. Differences compare duration ($D$, CEM-Net) with windows ($W$) or observation-point summaries ($O$). $D-W$: 99.5833\% intervals and 12-way Holm $p_H$; $D-O$: 99.1667\% intervals and six-way Holm $p_H$.\par}

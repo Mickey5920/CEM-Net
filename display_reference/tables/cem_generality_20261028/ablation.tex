@@ -16,11 +16,20 @@ w/o member modulation & $0.5275\pm0.0121$ & $0.5351\pm0.0031$ & $0.3865\pm0.0031
 w/o both components & $0.5373\pm0.0019$ & $0.5348\pm0.0026$ & $0.3851\pm0.0013$ & $0.4680\pm0.0036$ & $0.5338\pm0.0022$ & $0.3759\pm0.0036$ \\
 w/o duration & $0.5504\pm0.0020$ & $0.5421\pm0.0015$ & $0.3914\pm0.0033$ & $0.4706\pm0.0087$ & $0.5421\pm0.0014$ & $0.3873\pm0.0043$ \\
 CEM-Net & $0.5499\pm0.0020$ & $0.5412\pm0.0007$ & $0.3932\pm0.0018$ & $0.4855\pm0.0051$ & $0.5439\pm0.0020$ & $0.3922\pm0.0067$ \\
+\bottomrule
+\end{tabular}
+\par
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}lrrr@{}}
+\multicolumn{4}{l}{\textit{(b) Paired gains and interactions: difference [adjusted interval]}} \\
+Task & Modulation gain & Response $\times$ modulation & Direct $\times$ encoded \\
 \midrule
-\multicolumn{7}{l}{\textit{(b) Paired gains and interactions: difference [adjusted interval]}} \\
-Modulation gain & \shortstack[r]{$+0.0224$\\$[0.0114,0.0330]$} & \shortstack[r]{$+0.0061$\\$[0.0001,0.0120]$} & \shortstack[r]{$+0.0067$\\$[-0.0006,0.0150]$} & \shortstack[r]{$+0.0135$\\$[0.0016,0.0281]$} & \shortstack[r]{$+0.0075$\\$[-0.0003,0.0153]$} & \shortstack[r]{$+0.0022$\\$[-0.0075,0.0118]$} \\
-Response $\times$ modulation & \shortstack[r]{$+0.0174$\\$[0.0090,0.0258]$} & \shortstack[r]{$+0.0045$\\$[-0.0013,0.0101]$} & \shortstack[r]{$+0.0042$\\$[-0.0042,0.0128]$} & \shortstack[r]{$+0.0093$\\$[-0.0039,0.0223]$} & \shortstack[r]{$+0.0071$\\$[-0.0018,0.0164]$} & \shortstack[r]{$-0.0023$\\$[-0.0126,0.0079]$} \\
-Direct $\times$ encoded & --- & --- & \shortstack[r]{$+0.0032$\\$[-0.0021,0.0084]$} & --- & --- & \shortstack[r]{$+0.0139$\\$[0.0055,0.0225]$} \\
+MIMIC-III / LOS & $+0.0224\ [0.0114,0.0330]$ & $+0.0174\ [0.0090,0.0258]$ & --- \\
+MIMIC-IV / LOS & $+0.0061\ [0.0001,0.0120]$ & $+0.0045\ [-0.0013,0.0101]$ & --- \\
+eICU / LOS & $+0.0067\ [-0.0006,0.0150]$ & $+0.0042\ [-0.0042,0.0128]$ & $+0.0032\ [-0.0021,0.0084]$ \\
+MIMIC-III / Mortality & $+0.0135\ [0.0016,0.0281]$ & $+0.0093\ [-0.0039,0.0223]$ & --- \\
+MIMIC-IV / Mortality & $+0.0075\ [-0.0003,0.0153]$ & $+0.0071\ [-0.0018,0.0164]$ & --- \\
+eICU / Mortality & $+0.0022\ [-0.0075,0.0118]$ & $-0.0023\ [-0.0126,0.0079]$ & $+0.0139\ [0.0055,0.0225]$ \\
 \bottomrule
 \end{tabular}
 \par\smallskip{\footnotesize\raggedright Both components: responses and modulation. Modulation gain retains responses. Intervals use 4,000 patient-cluster draws: 99.7917\% for 24 simple effects, 99.1667\% for six response by modulation interactions, and 97.5\% for two direct by encoded interactions.\par}

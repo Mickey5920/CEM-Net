@@ -581,7 +581,7 @@ def check_render(output,checks=None):
         assert p.read_bytes()==original.read_bytes(),p.name
         names.append(p.name)
     assert set(names)=={'calibration.tex','cost.tex','development.tex','evidence.tex','hospital.tex',
-                        'hospital_pairs.tex','lgbm_recipe.tex','paired.tex','pipeline.tex','primary.tex','review_budget.tex','cnn_comparison.tex',
+                        'hospital_pairs.tex','lgbm_recipe.tex','paired.tex','pipeline.tex','primary.tex','review_budget.tex','cnn_comparison.tex','cnn_mortality_comparison.tex',
                         'matched_controls.tex','matched_cost.tex','aggregation_stress.tex','targeted_aggregation.tex','secondary_metrics.tex'}
     for filename in ('interaction.tex','context.tex','ablation.tex'):
         relative=Path('tables/cem_generality_20261028')/filename

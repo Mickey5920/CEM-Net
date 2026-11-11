@@ -17,7 +17,7 @@ Corresponding authors: Tao Tan and Yue Sun.
 
 Public code, configurations, aggregate results, and reproducibility utilities for the ICDE 2027 submission. Prolonged ICU length of stay is the primary outcome; mortality is a complementary outcome.
 
-[Fixed release v1.0.1](https://github.com/Mickey5920/CEM-Net/releases/tag/v1.0.1) · [Code and reproduction ZIP](https://github.com/Mickey5920/CEM-Net/releases/download/v1.0.1/CEM_Net_ICDE2027_code_and_reproduction_v1.0.1.zip)
+[Fixed release v1.0.2](https://github.com/Mickey5920/CEM-Net/releases/tag/v1.0.2) · [Code and reproduction ZIP](https://github.com/Mickey5920/CEM-Net/releases/download/v1.0.2/CEM_Net_ICDE2027_code_and_reproduction_v1.0.2.zip)
 
 ## Reproduce the reported displays
 
@@ -31,9 +31,9 @@ python -B reproduce.py render --output ../cem_reproduction_output
 
 Use a new output directory on a project/data disk. These commands verify the saved evidence and reconstruct tables and plots without clinical records, GPU training, model inference, or new calibration. Pixel-identical plots additionally require **Times New Roman**, as in the recorded environment. All statistical values are read from preserved aggregate results.
 
-The reconstruction checks cover 20 generated TeX assets, one supplied cohort table, and nine PNG figure families. Temporal-evidence gains use an interval plot, and construction costs use annotated heatmaps; the original numerical tables remain available. Some retained displays correspond to secondary analyses rather than the final paper layout. Core comparisons use seeds 48–52; the original three-seed results and recorded uncertainty are retained.
+The reconstruction checks cover 21 generated TeX assets, including separate LOS and mortality sequence-model result paragraphs, one supplied cohort table, and nine PNG figure families. Temporal-evidence gains use an interval plot, and construction costs use annotated heatmaps; the original numerical tables remain available. Some retained displays correspond to secondary analyses rather than the final paper layout. Core comparisons use seeds 48–52; the original three-seed results and recorded uncertainty are retained.
 
-The main AP table reports mean and sample SD. Complete baseline recipes and all 24 hourly-model AP contrast intervals are preserved in [IMPLEMENTATION.md](IMPLEMENTATION.md#7-baseline-architectures-and-training-recipes). Version 1.0.1 synchronizes author information, implementation documentation and the latest display layout; model code, configurations and all aggregate-result files are unchanged from v1.0.0.
+The main AP table reports mean and sample SD. Complete baseline recipes and all 24 hourly-model AP contrast intervals are preserved in [IMPLEMENTATION.md](IMPLEMENTATION.md#7-baseline-architectures-and-training-recipes). Version 1.0.2 synchronizes the latest aggregation and component-effect tables, outcome-specific sequence comparisons and five-seed comparison notes. Reference methods in Table IV retain their original three-seed selection; the reported contrasts use five seeds. Model code, configurations and all aggregate-result files are unchanged. Releases [v1.0.0](https://github.com/Mickey5920/CEM-Net/releases/tag/v1.0.0) and [v1.0.1](https://github.com/Mickey5920/CEM-Net/releases/tag/v1.0.1) remain available.
 
 ## Code map
 
@@ -52,7 +52,7 @@ The main AP table reports mean and sample SD. Complete baseline recipes and all 
 
 ## Licensed-data training
 
-Access to MIMIC-III 1.4, MIMIC-IV 3.1 and eICU 2.0 requires the corresponding PhysioNet approvals and data-use agreements. No patient identifiers, raw records, row-level predictions, clinical feature arrays, or fitted weights are included.
+Access to [MIMIC-III 1.4](https://doi.org/10.13026/C2XW26), [MIMIC-IV 3.1](https://doi.org/10.13026/kpb9-mt58) and [eICU 2.0](https://doi.org/10.13026/C2WM1R) requires the corresponding PhysioNet approvals and data-use agreements. Cite the dataset version, its original publication and PhysioNet as specified by each resource. No patient identifiers, raw records, row-level predictions, clinical feature arrays, or fitted weights are included.
 
 The readable `code/` tree is a complete reference runtime, with preprocessing helpers included. Database/stage-specific executed versions share unchanged files and retain their differences in `code_variants/`. To export an exact training source state, first list the available recipes:
 

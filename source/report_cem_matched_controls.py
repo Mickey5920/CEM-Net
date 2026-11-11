@@ -230,24 +230,26 @@ def targeted_evidence_table(root, result):
 def targeted_aggregation_table(result, matched):
     lines = [r'\begin{table*}[!t]', r'\centering\small', r'\setlength{\tabcolsep}{4pt}',
              r'\caption{Temporal aggregation comparisons.}',
-             r'\label{tab:targeted-aggregation}', r'\begin{tabular}{@{}lrrrrrr@{}}', r'\toprule',
-             r'& \multicolumn{3}{c}{Window summaries ($W$)} & \multicolumn{3}{c}{Observation-point summaries ($O$)} \\',
-             r'\cmidrule(lr){2-4}\cmidrule(lr){5-7}',
-             r'Database & AP & $D-W$ [interval] & $p_H$ & AP & $D-O$ [interval] & $p_H$ \\']
-    def find(db, e, name):
-        return next(r for r in result['paired'] if (r['database'], r['endpoint'], r['name']) == (db, e, name))
-    for e, label in ((1, 'LOS'), (0, 'Mort.')):
-        lines += [r'\midrule', r'\multicolumn{7}{l}{\textit{'+('Prolonged LOS' if e else 'Mortality')+r'}} \\']
-        for db in DATABASES:
-            ap = result['summaries'][f'{db}:observation:{e}']['AP']
-            row = find(db, e, 'duration_minus_observation')
-            window = contrast_cell(matched,db,'window_summary',e)
-            window_p = re.search(r';\\ p_H=([^$]+)\$', window).group(1)
-            window = re.sub(r';\\ p_H=[^$]+', '', window)
-            observation = re.sub(r';\\ p_H=[^$]+', '', targeted_cell(row))
-            cells = [NAMES[db],ap_cell(matched,db,'window_summary',e),window,window_p,
-                     rf"${ap['mean']:.4f}\pm{ap['sample_SD']:.4f}$",observation,f"{row['p_holm']:.3g}"]
-            lines.append(' & '.join(cells)+r' \\')
+             r'\label{tab:targeted-aggregation}', r'\begin{tabular}{@{}lrrr@{}}', r'\toprule']
+    for method, label in (('window',r'(a) Window summaries ($W$)'),
+                          ('observation',r'(b) Observation-point summaries ($O$)')):
+        if method=='observation':lines.append(r'\midrule')
+        lines.append(r'\textit{'+label+r'} & Control AP & CEM-Net $-$ control [interval] & $p_H$ \\')
+        for e in (1,0):
+            for db in DATABASES:
+                if method=='window':
+                    row=next(r for r in matched['paired'] if
+                             (r['database'],r['baseline'],r['endpoint'])==(db,'window_summary',e))
+                    ap=ap_cell(matched,db,'window_summary',e)
+                else:
+                    row=next(r for r in result['paired'] if
+                             (r['database'],r['endpoint'],r['name'])==(db,e,'duration_minus_observation'))
+                    value=result['summaries'][f'{db}:observation:{e}']['AP']
+                    ap=rf"${value['mean']:.4f}\pm{value['sample_SD']:.4f}$"
+                lo,hi=row['adjusted_ci']
+                cells=[NAMES[db]+' / '+('LOS' if e else 'Mortality'),ap,
+                       rf"${row['mean']:+.4f}\ [{lo:+.4f},{hi:+.4f}]$",f"{row['p_holm']:.3g}"]
+                lines.append(' & '.join(cells)+r' \\')
     return '\n'.join(lines+[r'\bottomrule', r'\end{tabular}',
         r'\par\smallskip{\footnotesize\raggedright AP mean $\pm$ sample SD. Differences compare duration ($D$, CEM-Net) with windows ($W$) or observation-point summaries ($O$). $D-W$: 99.5833\% intervals and 12-way Holm $p_H$; $D-O$: 99.1667\% intervals and six-way Holm $p_H$.\par}',
         r'\end{table*}', ''])

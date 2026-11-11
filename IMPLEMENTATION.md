@@ -124,6 +124,8 @@ Holm correction is applied within the saved family. It differs from the Bonferro
 
 The new secondary analysis contains 24 raw AUROC/Brier contrasts, five seeds and 20,000 patient-cluster draws, using one 24-comparison family. AP and older calibration analyses retain their original families.
 
+Platt intercept/slope calibration is fitted on validation logits and fixed for test evaluation. The manuscript reports test probability quality. Calibration-fitting scores retained in the aggregate records are resubstitution descriptions; ECE is descriptive.
+
 The paired_draws.npz and compressed loss-difference files contain aggregate metric contrasts per draw, not patient predictions. The root verifier reconstructs the supported intervals without clinical records.
 
 Relevant sources:

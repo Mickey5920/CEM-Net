@@ -63,25 +63,18 @@ def ablation_table(result):
                          ('EMA_no_duration','w/o duration'),('CEM-Net','CEM-Net')]:
         rows.append(title+' & '+' & '.join('$'+ms(summaries[db,method,e]).replace(r'\,','')+'$'
                     for e in (1,0) for db in DBS)+r' \\')
-    gains=[]
+    effects=[]
     for e in (1,0):
         for db in DBS:
-            v=core_pair(result,db,e,'response_modulation_simple','modulation_with_responses')
-            gains.append(r'\shortstack[r]{'+f"${v['mean']:+.4f}$"+r'\\'+
-                         f"$[{v['adjusted_ci'][0]:.4f},{v['adjusted_ci'][1]:.4f}]$"+'}')
-    rows += [r'\midrule',r'\multicolumn{7}{l}{\textit{(b) Paired gains and interactions: difference [adjusted interval]}} \\',
-             r'Modulation gain & '+' & '.join(gains)+r' \\']
-    for title,family,name in [(r'Response $\times$ modulation','response_modulation_interaction','interaction'),
-                              (r'Direct $\times$ encoded','raw_encoded_interaction','raw-by-encoded modulation')]:
-        cells=[]
-        for e in (1,0):
-            for db in DBS:
+            cells=[NAMES[db]+' / '+('LOS' if e else 'Mortality')]
+            for family,name in [('response_modulation_simple','modulation_with_responses'),
+                                ('response_modulation_interaction','interaction'),
+                                ('raw_encoded_interaction','raw-by-encoded modulation')]:
                 if family=='raw_encoded_interaction' and db!='eicu':
                     cells.append('---');continue
                 v=core_pair(result,db,e,family,name)
-                cells.append(r'\shortstack[r]{'+f"${v['mean']:+.4f}$"+r'\\'+
-                             f"$[{v['adjusted_ci'][0]:.4f},{v['adjusted_ci'][1]:.4f}]$"+'}')
-        rows.append(title+' & '+' & '.join(cells)+r' \\')
+                cells.append(f"${v['mean']:+.4f}\\ [{v['adjusted_ci'][0]:.4f},{v['adjusted_ci'][1]:.4f}]$")
+            effects.append(' & '.join(cells)+r' \\')
     text = [r'\begin{table*}[tp]',r'\centering\small',r'\setlength{\tabcolsep}{1.6pt}',
             r'\caption{Component effects and interactions.}',
             r'\label{tab:ablation}\label{tab:interaction}',r'\begin{tabular}{lrrrrrr}',r'\toprule',
@@ -90,6 +83,11 @@ def ablation_table(result):
             r'Method & MIMIC-III & MIMIC-IV & eICU & MIMIC-III & MIMIC-IV & eICU \\',r'\midrule',
             r'\multicolumn{7}{l}{\textit{(a) Component deletions: AP mean $\pm$ sample SD}} \\',
             *rows,r'\bottomrule',r'\end{tabular}',
+            r'\par',r'\setlength{\tabcolsep}{4pt}',
+            r'\begin{tabular}{@{}lrrr@{}}',
+            r'\multicolumn{4}{l}{\textit{(b) Paired gains and interactions: difference [adjusted interval]}} \\',
+            r'Task & Modulation gain & Response $\times$ modulation & Direct $\times$ encoded \\',
+            r'\midrule',*effects,r'\bottomrule',r'\end{tabular}',
             r'\par\smallskip{\footnotesize\raggedright Both components: responses and modulation. Modulation gain retains responses. Intervals use 4,000 patient-cluster draws: 99.7917\% for 24 simple effects, 99.1667\% for six response by modulation interactions, and 97.5\% for two direct by encoded interactions.\par}',
             r'\end{table*}']
     (PAPER/'tables/cem_generality_20261028/ablation.tex').write_text('\n'.join(text)+'\n',encoding='utf8')
@@ -298,7 +296,7 @@ def primary():
             factor.append(row)
     table('paired',r'Paired AP comparisons.','paired',
           ['Reference',r'$\Delta$AP [interval]',r'$p_{\mathrm{adj}}$'],paired,'lrr',wide=False,
-          notes=r'CEM-Net minus baseline. References are fixed from the original three-seed comparison: unmarked, validation-selected; $\dagger$, observed-mean leader. Brackets: 99.9074\% patient-cluster intervals. Bonferroni multiplicity is 54 for intervals and $p_{\mathrm{adj}}$.')
+          notes=r'Five-seed CEM-Net minus baseline. Reference identities were fixed using three seeds: unmarked, validation-selected; $\dagger$, test-mean leader at that stage. Brackets: 99.9074\% patient-cluster intervals. Bonferroni multiplicity is 54 for intervals and $p_{\mathrm{adj}}$.')
     # Additional test-mean leaders are descriptive references from the same
     # frozen 54-comparison family, never replacements for validation selection.
     table('evidence','Added temporal evidence with five seeds: mean AP changes for CEM-Net ($\\Delta C$), baseline ($\\Delta B$), and interaction $I_E=\\Delta C-\\Delta B$. Brackets show 99.7222\\% patient-cluster intervals (18 contrasts). Baselines are TabM-mini for MIMIC-III LOS, TabM-mini+PLE for eICU, and TabM+PLE otherwise.','evidence',
@@ -380,8 +378,9 @@ def primary():
 
 
 def cnn_comparison(cnn):
-    """Summarize complete families; every interval remains in Table V."""
+    """Summarize the preserved sequence-model results separately by outcome."""
     text=[]
+    mortality=[]
     cnn_pairs=[r for r in cnn['paired'] if r['split']=='test' and r['baseline'] in ('TCN','ModernTCN','LITEMV')]
     med_pairs=[r for r in cnn['paired'] if r['split']=='test' and r['baseline']=='Medformer']
     if len(cnn_pairs)==18 and len(med_pairs)==6 and all(r['adjusted_ci'][0]>0 for r in cnn_pairs+med_pairs):
@@ -393,20 +392,24 @@ def cnn_comparison(cnn):
                     f'by {cnn_range} AP percentage points and Medformer by {med_range} points '+
                     r'(Table~\ref{tab:primary}). All corresponding family-adjusted intervals are positive '+
                     f"(Holm $p\\leq {max(r['p_holm'] for r in los_cnn):.4f}$ for the CNNs and "+
-                    f"$p\\leq {max(r['p_holm'] for r in los_med):.4f}$ for Medformer). "+
-                    'The corresponding mortality intervals are also positive in all three databases.')
+                    f"$p\\leq {max(r['p_holm'] for r in los_med):.4f}$ for Medformer).")
+        mortality.append('Across all three databases, CEM-Net exceeds TCN, ModernTCN, LITEMV and Medformer '+
+                         r'on mortality AP, with positive family-adjusted intervals (Table~\ref{tab:primary}).')
     else:
         for ps,name in [(cnn_pairs,'the three CNNs'),(med_pairs,'Medformer')]:
             if ps:
                 text.append(r'Table~\ref{tab:primary} reports the complete five-seed comparisons with '+name+
                             r'; task-level intervals retain both supported and unresolved contrasts.')
-    if cnn['models'] and all(
-        (cnn['summaries'][f'{db}:test:CEM-Net:{e}'][metric]['mean']-
-         cnn['summaries'][f'{db}:test:{model}:{e}'][metric]['mean'])*direction>0
-        for db in DBS for e in (0,1) for model in cnn['models']
-        for metric,direction in [('AUROC',1),('Brier',-1)]
-    ):
-        text.append('Mean AUROC and Brier score also favor CEM-Net throughout these comparisons.')
+        mortality.append(r'Table~\ref{tab:primary} reports mortality comparisons with the three CNNs and Medformer.')
+    for endpoint,paragraph in ((1,text),(0,mortality)):
+        if cnn['models'] and all(
+            (cnn['summaries'][f'{db}:test:CEM-Net:{endpoint}'][metric]['mean']-
+             cnn['summaries'][f'{db}:test:{model}:{endpoint}'][metric]['mean'])*direction>0
+            for db in DBS for model in cnn['models']
+            for metric,direction in [('AUROC',1),('Brier',-1)]
+        ):
+            paragraph.append('Mean AUROC and Brier score also favor CEM-Net throughout these '+
+                             ('LOS' if endpoint==1 else 'mortality')+' comparisons.')
     metric_names={'AUROC':'AUROC','Brier':'Brier score','log_loss':'log loss'}
     for db in DBS:
         for e in (0,1):
@@ -418,10 +421,12 @@ def cnn_comparison(cnn):
                     if (value-baseline)*(1 if metric=='AUROC' else -1)<0:adverse.append(f'{model} ({baseline:.4f})')
                 if adverse:
                     comparison=', '.join(adverse[:-1])+' and '+adverse[-1] if len(adverse)>1 else adverse[0]
-                    text.append(f"For {NAMES[db]} {'mortality' if e==0 else 'LOS'}, however, mean {name} is "+
-                                ('higher' if metric=='AUROC' else 'lower')+' for '+comparison+
-                                f' than for CEM-Net ({value:.4f}).')
+                    (mortality if e==0 else text).append(
+                        f"For {NAMES[db]} {'mortality' if e==0 else 'LOS'}, mean {name} is "+
+                        ('higher' if metric=='AUROC' else 'lower')+' for '+comparison+
+                        f' than for CEM-Net ({value:.4f}).')
     (TABLES/'cnn_comparison.tex').write_text(' '.join(text)+'\n',encoding='utf8')
+    (TABLES/'cnn_mortality_comparison.tex').write_text(' '.join(mortality)+'\n',encoding='utf8')
 
 
 def parameter_composition():
