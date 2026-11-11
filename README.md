@@ -9,11 +9,11 @@ Corresponding authors: Tao Tan and Yue Sun.
 | Author | Email | ORCID |
 |---|---|---|
 | Xiangmin Luo | luoxm5920@163.com | [0000-0002-2915-5677](https://orcid.org/0000-0002-2915-5677) |
-| Da Huang | huangda_97@163.com | [0000-0002-6375-0197](https://orcid.org/0000-0002-6375-0197) |
+| Da Huang | p2317359@mpu.edu.mo | [0000-0002-6375-0197](https://orcid.org/0000-0002-6375-0197) |
 | Ningyi Zhang | p2417803@mpu.edu.mo | [0009-0009-0354-5528](https://orcid.org/0009-0009-0354-5528) |
 | Jie Gao | gjttxs@gmail.com | [0009-0005-6274-0973](https://orcid.org/0009-0005-6274-0973) |
-| Tao Tan | taotaojs@gmail.com | [0000-0001-5403-0887](https://orcid.org/0000-0001-5403-0887) |
-| Yue Sun | yunsun@mpu.edu.mo | [0000-0003-0301-5112](https://orcid.org/0000-0003-0301-5112) |
+| Tao Tan | taotanjs@gmail.com | [0000-0001-5403-0887](https://orcid.org/0000-0001-5403-0887) |
+| Yue Sun | yuesun@mpu.edu.mo | [0000-0003-0301-5112](https://orcid.org/0000-0003-0301-5112) |
 
 Public code, configurations, aggregate results, and reproducibility utilities for the ICDE 2027 submission. Prolonged ICU length of stay is the primary outcome; mortality is a complementary outcome.
 
