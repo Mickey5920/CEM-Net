@@ -52,23 +52,25 @@ def render(root,output):
     root,output=Path(root),Path(output)
     checks=verify(root)
     result=read(root/'runs'/RUN/'paired_results_v1/verified-results.json')
-    lines=[r'\begin{table*}[tp]',r'\centering\small',r'\setlength{\tabcolsep}{3pt}',
-           r'\caption{Secondary Test metrics: five-seed mean CEM-Net-minus-reference differences. AUROC favors positive and Brier favors negative differences. Brackets show 99.7917\% patient-cluster intervals; Holm $p_H$ adjusts all 24 contrasts. S: the fixed validation-selected baseline (TabM-mini for MIMIC-III LOS, TabM-mini+PLE for eICU, TabM+PLE otherwise); M: matched TabM-mini.}',
+    lines=[r'\begin{table*}[tp]',r'\centering\small',r'\setlength{\tabcolsep}{5pt}',
+           r'\caption{Discrimination and probability quality.}',
            r'\label{tab:secondary-metrics}',r'\begin{tabular}{llrrrr}',r'\toprule',
-           r'Task & Ref. & $\Delta$AUROC [interval] & $p_H$ & $\Delta$Brier [interval] & $p_H$ \\',r'\midrule']
+           r'Database & Ref. & $\Delta$AUROC [interval] & $p_H$ & $\Delta$Brier [interval] & $p_H$ \\']
     def cell(row):
         edge=lambda x:f'{x:+.6f}' if 0<abs(x)<.00005 else f'{x:+.4f}'
         lo,hi=row['adjusted_ci']
         return rf"${edge(row['mean'])}\ [{edge(lo)},{edge(hi)}]$"
     for e,label in ((1,'LOS'),(0,'Mortality')):
-        if e==0:lines.append(r'\midrule')
+        lines += [r'\midrule',r'\multicolumn{6}{l}{\textit{'+('Prolonged LOS' if e else 'Mortality')+r'}} \\']
         for db in DBS:
             selected=result['selected_baselines'][db][str(e)]
             for ref,tag in ((selected,'S'),('matched_tabm','M')):
                 rows={r['metric']:r for r in result['paired'] if (r['database'],r['endpoint'],r['baseline'])==(db,e,ref)}
-                lines.append(' & '.join([NAMES[db]+' / '+label,tag,cell(rows['AUROC']),f"{rows['AUROC']['p_holm']:.3g}",
+                lines.append(' & '.join([NAMES[db] if tag=='S' else '',tag,cell(rows['AUROC']),f"{rows['AUROC']['p_holm']:.3g}",
                                         cell(rows['Brier']),f"{rows['Brier']['p_holm']:.3g}"])+r' \\')
-    lines += [r'\bottomrule',r'\end{tabular}',r'\end{table*}','']
+    lines += [r'\bottomrule',r'\end{tabular}',
+              r'\par\smallskip{\footnotesize\raggedright CEM-Net minus reference: positive favors CEM-Net for AUROC, negative for Brier. Brackets: 99.7917\% patient-cluster intervals; Holm $p_H$ adjusts 24 contrasts. S: validation-selected TabM-mini for MIMIC-III LOS, TabM-mini+PLE for eICU, TabM+PLE otherwise. M: matched TabM-mini.\par}',
+              r'\end{table*}','']
     output.mkdir(parents=True,exist_ok=True)
     (output/'secondary_metrics.tex').write_text('\n'.join(lines),encoding='utf8')
     return checks

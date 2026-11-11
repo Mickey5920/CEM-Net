@@ -87,7 +87,7 @@ Concatenating the three-coordinate responses with the direct transformed profile
 
 For a batch of $B$ stays, the encoded profile has shape $B\times D$. Eight member-factor vectors of shape $8\times D$ produce $B\times8\times D$ modulated inputs. A shared three-layer width-256 predictor produces $B\times8\times2$ logits. Training averages member cross-entropies with the manuscript's factor 0.5. Evaluation averages positive-class probabilities within one fitted model; it does not pool predictions across independent seeds.
 
-Section V-H accounts for parameters as
+Section V-E accounts for parameters as
 
 $$
 P=83q+8D+D+256D+133{,}122.
@@ -156,6 +156,43 @@ Archived launchers include original host paths, cached-input references and asse
 Construction groups and orders admissible records, computes fixed-size reductions and materializes profiles. The stated $O(N\log N)$ bound includes sorting; output width is independent of history length. Event statistics merge after deduplication. Equal-time medians require complete groups, and duration segments require correct boundary values and times.
 
 Construction and prediction measurements are separate. Construction trials retain their stay counts and CPU setup; duration/window comparisons use the same inputs. Prediction measurements distinguish workflow processing from resident inference and retain measured batch sizes, precision and hardware. These results describe the measured workloads rather than unmeasured deployment throughput.
+
+
+## 7. Baseline architectures and training recipes
+
+The complete baseline recipe table is retained here as implementation material. It preserves the configurations used for the reported results. The manuscript specifies the shared inputs, checkpoint selection, principal training budgets and matched-control design.
+
+| Methods | Architecture and input transformation | Optimization, budget and stopping |
+|---|---|---|
+| RealMLP | Pre-tuned full classifier; complete evidence profile. | Batch 256; 256 epochs, no early stopping. |
+| TabM / mini; with / without PLE | Three width-256 layers, 32 members, dropout 0.2; training-quantile transform. PLE: version B, dimension 16, no activation, up to 48 bins; merge duplicate edges; unit interval for constants. | AdamW, learning rate $5\times10^{-4}$, decay $10^{-3}$; effective batch 256 (PLE microbatch 32); cap 256, patience 16. |
+| SeFT | Input/output: three width-32 layers. Attention embedding: two width-64 layers; four heads, latent/dot-product width 128. Time embedding 4, maximum scale 100, attention dropout 0.1. | Adam $10^{-3}$, no decay; batch/microbatch 64/4; cap 300, patience 30. Halve rate after 15 stale epochs; cooldown 15, floor $10^{-5}$; unweighted BCE. |
+| mTAND encoder | Supervised: hidden 256, learned time embedding 128, one head, 128 reference queries. Sparse and reference dense implementations match in outputs and gradients. | Adam $10^{-4}$, no decay; batch/microbatch 256/4; cap/patience 200; two-class cross-entropy. |
+| STraTS (ss$^{-}$) | Author supervised variant: hidden 64, two layers, 16 heads; dropout/attention dropout 0.2. Full observations; extra demographic coordinate zero; no pretraining. | Author AdamW $5\times10^{-4}$, $\epsilon=10^{-6}$, no decay, clip 0.3; batch/microbatch 16/1; cap 50, patience 10; train-ratio-weighted BCE. |
+| LightGBM | 4.6.0, LGBM-TD: 50 leaves, unlimited depth, 255 bins, minimum leaf rows 40, Hessian $10^{-7}$, split gain 0. Zero is observed. | BCE; rate 0.04, row fraction 0.75, feature fraction 1, $L_1/L_2=0$, no class weights; cap 1,000, patience 300; four threads, deterministic column-wise layout. |
+| XGBoost-TD | 3.2.0, CPU histogram trees: depth 6, 256 bins, minimum child weight $5\times10^{-6}$. Zero is observed. | BCE; rate 0.08, row fraction 0.65, column fraction per level 0.9, $L_1/L_2=0$; cap 1,000, patience 300; four threads. |
+
+*Baseline architectures and training recipes. Checkpoints maximize validation AP; patience is in epochs or boosting rounds.*
+
+
+### Hourly sequence models
+
+TCN uses four width-128 blocks, kernel 4, dropout 0.2, AdamW, batch 16 and cap 50. ModernTCN uses one block at widths 32/64, patch size/stride 8/4, kernels 13/5, dropout 0.1, Adam, batch 64 and cap 100. Both use rate $5\times10^{-4}$ and AP patience 10. LITEMV is a numerically checked PyTorch translation of a single network: 32 filters, kernels 40/20/10, dilations 1/2/4, batch 64 and 1,500 epochs; Adam starts at $10^{-3}$, halving after 50 stale training-loss epochs to a floor of $10^{-4}$.
+
+Medformer retains the authors' full classification graph: six width-128 layers, eight heads, feedforward width 256, 2/4/8-hour patches and dropout 0.1. Adam uses $10^{-4}$ with batch 128, cap 100 and AP patience 10. Arithmetic weight averaging starts after epoch one; validation AP selects averaged weights. All four use unweighted loss, zero decay and fixed recipes, without pretraining, augmentation or tuning.
+
+
+
+## 8. Complete hourly-model AP intervals
+
+These are the original CEM-Net-minus-comparator Test AP intervals, preserved when the main performance table was simplified to mean and sample SD. Columns follow the main table. CNN intervals are 99.8333%; Medformer intervals are 99.1667%. Their existing correction families are unchanged.
+
+| Comparator | MIMIC-III LOS | MIMIC-IV LOS | eICU LOS | MIMIC-III mortality | MIMIC-IV mortality | eICU mortality |
+|---|---|---|---|---|---|---|
+| TCN | [+0.0309,+0.0770] | [+0.0476,+0.0850] | [+0.0404,+0.0773] | [+0.0383,+0.1133] | [+0.0654,+0.1197] | [+0.0603,+0.1162] |
+| ModernTCN | [+0.0494,+0.0950] | [+0.0704,+0.1075] | [+0.0559,+0.0925] | [+0.0835,+0.1679] | [+0.0949,+0.1472] | [+0.0828,+0.1354] |
+| LITEMV | [+0.0291,+0.0679] | [+0.0406,+0.0748] | [+0.0329,+0.0667] | [+0.0328,+0.1041] | [+0.0578,+0.1064] | [+0.0486,+0.0988] |
+| Medformer | [+0.0139,+0.0532] | [+0.0465,+0.0785] | [+0.0413,+0.0747] | [+0.0258,+0.0929] | [+0.0563,+0.1010] | [+0.0696,+0.1165] |
 
 ## Preprocessing source locations
 

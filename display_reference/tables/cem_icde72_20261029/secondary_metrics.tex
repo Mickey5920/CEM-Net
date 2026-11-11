@@ -1,25 +1,28 @@
 \begin{table*}[tp]
 \centering\small
-\setlength{\tabcolsep}{3pt}
-\caption{Secondary Test metrics: five-seed mean CEM-Net-minus-reference differences. AUROC favors positive and Brier favors negative differences. Brackets show 99.7917\% patient-cluster intervals; Holm $p_H$ adjusts all 24 contrasts. S: the fixed validation-selected baseline (TabM-mini for MIMIC-III LOS, TabM-mini+PLE for eICU, TabM+PLE otherwise); M: matched TabM-mini.}
+\setlength{\tabcolsep}{5pt}
+\caption{Discrimination and probability quality.}
 \label{tab:secondary-metrics}
 \begin{tabular}{llrrrr}
 \toprule
-Task & Ref. & $\Delta$AUROC [interval] & $p_H$ & $\Delta$Brier [interval] & $p_H$ \\
+Database & Ref. & $\Delta$AUROC [interval] & $p_H$ & $\Delta$Brier [interval] & $p_H$ \\
 \midrule
-MIMIC-III / LOS & S & $+0.0120\ [+0.0067,+0.0174]$ & 0.0012 & $-0.0031\ [-0.0045,-0.0016]$ & 0.0012 \\
-MIMIC-III / LOS & M & $+0.0091\ [+0.0044,+0.0137]$ & 0.0012 & $-0.0022\ [-0.0034,-0.0008]$ & 0.0012 \\
-MIMIC-IV / LOS & S & $+0.0008\ [-0.0023,+0.0040]$ & 1 & $-0.0009\ [-0.0021,+0.0004]$ & 0.282 \\
-MIMIC-IV / LOS & M & $-0.0003\ [-0.0025,+0.0018]$ & 1 & $+0.0009\ [-0.000032,+0.0018]$ & 0.042 \\
-eICU / LOS & S & $-0.0035\ [-0.0081,+0.0010]$ & 0.169 & $+0.0015\ [+0.0007,+0.0023]$ & 0.0012 \\
-eICU / LOS & M & $-0.0010\ [-0.0045,+0.0027]$ & 1 & $+0.0013\ [+0.0006,+0.0020]$ & 0.0012 \\
+\multicolumn{6}{l}{\textit{Prolonged LOS}} \\
+MIMIC-III & S & $+0.0120\ [+0.0067,+0.0174]$ & 0.0012 & $-0.0031\ [-0.0045,-0.0016]$ & 0.0012 \\
+ & M & $+0.0091\ [+0.0044,+0.0137]$ & 0.0012 & $-0.0022\ [-0.0034,-0.0008]$ & 0.0012 \\
+MIMIC-IV & S & $+0.0008\ [-0.0023,+0.0040]$ & 1 & $-0.0009\ [-0.0021,+0.0004]$ & 0.282 \\
+ & M & $-0.0003\ [-0.0025,+0.0018]$ & 1 & $+0.0009\ [-0.000032,+0.0018]$ & 0.042 \\
+eICU & S & $-0.0035\ [-0.0081,+0.0010]$ & 0.169 & $+0.0015\ [+0.0007,+0.0023]$ & 0.0012 \\
+ & M & $-0.0010\ [-0.0045,+0.0027]$ & 1 & $+0.0013\ [+0.0006,+0.0020]$ & 0.0012 \\
 \midrule
-MIMIC-III / Mortality & S & $+0.0090\ [+0.0015,+0.0162]$ & 0.00585 & $-0.0005\ [-0.0022,+0.0011]$ & 1 \\
-MIMIC-III / Mortality & M & $+0.0008\ [-0.0044,+0.0059]$ & 1 & $+0.0009\ [-0.0001,+0.0020]$ & 0.0858 \\
-MIMIC-IV / Mortality & S & $+0.0030\ [-0.0006,+0.0069]$ & 0.095 & $+0.0005\ [-0.0004,+0.0014]$ & 0.609 \\
-MIMIC-IV / Mortality & M & $+0.0007\ [-0.0015,+0.0031]$ & 1 & $+0.0010\ [+0.0002,+0.0018]$ & 0.0012 \\
-eICU / Mortality & S & $-0.0062\ [-0.0112,-0.0012]$ & 0.0049 & $+0.0015\ [+0.0006,+0.0024]$ & 0.0012 \\
-eICU / Mortality & M & $-0.0074\ [-0.0118,-0.0031]$ & 0.0012 & $+0.0022\ [+0.0016,+0.0028]$ & 0.0012 \\
+\multicolumn{6}{l}{\textit{Mortality}} \\
+MIMIC-III & S & $+0.0090\ [+0.0015,+0.0162]$ & 0.00585 & $-0.0005\ [-0.0022,+0.0011]$ & 1 \\
+ & M & $+0.0008\ [-0.0044,+0.0059]$ & 1 & $+0.0009\ [-0.0001,+0.0020]$ & 0.0858 \\
+MIMIC-IV & S & $+0.0030\ [-0.0006,+0.0069]$ & 0.095 & $+0.0005\ [-0.0004,+0.0014]$ & 0.609 \\
+ & M & $+0.0007\ [-0.0015,+0.0031]$ & 1 & $+0.0010\ [+0.0002,+0.0018]$ & 0.0012 \\
+eICU & S & $-0.0062\ [-0.0112,-0.0012]$ & 0.0049 & $+0.0015\ [+0.0006,+0.0024]$ & 0.0012 \\
+ & M & $-0.0074\ [-0.0118,-0.0031]$ & 0.0012 & $+0.0022\ [+0.0016,+0.0028]$ & 0.0012 \\
 \bottomrule
 \end{tabular}
+\par\smallskip{\footnotesize\raggedright CEM-Net minus reference: positive favors CEM-Net for AUROC, negative for Brier. Brackets: 99.7917\% patient-cluster intervals; Holm $p_H$ adjusts 24 contrasts. S: validation-selected TabM-mini for MIMIC-III LOS, TabM-mini+PLE for eICU, TabM+PLE otherwise. M: matched TabM-mini.\par}
 \end{table*}

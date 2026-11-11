@@ -1,7 +1,7 @@
 \begin{table*}[tp]
 \centering\small
 \setlength{\tabcolsep}{1.6pt}
-\caption{Five-seed component ablations: AP mean $\pm$ sample SD. Both components denotes responses and modulation. Retained-parameter initialization, sampling and endpoint budgets match the full model. Modulation gain retains responses. The last three rows give patient-cluster intervals from 4,000 draws: 99.7917\% for 24 simple effects, 99.1667\% for six response--modulation interactions, and 97.5\% for two direct--encoded interactions.}
+\caption{Component effects and interactions.}
 \label{tab:ablation}\label{tab:interaction}
 \begin{tabular}{lrrrrrr}
 \toprule
@@ -9,6 +9,7 @@
 \cmidrule(lr){2-4}\cmidrule(lr){5-7}
 Method & MIMIC-III & MIMIC-IV & eICU & MIMIC-III & MIMIC-IV & eICU \\
 \midrule
+\multicolumn{7}{l}{\textit{(a) Component deletions: AP mean $\pm$ sample SD}} \\
 w/o EMA & $0.5368\pm0.0054$ & $0.5305\pm0.0041$ & $0.3852\pm0.0091$ & $0.4585\pm0.0059$ & $0.5359\pm0.0027$ & $0.3787\pm0.0107$ \\
 w/o learned responses & $0.5424\pm0.0012$ & $0.5364\pm0.0027$ & $0.3877\pm0.0010$ & $0.4722\pm0.0038$ & $0.5342\pm0.0008$ & $0.3803\pm0.0020$ \\
 w/o member modulation & $0.5275\pm0.0121$ & $0.5351\pm0.0031$ & $0.3865\pm0.0031$ & $0.4719\pm0.0042$ & $0.5364\pm0.0017$ & $0.3900\pm0.0020$ \\
@@ -16,9 +17,11 @@ w/o both components & $0.5373\pm0.0019$ & $0.5348\pm0.0026$ & $0.3851\pm0.0013$ 
 w/o duration & $0.5504\pm0.0020$ & $0.5421\pm0.0015$ & $0.3914\pm0.0033$ & $0.4706\pm0.0087$ & $0.5421\pm0.0014$ & $0.3873\pm0.0043$ \\
 CEM-Net & $0.5499\pm0.0020$ & $0.5412\pm0.0007$ & $0.3932\pm0.0018$ & $0.4855\pm0.0051$ & $0.5439\pm0.0020$ & $0.3922\pm0.0067$ \\
 \midrule
+\multicolumn{7}{l}{\textit{(b) Paired gains and interactions: difference [adjusted interval]}} \\
 Modulation gain & \shortstack[r]{$+0.0224$\\$[0.0114,0.0330]$} & \shortstack[r]{$+0.0061$\\$[0.0001,0.0120]$} & \shortstack[r]{$+0.0067$\\$[-0.0006,0.0150]$} & \shortstack[r]{$+0.0135$\\$[0.0016,0.0281]$} & \shortstack[r]{$+0.0075$\\$[-0.0003,0.0153]$} & \shortstack[r]{$+0.0022$\\$[-0.0075,0.0118]$} \\
 Response $\times$ modulation & \shortstack[r]{$+0.0174$\\$[0.0090,0.0258]$} & \shortstack[r]{$+0.0045$\\$[-0.0013,0.0101]$} & \shortstack[r]{$+0.0042$\\$[-0.0042,0.0128]$} & \shortstack[r]{$+0.0093$\\$[-0.0039,0.0223]$} & \shortstack[r]{$+0.0071$\\$[-0.0018,0.0164]$} & \shortstack[r]{$-0.0023$\\$[-0.0126,0.0079]$} \\
 Direct $\times$ encoded & --- & --- & \shortstack[r]{$+0.0032$\\$[-0.0021,0.0084]$} & --- & --- & \shortstack[r]{$+0.0139$\\$[0.0055,0.0225]$} \\
 \bottomrule
 \end{tabular}
+\par\smallskip{\footnotesize\raggedright Both components: responses and modulation. Modulation gain retains responses. Intervals use 4,000 patient-cluster draws: 99.7917\% for 24 simple effects, 99.1667\% for six response by modulation interactions, and 97.5\% for two direct by encoded interactions.\par}
 \end{table*}

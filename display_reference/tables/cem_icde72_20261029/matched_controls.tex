@@ -1,7 +1,7 @@
 \begin{table}[!tp]
 \centering\small
 \setlength{\tabcolsep}{2pt}
-\caption{Matched TabM-mini: five-seed Test AP (mean $\pm$ sample SD) and CEM-Net-minus-control differences. III/IV: MIMIC; L/M: LOS/mortality. CEM-Net AP is in Table~\ref{tab:primary}. Brackets show 99.5833\% patient-cluster intervals; Holm $p_H$ retains the 12-contrast family including windows in Table~\ref{tab:targeted-aggregation}.}
+\caption{Matched predictor comparison.}
 \label{tab:matched-controls}
 \begin{tabular}{lrrr}
 \toprule
@@ -15,4 +15,5 @@ IV/M & $0.5432\pm0.0023$ & $+0.0007\ [-0.0074,+0.0088]$ & 1 \\
 eICU/M & $0.4086\pm0.0012$ & $-0.0165\ [-0.0273,-0.0064]$ & 0.0006 \\
 \bottomrule
 \end{tabular}
+\par\smallskip{\footnotesize\raggedright Matched AP: TabM-mini mean $\pm$ sample SD. Differences: CEM-Net minus matched predictor. III/IV: MIMIC; L/M: LOS/mortality. Brackets: 99.5833\% patient-cluster intervals; Holm $p_H$ uses 12 contrasts, including windows in Table~\ref{tab:targeted-aggregation}.\par}
 \end{table}

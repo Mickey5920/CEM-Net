@@ -2,6 +2,7 @@
 import argparse
 import hashlib
 import json
+import re
 from pathlib import Path
 import numpy as np
 
@@ -43,7 +44,7 @@ def contrast_cell(result, db, method, endpoint):
 
 def comparison_table(result):
     lines = [r'\begin{table}[!tp]', r'\centering\small', r'\setlength{\tabcolsep}{2pt}',
-             r'\caption{Matched TabM-mini: five-seed Test AP (mean $\pm$ sample SD) and CEM-Net-minus-control differences. III/IV: MIMIC; L/M: LOS/mortality. CEM-Net AP is in Table~\ref{tab:primary}. Brackets show 99.5833\% patient-cluster intervals; Holm $p_H$ retains the 12-contrast family including windows in Table~\ref{tab:targeted-aggregation}.}',
+             r'\caption{Matched predictor comparison.}',
              r'\label{tab:matched-controls}', r'\begin{tabular}{lrrr}', r'\toprule',
              r'Task & Matched AP & $\Delta$AP [interval] & $p_H$ \\', r'\midrule']
     for endpoint, label in ((1, 'LOS'), (0, 'Mortality')):
@@ -52,7 +53,9 @@ def comparison_table(result):
             cells = [dict(mimiciii='III',mimic='IV',eicu='eICU')[db]+'/'+('M' if endpoint==0 else 'L'),
                      ap_cell(result, db, 'matched_tabm', endpoint),targeted_inline(row),f"{row['p_holm']:.3g}"]
             lines.append(' & '.join(cells)+r' \\')
-    return '\n'.join(lines+[r'\bottomrule', r'\end{tabular}', r'\end{table}', ''])
+    return '\n'.join(lines+[r'\bottomrule', r'\end{tabular}',
+        r'\par\smallskip{\footnotesize\raggedright Matched AP: TabM-mini mean $\pm$ sample SD. Differences: CEM-Net minus matched predictor. III/IV: MIMIC; L/M: LOS/mortality. Brackets: 99.5833\% patient-cluster intervals; Holm $p_H$ uses 12 contrasts, including windows in Table~\ref{tab:targeted-aggregation}.\par}',
+        r'\end{table}', ''])
 
 
 def resource_summary(root):
@@ -104,23 +107,27 @@ def combined_resource_table(original, summaries):
     matched_rows = []
     for db in DATABASES:
         matched_rows.append(r'\multicolumn{5}{l}{\textit{'+NAMES[db]+r' / both endpoints}} \\')
-        for variant, label in (('matched_tabm', 'Matched TabM-mini'), ('reference', 'CEM-Net')):
+        for variant, label in (('matched_tabm', 'TabM-mini'), ('reference', 'CEM-Net')):
             value = summaries[db+':'+variant]
             fields = [label, f"{value['parameters']/1e6:.2f}"]
             fields += [f"{value['batches']['1'][key]:.2f}" for key in ('resident_ms', 'transfer_ms')]
             fields.append(f"{value['batches']['32']['allocated_mib']:.0f}")
             matched_rows.append(' & '.join(fields)+r' \\')
-    lines = [r'\begin{table*}[!t]', r'\centering\small', r'\setlength{\tabcolsep}{2.5pt}',
-             r'\caption{Predictor costs: parameters (millions), batch-32 allocated memory (MiB), and batch-1 latency (ms), resident forward versus preprocessing/transfers plus prediction. Source-table processing is excluded. (a) Original configurations: checkpoint medians, same GPU per database, validation-selected baselines. (b) Separate matched measurements for CEM-Net and matched TabM-mini: ten checkpoints per method (five seeds, two outcomes), with shared input transformation and transfer.}',
+    lines = [r'\begin{table*}[tp]', r'\centering\small', r'\setlength{\tabcolsep}{2.5pt}',
+             r'\caption{Model size and inference cost.}',
              r'\label{tab:cost}', r'\label{tab:matched-cost}',
-             r'\begin{minipage}[t]{0.49\textwidth}', r'\centering', r'\begin{tabular}[t]{lrrrr}', r'\toprule',
+             r'\begin{minipage}[t]{0.49\textwidth}', r'\centering', r'\begin{tabular}[t]{@{}lrrrr@{}}', r'\toprule',
              r'\multicolumn{5}{l}{\textit{(a) Original configurations}} \\',
-             r'Method & Params & Resident & With prep. & Memory \\', r'\midrule',
+             r'Method & Params & \multicolumn{2}{c}{Latency (ms)} & Memory \\',
+             r'& (M) & Resident & With prep. & (MiB) \\', r'\midrule',
              begin.rstrip(), original_rows, end.rstrip(), r'\bottomrule', r'\end{tabular}', r'\end{minipage}\hfill',
-             r'\begin{minipage}[t]{0.49\textwidth}', r'\centering', r'\begin{tabular}[t]{lrrrr}', r'\toprule',
+             r'\begin{minipage}[t]{0.49\textwidth}', r'\centering', r'\begin{tabular}[t]{@{}lrrrr@{}}', r'\toprule',
              r'\multicolumn{5}{l}{\textit{(b) Matched configurations}} \\',
-             r'Method & Params & Resident & With prep. & Memory \\', r'\midrule', *matched_rows,
-             r'\bottomrule', r'\end{tabular}', r'\end{minipage}', r'\end{table*}', '']
+             r'Method & Params & \multicolumn{2}{c}{Latency (ms)} & Memory \\',
+             r'& (M) & Resident & With prep. & (MiB) \\', r'\midrule', *matched_rows,
+             r'\bottomrule', r'\end{tabular}', r'\end{minipage}',
+             r'\par\smallskip{\footnotesize\raggedright Checkpoint medians on the same GPU within each database. (a) Validation-selected baselines. (b) Ten checkpoints per method across both outcomes, with shared preprocessing and transfer. Latency: batch 1; allocated memory: batch 32. With prep. includes preprocessing and transfers, excluding source-table construction.\par}',
+             r'\end{table*}', '']
     return '\n'.join(lines)
 
 
@@ -221,20 +228,29 @@ def targeted_evidence_table(root, result):
 
 
 def targeted_aggregation_table(result, matched):
-    lines = [r'\begin{table*}[!t]', r'\centering\small', r'\setlength{\tabcolsep}{2.5pt}',
-             r'\caption{Five-seed aggregation controls replacing duration ($D$) with windows ($W$) or observation-point summaries ($O$). AP: mean $\pm$ sample SD; differences: CEM-Net minus control. $D-W$ retains 99.5833\% intervals and 12-way Holm $p_H$; $D-O$ uses 99.1667\% intervals and six-way Holm $p_H$.}',
-             r'\label{tab:targeted-aggregation}', r'\begin{tabular}{lrrrr}', r'\toprule',
-             r'Task & AP ($W$) & $D-W$ [interval] & AP ($O$) & $D-O$ [interval] \\', r'\midrule']
+    lines = [r'\begin{table*}[!t]', r'\centering\small', r'\setlength{\tabcolsep}{4pt}',
+             r'\caption{Temporal aggregation comparisons.}',
+             r'\label{tab:targeted-aggregation}', r'\begin{tabular}{@{}lrrrrrr@{}}', r'\toprule',
+             r'& \multicolumn{3}{c}{Window summaries ($W$)} & \multicolumn{3}{c}{Observation-point summaries ($O$)} \\',
+             r'\cmidrule(lr){2-4}\cmidrule(lr){5-7}',
+             r'Database & AP & $D-W$ [interval] & $p_H$ & AP & $D-O$ [interval] & $p_H$ \\']
     def find(db, e, name):
         return next(r for r in result['paired'] if (r['database'], r['endpoint'], r['name']) == (db, e, name))
     for e, label in ((1, 'LOS'), (0, 'Mort.')):
+        lines += [r'\midrule', r'\multicolumn{7}{l}{\textit{'+('Prolonged LOS' if e else 'Mortality')+r'}} \\']
         for db in DATABASES:
             ap = result['summaries'][f'{db}:observation:{e}']['AP']
             row = find(db, e, 'duration_minus_observation')
-            cells = [NAMES[db]+' / '+label,ap_cell(matched,db,'window_summary',e),contrast_cell(matched,db,'window_summary',e),
-                     rf"${ap['mean']:.4f}\pm{ap['sample_SD']:.4f}$",targeted_cell(row)]
+            window = contrast_cell(matched,db,'window_summary',e)
+            window_p = re.search(r';\\ p_H=([^$]+)\$', window).group(1)
+            window = re.sub(r';\\ p_H=[^$]+', '', window)
+            observation = re.sub(r';\\ p_H=[^$]+', '', targeted_cell(row))
+            cells = [NAMES[db],ap_cell(matched,db,'window_summary',e),window,window_p,
+                     rf"${ap['mean']:.4f}\pm{ap['sample_SD']:.4f}$",observation,f"{row['p_holm']:.3g}"]
             lines.append(' & '.join(cells)+r' \\')
-    return '\n'.join(lines+[r'\bottomrule', r'\end{tabular}', r'\end{table*}', ''])
+    return '\n'.join(lines+[r'\bottomrule', r'\end{tabular}',
+        r'\par\smallskip{\footnotesize\raggedright AP mean $\pm$ sample SD. Differences compare duration ($D$, CEM-Net) with windows ($W$) or observation-point summaries ($O$). $D-W$: 99.5833\% intervals and 12-way Holm $p_H$; $D-O$: 99.1667\% intervals and six-way Holm $p_H$.\par}',
+        r'\end{table*}', ''])
 
 
 def targeted_cost_table(root, result):
@@ -265,7 +281,136 @@ def render_targeted(root, output):
                           'targeted_aggregation.tex': targeted_aggregation_table(result,load_results(root)),
                           'pipeline.tex': targeted_cost_table(root, result)}.items():
         (output/name).write_text(content, encoding='utf8')
+    render_visual_summaries(root, output.parents[1], result)
     return dict(targeted_contrasts=51, construction_measurements=81, new_experiments=0)
+
+
+def render_visual_summaries(root, paper, result):
+    """Plot saved contrasts and measured costs; no fitting or resampling."""
+    import numpy as np
+    import matplotlib
+    matplotlib.use('Agg')
+    from matplotlib import pyplot as plt
+    from matplotlib.colors import LinearSegmentedColormap, Normalize
+    from matplotlib.lines import Line2D
+    from matplotlib.transforms import blended_transform_factory
+
+    folder = Path(paper)/'figures/cem_icde72_20261029'
+    folder.mkdir(parents=True, exist_ok=True)
+    style = {'font.family':'Times New Roman', 'font.size':8.5,
+             'axes.labelsize':8.5, 'axes.titlesize':9,
+             'pdf.fonttype':42, 'ps.fonttype':42,
+             'axes.spines.top':False, 'axes.spines.right':False}
+    blue, orange, grey = '#0072B2', '#D55E00', '#50565C'
+    core = read(Path(root)/'runs/cem_core_five_seed_20261107/paired_results_v1/verified-results.json')
+    with plt.rc_context(style):
+        fig = plt.figure(figsize=(7.16, 2.60))
+        left = fig.add_axes([.273,.17,.177,.67])
+        right = fig.add_axes([.713,.17,.240,.67])
+        fig.text(.005,.965,'(a) Original recipes: difference in temporal-evidence gains',
+                 fontsize=9, fontweight='bold', va='top')
+        fig.text(.525,.965,'(b) Matched predictor: gains and their difference',
+                 fontsize=9, fontweight='bold', va='top')
+        fig.text(.162,.867,r'$\Delta C$',ha='center')
+        fig.text(.230,.867,r'$\Delta B$',ha='center')
+        fig.text(.485,.867,r'$p_H$',ha='right')
+        fig.text(.995,.867,r'$p_H$',ha='right')
+        rows = [(db,e) for e in (1,0) for db in DATABASES]
+        trans = blended_transform_factory(fig.transFigure,left.transData)
+        for idx,(db,e) in enumerate(rows):
+            y = 5-idx
+            vals = {r['name']:r['five_seed'] for r in core['paired'] if
+                    (r['database'],r['endpoint'],r['family'])==(db,e,'evidence_original_recipe')}
+            r = vals['interaction']; lo,hi=r['adjusted_ci']
+            if idx<3:left.axhspan(y-.48,y+.48,color=blue,alpha=.045,lw=0,zorder=0)
+            left.errorbar(r['mean'],y,xerr=[[r['mean']-lo],[hi-r['mean']]],
+                          fmt='D',color=grey,markersize=3.4,capsize=2,lw=1.15)
+            left.annotate(f"{r['mean']:+.4f}",(r['mean'],y),xytext=(0,4.5),
+                          textcoords='offset points',ha='center',va='bottom',fontsize=8)
+            fig.text(.005,y,NAMES[db]+(' / LOS' if e else ' / Mort.'),transform=trans,va='center')
+            fig.text(.162,y,f"{vals['CEM_full_minus_basic']['mean']:+.4f}",transform=trans,ha='center',va='center',color=blue)
+            fig.text(.230,y,f"{vals['baseline_full_minus_basic']['mean']:+.4f}",transform=trans,ha='center',va='center',color=orange)
+            fig.text(.485,y,f"{r['p_holm_full_family']:.3g}",transform=trans,ha='right',va='center')
+        left.set_ylim(-.60,5.65);left.set_xlim(-.020,.033)
+        left.set_xticks([-.02,0,.02])
+        left.set_xlabel(r'Gain difference $I_E=\Delta C-\Delta B$',labelpad=3)
+        left.axhline(2.5,color='#bfc3c7',lw=.5)
+        handles = [Line2D([],[],marker=m,color=c,lw=1,label=l,markersize=3.5)
+                   for m,c,l in [('o',blue,'CEM-Net'),('s',orange,'Matched'),('D',grey,'Difference')]]
+        fig.legend(handles=handles,loc='upper left',bbox_to_anchor=(.525,.930),ncol=3,
+                   frameon=False,fontsize=7.9,columnspacing=.7,handlelength=1.0,handletextpad=.3)
+        trans = blended_transform_factory(fig.transFigure,right.transData)
+        specs = [('CEM_full_minus_basic',blue,'o'),('matched_full_minus_basic',orange,'s'),
+                 ('evidence_interaction',grey,'D')]
+        for idx,db in enumerate(DATABASES):
+            center = 5-2*idx
+            if idx<2:right.axhspan(center-.83,center+.83,color=blue,alpha=.045,lw=0,zorder=0)
+            fig.text(.525,center,NAMES[db]+('\nLOS' if db!='eicu' else '\nMortality'),
+                     transform=trans,va='center',linespacing=1.1)
+            for offset,(name,color,marker) in zip((.55,0,-.55),specs):
+                r = next(r for r in result['paired'] if (r['database'],r['name'])==(db,name))
+                y=center+offset;lo,hi=r['adjusted_ci']
+                right.errorbar(r['mean'],y,xerr=[[r['mean']-lo],[hi-r['mean']]],
+                               fmt=marker,color=color,markersize=3.4,capsize=2,lw=1.15)
+                right.annotate(f"{r['mean']:+.4f}",(r['mean'],y),xytext=(0,3.4),
+                               textcoords='offset points',ha='center',va='bottom',fontsize=8,color=color)
+                fig.text(.995,y,f"{r['p_holm']:.3g}",transform=trans,ha='right',va='center',fontsize=8)
+        right.set_ylim(-.1,6.15);right.set_xlim(-.019,.023)
+        right.set_xticks([-.01,0,.01,.02]);right.set_xlabel('AP gain / gain difference',labelpad=3)
+        for ax in (left,right):
+            ax.set_yticks([]);ax.spines['left'].set_visible(False)
+            ax.axvline(0,color='#999999',lw=.7,ls='--',zorder=0)
+            ax.grid(axis='x',color='#e5e7e9',lw=.4);ax.set_axisbelow(True)
+            ax.tick_params(axis='x',labelsize=8,pad=2,length=2)
+        for suffix in ('pdf','png'):
+            fig.savefig(folder/('evidence_gain_summary.'+suffix),dpi=300)
+        plt.close(fig)
+
+        full=[];lab=[];rss=[]
+        for db in DATABASES:
+            old=read(Path(root)/'runs/cem_icde_evidence_20261028'/(db+'_secondary_v1/verified-results.json'))['pipeline_cost']
+            assert old['complete'] and all(r['raw_reconstruction_exact'] for r in old['rows'])
+            full.append([r['median_seconds'] for r in old['rows']])
+            for method in ('duration','observation','window'):
+                rows=[next(r for r in result['costs'] if (r['database'],r['method'],r['stays'])==(db,method,n))
+                      for n in (128,512,2048)]
+                lab.append([r['end_to_end_seconds'] for r in rows]);rss.append(rows[-1]['peak_rss_mib'])
+        cmap=LinearSegmentedColormap.from_list('cem_time',['#f5f9fb','#d1e5ef','#7db8d3','#1f668c'])
+        cmap.set_bad('#f1f2f3')
+        fig=plt.figure(figsize=(7.16,1.50))
+        for idx,db in enumerate(DATABASES):
+            left=.055+idx/3
+            ax=fig.add_axes([left,.245,.218,.515])
+            values=np.array([full[idx],*lab[idx*3:idx*3+3]])
+            colored=np.ma.array(values,mask=np.zeros_like(values,dtype=bool));colored.mask[0]=True
+            ax.imshow(colored,aspect='auto',cmap=cmap,norm=Normalize(0,6))
+            ax.set_xticks(range(3),['128','512','2,048']);ax.xaxis.tick_top()
+            ax.set_yticks(range(4),['Full','D','O','W']);ax.tick_params(length=0,pad=3)
+            fig.text(left-.035,.965,f'({chr(97+idx)}) {NAMES[db]}',fontsize=9,fontweight='bold',va='top')
+            fig.text(left+.102,.935,'Stays',ha='center',va='top',fontsize=8)
+            for y in range(4):
+                for x in range(3):
+                    ax.text(x,y,f'{values[y,x]:.2f}',ha='center',va='center',
+                            color='white' if y>0 and values[y,x]/6>.62 else '#26343c',fontsize=8.5)
+            ax.set_xticks(np.arange(-.5,3,1),minor=True)
+            ax.set_yticks(np.arange(-.5,4,1),minor=True)
+            ax.grid(which='minor',color='white',linewidth=1.3)
+            ax.tick_params(which='minor',length=0)
+            for spine in ax.spines.values():spine.set_visible(False)
+            ax.axhline(.5,color='white',lw=3)
+            trans=blended_transform_factory(fig.transFigure,ax.transData)
+            fig.text(left+.247,.84,'RSS',ha='center',fontsize=8)
+            fig.text(left+.247,.775,'(MiB)',ha='center',fontsize=7.5)
+            fig.text(left+.247,0,'-',transform=trans,ha='center',va='center',color='#666666')
+            for y,value in enumerate(rss[idx*3:idx*3+3],1):
+                fig.text(left+.247,y,f'{value:.0f}',transform=trans,ha='center',va='center')
+        cb=fig.colorbar(plt.cm.ScalarMappable(norm=Normalize(0,6),cmap=cmap),
+                        cax=fig.add_axes([.52,.105,.27,.045]),orientation='horizontal',ticks=[0,3,6])
+        cb.ax.tick_params(labelsize=7.5,length=2,pad=1);cb.outline.set_visible(False)
+        fig.text(.49,.13,'Matched laboratory block: median seconds',ha='right',va='center',fontsize=8)
+        for suffix in ('pdf','png'):
+            fig.savefig(folder/('construction_summary.'+suffix),dpi=300)
+        plt.close(fig)
 
 
 def render(root, output):

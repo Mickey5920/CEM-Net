@@ -69,7 +69,8 @@ def ablation_table(result):
             v=core_pair(result,db,e,'response_modulation_simple','modulation_with_responses')
             gains.append(r'\shortstack[r]{'+f"${v['mean']:+.4f}$"+r'\\'+
                          f"$[{v['adjusted_ci'][0]:.4f},{v['adjusted_ci'][1]:.4f}]$"+'}')
-    rows += [r'\midrule',r'Modulation gain & '+' & '.join(gains)+r' \\']
+    rows += [r'\midrule',r'\multicolumn{7}{l}{\textit{(b) Paired gains and interactions: difference [adjusted interval]}} \\',
+             r'Modulation gain & '+' & '.join(gains)+r' \\']
     for title,family,name in [(r'Response $\times$ modulation','response_modulation_interaction','interaction'),
                               (r'Direct $\times$ encoded','raw_encoded_interaction','raw-by-encoded modulation')]:
         cells=[]
@@ -82,12 +83,15 @@ def ablation_table(result):
                              f"$[{v['adjusted_ci'][0]:.4f},{v['adjusted_ci'][1]:.4f}]$"+'}')
         rows.append(title+' & '+' & '.join(cells)+r' \\')
     text = [r'\begin{table*}[tp]',r'\centering\small',r'\setlength{\tabcolsep}{1.6pt}',
-            r'\caption{Five-seed component ablations: AP mean $\pm$ sample SD. Both components denotes responses and modulation. Retained-parameter initialization, sampling and endpoint budgets match the full model. Modulation gain retains responses. The last three rows give patient-cluster intervals from 4,000 draws: 99.7917\% for 24 simple effects, 99.1667\% for six response--modulation interactions, and 97.5\% for two direct--encoded interactions.}',
+            r'\caption{Component effects and interactions.}',
             r'\label{tab:ablation}\label{tab:interaction}',r'\begin{tabular}{lrrrrrr}',r'\toprule',
             r'& \multicolumn{3}{c}{Prolonged LOS} & \multicolumn{3}{c}{Mortality} \\',
             r'\cmidrule(lr){2-4}\cmidrule(lr){5-7}',
             r'Method & MIMIC-III & MIMIC-IV & eICU & MIMIC-III & MIMIC-IV & eICU \\',r'\midrule',
-            *rows,r'\bottomrule',r'\end{tabular}',r'\end{table*}']
+            r'\multicolumn{7}{l}{\textit{(a) Component deletions: AP mean $\pm$ sample SD}} \\',
+            *rows,r'\bottomrule',r'\end{tabular}',
+            r'\par\smallskip{\footnotesize\raggedright Both components: responses and modulation. Modulation gain retains responses. Intervals use 4,000 patient-cluster draws: 99.7917\% for 24 simple effects, 99.1667\% for six response by modulation interactions, and 97.5\% for two direct by encoded interactions.\par}',
+            r'\end{table*}']
     (PAPER/'tables/cem_generality_20261028/ablation.tex').write_text('\n'.join(text)+'\n',encoding='utf8')
 
 
@@ -134,7 +138,7 @@ def ms(r): return f"{r['mean']:.4f}\\,\\pm\\,{r['sample_SD']:.4f}"
 def ci(r):
     edge=lambda x: f'{x:+.6f}' if 0<abs(x)<.00005 else f'{x:+.4f}'
     return f"${r['mean']:+.4f}\\ [{edge(r['adjusted_ci'][0])},{edge(r['adjusted_ci'][1])}]$"
-def table(name, caption, ident, headers, rows, columns=None, wide=True, output_dir=None):
+def table(name, caption, ident, headers, rows, columns=None, wide=True, output_dir=None, notes=None):
     env='table*' if wide else 'table'
     size=r'\centering\small' if name in ('paired','lgbm_recipe','interaction','hospital') else r'\centering\footnotesize'
     text=[f'\\begin{{{env}}}[tp]',size,r'\setlength{\tabcolsep}{3pt}',
@@ -142,7 +146,10 @@ def table(name, caption, ident, headers, rows, columns=None, wide=True, output_d
           '\\begin{tabular}{'+(columns or 'l'+'r'*(len(headers)-1))+'}',r'\toprule',
           ' & '.join(headers)+r' \\',r'\midrule']
     text+=[' & '.join(row)+r' \\' for row in rows]
-    text += [r'\bottomrule',r'\end{tabular}',f'\\end{{{env}}}']
+    text += [r'\bottomrule',r'\end{tabular}']
+    if notes:
+        text += [r'\par\smallskip{\footnotesize\raggedright '+notes+r'\par}']
+    text += [f'\\end{{{env}}}']
     ((output_dir or TABLES)/(name+'.tex')).write_text('\n'.join(text)+'\n',encoding='utf-8')
 
 def primary():
@@ -200,13 +207,12 @@ def primary():
             prefix=old[:old.index(r'\multicolumn{7}{l}{\textit{Historical')]
         else:
             prefix=old[:old.index('RealMLP &')]
-        caption=('Five-seed predictive AP (mean $\\pm$ sample SD; seeds 48--52). Bold/underlined means rank all models in each column. Hourly-model second lines give CEM-Net-minus-comparator AP intervals: 99.8333\\% for CNNs and 99.1667\\% for Medformer.' if split=='test'
+        caption=('Predictive performance on ICU outcomes.' if split=='test'
                  else r'Five-seed validation AP for the comparison pool in Table~\ref{tab:primary}.')
         start=prefix.index(r'\caption{');end=prefix.index('\n',start)
         prefix=prefix[:start]+'\\caption{'+caption+'}'+prefix[end:]
         if split=='test':
-            prefix=prefix.replace(r'\centering\footnotesize',r'\centering\fontsize{8.5}{10.2}\selectfont')
-            prefix=prefix.replace(r'\centering\small',r'\centering\fontsize{8.5}{10.2}\selectfont')
+            prefix=prefix.replace(r'\centering\footnotesize',r'\centering\small')
             prefix=re.sub(r'\\setlength\{\\tabcolsep\}\{[^}]+\}',r'\\setlength{\\tabcolsep}{1.4pt}',prefix)
             prefix=prefix.replace(r'& \multicolumn{2}{c}{MIMIC-III} & \multicolumn{2}{c}{MIMIC-IV} & \multicolumn{2}{c}{eICU}',
                                   r'& \multicolumn{3}{c}{Prolonged LOS} & \multicolumn{3}{c}{Mortality}')
@@ -216,7 +222,7 @@ def primary():
         rows=[]
         for m in methods:
             if split=='test' and m in ('SeFT','RealMLP'):
-                heading='Observation-level comparators: values, times and masks' if m=='SeFT' else 'Common clinical evidence profile: model-specific preprocessing and training'
+                heading='Irregular-observation models' if m=='SeFT' else 'Common-profile predictors'
                 if m=='RealMLP': rows.append(r'\midrule')
                 rows.append(r'\multicolumn{7}{l}{\textit{'+heading+r'}} \\')
             cells=[]
@@ -231,6 +237,9 @@ def primary():
                     cells.append('$'+formatted+'$')
             if split=='test':cells=[cells[i] for i in (1,3,5,0,2,4)]
             rows.append(label(m)+' & '+' & '.join(cells)+r' \\')
+        if split=='test':
+            boundary=next(i for i,row in enumerate(rows) if 'Common-profile predictors' in row)-1
+            common_rows,rows=rows[boundary:],rows[:boundary]
         rows += [r'\midrule',r'\multicolumn{7}{l}{\textit{Hourly sequence models}} \\']
         for m in cnn['models']:
             cells=[]
@@ -242,14 +251,18 @@ def primary():
                     if v['mean']==means[0]:formatted=r'\mathbf{'+formatted+'}'
                     elif v['mean']==means[1]:formatted=r'\underline{'+formatted+'}'
                     cell='$'+formatted+'$'
-                    if m!='CEM-Net':
+                    if split!='test' and m!='CEM-Net':
                         pair=next(r for r in cnn['paired'] if (r['database'],r['split'],r['baseline'],r['endpoint'])==(db,split,m,e))
                         interval=f"$[{pair['adjusted_ci'][0]:+.4f},{pair['adjusted_ci'][1]:+.4f}]$"
                         cell=r'\shortstack[r]{'+cell+r'\\'+interval+'}'
                     cells.append(cell)
             if split=='test':cells=[cells[i] for i in (1,3,5,0,2,4)]
             rows.append(m+' & '+' & '.join(cells)+r' \\')
-        (TABLES/(name+'.tex')).write_text(prefix+'\n'.join(rows)+'\n'+r'\bottomrule'+'\n'+r'\end{tabular}'+'\n'+r'\end{table*}'+'\n',encoding='utf-8')
+        note=''
+        if split=='test':
+            rows += common_rows
+            note=r'\par\smallskip{\footnotesize\raggedright AP mean $\pm$ sample SD. Bold and underline mark the highest and second-highest unrounded means in each column.\par}'+'\n'
+        (TABLES/(name+'.tex')).write_text(prefix+'\n'.join(rows)+'\n'+r'\bottomrule'+'\n'+r'\end{tabular}'+'\n'+note+r'\end{table*}'+'\n',encoding='utf-8')
     cnn_comparison(cnn)
     # The displayed table uses held-out scores. Development scores remain a
     # separate artifact; the underlying results and selection rules are fixed.
@@ -283,8 +296,9 @@ def primary():
                    for name in ('CEM_full_minus_basic','baseline_full_minus_basic','interaction')}
                 row += [f"${v['CEM_full_minus_basic']['mean']:+.4f}$",f"${v['baseline_full_minus_basic']['mean']:+.4f}$",ci(v['interaction'])]
             factor.append(row)
-    table('paired',r'Five-seed AP differences: CEM-Net minus baseline. References come from the three-seed comparison: unmarked, validation-selected; $\dagger$, additional observed-mean leader. Brackets show 99.9074\% patient-cluster intervals; $p_{\mathrm{adj}}$ uses Bonferroni multiplicity 54.','paired',
-          ['Reference',r'$\Delta$AP [interval]',r'$p_{\mathrm{adj}}$'],paired,'lrr',wide=False)
+    table('paired',r'Paired AP comparisons.','paired',
+          ['Reference',r'$\Delta$AP [interval]',r'$p_{\mathrm{adj}}$'],paired,'lrr',wide=False,
+          notes=r'CEM-Net minus baseline. References are fixed from the original three-seed comparison: unmarked, validation-selected; $\dagger$, observed-mean leader. Brackets: 99.9074\% patient-cluster intervals. Bonferroni multiplicity is 54 for intervals and $p_{\mathrm{adj}}$.')
     # Additional test-mean leaders are descriptive references from the same
     # frozen 54-comparison family, never replacements for validation selection.
     table('evidence','Added temporal evidence with five seeds: mean AP changes for CEM-Net ($\\Delta C$), baseline ($\\Delta B$), and interaction $I_E=\\Delta C-\\Delta B$. Brackets show 99.7222\\% patient-cluster intervals (18 contrasts). Baselines are TabM-mini for MIMIC-III LOS, TabM-mini+PLE for eICU, and TabM+PLE otherwise.','evidence',
@@ -442,8 +456,9 @@ def hospital_table(core):
             point,interval=value[1:-1].split(r'\ ',1)
             cells.append(r'\shortstack[r]{'+'$'+point+'$'+r'\\'+'$'+interval+'$'+'}')
         rows.append(cells)
-    table('hospital','Five-seed hospital-held-out AP differences on eICU: CEM-Net minus comparator. Brackets show 98.75\\% intervals from patient-connected hospital components (four contrasts).','hospital',
-          ['Comparator','Mortality','LOS'],rows,'lrr',wide=False)
+    table('hospital','Hospital holdout performance.','hospital',
+          ['Comparator','Mortality','LOS'],rows,'lrr',wide=False,
+          notes=r'eICU AP differences: CEM-Net minus comparator. Brackets: 98.75\% intervals from patient-connected hospital components, adjusted for four contrasts.')
 
 
 def context_table(context):

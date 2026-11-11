@@ -1,7 +1,7 @@
 \begin{table*}[tp]
-\centering\fontsize{8.5}{10.2}\selectfont
+\centering\small
 \setlength{\tabcolsep}{1.4pt}
-\caption{Five-seed predictive AP (mean $\pm$ sample SD; seeds 48--52). Bold/underlined means rank all models in each column. Hourly-model second lines give CEM-Net-minus-comparator AP intervals: 99.8333\% for CNNs and 99.1667\% for Medformer.}
+\caption{Predictive performance on ICU outcomes.}
 \label{tab:primary}
 \begin{tabular}{lrrrrrr}
 \toprule
@@ -9,12 +9,18 @@
 \cmidrule(lr){2-4}\cmidrule(lr){5-7}
 Method & MIMIC-III & MIMIC-IV & eICU & MIMIC-III & MIMIC-IV & eICU \\
 \midrule
-\multicolumn{7}{l}{\textit{Observation-level comparators: values, times and masks}} \\
+\multicolumn{7}{l}{\textit{Irregular-observation models}} \\
 SeFT & $0.4932\pm0.0042$ & $0.4905\pm0.0037$ & $0.3300\pm0.0049$ & $0.3995\pm0.0135$ & $0.4565\pm0.0030$ & $0.3073\pm0.0043$ \\
 mTAND encoder & $0.4950\pm0.0051$ & $0.4951\pm0.0017$ & $0.3514\pm0.0019$ & $0.4460\pm0.0111$ & $0.4849\pm0.0023$ & $0.3406\pm0.0043$ \\
 STraTS (ss$^{-}$) & $0.5188\pm0.0070$ & $0.5096\pm0.0041$ & $0.3625\pm0.0061$ & $0.4553\pm0.0119$ & $0.4871\pm0.0052$ & $0.3475\pm0.0050$ \\
 \midrule
-\multicolumn{7}{l}{\textit{Common clinical evidence profile: model-specific preprocessing and training}} \\
+\multicolumn{7}{l}{\textit{Hourly sequence models}} \\
+TCN & $0.4953\pm0.0119$ & $0.4741\pm0.0029$ & $0.3347\pm0.0034$ & $0.4095\pm0.0059$ & $0.4508\pm0.0084$ & $0.3035\pm0.0071$ \\
+ModernTCN & $0.4774\pm0.0120$ & $0.4522\pm0.0136$ & $0.3196\pm0.0057$ & $0.3610\pm0.0147$ & $0.4224\pm0.0184$ & $0.2825\pm0.0118$ \\
+LITEMV & $0.5010\pm0.0148$ & $0.4836\pm0.0086$ & $0.3436\pm0.0028$ & $0.4170\pm0.0111$ & $0.4622\pm0.0053$ & $0.3182\pm0.0066$ \\
+Medformer & $0.5163\pm0.0033$ & $0.4784\pm0.0054$ & $0.3354\pm0.0028$ & $0.4258\pm0.0046$ & $0.4653\pm0.0018$ & $0.2989\pm0.0022$ \\
+\midrule
+\multicolumn{7}{l}{\textit{Common-profile predictors}} \\
 RealMLP & $0.5214\pm0.0036$ & $0.5247\pm0.0057$ & $0.3691\pm0.0028$ & $0.4516\pm0.0213$ & $0.5271\pm0.0051$ & $0.3742\pm0.0040$ \\
 TabM & $0.5281\pm0.0093$ & $0.5265\pm0.0031$ & $0.3796\pm0.0022$ & $0.4640\pm0.0118$ & $0.5265\pm0.0018$ & $0.3903\pm0.0030$ \\
 TabM-mini & $0.5266\pm0.0094$ & $0.5275\pm0.0038$ & $0.3802\pm0.0025$ & $0.4711\pm0.0063$ & $0.5256\pm0.0020$ & $0.3907\pm0.0024$ \\
@@ -23,12 +29,7 @@ TabM+PLE & $0.5241\pm0.0098$ & $\underline{0.5331\pm0.0024}$ & $\mathbf{0.3948\p
 LightGBM & $0.5320\pm0.0040$ & $0.5155\pm0.0034$ & $0.3785\pm0.0032$ & $0.4769\pm0.0041$ & $0.5203\pm0.0019$ & $0.3780\pm0.0012$ \\
 XGBoost-TD & $0.5126\pm0.0049$ & $0.4836\pm0.0055$ & $0.3401\pm0.0053$ & $0.4421\pm0.0050$ & $0.4959\pm0.0049$ & $0.2938\pm0.0136$ \\
 CEM-Net & $\mathbf{0.5499\pm0.0020}$ & $\mathbf{0.5412\pm0.0007}$ & $0.3932\pm0.0018$ & $\mathbf{0.4855\pm0.0051}$ & $\mathbf{0.5439\pm0.0020}$ & $0.3922\pm0.0067$ \\
-\midrule
-\multicolumn{7}{l}{\textit{Hourly sequence models}} \\
-TCN & \shortstack[r]{$0.4953\pm0.0119$\\$[+0.0309,+0.0770]$} & \shortstack[r]{$0.4741\pm0.0029$\\$[+0.0476,+0.0850]$} & \shortstack[r]{$0.3347\pm0.0034$\\$[+0.0404,+0.0773]$} & \shortstack[r]{$0.4095\pm0.0059$\\$[+0.0383,+0.1133]$} & \shortstack[r]{$0.4508\pm0.0084$\\$[+0.0654,+0.1197]$} & \shortstack[r]{$0.3035\pm0.0071$\\$[+0.0603,+0.1162]$} \\
-ModernTCN & \shortstack[r]{$0.4774\pm0.0120$\\$[+0.0494,+0.0950]$} & \shortstack[r]{$0.4522\pm0.0136$\\$[+0.0704,+0.1075]$} & \shortstack[r]{$0.3196\pm0.0057$\\$[+0.0559,+0.0925]$} & \shortstack[r]{$0.3610\pm0.0147$\\$[+0.0835,+0.1679]$} & \shortstack[r]{$0.4224\pm0.0184$\\$[+0.0949,+0.1472]$} & \shortstack[r]{$0.2825\pm0.0118$\\$[+0.0828,+0.1354]$} \\
-LITEMV & \shortstack[r]{$0.5010\pm0.0148$\\$[+0.0291,+0.0679]$} & \shortstack[r]{$0.4836\pm0.0086$\\$[+0.0406,+0.0748]$} & \shortstack[r]{$0.3436\pm0.0028$\\$[+0.0329,+0.0667]$} & \shortstack[r]{$0.4170\pm0.0111$\\$[+0.0328,+0.1041]$} & \shortstack[r]{$0.4622\pm0.0053$\\$[+0.0578,+0.1064]$} & \shortstack[r]{$0.3182\pm0.0066$\\$[+0.0486,+0.0988]$} \\
-Medformer & \shortstack[r]{$0.5163\pm0.0033$\\$[+0.0139,+0.0532]$} & \shortstack[r]{$0.4784\pm0.0054$\\$[+0.0465,+0.0785]$} & \shortstack[r]{$0.3354\pm0.0028$\\$[+0.0413,+0.0747]$} & \shortstack[r]{$0.4258\pm0.0046$\\$[+0.0258,+0.0929]$} & \shortstack[r]{$0.4653\pm0.0018$\\$[+0.0563,+0.1010]$} & \shortstack[r]{$0.2989\pm0.0022$\\$[+0.0696,+0.1165]$} \\
 \bottomrule
 \end{tabular}
+\par\smallskip{\footnotesize\raggedright AP mean $\pm$ sample SD. Bold and underline mark the highest and second-highest unrounded means in each column.\par}
 \end{table*}

@@ -594,7 +594,7 @@ def check_render(output,checks=None):
     import numpy as np
     from PIL import Image
     figure_names=('fixed_stress','clinical_subgroups','probability_quality','observation_response','hospital_component_influence',
-                  'coverage_sensitivity','probability_losses')
+                  'coverage_sensitivity','probability_losses','evidence_gain_summary','construction_summary')
     for name in figure_names:
         np.testing.assert_array_equal(
             np.array(Image.open(paper/f'figures/cem_icde72_20261029/{name}.png')),
